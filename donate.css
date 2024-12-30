@@ -1,0 +1,165 @@
+/* donate.css */
+
+/* General Styles for Donate Page */
+.donate-page {
+    padding: 60px 0;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+}
+
+.donate-page h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.motivational-story {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1em;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.motivational-story p {
+    margin-bottom: 20px;
+}
+
+.donate-button-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.donate-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donate-button:hover {
+    background-color: #ff4757;
+}
+
+.how-donations-help {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.how-donations-help h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.how-donations-help ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.how-donations-help li {
+    margin-bottom: 15px;
+}
+
+.additional-support {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.additional-support h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.additional-support ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.additional-support li {
+    margin-bottom: 10px;
+}
+
+.additional-support a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.additional-support a:hover {
+    color: #ff4757;
+}
+
+.thank-you {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .donate-page {
+        padding: 40px 0;
+    }
+
+    .donate-page h1 {
+        font-size: 2em;
+    }
+
+    .motivational-story, .how-donations-help, .additional-support, .thank-you {
+        padding: 20px;
+    }
+
+    .donate-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .donate-page {
+        padding: 20px 0;
+    }
+
+    .donate-page h1 {
+        font-size: 1.8em;
+    }
+
+    .motivational-story, .how-donations-help, .additional-support, .thank-you {
+        padding: 15px;
+    }
+
+    .donate-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
