@@ -13,7 +13,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: #ff6600; /* Changed to orange */
     color: #fff;
     padding: 20px 0;
 }
@@ -21,7 +21,7 @@ header {
 header h1 a {
     color: #fff;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1em; /* Reduced from 2em to 1em */
 }
 
 nav ul {
@@ -30,11 +30,11 @@ nav ul {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Center the navigation links */
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* Ensure links are white for visibility against orange background */
     text-decoration: none;
     font-weight: 700;
 }
@@ -113,7 +113,7 @@ nav ul li a {
     border: none;
 }
 
-/* New Blogs Section Styles */
+/* Blogs Section Styles */
 .blogs {
     padding: 40px 0;
     background-color: #ffffff;
@@ -246,3 +246,6 @@ footer p {
 
     /* Reduce padding for mobile */
     .blogs {
+        padding: 20px 0;
+    }
+}
