@@ -13,7 +13,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #000000; /* Changed to black */
+    background-color: #000000; /* Kept black */
     color: #fff; /* Default text color */
     padding: 10px 0; /* Reduced padding to halve the header height */
 }
@@ -21,7 +21,7 @@ header {
 header h1 a {
     color: #ff6600; /* "Carl Travels" text in orange */
     text-decoration: none;
-    font-size: 1em; /* Adjust as needed */
+    font-size: 1em; /* Reduced from 2em to 1em */
     font-weight: bold; /* Optional: Make the title bold */
 }
 
