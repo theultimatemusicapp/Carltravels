@@ -16,13 +16,15 @@ header {
     background-color: #000000; /* Kept black */
     color: #fff; /* Default text color */
     padding: 10px 0; /* Reduced padding to halve the header height */
+    position: relative; /* Added for positioning */
 }
 
 header h1 a {
-    color: #ff6600; /* "Carl Travels" text in orange */
+    color: #1E90FF; /* Updated color to Dodger Blue */
     text-decoration: none;
     font-size: 1em; /* Reduced from 2em to 1em */
     font-weight: bold; /* Optional: Make the title bold */
+    font-family: 'Dancing Script', cursive; /* Ensure cursive script font */
 }
 
 nav ul {
@@ -44,6 +46,8 @@ nav ul li a {
     width: 24px;
     margin-left: 10px;
 }
+
+/* Removed Hamburger Menu Styles */
 
 /* Hero Section Styles */
 .hero {
