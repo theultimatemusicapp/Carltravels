@@ -5,7 +5,7 @@
 /* Adding styles for the cursive logo */
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 3em;
+    font-size: 3em; /* Adjust as needed */
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -31,6 +31,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Additional styles for responsiveness */
 @media (max-width: 992px) {
     .latest-videos iframe {
         flex: 1 1 45%;
@@ -47,7 +48,7 @@
 
 /* Site Description Section */
 .site-description {
-    padding: 40px 20px;
+    padding: 30px 20px; /* Reduced padding to decrease gap */
     background-color: #f9f9f9;
 }
 
@@ -58,7 +59,8 @@
 }
 
 .site-description p {
-    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive; /* Apply cursive font */
+    font-size: 1.3em; /* Approximately 15% larger */
     color: #555;
     line-height: 1.6;
 }
