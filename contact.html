@@ -5,49 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Carl Travels</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta name="description" content="Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
     </header>
+    
+    <!-- Main Content -->
     <main>
-        <section class="contact">
-            <h1>Contact Me</h1>
-            <p>I'd love to hear from you! Whether you're looking to collaborate, have questions about my films or travels, or simply want to share your thoughts, feel free to reach out. Let's connect and create something amazing together!</p>
+        <section class="contact-page">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <p>I'd love to hear from you! Whether you're looking to collaborate, have questions about my films or travels, or simply want to share your thoughts, feel free to reach out. Let's connect and create something amazing together!</p>
 
-            <h2>Get in Touch</h2>
-            <form action="mailto:watchcarltravel@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+                <!-- Contact Form -->
+                <section class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <form action="mailto:watchcarltravel@gmail.com" method="post" enctype="text/plain">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
 
-            <h2>Follow Me</h2>
-            <p>Stay connected through my social media channels:</p>
-            <ul>
-                <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-            </ul>
+                <!-- Follow Me -->
+                <section class="follow-me">
+                    <h2>Follow Me</h2>
+                    <p>Stay connected through my social media channels:</p>
+                    <ul>
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                    </ul>
+                </section>
+            </div>
         </section>
     </main>
+    
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
