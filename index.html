@@ -13,15 +13,15 @@
     <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Carl Travels - Explore the World with Carl">
     <meta property="og:description" content="Join Carl Travels on adventures around the globe. Discover destinations, watch videos, and read insightful travel blogs.">
-    <meta property="og:image" content="https://www.yourwebsite.com/images/og-image.jpg">
-    <meta property="og:url" content="https://www.yourwebsite.com/index.html">
+    <meta property="og:image" content="https://www.carltravels.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/index.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Carl Travels - Explore the World with Carl">
     <meta name="twitter:description" content="Join Carl Travels on adventures around the globe. Discover destinations, watch videos, and read insightful travel blogs.">
-    <meta name="twitter:image" content="https://www.yourwebsite.com/images/twitter-image.jpg">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/twitter-image.jpg">
 
     <title>Carl Travels</title>
     <link rel="stylesheet" href="styles.css">
@@ -35,13 +35,8 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
+            <!-- Logo with Updated Color and Cursive Font -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-            
-            <!-- Hamburger Menu Button -->
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="hamburger-icon"></span>
-            </button>
             
             <!-- Navigation Menu -->
             <nav>
@@ -155,26 +150,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Hamburger Menu -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+    <!-- Removed JavaScript for Hamburger Menu -->
 
-        hamburger.addEventListener('click', () => {
-            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-            hamburger.setAttribute('aria-expanded', !isExpanded);
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-
-        // Close the menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-                hamburger.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>
