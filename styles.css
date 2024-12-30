@@ -29,6 +29,8 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -146,6 +148,9 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .blog-item:hover {
@@ -158,6 +163,7 @@ nav ul li a {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .blog-gallery img {
@@ -165,9 +171,35 @@ nav ul li a {
     height: auto;
     display: block;
     border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    margin: 0;
 }
 
 /* Responsive Adjustments */
+
+/* Tablet and Below */
 @media (max-width: 1024px) {
     .blog-item {
         flex: 1 1 calc(50% - 20px); /* Two items per row */
@@ -179,6 +211,7 @@ nav ul li a {
     }
 }
 
+/* Mobile Devices */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -205,4 +238,11 @@ nav ul li a {
     .blog-title {
         font-size: 1em;
     }
-}
+
+    .blogs p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    /* Reduce padding for mobile */
+    .blogs {
