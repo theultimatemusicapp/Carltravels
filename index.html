@@ -130,6 +130,49 @@
                 </div>
             </div>
         </section>
+
+        <br>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f9;">
+    <div style="background-color: #fff; padding: 20px; border-radius: 10px; max-width: 800px; width: 90%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #333;">What People Are Saying About Carl</h2>
+        <div style="overflow: hidden; height: 200px; position: relative;">
+            <ul id="reviewList" style="position: absolute; width: 100%; list-style-type: none; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #555; line-height: 1.5; text-align: center;">
+                <li>"I met Carl on the streets of Berlin while he was busking. I watched his set in amazement as he played at the Berlin Wall. Afterwards, he took me on a tour of Berlin, showing me the best sites. He was the most amazing tour guide, and he did this all out of the generosity of his own heart." - Sarah (Australia)</li>
+                <li>"Carl made a music video for me. He listened to everything I said and created a masterpiece that perfectly captured my vision." - Tilda</li>
+                <li>"I joined Carl on one of his walking tours in Amsterdam. Not only did he share fascinating stories about the city’s history, but he also treated us to live music in Vondelpark. A day I will never forget!" - Mike (Canada)</li>
+                <li>"Carl produced a short travel film for my business. His creativity and attention to detail were unmatched. The final product was beyond my expectations." - Anne (USA)</li>
+                <li>"While traveling in Croatia, I stumbled upon Carl filming at a stunning beach. He invited me to join him, and we ended up exploring hidden gems together. He’s an inspiring traveler and storyteller." - Lena (Germany)</li>
+                <li>"Carl hosted a photography workshop in Vienna that I attended. His guidance helped me improve my skills immensely, and the photos I captured are some of the best I’ve ever taken." - James (UK)</li>
+                <li>"I hired Carl to create a highlight reel for my band’s tour in Italy. His work was nothing short of magical, capturing the energy and emotion of every moment." - Luca (Italy)</li>
+                <li>"Carl organized a city adventure in Paris where we explored famous landmarks and lesser-known spots. His enthusiasm and knowledge made it unforgettable!" - Emily (France)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    const reviewList = document.getElementById("reviewList");
+    let scrollPosition = 0;
+
+    function scrollReviews() {
+        scrollPosition -= 1; // Adjust scroll speed
+        reviewList.style.top = `${scrollPosition}px`;
+
+        if (Math.abs(scrollPosition) >= reviewList.offsetHeight / 2) {
+            scrollPosition = 0; // Reset scroll when reaching the end
+        }
+
+        requestAnimationFrame(scrollReviews);
+    }
+
+    // Duplicate list to create an infinite scrolling effect
+    const clone = reviewList.cloneNode(true);
+    reviewList.parentNode.appendChild(clone);
+
+    // Start the scrolling effect
+    scrollReviews();
+</script>
+
     </main>
 
     <!-- Footer Section -->
