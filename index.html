@@ -25,11 +25,111 @@
 
     <title>Carl Travels</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Adding Roboto and Dancing Script Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Testimonial Section Styles -->
+    <style>
+        /* Testimonial Section Styles */
+        .testimonial-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 50px auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-header {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #f1c40f;
+            font-size: 1.5rem;
+        }
+
+        .stars svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            margin: 0 2px;
+            transition: transform 0.3s;
+        }
+
+        .stars svg:hover {
+            transform: scale(1.2);
+        }
+
+        .review {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+            line-height: 1.6;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .testimonial-container.show .review {
+            opacity: 1;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .nav-button {
+            background-color: rgba(44, 62, 80, 0.7);
+            border: none;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(44, 62, 80, 0.9);
+        }
+
+        @media (max-width: 600px) {
+            .testimonial-container {
+                padding: 20px 25px;
+            }
+
+            .testimonial-header {
+                font-size: 1.5rem;
+            }
+
+            .stars svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .review {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -132,47 +232,29 @@
         </section>
 
         <br>
-        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f9;">
-    <div style="background-color: #fff; padding: 20px; border-radius: 10px; max-width: 800px; width: 90%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #333;">What People Are Saying About Carl</h2>
-        <div style="overflow: hidden; height: 200px; position: relative;">
-            <ul id="reviewList" style="position: absolute; width: 100%; list-style-type: none; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #555; line-height: 1.5; text-align: center;">
-                <li>"I met Carl on the streets of Berlin while he was busking. I watched his set in amazement as he played at the Berlin Wall. Afterwards, he took me on a tour of Berlin, showing me the best sites. He was the most amazing tour guide, and he did this all out of the generosity of his own heart." - Sarah (Australia)</li>
-                <li>"Carl made a music video for me. He listened to everything I said and created a masterpiece that perfectly captured my vision." - Tilda</li>
-                <li>"I joined Carl on one of his walking tours in Amsterdam. Not only did he share fascinating stories about the city’s history, but he also treated us to live music in Vondelpark. A day I will never forget!" - Mike (Canada)</li>
-                <li>"Carl produced a short travel film for my business. His creativity and attention to detail were unmatched. The final product was beyond my expectations." - Anne (USA)</li>
-                <li>"While traveling in Croatia, I stumbled upon Carl filming at a stunning beach. He invited me to join him, and we ended up exploring hidden gems together. He’s an inspiring traveler and storyteller." - Lena (Germany)</li>
-                <li>"Carl hosted a photography workshop in Vienna that I attended. His guidance helped me improve my skills immensely, and the photos I captured are some of the best I’ve ever taken." - James (UK)</li>
-                <li>"I hired Carl to create a highlight reel for my band’s tour in Italy. His work was nothing short of magical, capturing the energy and emotion of every moment." - Luca (Italy)</li>
-                <li>"Carl organized a city adventure in Paris where we explored famous landmarks and lesser-known spots. His enthusiasm and knowledge made it unforgettable!" - Emily (France)</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<script>
-    const reviewList = document.getElementById("reviewList");
-    let scrollPosition = 0;
-
-    function scrollReviews() {
-        scrollPosition -= 1; // Adjust scroll speed
-        reviewList.style.top = `${scrollPosition}px`;
-
-        if (Math.abs(scrollPosition) >= reviewList.offsetHeight / 2) {
-            scrollPosition = 0; // Reset scroll when reaching the end
-        }
-
-        requestAnimationFrame(scrollReviews);
-    }
-
-    // Duplicate list to create an infinite scrolling effect
-    const clone = reviewList.cloneNode(true);
-    reviewList.parentNode.appendChild(clone);
-
-    // Start the scrolling effect
-    scrollReviews();
-</script>
-
+        
+        <!-- Enhanced Testimonial Section -->
+        <section class="testimonials">
+            <div class="testimonial-container">
+                <h2 class="testimonial-header">What People Are Saying About Carl</h2>
+                <div class="stars" id="stars">
+                    <!-- Star SVGs -->
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                </div>
+                <p class="review" id="currentReview">
+                    "I met Carl on the streets of Berlin while he was busking. I watched his set in amazement as he played at the Berlin Wall. Afterwards, he took me on a tour of Berlin, showing me the best sites. He was the most amazing tour guide, and he did this all out of the generosity of his own heart." - Sarah (Australia)
+                </p>
+                <div class="navigation">
+                    <button class="nav-button" id="prevBtn" aria-label="Previous Review">&#10094;</button>
+                    <button class="nav-button" id="nextBtn" aria-label="Next Review">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- Footer Section -->
@@ -193,7 +275,75 @@
         </div>
     </footer>
 
-    <!-- Removed JavaScript for Hamburger Menu -->
+    <!-- Testimonial Section Script -->
+    <script>
+        // Array of reviews
+        const reviews = [
+            '"I met Carl on the streets of Berlin while he was busking. I watched his set in amazement as he played at the Berlin Wall. Afterwards, he took me on a tour of Berlin, showing me the best sites. He was the most amazing tour guide, and he did this all out of the generosity of his own heart." - Sarah (Australia)',
+            '"Carl made a music video for me. He listened to everything I said and created a masterpiece that perfectly captured my vision." - Tilda',
+            '"I joined Carl on one of his walking tours in Amsterdam. Not only did he share fascinating stories about the city’s history, but he also treated us to live music in Vondelpark. A day I will never forget!" - Mike (Canada)',
+            '"Carl produced a short travel film for my business. His creativity and attention to detail were unmatched. The final product was beyond my expectations." - Anne (USA)',
+            '"While traveling in Croatia, I stumbled upon Carl filming at a stunning beach. He invited me to join him, and we ended up exploring hidden gems together. He’s an inspiring traveler and storyteller." - Lena (Germany)',
+            '"Carl hosted a photography workshop in Vienna that I attended. His guidance helped me improve my skills immensely, and the photos I captured are some of the best I’ve ever taken." - James (UK)',
+            '"I hired Carl to create a highlight reel for my band’s tour in Italy. His work was nothing short of magical, capturing the energy and emotion of every moment." - Luca (Italy)',
+            '"Carl organized a city adventure in Paris where we explored famous landmarks and lesser-known spots. His enthusiasm and knowledge made it unforgettable!" - Emily (France)'
+        ];
 
+        let currentIndex = 0;
+        const reviewElement = document.getElementById("currentReview");
+        const testimonialContainer = document.querySelector(".testimonial-container");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        let reviewInterval;
+
+        // Function to update the review text
+        function updateReview(index) {
+            testimonialContainer.classList.remove("show");
+            setTimeout(() => {
+                reviewElement.textContent = reviews[index];
+                testimonialContainer.classList.add("show");
+            }, 300); // Slight delay for smooth transition
+        }
+
+        // Show next review
+        function showNextReview() {
+            currentIndex = (currentIndex + 1) % reviews.length;
+            updateReview(currentIndex);
+        }
+
+        // Show previous review
+        function showPrevReview() {
+            currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+            updateReview(currentIndex);
+        }
+
+        // Automatic review rotation
+        function startReviewRotation() {
+            reviewInterval = setInterval(showNextReview, 5000);
+        }
+
+        function resetReviewRotation() {
+            clearInterval(reviewInterval);
+            startReviewRotation();
+        }
+
+        // Event listeners for navigation buttons
+        nextBtn.addEventListener("click", () => {
+            showNextReview();
+            resetReviewRotation();
+        });
+
+        prevBtn.addEventListener("click", () => {
+            showPrevReview();
+            resetReviewRotation();
+        });
+
+        // Initialize
+        document.addEventListener("DOMContentLoaded", () => {
+            updateReview(currentIndex);
+            startReviewRotation();
+        });
+    </script>
+    
 </body>
 </html>
