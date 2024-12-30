@@ -1,0 +1,116 @@
+/* destinations.css */
+
+/* Destinations Section Styles */
+.destinations {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.destinations .container {
+    text-align: center;
+}
+
+.destinations h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.destinations p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Continent Styles */
+.continent {
+    margin-bottom: 50px;
+}
+
+.continent h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6600; /* Orange color for continent titles */
+    text-transform: uppercase;
+}
+
+/* Cities Grid Styles */
+.cities {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.city-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.city-item:hover {
+    background-color: #ff6600; /* Orange background on hover */
+    color: #ffffff; /* White text on hover */
+    transform: translateY(-5px);
+}
+
+/* Active Navigation Link Highlight */
+nav ul li a.active {
+    color: #ff6600; /* Orange color for active link */
+}
+
+/* Responsive Adjustments */
+
+/* Tablet and Below */
+@media (max-width: 1024px) {
+    .destinations h1 {
+        font-size: 2.2em;
+    }
+
+    .cities {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .city-item {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .destinations {
+        padding: 20px 0;
+    }
+
+    .destinations h1 {
+        font-size: 2em;
+    }
+
+    .destinations p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .continent h2 {
+        font-size: 1.8em;
+    }
+
+    .cities {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .city-item {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
