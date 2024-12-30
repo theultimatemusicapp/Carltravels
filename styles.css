@@ -1,219 +1,61 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+/* Blogs Section Styles */
+.blogs {
+    padding: 40px 0;
     background-color: #f9f9f9;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styles */
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-}
-
-header h1 a {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #ff6600;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff6600;
-}
-
-/* Social Media Icons in Header */
-.social-media a {
-    margin-left: 15px;
-    display: inline-block;
-}
-
-.social-media img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
-}
-
-.social-media img:hover {
-    transform: scale(1.1);
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
+.blogs .container {
     text-align: center;
-    color: #fff;
 }
 
-.hero-image {
-    width: 100%;
-    max-height: 532px;
-    object-fit: cover;
-    opacity: 0.8;
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-.hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
+.blogs h3 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.cta {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 25px;
-    border-radius: 5px;
-    font-weight: 700;
-    transition: background-color 0.3s;
-}
-
-.cta:hover {
-    background-color: #e65c00;
-}
-
-/* Latest Videos Section */
-.latest-videos {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.latest-videos .container {
-    text-align: center;
-}
-
-.latest-videos h3 {
-    font-size: 2rem;
+.blogs p {
+    font-size: 1.1em;
     margin-bottom: 30px;
-    color: #ff6600;
+    color: #555;
 }
 
-.video-gallery {
+.blog-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
 }
 
-.video-gallery iframe {
+.blog-gallery a {
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.blog-gallery img {
     width: 100%;
-    max-width: 350px;
-    height: 200px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+    display: block;
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
-.video-gallery iframe:hover {
+.blog-gallery img:hover {
     transform: scale(1.05);
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer p {
-    margin: 0 0 10px 0;
-}
-
-.footer-social a {
-    margin: 0 10px;
-}
-
-.footer-social img {
-    width: 25px;
-    height: 25px;
-    filter: brightness(0) invert(1);
-    transition: filter 0.3s, transform 0.3s;
-}
-
-.footer-social img:hover {
-    filter: brightness(0.8) invert(1);
-    transform: scale(1.1);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .blog-gallery a {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
     }
+}
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .hero-content h2 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .video-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .video-gallery iframe {
+@media (max-width: 600px) {
+    .blog-gallery a {
+        flex: 1 1 100%;
         max-width: 100%;
     }
 }
