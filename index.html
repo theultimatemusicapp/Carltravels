@@ -8,13 +8,164 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Adding Cursive Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo a {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-media img {
+            width: 25px;
+            margin-left: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            background: #ff6347;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .video-gallery iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            margin: 10px auto;
+        }
+
+        .blog-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .blog-item {
+            text-align: center;
+        }
+
+        .blog-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer-social img {
+            width: 25px;
+            margin: 0 5px;
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            background: #333;
+            color: #fff;
+            border: none;
+            font-size: 1.5em;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav ul.open {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            .hero h2 {
+                font-size: 1.8em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Added class "logo" for styling the cursive font -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -56,53 +207,10 @@
             <div class="container">
                 <h3>Latest Videos</h3>
                 <div class="video-gallery">
-                    <!-- Existing 3 Videos -->
+                    <!-- Videos -->
                     <iframe src="https://www.youtube.com/embed/UmykVoIO62w" frameborder="0" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/n1pWE7QaCds" frameborder="0" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/7y3dVvYfBiI" frameborder="0" allowfullscreen></iframe>
-                    
-                    <!-- Additional 3 Videos -->
-                    <iframe src="https://www.youtube.com/embed/NPpCfDRM2PY" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/31idWwYdPIc" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/xxAXj_MHPtA" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- Description Section -->
-        <section class="site-description">
-            <div class="container">
-               <br>
-                <div style="text-align: center;">
-
-                    Welcome to Carl Travels! This website is dedicated to providing you with travel tips, insights, stunning pictures, and engaging content from all the places I've explored. Join me as I share my experiences and stories from over 40 countries and more than 300 cities. Whether you're a seasoned traveler or just dreaming of your next adventure, there's something here for everyone. Let's embark on this journey together!
-              
-</div>
-             
-        </section>
-        
-        <!-- Blogs Section -->
-        <section class="blogs">
-            <div class="container">
-                <h3>Blogs</h3>
-                <p>Click here to explore each region and my blogs and videos.</p>
-                <div class="blog-gallery">
-                    <a href="destinations.html" class="blog-item">
-                        <div class="blog-title">AUSTRALIA</div>
-                        <img src="australia.jpg" alt="Australia">
-                    </a>
-                    <a href="destinations.html" class="blog-item">
-                        <div class="blog-title">EUROPE</div>
-                        <img src="europe.jpg" alt="Europe">
-                    </a>
-                    <a href="destinations.html" class="blog-item">
-                        <div class="blog-title">EASTERN EUROPE</div>
-                        <img src="easterneurope.jpg" alt="Eastern Europe">
-                    </a>
-                    <a href="destinations.html" class="blog-item">
-                        <div class="blog-title">SOUTH EAST ASIA</div>
-                        <img src="southeastasia.jpg" alt="Southeast Asia">
-                    </a>
                 </div>
             </div>
         </section>
@@ -112,18 +220,14 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
-                    <img src="facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
-                    <img src="instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
-                    <img src="youtube.png" alt="YouTube">
-                </a>
-            </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
