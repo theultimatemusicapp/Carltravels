@@ -3,7 +3,7 @@
 /* General Styles for Donate Page */
 .donate-page {
     padding: 60px 0;
-    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    background-color: #f9f9f9;
 }
 
 .donate-page h1 {
@@ -13,13 +13,14 @@
     color: #333;
 }
 
+/* Motivational Story Section */
 .motivational-story {
     max-width: 800px;
     margin: 0 auto 50px auto;
     line-height: 1.8;
     color: #555;
     font-size: 1.1em;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -29,28 +30,22 @@
     margin-bottom: 20px;
 }
 
+/* Donation Button Section */
 .donate-button-section {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.donate-button {
+.donate-button-section form {
     display: inline-block;
-    background-color: #ff6b6b;
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.donate-button:hover {
-    background-color: #ff4757;
+.donate-button-section input[type="image"] {
+    width: auto;
+    height: auto;
 }
 
+/* How Donations Help Section */
 .how-donations-help {
     max-width: 800px;
     margin: 0 auto 50px auto;
@@ -74,6 +69,7 @@
     margin-bottom: 15px;
 }
 
+/* Additional Support Section */
 .additional-support {
     max-width: 800px;
     margin: 0 auto 50px auto;
@@ -99,16 +95,16 @@
 }
 
 .additional-support a {
-    color: #ff6b6b;
+    color: #ff6600;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 .additional-support a:hover {
-    color: #ff4757;
+    color: #e65c00;
 }
 
+/* Thank You Section */
 .thank-you {
     text-align: center;
     max-width: 800px;
@@ -116,13 +112,18 @@
     color: #555;
     font-size: 1.2em;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .thank-you p {
     margin: 0;
+}
+
+/* Active Navigation Link */
+.nav-menu li a.active {
+    color: #ff6600; /* Orange color for active link */
 }
 
 /* Responsive Styles */
@@ -135,13 +136,15 @@
         font-size: 2em;
     }
 
-    .motivational-story, .how-donations-help, .additional-support, .thank-you {
+    .motivational-story,
+    .how-donations-help,
+    .additional-support,
+    .thank-you {
         padding: 20px;
     }
 
-    .donate-button {
-        padding: 12px 25px;
-        font-size: 1em;
+    .donate-button-section {
+        margin-bottom: 40px;
     }
 }
 
@@ -154,12 +157,19 @@
         font-size: 1.8em;
     }
 
-    .motivational-story, .how-donations-help, .additional-support, .thank-you {
+    .motivational-story,
+    .how-donations-help,
+    .additional-support,
+    .thank-you {
         padding: 15px;
     }
 
-    .donate-button {
-        padding: 10px 20px;
-        font-size: 0.9em;
+    .donate-button-section {
+        margin-bottom: 30px;
+    }
+
+    .additional-support h2,
+    .how-donations-help h2 {
+        font-size: 1.8em;
     }
 }
