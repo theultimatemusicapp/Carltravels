@@ -22,12 +22,27 @@ header {
     justify-content: space-between;
 }
 
+header .logo {
+    margin: 0;
+    padding: 0;
+}
+
 header .logo a {
     color: #1E90FF;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
+    display: block;
+}
+
+header .logo a:hover {
+    text-decoration: none;
+}
+
+header .logo {
+    /* Adjusted margin to position the logo slightly lower */
+    margin-top: 5px;
 }
 
 /* Hamburger Menu Icon */
@@ -46,6 +61,11 @@ header .logo a {
     transition: all 0.3s;
 }
 
+/* Hide the checkbox input */
+#menu-toggle {
+    display: none;
+}
+
 /* Navigation Menu */
 nav {
     flex-grow: 1;
@@ -58,6 +78,7 @@ nav ul {
     gap: 15px;
     justify-content: flex-end;
     align-items: center;
+    margin: 0;
 }
 
 nav ul li a {
@@ -87,11 +108,11 @@ nav ul li a {
 .hero-image {
     position: relative;
     width: 100%;
-    height: 80vh;
-    min-height: 400px;
+    height: 50vh; /* Reduced height to approximately 50% */
+    min-height: 300px;
     background-image: url('carl.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top; /* Focus on the top part of the image */
     background-repeat: no-repeat;
 }
 
@@ -152,6 +173,7 @@ nav ul li a {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin: 0 10px;
 }
 
 .video-gallery iframe {
@@ -357,10 +379,10 @@ footer p {
         display: block;
         background-color: #000;
         position: absolute;
-        top: 60px;
+        top: 58px;
         left: 0;
         width: 100%;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 58px);
         z-index: 1000;
         overflow-y: auto;
     }
