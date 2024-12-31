@@ -30,106 +30,6 @@
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Testimonial Section Styles -->
-    <style>
-        /* Testimonial Section Styles */
-        .testimonial-container {
-            background-color: #ffffff;
-            padding: 30px 40px;
-            border-radius: 15px;
-            max-width: 800px;
-            margin: 50px auto;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .testimonial-header {
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            font-size: 2rem;
-        }
-
-        .stars {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 15px;
-            color: #f1c40f;
-            font-size: 1.5rem;
-        }
-
-        .stars svg {
-            width: 24px;
-            height: 24px;
-            fill: currentColor;
-            margin: 0 2px;
-            transition: transform 0.3s;
-        }
-
-        .stars svg:hover {
-            transform: scale(1.2);
-        }
-
-        .review {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.1rem;
-            color: #555;
-            text-align: center;
-            line-height: 1.6;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .testimonial-container.show .review {
-            opacity: 1;
-        }
-
-        .navigation {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-
-        .nav-button {
-            background-color: rgba(44, 62, 80, 0.7);
-            border: none;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .nav-button:hover {
-            background-color: rgba(44, 62, 80, 0.9);
-        }
-
-        @media (max-width: 600px) {
-            .testimonial-container {
-                padding: 20px 25px;
-            }
-
-            .testimonial-header {
-                font-size: 1.5rem;
-            }
-
-            .stars svg {
-                width: 20px;
-                height: 20px;
-            }
-
-            .review {
-                font-size: 1rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -137,6 +37,14 @@
         <div class="container">
             <!-- Logo with Updated Color and Cursive Font -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             
             <!-- Navigation Menu -->
             <nav>
@@ -183,14 +91,14 @@
                 <h3>Latest Videos</h3>
                 <div class="video-gallery">
                     <!-- Existing 3 Videos -->
-                    <iframe src="https://www.youtube.com/embed/UmykVoIO62w" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/n1pWE7QaCds" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/7y3dVvYfBiI" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/UmykVoIO62w" frameborder="0" allowfullscreen title="Latest Video 1"></iframe>
+                    <iframe src="https://www.youtube.com/embed/n1pWE7QaCds" frameborder="0" allowfullscreen title="Latest Video 2"></iframe>
+                    <iframe src="https://www.youtube.com/embed/7y3dVvYfBiI" frameborder="0" allowfullscreen title="Latest Video 3"></iframe>
                     
                     <!-- Additional 3 Videos -->
-                    <iframe src="https://www.youtube.com/embed/NPpCfDRM2PY" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/31idWwYdPIc" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/xxAXj_MHPtA" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/NPpCfDRM2PY" frameborder="0" allowfullscreen title="Latest Video 4"></iframe>
+                    <iframe src="https://www.youtube.com/embed/31idWwYdPIc" frameborder="0" allowfullscreen title="Latest Video 5"></iframe>
+                    <iframe src="https://www.youtube.com/embed/xxAXj_MHPtA" frameborder="0" allowfullscreen title="Latest Video 6"></iframe>
                 </div>
             </div>
         </section>
