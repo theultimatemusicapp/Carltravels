@@ -35,13 +35,14 @@ header .logo a {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 10px;
 }
 
 .menu-icon span {
     width: 25px;
     height: 3px;
     background-color: #fff;
-    margin: 4px;
+    margin: 4px 0;
     transition: all 0.3s;
 }
 
@@ -80,14 +81,27 @@ nav ul li a {
     position: relative;
     text-align: center;
     color: white;
+    overflow: hidden;
 }
 
 .hero-image {
+    position: relative;
     width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: cover;
-    opacity: 0.8;
+    height: 80vh;
+    min-height: 400px;
+    background-image: url('carl.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
 }
 
 .hero-content {
@@ -95,6 +109,7 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 0 20px;
 }
 
 .hero-content h2 {
@@ -237,8 +252,6 @@ nav ul li a {
 }
 
 .stars svg {
-    width: 24px;
-    height: 24px;
     fill: currentColor;
     margin: 0 2px;
     transition: transform 0.3s;
@@ -336,6 +349,10 @@ footer p {
     }
 
     /* When Menu Toggle is Checked, Show Menu */
+    #menu-toggle {
+        display: none;
+    }
+
     #menu-toggle:checked + .menu-icon + nav {
         display: block;
         background-color: #000;
@@ -343,19 +360,23 @@ footer p {
         top: 60px;
         left: 0;
         width: 100%;
+        height: calc(100vh - 60px);
         z-index: 1000;
+        overflow-y: auto;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 0;
+        height: 100%;
+        justify-content: center;
     }
 
     nav ul li {
         width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 15px 0;
         border-bottom: 1px solid #fff;
     }
 
@@ -364,21 +385,22 @@ footer p {
         width: 100%;
     }
 
+    /* Adjust Hero Content */
     .hero-content h2 {
         font-size: 2em;
     }
 
     .hero-content p {
         font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .hero-content {
+        padding: 0 10px;
     }
 
     .blog-title {
         font-size: 1em;
-    }
-
-    .blogs p {
-        font-size: 1em;
-        margin-bottom: 20px;
     }
 
     /* Adjust Blog Items to Stack */
@@ -391,11 +413,29 @@ footer p {
     .video-gallery iframe {
         flex: 1 1 100%;
         max-width: 100%;
-        height: auto;
+        height: 200px;
     }
 
     /* Reduce padding for mobile */
     .blogs {
         padding: 20px 0;
+    }
+
+    /* Adjust Testimonial Section */
+    .testimonial-container {
+        padding: 20px;
+    }
+
+    .testimonial-header {
+        font-size: 1.5rem;
+    }
+
+    .stars svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .review {
+        font-size: 1rem;
     }
 }
