@@ -2,19 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirana Treasures: A 4-Day Urban and Cultural Journey</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the vibrant capital of Albania, Tirana, with Carl Travels. Discover its rich history, cultural landmarks, and essential travel tips.">
+    <meta name="keywords" content="Tirana, Travel, Albania Destinations, Carl Travels, Attractions, History">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Tirana - Carl Travels">
+    <meta property="og:description" content="Discover the charm of Tirana with Carl Travels. Explore historical sites, cultural landmarks, and essential travel tips for Albania's vibrant capital.">
+    <meta property="og:image" content="https://www.carltravels.com/images/tirana-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/tirana.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tirana - Carl Travels">
+    <meta name="twitter:description" content="Discover the charm of Tirana with Carl Travels. Explore historical sites, cultural landmarks, and essential travel tips for Albania's vibrant capital.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/tirana-twitter-image.jpg">
+
+    <title>Tirana - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Responsive Video Styles */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+            margin: 20px 0; /* Optional margin for spacing */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+
+            .video-container {
+                padding-bottom: 56.25%; /* Maintain aspect ratio on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -23,14 +152,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -39,167 +170,108 @@
     
     <!-- Main Content -->
     <main>
-        <section class="blog-post">
+        <section class="destination-details">
             <div class="container">
-                <h1>Tirana Treasures: A 4-Day Urban and Cultural Journey</h1>
-                <div class="banner-image">
-                    <img src="tiranabanner.jpg" alt="Tirana Banner">
+                <!-- Main Title -->
+                <h1>Tirana</h1>
+                
+                <!-- Responsive Embedded Video -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/7jdi6gE6dWc" title="Tirana Video" frameborder="0" allowfullscreen loading="lazy"></iframe>
                 </div>
-                
-                <!-- Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <p>Tirana, the vibrant capital of Albania, is a city where history meets modernity. Known for its colorful buildings, bustling markets, and rich cultural heritage, Tirana offers a unique blend of experiences for every traveler. As Carl, a 38-year-old traveler from Australia, I embarked on a 4-day journey to uncover the treasures of Tirana.</p>
-                    <p><strong>Brief History:</strong> Established in the early 17th century, Tirana became the capital of Albania in 1920. Over the years, it has transformed from a quiet provincial town into a dynamic urban center, reflecting the country's rapid modernization and cultural renaissance.</p>
-                </section>
-                
-                <!-- Day 1 -->
-                <section>
-                    <h2>Day 1: Arrival and Skanderbeg Square Exploration</h2>
-                    <p>Upon arriving at Tirana International Airport, I took a taxi to my hotel in the heart of the city. The first day was dedicated to exploring Skanderbeg Square, the central hub of Tirana.</p>
-                    <img src="tiranaday1.jpg" alt="Skanderbeg Square">
-                    <p>I wandered around Skanderbeg Square, admiring the impressive Et'hem Bey Mosque and the National History Museum with its iconic mosaic facade. In the afternoon, I visited the Clock Tower, offering panoramic views of the city. The evening was spent dining at a local restaurant, savoring traditional Albanian dishes while enjoying the lively atmosphere of the square.</p>
-                </section>
-                
-                <!-- Day 2 -->
-                <section>
-                    <h2>Day 2: Cultural Immersion and Historical Sites</h2>
-                    <p>The second day was all about immersing myself in Tirana's rich cultural landscape and historical sites.</p>
-                    <img src="tiranaday2.jpg" alt="National Art Gallery">
-                    <p>I started the day at the National Art Gallery, exploring its extensive collection of Albanian art. The afternoon was dedicated to visiting the Bunk'Art Museum, an underground bunker turned museum that offers a fascinating glimpse into Albania's communist past. In the evening, I attended a traditional folk music performance, experiencing the vibrant rhythms and cultural significance of Albanian music.</p>
-                </section>
-                
-                <!-- Day 3 -->
-                <section>
-                    <h2>Day 3: Day Trip to Dajti Ekspres and Hiking</h2>
-                    <p>On the third day, I took a day trip to Mount Dajti, accessible via the Dajti Ekspres cable car.</p>
-                    <img src="tiranaday3.jpg" alt="Mount Dajti">
-                    <p>The cable car ride offered breathtaking views of Tirana and the surrounding landscapes. Upon reaching the summit, I embarked on a hiking trail through lush forests and picturesque viewpoints. The afternoon was spent enjoying a meal at the Mount Dajti restaurant, offering panoramic views of the city below. The day concluded with a relaxing stroll through the Grand Park of Tirana, enjoying the serene environment and vibrant flora.</p>
-                </section>
-                
-                <!-- Day 4 -->
-                <section>
-                    <h2>Day 4: Markets, Modern Architecture, and Farewell</h2>
-                    <p>On my final day, I explored Tirana's bustling markets and modern architectural landmarks.</p>
-                    <img src="tiranaday4.jpg" alt="Pazari i Ri Market">
-                    <p>I visited Pazari i Ri (New Bazaar), a vibrant market area filled with colorful stalls selling fresh produce, handmade crafts, and local delicacies. In the afternoon, I explored the Pyramid of Tirana, a unique example of modernist architecture with a controversial history. The trip concluded with a visit to the Tirana River promenade, enjoying a leisurely walk along the riverbank before heading back to my hotel to prepare for departure.</p>
-                </section>
-                
-                <!-- Highlights -->
-                <section>
-                    <h2>Highlights</h2>
+
+                <!-- Removed the banner image -->
+
+                <!-- What to See -->
+                <div class="section">
+                    <h2>What to See</h2>
+                    <p>Tirana, the capital of Albania, is a dynamic city that seamlessly blends history with modernity. Visitors can explore its colorful Ottoman, Fascist, and Soviet-era architecture, vibrant street art, and numerous parks. Key attractions include Skanderbeg Square, the National History Museum, and the Et'hem Bey Mosque.</p>
+                </div>
+
+                <!-- A Brief History of the City -->
+                <div class="section">
+                    <h2>A Brief History of the City</h2>
+                    <p>Tirana's history dates back to the early 17th century when it was established as a small town. It became the capital of Albania in 1920, replacing Durrës. Throughout the 20th century, Tirana underwent significant transformations, especially during the communist era under Enver Hoxha, which left a lasting architectural and cultural legacy. Today, Tirana is a symbol of Albania's rapid modernization and cultural revival.</p>
+                </div>
+
+                <!-- Top 10 Attractions -->
+                <div class="section">
+                    <h2>Top 10 Attractions</h2>
+                    <ol>
+                        <li><strong>Skanderbeg Square</strong> - The heart of Tirana, featuring the equestrian statue of national hero Skanderbeg, surrounded by important buildings and green spaces.</li>
+                        <li><strong>National History Museum</strong> - Home to Albania's largest collection of artifacts, showcasing the country's rich history from antiquity to modern times.</li>
+                        <li><strong>Et'hem Bey Mosque</strong> - An iconic mosque known for its beautiful frescoes and serene atmosphere.</li>
+                        <li><strong>Piramida of Tirana</strong> - A unique and controversial structure originally built as a museum for Enver Hoxha, now a cultural center.</li>
+                        <li><strong>Grand Park of Tirana (Parku i Madh)</strong> - A sprawling park perfect for leisurely walks, picnics, and enjoying nature.</li>
+                        <li><strong>Mount Dajti National Park</strong> - Accessible via the Dajti Ekspres cable car, offering hiking trails and panoramic views of Tirana.</li>
+                        <li><strong>Bunk'Art Museums</strong> - Two underground bunkers transformed into museums that provide insight into Albania's communist past.</li>
+                        <li><strong>Reja Street</strong> - A vibrant pedestrian street lined with cafes, shops, and street art, ideal for experiencing Tirana's nightlife.</li>
+                        <li><strong>Tirana Pyramid</strong> - A unique architectural landmark that hosts various cultural events and exhibitions.</li>
+                        <li><strong>Artificial Lake of Tirana</strong> - A popular spot for relaxation, sports, and social gatherings.</li>
+                    </ol>
+                </div>
+
+                <!-- What to Bring -->
+                <div class="section">
+                    <h2>What to Bring</h2>
                     <ul>
-                        <li>Skanderbeg Square: Central hub with historical landmarks.</li>
-                        <li>National Art Gallery: Extensive collection of Albanian art.</li>
-                        <li>Bunk'Art Museum: Fascinating insight into Albania's communist past.</li>
-                        <li>Mount Dajti: Scenic hiking and panoramic views.</li>
-                        <li>Pazari i Ri Market: Vibrant market with diverse offerings.</li>
+                        <li>Comfortable walking shoes for exploring Tirana's hilly and cobblestone streets.</li>
+                        <li>A light jacket or sweater for cooler evenings.</li>
+                        <li>A raincoat or umbrella as Tirana can experience sudden showers.</li>
+                        <li>Sunhat, sunglasses, and sunscreen to protect against the Mediterranean sun.</li>
+                        <li>Camera or smartphone for capturing Tirana's picturesque views and vibrant street art.</li>
+                        <li>Guidebook or travel app for additional information on attractions and local tips.</li>
+                        <li>Reusable water bottle to stay hydrated during your explorations.</li>
+                        <li>Portable charger for your electronic devices.</li>
+                        <li>Insect repellent for outdoor activities.</li>
+                        <li>Personal medications and basic first aid essentials.</li>
                     </ul>
-                </section>
-                
-                <!-- Practical Information -->
-                <section>
-                    <h2>Practical Information</h2>
-                    <h3>Transportation</h3>
-                    <p>Tirana is accessible by air via Tirana International Airport, with regular flights from major European cities. Within the city, public transportation includes buses and taxis. Renting a car or booking guided tours provides flexibility for day trips and exploring surrounding areas.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>Tirana offers a wide range of accommodations, from luxury hotels and boutique guesthouses to budget-friendly hostels. I stayed at a mid-range hotel in the city center, which provided excellent amenities and easy access to key attractions.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Tirana is relatively affordable. A comfortable daily budget ranges from €30 to €70, covering accommodation, meals, transportation, and activities.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section>
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
+                </div>
+
+                <!-- Currency -->
+                <div class="section">
+                    <h2>Currency</h2>
+                    <p>Tirana, like the rest of Albania, uses the Albanian Lek (ALL) as its official currency. While credit and debit cards are accepted in many establishments, it's advisable to carry some cash for smaller shops, local markets, and remote areas.</p>
+                </div>
+
+                <!-- Best Time to Visit -->
+                <div class="section">
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Tirana is during the spring (April to June) and autumn (September to October) months when the weather is mild and pleasant. Summer (July to August) is also popular, offering warm weather and numerous outdoor events, but expect larger crowds. Winter (December to February) is less crowded and can be a good time for budget travelers, though temperatures can be cooler.</p>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="section">
+                    <h2>Fun Facts</h2>
                     <ul>
-                        <li><strong>Do:</strong> Book accommodation and tours in advance, especially during peak seasons.</li>
-                        <li><strong>Don’t:</strong> Litter or disturb cultural and historical sites.</li>
-                        <li><strong>Do:</strong> Wear comfortable footwear for walking and hiking.</li>
-                        <li><strong>Don’t:</strong> Engage in unsafe activities without proper guidance and equipment.</li>
+                        <li>Tirana is the youngest capital in Europe, becoming Albania's capital only in 1920.</li>
+                        <li>The city is known for its colorful Ottoman, Fascist, and Soviet-era architecture, giving it a unique and vibrant look.</li>
+                        <li>Tirana hosts the annual Tirana International Film Festival, attracting filmmakers and enthusiasts from around the world.</li>
+                        <li>The Grand Park of Tirana is home to the Presidential Palace and the Artificial Lake, popular spots for locals and tourists alike.</li>
+                        <li>Tirana has transformed significantly since the fall of communism, with numerous modernization projects enhancing its infrastructure and public spaces.</li>
+                        <li>The city's street art scene is thriving, with murals and installations adding to Tirana's dynamic urban landscape.</li>
+                        <li>Tirana is twinned with several cities, including Turin (Italy), Ankara (Turkey), and Ulcinj (Montenegro).</li>
+                        <li>The Bunk'Art museums are housed in massive underground bunkers originally built during the communist regime to protect against potential invasions.</li>
+                        <li>Tirana's Reja Street is one of the most popular nightlife destinations in the Balkans, known for its lively bars and clubs.</li>
+                        <li>The Et'hem Bey Mosque, located in the heart of Tirana, is a central religious and cultural landmark, beautifully adorned with frescoes.</li>
                     </ul>
-                    
-                    <h3>Packing Lists</h3>
-                    <ul>
-                        <li>Lightweight, breathable clothing suitable for warm climates.</li>
-                        <li>Swimwear and beach essentials.</li>
-                        <li>Insect repellent and sunscreen.</li>
-                        <li>Comfortable hiking boots or shoes.</li>
-                        <li>Rain jacket or umbrella for unexpected showers.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Respect the local community and their cultural practices. Always greet with a friendly smile and a polite gesture. Dress modestly when visiting religious and historical sites. When interacting with locals, use polite language and be mindful of cultural norms.</p>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section>
-                    <h2>Cultural Immersion</h2>
-                    <p>Interacting with local Albanian communities provided a deep understanding of their cultural practices and connection to the land. I participated in a traditional cooking class, learning to prepare local dishes and experiencing the flavors of Albanian cuisine firsthand.</p>
-                    <p>Visiting the Bunk'Art Museum and exploring historical landmarks offered insights into Tirana's past and the resilience of its people, fostering a greater appreciation for the city's evolution over the years.</p>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section>
-                    <h2>Food and Cuisine</h2>
-                    <p>Tirana's culinary scene is a delightful blend of traditional Albanian flavors, Mediterranean influences, and international cuisines.</p>
-                    <ul>
-                        <li><strong>Tavë Kosi:</strong> Baked lamb and yogurt dish, a staple of Albanian cuisine.</li>
-                        <li><strong>Byrek:</strong> Savory pastry filled with cheese, spinach, or meat.</li>
-                        <li><strong>Grilled Seafood:</strong> Freshly grilled fish and shellfish served with local vegetables.</li>
-                        <li><strong>Fërgesë:</strong> Traditional dish made with peppers, tomatoes, and cottage cheese.</li>
-                        <li><strong>Local Wines:</strong> A selection of Albanian wines at trendy wineries.</li>
-                    </ul>
-                    <p>I highly recommend dining at one of the traditional restaurants in Tirana, where you can enjoy authentic Albanian dishes while immersing yourself in the local ambiance.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section>
-                    <h2>Adventure and Activities</h2>
-                    <p>Tirana offers a variety of activities for adventure enthusiasts:</p>
-                    <ul>
-                        <li><strong>Snorkeling and Diving:</strong> Explore the vibrant marine life of the Adriatic Sea.</li>
-                        <li><strong>Hiking:</strong> Trek through Mount Dajti and enjoy panoramic views.</li>
-                        <li><strong>Kayaking:</strong> Paddle along scenic coastlines and hidden coves.</li>
-                        <li><strong>Wildlife Watching:</strong> Spot diverse bird species and marine life at local sanctuaries.</li>
-                        <li><strong>Mountain Biking:</strong> Tackle challenging trails amidst rugged landscapes.</li>
-                    </ul>
-                    <p>One of the most thrilling activities was the hiking expedition up Mount Dajti, where I was rewarded with breathtaking views of Tirana and the surrounding landscapes.</p>
-                </section>
-                
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>Meeting Elira, a local artist, was a highlight of my trip. She took me to her studio, sharing her creative process and the inspiration behind her beautiful artworks.</p>
-                    <p>Another unforgettable moment was attending a traditional Albanian wedding celebration, where I experienced the joyous festivities and learned about the significance of various customs and rituals.</p>
-                </section>
-                
-                <!-- Conclusion -->
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Tirana is a vibrant destination that offers a perfect blend of urban sophistication, cultural immersion, and adventurous activities. As Carl, I found my 4-day journey to be an enriching and exhilarating experience, uncovering the dynamic culture and stunning landscapes of Albania's capital city.</p>
-                    <p>If you're planning a trip to Albania, Tirana should definitely be on your list. Whether you're seeking cultural experiences, historical explorations, or simply a vibrant urban escape, Tirana has something for everyone.</p>
-                    <p>Until next time, happy travels!</p>
-                </section>
+                </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
