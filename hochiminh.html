@@ -2,19 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring the Vibrant Streets of Ho Chi Minh City: A 5-Day Itinerary</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the dynamic Ho Chi Minh City with Carl Travels. Discover its rich history, vibrant culture, and essential travel tips for Vietnam's bustling metropolis.">
+    <meta name="keywords" content="Ho Chi Minh City, Travel, Vietnam Destinations, Carl Travels, Attractions, History">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Ho Chi Minh City - Carl Travels">
+    <meta property="og:description" content="Discover the vibrant Ho Chi Minh City with Carl Travels. Explore historical sites, cultural landmarks, and essential travel tips for Vietnam's bustling metropolis.">
+    <meta property="og:image" content="https://www.carltravels.com/images/hochiminh-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/hochiminh.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ho Chi Minh City - Carl Travels">
+    <meta name="twitter:description" content="Discover the vibrant Ho Chi Minh City with Carl Travels. Explore historical sites, cultural landmarks, and essential travel tips for Vietnam's bustling metropolis.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/hochiminh-twitter-image.jpg">
+
+    <title>Ho Chi Minh City - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Responsive Video Styles */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+            margin: 20px 0; /* Optional margin for spacing */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+
+            .video-container {
+                padding-bottom: 56.25%; /* Maintain aspect ratio on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -23,14 +152,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -39,174 +170,113 @@
     
     <!-- Main Content -->
     <main>
-        <section class="blog-post">
+        <section class="destination-details">
             <div class="container">
-                <h1>Exploring the Vibrant Streets of Ho Chi Minh City: A 5-Day Itinerary</h1>
-                <div class="banner-image">
-                    <img src="hochiminhbanner.jpg" alt="Ho Chi Minh City Banner">
+                <!-- Main Title -->
+                <h1>Ho Chi Minh City</h1>
+                
+                <!-- Responsive Embedded Video (Banner Replacement) -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/nRUX_LT1azY" title="Ho Chi Minh City Video" frameborder="0" allowfullscreen loading="lazy"></iframe>
                 </div>
-                
+
+                <!-- Removed the banner image -->
+
                 <!-- Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <p>Ho Chi Minh City, formerly known as Saigon, is a bustling metropolis that seamlessly blends traditional Vietnamese culture with modern urban life. As a 38-year-old traveler from Australia, I embarked on a 5-day adventure to uncover the hidden gems of this vibrant city.</p>
-                </section>
-                
-                <!-- Day 1 -->
-                <section>
-                    <h2>Day 1: Arrival and Exploring District 1</h2>
-                    <p>Upon arrival, I checked into my hotel in District 1, the heart of Ho Chi Minh City. The first day was all about acclimating to the city's energy. I strolled through Ben Thanh Market, indulging in local street food like Bánh mì and fresh spring rolls.</p>
-                    <img src="hochiminhday1.jpg" alt="Ben Thanh Market">
-                    <p>In the evening, I visited the Bitexco Financial Tower's Sky Deck for panoramic views of the city illuminated at night.</p>
-                </section>
-                
-                <!-- Day 2 -->
-                <section>
-                    <h2>Day 2: Historical Sites and Local Culture</h2>
-                    <p>The second day was dedicated to exploring historical landmarks. The War Remnants Museum provided a poignant glimpse into Vietnam's past. Later, I visited the Notre-Dame Cathedral Basilica and the Central Post Office, marveling at their French colonial architecture.</p>
-                    <img src="hochiminhday2.jpg" alt="War Remnants Museum">
-                    <p>In the afternoon, I participated in a local cooking class, learning to make authentic Vietnamese dishes from a friendly local chef.</p>
-                </section>
-                
-                <!-- Day 3 -->
-                <section>
-                    <h2>Day 3: Cu Chi Tunnels Adventure</h2>
-                    <p>No trip to Ho Chi Minh City is complete without a visit to the Cu Chi Tunnels. I joined a guided tour that took me through the intricate underground passages used during the Vietnam War. Navigating the narrow tunnels was both challenging and enlightening.</p>
-                    <img src="hochiminhday3.jpg" alt="Cu Chi Tunnels">
-                    <p>After returning, I relaxed at a nearby café, reflecting on the resilience and history encapsulated within the tunnels.</p>
-                </section>
-                
-                <!-- Day 4 -->
-                <section>
-                    <h2>Day 4: Mekong Delta Excursion</h2>
-                    <p>The fourth day was an excursion to the Mekong Delta. I took a boat ride through the winding waterways, visiting floating markets and interacting with local farmers. The lush greenery and serene waters offered a stark contrast to the bustling city life.</p>
-                    <img src="hochiminhday4.jpg" alt="Mekong Delta">
-                    <p>Enjoying fresh tropical fruits and local delicacies made the experience even more memorable.</p>
-                </section>
-                
-                <!-- Day 5 -->
-                <section>
-                    <h2>Day 5: Leisure and Farewell</h2>
-                    <p>On my final day, I took it easy, exploring the vibrant street art scene in the city. The murals and graffiti added a modern twist to Ho Chi Minh City's cultural landscape.</p>
-                    <img src="hochiminhday5.jpg" alt="Street Art">
-                    <p>In the evening, I savored a farewell dinner at a rooftop restaurant, reminiscing about the incredible experiences and stories gathered over the past five days.</p>
-                </section>
-                
-                <!-- Highlights -->
-                <section>
-                    <h2>Highlights</h2>
+                <div class="section">
+                    <h2>What to See</h2>
+                    <p>Ho Chi Minh City, formerly known as Saigon, is a bustling metropolis that seamlessly blends traditional Vietnamese culture with modern urban life. Visitors can explore its historical landmarks, vibrant street markets, and a thriving arts scene. Key attractions include the War Remnants Museum, Notre-Dame Cathedral Basilica, and the lively Ben Thanh Market.</p>
+                </div>
+
+                <!-- A Brief History of the City -->
+                <div class="section">
+                    <h2>A Brief History of the City</h2>
+                    <p>Ho Chi Minh City has a rich and complex history that spans over centuries. Originally a small fishing village, it grew into a significant port under French colonial rule, which left a lasting architectural legacy. The city played a pivotal role during the Vietnam War and was officially renamed Ho Chi Minh City in 1976, in honor of the revolutionary leader. Today, it stands as a symbol of Vietnam's rapid economic growth and cultural resurgence.</p>
+                </div>
+
+                <!-- Top 10 Attractions -->
+                <div class="section">
+                    <h2>Top 10 Attractions</h2>
+                    <ol>
+                        <li><strong>War Remnants Museum</strong> - Offers a profound insight into the Vietnam War through impactful exhibits and artifacts.</li>
+                        <li><strong>Notre-Dame Cathedral Basilica of Saigon</strong> - A stunning example of French colonial architecture with beautiful stained glass windows.</li>
+                        <li><strong>Ben Thanh Market</strong> - A bustling market where you can shop for local goods, souvenirs, and enjoy delicious street food.</li>
+                        <li><strong>Reunification Palace</strong> - A historic building that played a significant role during the Vietnam War and now serves as a museum.</li>
+                        <li><strong>Bitexco Financial Tower & Sky Deck</strong> - Offers panoramic views of the city from its observation deck.</li>
+                        <li><strong>Saigon Opera House</strong> - An elegant venue for performances and a must-visit for architecture enthusiasts.</li>
+                        <li><strong>Jade Emperor Pagoda</strong> - A beautiful Taoist temple known for its intricate carvings and serene atmosphere.</li>
+                        <li><strong>Cu Chi Tunnels</strong> - An extensive network of underground tunnels used during the Vietnam War, offering guided tours.</li>
+                        <li><strong>Saigon River Cruise</strong> - Enjoy a scenic cruise along the Saigon River, especially stunning during sunset.</li>
+                        <li><strong>Pham Ngu Lao Street</strong> - The backpacker district known for its vibrant nightlife, affordable accommodations, and diverse dining options.</li>
+                    </ol>
+                </div>
+
+                <!-- What to Bring -->
+                <div class="section">
+                    <h2>What to Bring</h2>
                     <ul>
-                        <li>Ben Thanh Market: A bustling hub for shopping and street food.</li>
-                        <li>War Remnants Museum: An insightful look into Vietnam's history.</li>
-                        <li>Cu Chi Tunnels: A must-visit for history enthusiasts.</li>
-                        <li>Mekong Delta: Experience the tranquility of Vietnam's lifeblood.</li>
-                        <li>Street Art Tour: Discover the creative side of the city.</li>
+                        <li>Comfortable walking shoes for exploring the city's streets and attractions.</li>
+                        <li>A light jacket or sweater for cooler evenings.</li>
+                        <li>A raincoat or umbrella as Ho Chi Minh City can experience sudden showers.</li>
+                        <li>Sunhat, sunglasses, and sunscreen to protect against the tropical sun.</li>
+                        <li>Camera or smartphone for capturing the city's picturesque views and vibrant street life.</li>
+                        <li>Guidebook or travel app for additional information on attractions and local tips.</li>
+                        <li>Reusable water bottle to stay hydrated during your explorations.</li>
+                        <li>Portable charger for your electronic devices.</li>
+                        <li>Insect repellent for outdoor activities.</li>
+                        <li>Personal medications and basic first aid essentials.</li>
                     </ul>
-                </section>
-                
-                <!-- Practical Information -->
-                <section>
-                    <h2>Practical Information</h2>
-                    <h3>Transportation</h3>
-                    <p>Ho Chi Minh City has an extensive network of buses, taxis, and ride-sharing services like Grab. For short distances, walking is also a pleasant way to explore the city.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>District 1 offers a wide range of accommodations, from budget hostels to luxury hotels. I stayed at a mid-range hotel that provided excellent amenities and a central location.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Daily expenses can vary, but a comfortable budget ranges from $30 to $50 AUD per day, covering meals, transportation, and entrance fees to attractions.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section>
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
+                </div>
+
+                <!-- Embedded Video Above Currency -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/qeeXYgKw49Y" title="Ho Chi Minh City Highlights" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Currency -->
+                <div class="section">
+                    <h2>Currency</h2>
+                    <p>Ho Chi Minh City, like the rest of Vietnam, uses the Vietnamese Dong (VND) as its official currency. While credit and debit cards are widely accepted in many establishments, it's advisable to carry some cash for smaller shops, local markets, and street vendors.</p>
+                </div>
+
+                <!-- Best Time to Visit -->
+                <div class="section">
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Ho Chi Minh City is during the dry season, which runs from December to April. This period offers pleasant weather, making it ideal for sightseeing and outdoor activities. The rainy season, from May to November, can bring heavy showers, but the city remains vibrant and lively throughout the year.</p>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="section">
+                    <h2>Fun Facts</h2>
                     <ul>
-                        <li><strong>Do:</strong> Bargain respectfully at markets.</li>
-                        <li><strong>Don’t:</strong> Display excessive wealth to avoid attracting unwanted attention.</li>
-                        <li><strong>Do:</strong> Dress modestly when visiting temples and religious sites.</li>
-                        <li><strong>Don’t:</strong> Engage in public displays of affection, as it might be frowned upon.</li>
+                        <li>Ho Chi Minh City is the largest city in Vietnam, with a population of over 8 million people.</li>
+                        <li>The city was named after the revolutionary leader Ho Chi Minh, who played a crucial role in Vietnam's independence.</li>
+                        <li>Saigon Street Food is famous worldwide for its diverse and delicious offerings, including dishes like Bánh mì and Phở.</li>
+                        <li>The Bitexco Financial Tower was once the tallest building in Vietnam and is a symbol of the city's economic growth.</li>
+                        <li>Ho Chi Minh City is home to one of the largest Chinatown districts, known as Cholon, which is rich in history and culture.</li>
+                        <li>The Saigon Opera House was designed by French architect Jules Reinach and completed in 1897.</li>
+                        <li>Ho Chi Minh City has a vibrant arts scene, with numerous galleries, theaters, and street art installations.</li>
+                        <li>The city boasts an extensive network of underground tunnels, originally built for military purposes during the Vietnam War.</li>
+                        <li>Ho Chi Minh City hosts the annual Tet Festival, celebrating the Vietnamese Lunar New Year with fireworks, parades, and traditional performances.</li>
+                        <li>The Ben Thanh Market is one of the oldest surviving markets in Vietnam, established in the late 19th century.</li>
                     </ul>
-                    
-                    <h3>Packing Lists</h3>
-                    <ul>
-                        <li>Lightweight clothing suitable for warm weather.</li>
-                        <li>Comfortable walking shoes.</li>
-                        <li>Sun protection: hats, sunglasses, and sunscreen.</li>
-                        <li>Reusable water bottle.</li>
-                        <li>Travel adapter for electronic devices.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Vietnamese people are generally friendly and hospitable. It's customary to greet with a smile and a slight bow. Removing your shoes before entering someone's home or a temple is a sign of respect.</p>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section>
-                    <h2>Cultural Immersion</h2>
-                    <p>One of the most enriching experiences was participating in a local cooking class. Interacting with Vietnamese chefs and learning to prepare traditional dishes like Pho and Bánh Xèo deepened my appreciation for the country's culinary heritage.</p>
-                    <p>Attending a traditional water puppet show also offered a glimpse into the folk culture and storytelling methods unique to Vietnam.</p>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section>
-                    <h2>Food and Cuisine</h2>
-                    <p>Ho Chi Minh City is a paradise for food lovers. From street-side stalls to upscale restaurants, the city offers a diverse range of culinary delights.</p>
-                    <ul>
-                        <li><strong>Bánh mì:</strong> A delicious Vietnamese sandwich with a crispy baguette, filled with meats, vegetables, and fresh herbs.</li>
-                        <li><strong>Phở:</strong> A fragrant noodle soup typically made with beef or chicken.</li>
-                        <li><strong>Bún bò Huế:</strong> A spicy beef noodle soup originating from the central region of Vietnam.</li>
-                        <li><strong>Gỏi cuốn:</strong> Fresh spring rolls packed with shrimp, herbs, and vermicelli noodles.</li>
-                        <li><strong>Cà phê sữa đá:</strong> Iced coffee with condensed milk, perfect for cooling down in the tropical heat.</li>
-                    </ul>
-                    <p>I highly recommend dining at local eateries to experience authentic flavors. One standout was a family-run restaurant where I enjoyed a hearty bowl of Bún bò Huế, paired with a refreshing glass of cà phê sữa đá.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section>
-                    <h2>Adventure and Activities</h2>
-                    <p>For those seeking adventure, Ho Chi Minh City offers numerous activities:</p>
-                    <ul>
-                        <li><strong>Motorbike Tours:</strong> Explore the city and its outskirts on a motorbike, experiencing the vibrant street life up close.</li>
-                        <li><strong>Cyclo Rides:</strong> Enjoy a leisurely ride through the bustling streets in a traditional cyclo.</li>
-                        <li><strong>Cooking Classes:</strong> Learn to cook authentic Vietnamese dishes with local chefs.</li>
-                        <li><strong>Mekong Delta Tours:</strong> Take a boat trip to explore the lush waterways and visit floating markets.</li>
-                        <li><strong>Nightlife:</strong> Experience the lively nightlife with rooftop bars, live music venues, and nightclubs.</li>
-                    </ul>
-                    <p>One memorable adventure was the motorbike tour through the narrow alleys of District 1, navigating through the vibrant traffic while discovering hidden cafes and boutiques.</p>
-                </section>
-                
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>During my visit, I met a local artist named Linh who invited me to her studio. She shared her passion for traditional Vietnamese painting and even let me try my hand at brushwork. This heartfelt interaction provided a deeper connection to the city's artistic community.</p>
-                    <p>Another highlight was joining a group of locals for a street food crawl. Sampling various dishes and hearing stories from vendors made me feel like a true part of the city.</p>
-                </section>
-                
-                <!-- Conclusion -->
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Ho Chi Minh City is a dynamic destination that offers a rich tapestry of experiences, from historical explorations to culinary adventures. As Carl, a 38-year-old traveler from Australia, I found the city's blend of tradition and modernity both captivating and inspiring.</p>
-                    <p>If you're planning a trip to Vietnam, I highly recommend adding Ho Chi Minh City to your itinerary. Whether you're a history buff, a food enthusiast, or an adventure seeker, the city has something to offer everyone.</p>
-                    <p>Happy travels!</p>
-                </section>
+                </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
