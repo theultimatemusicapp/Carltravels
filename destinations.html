@@ -2,19 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the destinations visited by Carl Travels across Europe, Eastern Europe, Australia, South East Asia, and the UK.">
+    <meta name="keywords" content="Destinations, Carl Travels, Travel Blog, Europe, UK, Australia, Asia">
+    <meta name="author" content="Carl Ostomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Destinations - Carl Travels">
+    <meta property="og:description" content="Discover the cities and experiences of Carl Travels across various continents.">
+    <meta property="og:image" content="https://www.carltravels.com/images/destinations-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/destinations.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Destinations - Carl Travels">
+    <meta name="twitter:description" content="Discover the cities and experiences of Carl Travels across various continents.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/destinations-twitter-image.jpg">
+
     <title>Destinations - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for destinations page -->
     <link rel="stylesheet" href="destinations.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -23,14 +61,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -46,8 +86,13 @@
                 
                 <!-- Europe Section -->
                 <div class="continent">
-                    <h2>Europe</h2>
+                    <input type="checkbox" id="europe-toggle">
+                    <label for="europe-toggle" class="continent-header">
+                        <h2>Europe</h2>
+                        <img src="europe-banner.jpg" alt="Europe">
+                    </label>
                     <div class="cities">
+                        <!-- List of European Cities -->
                         <a href="corfu.html" class="city-item">Corfu</a>
                         <a href="Berlin.html" class="city-item">Berlin</a>
                         <a href="Porto.html" class="city-item">Porto</a>
@@ -63,13 +108,51 @@
                         <a href="Amalfi Coast.html" class="city-item">Amalfi Coast</a>
                         <a href="Budapest.html" class="city-item">Budapest</a>
                         <a href="Prague.html" class="city-item">Prague</a>
+                        <!-- New European Cities -->
+                        <a href="Warsaw.html" class="city-item">Warsaw</a>
+                        <a href="Tenerife.html" class="city-item">Tenerife</a>
+                        <a href="Bratislava.html" class="city-item">Bratislava</a>
+                        <a href="Milan.html" class="city-item">Milan</a>
+                        <a href="Zurich.html" class="city-item">Zurich</a>
+                        <a href="Copenhagen.html" class="city-item">Copenhagen</a>
+                        <a href="Amsterdam.html" class="city-item">Amsterdam</a>
+                        <a href="Barcelona.html" class="city-item">Barcelona</a>
+                        <a href="Malta.html" class="city-item">Malta</a>
+                        <a href="Pompei.html" class="city-item">Pompei</a>
+                        <a href="Vienna.html" class="city-item">Vienna</a>
+                        <a href="Venice.html" class="city-item">Venice</a>
                     </div>
                 </div>
                 
+                <!-- UK Section -->
+                <div class="continent">
+                    <input type="checkbox" id="uk-toggle">
+                    <label for="uk-toggle" class="continent-header">
+                        <h2>UK</h2>
+                        <img src="uk-banner.jpg" alt="United Kingdom">
+                    </label>
+                    <div class="cities">
+                        <!-- List of UK Cities -->
+                        <a href="London.html" class="city-item">London</a>
+                        <a href="Bristol.html" class="city-item">Bristol</a>
+                        <a href="Bath.html" class="city-item">Bath</a>
+                        <a href="Stonehenge.html" class="city-item">Stonehenge</a>
+                        <a href="Edinburgh.html" class="city-item">Edinburgh</a>
+                        <a href="Loch Ness.html" class="city-item">Loch Ness</a>
+                        <a href="Manchester.html" class="city-item">Manchester</a>
+                        <a href="Cardiff.html" class="city-item">Cardiff</a>
+                    </div>
+                </div>
+
                 <!-- Eastern Europe Section -->
                 <div class="continent">
-                    <h2>Eastern Europe</h2>
+                    <input type="checkbox" id="eastern-europe-toggle">
+                    <label for="eastern-europe-toggle" class="continent-header">
+                        <h2>Eastern Europe</h2>
+                        <img src="eastern-europe-banner.jpg" alt="Eastern Europe">
+                    </label>
                     <div class="cities">
+                        <!-- List of Eastern European Cities -->
                         <a href="budva.html" class="city-item">Budva</a>
                         <a href="tirana.html" class="city-item">Tirana</a>
                         <a href="varna.html" class="city-item">Varna</a>
@@ -80,8 +163,13 @@
                 
                 <!-- Australia Section -->
                 <div class="continent">
-                    <h2>Australia</h2>
+                    <input type="checkbox" id="australia-toggle">
+                    <label for="australia-toggle" class="continent-header">
+                        <h2>Australia</h2>
+                        <img src="australia-banner.jpg" alt="Australia">
+                    </label>
                     <div class="cities">
+                        <!-- List of Australian Cities -->
                         <a href="melbourne.html" class="city-item">Melbourne</a>
                         <a href="sydney.html" class="city-item">Sydney</a>
                         <a href="brisbane.html" class="city-item">Brisbane</a>
@@ -99,8 +187,13 @@
                 
                 <!-- South East Asia Section -->
                 <div class="continent">
-                    <h2>South East Asia</h2>
+                    <input type="checkbox" id="asia-toggle">
+                    <label for="asia-toggle" class="continent-header">
+                        <h2>South East Asia</h2>
+                        <img src="asia-banner.jpg" alt="South East Asia">
+                    </label>
                     <div class="cities">
+                        <!-- List of South East Asian Cities -->
                         <a href="hochiminh.html" class="city-item">Ho Chi Minh (Saigon)</a>
                         <a href="hanoi.html" class="city-item">Hanoi</a>
                         <a href="bali.html" class="city-item">Bali</a>
@@ -122,13 +215,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
