@@ -2,35 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Learn more about Carl Ostomich, an Australian filmmaker, traveler, and music enthusiast.">
+    <meta name="keywords" content="About Carl Ostomich, Carl Travels, Filmmaker, Traveler, Music Enthusiast, Next Day Cinematics">
+    <meta name="author" content="Carl Ostomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="About Carl Ostomich - Carl Travels">
+    <meta property="og:description" content="Discover the journey of Carl Ostomich, his passion for storytelling, exploration, and technology.">
+    <meta property="og:image" content="https://www.carltravels.com/images/about-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/about.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Carl Ostomich - Carl Travels">
+    <meta name="twitter:description" content="Discover the journey of Carl Ostomich, his passion for storytelling, exploration, and technology.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/about-twitter-image.jpg">
+
     <title>About - Carl Travels</title>
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for about page -->
     <link rel="stylesheet" href="about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
                     <li><a href="donate.html">Donate</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -65,7 +103,7 @@
 
                 <h2>Follow My Adventures</h2>
                 <p>Stay connected and follow my journey through the links below:</p>
-                <ul>
+                <ul class="follow-links">
                     <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
                     <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
                     <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
@@ -81,13 +119,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
