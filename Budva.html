@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the picturesque town of Budva in Montenegro with Carl Travels. Discover its stunning beaches, historic Old Town, and essential travel tips.">
+    <meta name="keywords" content="Budva, Travel, Montenegro Destinations, Carl Travels, Attractions, History">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Budva - Carl Travels">
+    <meta property="og:description" content="Discover the beauty of Budva with Carl Travels. Explore pristine beaches, the historic Old Town, and essential travel tips for Montenegro's coastal gem.">
+    <meta property="og:image" content="https://www.carltravels.com/images/budva-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/budva.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Budva - Carl Travels">
+    <meta name="twitter:description" content="Discover the beauty of Budva with Carl Travels. Explore pristine beaches, the historic Old Town, and essential travel tips for Montenegro's coastal gem.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/budva-twitter-image.jpg">
+
+    <title>Budva - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Responsive Video Styles */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+            margin: 20px 0; /* Optional margin for spacing */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+
+            .video-container {
+                padding-bottom: 56.25%; /* Maintain aspect ratio on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="destination-details">
+            <div class="container">
+                <!-- Main Title -->
+                <h1>Budva</h1>
+                
+                <!-- Responsive Embedded Video -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/n1pWE7QaCds" title="Budva Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Previous Banner Image Removed -->
+
+                <div class="section">
+                    <h2>What to See</h2>
+                    <p>Budva is renowned for its stunning Adriatic coastline, vibrant nightlife, and well-preserved medieval architecture. Visitors can enjoy pristine beaches, explore the charming Old Town, and partake in a variety of water sports and cultural activities.</p>
+                </div>
+
+                <div class="section">
+                    <h2>A Brief History of the City</h2>
+                    <p>With a history spanning over 2,500 years, Budva is one of the oldest settlements on the Adriatic coast. Originally established as a Greek colony, it later became a significant medieval fortress town under Venetian and Ottoman rule. Today, Budva seamlessly blends its rich historical heritage with modern tourism, making it a beloved destination for travelers worldwide.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Top 10 Attractions</h2>
+                    <ol>
+                        <li><strong>Old Town (Stari Grad)</strong> - Wander through narrow streets, historic buildings, and ancient city walls in Budva's charming Old Town.</li>
+                        <li><strong>Mogren Beach</strong> - A picturesque beach split into two coves, perfect for swimming and sunbathing.</li>
+                        <li><strong>Sveti Nikola Island (Island of the Holy Nicholas)</strong> - Accessible by boat, this tranquil island offers beautiful beaches and lush greenery.</li>
+                        <li><strong>Citadel</strong> - Explore this fortified complex offering panoramic views of Budva and the Adriatic Sea.</li>
+                        <li><strong>Budva Riviera</strong> - A stretch of stunning beaches and resorts along the coast, ideal for relaxation and water activities.</li>
+                        <li><strong>Jaz Beach</strong> - One of the largest and most popular beaches in Montenegro, known for its vibrant beach clubs and events.</li>
+                        <li><strong>Serbian Orthodox Church of the Holy Trinity</strong> - A beautiful church showcasing traditional Montenegrin architecture.</li>
+                        <li><strong>Budva Marina</strong> - A modern marina with luxury yachts, waterfront restaurants, and stunning sea views.</li>
+                        <li><strong>Nightlife in Budva</strong> - Experience the town's lively nightlife with numerous bars, clubs, and beach parties.</li>
+                        <li><strong>St. Ivan Church</strong> - A historic church located in the heart of Old Town, offering serene surroundings and beautiful frescoes.</li>
+                    </ol>
+                </div>
+
+                <div class="section">
+                    <h2>What to Bring</h2>
+                    <ul>
+                        <li>Comfortable walking shoes for exploring Budva's hilly and cobblestone streets.</li>
+                        <li>A swimsuit and beachwear for enjoying Budva's beautiful beaches.</li>
+                        <li>A sunhat, sunglasses, and sunscreen to protect against the Mediterranean sun.</li>
+                        <li>Light, breathable clothing suitable for warm weather.</li>
+                        <li>Camera or smartphone for capturing Budva's picturesque landscapes and historic sites.</li>
+                        <li>Guidebook or travel app for additional information on attractions and local tips.</li>
+                        <li>Reusable water bottle to stay hydrated during your explorations.</li>
+                        <li>Light jacket or sweater for cooler evenings by the sea.</li>
+                        <li>Portable charger for your electronic devices.</li>
+                        <li>Personal medications and basic first aid essentials.</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Currency</h2>
+                    <p>Budva, like the rest of Montenegro, uses the Euro (€) as its official currency. While credit and debit cards are widely accepted in most establishments, it's advisable to carry some cash for smaller shops, local markets, and remote areas.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Budva is during the late spring (May to June) and early autumn (September to October) when the weather is pleasant, and the tourist crowds are thinner. Summer (July to August) is peak season, offering vibrant nightlife and numerous beach events, but expect larger crowds and higher prices.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Fun Facts</h2>
+                    <ul>
+                        <li>Budva is often referred to as the "Montenegrin Miami" due to its lively beaches and bustling nightlife.</li>
+                        <li>The Budva Riviera stretches for about 35 kilometers along the Adriatic coast, featuring numerous beaches and resorts.</li>
+                        <li>Budva hosts the annual Sea Dance Festival, one of the biggest open-air electronic music festivals in Southeastern Europe.</li>
+                        <li>The Old Town of Budva was largely untouched by the Yugoslav Wars, preserving its medieval architecture.</li>
+                        <li>Budva is twinned with several cities, including Banjaluka (Bosnia and Herzegovina) and Varna (Bulgaria).</li>
+                        <li>Famous international celebrities have visited Budva, attracted by its stunning scenery and vibrant atmosphere.</li>
+                        <li>The Budva Municipality covers not just the town itself but also several surrounding villages and beaches.</li>
+                        <li>Budva's name is derived from the Slavic word "budva," meaning "alert" or "vigilant," reflecting its historical significance as a fortified town.</li>
+                        <li>The city is a popular filming location for various movies and television series due to its picturesque settings.</li>
+                        <li>Budva has a rich culinary scene, offering a blend of Mediterranean and Balkan cuisines with fresh seafood as a highlight.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
