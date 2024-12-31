@@ -108,9 +108,9 @@ nav ul li a {
 .hero-image {
     position: relative;
     width: 100%;
-    height: 50vh; /* Reduced height to approximately 50% */
-    min-height: 300px;
-    background-image: url('carl.jpg');
+    height: 30vh; /* Reduced height by approximately 40% from 50vh to 30vh */
+    min-height: 200px; /* Adjusted min-height for smaller screens */
+    background-image: url('carl.jpg'); /* Updated to use 'carl.jpg' */
     background-size: cover;
     background-position: top; /* Focus on the top part of the image */
     background-repeat: no-repeat;
@@ -134,19 +134,19 @@ nav ul li a {
 }
 
 .hero-content h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Adjusted font size for smaller hero height */
+    margin-bottom: 15px;
 }
 
 .hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1em; /* Adjusted font size */
+    margin-bottom: 25px;
 }
 
 .cta {
     background-color: #ff6600;
     color: #fff;
-    padding: 15px 25px;
+    padding: 12px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -393,13 +393,6 @@ footer p {
         gap: 0;
         height: 100%;
         justify-content: center;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        padding: 15px 0;
-        border-bottom: 1px solid #fff;
     }
 
     nav ul li a {
