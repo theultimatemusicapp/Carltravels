@@ -2,19 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring the Tranquil Shores of Nusa Lembongan: A 3-Day Escape</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the tranquil shores of Nusa Lembongan with Carl Travels. Discover its stunning beaches, vibrant marine life, and essential travel tips for a perfect Indonesian escape.">
+    <meta name="keywords" content="Nusa Lembongan, Travel, Indonesia Destinations, Carl Travels, Beaches, Snorkeling">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Nusa Lembongan - Carl Travels">
+    <meta property="og:description" content="Discover the serene beauty of Nusa Lembongan with Carl Travels. Explore pristine beaches, vibrant marine life, and essential travel tips for a memorable Indonesian getaway.">
+    <meta property="og:image" content="https://www.carltravels.com/images/nusalembongan-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/nusalembongan.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nusa Lembongan - Carl Travels">
+    <meta name="twitter:description" content="Discover the serene beauty of Nusa Lembongan with Carl Travels. Explore pristine beaches, vibrant marine life, and essential travel tips for a memorable Indonesian getaway.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/nusalembongan-twitter-image.jpg">
+
+    <title>Nusa Lembongan - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Responsive Video Styles */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+            margin: 20px 0; /* Optional margin for spacing */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+
+            .video-container {
+                padding-bottom: 56.25%; /* Maintain aspect ratio on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -23,14 +152,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -39,158 +170,113 @@
     
     <!-- Main Content -->
     <main>
-        <section class="blog-post">
+        <section class="destination-details">
             <div class="container">
-                <h1>Exploring the Tranquil Shores of Nusa Lembongan: A 3-Day Escape</h1>
-                <div class="banner-image">
-                    <img src="nusalemonganbanner.jpg" alt="Nusa Lembongan Banner">
+                <!-- Main Title -->
+                <h1>Nusa Lembongan</h1>
+                
+                <!-- Responsive Embedded Video (Banner Replacement) -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ulbhuZZGqr4" title="Nusa Lembongan Video" frameborder="0" allowfullscreen loading="lazy"></iframe>
                 </div>
-                
-                <!-- Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <p>Nusa Lembongan, a small island off the southeast coast of Bali, is a serene paradise known for its crystal-clear waters, vibrant marine life, and laid-back atmosphere. As Carl, a 38-year-old traveler from Australia, I spent 3 days immersing myself in the island's natural beauty and relaxing environment.</p>
-                </section>
-                
-                <!-- Day 1 -->
-                <section>
-                    <h2>Day 1: Arrival and Beachfront Relaxation</h2>
-                    <p>Arriving by boat from Bali's mainland, I quickly settled into my beachfront bungalow. The first day was all about unwinding and enjoying the pristine beaches that Nusa Lembongan is famous for.</p>
-                    <img src="nusalemonganday1.jpg" alt="Dream Beach">
-                    <p>I spent the afternoon at Dream Beach, soaking up the sun and swimming in the calm, turquoise waters. The evening was perfect for a beachfront dinner, savoring fresh seafood while listening to the gentle waves.</p>
-                </section>
-                
-                <!-- Day 2 -->
-                <section>
-                    <h2>Day 2: Snorkeling and Exploring Mangrove Forests</h2>
-                    <p>The second day was an adventure into the island's underwater world. I joined a snorkeling tour that took me to vibrant coral reefs teeming with colorful fish and marine life.</p>
-                    <img src="nusalemonganday2.jpg" alt="Snorkeling">
-                    <p>In the afternoon, I explored the mangrove forests by kayak, navigating through the serene waterways and observing the diverse ecosystem. The tranquility of the mangroves provided a stark contrast to the bustling mainland.</p>
-                </section>
-                
-                <!-- Day 3 -->
-                <section>
-                    <h2>Day 3: Surfing and Farewell</h2>
-                    <p>On my final day, I decided to try my hand at surfing. Nusa Lembongan offers excellent waves for both beginners and experienced surfers. After a morning session, I relaxed at the beach, reflecting on my peaceful retreat.</p>
-                    <img src="nusalemonganday3.jpg" alt="Surfing">
-                    <p>In the afternoon, I did some last-minute shopping at the local markets, picking up handmade crafts and souvenirs. The trip concluded with a farewell lunch, savoring the last flavors of Nusa Lembongan before departing back to Bali.</p>
-                </section>
-                
-                <!-- Highlights -->
-                <section>
-                    <h2>Highlights</h2>
+
+                <!-- Removed the banner image -->
+
+                <!-- What to See -->
+                <div class="section">
+                    <h2>What to See</h2>
+                    <p>Nusa Lembongan, a small island off the southeast coast of Bali, is a serene paradise known for its crystal-clear waters, vibrant marine life, and laid-back atmosphere. Visitors can explore stunning beaches, vibrant coral reefs, and picturesque viewpoints. Key attractions include Dream Beach, Devil's Tear, and the mangrove forests.</p>
+                </div>
+
+                <!-- A Brief History of the City -->
+                <div class="section">
+                    <h2>A Brief History of the City</h2>
+                    <p>Nusa Lembongan has a rich history as a fishing village before transforming into a popular tourist destination. The island's name, "Lembongan," means "small" or "little" in Indonesian, reflecting its intimate and tranquil nature. Over the years, it has maintained its natural beauty and laid-back charm, making it a favorite among travelers seeking relaxation and adventure.</p>
+                </div>
+
+                <!-- Top 10 Attractions -->
+                <div class="section">
+                    <h2>Top 10 Attractions</h2>
+                    <ol>
+                        <li><strong>Dream Beach</strong> - Known for its white sandy shores and turquoise waters, ideal for sunbathing and swimming.</li>
+                        <li><strong>Devil's Tear</strong> - A natural wonder where waves crash against the rocky cliffs, creating impressive water sprays.</li>
+                        <li><strong>Jungle Tree House</strong> - An eco-friendly accommodation nestled among the mangroves, offering a unique stay experience.</li>
+                        <li><strong>Seaweed Farms</strong> - Explore local seaweed farms and learn about the traditional harvesting process.</li>
+                        <li><strong>Yellow Bridge</strong> - A picturesque bridge connecting Nusa Lembongan to Nusa Ceningan, perfect for leisurely walks.</li>
+                        <li><strong>Mangrove Forests</strong> - Navigate through the serene mangroves by kayak or boat, observing the diverse ecosystem.</li>
+                        <li><strong>Lembongan Island Viewpoint</strong> - Offers panoramic views of the island and the surrounding ocean.</li>
+                        <li><strong>Ocean Dream Cart</strong> - Experience a thrilling ride on this unique cart along the beachside promenade.</li>
+                        <li><strong>Snorkeling and Diving Spots</strong> - Discover vibrant coral reefs and marine life at popular spots like Manta Point and Crystal Bay.</li>
+                        <li><strong>Seaweed Museum</strong> - Learn about the history and significance of seaweed farming in Nusa Lembongan.</li>
+                    </ol>
+                </div>
+
+                <!-- What to Bring -->
+                <div class="section">
+                    <h2>What to Bring</h2>
                     <ul>
-                        <li>Dream Beach: Stunning white sands and crystal-clear waters.</li>
-                        <li>Snorkeling Tours: Exploring vibrant coral reefs and marine life.</li>
-                        <li>Mangrove Kayaking: Navigating through serene waterways.</li>
-                        <li>Surfing Sessions: Catching waves in a tranquil setting.</li>
-                        <li>Local Markets: Unique handmade crafts and souvenirs.</li>
+                        <li>Comfortable walking shoes for exploring the island's natural terrains.</li>
+                        <li>A swimsuit and beachwear for enjoying the pristine beaches.</li>
+                        <li>A sunhat, sunglasses, and sunscreen to protect against the tropical sun.</li>
+                        <li>Light, breathable clothing suitable for warm and humid climates.</li>
+                        <li>Camera or smartphone for capturing Nusa Lembongan's picturesque landscapes and vibrant marine life.</li>
+                        <li>Guidebook or travel app for additional information on attractions and local tips.</li>
+                        <li>Reusable water bottle to stay hydrated during your explorations.</li>
+                        <li>Light jacket or sweater for cooler evenings by the sea.</li>
+                        <li>Portable charger for your electronic devices.</li>
+                        <li>Personal medications and basic first aid essentials.</li>
                     </ul>
-                </section>
-                
-                <!-- Practical Information -->
-                <section>
-                    <h2>Practical Information</h2>
-                    <h3>Transportation</h3>
-                    <p>Nusa Lembongan is accessible by speedboat or public ferry from Bali's mainland. Within the island, renting a scooter is the most convenient way to explore. Taxis and bicycle rentals are also available for short distances.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>The island offers a range of accommodations, from budget hostels to luxurious beachfront villas. I stayed at a mid-range bungalow near Dream Beach, which provided comfortable amenities and stunning ocean views.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Nusa Lembongan is moderately priced. A comfortable daily budget ranges from $50 to $100 AUD, covering accommodation, meals, transportation, and activities.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section>
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
+                </div>
+
+                <!-- Embedded Video Above Currency -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/M2Ve90ODeZ4" title="Nusa Lembongan Highlights" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Currency -->
+                <div class="section">
+                    <h2>Currency</h2>
+                    <p>Nusa Lembongan, like the rest of Indonesia, uses the Indonesian Rupiah (IDR) as its official currency. While credit and debit cards are accepted in many establishments, it's advisable to carry some cash for smaller shops, local markets, and remote areas.</p>
+                </div>
+
+                <!-- Best Time to Visit -->
+                <div class="section">
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Nusa Lembongan is during the dry season, which runs from April to October. This period offers pleasant weather, ideal for beach activities, snorkeling, and diving. The rainy season, from November to March, brings occasional showers but the island remains vibrant and beautiful year-round.</p>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="section">
+                    <h2>Fun Facts</h2>
                     <ul>
-                        <li><strong>Do:</strong> Respect local customs and dress modestly when visiting temples.</li>
-                        <li><strong>Don’t:</strong> Litter on the beaches; keep the island pristine.</li>
-                        <li><strong>Do:</strong> Stay hydrated and protect yourself from the sun.</li>
-                        <li><strong>Don’t:</strong> Engage in reckless behavior during water activities; prioritize safety.</li>
+                        <li>Nusa Lembongan is part of the Nusa Islands, which also include Nusa Ceningan and Nusa Penida.</li>
+                        <li>The island is renowned for its vibrant coral reefs, making it a popular destination for snorkeling and diving enthusiasts.</li>
+                        <li>The name "Lembongan" means "small" or "little" in Indonesian, highlighting the island's intimate and serene nature.</li>
+                        <li>Nusa Lembongan is home to the famous Devil's Tear, where dramatic waves crash against rocky cliffs.</li>
+                        <li>The island has seen a rise in eco-friendly accommodations, promoting sustainable tourism practices.</li>
+                        <li>Seaweed farming is a significant industry in Nusa Lembongan, contributing to the local economy.</li>
+                        <li>The Yellow Bridge connects Nusa Lembongan to Nusa Ceningan, offering stunning views and easy access between the islands.</li>
+                        <li>Nusa Lembongan hosts various water sports events and festivals, attracting adventurers from around the world.</li>
+                        <li>The island's mangrove forests provide a unique habitat for diverse wildlife and offer tranquil kayaking experiences.</li>
+                        <li>Nusa Lembongan's laid-back atmosphere and natural beauty make it a favorite among digital nomads and retreat seekers.</li>
                     </ul>
-                    
-                    <h3>Packing Lists</h3>
-                    <ul>
-                        <li>Lightweight, breathable clothing suitable for tropical climates.</li>
-                        <li>Swimwear and beach essentials.</li>
-                        <li>Insect repellent and sunscreen.</li>
-                        <li>Comfortable footwear for walking and trekking.</li>
-                        <li>Waterproof bag for water activities.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Thai culture emphasizes politeness and respect. Always greet with a "wai" and avoid touching the heads of locals. Remove your shoes before entering someone's home or a temple. Public displays of affection are generally discouraged.</p>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section>
-                    <h2>Cultural Immersion</h2>
-                    <p>Engaging with local artisans in Nusa Lembongan provided a deeper appreciation for the island's craftsmanship. I participated in a traditional Thai cooking class, learning to prepare dishes like Green Curry and Papaya Salad from a skilled local chef.</p>
-                    <p>Visiting the local temples and attending a monk-led meditation session provided a deeper understanding of Thai spirituality and cultural practices.</p>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section>
-                    <h2>Food and Cuisine</h2>
-                    <p>Nusa Lembongan's culinary scene is a delightful blend of traditional Thai flavors and fresh seafood.</p>
-                    <ul>
-                        <li><strong>Tom Yum Goong:</strong> Spicy and sour shrimp soup.</li>
-                        <li><strong>Pad Thai:</strong> Stir-fried noodles with shrimp, tofu, and peanuts.</li>
-                        <li><strong>Green Curry:</strong> A spicy and aromatic curry with chicken and vegetables.</li>
-                        <li><strong>Mango Sticky Rice:</strong> Sweet mango slices over coconut-infused sticky rice.</li>
-                        <li><strong>Massaman Curry:</strong> Rich curry with beef and potatoes.</li>
-                    </ul>
-                    <p>I highly recommend trying the fresh seafood at local warungs (small family-owned eateries), where you can enjoy authentic Thai flavors in a relaxed setting.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section>
-                    <h2>Adventure and Activities</h2>
-                    <p>Nusa Lembongan offers a variety of activities for adventure enthusiasts:</p>
-                    <ul>
-                        <li><strong>Snorkeling and Diving:</strong> Explore vibrant coral reefs and marine life around the island.</li>
-                        <li><strong>Surfing:</strong> Catch waves at popular surf spots like Playgrounds and Shipwrecks.</li>
-                        <li><strong>Kayaking:</strong> Navigate through the island's serene waterways and mangrove forests.</li>
-                        <li><strong>Hiking:</strong> Trek to viewpoints and waterfalls for stunning island vistas.</li>
-                        <li><strong>Stand-Up Paddleboarding:</strong> Enjoy a peaceful paddle along the coastline.</li>
-                    </ul>
-                    <p>One of the most thrilling activities was the snorkeling expedition around the Japanese Garden, where I encountered a diverse array of marine species.</p>
-                </section>
-                
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>Meeting Lek, a local surfer, was a highlight of my trip. He invited me to join his morning surf sessions, sharing his passion and expertise. Our shared love for the ocean fostered a strong friendship.</p>
-                    <p>Another unforgettable moment was participating in a beach cleanup initiative organized by a local environmental group. Working alongside passionate volunteers instilled a sense of responsibility towards preserving Nusa Lembongan's pristine environment.</p>
-                </section>
-                
-                <!-- Conclusion -->
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Nusa Lembongan is a tranquil paradise that offers a perfect escape from the hustle and bustle of daily life. As Carl, I found my 3-day escape to be filled with relaxation, adventure, and meaningful cultural experiences.</p>
-                    <p>If you're planning a trip to Indonesia, Nusa Lembongan should definitely be on your list. Whether you're seeking serene beaches, exciting water activities, or cultural immersion, Nusa Lembongan has something for everyone.</p>
-                    <p>Until next time, happy travels!</p>
-                </section>
+                </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
