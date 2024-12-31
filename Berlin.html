@@ -2,17 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berlin - Carl Travels</title>
+    
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for city pages -->
     <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images, Headings, and Video CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Make embedded YouTube videos responsive */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Navigation Menu -->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,14 +101,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -41,17 +121,23 @@
     <main>
         <section class="city">
             <div class="container">
+                <!-- Main Title -->
                 <h1>Berlin</h1>
-               <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/qT4uDZ4MyZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
+                
+                <!-- Responsive YouTube Video -->
+                <div class="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/qT4uDZ4MyZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+                <!-- History Section -->
                 <h2>History</h2>
                 <p>Berlin, the capital of Germany, has a rich history that spans centuries. It has been a pivotal center for art, politics, and culture. The city was a focal point during World War II and the Cold War, symbolized by the Berlin Wall that divided East and West Berlin until 1989.</p>
                 
+                <!-- Population Section -->
                 <h2>Population</h2>
                 <p>As of 2023, Berlin has a population of approximately 3.8 million people, making it the largest city in Germany and one of the most populous cities in the European Union.</p>
                 
+                <!-- Notable Attractions Section -->
                 <h2>Notable Attractions</h2>
                 <ul>
                     <li>Brandenburg Gate</li>
@@ -61,12 +147,15 @@
                     <li>Alexanderplatz</li>
                 </ul>
                 
+                <!-- Best Time to Visit Section -->
                 <h2>Best Time to Visit</h2>
                 <p>The best time to visit Berlin is during late spring (May and June) and early autumn (September and October) when the weather is mild and pleasant.</p>
                 
+                <!-- Prices Overview Section -->
                 <h2>Prices Overview</h2>
                 <p>Berlin is relatively affordable compared to other major European capitals. Accommodation ranges from budget hostels at €20 per night to mid-range hotels at €70-€150 per night. Dining out is also reasonably priced, with meals costing between €10 and €25.</p>
                 
+                <!-- Fun Facts Section -->
                 <h2>Fun Facts</h2>
                 <ul>
                     <li>Berlin has more bridges than Venice, with over 960 spanning its numerous waterways.</li>
@@ -82,13 +171,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
