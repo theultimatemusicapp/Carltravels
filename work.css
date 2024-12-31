@@ -12,12 +12,28 @@
     color: #333;
 }
 
+/* Biography Section */
 .bio {
     max-width: 800px;
     margin: 0 auto 50px auto;
     line-height: 1.6;
     color: #555;
     font-size: 1.1em;
+    text-align: justify;
+}
+
+.bio .bio-image {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bio .bio-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .bio em {
@@ -25,6 +41,7 @@
     color: #000;
 }
 
+/* Videos Section */
 .videos {
     max-width: 1200px;
     margin: 0 auto;
@@ -60,6 +77,41 @@
     color: #333;
 }
 
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cta-section .cta {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-section .cta:hover {
+    background-color: #e65c00;
+}
+
+/* Active Navigation Link */
+.nav-menu li a.active {
+    color: #ff6600; /* Orange color for active link */
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .video {
@@ -67,8 +119,21 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .work-page h1 {
+        font-size: 2em;
+    }
+
+    .videos h2,
+    .cta-section h2 {
+        font-size: 1.8em;
+    }
+
     .video {
         flex: 1 1 100%;
+    }
+
+    .bio {
+        padding: 0 20px;
     }
 }
