@@ -2,19 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discovering the Timeless Charm of Hanoi: A 4-Day Adventure</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the timeless charm of Hanoi with Carl Travels. Discover its rich history, vibrant culture, and essential travel tips for Vietnam's capital city.">
+    <meta name="keywords" content="Hanoi, Travel, Vietnam Destinations, Carl Travels, Attractions, History">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Hanoi - Carl Travels">
+    <meta property="og:description" content="Discover the timeless charm of Hanoi with Carl Travels. Explore historical sites, cultural landmarks, and essential travel tips for Vietnam's capital city.">
+    <meta property="og:image" content="https://www.carltravels.com/images/hanoi-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/hanoi.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hanoi - Carl Travels">
+    <meta name="twitter:description" content="Discover the timeless charm of Hanoi with Carl Travels. Explore historical sites, cultural landmarks, and essential travel tips for Vietnam's capital city.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/hanoi-twitter-image.jpg">
+
+    <title>Hanoi - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Responsive Video Styles */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+            margin: 20px 0; /* Optional margin for spacing */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+
+            .video-container {
+                padding-bottom: 56.25%; /* Maintain aspect ratio on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -23,14 +152,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -39,166 +170,113 @@
     
     <!-- Main Content -->
     <main>
-        <section class="blog-post">
+        <section class="destination-details">
             <div class="container">
-                <h1>Discovering the Timeless Charm of Hanoi: A 4-Day Adventure</h1>
-                <div class="banner-image">
-                    <img src="hanoibanner.jpg" alt="Hanoi Banner">
+                <!-- Main Title -->
+                <h1>Hanoi</h1>
+                
+                <!-- Responsive Embedded Video (Banner Replacement) -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/6I8DYrGi37g" title="Hanoi Video" frameborder="0" allowfullscreen loading="lazy"></iframe>
                 </div>
-                
-                <!-- Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <p>Hanoi, the capital city of Vietnam, is a captivating blend of ancient traditions and contemporary vibrancy. As Carl, a 38-year-old traveler from Australia, I embarked on a 4-day journey to immerse myself in the rich culture and history that Hanoi has to offer.</p>
-                </section>
-                
-                <!-- Day 1 -->
-                <section>
-                    <h2>Day 1: Arrival and Exploring the Old Quarter</h2>
-                    <p>Arriving in Hanoi, I was immediately struck by the city's lively atmosphere. I settled into my accommodation near the Old Quarter, a maze of narrow streets teeming with shops, cafes, and historical sites.</p>
-                    <img src="hanoiday1.jpg" alt="Old Quarter">
-                    <p>In the afternoon, I wandered through the bustling markets, sampling delicious street food like Pho and Egg Coffee. The evening was spent watching a traditional Water Puppet Show, a unique Vietnamese art form.</p>
-                </section>
-                
-                <!-- Day 2 -->
-                <section>
-                    <h2>Day 2: Historical Landmarks and Cultural Experiences</h2>
-                    <p>The second day was dedicated to exploring Hanoi's historical landmarks. I visited the Ho Chi Minh Mausoleum Complex, where I learned about the legacy of Vietnam's revered leader.</p>
-                    <img src="hanoiday2.jpg" alt="Ho Chi Minh Mausoleum">
-                    <p>Later, I toured the Temple of Literature, Vietnam's first national university, and strolled around Hoan Kiem Lake, engaging with locals practicing Tai Chi.</p>
-                </section>
-                
-                <!-- Day 3 -->
-                <section>
-                    <h2>Day 3: Day Trip to Ninh Binh</h2>
-                    <p>On the third day, I took a day trip to Ninh Binh, often referred to as "Halong Bay on land." The serene landscapes of limestone karsts and winding rivers were breathtaking.</p>
-                    <img src="hanoiday3.jpg" alt="Ninh Binh">
-                    <p>I visited the ancient capital of Hoa Lu and enjoyed a boat ride through Trang An's picturesque waterways, surrounded by lush greenery.</p>
-                </section>
-                
-                <!-- Day 4 -->
-                <section>
-                    <h2>Day 4: Culinary Delights and Farewell</h2>
-                    <p>My final day in Hanoi was a culinary adventure. I joined a local cooking class where I learned to prepare traditional dishes like Bánh Xèo and Bun Thang.</p>
-                    <img src="hanoiday4.jpg" alt="Cooking Class">
-                    <p>In the afternoon, I visited the Vietnam Museum of Ethnology, gaining insights into the diverse cultures of Vietnam's 54 ethnic groups. The trip concluded with a farewell dinner at a rooftop restaurant, savoring the flavors of Hanoi one last time.</p>
-                </section>
-                
-                <!-- Highlights -->
-                <section>
-                    <h2>Highlights</h2>
+
+                <!-- Removed the banner image -->
+
+                <!-- What to See -->
+                <div class="section">
+                    <h2>What to See</h2>
+                    <p>Hanoi, the capital city of Vietnam, is a captivating blend of ancient traditions and contemporary vibrancy. Visitors can explore its historical landmarks, vibrant street markets, and a thriving arts scene. Key attractions include Hoan Kiem Lake, the Temple of Literature, and the bustling Old Quarter.</p>
+                </div>
+
+                <!-- A Brief History of the City -->
+                <div class="section">
+                    <h2>A Brief History of the City</h2>
+                    <p>Hanoi's history dates back over a thousand years, serving as the capital of various Vietnamese dynasties. The city has been a focal point during French colonial rule, which has left a lasting architectural legacy. Post-independence, Hanoi has evolved into a modern metropolis while preserving its rich cultural heritage, making it a symbol of Vietnam's resilience and growth.</p>
+                </div>
+
+                <!-- Top 10 Attractions -->
+                <div class="section">
+                    <h2>Top 10 Attractions</h2>
+                    <ol>
+                        <li><strong>Hoan Kiem Lake</strong> - A serene lake located in the heart of Hanoi, perfect for leisurely walks and cultural insights.</li>
+                        <li><strong>Temple of Literature</strong> - Vietnam's first national university, renowned for its beautiful gardens and historic architecture.</li>
+                        <li><strong>Old Quarter</strong> - A vibrant area filled with narrow streets, bustling markets, and traditional Vietnamese shops.</li>
+                        <li><strong>Ho Chi Minh Mausoleum</strong> - The final resting place of Vietnam's revered leader, offering a deep dive into the nation's history.</li>
+                        <li><strong>One Pillar Pagoda</strong> - An iconic Buddhist temple built on a single stone pillar, symbolizing purity and enlightenment.</li>
+                        <li><strong>Thang Long Water Puppet Theater</strong> - Experience traditional Vietnamese water puppetry, a unique and captivating art form.</li>
+                        <li><strong>Vietnam Museum of Ethnology</strong> - Showcases the diverse cultures of Vietnam's 54 ethnic groups through exhibits and artifacts.</li>
+                        <li><strong>West Lake</strong> - The largest freshwater lake in Hanoi, offering scenic views, temples, and upscale dining options.</li>
+                        <li><strong>Imperial Citadel of Thang Long</strong> - A UNESCO World Heritage Site that served as the political center of Vietnam for centuries.</li>
+                        <li><strong>Hanoi Opera House</strong> - A stunning example of French colonial architecture, hosting various cultural performances.</li>
+                    </ol>
+                </div>
+
+                <!-- What to Bring -->
+                <div class="section">
+                    <h2>What to Bring</h2>
                     <ul>
-                        <li>Old Quarter: The vibrant heart of Hanoi with its bustling streets and markets.</li>
-                        <li>Ho Chi Minh Mausoleum: A solemn tribute to Vietnam's national hero.</li>
-                        <li>Temple of Literature: A serene sanctuary of education and history.</li>
-                        <li>Ninh Binh Day Trip: Exploring the stunning landscapes beyond the city.</li>
-                        <li>Cooking Class: Hands-on experience with Vietnamese cuisine.</li>
+                        <li>Comfortable walking shoes for exploring Hanoi's hilly and cobblestone streets.</li>
+                        <li>A light jacket or sweater for cooler evenings.</li>
+                        <li>A raincoat or umbrella as Hanoi can experience sudden showers.</li>
+                        <li>Sunhat, sunglasses, and sunscreen to protect against the tropical sun.</li>
+                        <li>Camera or smartphone for capturing Hanoi's picturesque views and vibrant street life.</li>
+                        <li>Guidebook or travel app for additional information on attractions and local tips.</li>
+                        <li>Reusable water bottle to stay hydrated during your explorations.</li>
+                        <li>Portable charger for your electronic devices.</li>
+                        <li>Insect repellent for outdoor activities.</li>
+                        <li>Personal medications and basic first aid essentials.</li>
                     </ul>
-                </section>
-                
-                <!-- Practical Information -->
-                <section>
-                    <h2>Practical Information</h2>
-                    <h3>Transportation</h3>
-                    <p>Hanoi's transportation system includes buses, taxis, and ride-sharing services like Grab. Renting a motorbike is also a popular option for exploring the city at your own pace.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>The Old Quarter offers a wide range of accommodations, from budget hostels to boutique hotels. I stayed at a mid-range hotel that provided comfortable amenities and easy access to major attractions.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Hanoi is quite affordable for travelers. A daily budget of $25 to $40 AUD should cover meals, transportation, and entrance fees to attractions.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section>
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
+                </div>
+
+                <!-- Embedded Video Above Currency -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/31idWwYdPIc" title="Hanoi Highlights" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Currency -->
+                <div class="section">
+                    <h2>Currency</h2>
+                    <p>Hanoi, like the rest of Vietnam, uses the Vietnamese Dong (VND) as its official currency. While credit and debit cards are accepted in many establishments, it's advisable to carry some cash for smaller shops, local markets, and street vendors.</p>
+                </div>
+
+                <!-- Best Time to Visit -->
+                <div class="section">
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Hanoi is during the spring (February to April) and autumn (September to November) months when the weather is mild and pleasant. These seasons are ideal for sightseeing and outdoor activities. Summer (May to August) can be hot and humid, while winter (December to January) is cooler and drier.</p>
+                </div>
+
+                <!-- Fun Facts -->
+                <div class="section">
+                    <h2>Fun Facts</h2>
                     <ul>
-                        <li><strong>Do:</strong> Try the local street food; it's both delicious and affordable.</li>
-                        <li><strong>Don’t:</strong> Engage in aggressive bargaining; instead, negotiate politely.</li>
-                        <li><strong>Do:</strong> Dress modestly when visiting temples and religious sites.</li>
-                        <li><strong>Don’t:</strong> Tip excessively, but small gratuities for good service are appreciated.</li>
+                        <li>Hanoi is the second-largest city in Vietnam, with a population of over 8 million people.</li>
+                        <li>The city is known for its centuries-old architecture, including colonial buildings, ancient temples, and modern skyscrapers.</li>
+                        <li>Hanoi hosts the annual Tet Festival, celebrating the Vietnamese Lunar New Year with fireworks, parades, and traditional performances.</li>
+                        <li>West Lake in Hanoi is home to the Tran Quoc Pagoda, one of the oldest Buddhist temples in the city.</li>
+                        <li>The Temple of Literature is dedicated to Confucius and is a symbol of education and learning in Vietnam.</li>
+                        <li>Hanoi's street food scene is renowned worldwide, offering a diverse range of delicious and affordable dishes.</li>
+                        <li>Hoan Kiem Lake is not only a popular tourist spot but also holds cultural significance, housing the Ngoc Son Temple on a small island.</li>
+                        <li>The Hanoi Opera House was modeled after the Palais Garnier in Paris, showcasing French colonial architecture.</li>
+                        <li>Hanoi is a hub for traditional Vietnamese crafts, including silk weaving, pottery, and lacquerware.</li>
+                        <li>The city's underground network of tunnels, similar to the Cu Chi Tunnels in Ho Chi Minh City, played a crucial role during various historical periods.</li>
                     </ul>
-                    
-                    <h3>Packing Lists</h3>
-                    <ul>
-                        <li>Lightweight clothing suitable for warm and humid weather.</li>
-                        <li>Comfortable walking shoes.</li>
-                        <li>Rain jacket or umbrella for unexpected showers.</li>
-                        <li>Insect repellent.</li>
-                        <li>Power adapter for Australian plugs.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Vietnamese culture values respect and politeness. Always greet with a smile and a slight bow. It's customary to remove your shoes before entering someone's home or a temple. Public displays of affection are generally discouraged.</p>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section>
-                    <h2>Cultural Immersion</h2>
-                    <p>One of the most enriching experiences was visiting a local artisan's workshop in the Old Quarter. The craftsman shared insights into traditional Vietnamese lacquerware, allowing me to participate in the intricate painting process.</p>
-                    <p>Attending a traditional Vietnamese tea ceremony provided a serene break from the city's hustle, highlighting the country's emphasis on hospitality and harmony.</p>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section>
-                    <h2>Food and Cuisine</h2>
-                    <p>Hanoi is a culinary treasure trove, offering a variety of flavors that reflect its rich cultural heritage.</p>
-                    <ul>
-                        <li><strong>Bún Chả:</strong> Grilled pork served with rice noodles and fresh herbs.</li>
-                        <li><strong>Bánh Xèo:</strong> Savory pancakes filled with shrimp, pork, and bean sprouts.</li>
-                        <li><strong>Phở:</strong> Aromatic noodle soup with beef or chicken.</li>
-                        <li><strong>Cà Phê Trứng:</strong> Egg coffee, a unique Hanoi specialty.</li>
-                        <li><strong>Mì Vằn Thắn:</strong> Wonton noodle soup, similar to Japanese ramen.</li>
-                    </ul>
-                    <p>I highly recommend trying Bún Chả at a local eatery where the generous portions and flavorful broth left me completely satisfied.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section>
-                    <h2>Adventure and Activities</h2>
-                    <p>Hanoi offers a range of activities for adventure enthusiasts:</p>
-                    <ul>
-                        <li><strong>Motorbike Tours:</strong> Navigate the city's bustling streets and discover hidden gems.</li>
-                        <li><strong>Cyclo Rides:</strong> Enjoy a leisurely ride through the Old Quarter's historic streets.</li>
-                        <li><strong>Cooking Classes:</strong> Learn to prepare authentic Vietnamese dishes.</li>
-                        <li><strong>Kayaking in Ninh Binh:</strong> Explore the serene waterways and limestone karsts.</li>
-                        <li><strong>Night Markets:</strong> Experience the vibrant nightlife with shopping and street performances.</li>
-                    </ul>
-                    <p>One exhilarating activity was the cycling tour through the lush landscapes of Ninh Binh, where I navigated narrow paths surrounded by breathtaking scenery.</p>
-                </section>
-                
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>During my stay, I met Mai, a local university student passionate about environmental conservation. She invited me to join her volunteer group cleaning up a nearby lake, which was a humbling and rewarding experience.</p>
-                    <p>Another memorable moment was sharing stories with fellow travelers at a rooftop bar, where we bonded over our love for travel and exchanged tips for exploring Southeast Asia.</p>
-                </section>
-                
-                <!-- Conclusion -->
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Hanoi is a city that captivates with its timeless charm, rich history, and warm hospitality. As Carl, I found every moment spent here to be filled with discovery and connection.</p>
-                    <p>If you're planning a trip to Vietnam, Hanoi should undoubtedly be on your list. From its bustling markets to tranquil lakes, the city offers a diverse range of experiences that cater to all types of travelers.</p>
-                    <p>Until next time, happy travels!</p>
-                </section>
+                </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
