@@ -2,19 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the filmography and creative works of Carlos Tomich, including documentaries and storytelling projects.">
+    <meta name="keywords" content="Carl Travels, Carlos Tomich, My Work, Documentary Films, Busking for Berlin, Busk Life, A Sail Untold">
+    <meta name="author" content="Carlos Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="My Work - Carl Travels">
+    <meta property="og:description" content="Discover the documentaries and projects by Carlos Tomich, capturing the human spirit and adventures around the world.">
+    <meta property="og:image" content="https://www.carltravels.com/images/work-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/work.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Work - Carl Travels">
+    <meta name="twitter:description" content="Discover the documentaries and projects by Carlos Tomich, capturing the human spirit and adventures around the world.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/work-twitter-image.jpg">
+
     <title>My Work - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for work page -->
     <link rel="stylesheet" href="work.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html" class="active">My Work</a></li>
@@ -23,14 +61,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -45,6 +85,9 @@
                 
                 <!-- Introduction/Biography -->
                 <section class="bio">
+                    <div class="bio-image">
+                        <img src="carlworking.jpg" alt="Carlos Tomich Filmmaking">
+                    </div>
                     <p>My filmmaking journey began in 2011, capturing the raw energy of live music and band performances. These early experiences fueled my passion for storytelling and my talent for uncovering the emotion and humanity in real-life moments.</p>
                     
                     <p>In 2013, I moved to Berlin to create <em>Busking for Berlin</em>, my first feature documentary. The film follows “Neigh Kid Horse,” a young street performer navigating Berlin’s vibrant busking scene, as he rises to local fame. Praised for its unfiltered portrayal of life on the streets, the documentary highlighted the passion and perseverance it takes to turn art into a livelihood.</p>
@@ -58,27 +101,32 @@
                     <p>With a love for travel that has taken me to over 40 countries and more than 300 cities, and having lived in 4 different countries, my work consistently captures the grit, creativity, and resilience of the human spirit. Whether documenting street performers, daring adventures, or cultural traditions, my films invite viewers to step into worlds they may never have encountered. I’m not just a filmmaker—I'm a storyteller who lives the stories I tell.</p>
                 </section>
                 
-                <!-- Embedded YouTube Videos -->
+                <!-- Documentaries Section -->
                 <section class="videos">
                     <h2>My Documentaries</h2>
                     <div class="video-row">
                         <div class="video">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/S8L4Hmwkgiw" title="Busking for Berlin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/S8L4Hmwkgiw" title="Busking for Berlin" frameborder="0" allowfullscreen></iframe>
                             <p><em>Busking for Berlin</em></p>
                         </div>
                         <div class="video">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/WjtMEQx34NE" title="Busk Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/WjtMEQx34NE" title="Busk Life" frameborder="0" allowfullscreen></iframe>
                             <p><em>Busk Life</em></p>
                         </div>
                         <div class="video">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/6iDgajITe6Q" title="A Sail Untold" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/6iDgajITe6Q" title="A Sail Untold" frameborder="0" allowfullscreen></iframe>
                             <p><em>A Sail Untold</em></p>
                         </div>
                     </div>
                 </section>
+
+                <!-- Call to Action -->
+                <section class="cta-section">
+                    <h2>Interested in Collaborating?</h2>
+                    <p>If you're interested in collaborating on a project, feel free to reach out to me!</p>
+                    <a href="contact.html" class="cta">Contact Me</a>
+                </section>
                 
-                <!-- Additional Sections (Optional) -->
-                <!-- You can add more sections here if needed -->
             </div>
         </section>
     </main>
@@ -88,13 +136,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
