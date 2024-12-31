@@ -34,6 +34,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and h2 Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image if desired */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Nice orange color */
+            /* Optional: Add additional styling */
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Optional: Enhance h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -78,11 +104,11 @@
     </header>
     
     <!-- Main Content -->
-    <main><center>
+    <main>
         <section class="destination-details">
             <div class="container">
                 <h1>Vienna</h1>
-                <img src="vienna-banner.jpg" alt="Vienna" class="banner-image">
+                <img src="vienna-banner.jpg" alt="Vienna" class="banner-image responsive-image">
 
                 <div class="section">
                     <h2>What to See</h2>
@@ -109,8 +135,7 @@
                         <li>Hundertwasserhaus</li>
                     </ol>
                 </div>
-                                <img src="vienna1.jpg" alt="Vienna">
-
+                <img src="vienna1.jpg" alt="Vienna" class="responsive-image">
 
                 <div class="section">
                     <h2>What to Bring</h2>
@@ -132,7 +157,8 @@
                     <h2>Currency</h2>
                     <p>The currency in Vienna is the Euro (€).</p>
                 </div>
- <img src="vienna2.jpg" alt="Vienna">
+                <img src="vienna2.jpg" alt="Vienna" class="responsive-image">
+
                 <div class="section">
                     <h2>Best Time to Visit</h2>
                     <p>Spring (April to June) and Autumn (September to October) offer mild weather and fewer tourists. Summer is vibrant with outdoor concerts and festivals, while winter is perfect for enjoying Vienna's festive Christmas markets.</p>
@@ -148,9 +174,9 @@
                         <li>The city hosts the annual Vienna Film Festival, attracting filmmakers and cinephiles globally.</li>
                     </ul>
                 </div>
+                <img src="vienna3.jpg" alt="Vienna" class="responsive-image">
             </div>
-             <img src="vienna3.jpg" alt="Vienna">
-        </section></center>
+        </section>
     </main>
     
     <!-- Footer Section -->
