@@ -2,61 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore Warsaw, the vibrant capital of Poland, with its rich history, stunning architecture, and cultural landmarks.">
+    <meta name="keywords" content="Warsaw, Poland, Travel, Attractions, History">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Warsaw - Carl Travels">
+    <meta property="og:description" content="Discover Warsaw's blend of historical charm and modern vitality.">
+    <meta property="og:image" content="https://www.carltravels.com/images/warsaw-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/Warsaw.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Warsaw - Carl Travels">
+    <meta name="twitter:description" content="Discover Warsaw's blend of historical charm and modern vitality.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/warsaw-twitter-image.jpg">
+
     <title>Warsaw - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Warsaw</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="destinations.html" class="active">Destinations</a>
-        </nav>
+        <div class="container">
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
     </header>
+    
+    <!-- Main Content -->
     <main>
-        <section>
-            <h2>What to See</h2>
-            <p>The Royal Castle, Old Town Market Square, Łazienki Park, and the Warsaw Uprising Museum are must-visit spots.</p>
-        </section>
-        <section>
-            <h2>A Brief History of the City</h2>
-            <p>Warsaw is a city with a tumultuous history, including being heavily impacted during World War II. It has since rebuilt itself into a thriving metropolis.</p>
-        </section>
-        <section>
-            <h2>Top 10 Attractions</h2>
-            <ul>
-                <li>The Royal Castle</li>
-                <li>Łazienki Park</li>
-                <li>Warsaw Uprising Museum</li>
-                <li>Old Town Market Square</li>
-                <li>Palace of Culture and Science</li>
-                <li>Warsaw Zoo</li>
-                <li>POLIN Museum of the History of Polish Jews</li>
-                <li>Praga District</li>
-                <li>Wilanów Palace</li>
-                <li>Vistula River Beaches</li>
-            </ul>
-        </section>
-        <section>
-            <h2>What to Bring</h2>
-            <p>Comfortable walking shoes, a camera, a city guidebook, and weather-appropriate clothing.</p>
-        </section>
-        <section>
-            <h2>Currency</h2>
-            <p>Polish Zloty (PLN)</p>
-        </section>
-        <section>
-            <h2>Best Time to Visit</h2>
-            <p>Late spring and early autumn for pleasant weather and fewer crowds.</p>
-        </section>
-        <section>
-            <h2>Fun Facts</h2>
-            <p>Warsaw’s Old Town is a UNESCO World Heritage Site and was meticulously reconstructed after World War II.</p>
+        <section class="destination-details">
+            <div class="container">
+                <h1>Warsaw</h1>
+                <img src="warsaw-banner.jpg" alt="Warsaw" class="banner-image">
+
+                <div class="section">
+                    <h2>What to See</h2>
+                    <p>Warsaw offers a mix of modern and historical sights. Key places include the Old Town Market Square, Royal Castle, Łazienki Park, and the Warsaw Uprising Museum.</p>
+                </div>
+
+                <div class="section">
+                    <h2>A Brief History of the City</h2>
+                    <p>Warsaw, the capital of Poland, has a history marked by resilience. It was almost entirely destroyed during World War II but was meticulously rebuilt, preserving its historical architecture while embracing modernity.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Top 10 Attractions</h2>
+                    <ol>
+                        <li>Old Town Market Square</li>
+                        <li>Royal Castle</li>
+                        <li>Łazienki Park</li>
+                        <li>Warsaw Uprising Museum</li>
+                        <li>Palace of Culture and Science</li>
+                        <li>Wilanów Palace</li>
+                        <li>POLIN Museum of the History of Polish Jews</li>
+                        <li>Warsaw Zoo</li>
+                        <li>Nowy Świat Street</li>
+                        <li>Fryderyk Chopin Museum</li>
+                    </ol>
+                </div>
+
+                <img src="warsawtower.jpg" alt="The Warsaw tower">
+
+
+                <div class="section">
+                    <h2>What to Bring</h2>
+                    <ul>
+                        <li>Comfortable walking shoes</li>
+                        <li>Weather-appropriate clothing</li>
+                        <li>Travel adapter (Type E socket)</li>
+                        <li>Camera or smartphone for photos</li>
+                        <li>Guidebook or map</li>
+                        <li>Basic Polish phrases</li>
+                        <li>Reusable water bottle</li>
+                        <li>Umbrella or raincoat</li>
+                        <li>Personal medications</li>
+                        <li>Portable charger</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Currency</h2>
+                    <p>The currency in Warsaw is the Polish Złoty (PLN).</p>
+                </div>
+
+                <div class="section">
+                    <h2>Best Time to Visit</h2>
+                    <p>Spring (April to June) and Autumn (September to October) offer pleasant weather and fewer tourists. Summer is also popular but can be crowded.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Fun Facts</h2>
+                    <ul>
+                        <li>Warsaw is home to one of the largest green spaces in Europe, Łazienki Park.</li>
+                        <li>The Warsaw Uprising Museum commemorates the 1944 uprising against Nazi occupation.</li>
+                        <li>Warsaw's Old Town was rebuilt from scratch after World War II, earning it a UNESCO World Heritage status.</li>
+                        <li>The city hosts the annual Chopin Piano Competition, honoring the famous composer.</li>
+                        <li>Warsaw has a vibrant nightlife with numerous bars, clubs, and live music venues.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
+    
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
