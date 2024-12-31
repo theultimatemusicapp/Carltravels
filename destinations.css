@@ -72,7 +72,8 @@
 }
 
 .continent input[type="checkbox"]:checked ~ .cities {
-    max-height: 1000px; /* Adjust as needed */
+    /* Updated max-height to fit content */
+    max-height: 10000px;
 }
 
 /* Cities Grid Styles */
