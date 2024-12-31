@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bristol - Carl Travels</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
     <meta name="description" content="Explore the vibrant city of Bristol with Carl Travels. Discover its history, attractions, and travel tips.">
     <meta name="keywords" content="Bristol, Travel, UK Destinations, Carl Travels, Attractions, History">
+    <meta name="author" content="Carl Tomich">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Bristol - Carl Travels">
     <meta property="og:description" content="Discover the best of Bristol with Carl Travels. Explore top attractions, history, and essential travel tips.">
-    <meta property="og:image" content="images/bristol-og-image.jpg">
+    <meta property="og:image" content="https://www.carltravels.com/images/bristol-og-image.jpg">
     <meta property="og:url" content="https://www.carltravels.com/bristol.html">
     <meta property="og:type" content="website">
 
@@ -20,17 +21,96 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bristol - Carl Travels">
     <meta name="twitter:description" content="Discover the best of Bristol with Carl Travels. Explore top attractions, history, and essential travel tips.">
-    <meta name="twitter:image" content="images/bristol-twitter-image.jpg">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/bristol-twitter-image.jpg">
 
+    <title>Bristol - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
+            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-            
+
             <!-- Hamburger Menu Icon for Mobile -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
@@ -45,7 +125,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
                     <li><a href="donate.html">Donate</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -68,25 +148,23 @@
     
     <!-- Main Content -->
     <main>
-        <section class="city-page">
+        <section class="destination-details">
             <div class="container">
+                <!-- Main Title -->
                 <h1>Bristol</h1>
-                <img src="images/bristol-banner.jpg" alt="Bristol" class="city-banner">
+                <img src="images/bristol-banner.jpg" alt="Bristol" class="responsive-image">
 
-                <!-- What to See -->
-                <section class="section">
+                <div class="section">
                     <h2>What to See</h2>
                     <p>Bristol is known for its unique blend of historic maritime landmarks and vibrant cultural scene. Explore the charming harbourside, artistic street murals, and enjoy live music at one of the city's many venues.</p>
-                </section>
+                </div>
 
-                <!-- Brief History -->
-                <section class="section">
+                <div class="section">
                     <h2>A Brief History of the City</h2>
                     <p>With a history dating back over a thousand years, Bristol has been a major port in the UK's maritime trade. The city's rich industrial past is evident in its historic docks, where innovation flourished, including the construction of Brunel's SS Great Britain.</p>
-                </section>
+                </div>
 
-                <!-- Top 10 Attractions -->
-                <section class="section">
+                <div class="section">
                     <h2>Top 10 Attractions</h2>
                     <ol>
                         <li><strong>Clifton Suspension Bridge</strong> - An engineering marvel offering stunning views of the Avon Gorge.</li>
@@ -100,28 +178,35 @@
                         <li><strong>Street Art Tours</strong> - Experience the works of Banksy and other famous street artists.</li>
                         <li><strong>Wild Place Project</strong> - A wildlife conservation park with a range of exotic animals.</li>
                     </ol>
-                </section>
+                </div>
 
-                <!-- What to Bring -->
-                <section class="section">
+                <div class="section">
                     <h2>What to Bring</h2>
-                    <p>Pack comfortable walking shoes to explore the city's hilly terrain. A raincoat or umbrella is useful as Bristol experiences frequent rain. Don’t forget a map or GPS for navigating the city’s charming streets.</p>
-                </section>
+                    <ul>
+                        <li>Comfortable walking shoes to explore the city's hilly terrain.</li>
+                        <li>A raincoat or umbrella as Bristol experiences frequent rain.</li>
+                        <li>Map or GPS for navigating the city’s charming streets.</li>
+                        <li>Camera or smartphone for capturing memories.</li>
+                        <li>Guidebook or travel app for additional information.</li>
+                        <li>Reusable water bottle to stay hydrated.</li>
+                        <li>Light jacket for cooler evenings.</li>
+                        <li>Portable charger for your devices.</li>
+                        <li>Snacks for on-the-go energy.</li>
+                        <li>Personal medications and first aid essentials.</li>
+                    </ul>
+                </div>
 
-                <!-- Currency -->
-                <section class="section">
+                <div class="section">
                     <h2>Currency</h2>
                     <p>Bristol uses the British Pound (£). While credit cards are widely accepted, it's handy to have some cash for smaller shops and markets.</p>
-                </section>
+                </div>
 
-                <!-- Best Time to Visit -->
-                <section class="section">
+                <div class="section">
                     <h2>Best Time to Visit</h2>
                     <p>The best time to visit Bristol is from April to October when the weather is mild and many festivals occur, such as the Bristol Harbour Festival and the Bristol Balloon Fiesta.</p>
-                </section>
+                </div>
 
-                <!-- Fun Facts -->
-                <section class="section">
+                <div class="section">
                     <h2>Fun Facts</h2>
                     <ul>
                         <li>Bristol is often regarded as the birthplace of street art and the home city of Banksy.</li>
@@ -129,7 +214,7 @@
                         <li>Bristol is proud of its green initiatives, with extensive cycle paths and green spaces.</li>
                         <li>The Bristol Pound is the city's own currency, encouraging local shopping and sustainability.</li>
                     </ul>
-                </section>
+                </div>
             </div>
         </section>
     </main>
@@ -153,3 +238,4 @@
     </footer>
 </body>
 </html>
+
