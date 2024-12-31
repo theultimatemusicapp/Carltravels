@@ -27,15 +27,15 @@
 .continent {
     margin-bottom: 50px;
     border-radius: 8px;
-    overflow: hidden;
+    /* Removed overflow: hidden to allow cities to be fully visible */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Updated Continent Header Styles */
+/* Continent Header Styles */
 .continent-header {
     display: block;
     position: relative;
-    overflow: hidden;
+    /* Removed overflow: hidden */
     cursor: default; /* Remove pointer cursor since it's no longer clickable */
 }
 
@@ -60,15 +60,16 @@
     transform: scale(1.05);
 }
 
-/* Ensure .cities is always visible */
-.continent .cities {
+/* Cities Styles */
+.cities {
     background-color: #f9f9f9;
     padding: 20px;
-    /* Optional: Add border-top to separate from header */
     border-top: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Cities Grid Styles */
 .cities a {
     display: inline-block;
     margin: 10px;
