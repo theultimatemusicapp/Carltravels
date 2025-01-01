@@ -4,10 +4,136 @@
     <meta charset="UTF-8">
     <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Discover Budapest, the stunning capital of Hungary, with Carl Travels. Explore its rich history, vibrant culture, and top attractions.">
+    <meta name="keywords" content="Budapest, Hungary, Travel, Carl Travels, Attractions, History, Lakes, Nature">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Budapest - Carl Travels">
+    <meta property="og:description" content="Explore Budapest's beautiful landscapes, historical sites, and vibrant cultural scene with Carl Travels.">
+    <meta property="og:image" content="https://www.carltravels.com/budapest-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/Budapest.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Budapest - Carl Travels">
+    <meta name="twitter:description" content="Explore Budapest's beautiful landscapes, historical sites, and vibrant cultural scene with Carl Travels.">
+    <meta name="twitter:image" content="https://www.carltravels.com/budapest-twitter-image.jpg">
+
     <title>Budapest - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto; /* Center the image with spacing */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+
+            /* Adjust iframe size for smaller screens */
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Style for video container to make it responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style for banner images */
+        .banner-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -53,39 +179,66 @@
     
     <!-- Main Content -->
     <main>
-        <section class="city">
+        <section class="destination-details">
             <div class="container">
                 <!-- Main Title -->
                 <h1>Budapest</h1>
                 <img src="budapestbanner.jpg" alt="Budapest Banner" class="banner-image responsive-image">
                 
-                <h2>History</h2>
-                <p>Budapest, the capital of Hungary, was formed in 1872 by the unification of Buda, Pest, and Óbuda. The city has a rich history influenced by Roman, Ottoman, and Austro-Hungarian empires. It has been a cultural and economic hub in Central Europe for centuries.</p>
-                
-                <h2>Population</h2>
-                <p>As of 2023, Budapest has a population of approximately 1.75 million people, making it the largest city in Hungary.</p>
-                
-                <h2>Notable Attractions</h2>
-                <ul>
-                    <li>Hungarian Parliament Building</li>
-                    <li>Chain Bridge</li>
-                    <li>Thermal Baths (Gellért, Széchenyi)</li>
-                    <li>Buda Castle</li>
-                    <li>St. Stephen's Basilica</li>
-                </ul>
-                
-                <h2>Best Time to Visit</h2>
-                <p>The best time to visit Budapest is during the spring (April to June) and fall (September to October) when the weather is mild and the city is less crowded.</p>
-                
-                <h2>Prices Overview</h2>
-                <p>Budapest is known for being affordable. Accommodation ranges from budget hostels at €15 per night to mid-range hotels at €60-€120 per night. Dining out is inexpensive, with meals costing between €8 and €25.</p>
-                
-                <h2>Fun Facts</h2>
-                <ul>
-                    <li>Budapest is home to the world’s first underground metro line, opened in 1896.</li>
-                    <li>The city has over 100 thermal springs, making it famous for its spa culture.</li>
-                    <li>Budapest hosts one of Europe’s largest Christmas markets, attracting millions of visitors annually.</li>
-                </ul>
+                <!-- History Section -->
+                <div class="section">
+                    <h2>History</h2>
+                    <p>Budapest, the capital of Hungary, was formed in 1872 by the unification of Buda, Pest, and Óbuda. The city has a rich history influenced by Roman, Ottoman, and Austro-Hungarian empires. It has been a cultural and economic hub in Central Europe for centuries.</p>
+                </div>
+
+                <!-- Insert budapest1.jpg -->
+                <img src="budapest1.jpg" alt="Budapest Historical Architecture" class="responsive-image">
+
+                <!-- Population Section -->
+                <div class="section">
+                    <h2>Population</h2>
+                    <p>As of 2023, Budapest has a population of approximately 1.75 million people, making it the largest city in Hungary.</p>
+                </div>
+
+                <!-- Insert budapest2.jpg -->
+                <img src="budapest2.jpg" alt="Budapest Skyline" class="responsive-image">
+
+                <!-- Notable Attractions Section -->
+                <div class="section">
+                    <h2>Notable Attractions</h2>
+                    <ul>
+                        <li>Hungarian Parliament Building</li>
+                        <li>Chain Bridge</li>
+                        <li>Thermal Baths (Gellért, Széchenyi)</li>
+                        <li>Buda Castle</li>
+                        <li>St. Stephen's Basilica</li>
+                    </ul>
+                </div>
+
+                <!-- Insert budapest3.jpg -->
+                <img src="budapest3.jpg" alt="Budapest Thermal Baths" class="responsive-image">
+
+                <!-- Best Time to Visit Section -->
+                <div class="section">
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Budapest is during the spring (April to June) and fall (September to October) when the weather is mild and the city is less crowded.</p>
+                </div>
+
+                <!-- Prices Overview Section -->
+                <div class="section">
+                    <h2>Prices Overview</h2>
+                    <p>Budapest is known for being affordable. Accommodation ranges from budget hostels at €15 per night to mid-range hotels at €60-€120 per night. Dining out is inexpensive, with meals costing between €8 and €25.</p>
+                </div>
+
+                <!-- Fun Facts Section -->
+                <div class="section">
+                    <h2>Fun Facts</h2>
+                    <ul>
+                        <li>Budapest is home to the world’s first underground metro line, opened in 1896.</li>
+                        <li>The city has over 100 thermal springs, making it famous for its spa culture.</li>
+                        <li>Budapest hosts one of Europe’s largest Christmas markets, attracting millions of visitors annually.</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
