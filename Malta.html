@@ -12,16 +12,16 @@
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Malta - Carl Travels">
-    <meta property="og:description" content="Experience Malta's rich history, pristine beaches, and lively cultural scene.">
-    <meta property="og:image" content="https://www.carltravels.com/images/malta-og-image.jpg">
+    <meta property="og:description" content="Experience Malta's rich history, pristine beaches, and lively cultural scene with Carl Travels.">
+    <meta property="og:image" content="https://www.carltravels.com/malta-og-image.jpg">
     <meta property="og:url" content="https://www.carltravels.com/Malta.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Malta - Carl Travels">
-    <meta name="twitter:description" content="Experience Malta's rich history, pristine beaches, and lively cultural scene.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/malta-twitter-image.jpg">
+    <meta name="twitter:description" content="Experience Malta's rich history, pristine beaches, and lively cultural scene with Carl Travels.">
+    <meta name="twitter:image" content="https://www.carltravels.com/malta-twitter-image.jpg">
 
     <title>Malta - Carl Travels</title>
 
@@ -34,6 +34,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images and Heading Titles CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto; /* Center the image with spacing */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main h2 {
+                font-size: 1.5em;
+            }
+
+            /* Adjust iframe size for smaller screens */
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Style for video container to make it responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style for banner images */
+        .banner-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -81,19 +181,29 @@
     <main>
         <section class="destination-details">
             <div class="container">
+                <!-- Main Title -->
                 <h1>Malta</h1>
-                <img src="images/malta-banner.jpg" alt="Malta" class="banner-image">
-
+                <img src="malta-banner.jpg" alt="Malta Banner" class="banner-image responsive-image">
+                
+                <!-- What to See Section -->
                 <div class="section">
                     <h2>What to See</h2>
                     <p>Malta is rich in history and natural beauty. Key attractions include Valletta, Mdina, the Blue Lagoon, Ħaġar Qim Temples, and the stunning beaches of Golden Bay and Mellieħa.</p>
                 </div>
 
+                <!-- Insert malta1.jpg -->
+                <img src="malta1.jpg" alt="Valletta, Malta's Capital" class="responsive-image">
+
+                <!-- A Brief History of the City Section -->
                 <div class="section">
                     <h2>A Brief History of the City</h2>
                     <p>Malta's history spans over 7,000 years, featuring ancient megalithic temples, Roman influence, medieval knights, and British colonial heritage. This blend of cultures is reflected in its architecture, traditions, and cuisine.</p>
                 </div>
 
+                <!-- Insert malta2.jpg -->
+                <img src="malta2.jpg" alt="Mdina, the Silent City" class="responsive-image">
+
+                <!-- Top 10 Attractions Section -->
                 <div class="section">
                     <h2>Top 10 Attractions</h2>
                     <ol>
@@ -110,6 +220,10 @@
                     </ol>
                 </div>
 
+                <!-- Insert malta3.jpg -->
+                <img src="malta3.jpg" alt="Blue Lagoon, Comino Island" class="responsive-image">
+
+                <!-- What to Bring Section -->
                 <div class="section">
                     <h2>What to Bring</h2>
                     <ul>
@@ -126,16 +240,31 @@
                     </ul>
                 </div>
 
+                <!-- Famous Food Section -->
+                <div class="section">
+                    <h2>Most Famous Food</h2>
+                    <p><strong>Pastizzi:</strong> A beloved Maltese pastry filled with ricotta cheese or mushy peas. Originating from Sicily, pastizzi became a staple in Malta due to the island's historical connections with the Knights of St. John.</p>
+                </div>
+
+                <!-- Currency Section -->
                 <div class="section">
                     <h2>Currency</h2>
                     <p>The currency in Malta is the Euro (€).</p>
                 </div>
 
+                <!-- Best Time to Visit Section -->
                 <div class="section">
                     <h2>Best Time to Visit</h2>
                     <p>Spring (April to June) and Autumn (September to October) offer pleasant weather and fewer tourists. Summer is ideal for beach activities, while winter is mild and perfect for exploring historical sites.</p>
                 </div>
 
+                <!-- Prices Overview Section -->
+                <div class="section">
+                    <h2>Prices Overview</h2>
+                    <p>Malta is known for being affordable. Accommodation ranges from budget hostels at €15 per night to mid-range hotels at €60-€120 per night. Dining out is inexpensive, with meals costing between €8 and €25.</p>
+                </div>
+
+                <!-- Fun Facts Section -->
                 <div class="section">
                     <h2>Fun Facts</h2>
                     <ul>
