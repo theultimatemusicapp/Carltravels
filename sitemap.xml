@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemap generated for CarlTravels.com -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Combined Page + Video Sitemap for CarlTravels.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
   <!-- ===================
-       Main Pages
+       Main Pages (Some may not have videos)
   =================== -->
   <url>
     <loc>https://www.carltravels.com/index.html</loc>
@@ -54,134 +55,203 @@
   <url>
     <loc>https://www.carltravels.com/corfu.html</loc>
     <lastmod>2025-01-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/sUgPTJqgN-k</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Berlin.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/qT4uDZ4MyZk</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Porto.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/KDYI7DaDUBo</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Lisbon.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/gTuKzbPNMlU</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Faro.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/1kLn1V8wrDM</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Marseille.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/HBiu1-TwjJc</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/korcula.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/NPpCfDRM2PY</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/dubrovnik.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- MULTIPLE VIDEOS -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/5fUtJgxq-2w</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/HL6slingVss</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/kOacooTeZk4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/JUBNVo1VTBY</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/paris.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- No videos found (example) -->
   </url>
+
   <url>
     <loc>https://www.carltravels.com/potsdam.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- No videos found -->
   </url>
+
   <url>
     <loc>https://www.carltravels.com/athens.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/rome.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
-  <!-- "Amalfi Coast.html" (with space) -->
+
   <url>
     <loc>https://www.carltravels.com/Amalfi%20Coast.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Budapest.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Prague.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Warsaw.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Tenerife.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Bratislava.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Milan.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Zurich.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Copenhagen.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Amsterdam.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Barcelona.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Malta.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Pompei.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Vienna.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Venice.html</loc>
     <lastmod>2025-01-02</lastmod>
@@ -197,37 +267,48 @@
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Bristol.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Bath.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Stonehenge.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Edinburgh.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
-  <!-- "Loch Ness.html" (with space) -->
+
+  <!-- "Loch Ness.html" with space -->
   <url>
     <loc>https://www.carltravels.com/Loch%20Ness.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/1kLn1V8wrDM</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Manchester.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/Cardiff.html</loc>
     <lastmod>2025-01-02</lastmod>
@@ -243,21 +324,29 @@
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/tirana.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/7jdi6gE6dWc</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/varna.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/banjaluka.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/bucharest.html</loc>
     <lastmod>2025-01-02</lastmod>
@@ -273,60 +362,102 @@
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/sydney.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/brisbane.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/cairns.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/ipXULKhIAT8</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/portdouglas.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/perth.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/_AYDuTcvrho</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/sunshinecoast.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/mackayharbour.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/athertontablelands.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/weipa.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/n0uKf7iju4g?si=T2TJNeS4yCMT03jP</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/townsville.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/kuranda.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- MULTIPLE VIDEOS -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/0FWqn7RyBEg</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/-alSBjV1UHs</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/NnHOxpdJAbM</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/UlAkgnd0QTw</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/v4SFCQ8ZsUA</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/HTVCtsnD49I</video:content_loc>
+    </video:video>
   </url>
 
 
@@ -337,47 +468,88 @@
     <loc>https://www.carltravels.com/hochiminh.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- MULTIPLE VIDEOS -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/nRUX_LT1azY</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/qeeXYgKw49Y</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/hanoi.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- MULTIPLE VIDEOS -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/6I8DYrGi37g</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/31idWwYdPIc</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/bali.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/phuket.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- MULTIPLE VIDEOS -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/DUPzL5YJqj4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/Mb1dqZgMoPI</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/halongbay.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- VIDEO -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/gWw7ygXH_Eo</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/kohsamui.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/bangkok.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/kohphangan.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/nusalembongan.html</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.5</priority>
+    <!-- MULTIPLE VIDEOS -->
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/ulbhuZZGqr4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:content_loc>https://www.youtube.com/embed/M2Ve90ODeZ4</video:content_loc>
+    </video:video>
   </url>
+
   <url>
     <loc>https://www.carltravels.com/cuchitunnels.html</loc>
     <lastmod>2025-01-02</lastmod>
