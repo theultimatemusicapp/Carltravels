@@ -25,10 +25,12 @@
     <meta name="twitter:description" content="Discover Dubrovnik with our comprehensive travel guide. Explore historic Old Town, stunning city walls, vibrant cultural festivals, and exquisite vineyard tours.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/dubrovnik-featured-image.jpg">
     
-    <!-- Stylesheets -->
+    <!-- Link to the same stylesheets as Berlin -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
@@ -57,12 +59,100 @@
       }
     }
     </script>
+
+    <!-- Inline styles matching the Berlin page -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            padding: 10px 0;
+        }
+
+        /* Make embedded YouTube videos responsive */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+            margin-bottom: 20px; /* Some spacing below the video */
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as you wish */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            
+            <!-- Navigation Menu -->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -73,6 +163,8 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
@@ -91,13 +183,19 @@
     <main>
         <section class="blog-post">
             <div class="container">
+                <!-- Main Title -->
                 <h1>Journey Through the Historic Dubrovnik: Your Ultimate Travel Guide</h1>
                 
-                <!-- Embedded YouTube Videos -->
-                <div style="text-align: center; margin-bottom: 20px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5fUtJgxq-2w" title="Exploring Dubrovnik's Old Town" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- Embedded YouTube Video #1 (Old Town Intro) -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/5fUtJgxq-2w" 
+                        title="Exploring Dubrovnik's Old Town" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                
                 
                 <!-- Introduction -->
                 <section>
@@ -117,8 +215,15 @@
                     <h2>Where to Go and What to See</h2>
                     <p>Dubrovnik is brimming with attractions that cater to a variety of interests. Here are some must-visit places and experiences:</p>
 
-                       <div style="text-align: center; margin-bottom: 20px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HL6slingVss" title="Dubrovnik City Walls Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- Embedded YouTube Video #2 (City Walls Tour) -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/HL6slingVss" 
+                        title="Dubrovnik City Walls Tour" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
                     
                     <!-- Old Town -->
@@ -143,8 +248,15 @@
                         </ul>
                     </section>
 
-                    <div style="text-align: center; margin-bottom: 20px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kOacooTeZk4" title="Vineyard Tours in Dubrovnik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- Embedded YouTube Video #3 (Vineyard Tours) -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/kOacooTeZk4" 
+                        title="Vineyard Tours in Dubrovnik" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
                     
                     <!-- Cultural Festivals -->
@@ -170,8 +282,15 @@
                     </section>
                 </section>
 
-                 <div style="text-align: center; margin-bottom: 20px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JUBNVo1VTBY" title="Cultural Festivals in Dubrovnik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- Embedded YouTube Video #4 (Cultural Festivals) -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/JUBNVo1VTBY" 
+                        title="Cultural Festivals in Dubrovnik" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
                 
                 <!-- Costs and Budgeting -->
@@ -311,8 +430,9 @@
                     <p>The city is a UNESCO World Heritage Site, celebrated for its well-preserved medieval architecture and its role as a significant maritime republic. Visitors can explore scenic trails along the city walls, enjoy water sports, and immerse themselves in the local culture through festivals and traditional events.</p>
                     <p>Dubrovnik's strategic location along the Adriatic Sea has made it a melting pot of cultures, reflected in its diverse architecture, cuisine, and traditions. Whether you're exploring the ancient streets, enjoying a seaside meal, or participating in a local festival, Dubrovnik offers an unforgettable travel experience.</p>
                 </section>
-            </div>
-        </section>
+                
+            </div><!-- .container -->
+        </section><!-- .blog-post -->
     </main>
     
     <!-- Footer Section -->
@@ -321,7 +441,8 @@
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt
+
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
