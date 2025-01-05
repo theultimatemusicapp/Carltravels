@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Korea - Carl Travels</title>
+    
+    <!-- Link to the updated styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for city pages -->
+    <link rel="stylesheet" href="city.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images, Headings, and Video CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Make embedded YouTube videos responsive */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="city">
+            <div class="container">
+                <!-- Main Title -->
+                <h1>South Korea</h1>
+                
+                <!-- TOP VIDEO (YouTube) -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/XXXXXXXXXXX" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- History Section (Twice as long as the template) -->
+                <h2>History</h2>
+                <p>
+                    The Korean Peninsula’s history dates back thousands of years, with early kingdoms such as Goguryeo, Baekje, and Silla vying for dominance. These Three Kingdoms laid the cultural foundations of Korea, including the adoption of Buddhism and the early development of the Korean language. Later, the Goryeo Dynasty (918–1392) contributed to cultural and technological achievements such as the creation of the world’s first metal movable type. 
+                </p>
+                <p>
+                    The Joseon Dynasty (1392–1897) emphasized Confucian principles, shaping social structure, government, and education for centuries. Following Japanese occupation (1910–1945) and the aftermath of World War II, the Korean War (1950–1953) resulted in the peninsula’s division into North and South Korea. South Korea embarked on rapid industrialization and economic development, transforming into a global technology and pop-culture powerhouse known as the “Korean Wave.” Today, the nation balances deep-rooted traditions with modern innovation in entertainment, technology, and urban design.
+                </p>
+                
+                <!-- Population Section -->
+                <h2>Population</h2>
+                <p>
+                    With a population of around 52 million, South Korea is highly urbanized, and nearly half of its residents live in the greater Seoul metropolitan area. The country has one of the world’s highest population densities, and an increasing number of expatriates and international students call Korea home.
+                </p>
+                
+                <!-- Notable Attractions / Things to Do Section -->
+                <h2>Notable Attractions & Things to Do</h2>
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/XXXXXXXXXXX" 
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <ul>
+                    <li><strong>Seoul:</strong> Visit historic palaces like Gyeongbokgung, shop in Myeongdong, and enjoy vibrant nightlife in Hongdae or Gangnam.</li>
+                    <li><strong>Busan:</strong> Relax on Haeundae Beach, explore Jagalchi Fish Market, and hike the scenic coastline.</li>
+                    <li><strong>Jeju Island:</strong> Famous for volcanic landscapes, waterfalls, and unique women divers (haenyeo).</li>
+                    <li><strong>Gyeongju:</strong> Known as “the museum without walls,” featuring ancient tombs, temples, and cultural relics.</li>
+                    <li><strong>K-Pop & K-Drama Tours:</strong> Dive into Korean entertainment with tours of agencies, filming locations, and themed cafes.</li>
+                </ul>
+
+                <!-- Transportation Section -->
+                <h2>Transportation</h2>
+                <p>
+                    South Korea offers an impressive transport network. The KTX high-speed rail connects major cities like Seoul, Busan, and Daegu in a matter of hours. Metropolitan areas have extensive subway and bus systems, known for their punctuality and cleanliness. Taxis are relatively affordable, and many people rely on mobile apps (e.g., Kakao Taxi) for convenience.
+                </p>
+                <p>
+                    Domestic flights link Jeju Island and other outlying regions to the mainland. For shorter distances, trains and express buses are efficient choices. Seoul’s T-money card (also usable in other cities) simplifies transit by allowing riders to tap in and out on subways and buses.
+                </p>
+
+                <!-- Culture Section -->
+                <h2>Culture</h2>
+                <p>
+                    Confucian values deeply influence South Korean society, emphasizing respect for elders, harmony in relationships, and strong family ties. Modern Korean pop culture—often known as Hallyu or the “Korean Wave”—has gained massive global appeal through K-pop, K-dramas, and films. Traditional music, dance, and martial arts (like Taekkyeon) remain vibrant as well.
+                </p>
+                <p>
+                    South Korea’s culinary scene is diverse, from fiery kimchi to savory barbecue. Mealtime is often communal, with side dishes (banchan) shared among everyone at the table. Korean street food, such as tteokbokki (spicy rice cakes) and hotteok (sweet pancakes), is a must-try for newcomers.
+                </p>
+
+                <!-- Where to Stay Section -->
+                <h2>Where to Stay</h2>
+                <p>
+                    Accommodation ranges from luxury hotels in major cities to hanok (traditional Korean houses) for an authentic stay. Guesthouses, budget hostels, and modern boutique hotels are widely available. In Seoul, neighborhoods like Hongdae, Itaewon, and Myeongdong offer easy access to shopping, dining, and cultural sites.
+                </p>
+
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/XXXXXXXXXXX" 
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Currency Section -->
+                <h2>Currency</h2>
+                <p>
+                    The South Korean currency is the Won (KRW). Credit and debit cards are accepted nearly everywhere, although some street vendors or small shops may be cash-only. ATMs are plentiful in urban areas, and mobile payment platforms (like KakaoPay) are gaining popularity.
+                </p>
+
+                <!-- Best Time to Visit Section -->
+                <h2>Best Time to Visit</h2>
+                <p>
+                    Spring (April–June) brings cherry blossoms and mild weather, while autumn (September–November) showcases vibrant foliage and clear skies. Summers can be hot and humid, with a monsoon season in July–August, whereas winters can be cold—ideal for skiing in mountainous regions.
+                </p>
+                
+                <!-- Prices Overview Section -->
+                <h2>Average Prices</h2>
+                <p>
+                    Mid-range hotels in Seoul typically cost around USD $60–$120 per night. Local meals can be found for USD $5–$10, and barbecue or specialty dining may run higher. Public transportation is efficient and affordable, with subway rides costing around USD $1–$2. KTX tickets vary depending on distance and class, but are generally less expensive than similar services in Western countries.
+                </p>
+                
+                <!-- Fun Facts Section -->
+                <h2>Fun Facts</h2>
+                <ul>
+                    <li>South Korea has one of the fastest internet speeds worldwide, making it a tech lover’s paradise.</li>
+                    <li>Every year, thousands gather at the Boryeong Mud Festival for mud-themed fun and skin-friendly spa treatments.</li>
+                    <li>Traditional Korean homes (hanok) use ondol heating—a system of warming floors with hot water or radiant heat.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
