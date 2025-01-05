@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadi, Fiji - Carl Travels</title>
+    
+    <!-- Link to the updated styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for city pages -->
+    <link rel="stylesheet" href="city.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Responsive Images, Headings, and Video CSS -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            padding: 10px 0; /* Optional padding for spacing */
+        }
+
+        /* Make embedded YouTube videos responsive */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Optional: Responsive Typography */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="city">
+            <div class="container">
+                <!-- Main Title -->
+                <h1>Nadi, Fiji</h1>
+                
+                <!-- TOP VIDEO (YouTube) -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/-5ln-_IoKUs" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- History Section -->
+                <h2>History</h2>
+                <p>
+                    Located on the western side of Viti Levu, Fiji's main island, Nadi has grown from a small colonial-era settlement into one of the country’s most bustling tourism hubs. Established originally as an agricultural community, Nadi’s strategic location near an international airport transformed it into a gateway for tourists exploring the Fijian archipelago. 
+                </p>
+                
+                <!-- Population Section -->
+                <h2>Population</h2>
+                <p>
+                    Nadi is considered one of Fiji's larger urban centers, with an estimated population of around 58,000 people (2023). The population is diverse, consisting of indigenous Fijians, Indo-Fijians, and a mix of other ethnic groups.
+                </p>
+                
+                <!-- Notable Attractions / Things to Do Section -->
+                <h2>Notable Attractions & Things to Do</h2>
+
+                <!-- Responsive YouTube Video for Attractions/Things to Do -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/63785nQMU64" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <ul>
+                    <li><strong>Sri Siva Subramaniya Temple:</strong> One of the largest Hindu temples in the Southern Hemisphere, known for its stunning Dravidian architecture.</li>
+                    <li><strong>Garden of the Sleeping Giant:</strong> A peaceful botanical garden famous for its vast orchid collection and lush rainforest walks.</li>
+                    <li><strong>Wailoaloa Beach:</strong> Enjoy sun, sand, and water sports along one of Nadi’s most accessible beaches.</li>
+                    <li><strong>Sabeto Hot Springs & Mud Pool:</strong> Relax in geothermal mud pools believed to have therapeutic benefits.</li>
+                    <li><strong>Day Trips to the Mamanuca Islands:</strong> Take a boat tour to experience crystal-clear waters, snorkeling, and pristine beaches.</li>
+                </ul>
+
+                <!-- Where to Stay Section -->
+                <h2>Where to Stay</h2>
+                <p>
+                    Nadi offers a wide range of accommodation options—from budget-friendly hostels and guesthouses near the airport to luxurious beach resorts along Denarau Island. Many places provide easy access to local attractions and are known for Fijian hospitality.
+                </p>
+
+                <!-- Responsive YouTube Video for Where to Stay -->
+                <div class="video-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/BW6SgdiE4lA" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Currency Section -->
+                <h2>Currency</h2>
+                <p>
+                    The official currency of Fiji is the Fijian Dollar (FJD). Major hotels, restaurants, and shops often accept credit cards, but carrying some local currency is advised for smaller businesses and local markets.
+                </p>
+
+                <!-- Best Time to Visit Section -->
+                <h2>Best Time to Visit</h2>
+                <p>
+                    Fiji’s climate is warm year-round, but the dry season from May to October typically offers the most pleasant weather and less rainfall. Keep in mind that peak travel season often means higher prices and more crowds.
+                </p>
+                
+                <!-- Prices Overview Section -->
+                <h2>Average Prices</h2>
+                <p>
+                    Accommodation in Nadi ranges from about USD $20–$40 per night for budget options (hostels, budget hotels) to USD $150+ for upscale resorts. Mid-range hotels typically fall in the USD $70–$120 range. Local food and market meals can be quite affordable, with restaurant meals varying from USD $5 at inexpensive eateries to USD $25+ at higher-end venues.
+                </p>
+                
+                <!-- Fun Facts Section -->
+                <h2>Fun Facts</h2>
+                <ul>
+                    <li>Fiji is made up of over 300 islands—Nadi is the main entry point for travelers due to its international airport.</li>
+                    <li>While English is widely spoken, the local iTaukei and Fiji Hindi languages offer a fascinating cultural diversity.</li>
+                    <li>The area around Nadi is known for its year-round tropical climate, making it a favorite destination for sun-seekers.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
