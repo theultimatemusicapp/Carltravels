@@ -28,7 +28,9 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
@@ -57,12 +59,100 @@
       }
     }
     </script>
+
+    <!-- Inline styles matching the newer pages -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            padding: 10px 0;
+        }
+
+        /* Make embedded YouTube videos responsive */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+            margin-bottom: 20px; /* Some spacing below the video */
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            
+            <!-- Navigation Menu -->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -73,6 +163,8 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
@@ -91,87 +183,96 @@
     <main>
         <section class="blog-post">
             <div class="container">
+                <!-- Page Title -->
                 <h1>Journey Through the Enchanting Korčula: A Personal Exploration</h1>
                 
-                <!-- Embedded YouTube Video -->
-                <div style="text-align: center; margin-bottom: 20px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NPpCfDRM2PY" title="Journey Through Korčula" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- Embedded YouTube Video (Responsive) -->
+                <div class="video-responsive">
+                    <iframe
+                        src="https://www.youtube.com/embed/NPpCfDRM2PY"
+                        title="Journey Through Korčula"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
                 </div>
                 
                 <!-- Introduction -->
                 <section>
                     <h2>Introduction</h2>
-                    <p>In this episode, I'm taking you on a deeply personal journey to <strong>Korčula</strong>. This island isn't just a place of stunning beauty; it holds the roots of my family tree.</p>
+                    <p>Welcome to Korčula, a gem in the Adriatic Sea, known for its lush landscapes, historic architecture, and rich cultural heritage. This island holds a special place in my heart as it connects me to my family's ancestral roots. Join me as I delve into Korčula's enchanting beauty and uncover the stories that bind my past to this picturesque destination.</p>
                 </section>
                 
-                <!-- Family Roots -->
+                <!-- Tracing Ancestral Roots -->
                 <section>
                     <h2>Tracing My Ancestral Roots</h2>
-                    <p>My roots extend across the ocean to New Zealand, where my grandfather made his home after leaving Korčula as a young man.</p>
-                    <p>For years, all I knew of my grandfather's past were the stories that faded like old photographs. He left Korčula early in life, carrying little more than his name and memories, which he seldom spoke of.</p>
+                    <p>My journey to Korčula began with a deep desire to connect with my family's heritage. My grandfather, who emigrated to New Zealand in his youth, often shared fragmented stories of his homeland. These tales, though brief, sparked a longing to explore the island where my ancestors once lived.</p>
                 </section>
                 
                 <!-- Preparing for the Journey -->
                 <section>
                     <h2>Preparing for the Journey</h2>
-                    <p>So we're going to go to a car shop, see if we can hire a car for the day, for tomorrow, and drive to Chara, and maybe do a vineyard tour or something. My connection to him and his land felt as distant as the sea that stretches between our two homes.</p>
+                    <p>With a mix of excitement and anticipation, I planned my trip to Korčula. I arranged for a rental car to give me the flexibility to explore the island at my own pace. My itinerary included visits to historic sites, vineyard tours, and, most importantly, meeting distant relatives who still call Korčula home.</p>
                 </section>
                 
                 <!-- Exploring the Old Town -->
                 <section>
                     <h2>Exploring the Old Town</h2>
-                    <p>We began in the old town, spending two nights enveloped in its medieval charm.</p>
-                    <p>The history here is strong, through stones worn by centuries of footsteps. Leaving the town behind, we hired a car and drove to Chara, the village where my grandfather was born.</p>
+                    <p>The heart of Korčula lies in its charming Old Town, often referred to as "Little Dubrovnik" for its stunning medieval architecture. Wandering through narrow cobblestone streets, I marveled at the fortified walls, ancient churches, and vibrant piazzas. The Old Town's rich history and lively atmosphere provided the perfect backdrop for my exploration.</p>
                 </section>
                 
                 <!-- Historical Background -->
                 <section>
                     <h2>Historical Background</h2>
-                    <p><strong>Korčula's</strong> story begins in antiquity, with Illyrian tribes who first settled these lands, carving out a rudimentary society amidst the dense forests and rugged coastlines.</p>
-                    <p>The Venetians, ever expansive in their maritime endeavors, christened it "Black Korčula," inspired by the dense woods that cloaked the island. They established a stronghold on this strategic outpost, which later grew under Ottoman influence, following their paths in trade and conquest.</p>
+                    <p>Korčula's history is a tapestry woven with influences from the Illyrians, Venetians, and Ottomans. The island's strategic location in the Adriatic made it a coveted prize for various empires, each leaving their mark on its culture and architecture. Today, Korčula stands as a testament to its resilient spirit and diverse heritage.</p>
                 </section>
                 
                 <!-- Journey to Chara -->
                 <section>
                     <h2>Journey to Chara</h2>
-                    <p>The roads lined with fields and vineyards seem to whisper stories of those who had walked them before us.</p>
-                    <p>We're going to see if we can find some relatives. In Chara, the past seemed to wait for us. With nothing but an old photograph and hope, we met an elderly lady who, despite the language barrier, recognized the face in the picture.</p>
+                    <p>Determined to uncover more about my family's past, I set off towards Chara, the village where my grandfather was born. The drive through scenic landscapes dotted with olive groves and vineyards felt like a step back in time, connecting me to the land my ancestors once called home.</p>
                 </section>
                 
                 <!-- Discovering Family -->
                 <section>
                     <h2>Discovering Family</h2>
-                    <p>With a kind, wrinkled finger, she pointed us down a path that led to a discovery beyond words.</p>
-                    <p><strong>Hello. I'm Ingrid. Carl. Nice to meet you. James. Hello. Ingrid. Hi, Ingrid. Nice to meet you.</strong></p>
-                    <p>So welcome. Yeah, I don't know if they told you. Me and him, we're all Tormich. Our family, my ditto, comes from Chara.</p>
+                    <p>In Chara, my journey took an unexpected turn when I met Ingrid, an elderly woman who recognized my family's surname. Despite the language barrier, Ingrid's warm welcome bridged the gap between past and present. She introduced me to her husband, James, who shared stories about our shared lineage and the lives our ancestors led here.</p>
                 </section>
                 
                 <!-- Vineyard Tour -->
                 <section>
                     <h2>Vineyard Tour</h2>
-                    <p>Just having a holiday, holiday around Croatia. Do you want a tasting or? All of a free wine. Is that okay? Yeah, free wines. Yes.</p>
-                    <p>At <strong>Morellec Winery</strong>, we found not just wine, but family. Ingrid and her husband, descendants of my great family's lineage, welcomed us. We are connected.</p>
+                    <p>No visit to Korčula would be complete without experiencing its renowned wine culture. At <strong>Morellec Winery</strong>, I not only tasted exquisite local wines but also connected with family members who continued the winemaking traditions. The vineyard tour was a delightful blend of heritage and craftsmanship, offering insights into the meticulous process that produces Korčula's signature wines.</p>
                 </section>
                 
                 <!-- Winery Experience -->
                 <section>
                     <h2>Winery Experience</h2>
-                    <p>You can see all the bottles from Winery exist. Oh, wow. 1997. Wow. May I take some pictures? Yes, of course.</p>
-                    <p>Sharing stories, we bridge decades of separation with every glass poured, each sip a taste of heritage. Our journey culminated at the cemetery, where generations of my ancestors rest. Standing among the graves, the story my grandfathers never told seemed to rise from the earth itself. Here, amidst the silence of those who had gone before, I found a connection that time, no distance, could sever.</p>
+                    <p>Walking through the expansive vineyards, I learned about the unique grape varieties and the sustainable practices that Morellec Winery employs. Each bottle of wine told a story of passion, perseverance, and the enduring legacy of my ancestors. Sharing these moments with Ingrid and James deepened my appreciation for both the land and my family's history.</p>
                 </section>
                 
                 <!-- Visiting the Cemetery -->
                 <section>
                     <h2>Visiting the Cemetery</h2>
-                    <p>So this is a bit of a surreal moment for me. I'm walking in the gravestone of my distant relatives, and there's actually quite a few of them here.</p>
-                    <p>So I'll show you some of them. Yeah, they're all my granddad's brothers and cousins and, yeah, great grandfather. Wow.</p>
+                    <p>Our journey culminated at the family cemetery, a serene resting place for generations of my relatives. Standing among the gravestones, I felt a profound connection to those who came before me. The cemetery, nestled amidst olive trees, whispered tales of love, loss, and the unbreakable bonds of family.</p>
                 </section>
                 
                 <!-- Reflection -->
                 <section>
                     <h2>Reflection</h2>
-                    <p>This trip was more than a search for my roots. It was a pilgrimage of understanding. A path walked with my brothers, a recognition of a past that will shape our futures. Thank you for joining me on this profound journey back to where my family stood. If you enjoy this glimpse into my story and the beauty of Korčula, please consider subscribing for more stories like this.</p>
+                    <p>This trip to Korčula was more than a mere vacation; it was a pilgrimage of self-discovery and reconnection. Walking the paths my ancestors once did, meeting family members who carry our shared legacy, and immersing myself in the island's beauty have left an indelible mark on my soul. Korčula has not only enriched my understanding of my heritage but also inspired me to cherish and preserve these familial bonds.</p>
                 </section>
+
+                   <!-- Embedded YouTube Video (Responsive) -->
+                <div class="video-responsive">
+                    <iframe
+                        src="https://youtu.be/pS4B4IbXLjs"
+                        title="Journey Through Korčula"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
                 
                 <!-- Tips and Recommendations -->
                 <section>
@@ -181,10 +282,12 @@
                     <section>
                         <h3>Do’s and Don’ts</h3>
                         <ul>
-                            <li><strong>Do:</strong> Bring a waterproof bag for your belongings during boat excursions and water activities.</li>
+                            <li><strong>Do:</strong> Learn a few basic Croatian phrases to enhance your interactions with locals.</li>
                             <li><strong>Don’t:</strong> Litter or disturb the natural environment. Korčula prides itself on its pristine landscapes.</li>
-                            <li><strong>Do:</strong> Apply sunscreen regularly to protect against the Mediterranean sun.</li>
-                            <li><strong>Don’t:</strong> Engage in loud or disruptive behavior that may disturb other visitors and locals.</li>
+                            <li><strong>Do:</strong> Visit during the shoulder seasons (May-June or September-October) for pleasant weather and fewer crowds.</li>
+                            <li><strong>Don’t:</strong> Underestimate the importance of renting a car to fully explore the island's hidden gems.</li>
+                            <li><strong>Do:</strong> Embrace the local cuisine and try traditional dishes for an authentic experience.</li>
+                            <li><strong>Don’t:</strong> Forget to carry some cash, as smaller establishments may prefer cash over cards.</li>
                         </ul>
                     </section>
                     
@@ -197,6 +300,9 @@
                             <li>Comfortable walking shoes or sandals for exploring cobblestone streets.</li>
                             <li>Hat and sunglasses for sun protection during outdoor activities.</li>
                             <li>Insect repellent and personal hygiene items.</li>
+                            <li>Reusable water bottle to stay hydrated while touring the island.</li>
+                            <li>Portable charger for your electronic devices.</li>
+                            <li>Light jacket or sweater for cooler evenings.</li>
                         </ul>
                     </section>
                     
@@ -217,22 +323,27 @@
                 <!-- Cultural Immersion -->
                 <section>
                     <h2>Cultural Immersion</h2>
-                    <p>Interacting with local winemakers at Morellec Winery provided a unique perspective into their artisanal craft and the challenges they face in maintaining traditional winemaking practices.</p>
-                    <p>Participating in a traditional Croatian cooking class allowed me to prepare and enjoy authentic dishes, deepening my appreciation for the local cuisine and culinary heritage of Korčula.</p>
+                    <p>To fully embrace Korčula's rich culture, I engaged in several immersive activities:</p>
+                    <ul>
+                        <li><strong>Winemaking Workshops:</strong> Participating in winemaking sessions at Morellec Winery allowed me to understand the intricate process behind Korčula's esteemed wines.</li>
+                        <li><strong>Traditional Croatian Cooking Classes:</strong> Learning to prepare local dishes with a seasoned chef deepened my appreciation for the island's culinary traditions.</li>
+                        <li><strong>Local Festivals:</strong> Attending traditional festivals provided insights into Korčula's vibrant cultural celebrations and communal spirit.</li>
+                        <li><strong>Historical Tours:</strong> Guided tours of ancient churches, museums, and historical landmarks enriched my understanding of the island's storied past.</li>
+                    </ul>
                 </section>
                 
                 <!-- Food and Cuisine -->
                 <section>
                     <h2>Food and Cuisine</h2>
-                    <p>Korčula's culinary offerings are a delightful mix of fresh seafood and traditional Croatian flavors.</p>
+                    <p>Korčula's culinary scene is a delightful mix of fresh seafood, traditional Croatian flavors, and Mediterranean influences. Here are some must-try dishes:</p>
                     <ul>
                         <li><strong>Grilled Fish:</strong> Freshly caught fish grilled to perfection and served with a drizzle of olive oil and herbs.</li>
-                        <li><strong>Black Risotto (Crni Rižot):</li> A savory risotto made with cuttlefish ink, giving it a rich, dark color and unique flavor.</li>
+                        <li><strong>Black Risotto (Crni Rižot):</strong> A savory risotto made with cuttlefish ink, giving it a rich, dark color and unique flavor.</li>
                         <li><strong>Ćevapčići:</strong> Small, flavorful grilled minced meat sausages served with flatbread and ajvar (red pepper relish).</li>
                         <li><strong>Brodet (Fish Stew):</strong> A hearty stew made with a variety of fish, tomatoes, and spices, typically served with polenta.</li>
                         <li><strong>Rozata:</strong> A traditional Dalmatian custard pudding flavored with rose liqueur, perfect for dessert.</li>
                     </ul>
-                    <p>I highly recommend trying the fresh seafood at the local konobas (taverns), where the catch of the day is cooked to perfection and served with a variety of flavorful sauces.</p>
+                    <p>I highly recommend dining at local konobas (taverns) to savor authentic Korčula flavors and enjoy the island’s lively atmosphere.</p>
                 </section>
                 
                 <!-- Adventure and Activities -->
@@ -249,7 +360,7 @@
                     <p>One of the most thrilling activities was the kayaking expedition along the unspoiled coastline, allowing me to access secluded beaches and observe marine life up close.</p>
                 </section>
                 
-                <!-- Additional Information About Korčula -->
+                <!-- About Korčula -->
                 <section>
                     <h2>About Korčula</h2>
                     <p><strong>Korčula</strong> is a picturesque island in the Adriatic Sea, known for its lush landscapes, charming medieval architecture, and rich cultural heritage. Often referred to as "Little Dubrovnik," Korčula boasts narrow cobblestone streets, historic churches, and beautiful beaches.</p>
