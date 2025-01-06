@@ -1,18 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porto - Carl Travels</title>
+    <title>Journey Through Porto: Your Comprehensive Travel Guide</title>
+    
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions like the Dom Luís I Bridge, Clérigos Tower, and Ribeira District. Learn about the city's history, best time to visit, budgeting tips, and more.">
+    
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Porto travel guide, Portugal travel, Porto attractions, Dom Luís I Bridge, Port wine, Ribeira District, best time to visit Porto, Clérigos Tower, UNESCO World Heritage Sites Portugal, Porto budget tips">
+    
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Journey Through Porto: Your Comprehensive Travel Guide">
+    <meta property="og:description" content="Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions, local tips, and more.">
+    <meta property="og:image" content="https://www.carltravels.com/images/porto-featured-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/destinations/porto.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Journey Through Porto: Your Comprehensive Travel Guide">
+    <meta name="twitter:description" content="Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions, local tips, and more.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/porto-featured-image.jpg">
+    
+    <!-- Link to Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Journey Through Porto: Your Comprehensive Travel Guide",
+      "description": "Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions, local tips, and more.",
+      "image": "https://www.carltravels.com/images/porto-featured-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/destinations/porto.html"
+      }
+    }
+    </script>
+
+    <!-- Inline styles (to match your newer pages) -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            padding: 10px 0;
+        }
+
+        /* Make embedded YouTube videos responsive */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+            margin-bottom: 20px; /* Some spacing below the video */
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            
+            <!-- Navigation Menu -->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,14 +163,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -39,39 +181,73 @@
     
     <!-- Main Content -->
     <main>
-        <section class="city">
+        <section class="blog-post">
             <div class="container">
-                <h1>Porto</h1>
-               <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/KDYI7DaDUBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-                <h2>History</h2>
-                <p>Porto, located in northwest Portugal, is one of Europe's oldest centers, with a history stretching back to the Roman era. The city has been an important port and trading hub, especially known for its production of Port wine, which has gained international acclaim.</p>
+                <!-- Page Title -->
+                <h1>Porto: A Historic Jewel of Portugal</h1>
                 
-                <h2>Population</h2>
-                <p>As of 2023, Porto has a population of approximately 215,000 people within the city limits, with a metropolitan population exceeding 1.7 million.</p>
+                <!-- Embedded YouTube Video (Responsive) -->
+                <div class="video-responsive">
+                    <iframe
+                        src="https://www.youtube.com/embed/KDYI7DaDUBo"
+                        title="Exploring Porto"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
                 
-                <h2>Notable Attractions</h2>
-                <ul>
-                    <li>Dom Luís I Bridge</li>
-                    <li>Clérigos Tower</li>
-                    <li>Ribeira District</li>
-                    <li>Lello Bookstore</li>
-                    <li>Serralves Museum</li>
-                </ul>
+                <!-- Introduction / History -->
+                <section>
+                    <h2>History</h2>
+                    <p>Porto, located in northwest Portugal, is one of Europe's oldest centers, tracing its origins back to the Roman era. Over the centuries, it has thrived as a major port and trading hub, world-renowned for its production of Port wine. The city's storied past and cultural heritage make it a must-visit destination for anyone exploring Portugal.</p>
+                </section>
                 
-                <h2>Best Time to Visit</h2>
-                <p>The best time to visit Porto is during the spring (March to May) and fall (September to November) when the weather is mild and the tourist crowds are smaller.</p>
+                <!-- Population -->
+                <section>
+                    <h2>Population</h2>
+                    <p>As of 2023, Porto has an estimated population of around 215,000 people within the city limits, with the metropolitan area exceeding 1.7 million residents.</p>
+                </section>
                 
-                <h2>Prices Overview</h2>
-                <p>Porto is relatively affordable compared to other major European cities. Accommodation ranges from budget hostels at €15 per night to mid-range hotels at €60-€150 per night. Dining out costs between €10 for casual meals to €30 at fine dining restaurants.</p>
+                <!-- Notable Attractions -->
+                <section>
+                    <h2>Notable Attractions</h2>
+                    <ul>
+                        <li><strong>Dom Luís I Bridge:</strong> Iconic two-level bridge spanning the Douro River, offering panoramic city views.</li>
+                        <li><strong>Clérigos Tower:</strong> A historic Baroque bell tower providing sweeping vistas of Porto’s skyline.</li>
+                        <li><strong>Ribeira District:</strong> A UNESCO World Heritage Site famous for its colorful facades, lively atmosphere, and waterside cafes.</li>
+                        <li><strong>Lello Bookstore:</strong> Often cited as one of the world’s most beautiful bookstores, inspiring literary icons like J.K. Rowling.</li>
+                        <li><strong>Serralves Museum:</strong> Contemporary art museum set amidst lush gardens and captivating architecture.</li>
+                    </ul>
+                </section>
                 
-                <h2>Fun Facts</h2>
-                <ul>
-                    <li>Porto's Ribeira District is a UNESCO World Heritage Site recognized for its historic architecture and vibrant atmosphere.</li>
-                    <li>The city is famous for its azulejo tiles, which adorn many buildings with intricate designs.</li>
-                    <li>Porto is home to the Livraria Lello, one of the most beautiful bookstores in the world and an inspiration for J.K. Rowling's Harry Potter series.</li>
-                </ul>
+                <!-- Best Time to Visit -->
+                <section>
+                    <h2>Best Time to Visit</h2>
+                    <p>For pleasant weather and smaller crowds, consider visiting Porto during spring (March to May) or fall (September to November). These shoulder seasons offer comfortable temperatures and a more relaxed vibe compared to the busy summer months.</p>
+                </section>
+                
+                <!-- Costs and Budgeting -->
+                <section>
+                    <h2>Prices Overview</h2>
+                    <p>Porto is relatively affordable compared to other major European cities. Here’s a quick breakdown of typical expenses:</p>
+                    <ul>
+                        <li><strong>Accommodation:</strong> Budget hostels start around €15 per night, while mid-range hotels range between €60 and €150 per night.</li>
+                        <li><strong>Dining Out:</strong> Expect casual meals from €10, with fine dining options around €30 or more.</li>
+                        <li><strong>Local Transport:</strong> Buses and trams are cost-effective; a single ticket usually costs €1.20–€2.00. Taxis or rideshares are also widely available.</li>
+                        <li><strong>Attractions:</strong> Many churches and viewpoints are free or cheap to visit; museums often charge €5–€10 for entry.</li>
+                    </ul>
+                </section>
+                
+                <!-- Fun Facts -->
+                <section>
+                    <h2>Fun Facts</h2>
+                    <ul>
+                        <li><strong>UNESCO World Heritage Site:</strong> Porto's Ribeira District is internationally recognized for its historic charm and vibrant culture.</li>
+                        <li><strong>Azulejo Tiles:</strong> The city is famous for its ornamental azulejos, which adorn numerous facades, metro stations, and churches.</li>
+                        <li><strong>Harry Potter Inspiration:</strong> Livraria Lello is said to have inspired aspects of J.K. Rowling’s “Harry Potter” series during her time in Porto.</li>
+                    </ul>
+                </section>
             </div>
         </section>
     </main>
@@ -81,13 +257,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
