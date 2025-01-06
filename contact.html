@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-6483721386563068">
@@ -9,6 +10,42 @@
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
     <meta name="description" content="Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!">
+    
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Contact - Carl Travels">
+    <meta property="og:description" content="Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!">
+    <meta property="og:image" content="https://www.carltravels.com/images/contact-featured-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/contact.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - Carl Travels">
+    <meta name="twitter:description" content="Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/contact-featured-image.jpg">
+    
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact - Carl Travels",
+      "description": "Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!",
+      "url": "https://www.carltravels.com/contact.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Carl"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Header Section -->
@@ -26,13 +63,13 @@
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -49,15 +86,23 @@
                 <!-- Contact Form -->
                 <section class="contact-form">
                     <h2>Get in Touch</h2>
-                    <form action="mailto:watchcarltravel@gmail.com" method="post" enctype="text/plain">
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required>
 
                         <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="_replyto" required>
 
                         <label for="message">Your Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <!-- Honeypot Field (Optional for Spam Protection) -->
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <!-- Formspree Specific Hidden Fields (Optional) -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from Carl Travels">
+                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                        <input type="hidden" name="_captcha" value="false">
 
                         <button type="submit">Send Message</button>
                     </form>
@@ -84,13 +129,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
