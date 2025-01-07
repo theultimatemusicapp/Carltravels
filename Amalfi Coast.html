@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amalfi Coast - Carl Travels</title>
     
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Explore the Amalfi Coast, Italy's stunning coastal region known for its picturesque towns, breathtaking views, and rich cultural heritage. Discover top attractions, travel tips, and what to expect in this ultimate guide to the Amalfi Coast.">
+    <meta name="keywords" content="Amalfi Coast, Italy, Travel, Positano, Amalfi, Ravello, Scenic Views, Mediterranean, Beaches, Italian Cuisine">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Amalfi Coast - Carl Travels">
+    <meta property="og:description" content="Discover the Amalfi Coast's picturesque towns, stunning views, and rich cultural heritage.">
+    <meta property="og:image" content="https://www.carltravels.com/images/amalfi-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/AmalfiCoast.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amalfi Coast - Carl Travels">
+    <meta name="twitter:description" content="Discover the Amalfi Coast's picturesque towns, stunning views, and rich cultural heritage.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/amalfi-twitter-image.jpg">
+
+    <title>Amalfi Coast - Carl Travels</title>
+
     <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
     <!-- Specific styles for destination pages -->
@@ -16,54 +35,120 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Responsive Images and Heading Titles CSS -->
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Amalfi Coast - Your Comprehensive Travel Guide",
+      "description": "Explore the Amalfi Coast, Italy's stunning coastal region known for its picturesque towns, breathtaking views, and rich cultural heritage. Discover top attractions, travel tips, and what to expect in this ultimate guide to the Amalfi Coast.",
+      "image": "https://www.carltravels.com/images/amalfi-og-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/AmalfiCoast.html"
+      }
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
     <style>
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; /* Center the image if desired */
-            padding: 10px 0; /* Optional padding for spacing */
+            margin: 0 auto; 
+            padding: 10px 0;
         }
 
-        /* Style all h1 titles within the main content */
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
         main h1 {
-            color: #FF6600; /* Same orange color as h2 */
+            color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
         }
-
-        /* Enhance h1 appearance on hover */
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
-        /* Style all h2 titles within the main content */
+        /* Style all h2 titles within main */
         main h2 {
-            color: #FF6600; /* Nice orange color */
+            color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
         }
-
-        /* Enhance h2 appearance on hover */
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
-        /* Optional: Responsive Typography */
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
         @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
             main h1 {
                 font-size: 2em;
             }
-
             main h2 {
                 font-size: 1.5em;
             }
+        }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -74,9 +159,17 @@
             <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -103,49 +196,241 @@
     
     <!-- Main Content -->
     <main>
-        <section class="city">
+        <section class="destination-details">
             <div class="container">
-                <!-- Main Title -->
-                <h1>Amalfi Coast</h1>
+                <!-- Page Title -->
+                <h1>Journey Through the Amalfi Coast: Your Comprehensive Travel Guide</h1>
                 
-                <!-- Banner Image -->
-                <div class="banner-image">
-                    <img src="amalficoastbanner.jpg" alt="Amalfi Coast Banner" class="responsive-image">
-                </div>
+                <!-- Existing Banner Image -->
+                <img src="amalficoastbanner.jpg" alt="Amalfi Coast Banner" class="responsive-image">
+
+                <!-- Introduction -->
+                <section class="section">
+                    <h2>Introduction</h2>
+                    <p>The Amalfi Coast, located in the Campania region of Italy, is renowned for its stunning coastline, picturesque villages, and vibrant cultural heritage. Stretching along the southern edge of the Sorrentine Peninsula, this UNESCO World Heritage Site offers breathtaking views of the Mediterranean Sea, charming narrow streets, and a blend of natural beauty and historical significance. Whether you're seeking relaxation on sun-kissed beaches, exploring ancient ruins, or indulging in exquisite Italian cuisine, the Amalfi Coast promises an unforgettable experience.</p>
+                </section>
                 
-                <!-- History Section -->
-                <h2>History</h2>
-                <p>The Amalfi Coast, located in the Campania region of Italy, has a history dating back to ancient times. It was once a maritime republic alongside Venice, Genoa, and Pisa, playing a significant role in Mediterranean trade. The picturesque coastline has inspired artists, writers, and travelers for centuries.</p>
+                <!-- History -->
+                <section class="section">
+                    <h2>History</h2>
+                    <p>The Amalfi Coast boasts a rich history that dates back to ancient times. It was once a powerful maritime republic alongside Venice, Genoa, and Pisa during the Middle Ages, playing a significant role in Mediterranean trade. The coastal towns flourished as centers of commerce, art, and culture, leaving behind architectural marvels and historical landmarks. Over the centuries, the Amalfi Coast has inspired artists, writers, and travelers with its captivating beauty and enduring charm.</p>
+                </section>
                 
-                <!-- Population Section -->
-                <h2>Population</h2>
-                <p>As of 2023, the Amalfi Coast region has a population of approximately 180,000 people spread across its various towns and villages.</p>
+                <!-- How to Get There -->
+                <section class="section">
+                    <h2>How to Get There</h2>
+                    <p>Reaching the Amalfi Coast is convenient thanks to its well-connected transportation network. Here are the primary ways to get there:</p>
+                    <ul>
+                        <li><strong>By Air:</strong> The nearest major airport is Naples International Airport (Capodichino), approximately 1.5 hours away by car or train. From Naples, you can take the Circumvesuviana train to Sorrento, followed by a bus or ferry to your desired town along the coast.</li>
+                        <li><strong>By Train:</strong> Trains from Rome, Florence, and other major Italian cities run to Naples Central Station. From Naples, continue your journey to Sorrento by regional train or bus.</li>
+                        <li><strong>By Car:</strong> Renting a car offers flexibility, allowing you to explore the Amalfi Coast at your own pace. The drive from Naples to the Amalfi Coast via the A3 motorway takes approximately 1.5 hours, depending on traffic.</li>
+                        <li><strong>By Bus:</strong> Long-distance buses operated by companies like FlixBus and SITA connect Naples to various towns along the Amalfi Coast, including Positano, Amalfi, and Ravello.</li>
+                        <li><strong>By Ferry:</strong> Ferries operate from Naples, Sorrento, and Salerno to towns like Positano, Amalfi, and Maiori, providing a scenic and relaxing mode of transport along the coastline.</li>
+                    </ul>
+                </section>
                 
-                <!-- Notable Attractions Section -->
-                <h2>Notable Attractions</h2>
-                <ul>
-                    <li>Positano</li>
-                    <li>Amalfi</li>
-                    <li>Ravello</li>
-                    <li>Villa Cimbrone</li>
-                    <li>Path of the Gods</li>
-                </ul>
+                <!-- Top Attractions -->
+                <section class="section">
+                    <h2>Top Attractions in the Amalfi Coast</h2>
+                    
+                    <!-- Positano -->
+                    <section class="section">
+                        <h3>1. Positano</h3>
+                        <p>Positano is perhaps the most famous town on the Amalfi Coast, known for its vertical landscape, colorful buildings, and stunning sea views. Wander through its narrow streets lined with boutiques, cafes, and art galleries. Relax on the Spiaggia Grande beach or take a boat tour to explore the surrounding waters.</p>
+                        <img src="amalfi1.jpg" alt="Positano's vibrant streets" class="responsive-image">
+                    </section>
+                    
+                    <!-- Amalfi -->
+                    <section class="section">
+                        <h3>2. Amalfi</h3>
+                        <p>Amalfi, the coast's namesake, is a charming town with a rich maritime history. Visit the Amalfi Cathedral (Duomo di Amalfi), a stunning example of medieval architecture, and explore the historic Paper Museum to learn about the town's traditional paper-making industry. Enjoy leisurely strolls along the marina and savor fresh seafood at local restaurants.</p>
+                        <img src="amalfi2.jpg" alt="Amalfi's historic cathedral" class="responsive-image">
+                    </section>
+                    
+                    <!-- Ravello -->
+                    <section class="section">
+                        <h3>3. Ravello</h3>
+                        <p>Ravello is renowned for its elegant villas, lush gardens, and breathtaking panoramas. Visit Villa Rufolo and Villa Cimbrone to admire their exquisite gardens and architectural beauty. Ravello is also famous for its annual music festival, attracting artists and performers from around the world.</p>
+                        <img src="amalfi3.jpg" alt="Ravello's Villa Rufolo gardens" class="responsive-image">
+                    </section>
+                    
+                    <!-- Path of the Gods -->
+                    <section class="section">
+                        <h3>4. Path of the Gods (Il Sentiero degli Dei)</h3>
+                        <p>The Path of the Gods is a scenic hiking trail offering some of the most spectacular views of the Amalfi Coast. The trail stretches from Bomerano to Nocelle, passing through terraced vineyards, ancient ruins, and picturesque villages. It's a must-do for nature enthusiasts and adventure seekers.</p>
+                        <img src="amalfi4.jpg" alt="Path of the Gods trail" class="responsive-image">
+                    </section>
+                    
+                    <!-- Grotta dello Smeraldo -->
+                    <section class="section">
+                        <h3>5. Grotta dello Smeraldo (Emerald Grotto)</h3>
+                        <p>The Emerald Grotto is a stunning sea cave known for its mesmerizing green light, created by sunlight filtering through an underwater cavity. Accessible by boat, the grotto offers a magical experience as you witness the play of light and water within the cave.</p>
+                        <img src="amalfi5.jpg" alt="Grotta dello Smeraldo sea cave" class="responsive-image">
+                    </section>
+                    
+                    <!-- Marina Grande -->
+                    <section class="section">
+                        <h3>6. Marina Grande</h3>
+                        <p>Marina Grande is the main port of Amalfi, serving as a gateway to the town and the rest of the coast. Enjoy fresh seafood at seaside restaurants, relax on the sandy beach, or embark on a boat tour to explore the hidden coves and nearby islands.</p>
+                        <img src="amalfi6.jpg" alt="Marina Grande beach in Amalfi" class="responsive-image">
+                    </section>
+                </section>
                 
-                <!-- Best Time to Visit Section -->
-                <h2>Best Time to Visit</h2>
-                <p>The best time to visit the Amalfi Coast is during the late spring (May and June) and early autumn (September and October) when the weather is warm, and the tourist crowds are thinner.</p>
+                <!-- Tips and Recommendations -->
+                <section class="section">
+                    <h2>Tips and Recommendations</h2>
+                    
+                    <!-- Do’s and Don’ts -->
+                    <section class="section">
+                        <h3>Do’s and Don’ts</h3>
+                        <ul>
+                            <li><strong>Do:</strong> Wear comfortable walking shoes, as the Amalfi Coast features steep streets and uneven pathways.</li>
+                            <li><strong>Don’t:</strong> Miss the opportunity to take a boat tour for unique coastal perspectives.</li>
+                            <li><strong>Do:</strong> Try local specialties like fresh seafood, limoncello, and traditional pastries.</li>
+                            <li><strong>Don’t:</strong> Litter or disturb the natural beauty of the coastline; keep the area clean.</li>
+                            <li><strong>Do:</strong> Learn a few basic Italian phrases to enhance your interactions with locals.</li>
+                            <li><strong>Don’t:</strong> Engage in loud or disruptive behavior in public spaces, respecting the tranquil environment.</li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Packing List -->
+                    <section class="section">
+                        <h3>Packing List</h3>
+                        <ul>
+                            <li>Comfortable walking shoes.</li>
+                            <li>Weather-appropriate clothing (layers for spring/fall, sun protection for summer).</li>
+                            <li>Reusable water bottle to stay hydrated while exploring.</li>
+                            <li>A backpack for carrying snacks and essentials.</li>
+                            <li>A map or guidebook to navigate the Amalfi Coast’s scenic attractions.</li>
+                            <li>Insect repellent and personal hygiene items.</li>
+                            <li>Portable charger for your electronic devices.</li>
+                            <li>Light jacket or sweater for cooler evenings.</li>
+                            <li>Umbrella or raincoat for unexpected weather changes.</li>
+                            <li>Basic Italian phrases to enhance your interactions with locals.</li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Costs -->
+                    <section class="section">
+                        <h3>Costs</h3>
+                        <ul>
+                            <li><strong>Entry Fees:</strong> Most major attractions and museums charge an entrance fee (e.g., €10-15 for Villa Rufolo).</li>
+                            <li><strong>Transportation:</strong> A 24-hour public transport ticket costs around €7 and covers buses and ferries along the coast.</li>
+                            <li><strong>Food:</strong> Meals at local trattorias and restaurants range from €15-40 per person, depending on the establishment.</li>
+                            <li><strong>Accommodation:</strong> Prices vary widely based on location and quality, from budget hotels at €60 per night to luxury resorts exceeding €300 per night.</li>
+                        </ul>
+                    </section>
+                </section>
                 
-                <!-- Prices Overview Section -->
-                <h2>Prices Overview</h2>
-                <p>The Amalfi Coast can be expensive, especially during peak seasons. Accommodation ranges from budget hotels at €70 per night to luxury resorts exceeding €300 per night. Dining out costs between €20 for casual meals to €60+ at upscale restaurants.</p>
+                <!-- Currency and Money Matters -->
+                <section class="section">
+                    <h2>Currency and Money Matters</h2>
+                    <p>The official currency in the Amalfi Coast, as in the rest of Italy, is the Euro (€). Here's what you need to know about managing your finances during your trip:</p>
+                    
+                    <h3>Currency Exchange</h3>
+                    <p>Currency exchange services are widely available in the Amalfi Coast, including at the airport, banks, and authorized exchange counters. It's advisable to exchange a small amount of money upon arrival for immediate expenses.</p>
+                    
+                    <h3>ATMs and Banking</h3>
+                    <p>ATMs are readily accessible throughout the region, especially in major towns like Positano, Amalfi, and Ravello. Most ATMs accept international debit and credit cards. However, it's a good practice to inform your bank of your travel plans to avoid any issues with card usage abroad.</p>
+                    
+                    <h3>Credit Cards</h3>
+                    <p>Credit cards (Visa and Mastercard) are widely accepted in hotels, restaurants, and larger shops. However, smaller establishments and street vendors may prefer cash, so it's recommended to carry some euros for such situations.</p>
+                    
+                    <h3>Tips</h3>
+                    <p>Tipping in the Amalfi Coast is appreciated but not mandatory. A tip of 5-10% is common for good service in restaurants, while rounding up the bill is sufficient for cafes and casual dining.</p>
+                </section>
                 
-                <!-- Fun Facts Section -->
-                <h2>Fun Facts</h2>
-                <ul>
-                    <li>The Amalfi Coast is a UNESCO World Heritage Site recognized for its stunning landscapes and historical significance.</li>
-                    <li>Positano, one of the main towns, is known for its steep streets and colorful buildings cascading down the cliffs.</li>
-                    <li>The region is famous for producing Limoncello, a popular Italian lemon liqueur.</li>
-                </ul>
+                <!-- Practical Information -->
+                <section class="section">
+                    <h2>Practical Information</h2>
+                    
+                    <h3>Best Time to Visit</h3>
+                    <p>The optimal times to visit the Amalfi Coast are during the late spring (May and June) and early autumn (September and October). During these periods, the weather is warm, and the tourist crowds are thinner compared to the peak summer months. Springtime brings blooming flowers and pleasant temperatures, while autumn offers crisp air and colorful foliage.</p>
+                    
+                    <h3>Getting There</h3>
+                    <p>The Amalfi Coast is well-connected by air, rail, and road:</p>
+                    <ul>
+                        <li><strong>By Air:</strong> The nearest major airport is Naples International Airport (Capodichino), approximately 1.5 hours away by car or train. From Naples, you can take the Circumvesuviana train to Sorrento, followed by a bus or ferry to your desired town along the coast.</li>
+                        <li><strong>By Train:</strong> Trains from Rome, Florence, and other major Italian cities run to Naples Central Station. From Naples, continue your journey to Sorrento by regional train or bus.</li>
+                        <li><strong>By Car:</strong> Renting a car offers flexibility, allowing you to explore the Amalfi Coast at your own pace. The drive from Naples to the Amalfi Coast via the A3 motorway takes approximately 1.5 hours, depending on traffic.</li>
+                        <li><strong>By Bus:</strong> Long-distance buses operated by companies like FlixBus and SITA connect Naples to various towns along the Amalfi Coast, including Positano, Amalfi, and Ravello.</li>
+                        <li><strong>By Ferry:</strong> Ferries operate from Naples, Sorrento, and Salerno to towns like Positano, Amalfi, and Maiori, providing a scenic and relaxing mode of transport along the coastline.</li>
+                    </ul>
+                    
+                    <h3>Language</h3>
+                    <p>The official language is Italian. While English is commonly spoken in tourist areas, learning a few basic Italian phrases can enhance your interactions with locals and enrich your travel experience.</p>
+                    
+                    <h3>Health and Safety</h3>
+                    <p>The Amalfi Coast is generally safe for travelers, but it's important to take standard precautions:</p>
+                    <ul>
+                        <li>Stay hydrated and protect yourself from the sun, especially during summer months.</li>
+                        <li>Be cautious with your belongings, particularly in crowded areas and on public transport.</li>
+                        <li>Use reputable tour operators and guides for activities and excursions.</li>
+                        <li>Ensure you have appropriate travel insurance covering health and activities.</li>
+                    </ul>
+                </section>
+                
+                <!-- Cultural Immersion -->
+                <section class="section">
+                    <h2>Cultural Immersion</h2>
+                    <p>Immerse yourself in the Amalfi Coast’s rich culture through various local traditions and activities:</p>
+                    <ul>
+                        <li><strong>Palace Tours:</strong> Explore the grandeur of the region’s numerous palaces and historical buildings, each with its unique architectural style and historical significance.</li>
+                        <li><strong>Local Markets:</strong> Visit markets like the Amalfi Market and Positano Artisans' Market to experience the local cuisine, crafts, and vibrant community life.</li>
+                        <li><strong>Art and Music:</strong> Attend performances at local theaters and concert halls, or visit art galleries showcasing regional artists.</li>
+                        <li><strong>Festivals:</strong> Participate in events such as the Ravello Festival, which celebrates music, art, and culture, or the Amalfi Coast Wine Festival to experience local festivities.</li>
+                        <li><strong>Historical Workshops:</strong> Engage in workshops that delve into the Amalfi Coast’s history, architecture, and cultural heritage, offering a deeper understanding of the region's legacy.</li>
+                        <li><strong>Boat Tours:</strong> Take a boat tour along the coastline to enjoy scenic views of the Amalfi Coast’s landscapes and maritime beauty.</li>
+                    </ul>
+                </section>
+                
+                <!-- Food and Cuisine -->
+                <section class="section">
+                    <h2>Food and Cuisine</h2>
+                    <p>The Amalfi Coast offers a delightful mix of traditional Italian cuisine and modern culinary innovations. Here are some must-try dishes and dining experiences:</p>
+                    <ul>
+                        <li><strong>Seafood Risotto:</strong> Creamy risotto infused with fresh seafood, herbs, and local flavors.</li>
+                        <li><strong>Limoncello:</strong> A famous lemon liqueur made from the region’s abundant lemons, perfect for a refreshing digestif.</li>
+                        <li><strong>Scialatielli ai Frutti di Mare:</strong> A hearty pasta dish with a variety of seafood, garlic, and tomatoes.</li>
+                        <li><strong>Fritto Misto:</strong> A mixed fried seafood platter, including calamari, shrimp, and fish, served with lemon wedges.</li>
+                        <li><strong>Delizia al Limone:</strong> A lemon-flavored dessert that captures the essence of the Amalfi Coast’s citrus heritage.</li>
+                        <li><strong>Local Wines:</strong> Savor a variety of Italian wines, including Falanghina and Fiano, available at numerous wine bars and restaurants.</li>
+                        <li><strong>Trattorias and Osterias:</strong> Enjoy authentic dishes at traditional trattorias and osterias, where you can experience the warmth of local hospitality.</li>
+                        <li><strong>Street Food:</strong> Taste authentic Italian street food like sfogliatella (a layered pastry) and panini from local vendors.</li>
+                        <li><strong>Fine Dining:</strong> For a more upscale experience, visit the Amalfi Coast’s gourmet restaurants offering innovative dishes and exquisite wines.</li>
+                        <li><strong>Cooking Classes:</strong> Participate in Italian cooking classes to learn how to prepare traditional Amalfi dishes, offering a hands-on cultural experience.</li>
+                    </ul>
+                    <p>I highly recommend dining at local trattorias and cafes to savor authentic Amalfi Coast flavors and enjoy the region's lively atmosphere.</p>
+                </section>
+                
+                <!-- Adventure and Activities -->
+                <section class="section">
+                    <h2>Adventure and Activities</h2>
+                    <p>The Amalfi Coast offers a wide range of activities for adventure enthusiasts and nature lovers:</p>
+                    <ul>
+                        <li><strong>Boat Tours:</strong> Explore the scenic waterways of the Amalfi Coast on a guided boat tour, offering unique perspectives of the region’s landscapes and maritime beauty.</li>
+                        <li><strong>Hiking and Biking:</strong> Discover the Amalfi Coast’s natural beauty through its extensive network of hiking and biking trails, including the famous Path of the Gods (Il Sentiero degli Dei).</li>
+                        <li><strong>Segway Tours:</strong> Navigate the coastal towns and scenic spots effortlessly on a guided Segway tour, providing a fun and efficient way to explore the area.</li>
+                        <li><strong>Horseback Riding:</strong> Enjoy horseback riding excursions through the Amalfi Coast’s picturesque landscapes and forested areas, offering a tranquil escape from the coastal bustle.</li>
+                        <li><strong>Kayaking and Canoeing:</strong> Paddle along the Amalfi Coast’s turquoise waters, exploring hidden coves and enjoying the serenity of the sea.</li>
+                        <li><strong>Photography Tours:</strong> Capture stunning photographs of the Amalfi Coast’s architecture, gardens, and natural scenery on a specialized photography tour, perfect for both amateur and professional photographers.</li>
+                        <li><strong>Escape Rooms:</strong> Challenge yourself with interactive escape room experiences that test your problem-solving skills and provide a fun group activity.</li>
+                        <li><strong>Live Music and Theatre:</strong> Attend live performances at local venues, ranging from classical concerts to contemporary theatre productions.</li>
+                        <li><strong>Water Sports:</strong> Engage in water sports like snorkeling, scuba diving, and jet-skiing for an exhilarating experience on the Mediterranean Sea.</li>
+                        <li><strong>Cooking Classes:</strong> Participate in Italian cooking classes to learn how to prepare traditional Amalfi dishes, offering a hands-on cultural experience.</li>
+                    </ul>
+                    <p>One of the most exhilarating activities is hiking the Path of the Gods, which offers breathtaking views of the Amalfi Coast's rugged cliffs and sparkling sea, making it a must-do for nature enthusiasts and adventure seekers alike.</p>
+                </section>
+                
+                <!-- About Amalfi Coast -->
+                <section class="section">
+                    <h2>About the Amalfi Coast</h2>
+                    <p><strong>The Amalfi Coast</strong>, a stunning stretch of coastline in the Campania region of Italy, is famed for its dramatic cliffs, colorful villages, and crystal-clear waters. This UNESCO World Heritage Site encompasses a series of picturesque towns including Positano, Amalfi, Ravello, and Minori, each offering its unique charm and attractions.</p>
+                    <p>The region is characterized by its terraced landscapes, vibrant bougainvillea, and narrow winding streets that cascade down to the sea. The Amalfi Coast's mild Mediterranean climate ensures pleasant weather year-round, making it a popular destination for tourists seeking both relaxation and adventure.</p>
+                    <p>Historically, the Amalfi Coast was a powerful maritime republic during the Middle Ages, contributing to the region's rich cultural and architectural heritage. Today, it continues to inspire artists, writers, and travelers with its timeless beauty and vibrant cultural scene.</p>
+                    <p>The Amalfi Coast is also renowned for its exquisite cuisine, particularly its seafood dishes and the famous limoncello liqueur, made from the region's abundant lemons. The combination of natural beauty, historical significance, and culinary delights makes the Amalfi Coast an ideal destination for travelers seeking a comprehensive and enriching experience.</p>
+                    <p>Whether you're exploring ancient churches, lounging on sun-kissed beaches, or enjoying a leisurely boat ride along the coast, the Amalfi Coast offers something for every visitor, ensuring an unforgettable journey through one of Italy's most enchanting regions.</p>
+                </section>
             </div>
         </section>
     </main>
