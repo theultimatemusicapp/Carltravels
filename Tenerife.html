@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Primary Meta Tags -->
     <meta name="description" content="Discover Tenerife, the largest of Spain's Canary Islands, known for its stunning beaches, vibrant culture, and natural beauty.">
     <meta name="keywords" content="Tenerife, Canary Islands, Spain, Travel, Beaches, Attractions">
@@ -34,6 +34,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Tenerife - Your Comprehensive Travel Guide",
+      "description": "Discover Tenerife, the largest of Spain's Canary Islands, known for its stunning beaches, vibrant culture, and natural beauty. Explore top attractions, travel tips, and what to expect in this ultimate guide to Tenerife.",
+      "image": "https://www.carltravels.com/images/tenerife-banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/Tenerife.html"
+      }
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            padding: 10px 0;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -81,20 +198,34 @@
     <main>
         <section class="destination-details">
             <div class="container">
+                <!-- Page Title -->
                 <h1>Tenerife</h1>
-                <img src="images/tenerife/tenerife-banner.jpg" alt="Tenerife" class="banner-image">
+                
+                <!-- Banner Image -->
+                <img src="images/tenerife/tenerife-banner.jpg" alt="Tenerife Banner" class="responsive-image">
 
-                <div class="section">
+                <!-- What to See Section -->
+                <section class="section">
                     <h2>What to See</h2>
                     <p>Tenerife is renowned for its diverse landscapes. Must-see spots include Mount Teide, Siam Park, Los Gigantes cliffs, Loro Parque, and the historic town of La Laguna.</p>
-                </div>
+                    
+                    <!-- Mount Teide Image -->
+                    <img src="images/tenerife/tenerife1.jpg" alt="Mount Teide with snow on top" class="responsive-image">
+                    <p><strong>Mount Teide:</strong> Tenerife's iconic volcano, Mount Teide, offers breathtaking views, especially when capped with snow, creating a striking contrast against the clear blue skies.</p>
+                </section>
 
-                <div class="section">
-                    <h2>A Brief History of the City</h2>
+                <!-- A Brief History Section -->
+                <section class="section">
+                    <h2>A Brief History of Tenerife</h2>
                     <p>Tenerife has a rich history influenced by Guanche natives, Spanish conquest, and modern tourism. The island's capital, Santa Cruz de Tenerife, has evolved into a vibrant city blending tradition and contemporary culture.</p>
-                </div>
+                    
+                    <!-- Friends on Mount Teide Image -->
+                    <img src="images/tenerife/tenerife2.jpg" alt="Friends on top of Mount Teide" class="responsive-image">
+                    <p><strong>Summit Adventure:</strong> Captured here are moments shared atop Mount Teide, symbolizing the adventurous spirit that Tenerife inspires in its visitors.</p>
+                </section>
 
-                <div class="section">
+                <!-- Top 10 Attractions Section -->
+                <section class="section">
                     <h2>Top 10 Attractions</h2>
                     <ol>
                         <li>Mount Teide National Park</li>
@@ -108,9 +239,14 @@
                         <li>Masca Valley</li>
                         <li>Candelaria Basilica</li>
                     </ol>
-                </div>
+                    
+                    <!-- Martian-like Terrain Image -->
+                    <img src="images/tenerife/tenerife3.jpg" alt="Mars-like terrain on Mount Teide" class="responsive-image">
+                    <p><strong>Martian Landscapes:</strong> The terrain around Mount Teide resembles the surface of Mars, making it a popular filming location for sci-fi movies and a unique natural attraction.</p>
+                </section>
 
-                <div class="section">
+                <!-- What to Bring Section -->
+                <section class="section">
                     <h2>What to Bring</h2>
                     <ul>
                         <li>Swimwear and beach essentials</li>
@@ -124,19 +260,34 @@
                         <li>Personal medications</li>
                         <li>Light jacket for cooler evenings</li>
                     </ul>
-                </div>
+                    
+                    <!-- Typical Town Image -->
+                    <img src="images/tenerife/tenerife4.jpg" alt="Typical town in Tenerife" class="responsive-image">
+                    <p><strong>Charming Towns:</strong> Tenerife boasts picturesque towns that capture the island's authentic charm and traditional Canarian architecture.</p>
+                </section>
 
-                <div class="section">
+                <!-- Currency Section -->
+                <section class="section">
                     <h2>Currency</h2>
                     <p>The currency in Tenerife is the Euro (€).</p>
-                </div>
+                    
+                    <!-- Old Town La Laguna Image -->
+                    <img src="images/tenerife/tenerife5.jpg" alt="Old Town La Laguna" class="responsive-image">
+                    <p><strong>Historic La Laguna:</strong> La Laguna, a UNESCO World Heritage Site, features well-preserved historic architecture and vibrant local life.</p>
+                </section>
 
-                <div class="section">
+                <!-- Best Time to Visit Section -->
+                <section class="section">
                     <h2>Best Time to Visit</h2>
                     <p>Tenerife enjoys a subtropical climate, making it a year-round destination. However, spring (March to May) and autumn (September to November) offer ideal weather with fewer tourists.</p>
-                </div>
+                    
+                    <!-- Mars-like Scene Filming Location Image -->
+                    <img src="images/tenerife/tenerife6.jpg" alt="Martian-like scene in Tenerife filming location" class="responsive-image">
+                    <p><strong>Film-Friendly Landscapes:</strong> The unique landscapes of Tenerife, resembling Mars, are frequently used in movie productions, adding a touch of extraterrestrial allure to the island.</p>
+                </section>
 
-                <div class="section">
+                <!-- Fun Facts Section -->
+                <section class="section">
                     <h2>Fun Facts</h2>
                     <ul>
                         <li>Mount Teide is the highest peak in Spain and the third-largest volcano in the world from its base.</li>
@@ -145,40 +296,7 @@
                         <li>The island is home to diverse ecosystems, including lush forests and volcanic landscapes.</li>
                         <li>Tenerife has its own unique species of flora and fauna, some of which are endemic to the island.</li>
                     </ul>
-                </div>
-
-                <!-- New Photo Gallery Section Starts Here -->
-                <div class="section">
-                    <h2>Photo Gallery</h2>
-                    <div class="gallery">
-                        <figure>
-                            <img src="images/tenerife/tenerife1.jpg" alt="Mount Teide with snow on top" class="gallery-image">
-                            <figcaption>Mount Teide covered in snow.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/tenerife/tenerife2.jpg" alt="Friends on top of Mount Teide" class="gallery-image">
-                            <figcaption>Enjoying the view on top of Mount Teide with friends.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/tenerife/tenerife3.jpg" alt="Mars-like terrain on Mount Teide" class="gallery-image">
-                            <figcaption>Martian-like landscape at the summit of Mount Teide.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/tenerife/tenerife4.jpg" alt="Typical town in Tenerife" class="gallery-image">
-                            <figcaption>A picturesque town in Tenerife.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/tenerife/tenerife5.jpg" alt="Old Town La Laguna" class="gallery-image">
-                            <figcaption>Historic Old Town of La Laguna.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/tenerife/tenerife6.jpg" alt="Martian-like scene in Tenerife filming location" class="gallery-image">
-                            <figcaption>Martian-like landscape used in many movie scenes.</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <!-- New Photo Gallery Section Ends Here -->
-
+                </section>
             </div>
         </section>
     </main>
