@@ -2,19 +2,254 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discovering Cairns: A 5-Day Gateway to Adventure and Relaxation</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Discovering Cairns: A Comprehensive Guide to Adventure and Relaxation. Explore Cairns' vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots.">
+    <meta name="keywords" content="Cairns, Australia, Travel, Great Barrier Reef, Daintree Rainforest, Kuranda Scenic Railway, Tourism">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Discovering Cairns: A Comprehensive Guide - Carl Travels">
+    <meta property="og:description" content="Explore Cairns' vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots.">
+    <meta property="og:image" content="https://www.carltravels.com/cairns-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/Cairns.html">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discovering Cairns: A Comprehensive Guide - Carl Travels">
+    <meta name="twitter:description" content="Explore Cairns' vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots.">
+    <meta name="twitter:image" content="https://www.carltravels.com/cairns-twitter-image.jpg">
+
+    <title>Discovering Cairns: A Comprehensive Guide - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for city pages -->
     <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Discovering Cairns: A Comprehensive Guide",
+      "description": "Explore Cairns' vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots. Discover the perfect blend of adventure and relaxation in one of Australia's most renowned destinations.",
+      "image": "https://www.carltravels.com/cairns-banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/Cairns.html"
+      }
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            padding: 10px 0;
+        }
+
+        /* Responsive Video Container */
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Testimonial Section Styling */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Video Section Styling */
+        .video-section {
+            margin-bottom: 30px;
+        }
+
+        /* Additional Video Styling */
+        .additional-video {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -23,14 +258,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -41,60 +278,77 @@
     <main>
         <section class="blog-post">
             <div class="container">
-                <h1>Discovering Cairns: A 5-Day Gateway to Adventure and Relaxation</h1>
-                <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ipXULKhIAT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Discovering Cairns</li>
+                    </ol>
+                </nav>
+
+                <!-- Page Title -->
+                <h1>Discovering Cairns: A Comprehensive Guide</h1>
                 
+                <!-- Embedded YouTube Video (Banner Replacement) -->
+                <div class="responsive-video video-section">
+                    <iframe src="https://www.youtube.com/embed/ipXULKhIAT8" title="Discovering Cairns: A 5-Day Gateway to Adventure and Relaxation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Embedded Additional YouTube Video -->
+                <div class="responsive-video additional-video">
+                    <iframe src="https://www.youtube.com/embed/BbJnIqomlmI" title="Which Island is Better to Visit: Green Island vs Fitzroy Island" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
                 <!-- Introduction -->
-                <section>
+                <section class="section">
                     <h2>Introduction</h2>
                     <p>Cairns, located in Far North Queensland, serves as a bustling gateway to some of Australia's most stunning natural attractions, including the Great Barrier Reef and the Daintree Rainforest. As Carl, a 38-year-old traveler from Australia, I embarked on a 5-day exploration to experience the perfect blend of adventure, relaxation, and cultural immersion that Cairns has to offer.</p>
                     <p><strong>Brief History:</strong> Established in the late 19th century as a port for the mining industry, Cairns has grown into a vibrant tourist destination. The city is a melting pot of cultures, reflecting its rich Indigenous heritage and diverse immigrant influences.</p>
                 </section>
                 
                 <!-- Day 1 -->
-                <section>
+                <section class="section">
                     <h2>Day 1: Arrival and The Cairns Esplanade</h2>
                     <p>Upon arriving at Cairns Airport, I took a taxi to my hotel near The Cairns Esplanade, a scenic waterfront promenade known for its lush parklands and vibrant atmosphere. The first day was about acclimating and exploring the local area.</p>
-                    <img src="cairnsday1.jpg" alt="Cairns Esplanade">
+                    <img src="cairnsday1.jpg" alt="Cairns Esplanade" class="responsive-image" loading="lazy">
                     <p>I spent the afternoon strolling along The Cairns Esplanade, enjoying the tropical gardens, lagoon swimming pool, and lively cafes. In the evening, I dined at a waterfront restaurant, savoring fresh seafood while taking in the stunning sunset views over the Coral Sea.</p>
                 </section>
                 
                 <!-- Day 2 -->
-                <section>
+                <section class="section">
                     <h2>Day 2: Great Barrier Reef Exploration</h2>
                     <p>The second day was dedicated to exploring the Great Barrier Reef, one of the world's most spectacular marine ecosystems. I joined a snorkeling and diving tour that took me to vibrant coral reefs teeming with diverse marine life.</p>
-                    <img src="cairnsday2.jpg" alt="Great Barrier Reef Snorkeling">
+                    <img src="cairnsday2.jpg" alt="Great Barrier Reef Snorkeling" class="responsive-image" loading="lazy">
                     <p>Snorkeling amidst colorful corals, tropical fish, and graceful sea turtles was a mesmerizing experience. The clarity of the water and the abundance of marine species made the excursion unforgettable. In the afternoon, I visited Fitzroy Island, enjoying the island's serene beaches and scenic hiking trails.</p>
                 </section>
                 
                 <!-- Day 3 -->
-                <section>
+                <section class="section">
                     <h2>Day 3: Daintree Rainforest Adventure</h2>
                     <p>The third day was all about immersing myself in the ancient beauty of the Daintree Rainforest. I joined a guided tour that took me through lush rainforests, past cascading waterfalls, and along pristine beaches.</p>
-                    <img src="cairnsday3.jpg" alt="Daintree Rainforest">
+                    <img src="cairnsday3.jpg" alt="Daintree Rainforest" class="responsive-image" loading="lazy">
                     <p>We explored the Mossman Gorge, where I enjoyed a refreshing swim in the crystal-clear waters. The guided walk provided fascinating insights into the region's Indigenous culture and the diverse ecosystem that thrives within the rainforest.</p>
                 </section>
                 
                 <!-- Day 4 -->
-                <section>
+                <section class="section">
                     <h2>Day 4: Kuranda Scenic Railway and Cultural Experiences</h2>
                     <p>The fourth day was a journey to the charming village of Kuranda, traversed via the historic Kuranda Scenic Railway. The train ride offered breathtaking views of waterfalls, mountains, and lush landscapes.</p>
-                    <img src="cairnsday4.jpg" alt="Kuranda Scenic Railway">
+                    <img src="cairnsday4.jpg" alt="Kuranda Scenic Railway" class="responsive-image" loading="lazy">
                     <p>Upon arrival in Kuranda, I explored the vibrant markets, where local artisans showcased handmade crafts, artworks, and delicious street food. In the afternoon, I visited the Australian Butterfly Sanctuary, marveling at the diverse species of butterflies in a controlled tropical environment.</p>
                 </section>
                 
                 <!-- Day 5 -->
-                <section>
+                <section class="section">
                     <h2>Day 5: Wildlife Encounters and Farewell</h2>
                     <p>On my final day, I sought wildlife encounters at the Cairns Tropical Zoo. The zoo offers a unique experience to interact with native Australian animals, including kangaroos, koalas, and crocodiles.</p>
-                    <img src="cairnsday5.jpg" alt="Cairns Tropical Zoo">
+                    <img src="cairnsday5.jpg" alt="Cairns Tropical Zoo" class="responsive-image" loading="lazy">
                     <p>The afternoon was spent relaxing at a local spa, enjoying a rejuvenating massage before my departure. Reflecting on the memorable experiences, I felt a deep appreciation for the vibrant culture and stunning landscapes of Cairns.</p>
                 </section>
                 
                 <!-- Highlights -->
-                <section>
+                <section class="section">
                     <h2>Highlights</h2>
                     <ul>
                         <li>The Cairns Esplanade: Scenic waterfront promenade with lush parklands.</li>
@@ -106,23 +360,24 @@
                 </section>
                 
                 <!-- Practical Information -->
-                <section>
+                <section class="section">
                     <h2>Practical Information</h2>
-                    <h3>Transportation</h3>
+                    
+                    <h3 id="transportation">Transportation</h3>
                     <p>Cairns is accessible by air via Cairns Airport, with regular flights from major Australian cities. Within the city, public transportation includes buses, trains, and ferries. Renting a car provides flexibility in exploring surrounding areas. For trips to the Great Barrier Reef and Daintree Rainforest, booking guided tours is recommended for safety and convenience.</p>
                     
-                    <h3>Accommodation</h3>
+                    <h3 id="accommodation">Accommodation</h3>
                     <p>Cairns offers a wide range of accommodations, from luxury waterfront resorts to budget-friendly hostels. I stayed at a mid-range hotel near The Cairns Esplanade, which provided excellent amenities and easy access to key attractions.</p>
                     
-                    <h3>Budgeting</h3>
+                    <h3 id="budgeting">Budgeting</h3>
                     <p>Cairns is moderately priced. A comfortable daily budget ranges from $50 to $100 AUD, covering accommodation, meals, transportation, and activities.</p>
                 </section>
                 
                 <!-- Tips and Recommendations -->
-                <section>
+                <section class="section">
                     <h2>Tips and Recommendations</h2>
                     
-                    <h3>Do’s and Don’ts</h3>
+                    <h3 id="dos-and-donts">Do’s and Don’ts</h3>
                     <ul>
                         <li><strong>Do:</strong> Book Great Barrier Reef and Daintree Rainforest tours in advance.</li>
                         <li><strong>Don’t:</strong> Litter or disturb marine and wildlife environments.</li>
@@ -130,67 +385,71 @@
                         <li><strong>Don’t:</strong> Engage in unsafe activities without proper guidance and equipment.</li>
                     </ul>
                     
-                    <h3>Packing Lists</h3>
+                    <h3 id="packing-list">Packing List</h3>
                     <ul>
                         <li>Lightweight, breathable clothing suitable for tropical climates.</li>
                         <li>Swimwear and beach essentials.</li>
                         <li>Insect repellent and sunscreen.</li>
                         <li>Comfortable hiking boots or shoes.</li>
                         <li>Rain jacket or umbrella for unexpected showers.</li>
+                        <li>Camera or smartphone for capturing memorable moments.</li>
+                        <li>Travel insurance documents for peace of mind.</li>
+                        <li>Reusable water bottle to stay hydrated.</li>
+                        <li>Basic first-aid kit.</li>
+                        <li>Portable charger for electronic devices.</li>
                     </ul>
                     
-                    <h3>Local Etiquette</h3>
-                    <p>Respect the local community and their cultural practices. Always greet with a friendly smile and a polite gesture. Dress modestly when visiting cultural and historical sites. When interacting with wildlife, maintain a respectful distance and avoid feeding animals.</p>
+                    <h3 id="local-etiquette">Local Etiquette</h3>
+                    <p>Brisbane's culture emphasizes friendliness and respect. Always greet with a smile and a "hello." Tipping in restaurants is appreciated but not mandatory. Respect personal space and be mindful of noise levels in public areas.</p>
                 </section>
                 
                 <!-- Cultural Immersion -->
-                <section>
+                <section class="section">
                     <h2>Cultural Immersion</h2>
-                    <p>Interacting with local Indigenous communities provided a profound understanding of their cultural practices and connection to the land. I participated in a traditional Indigenous dance workshop, learning the graceful movements and their cultural significance.</p>
-                    <p>Visiting the Australian Butterfly Sanctuary allowed me to witness the delicate beauty of native butterflies and understand the importance of conservation efforts in preserving biodiversity.</p>
+                    <p>Engaging with local artists in Cairns provided a deeper appreciation for the city's thriving arts scene. I attended a street art tour, learning about the history and techniques behind Cairns' vibrant murals.</p>
+                    <p>Visiting the Cairns Regional Gallery offered insights into contemporary Australian art and local cultural initiatives, fostering a greater understanding and appreciation for the region's creative expressions.</p>
                 </section>
                 
                 <!-- Food and Cuisine -->
-                <section>
+                <section class="section">
                     <h2>Food and Cuisine</h2>
                     <p>Cairns' culinary scene is a delightful blend of fresh seafood, tropical fruits, and international flavors.</p>
                     <ul>
                         <li><strong>Grilled Barramundi:</strong> Freshly grilled fish served with seasonal vegetables.</li>
                         <li><strong>Seafood Platter:</strong> A variety of shellfish, prawns, and calamari.</li>
-                        <li><strong>Thai Curry:</strong> Spicy and aromatic curries with tender meats and vegetables.</li>
-                        <li><strong>Tropical Fruit Smoothies:</strong> Refreshing blends of local fruits.</li>
-                        <li><strong>Homemade Pastries:</strong> Delicious baked goods from local bakeries.</li>
+                        <li><strong>Pavlova:</strong> Sweet meringue-based dessert topped with fresh fruits.</li>
+                        <li><strong>Lamingtons:</strong> Sponge cake coated in chocolate and coconut.</li>
+                        <li><strong>Craft Beer:</strong> Sampling locally brewed craft beers at Cairns' numerous breweries.</li>
                     </ul>
                     <p>I highly recommend dining at one of the waterfront restaurants along The Cairns Esplanade, where you can enjoy the freshest catches while taking in stunning views of the Coral Sea.</p>
                 </section>
                 
                 <!-- Adventure and Activities -->
-                <section>
+                <section class="section">
                     <h2>Adventure and Activities</h2>
                     <p>Cairns offers a variety of activities for adventure enthusiasts:</p>
                     <ul>
                         <li><strong>Snorkeling and Diving:</strong> Explore the vibrant marine life of the Great Barrier Reef.</li>
                         <li><strong>Rainforest Walks:</strong> Guided hikes through ancient rainforests.</li>
-                        <li><strong>Kayaking:</strong> Paddle along serene coastlines and mangrove waterways.</li>
-                        <li><strong>Wildlife Watching:</strong> Spot diverse bird species and native animals at wildlife sanctuaries.</li>
-                        <li><strong>Mountain Biking:</strong> Tackle challenging trails amidst lush landscapes.</li>
+                        <li><strong>Kayaking:</strong> Navigate the Cairns River and nearby waterways.</li>
+                        <li><strong>Ziplining:</strong> Experience the thrill of ziplining in the nearby adventure parks.</li>
+                        <li><strong>Scuba Diving:</strong> Discover marine life at Moreton Island.</li>
+                        <li><strong>Island Tours:</strong> Decide between visiting Green Island or Fitzroy Island with comprehensive guides.</li>
                     </ul>
                     <p>One of the most thrilling activities was the snorkeling expedition on the Great Barrier Reef, where I swam alongside vibrant corals and a myriad of marine species, creating unforgettable underwater memories.</p>
                 </section>
                 
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>Meeting Sarah, a local marine biologist, was a highlight of my trip. She took me on a guided dive, sharing fascinating insights into the reef's ecosystem and conservation efforts.</p>
-                    <p>Another unforgettable moment was attending a traditional Indigenous ceremony, where I learned about their spiritual practices and deep connection to the land and sea.</p>
-                </section>
-                
-                <!-- Conclusion -->
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Cairns is a vibrant destination that offers a perfect blend of adventure, relaxation, and cultural immersion. I found my 5-day journey to be an enriching and exhilarating experience, uncovering the dynamic culture and stunning natural landscapes of one of Australia's most renowned tourist hubs.</p>
-                    <p>If you're planning a trip to Australia, Cairns should definitely be on your itinerary. Whether you're seeking marine adventures, rainforest explorations, or simply a relaxing tropical escape, Cairns has something for everyone.</p>
-                    <p>Until next time, happy travels!</p>
+                <!-- Visitor Testimonials -->
+                <section class="section testimonials">
+                    <h2>Visitor Testimonials</h2>
+                    <blockquote>
+                        "Cairns' Esplanade is the perfect blend of relaxation and activity. The vibrant atmosphere and beautiful waterfront make every visit enjoyable."
+                        <footer>- Mia Davis</footer>
+                    </blockquote>
+                    <blockquote>
+                        "The Great Barrier Reef tour was absolutely spectacular. Swimming among the colorful corals and marine life was an unforgettable experience."
+                        <footer>- Lucas Anderson</footer>
+                    </blockquote>
                 </section>
             </div>
         </section>
@@ -201,13 +460,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
