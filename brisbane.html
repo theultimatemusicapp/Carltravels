@@ -2,19 +2,249 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring Brisbane's Urban Oasis: A 3-Day Experience</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Exploring Brisbane's Urban Oasis: A Comprehensive Guide. Discover Brisbane's vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots.">
+    <meta name="keywords" content="Brisbane, Australia, Travel, Culture, South Bank Parklands, Lone Pine Koala Sanctuary, Mount Coot-tha, Tourism">
+    <meta name="author" content="Carl Tomich">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Exploring Brisbane's Urban Oasis: A Comprehensive Guide - Carl Travels">
+    <meta property="og:description" content="Discover Brisbane's vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots.">
+    <meta property="og:image" content="https://www.carltravels.com/brisbane-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/Brisbane.html">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Exploring Brisbane's Urban Oasis: A Comprehensive Guide - Carl Travels">
+    <meta name="twitter:description" content="Discover Brisbane's vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots.">
+    <meta name="twitter:image" content="https://www.carltravels.com/brisbane-twitter-image.jpg">
+
+    <title>Exploring Brisbane's Urban Oasis: A Comprehensive Guide - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for city pages -->
     <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Exploring Brisbane's Urban Oasis: A Comprehensive Guide",
+      "description": "Discover Brisbane's vibrant cultural scene, iconic landmarks, and hidden gems beyond the tourist hotspots. Explore the city's rich history and dynamic lifestyle.",
+      "image": "https://www.carltravels.com/brisbane-banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/Brisbane.html"
+      }
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            padding: 10px 0;
+        }
+
+        /* Responsive Video Container */
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Testimonial Section Styling */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Video Section Styling */
+        .video-section {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1><a href="index.html">Carl Travels</a></h1>
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -23,14 +253,16 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
@@ -41,43 +273,55 @@
     <main>
         <section class="blog-post">
             <div class="container">
-                <h1>Exploring Brisbane's Urban Oasis: A 3-Day Experience</h1>
-                <div class="banner-image">
-                    <img src="brisbanebanner.jpg" alt="Brisbane Banner">
-                </div>
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Exploring Brisbane's Urban Oasis</li>
+                    </ol>
+                </nav>
+
+                <!-- Page Title -->
+                <h1>Exploring Brisbane's Urban Oasis: A Comprehensive Guide</h1>
                 
+                <!-- Embedded YouTube Video -->
+                <div class="responsive-video video-section">
+                    <iframe src="https://www.youtube.com/embed/hsDSaKpPpF8" title="Exploring Brisbane's Urban Oasis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
                 <!-- Introduction -->
-                <section>
+                <section class="section">
                     <h2>Introduction</h2>
                     <p>Brisbane, the capital of Queensland, is a vibrant city known for its sunny weather, riverfront promenades, and thriving arts scene. As Carl, a 38-year-old traveler from Australia, I embarked on a 3-day experience to discover Brisbane's unique blend of urban life and natural beauty.</p>
                 </section>
                 
                 <!-- Day 1 -->
-                <section>
+                <section class="section">
                     <h2>Day 1: Arrival and South Bank Parklands</h2>
                     <p>Upon arriving at Brisbane Airport, I took a ferry to South Bank, a premier cultural precinct. The first day was dedicated to exploring the South Bank Parklands, renowned for its lush gardens, sandy beaches, and vibrant atmosphere.</p>
-                    <img src="brisbaneday1.jpg" alt="South Bank Parklands">
+                    <img src="brisbaneday1.jpg" alt="South Bank Parklands" class="responsive-image">
                     <p>In the afternoon, I visited the Queensland Art Gallery and Gallery of Modern Art (QAGOMA), immersing myself in diverse art collections and contemporary exhibitions. The evening was spent dining at a riverside restaurant, enjoying stunning views of the Story Bridge illuminated at night.</p>
                 </section>
                 
                 <!-- Day 2 -->
-                <section>
+                <section class="section">
                     <h2>Day 2: Lone Pine Koala Sanctuary and Mount Coot-tha Lookout</h2>
                     <p>The second day was all about experiencing Brisbane's wildlife and panoramic views. I began with a visit to Lone Pine Koala Sanctuary, where I had the chance to cuddle a koala and interact with various Australian native animals.</p>
-                    <img src="brisbaneday2.jpg" alt="Lone Pine Koala Sanctuary">
+                    <img src="brisbaneday2.jpg" alt="Lone Pine Koala Sanctuary" class="responsive-image">
                     <p>In the afternoon, I drove up to Mount Coot-tha Lookout, enjoying breathtaking views of the city and surrounding landscapes. The day concluded with a leisurely walk through the Mount Coot-tha Botanic Gardens, marveling at the diverse plant species and serene environments.</p>
                 </section>
                 
                 <!-- Day 3 -->
-                <section>
+                <section class="section">
                     <h2>Day 3: River Cruise and Farewell</h2>
                     <p>On my final day, I embarked on a scenic river cruise along the Brisbane River, offering unique perspectives of the city's skyline and key landmarks.</p>
-                    <img src="brisbaneday3.jpg" alt="Brisbane River Cruise">
+                    <img src="brisbaneday3.jpg" alt="Brisbane River Cruise" class="responsive-image">
                     <p>In the afternoon, I explored the bustling Queen Street Mall, indulging in some shopping and enjoying the vibrant street performances. The trip concluded with a farewell lunch at a local cafe, reflecting on the memorable experiences of my Brisbane adventure.</p>
                 </section>
                 
                 <!-- Highlights -->
-                <section>
+                <section class="section">
                     <h2>Highlights</h2>
                     <ul>
                         <li>South Bank Parklands: Lush gardens and vibrant cultural precinct.</li>
@@ -89,23 +333,24 @@
                 </section>
                 
                 <!-- Practical Information -->
-                <section>
+                <section class="section">
                     <h2>Practical Information</h2>
-                    <h3>Transportation</h3>
+                    
+                    <h3 id="transportation">Transportation</h3>
                     <p>Brisbane's public transport system includes buses, trains, and ferries. Purchasing a Go Card is recommended for convenient travel across all modes of transport.</p>
                     
-                    <h3>Accommodation</h3>
+                    <h3 id="accommodation">Accommodation</h3>
                     <p>Brisbane offers a variety of accommodations, from luxury hotels in the CBD to charming boutique guesthouses in South Bank. I stayed at a mid-range hotel near South Bank, providing excellent amenities and easy access to major attractions.</p>
                     
-                    <h3>Budgeting</h3>
+                    <h3 id="budgeting">Budgeting</h3>
                     <p>Brisbane is relatively affordable. A comfortable daily budget ranges from $70 to $120 AUD, covering accommodation, meals, transportation, and activities.</p>
                 </section>
                 
                 <!-- Tips and Recommendations -->
-                <section>
+                <section class="section">
                     <h2>Tips and Recommendations</h2>
                     
-                    <h3>Do’s and Don’ts</h3>
+                    <h3 id="dos-and-donts">Do’s and Don’ts</h3>
                     <ul>
                         <li><strong>Do:</strong> Use public transport to navigate the city efficiently.</li>
                         <li><strong>Don’t:</strong> Litter or disrespect local customs.</li>
@@ -113,28 +358,32 @@
                         <li><strong>Don’t:</strong> Engage in reckless behavior during outdoor activities; prioritize safety.</li>
                     </ul>
                     
-                    <h3>Packing Lists</h3>
+                    <h3 id="packing-list">Packing List</h3>
                     <ul>
                         <li>Comfortable walking shoes for exploring the city and parks.</li>
                         <li>Lightweight, breathable clothing suitable for Brisbane's warm climate.</li>
                         <li>Sun protection: hats, sunglasses, and sunscreen.</li>
                         <li>Rain jacket or umbrella for unexpected showers.</li>
                         <li>Camera or smartphone for capturing memorable moments.</li>
+                        <li>Travel insurance documents for peace of mind.</li>
+                        <li>Reusable water bottle to stay hydrated.</li>
+                        <li>Basic first-aid kit.</li>
+                        <li>Portable charger for electronic devices.</li>
                     </ul>
                     
-                    <h3>Local Etiquette</h3>
+                    <h3 id="local-etiquette">Local Etiquette</h3>
                     <p>Brisbane's culture emphasizes friendliness and respect. Always greet with a smile and a "hello." Tipping in restaurants is appreciated but not mandatory. Respect personal space and be mindful of noise levels in public areas.</p>
                 </section>
                 
                 <!-- Cultural Immersion -->
-                <section>
+                <section class="section">
                     <h2>Cultural Immersion</h2>
                     <p>Engaging with local artists in Brisbane provided a deeper appreciation for the city's thriving arts scene. I attended a street art tour, learning about the history and techniques behind Brisbane's vibrant murals.</p>
                     <p>Visiting the Brisbane Powerhouse, a contemporary multi-arts venue, offered insights into the city's innovative cultural initiatives and performances.</p>
                 </section>
                 
                 <!-- Food and Cuisine -->
-                <section>
+                <section class="section">
                     <h2>Food and Cuisine</h2>
                     <p>Brisbane's culinary scene is a delightful mix of international flavors and local specialties.</p>
                     <ul>
@@ -148,7 +397,7 @@
                 </section>
                 
                 <!-- Adventure and Activities -->
-                <section>
+                <section class="section">
                     <h2>Adventure and Activities</h2>
                     <p>Brisbane offers a variety of activities for adventure enthusiasts:</p>
                     <ul>
@@ -161,19 +410,17 @@
                     <p>One of the most thrilling activities was the ziplining adventure at the CityCat Wharf, offering exhilarating views of the Brisbane skyline and river.</p>
                 </section>
                 
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>Meeting Liam, a local wildlife photographer, was a highlight of my trip. He took me on a photography tour, sharing his expertise and passion for capturing Brisbane's natural beauty.</p>
-                    <p>Another unforgettable moment was attending a live jazz performance at a hidden speakeasy bar in Fortitude Valley. The intimate setting and soulful tunes created a memorable evening.</p>
-                </section>
-                
-                <!-- Conclusion -->
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Brisbane is a city that effortlessly blends urban sophistication with natural beauty. As Carl, I found my 3-day experience to be an enriching and unforgettable journey through one of Australia's most vibrant cities.</p>
-                    <p>If you're planning a trip to Australia, Brisbane should definitely be on your list. Whether you're a culture enthusiast, a food lover, or an adventure seeker, Brisbane has something to offer for everyone.</p>
-                    <p>Until next time, happy travels!</p>
+                <!-- Visitor Testimonials -->
+                <section class="section testimonials">
+                    <h2>Visitor Testimonials</h2>
+                    <blockquote>
+                        "Brisbane's South Bank Parklands offer the perfect blend of relaxation and cultural experiences. Every visit feels refreshing and inspiring."
+                        <footer>- Ava Thompson</footer>
+                    </blockquote>
+                    <blockquote>
+                        "The Lone Pine Koala Sanctuary was a highlight of my trip. Cuddling a koala was an unforgettable experience that I cherish."
+                        <footer>- Noah Wilson</footer>
+                    </blockquote>
                 </section>
             </div>
         </section>
@@ -184,13 +431,13 @@
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube">
                 </a>
             </div>
