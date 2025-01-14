@@ -27,8 +27,7 @@
     <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
     <!-- Specific styles for about page -->
-    <link rel="stylesheet" href="city.css">
-
+    <link rel="stylesheet" href="about.css">
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <!-- Favicon -->
@@ -245,6 +244,34 @@
             margin-bottom: 10px;
             font-size: 1.2em;
         }
+
+        /* Arrange Videos in a Row */
+        .video-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .video-row .video-container {
+            flex: 1 1 30%; /* Allows three videos per row with flexibility */
+            max-width: 32%;
+        }
+
+        /* Ensure Responsiveness */
+        @media (max-width: 992px) {
+            .video-row .video-container {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .video-row .video-container {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -409,4 +436,3 @@
     </footer>
 </body>
 </html>
-
