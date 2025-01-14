@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <meta name="description" content="Learn more about Carl Ostomich, an Australian filmmaker, traveler, and music enthusiast.">
+    <meta name="description" content="Learn more about Carl Ostomich, an Australian filmmaker, traveler, and music enthusiast. Discover his journey, passion for film and technology, and follow his adventures through engaging content and insightful videos.">
     <meta name="keywords" content="About Carl Ostomich, Carl Travels, Filmmaker, Traveler, Music Enthusiast, Next Day Cinematics">
     <meta name="author" content="Carl Ostomich">
 
@@ -27,11 +27,225 @@
     <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
     <!-- Specific styles for about page -->
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="city.css">
+
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Carl Ostomich",
+      "url": "https://www.carltravels.com/about.html",
+      "image": "https://www.carltravels.com/images/carlaboutme.jpg",
+      "sameAs": [
+        "https://www.facebook.com/thecarlostomich",
+        "https://www.instagram.com/carlostomich",
+        "https://www.youtube.com/@CarlTravels"
+      ],
+      "jobTitle": "Filmmaker, Traveler, Music Enthusiast",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Carl Travels"
+      },
+      "description": "Carl Ostomich is an Australian-born filmmaker, traveler, and music enthusiast with a passion for storytelling, exploration, and technology. He has traveled to over 40 countries and created engaging content through his YouTube channels and documentary films."
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            padding: 10px 0;
+        }
+
+        /* Responsive Video Container */
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
+        }
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Testimonial Section Styling */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Video Section Styling */
+        .video-section {
+            margin-bottom: 30px;
+        }
+
+        /* Additional Video Styling */
+        .additional-video {
+            margin-bottom: 30px;
+        }
+
+        /* Follow My Adventures Section */
+        .follow-adventures {
+            margin-top: 30px;
+        }
+
+        .follow-adventures h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+
+        .follow-adventures .video-container {
+            margin-bottom: 20px;
+        }
+
+        .follow-adventures .video-title {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -74,60 +288,108 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
     <main>
         <section class="about">
             <div class="container">
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ol>
+                </nav>
+
+                <!-- Page Title -->
                 <h1>About Me</h1>
-                <p>Hello! My name is Carlos Tomich, an Australian-born filmmaker, traveler, and music enthusiast with a rich British/Croatian background. My passion for storytelling, exploration, and technology has shaped my journey through life and my career.</p>
-                
-                <!-- Banner Image Under About Me -->
+
+                <!-- Banner Image -->
                 <div class="banner-image">
                     <img src="carlaboutme.jpg" alt="Carl Tomich">
                 </div>
 
-                <h2>My Background</h2>
-                <p>I’ve traveled to over 40 countries and explored more than 300 cities worldwide. From driving across the entire expanse of Australia to sailing around half of its coast, I’ve always sought adventure. My experiences include living in Germany for 10 years, spending six months in the Canary Islands, and calling Budapest, Vietnam, and New York home during extended stays. These diverse experiences have deeply influenced my creative work and my perspective on life.</p>
-                
-                <h2>My Journey</h2>
-                <p>I started my creative journey as a teenager, playing in bands, DJing across the globe, and busking on city streets. These formative years fueled my love for music and led me to discover my passion for filmmaking and vlogging. Over the years, I have released three feature documentary films and am currently working on my fourth. Travel remains a cornerstone of my life, inspiring my work and feeding my curiosity about the world.</p>
-                
-                <h2>Passion for Film and Technology</h2>
-                <p>Filmmaking has become a way for me to blend my love for storytelling, technology, and gear. Through my company, <a href="https://www.nextdaycinematics.com" target="_blank">Next Day Cinematics</a>, I aim to create visually compelling stories that captivate and inspire. My YouTube channels are a testament to this passion, where I share travel adventures, filmmaking tips, and gear reviews with a growing community of viewers.</p>
-                
-                <!-- Banner Image Under Passion for Film and Technology -->
-                <div class="banner-image">
-                    <img src="busklifeposter.jpg" alt="Busklife Poster">
-                </div>
-                
-                <!-- New Section: Honest Advice or Opinions on Topics I Find Interesting -->
-                <h2>Honest Advice or Opinions on Topics I Find Interesting</h2>
-                <div class="video-row">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/jt-RCtbl6KI" title="Honest Advice Video 1" frameborder="0" allowfullscreen></iframe>
+                <!-- Introduction -->
+                <section class="section">
+                    <p>Hello! My name is Carlos Tomich, an Australian-born filmmaker, traveler, and music enthusiast with a rich British/Croatian background. My passion for storytelling, exploration, and technology has shaped my journey through life and my career.</p>
+                </section>
+
+                <!-- My Background -->
+                <section class="section">
+                    <h2>My Background</h2>
+                    <p>I’ve traveled to over 40 countries and explored more than 300 cities worldwide. From driving across the entire expanse of Australia to sailing around half of its coast, I’ve always sought adventure. My experiences include living in Germany for 10 years, spending six months in the Canary Islands, and calling Budapest, Vietnam, and New York home during extended stays. These diverse experiences have deeply influenced my creative work and my perspective on life.</p>
+                </section>
+
+                <!-- My Journey -->
+                <section class="section">
+                    <h2>My Journey</h2>
+                    <p>I started my creative journey as a teenager, playing in bands, DJing across the globe, and busking on city streets. These formative years fueled my love for music and led me to discover my passion for filmmaking and vlogging. Over the years, I have released three feature documentary films and am currently working on my fourth. Travel remains a cornerstone of my life, inspiring my work and feeding my curiosity about the world.</p>
+                </section>
+
+                <!-- Passion for Film and Technology -->
+                <section class="section">
+                    <h2>Passion for Film and Technology</h2>
+                    <p>Filmmaking has become a way for me to blend my love for storytelling, technology, and gear. Through my company, <a href="https://www.nextdaycinematics.com" target="_blank">Next Day Cinematics</a>, I aim to create visually compelling stories that captivate and inspire. My YouTube channels are a testament to this passion, where I share travel adventures, filmmaking tips, and gear reviews with a growing community of viewers.</p>
+
+                    <!-- Banner Image Under Passion for Film and Technology -->
+                    <div class="banner-image">
+                        <img src="busklifeposter.jpg" alt="Busklife Poster">
                     </div>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/ADr3Zi4ZJtY" title="Honest Advice Video 2" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <!-- Honest Advice or Opinions on Topics I Find Interesting -->
+                <section class="section">
+                    <h2>Honest Advice or Opinions on Topics I Find Interesting</h2>
+                    <div class="video-row">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/jt-RCtbl6KI" title="Honest Advice Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/ADr3Zi4ZJtY" title="Honest Advice Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/nEHOd9xTIs4" title="Honest Advice Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/nEHOd9xTIs4" title="Honest Advice Video 3" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <!-- Follow My Adventures -->
+                <section class="section follow-adventures">
+                    <h2>Follow My Adventures</h2>
+                    <p>Stay connected and follow my journey through the links below:</p>
+                    <ul class="follow-links">
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                    </ul>
+
+                    <!-- Additional Video: That One Time I Built a Houseboat -->
+                    <div class="follow-adventures">
+                        <h3 class="video-title">That One Time I Built a Houseboat</h3>
+                        <div class="responsive-video video-container">
+                            <iframe src="https://www.youtube.com/embed/orOwD1xb2LU?start=1" title="That One Time I Built a Houseboat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
-                </div>
-                
-                <h2>Follow My Adventures</h2>
-                <p>Stay connected and follow my journey through the links below:</p>
-                <ul class="follow-links">
-                    <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                    <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                    <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                    <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                </ul>
+                </section>
+
+                <!-- Visitor Testimonials -->
+                <section class="section testimonials">
+                    <h2>Visitor Testimonials</h2>
+                    <blockquote>
+                        "Carl's journey is truly inspiring! His films capture the essence of adventure and exploration beautifully."
+                        <footer>- Jessica Lee</footer>
+                    </blockquote>
+                    <blockquote>
+                        "Following Carl's travels has been a joy. His honest advice and engaging content make every trip feel personal."
+                        <footer>- Michael Brown</footer>
+                    </blockquote>
+                </section>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
@@ -147,3 +409,4 @@
     </footer>
 </body>
 </html>
+
