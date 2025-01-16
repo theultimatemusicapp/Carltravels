@@ -3,46 +3,48 @@
 <head>
     <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journey Through Porto: Your Comprehensive Travel Guide</title>
     
-    <!-- SEO Meta Description -->
+    <!-- Primary Meta Tags -->
     <meta name="description" content="Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions like the Dom Luís I Bridge, Clérigos Tower, and Ribeira District. Learn about the city's history, best time to visit, budgeting tips, and more.">
-    
-    <!-- SEO Keywords -->
     <meta name="keywords" content="Porto travel guide, Portugal travel, Porto attractions, Dom Luís I Bridge, Port wine, Ribeira District, best time to visit Porto, Clérigos Tower, UNESCO World Heritage Sites Portugal, Porto budget tips">
-    
+    <meta name="author" content="Carl Ostomich">
+
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Journey Through Porto: Your Comprehensive Travel Guide">
-    <meta property="og:description" content="Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions, local tips, and more.">
+    <meta property="og:title" content="Exploring Porto: A Comprehensive Travel Guide - Carl Travels">
+    <meta property="og:description" content="Discover Porto's historic charm, vibrant culture, thrilling adventures, and essential travel tips for an unforgettable experience.">
     <meta property="og:image" content="https://www.carltravels.com/images/porto-featured-image.jpg">
     <meta property="og:url" content="https://www.carltravels.com/destinations/porto.html">
-    <meta property="og:type" content="website">
-    
+    <meta property="og:type" content="article">
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Journey Through Porto: Your Comprehensive Travel Guide">
-    <meta name="twitter:description" content="Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions, local tips, and more.">
+    <meta name="twitter:title" content="Exploring Porto: A Comprehensive Travel Guide - Carl Travels">
+    <meta name="twitter:description" content="Discover Porto's historic charm, vibrant culture, thrilling adventures, and essential travel tips for an unforgettable experience.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/porto-featured-image.jpg">
-    
+
+    <title>Exploring Porto: A Comprehensive Travel Guide - Carl Travels</title>
     <!-- Link to Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="city.css">
     
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "headline": "Journey Through Porto: Your Comprehensive Travel Guide",
-      "description": "Explore the historic charm of Porto with our comprehensive travel guide. Discover must-see attractions, local tips, and more.",
+      "headline": "Exploring Porto: A Comprehensive Travel Guide",
+      "description": "Discover Porto's historic charm, vibrant culture, thrilling adventures, and essential travel tips for an unforgettable experience.",
       "image": "https://www.carltravels.com/images/porto-featured-image.jpg",
       "author": {
         "@type": "Person",
-        "name": "Carl"
+        "name": "Carl Ostomich"
       },
       "publisher": {
         "@type": "Organization",
@@ -60,7 +62,7 @@
     }
     </script>
 
-    <!-- Inline styles (to match your newer pages) -->
+    <!-- Inline styles matching the newer pages -->
     <style>
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
@@ -71,15 +73,16 @@
             padding: 10px 0;
         }
 
-        /* Make embedded YouTube videos responsive */
-        .video-responsive {
+        /* Responsive Video Container */
+        .responsive-video {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             padding-top: 25px;
             height: 0;
             margin-bottom: 20px; /* Some spacing below the video */
         }
-        .video-responsive iframe {
+
+        .responsive-video iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -143,6 +146,201 @@
                 font-size: 1.5em;
             }
         }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Testimonial Section Styling */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Video Section Styling */
+        .video-section {
+            margin-bottom: 30px;
+        }
+
+        /* Additional Video Styling */
+        .additional-video {
+            margin-bottom: 30px;
+        }
+
+        /* Follow My Adventures Section */
+        .follow-adventures {
+            margin-top: 30px;
+        }
+
+        .follow-adventures h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+
+        .follow-adventures .video-container {
+            margin-bottom: 20px;
+        }
+
+        .follow-adventures .video-title {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Arrange Videos in a Row */
+        .video-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .video-row .video-container {
+            flex: 1 1 30%; /* Allows three videos per row with flexibility */
+            max-width: 32%;
+        }
+
+        /* Ensure Responsiveness */
+        @media (max-width: 992px) {
+            .video-row .video-container {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .video-row .video-container {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* Hamburger Menu Styling */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Navigation Menu */
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+            }
+
+            nav ul.nav-menu.active {
+                display: flex;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+        }
+
+        /* Back to Top Button Styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        #back-to-top:hover {
+            background-color: #E55B00;
+        }
     </style>
 </head>
 <body>
@@ -151,10 +349,18 @@
         <div class="container">
             <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-            
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="menu-toggle" hidden>
+
             <!-- Navigation Menu -->
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -167,107 +373,372 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
     <main>
         <section class="blog-post">
             <div class="container">
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Porto</li>
+                    </ol>
+                </nav>
+
                 <!-- Page Title -->
-                <h1>Porto: A Historic Jewel of Portugal</h1>
+                <h1>Exploring Porto: A Comprehensive Travel Guide</h1>
                 
-                <!-- Embedded YouTube Video (Responsive) -->
-                <div class="video-responsive">
-                    <iframe
-                        src="https://www.youtube.com/embed/KDYI7DaDUBo"
-                        title="Exploring Porto"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
+                <!-- Embedded YouTube Video (Banner Replacement) -->
+                <div class="responsive-video video-section">
+                    <iframe 
+                        src="https://www.youtube.com/embed/KDYI7DaDUBo" 
+                        title="Discover Porto: A Vibrant City Guide" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen 
+                        loading="lazy">
                     </iframe>
                 </div>
-                
-                <!-- Introduction / History -->
-                <section>
-                    <h2>History</h2>
+
+                <!-- Introduction -->
+                <section class="section">
+                    <h2>Introduction</h2>
                     <p>Porto, located in northwest Portugal, is one of Europe's oldest centers, tracing its origins back to the Roman era. Over the centuries, it has thrived as a major port and trading hub, world-renowned for its production of Port wine. The city's storied past and cultural heritage make it a must-visit destination for anyone exploring Portugal.</p>
+                    <p><strong>Overview:</strong> Established as a major center in Europe, Porto boasts a rich multicultural heritage and a thriving economy. Its extensive public transportation system, green spaces, and commitment to the arts make it an attractive destination for both leisure and business travelers.</p>
                 </section>
-                
-                <!-- Population -->
-                <section>
-                    <h2>Population</h2>
-                    <p>As of 2023, Porto has an estimated population of around 215,000 people within the city limits, with the metropolitan area exceeding 1.7 million residents.</p>
-                </section>
-                
-                <!-- Notable Attractions -->
-                <section>
-                    <h2>Notable Attractions</h2>
+
+                <!-- Highlights -->
+                <section class="section">
+                    <h2>Highlights</h2>
                     <ul>
-                        <li><strong>Dom Luís I Bridge:</strong> Iconic two-level bridge spanning the Douro River, offering panoramic city views.</li>
-                        <li><strong>Clérigos Tower:</strong> A historic Baroque bell tower providing sweeping vistas of Porto’s skyline.</li>
-                        <li><strong>Ribeira District:</strong> A UNESCO World Heritage Site famous for its colorful facades, lively atmosphere, and waterside cafes.</li>
-                        <li><strong>Lello Bookstore:</strong> Often cited as one of the world’s most beautiful bookstores, inspiring literary icons like J.K. Rowling.</li>
-                        <li><strong>Serralves Museum:</strong> Contemporary art museum set amidst lush gardens and captivating architecture.</li>
+                        <li>Dom Luís I Bridge: Iconic two-level bridge spanning the Douro River, offering panoramic city views.</li>
+                        <li>Clérigos Tower: Historic Baroque bell tower providing sweeping vistas of Porto’s skyline.</li>
+                        <li>Ribeira District: UNESCO World Heritage Site famous for its colorful facades, lively atmosphere, and waterside cafes.</li>
+                        <li>Lello Bookstore: Often cited as one of the world’s most beautiful bookstores, inspiring literary icons like J.K. Rowling.</li>
+                        <li>Serralves Museum: Contemporary art museum set amidst lush gardens and captivating architecture.</li>
                     </ul>
                 </section>
-                
-                <!-- Best Time to Visit -->
-                <section>
-                    <h2>Best Time to Visit</h2>
-                    <p>For pleasant weather and smaller crowds, consider visiting Porto during spring (March to May) or fall (September to November). These shoulder seasons offer comfortable temperatures and a more relaxed vibe compared to the busy summer months.</p>
+
+                <!-- Top Attractions -->
+                <section class="section">
+                    <h2>Top Attractions</h2>
+                    
+                    <!-- Dom Luís I Bridge -->
+                    <h3>Dom Luís I Bridge</h3>
+                    <p>The Dom Luís I Bridge is Porto's most recognizable landmark, connecting the Ribeira District with Vila Nova de Gaia. Designed by a student of Gustave Eiffel, this double-deck iron bridge offers stunning views of the Douro River and the city's historic architecture.</p>
+                    
+                    <!-- Embedded Video: Dom Luís I Bridge Tour -->
+                    <div class="responsive-video additional-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/KDYI7DaDUBo" 
+                            title="Dom Luís I Bridge Tour - Porto" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Clérigos Tower -->
+                    <h3>Clérigos Tower</h3>
+                    <p>The Clérigos Tower is a historic Baroque bell tower that stands tall over Porto. Climbing to the top rewards visitors with panoramic views of the city and the Douro River. The tower is part of the Clérigos Church, a masterpiece of Portuguese Baroque architecture.</p>
+                    
+                    <!-- Embedded Video: Clérigos Tower Tour -->
+                    <div class="responsive-video additional-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ZH4CU-o4erc" 
+                            title="Clérigos Tower Tour - Porto" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Ribeira District -->
+                    <h3>Ribeira District</h3>
+                    <p>The Ribeira District is Porto's most picturesque neighborhood, located along the banks of the Douro River. With its narrow cobbled streets, colorful houses, and bustling cafes, Ribeira is perfect for leisurely strolls and soaking in the vibrant local atmosphere.</p>
+                    
+                    <!-- Embedded Video: Ribeira District Walkthrough -->
+                    <div class="responsive-video additional-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/gIjnuAMC1RA" 
+                            title="Ribeira District Walkthrough - Porto" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Serralves Museum -->
+                    <h3>Serralves Museum</h3>
+                    <p>Serralves Museum is Porto's premier contemporary art museum, set within the expansive Serralves Park. The museum showcases an impressive collection of modern art and hosts rotating exhibitions. The surrounding park offers beautiful gardens, walking trails, and a serene environment perfect for relaxation.</p>
+                    
+                    <!-- Embedded Video: Serralves Museum Tour -->
+                    <div class="responsive-video additional-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/gIjnuAMC1RA" 
+                            title="Serralves Museum Tour - Porto" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                            loading="lazy">
+                        </iframe>
+                    </div>
                 </section>
-                
-                <!-- Costs and Budgeting -->
-                <section>
-                    <h2>Prices Overview</h2>
-                    <p>Porto is relatively affordable compared to other major European cities. Here’s a quick breakdown of typical expenses:</p>
+
+                <!-- Adventure and Activities -->
+                <section class="section">
+                    <h2>Adventure and Activities</h2>
+                    <p>Porto is not just about historic charm; it's also a city that offers a wide range of activities for adventure enthusiasts and those seeking unique experiences:</p>
                     <ul>
-                        <li><strong>Accommodation:</strong> Budget hostels start around €15 per night, while mid-range hotels range between €60 and €150 per night.</li>
-                        <li><strong>Dining Out:</strong> Expect casual meals from €10, with fine dining options around €30 or more.</li>
-                        <li><strong>Local Transport:</strong> Buses and trams are cost-effective; a single ticket usually costs €1.20–€2.00. Taxis or rideshares are also widely available.</li>
-                        <li><strong>Attractions:</strong> Many churches and viewpoints are free or cheap to visit; museums often charge €5–€10 for entry.</li>
+                        <li><strong>Boat Cruises:</strong> Take a scenic cruise along the Douro River to admire Porto's skyline and the surrounding landscapes.</li>
+                        <li><strong>Port Wine Cellar Tours:</strong> Explore the famous Port wine cellars in Vila Nova de Gaia and indulge in tastings.</li>
+                        <li><strong>Hiking:</strong> Discover trails along the Douro River and in nearby natural reserves.</li>
+                        <li><strong>Bike Tours:</strong> Navigate Porto's diverse neighborhoods and scenic routes on guided bike tours.</li>
+                        <li><strong>Surfing:</strong> Head to Matosinhos Beach for surfing lessons and enjoy the Atlantic waves.</li>
+                        <li><strong>Hot Air Ballooning:</strong> Experience a serene balloon ride over Porto and the Douro Valley for breathtaking aerial views.</li>
+                        <li><strong>Climbing:</strong> Engage in indoor climbing at local gyms or explore outdoor climbing spots in the region.</li>
+                        <li><strong>Kayaking:</strong> Paddle along the Douro River and explore Porto from a different perspective.</li>
+                        <li><strong>Fishing:</strong> Enjoy freshwater and saltwater fishing opportunities around Porto's waterways.</li>
+                        <li><strong>Street Art Tours:</strong> Explore Porto's vibrant street art scene with guided tours highlighting the best murals and graffiti.</li>
+                    </ul>
+                    <p>One of the most exhilarating activities is taking a hot air balloon ride over the Douro Valley, offering a unique perspective of Porto's stunning landscapes and vineyards.</p>
+                </section>
+
+                <!-- Cultural Immersion -->
+                <section class="section">
+                    <h2>Cultural Immersion</h2>
+                    <p>Immerse yourself in Porto's rich cultural scene by exploring its museums, galleries, theaters, and local events. Engage with the community and gain insights into the city's diverse heritage:</p>
+                    <ul>
+                        <li><strong>Lello Bookstore:</strong> Visit one of the world’s most beautiful bookstores, known for its stunning architecture and extensive book collection.</li>
+                        <li><strong>Museu Nacional Soares dos Reis:</strong> Discover Portuguese art, ceramics, jewelry, and more at this renowned museum.</li>
+                        <li><strong>Local Festivals:</strong> Participate in events like the São João Festival, celebrating Porto's patron saint with fireworks, music, and street parties.</li>
+                        <li><strong>Fado Performances:</strong> Experience traditional Portuguese Fado music at local venues for an authentic cultural experience.</li>
+                        <li><strong>Cooking Classes:</strong> Learn to prepare traditional Porto dishes with local chefs in hands-on cooking workshops.</li>
+                        <li><strong>Street Markets:</strong> Explore markets like Mercado do Bolhão for fresh produce, local crafts, and vibrant street life.</li>
+                        <li><strong>Theater and Performances:</strong> Enjoy performances at theaters such as Casa da Música, known for its contemporary architecture and diverse programming.</li>
+                        <li><strong>Art Galleries:</strong> Discover contemporary and traditional art at galleries scattered throughout Porto's art districts.</li>
+                        <li><strong>Historic Walks:</strong> Take guided tours through Porto's historic neighborhoods to learn about the city's transformation over the centuries.</li>
+                        <li><strong>Language Exchange Meetups:</strong> Engage with locals and other travelers through language exchange events to practice Portuguese and make new friends.</li>
+                    </ul>
+                    <p>Attending a live Fado performance is a fantastic way to experience Porto's traditional music and connect with the city's cultural roots.</p>
+                </section>
+
+                <!-- Food and Cuisine -->
+                <section class="section">
+                    <h2>Food and Cuisine</h2>
+                    <p>Porto's culinary scene is a delightful blend of traditional Portuguese flavors and modern gastronomic innovations. From hearty local dishes to international cuisine, the city offers a diverse array of dining options to satisfy every palate:</p>
+                    <ul>
+                        <li><strong>Francesinha:</strong> A beloved Porto sandwich layered with meats, covered in melted cheese, and smothered in a rich tomato and beer sauce.</li>
+                        <li><strong>Seafood:</strong> Enjoy fresh seafood dishes like grilled sardines, bacalhau (cod), and octopus at riverside restaurants.</li>
+                        <li><strong>Port Wine:</strong> Indulge in tastings of world-famous Port wine at local wine cellars and specialized bars.</li>
+                        <li><strong>Tapas and Petiscos:</strong> Savor small plates of traditional Portuguese appetizers at cozy tapas bars.</li>
+                        <li><strong>Local Markets:</strong> Visit Mercado do Bolhão for fresh produce, artisanal products, and local delicacies.</li>
+                        <li><strong>Fine Dining:</strong> Experience gourmet cuisine at top-rated restaurants like Pedro Lemos and Casa Guedes.</li>
+                        <li><strong>Vegan and Vegetarian Options:</strong> A growing number of restaurants offer extensive vegan and vegetarian menus, catering to diverse dietary preferences.</li>
+                        <li><strong>Pastry Shops and Bakeries:</strong> Delight in traditional Portuguese pastries like pastéis de nata (custard tarts) at renowned bakeries.</li>
+                        <li><strong>Street Food:</strong> Grab a quick bite from food trucks and street vendors offering everything from sandwiches to exotic snacks.</li>
+                        <li><strong>International Cuisine:</strong> Discover a variety of international flavors, including Italian, Japanese, Middle Eastern, and more, spread throughout the city.</li>
+                    </ul>
+                    <p>I highly recommend dining at Casa Guedes for an authentic Francesinha experience. Their rendition of this classic dish is both hearty and flavorful, embodying the essence of Porto's culinary traditions.</p>
+                </section>
+
+                <!-- Practical Information -->
+                <section class="section">
+                    <h2>Practical Information</h2>
+                    
+                    <h3 id="transportation">Transportation</h3>
+                    <p>Porto offers a variety of transportation options to help you navigate the city and explore its surroundings:</p>
+                    <ul>
+                        <li><strong>Metro:</strong> Porto's metro system is efficient and connects key areas of the city, including the airport, city center, and suburbs.</li>
+                        <li><strong>Trams:</strong> Historic trams operate in Porto, offering scenic routes through the city.</li>
+                        <li><strong>Buses:</strong> Extensive bus network covering all parts of Porto and nearby regions.</li>
+                        <li><strong>Taxis:</strong> Easily available throughout the city with fares starting around €3 plus €0.50 per kilometer.</li>
+                        <li><strong>Ride-Sharing:</strong> Services like Uber and Bolt operate in Porto for convenient point-to-point travel.</li>
+                        <li><strong>Bike Rentals:</strong> Explore Porto on two wheels with bike rental services available at various locations.</li>
+                        <li><strong>Walking:</strong> Many of Porto's attractions are within walking distance of each other, especially in the historic center.</li>
+                        <li><strong>Ferries:</strong> Connect Porto to nearby coastal towns and the Douro River islands.</li>
+                        <li><strong>Car Rentals:</strong> Numerous rental agencies offer cars for self-guided exploration outside the city.</li>
+                        <li><strong>Funiculars:</strong> Use the São Bento or Gaia Funiculars to easily navigate Porto's hilly terrain.</li>
+                    </ul>
+                    
+                    <h3 id="ways-to-get-from-airport">Ways to Get from Airport to City</h3>
+                    <p>If you're arriving at Francisco Sá Carneiro Airport (OPO), here are the main transportation options to get to the city center:</p>
+                    <ul>
+                        <li><strong>Metro:</strong> Line E connects the airport directly to Porto's city center. Cost: Approximately €2.00 one-way.</li>
+                        <li><strong>Bus Services:</strong> Various bus lines operate between the airport and different parts of Porto. Cost: Approximately €2.00–€3.00 one-way.</li>
+                        <li><strong>Taxis:</strong> Available 24/7 with fares starting around €20, depending on your destination.</li>
+                        <li><strong>Ride-Sharing:</strong> Services like Uber and Bolt are operational and provide a cost-effective way to reach your accommodation.</li>
+                        <li><strong>Car Rentals:</strong> Rent a car directly from the airport for flexibility in your travels. Costs vary based on the vehicle and duration.</li>
+                        <li><strong>Airport Shuttle:</strong> Pre-booked shuttle services offer door-to-door convenience. Cost: Approximately €15–€25 one-way.</li>
+                    </ul>
+                    
+                    <h3 id="accommodation">Accommodation</h3>
+                    <p>Porto offers a wide range of accommodations to suit all budgets and preferences. Popular areas to stay include:</p>
+                    <ul>
+                        <li><strong>Ribeira District:</strong> Historic area with picturesque streets, riverside views, and close proximity to major attractions.</li>
+                        <li><strong>Baixa:</strong> Central business district offering easy access to shopping, dining, and nightlife.</li>
+                        <li><strong>Bonfim:</strong> Trendy neighborhood known for its vibrant street art, cafes, and boutique shops.</li>
+                        <li><strong>Foz do Douro:</strong> Upscale coastal area with beautiful beaches, parks, and luxury accommodations.</li>
+                        <li><strong>Miragaia:</strong> Charming neighborhood with narrow alleys, traditional houses, and a relaxed atmosphere.</li>
+                        <li><strong>Luxury Hotels:</strong> High-end options offering premium amenities and personalized services.</li>
+                        <li><strong>Budget Hostels:</strong> Affordable accommodations for backpackers and budget travelers.</li>
+                        <li><strong>Bed & Breakfasts:</strong> Cozy and personalized stays with a local touch.</li>
+                        <li><strong>Holiday Apartments:</strong> Fully furnished apartments ideal for longer stays or families.</li>
+                        <li><strong>Boutique Hotels:</strong> Stylish accommodations offering unique designs and personalized experiences.</li>
+                    </ul>
+                    <p>I stayed at a mid-range boutique hotel in the Ribeira District, which provided comfortable amenities and easy access to all major attractions and dining options.</p>
+                    
+                    <h3 id="budgeting">Budgeting</h3>
+                    <p>Porto is relatively affordable compared to other major European cities. However, costs can vary depending on your lifestyle and preferences. A comfortable daily budget ranges from €80 to €200 ($90-$225 AUD), covering accommodation, meals, transportation, and activities.</p>
+                </section>
+
+                <!-- Tips and Recommendations -->
+                <section class="section">
+                    <h2>Tips and Recommendations</h2>
+                    
+                    <h3 id="dos-and-donts">Do’s and Don’ts</h3>
+                    <ul>
+                        <li><strong>Do:</strong> Book accommodations and popular attractions in advance, especially during peak seasons.</li>
+                        <li><strong>Don’t:</strong> Carry large amounts of cash; use credit/debit cards and keep valuables secure.</li>
+                        <li><strong>Do:</strong> Dress in layers to accommodate changing weather conditions.</li>
+                        <li><strong>Don’t:</strong> Engage in reckless behavior during adventure activities; prioritize safety.</li>
+                        <li><strong>Do:</strong> Respect local customs and environment; follow the "Leave No Trace" principles when exploring nature.</li>
+                        <li><strong>Don’t:</strong> Litter in public spaces; help keep Porto clean and beautiful.</li>
+                        <li><strong>Do:</strong> Use sunscreen and stay hydrated, especially during outdoor activities.</li>
+                        <li><strong>Don’t:</strong> Underestimate the cost of certain activities and plan your budget accordingly.</li>
+                        <li><strong>Do:</strong> Learn a few basic phrases in Portuguese to enhance your interactions.</li>
+                        <li><strong>Don’t:</strong> Venture into remote areas without proper guidance or equipment.</li>
+                    </ul>
+                    
+                    <h3 id="packing-list">Packing List</h3>
+                    <ul>
+                        <li>Lightweight, breathable clothing suitable for varying weather.</li>
+                        <li>Warm layers for chilly evenings and cooler months.</li>
+                        <li>Comfortable walking shoes and hiking boots for outdoor activities.</li>
+                        <li>Swimwear and beach essentials for boat cruises and swimming.</li>
+                        <li>Insect repellent and sunscreen to protect against bugs and sunburn.</li>
+                        <li>Reusable water bottle to stay hydrated.</li>
+                        <li>Power adapter for European plugs (Type C or F).</li>
+                        <li>Camera or smartphone for capturing stunning landscapes and moments.</li>
+                        <li>Travel insurance documents for peace of mind.</li>
+                        <li>Basic first-aid kit for minor injuries.</li>
+                        <li>Portable charger for electronic devices.</li>
+                        <li>Rain jacket or umbrella for unexpected weather changes.</li>
+                    </ul>
+                    
+                    <h3 id="local-etiquette">Local Etiquette</h3>
+                    <p>Portuguese people are known for their friendliness, hospitality, and respect for traditions. Here are some cultural tips to enhance your stay:</p>
+                    <ul>
+                        <li><strong>Greeting:</strong> A simple "Olá" (Hello) or "Bom dia" (Good morning) is appreciated.</li>
+                        <li><strong>Respect Privacy:</strong> Portuguese value personal space and privacy. Be mindful in social interactions.</li>
+                        <li><strong>Queuing:</strong> Always wait your turn in lines; jumping queues is frowned upon.</li>
+                        <li><strong>Language:</strong> While many Portuguese speak English, learning a few basic Portuguese phrases can enhance your interactions.</li>
+                        <li><strong>Public Behavior:</strong> Keep noise levels reasonable, especially in residential areas.</li>
+                        <li><strong>Tipping:</strong> Not mandatory, but rounding up the bill or leaving a small tip (5-10%) for good service is appreciated.</li>
+                        <li><strong>Recycling:</strong> Portugal has recycling systems in place. Follow local guidelines for waste disposal.</li>
+                        <li><strong>Dress Code:</strong> Casual attire is acceptable for most places, but dress appropriately when visiting religious or formal sites.</li>
+                        <li><strong>Table Manners:</strong> Keep your hands visible on the table and wait for everyone to be served before starting your meal.</li>
+                        <li><strong>Personal Responsibility:</strong> Take responsibility for your actions and respect local laws and regulations.</li>
                     </ul>
                 </section>
-                
-                <!-- Fun Facts -->
-                <section>
-                    <h2>Fun Facts</h2>
-                    <ul>
-                        <li><strong>UNESCO World Heritage Site:</strong> Porto's Ribeira District is internationally recognized for its historic charm and vibrant culture.</li>
-                        <li><strong>Azulejo Tiles:</strong> The city is famous for its ornamental azulejos, which adorn numerous facades, metro stations, and churches.</li>
-                        <li><strong>Harry Potter Inspiration:</strong> Livraria Lello is said to have inspired aspects of J.K. Rowling’s “Harry Potter” series during her time in Porto.</li>
+
+                <!-- Visitor Testimonials -->
+                <section class="section testimonials">
+                    <h2>Visitor Testimonials</h2>
+                    <blockquote>
+                        "Porto is a city of vibrant colors and rich history. From the stunning Dom Luís I Bridge to the lively Ribeira District, every moment was a delight."
+                        <footer>- Sofia Ribeiro</footer>
+                    </blockquote>
+                    <blockquote>
+                        "Exploring Porto's narrow streets and indulging in delicious Port wine made my trip truly unforgettable. The perfect blend of tradition and modernity!"
+                        <footer>- João Silva</footer>
+                    </blockquote>
+                </section>
+
+                <!-- Follow My Adventures -->
+                <section class="section follow-adventures">
+                    <h2>Follow My Adventures</h2>
+                    <p>Stay connected and follow my journey through the links below:</p>
+                    <ul class="follow-links">
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
                     </ul>
+
+                    <!-- Removed Houseboat Video -->
+
+                    <!-- Example of an additional video (if any in future, to be added similarly) -->
                 </section>
             </div>
         </section>
     </main>
-    
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Hamburger Menu and Back to Top Button -->
+    <script>
+        // Toggle navigation menu on hamburger icon click
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling down 300px
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
