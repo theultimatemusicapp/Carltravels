@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-LGFPJ2VMTY');
-</script>
-    
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+        
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <meta name="description" content="Explore the world with Carl Travels. Discover destinations, watch videos, and learn about my travel journey, world travel guide, australia travel guide.">
+    <meta name="description" content="Explore the world with Carl Travels. Discover destinations, watch videos, and learn about my travel journey, world travel guide, Australia travel guide.">
     <meta name="keywords" content="Travel, Carl Travels, Destinations, Travel Videos, Travel Blogs, Adventure, Explore the World, Travel guide, Travel Guide Asia, Travel Guide Australia, Travel Australia, Far North Queensland">
     <meta name="author" content="Carl Tomich">
     <meta name="google-adsense-account" content="ca-pub-6483721386563068">
@@ -39,27 +39,724 @@
 
     <title>Carl Travels</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
+    <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "name": "Carl Travels",
+      "url": "https://www.carltravels.com/",
+      "description": "Explore the world with Carl Travels. Discover destinations, watch videos, and learn about my travel journey, world travel guide, Australia travel guide.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/logo.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.carltravels.com/search.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #E55B00;
+        }
+
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto; /* Center the image with spacing */
+            padding: 10px 0; /* Optional padding for spacing */
+            border-radius: 8px; /* Optional: Add rounded corners */
+            loading: lazy;
+        }
+
+        /* Style the header h1 (Carl Travels) */
+        header h1 a {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhance header h1 appearance on hover */
+        header h1 a:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h1 titles within the main content */
+        main h1 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
+        main h2 {
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 1.8em;
+        }
+
+        /* Enhance main h2 appearance on hover */
+        main h2:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em; /* Adjust logo size on smaller screens */
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+            main h3 {
+                font-size: 1.2em;
+            }
+            /* Adjust iframe size for smaller screens */
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        /* Testimonial Section Styling */
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+        }
+
+        /* Follow My Adventures Section */
+        .follow-adventures {
+            margin-top: 30px;
+        }
+
+        .follow-adventures h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+
+        .follow-adventures .follow-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .follow-adventures .follow-links li {
+            margin-bottom: 10px;
+        }
+
+        .follow-adventures .follow-links li a {
+            color: #FF6600;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .follow-adventures .follow-links li a:hover {
+            color: #E55B00;
+        }
+
+        /* Hamburger Menu Styling */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Navigation Menu */
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            /* Hamburger Animation */
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Back to Top Button Styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+
+        /* Skip Navigation Link Styling */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            background-image: url('images/hero-background.jpg'); /* Replace with your hero image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-content h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta {
+            background-color: #FF6600;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #E55B00;
+        }
+
+        /* Latest Videos Section */
+        .latest-videos {
+            padding: 40px 0;
+        }
+
+        .latest-videos h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .video-gallery iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-gallery iframe:hover {
+            transform: scale(1.05);
+        }
+
+        /* Blogs Section */
+        .blogs {
+            padding: 40px 0;
+        }
+
+        .blogs h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+        }
+
+        .blog-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-item:hover {
+            transform: scale(1.05);
+        }
+
+        .blog-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .blog-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+        }
+
+        /* Site Description Section */
+        .site-description {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.8;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 40px 0;
+        }
+
+        .testimonial-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            transition: opacity 0.3s ease;
+        }
+
+        .testimonial-container.show {
+            opacity: 1;
+        }
+
+        .testimonial-header {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .stars svg {
+            fill: #FFD700; /* Gold color for stars */
+            margin: 0 2px;
+        }
+
+        .review {
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-button {
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #E55B00;
+        }
+
+        /* Back to Top Button Styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+
+        /* Skip Navigation Link Styling */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .video-gallery iframe {
+                height: 200px;
+            }
+
+            .blog-item img {
+                height: 120px;
+            }
+
+            .hero-content h2 {
+                font-size: 2em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+
+            .cta {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .testimonial-header {
+                font-size: 1.5em;
+            }
+
+            .review {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo with Updated Position -->
+            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
             
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -80,30 +777,27 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-image">
-                <!-- Hero image is now a background image for better responsiveness -->
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h2>Discover the World with Carl Travels</h2>
-                    <p>Join me on my adventures as I explore unique destinations and share travel insights.</p>
-                    <a href="https://www.youtube.com/@CarlTravels" target="_blank" class="cta">Watch My Videos</a>
-                </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Discover the World with Carl Travels</h2>
+                <p>Join me on my adventures as I explore unique destinations and share travel insights.</p>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" class="cta">Watch My Videos</a>
             </div>
         </section>
         
@@ -112,12 +806,11 @@
             <div class="container">
                 <h3>Latest Videos</h3>
                 <div class="video-gallery">
-                    <!-- Existing 3 Videos -->
+                    <!-- Existing 6 Videos -->
                     <iframe src="https://www.youtube.com/embed/UmykVoIO62w" frameborder="0" allowfullscreen title="Latest Video 1"></iframe>
                     <iframe src="https://www.youtube.com/embed/n1pWE7QaCds" frameborder="0" allowfullscreen title="Latest Video 2"></iframe>
                     <iframe src="https://www.youtube.com/embed/7y3dVvYfBiI" frameborder="0" allowfullscreen title="Latest Video 3"></iframe>
                     
-                    <!-- Additional 3 Videos -->
                     <iframe src="https://www.youtube.com/embed/NPpCfDRM2PY" frameborder="0" allowfullscreen title="Latest Video 4"></iframe>
                     <iframe src="https://www.youtube.com/embed/31idWwYdPIc" frameborder="0" allowfullscreen title="Latest Video 5"></iframe>
                     <iframe src="https://www.youtube.com/embed/xxAXj_MHPtA" frameborder="0" allowfullscreen title="Latest Video 6"></iframe>
@@ -128,10 +821,9 @@
         <!-- Description Section -->
         <section class="site-description">
             <div class="container">
-                <br>
-                <div style="text-align: center;">
+                <p>
                     Welcome to Carl Travels! This website is dedicated to providing you with travel tips, insights, stunning pictures, and engaging content from all the places I've explored. Join me as I share my experiences and stories from over 40 countries and more than 300 cities. Whether you're a seasoned traveler or just dreaming of your next adventure, there's something here for everyone. Let's embark on this journey together!
-                </div>
+                </p>
             </div>
         </section>
         
@@ -143,33 +835,31 @@
                 <div class="blog-gallery">
                     <a href="destinations.html" class="blog-item">
                         <div class="blog-title">AUSTRALIA</div>
-                        <img src="australia.jpg" alt="Australia">
+                        <img src="images/australia.jpg" alt="Australia" loading="lazy">
                     </a>
                     <a href="destinations.html" class="blog-item">
                         <div class="blog-title">EUROPE</div>
-                        <img src="europe.jpg" alt="Europe">
+                        <img src="images/europe.jpg" alt="Europe" loading="lazy">
                     </a>
                     <a href="destinations.html" class="blog-item">
                         <div class="blog-title">EASTERN EUROPE</div>
-                        <img src="easterneurope.jpg" alt="Eastern Europe">
+                        <img src="images/easterneurope.jpg" alt="Eastern Europe" loading="lazy">
                     </a>
                     <a href="destinations.html" class="blog-item">
                         <div class="blog-title">SOUTH EAST ASIA</div>
-                        <img src="southeastasia.jpg" alt="Southeast Asia">
+                        <img src="images/southeastasia.jpg" alt="Southeast Asia" loading="lazy">
                     </a>
                 </div>
             </div>
         </section>
 
-        <br>
-        
-        <!-- Enhanced Testimonial Section -->
+        <!-- Testimonials Section -->
         <section class="testimonials">
             <div class="testimonial-container">
                 <h2 class="testimonial-header">What People Are Saying About Carl</h2>
                 <div class="stars" id="stars">
                     <!-- Star SVGs with explicit width and height -->
-                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/></svg>
                     <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/></svg>
                     <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/></svg>
                     <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/></svg>
@@ -185,19 +875,38 @@
             </div>
         </section>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
-     crossorigin="anonymous"></script>
-<!-- Mainpage -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6483721386563068"
-     data-ad-slot="8249189982"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        
+        <!-- Follow My Adventures Section -->
+        <section class="follow-adventures">
+            <div class="container">
+                <h2>Follow My Adventures</h2>
+                <p>Stay connected and follow my journey through the links below:</p>
+                <ul class="follow-links">
+                    <li><a href="https://www.youtube.com/@CarlTravels" target="_blank">Carl Travels on YouTube</a></li>
+                    <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                    <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                    <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Google AdSense Ad -->
+        <section class="adsense">
+            <div class="container">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6483721386563068"
+                     data-ad-slot="8249189982"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" aria-label="Back to Top">↑</button>
     </main>
 
     <!-- Footer Section -->
@@ -206,21 +915,60 @@
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
 
-    <!-- Testimonial Section Script -->
+    <!-- JavaScript for Enhanced Navigation and Back to Top Button -->
     <script>
-        // Array of reviews
+        // Toggle navigation menu on hamburger icon click
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling down 300px
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Close the navigation menu when a link is clicked (for mobile)
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Testimonial Rotation
         const reviews = [
             '"I met Carl on the streets of Berlin while he was busking. I watched his set in amazement as he played at the Berlin Wall. Afterwards, he took me on a tour of Berlin, showing me the best sites. He was the most amazing tour guide, and he did this all out of the generosity of his own heart." - Sarah (Australia)',
             '"Carl made a music video for me. He listened to everything I said and created a masterpiece that perfectly captured my vision." - Tilda',
@@ -287,8 +1035,5 @@
             startReviewRotation();
         });
     </script>
-
-
-    
 </body>
 </html>
