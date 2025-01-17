@@ -13,7 +13,7 @@
     <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Exploring Barcelona: A Comprehensive Guide - Carl Travels">
     <meta property="og:description" content="Discover Barcelona's stunning architecture, vibrant culture, delicious cuisine, and essential travel tips for an unforgettable experience.">
-    <meta property="og:image" content="https://www.carltravels.com/images/barcelona-og-image.jpg">
+    <meta property="og:image" content="https://www.carltravels.com/barcelona-og-image.jpg">
     <meta property="og:url" content="https://www.carltravels.com/Barcelona.html">
     <meta property="og:type" content="article">
 
@@ -21,9 +21,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Exploring Barcelona: A Comprehensive Guide - Carl Travels">
     <meta name="twitter:description" content="Discover Barcelona's stunning architecture, vibrant culture, delicious cuisine, and essential travel tips for an unforgettable experience.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/barcelona-twitter-image.jpg">
+    <meta name="twitter:image" content="https://www.carltravels.com/barcelona-twitter-image.jpg">
 
     <title>Exploring Barcelona: A Comprehensive Guide - Carl Travels</title>
+    
     <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
     <!-- Specific styles for city pages -->
@@ -41,7 +42,7 @@
       "@type": "BlogPosting",
       "headline": "Exploring Barcelona: A Comprehensive Guide",
       "description": "Discover Barcelona's stunning architecture, vibrant culture, delicious cuisine, and essential travel tips for an unforgettable experience. Explore the perfect blend of tradition and modernity in one of Spain's most dynamic cities.",
-      "image": "https://www.carltravels.com/images/barcelona-banner.jpg",
+      "image": "https://www.carltravels.com/barcelona-banner.jpg",
       "author": {
         "@type": "Person",
         "name": "Carl Ostomich"
@@ -64,65 +65,82 @@
 
     <!-- Inline styles matching the newer pages -->
     <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #E55B00;
+        }
+
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; 
-            padding: 10px 0;
-        }
-
-        /* Responsive Video Container */
-        .responsive-video {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            padding-top: 25px;
-            height: 0;
-        }
-
-        .responsive-video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            margin: 20px auto; /* Center the image with spacing */
+            padding: 10px 0; /* Optional padding for spacing */
         }
 
         /* Style the header h1 (Carl Travels) */
         header h1 a {
             color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5em; /* Adjust as needed */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
         }
+
+        /* Enhance header h1 appearance on hover */
         header h1 a:hover {
             color: #E55B00; /* Darker shade on hover */
         }
 
-        /* Style all h1 titles within main */
+        /* Style all h1 titles within the main content */
         main h1 {
-            color: #FF6600;
-            font-family: 'Poppins', sans-serif;
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease;
-        }
-        main h1:hover {
-            color: #E55B00;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 2.5em;
+            text-align: center;
         }
 
-        /* Style all h2 titles within main */
+        /* Enhance main h1 appearance on hover */
+        main h1:hover {
+            color: #E55B00; /* Darker shade on hover */
+        }
+
+        /* Style all h2 titles within the main content */
         main h2 {
-            color: #FF6600;
-            font-family: 'Poppins', sans-serif;
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 1.8em;
         }
+
+        /* Enhance main h2 appearance on hover */
         main h2:hover {
-            color: #E55B00;
+            color: #E55B00; /* Darker shade on hover */
         }
 
         /* Style h3 or smaller headings in main */
@@ -131,12 +149,13 @@
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
+            font-size: 1.4em;
         }
 
         /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; 
+                font-size: 2em; /* Adjust logo size on smaller screens */
             }
             main h1 {
                 font-size: 2em;
@@ -144,11 +163,20 @@
             main h2 {
                 font-size: 1.5em;
             }
+            main h3 {
+                font-size: 1.2em;
+            }
+            /* Adjust iframe size for smaller screens */
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
         }
 
         /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
+            margin-bottom: 20px;
             line-height: 1.6;
         }
 
@@ -201,33 +229,29 @@
             border-left: 4px solid #FF6600;
             padding-left: 15px;
             margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         blockquote footer {
             text-align: right;
             font-weight: bold;
             color: #333;
+            margin-top: 5px;
         }
 
         /* Testimonial Section Styling */
         .testimonials {
-            background-color: #f9f9f9;
+            background-color: #f1f1f1;
             padding: 20px;
             border-radius: 8px;
         }
 
         .testimonials h2 {
             margin-bottom: 15px;
-        }
-
-        /* Video Section Styling */
-        .video-section {
-            margin-bottom: 30px;
-        }
-
-        /* Additional Video Styling */
-        .additional-video {
-            margin-bottom: 30px;
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
         }
 
         /* Follow My Adventures Section */
@@ -241,19 +265,160 @@
             margin-bottom: 15px;
         }
 
-        .follow-adventures .video-container {
-            margin-bottom: 20px;
+        .follow-adventures .follow-links {
+            list-style: none;
+            padding: 0;
         }
 
-        .follow-adventures .video-title {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
+        .follow-adventures .follow-links li {
             margin-bottom: 10px;
-            font-size: 1.2em;
+        }
+
+        .follow-adventures .follow-links li a {
+            color: #FF6600;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .follow-adventures .follow-links li a:hover {
+            color: #E55B00;
+        }
+
+        /* Hamburger Menu Styling */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Navigation Menu */
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            /* Hamburger Animation */
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Back to Top Button Styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+
+        /* Skip Navigation Link Styling */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social a:hover img {
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -261,8 +426,8 @@
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -283,44 +448,40 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main>
-        <section class="blog-post">
+    <main id="main-content">
+        <section class="destination-details">
             <div class="container">
                 <!-- Breadcrumb Navigation -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Barcelona</li>
+                        <li aria-current="page">Barcelona Voyage</li>
                     </ol>
                 </nav>
 
                 <!-- Page Title -->
                 <h1>Exploring Barcelona: A Comprehensive Guide</h1>
-                
-                <!-- Embedded YouTube Video (Banner Replacement) -->
-                <div class="responsive-video video-section">
-                    <iframe src="https://www.youtube.com/embed/3x0Z2Kq2U0Y" title="Discover Barcelona: A Vibrant City Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <img src="barcelona-banner.jpg" alt="Barcelona Banner" class="banner-image responsive-image" loading="lazy">
 
                 <!-- Introduction -->
                 <section class="section">
                     <h2>Introduction</h2>
-                    <p>Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is renowned for its art and architecture. The fantastical Sagrada Família church and other modernist landmarks designed by Antoni Gaudí dot the city. From bustling markets and vibrant nightlife to serene beaches and historic neighborhoods, Barcelona offers a diverse array of experiences for every traveler.</p>
-                    <p><strong>Overview:</strong> Established as a Roman city, Barcelona seamlessly blends historical charm with modern innovation. Its rich cultural heritage, combined with a dynamic arts scene and delectable cuisine, makes it a top destination for tourists worldwide.</p>
+                    <p>Barcelona, Spain's vibrant capital, is renowned for its stunning architecture, lively cultural scene, delectable cuisine, and picturesque beaches. The city seamlessly blends historic charm with modern innovation, making it a must-visit destination for travelers seeking a diverse and enriching experience.</p>
+                    <p><strong>A Brief History of Barcelona:</strong> Founded as a Roman city, Barcelona has evolved over centuries into a bustling metropolis. It has played a pivotal role in Spanish history, from the medieval era through the Spanish Civil War, and into the contemporary period. Today, Barcelona stands as a testament to Spain's rich heritage and dynamic progress.</p>
                 </section>
 
                 <!-- Highlights -->
@@ -344,65 +505,32 @@
                     <!-- Sagrada Família -->
                     <h3>Sagrada Família</h3>
                     <p>The Sagrada Família is Barcelona's most famous landmark, designed by the visionary architect Antoni Gaudí. This basilica, still under construction, features intricate facades and stunning interiors that reflect Gaudí's unique architectural style.</p>
-                    
-                    <!-- Embedded Video: Sagrada Família Tour -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/UjAivR3zKpM" title="Sagrada Família Tour - Barcelona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
+                    <img src="barcelona2.jpg" alt="Barcelona Architecture" class="responsive-image" loading="lazy">
+
                     <!-- Park Güell -->
                     <h3>Park Güell</h3>
                     <p>Park Güell is a public park system composed of gardens and architectural elements located on Carmel Hill. Designed by Gaudí, the park offers colorful mosaics, whimsical structures, and panoramic views of the city.</p>
-                    
-                    <!-- Embedded Video: Park Güell Highlights -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/HtCiP5F5GCk" title="Park Güell Highlights - Barcelona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
+                    <img src="barcelona1.jpg" alt="Barcelona Beach" class="responsive-image" loading="lazy">
+
                     <!-- La Rambla -->
                     <h3>La Rambla</h3>
                     <p>La Rambla is Barcelona's most famous street, stretching from Plaça de Catalunya to the Christopher Columbus Monument at Port Vell. It's lined with shops, cafes, and vibrant street performers, making it a lively area to explore.</p>
-                    
-                    <!-- Embedded Video: La Rambla Walkthrough -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/9YbVW1BQiCU" title="Exploring Barcelona's La Rambla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
+
                     <!-- Gothic Quarter -->
                     <h3>Gothic Quarter</h3>
                     <p>The Gothic Quarter is the oldest part of Barcelona, featuring narrow medieval streets, hidden squares, and historic buildings. Key attractions include Barcelona Cathedral and Plaça Reial.</p>
-                    
-                    <!-- Embedded Video: Gothic Quarter Walkthrough -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/9YbVW1BQiCU" title="Gothic Quarter Walkthrough - Barcelona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
+
                     <!-- Casa Batlló -->
                     <h3>Casa Batlló</h3>
                     <p>Casa Batlló is a renowned building designed by Antoni Gaudí, located in the heart of Barcelona. Its unique facade and imaginative interiors showcase Gaudí's innovative approach to architecture.</p>
-                    
-                    <!-- Embedded Video: Casa Batlló Tour -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/nEHOd9xTIs4" title="Casa Batlló Tour - Barcelona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
+
                     <!-- Barceloneta Beach -->
                     <h3>Barceloneta Beach</h3>
                     <p>Barceloneta Beach is one of Barcelona's most popular beaches, offering sunbathing, swimming, and a vibrant nightlife. It's also a great spot for water sports and enjoying fresh seafood at beachfront restaurants.</p>
-                    
-                    <!-- Embedded Video: Barceloneta Beach Highlights -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/IhcKlnJpujc" title="Barceloneta Beach Highlights - Barcelona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
+
                     <!-- Montjuïc Hill -->
                     <h3>Montjuïc Hill</h3>
                     <p>Montjuïc Hill offers panoramic views of Barcelona and is home to several attractions, including Montjuïc Castle, the Magic Fountain, and various museums and gardens.</p>
-                    
-                    <!-- Embedded Video: Montjuïc Hill Tour -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/mdPDhzl47ko" title="Montjuïc Hill Tour - Barcelona" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
                 </section>
 
                 <!-- Adventure and Activities -->
@@ -542,18 +670,13 @@
                         <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
                         <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
                     </ul>
-
-                    <!-- Additional Video: That One Time I Built a Houseboat -->
-                    <div class="follow-adventures">
-                        <h3 class="video-title">That One Time I Built a Houseboat</h3>
-                        <div class="responsive-video video-container">
-                            <iframe src="https://www.youtube.com/embed/orOwD1xb2LU?start=1" title="That One Time I Built a Houseboat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
                 </section>
             </div>
         </section>
     </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
 
     <!-- Footer Section -->
     <footer>
@@ -561,16 +684,58 @@
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Enhanced Navigation and Back to Top Button -->
+    <script>
+        // Toggle navigation menu on hamburger icon click
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling down 300px
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Close the navigation menu when a link is clicked (for mobile)
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
