@@ -11,19 +11,19 @@
     <meta name="author" content="Carl Tomich">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Copenhagen - Carl Travels">
-    <meta property="og:description" content="Discover Copenhagen's historic landmarks, modern design, and vibrant lifestyle.">
-    <meta property="og:image" content="https://www.carltravels.com/images/copenhagen-og-image.jpg">
+    <meta property="og:title" content="Copenhagen Voyage: A 4-Day Urban Adventure - Carl Travels">
+    <meta property="og:description" content="Discover Copenhagen's historic landmarks, modern design, and vibrant lifestyle with Carl Travels.">
+    <meta property="og:image" content="https://www.carltravels.com/copenhagen-banner.jpg">
     <meta property="og:url" content="https://www.carltravels.com/Copenhagen.html">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Copenhagen - Carl Travels">
-    <meta name="twitter:description" content="Discover Copenhagen's historic landmarks, modern design, and vibrant lifestyle.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/copenhagen-twitter-image.jpg">
+    <meta name="twitter:title" content="Copenhagen Voyage: A 4-Day Urban Adventure - Carl Travels">
+    <meta name="twitter:description" content="Discover Copenhagen's historic landmarks, modern design, and vibrant lifestyle with Carl Travels.">
+    <meta name="twitter:image" content="https://www.carltravels.com/copenhagen-banner.jpg">
 
-    <title>Copenhagen - Carl Travels</title>
+    <title>Copenhagen Voyage: A 4-Day Urban Adventure - Carl Travels</title>
 
     <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
@@ -35,14 +35,66 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Responsive Images and Heading Titles CSS -->
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Copenhagen Voyage: A 4-Day Urban Adventure",
+      "description": "Discover Copenhagen's historic landmarks, modern design, and vibrant lifestyle with Carl Travels.",
+      "image": "https://www.carltravels.com/copenhagen-banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/Copenhagen.html"
+      }
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
     <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #E55B00;
+        }
+
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; /* Center the image */
+            margin: 20px auto; /* Center the image with spacing */
             padding: 10px 0; /* Optional padding for spacing */
         }
 
@@ -67,6 +119,8 @@
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 2.5em;
+            text-align: center;
         }
 
         /* Enhance main h1 appearance on hover */
@@ -81,6 +135,7 @@
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 1.8em;
         }
 
         /* Enhance main h2 appearance on hover */
@@ -88,23 +143,282 @@
             color: #E55B00; /* Darker shade on hover */
         }
 
-        /* Optional: Responsive Typography */
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+
+        /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
                 font-size: 2em; /* Adjust logo size on smaller screens */
             }
-
             main h1 {
                 font-size: 2em;
             }
-
             main h2 {
                 font-size: 1.5em;
             }
+            main h3 {
+                font-size: 1.2em;
+            }
+            /* Adjust iframe size for smaller screens */
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        /* Testimonial Section Styling */
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+        }
+
+        /* Follow My Adventures Section */
+        .follow-adventures {
+            margin-top: 30px;
+        }
+
+        .follow-adventures h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+
+        .follow-adventures .follow-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .follow-adventures .follow-links li {
+            margin-bottom: 10px;
+        }
+
+        .follow-adventures .follow-links li a {
+            color: #FF6600;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .follow-adventures .follow-links li a:hover {
+            color: #E55B00;
+        }
+
+        /* Hamburger Menu Styling */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Navigation Menu */
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            /* Hamburger Animation */
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Back to Top Button Styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+
+        /* Skip Navigation Link Styling */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social a:hover img {
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -112,8 +426,8 @@
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -134,61 +448,129 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Main Title -->
-                <h1>Copenhagen</h1>
-                <img src="copenhagen-banner.jpg" alt="Copenhagen" class="banner-image responsive-image">
-
-                <div class="section">
-                    <h2>What to See</h2>
-                    <p>Copenhagen is famous for its historic sites and modern attractions. Must-visit places include Tivoli Gardens, Nyhavn Harbor, The Little Mermaid statue, Christiansborg Palace, and the vibrant Freetown Christiania.</p>
-                </div>
-
-                <div class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>Founded in the 10th century, Copenhagen has grown from a small fishing village into a major European capital. It has played a crucial role in Danish history, culture, and commerce, and today it is known for its high quality of life and innovative design.</p>
-                </div>
-
-                <div class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li>Tivoli Gardens</li>
-                        <li>Nyhavn Harbor</li>
-                        <li>The Little Mermaid Statue</li>
-                        <li>Christiansborg Palace</li>
-                        <li>Freetown Christiania</li>
-                        <li>Rosenborg Castle</li>
-                        <li>National Museum of Denmark</li>
-                        <li>Amalienborg Palace</li>
-                        <li>Strøget Shopping Street</li>
-                        <li>Botanical Garden</li>
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Copenhagen Voyage</li>
                     </ol>
-                </div>
-                                <img src="copenhagen1.jpg" alt="Copenhagen freetown christiania" class="banner-image responsive-image">
+                </nav>
 
+                <!-- Main Title -->
+                <h1>Copenhagen Voyage: A 4-Day Urban Adventure</h1>
+                <img src="copenhagen-banner.jpg" alt="Copenhagen Banner" class="banner-image responsive-image" loading="lazy">
 
-                <div class="section">
-                    <h2>What to Bring</h2>
+                <!-- Introduction -->
+                <section class="section">
+                    <h2>Introduction</h2>
+                    <p>Copenhagen, Denmark's capital, is renowned for its historic architecture, vibrant cultural scene, and picturesque canals. The city beautifully blends old-world charm with modern design, making it a must-visit destination for travelers seeking both tradition and contemporary experiences.</p>
+                    <p><strong>A Brief History of Copenhagen:</strong> Founded in the 10th century, Copenhagen evolved from a small fishing village into a major European capital. It has played a pivotal role in Danish history, culture, and commerce. Today, Copenhagen stands as a testament to Denmark's rich heritage, offering a unique blend of past and present.</p>
+                </section>
+
+                <!-- Day 1 -->
+                <section class="section">
+                    <h2>Day 1: Arrival and Historical Exploration</h2>
+                    <p>Upon arriving at Copenhagen Airport, I took a taxi to my hotel located in the heart of the city. The first day was dedicated to exploring Copenhagen's rich historical landmarks.</p>
+                    <img src="copenhagen1.jpg" alt="Copenhagen Freetown Christiania" class="responsive-image" loading="lazy">
+                    <p>Wandering through the bustling streets, I marveled at the stunning architecture of Freetown Christiania. This unique district is known for its artistic expressions and autonomous community. Later, I visited Nyhavn Harbor, where colorful buildings line the picturesque canals, creating a perfect backdrop for a relaxing stroll. The evening was spent enjoying a delightful dinner at a traditional Danish restaurant, savoring dishes like Smørrebrød and Frikadeller.</p>
+                </section>
+
+                <!-- Day 2 -->
+                <section class="section">
+                    <h2>Day 2: Art, Culture, and Modern Copenhagen</h2>
+                    <p>The second day was all about immersing myself in Copenhagen's artistic and modern attractions.</p>
+                    <img src="copenhagen2.jpg" alt="Copenhagen City Hall" class="responsive-image" loading="lazy">
+                    <p>I began the day with a visit to the National Museum of Denmark, where I delved into the country's rich cultural history through fascinating exhibits. The afternoon was spent exploring the vibrant Strøget Shopping Street, one of Europe's longest pedestrian streets, known for its high-end boutiques and diverse shops. Later, I headed to Rosenborg Castle, an exquisite Renaissance castle housing the Danish crown jewels. The day concluded with a visit to the Copenhagen Opera House, marveling at its modern architecture and stunning waterfront location.</p>
+                </section>
+
+                <!-- Day 3 -->
+                <section class="section">
+                    <h2>Day 3: Natural Beauty and Scenic Views</h2>
+                    <p>On the third day, I ventured into Copenhagen's natural landscapes and enjoyed some of the city's scenic views.</p>
+                    <img src="copenhagen3.jpg" alt="Tivoli Gardens, Copenhagen" class="responsive-image" loading="lazy">
+                    <p>I started the day with a visit to Tivoli Gardens, one of the world's oldest amusement parks. The park's enchanting gardens, historic buildings, and thrilling rides provided a perfect blend of fun and relaxation. In the afternoon, I took a leisurely boat tour along Copenhagen's canals, offering unique perspectives of the city's architectural beauty and vibrant neighborhoods. The evening was perfect for a relaxing walk through the Botanical Garden, enjoying the serene environment and lush greenery.</p>
+                </section>
+
+                <!-- Day 4 -->
+                <section class="section">
+                    <h2>Day 4: Culinary Delights and Farewell</h2>
+                    <p>On my final day, I indulged in Copenhagen's culinary scene and enjoyed some last-minute exploration before bidding farewell to the city.</p>
+                    <img src="copenhagen4.jpg" alt="Copenhagen Nyhavn" class="responsive-image" loading="lazy">
+                    <p>I began the morning with a visit to the vibrant Copenhagen West district, known for its modern architecture and trendy eateries. Sampling local delicacies like Smørrebrød and Danish pastries was a delightful experience. The afternoon was dedicated to exploring the charming canals of Nyhavn, where I picked up souvenirs and enjoyed the lively atmosphere. I also revisited my favorite spots around the city, capturing final photographs and soaking in the serene ambiance. The trip concluded with a farewell dinner at a rooftop restaurant, offering stunning views of Copenhagen's skyline as I reflected on an enriching journey.</p>
+                </section>
+
+                <!-- Highlights -->
+                <section class="section">
+                    <h2>Highlights</h2>
+                    <ul>
+                        <li>Freetown Christiania: Unique autonomous district known for its artistic expressions.</li>
+                        <li>Nyhavn Harbor: Picturesque canals lined with colorful buildings and lively restaurants.</li>
+                        <li>The Little Mermaid Statue: Iconic bronze statue inspired by Hans Christian Andersen's fairy tale.</li>
+                        <li>Christiansborg Palace: Historic palace housing the Danish Parliament and Royal Reception Rooms.</li>
+                        <li>Tivoli Gardens: Enchanting amusement park blending fun with beautiful gardens.</li>
+                        <li>Rosenborg Castle: Exquisite Renaissance castle home to the Danish crown jewels.</li>
+                        <li>Strøget Shopping Street: One of Europe's longest pedestrian shopping streets.</li>
+                        <li>National Museum of Denmark: Comprehensive exhibits on Danish cultural history.</li>
+                        <li>Kunsthal Charlottenborg: Renowned contemporary art gallery.</li>
+                        <li>Botanical Garden: Serene gardens offering a peaceful escape in the city.</li>
+                    </ul>
+                </section>
+
+                <!-- Practical Information -->
+                <section class="section">
+                    <h2>Practical Information</h2>
+                    
+                    <h3>Transportation</h3>
+                    <p>Copenhagen is easily accessible by air via Copenhagen Airport, with regular flights from major global cities. Within the city, public transportation includes an efficient network of buses, trains, and the metro operated by DOT. The Copenhagen Card provides unlimited travel on public transport and free or discounted admission to many attractions. Renting a bike is also a popular and convenient option, as Copenhagen is renowned for its bike-friendly infrastructure.</p>
+                    
+                    <h3>Accommodation</h3>
+                    <p>Copenhagen offers a wide range of accommodations, from luxury hotels in the city center to budget-friendly hostels and charming guesthouses. I stayed at a mid-range hotel in the Old Town, which provided excellent amenities and easy access to key attractions.</p>
+                    
+                    <h3>Budgeting</h3>
+                    <p>Copenhagen is known for being moderately expensive. A comfortable daily budget ranges from DKK 600 to DKK 1,800, covering accommodation, meals, transportation, and activities.</p>
+                </section>
+
+                <!-- Tips and Recommendations -->
+                <section class="section">
+                    <h2>Tips and Recommendations</h2>
+                    
+                    <h3>Do’s and Don’ts</h3>
+                    <ul>
+                        <li><strong>Do:</strong> Purchase a Copenhagen Card for unlimited travel and museum discounts.</li>
+                        <li><strong>Don’t:</strong> Litter or disturb public spaces; help preserve Copenhagen's cleanliness and beauty.</li>
+                        <li><strong>Do:</strong> Wear comfortable footwear for extensive walking and exploring.</li>
+                        <li><strong>Don’t:</strong> Engage in unsafe activities without proper guidance and equipment.</li>
+                        <li><strong>Do:</strong> Carry a refillable water bottle; public drinking fountains are available throughout the city.</li>
+                        <li><strong>Don’t:</strong> Skip validating your public transport tickets; fines are issued for non-validated tickets.</li>
+                        <li><strong>Do:</strong> Respect local customs and traditions; observe proper etiquette when interacting with locals.</li>
+                        <li><strong>Don’t:</strong> Jump queues; always wait your turn at popular attractions.</li>
+                        <li><strong>Do:</strong> Use sunscreen and wear a hat, especially during summer months.</li>
+                        <li><strong>Don’t:</strong> Forget to learn a few basic Danish phrases to enhance your interactions.</li>
+                    </ul>
+                    
+                    <h3>Packing List</h3>
                     <ul>
                         <li>Comfortable walking shoes</li>
-                        <li>Weather-appropriate clothing (Wales can be rainy)</li>
+                        <li>Weather-appropriate clothing (can be rainy)</li>
                         <li>Camera or smartphone for photos</li>
-                        <li>Guidebook or map</li>
+                        <li>Guidebook or map of Copenhagen</li>
                         <li>Travel adapter (Type C or Type E socket)</li>
                         <li>Reusable water bottle</li>
                         <li>Personal medications</li>
@@ -196,51 +578,161 @@
                         <li>Umbrella or raincoat</li>
                         <li>Basic Danish phrases</li>
                     </ul>
-                </div>
+                    
+                    <h3>Local Etiquette</h3>
+                    <p>Respect the local community and their cultural practices. Always greet with a friendly smile and a polite gesture. Dress appropriately when visiting religious and historical sites. When interacting with locals, use polite language and be mindful of cultural norms.</p>
+                </section>
 
-                <div class="section">
-                    <h2>Currency</h2>
-                    <p>The currency in Copenhagen is the Danish Krone (DKK).</p>
-                </div>
+                <!-- Cultural Immersion -->
+                <section class="section">
+                    <h2>Cultural Immersion</h2>
+                    <p>Engaging with local Copenhagen residents provided a deeper understanding of the city's cultural heritage and daily life. I participated in a traditional Danish cooking class, learning to prepare authentic dishes like Smørrebrød and Frikadeller, and experienced the rich flavors of Copenhagen's cuisine firsthand.</p>
+                    <p>Visiting local markets and attending cultural events offered insights into Copenhagen's artistic and cultural evolution, fostering a greater appreciation for the city's dynamic spirit and enduring traditions.</p>
+                </section>
 
-                <div class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>Spring (April to June) and Autumn (September to October) offer mild weather and fewer tourists. Summer is vibrant with outdoor activities and festivals, while winter is perfect for enjoying Copenhagen's cozy hygge atmosphere and festive Christmas markets.</p>
-                </div>
-
-                                <img src="copenhagen2.jpg" alt="Copenhagen" class="banner-image responsive-image">
-
-
-                <div class="section">
-                    <h2>Fun Facts</h2>
+                <!-- Food and Cuisine -->
+                <section class="section">
+                    <h2>Food and Cuisine</h2>
+                    <p>Copenhagen's culinary scene is a delightful blend of traditional Danish flavors, modern gastronomy, and international influences.</p>
                     <ul>
-                        <li>Copenhagen is home to the world's first bicycle superhighway, promoting eco-friendly transportation.</li>
-                        <li>The city consistently ranks among the world's most livable cities.</li>
-                        <li>Nyhavn was once a busy commercial port but is now a picturesque tourist area with colorful buildings and restaurants.</li>
-                        <li>The Little Mermaid statue is inspired by Hans Christian Andersen's fairy tale.</li>
-                        <li>Copenhagen hosts the annual Copenhagen Jazz Festival, attracting music lovers from around the globe.</li>
+                        <li><strong>Smørrebrød:</strong> Open-faced sandwiches with a variety of toppings like pickled herring, roast beef, and liver pâté.</li>
+                        <li><strong>Frikadeller:</strong> Danish meatballs made from minced pork and beef, typically served with potatoes and gravy.</li>
+                        <li><strong>Rugbrød:</strong> Dense, dark rye bread that is a staple in Danish cuisine.</li>
+                        <li><strong>Stegt Flæsk:</strong> Crispy fried pork belly served with potatoes and parsley sauce.</li>
+                        <li><strong>Rødgrød med Fløde:</strong> A traditional Danish dessert made from red berries and served with cream.</li>
+                        <li><strong>Local Beers:</strong> Copenhagen boasts a thriving craft beer scene with numerous local breweries.</li>
+                        <li><strong>Danish Pastries:</strong> Sweet, flaky pastries available in a variety of flavors.</li>
+                        <li><strong>New Nordic Cuisine:</strong> Innovative culinary movement focusing on fresh, local ingredients.</li>
+                        <li><strong>Hot Dogs (Pølser):</strong> Popular street food with various toppings.</li>
+                        <li><strong>Espresso and Specialty Coffees:</strong> Enjoyed at numerous cozy cafes throughout the city.</li>
                     </ul>
-                </div>
+                    <p>I highly recommend dining at a traditional Danish restaurant in the Old Town, where you can savor authentic dishes while enjoying the charming ambiance of local eateries.</p>
+                </section>
+
+                <!-- Adventure and Activities -->
+                <section class="section">
+                    <h2>Adventure and Activities</h2>
+                    <p>Copenhagen offers a variety of activities for adventure enthusiasts and those seeking unique experiences:</p>
+                    <ul>
+                        <li><strong>Guided City Tours:</strong> Explore Copenhagen's historical and cultural landmarks with expert guides.</li>
+                        <li><strong>Boat Tours on Canals:</strong> Enjoy scenic boat rides along Copenhagen's picturesque canals.</li>
+                        <li><strong>Hiking on Amager Strandpark:</strong> Trek along beautiful beaches and scenic trails.</li>
+                        <li><strong>Kastellet:</strong> Visit one of the best-preserved star fortresses in Northern Europe.</li>
+                        <li><strong>Shopping:</strong> Discover luxury brands and unique boutiques along Strøget.</li>
+                        <li><strong>Nightlife:</strong> Experience Copenhagen's vibrant nightlife with numerous bars, clubs, and live music venues.</li>
+                        <li><strong>Photography Tours:</strong> Capture Copenhagen's architectural beauty and lively streets with guided sessions.</li>
+                        <li><strong>Local Markets:</strong> Explore bustling markets like Torvehallerne for fresh produce and traditional crafts.</li>
+                        <li><strong>Cooking Classes:</strong> Learn to prepare traditional Danish dishes with local chefs in hands-on cooking workshops.</li>
+                        <li><strong>Relaxation:</strong> Enjoy spa days or leisurely walks in beautiful parks for ultimate relaxation.</li>
+                    </ul>
+                    <p>One of the most thrilling activities was taking a guided bike tour through Copenhagen's green spaces and along the picturesque canals, offering a perfect blend of urban exploration and natural beauty.</p>
+                </section>
+
+                <!-- Personal Stories -->
+                <section class="section">
+                    <h2>Personal Stories</h2>
+                    <p>Meeting Freja, a local artist, was a highlight of my trip. She took me to her studio in the heart of Christiania, where I witnessed her creative process and learned about Copenhagen's thriving art community. Her passion for art and dedication to her craft provided a deeper appreciation for the city's artistic landscape.</p>
+                    <p>Another unforgettable moment was attending a traditional Danish folk dance performance at Tivoli Gardens, where I experienced the lively rhythms and cultural expressions that define Copenhagen's vibrant community.</p>
+                </section>
+
+                <!-- Conclusion -->
+                <section class="section">
+                    <h2>Conclusion</h2>
+                    <p>Copenhagen is a captivating destination that offers a perfect blend of historic charm, modern design, and vibrant culture. My 4-day journey was an enriching and exhilarating experience, uncovering the dynamic spirit and enduring traditions of one of Europe's most livable cities.</p>
+                    <p>If you're planning a trip to Denmark, Copenhagen should definitely be on your list. Whether you're seeking serene canal-side relaxation, cultural immersion, or thrilling adventures, Copenhagen has something for everyone.</p>
+                    <p>Until next time, happy travels!</p>
+                </section>
+
+                <!-- Visitor Testimonials -->
+                <section class="section testimonials">
+                    <h2>Visitor Testimonials</h2>
+                    <blockquote>
+                        "Copenhagen is a perfect blend of nature and urban life. The canals are breathtaking, and the Old Town is full of charm and history. Every day brought a new adventure!"
+                        <footer>- Emma Jensen</footer>
+                    </blockquote>
+                    <blockquote>
+                        "Exploring Copenhagen's museums and enjoying the local cuisine was an unforgettable experience. The city's vibrant cultural scene and friendly locals made my trip truly special."
+                        <footer>- Lars Petersen</footer>
+                    </blockquote>
+                </section>
+
+                <!-- Follow My Adventures -->
+                <section class="section follow-adventures">
+                    <h2>Follow My Adventures</h2>
+                    <p>Stay connected and follow my journey through the links below:</p>
+                    <ul class="follow-links">
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                    </ul>
+                </section>
             </div>
         </section>
     </main>
-    
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Enhanced Navigation and Back to Top Button -->
+    <script>
+        // Toggle navigation menu on hamburger icon click
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling down 300px
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Close the navigation menu when a link is clicked (for mobile)
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
