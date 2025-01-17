@@ -35,8 +35,60 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Responsive Images and Heading Titles CSS -->
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Budapest",
+      "description": "Discover Budapest, the stunning capital of Hungary, with Carl Travels. Explore its rich history, vibrant culture, and top attractions.",
+      "image": "https://www.carltravels.com/images/budapest-banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/Budapest.html"
+      }
+    }
+    </script>
+
+    <!-- Inline styles matching the newer pages -->
     <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #E55B00;
+        }
+
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
@@ -44,6 +96,7 @@
             display: block;
             margin: 20px auto; /* Center the image with spacing */
             padding: 10px 0; /* Optional padding for spacing */
+            border-radius: 8px; /* Optional: Add rounded corners */
         }
 
         /* Style the header h1 (Carl Travels) */
@@ -67,6 +120,8 @@
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 2.5em;
+            text-align: center;
         }
 
         /* Enhance main h1 appearance on hover */
@@ -81,6 +136,7 @@
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease; /* Smooth transition for hover effect */
+            font-size: 1.8em;
         }
 
         /* Enhance main h2 appearance on hover */
@@ -88,20 +144,29 @@
             color: #E55B00; /* Darker shade on hover */
         }
 
-        /* Optional: Responsive Typography */
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333; /* Keep these neutral or adapt as needed */
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+
+        /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
                 font-size: 2em; /* Adjust logo size on smaller screens */
             }
-
             main h1 {
                 font-size: 2em;
             }
-
             main h2 {
                 font-size: 1.5em;
             }
-
+            main h3 {
+                font-size: 1.2em;
+            }
             /* Adjust iframe size for smaller screens */
             .video-container iframe {
                 width: 100%;
@@ -109,33 +174,252 @@
             }
         }
 
-        /* Style for video container to make it responsive */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            padding-top: 25px;
-            height: 0;
+        /* Additional Styling for Lists */
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        main ul li, main ol li {
+            margin-bottom: 10px;
         }
 
-        /* Style for banner images */
-        .banner-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
+        /* Bold Styling for Important Points */
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Styling for Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
             padding: 10px 0;
+        }
+
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        /* Testimonial Section Styling */
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+        }
+
+        /* Follow My Adventures Section */
+        .follow-adventures {
+            margin-top: 30px;
+        }
+
+        .follow-adventures h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+
+        .follow-adventures .follow-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .follow-adventures .follow-links li {
+            margin-bottom: 10px;
+        }
+
+        .follow-adventures .follow-links li a {
+            color: #FF6600;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .follow-adventures .follow-links li a:hover {
+            color: #E55B00;
+        }
+
+        /* Hamburger Menu Styling */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive Navigation Menu */
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            /* Hamburger Animation */
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Back to Top Button Styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+
+        /* Skip Navigation Link Styling */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social a:hover img {
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -143,8 +427,8 @@
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -165,100 +449,217 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Main Title -->
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Budapest Voyage</li>
+                    </ol>
+                </nav>
+
+                <!-- Page Title -->
                 <h1>Budapest</h1>
-                <img src="budapest-banner.jpg" alt="Budapest Banner" class="banner-image responsive-image">
-                
-                <!-- History Section -->
-                <div class="section">
-                    <h2>History</h2>
-                    <p>Budapest, the capital of Hungary, was formed in 1872 by the unification of Buda, Pest, and Óbuda. The city has a rich history influenced by Roman, Ottoman, and Austro-Hungarian empires. It has been a cultural and economic hub in Central Europe for centuries.</p>
-                </div>
+                <img src="images/budapest-banner.jpg" alt="Budapest Banner" class="banner-image responsive-image" loading="lazy">
+
+                <!-- What to See Section -->
+                <section class="section">
+                    <h2>What to See</h2>
+                    <p>Budapest is renowned for its stunning architecture, beautiful landscapes, and vibrant cultural scene. Key attractions include the Hungarian Parliament Building, Buda Castle, Chain Bridge, Thermal Baths (Gellért and Széchenyi), St. Stephen's Basilica, and the scenic Danube River promenade.</p>
+                </section>
 
                 <!-- Insert budapest1.jpg -->
-                <img src="budapest1.jpg" alt="Budapest Historical Architecture" class="responsive-image">
+                <img src="images/budapest1.jpg" alt="Budapest Historical Architecture" class="responsive-image" loading="lazy">
 
-                <!-- Population Section -->
-                <div class="section">
-                    <h2>Population</h2>
-                    <p>As of 2023, Budapest has a population of approximately 1.75 million people, making it the largest city in Hungary.</p>
-                </div>
+                <!-- A Brief History of the City Section -->
+                <section class="section">
+                    <h2>A Brief History of the City</h2>
+                    <p>Budapest, the capital of Hungary, was formed in 1872 by the unification of Buda, Pest, and Óbuda. The city has a rich history influenced by Roman, Ottoman, and Austro-Hungarian empires. It has been a cultural and economic hub in Central Europe for centuries, known for its contributions to art, music, and architecture.</p>
+                </section>
 
                 <!-- Insert budapest2.jpg -->
-                <img src="budapest2.jpg" alt="Budapest Skyline" class="responsive-image">
+                <img src="images/budapest2.jpg" alt="Budapest Skyline" class="responsive-image" loading="lazy">
 
-                <!-- Notable Attractions Section -->
-                <div class="section">
-                    <h2>Notable Attractions</h2>
-                    <ul>
+                <!-- Top 10 Attractions Section -->
+                <section class="section">
+                    <h2>Top 10 Attractions</h2>
+                    <ol>
                         <li>Hungarian Parliament Building</li>
                         <li>Chain Bridge</li>
-                        <li>Thermal Baths (Gellért, Széchenyi)</li>
                         <li>Buda Castle</li>
                         <li>St. Stephen's Basilica</li>
-                    </ul>
-                </div>
+                        <li>Széchenyi Thermal Bath</li>
+                        <li>Fisherman's Bastion</li>
+                        <li>Gellért Hill and Citadel</li>
+                        <li>Heroes' Square</li>
+                        <li>Danube River Cruise</li>
+                        <li>Vajdahunyad Castle</li>
+                    </ol>
+                </section>
 
                 <!-- Insert budapest3.jpg -->
-                <img src="budapest3.jpg" alt="Budapest Thermal Baths" class="responsive-image">
+                <img src="images/budapest3.jpg" alt="Budapest Thermal Baths" class="responsive-image" loading="lazy">
+
+                <!-- What to Bring Section -->
+                <section class="section">
+                    <h2>What to Bring</h2>
+                    <ul>
+                        <li>Comfortable walking shoes</li>
+                        <li>Weather-appropriate clothing (Budapest weather can be unpredictable)</li>
+                        <li>Camera or smartphone for photos</li>
+                        <li>Guidebook or map</li>
+                        <li>Travel adapter (Type C or F socket)</li>
+                        <li>Reusable water bottle</li>
+                        <li>Personal medications</li>
+                        <li>Sun protection (sunscreen, hat, sunglasses)</li>
+                        <li>Light jacket for cooler evenings</li>
+                        <li>Basic Hungarian phrases</li>
+                    </ul>
+                </section>
+
+                <!-- Famous Food Section -->
+                <section class="section">
+                    <h2>Most Famous Food</h2>
+                    <p><strong>Lángos:</strong> A traditional Hungarian street food consisting of deep-fried dough, typically topped with garlic, sour cream, and cheese. It's a must-try when visiting Budapest.</p>
+                </section>
+
+                <!-- Currency Section -->
+                <section class="section">
+                    <h2>Currency</h2>
+                    <p>The currency in Budapest (Hungary) is the Hungarian Forint (HUF).</p>
+                </section>
 
                 <!-- Best Time to Visit Section -->
-                <div class="section">
+                <section class="section">
                     <h2>Best Time to Visit</h2>
-                    <p>The best time to visit Budapest is during the spring (April to June) and fall (September to October) when the weather is mild and the city is less crowded.</p>
-                </div>
+                    <p>The best time to visit Budapest is during the spring (April to June) and fall (September to October) when the weather is mild and the city is less crowded. Summer is ideal for enjoying outdoor activities and festivals, while winter is perfect for exploring indoor attractions and experiencing the festive Christmas markets.</p>
+                </section>
 
                 <!-- Prices Overview Section -->
-                <div class="section">
+                <section class="section">
                     <h2>Prices Overview</h2>
-                    <p>Budapest is known for being affordable. Accommodation ranges from budget hostels at €15 per night to mid-range hotels at €60-€120 per night. Dining out is inexpensive, with meals costing between €8 and €25.</p>
-                </div>
+                    <p>Budapest is known for being affordable. Accommodation ranges from budget hostels at €15 per night to mid-range hotels at €60-€120 per night. Dining out is inexpensive, with meals costing between €8 and €25. Public transportation is efficient and affordable, making it easy to explore the city.</p>
+                </section>
 
                 <!-- Fun Facts Section -->
-                <div class="section">
+                <section class="section">
                     <h2>Fun Facts</h2>
                     <ul>
                         <li>Budapest is home to the world’s first underground metro line, opened in 1896.</li>
                         <li>The city has over 100 thermal springs, making it famous for its spa culture.</li>
                         <li>Budapest hosts one of Europe’s largest Christmas markets, attracting millions of visitors annually.</li>
+                        <li>The Hungarian Parliament Building is the third-largest parliament building in the world.</li>
+                        <li>Budapest was ranked as one of the most livable cities in the world.</li>
                     </ul>
-                </div>
+                </section>
+
+                <!-- Visitor Testimonials -->
+                <section class="section testimonials">
+                    <h2>Visitor Testimonials</h2>
+                    <blockquote>
+                        "Budapest's blend of stunning architecture and vibrant culture is truly captivating. The thermal baths and Danube River cruises were highlights of my trip."
+                        <footer>- Anna Kovacs</footer>
+                    </blockquote>
+                    <blockquote>
+                        "Exploring Buda Castle and enjoying the local cuisine made my visit to Budapest unforgettable. The city's rich history is beautifully preserved."
+                        <footer>- Mark Szabo</footer>
+                    </blockquote>
+                </section>
+
+                <!-- Follow My Adventures -->
+                <section class="section follow-adventures">
+                    <h2>Follow My Adventures</h2>
+                    <p>Stay connected and follow my journey through the links below:</p>
+                    <ul class="follow-links">
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                    </ul>
+                </section>
             </div>
         </section>
     </main>
     
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Enhanced Navigation and Back to Top Button -->
+    <script>
+        // Toggle navigation menu on hamburger icon click
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling down 300px
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Close the navigation menu when a link is clicked (for mobile)
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
