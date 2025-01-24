@@ -2,37 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <meta name="description" content="Explore Bucharest, Romania's dynamic capital, known for its impressive architecture, vibrant nightlife, and rich cultural heritage.">
-    <meta name="keywords" content="Bucharest, Romania, Travel, Architecture, Culture, Nightlife">
+    <meta name="description" content="Explore Bucharest, Romania's vibrant capital, known for its mix of history, culture, and modern energy. Discover the best attractions, food, and travel tips for your Bucharest adventure.">
+    <meta name="keywords" content="Bucharest, Romania, Travel, Palace of the Parliament, Old Town, Culture, History, Nightlife">
     <meta name="author" content="Carl Tomich">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Bucharest - Carl Travels">
-    <meta property="og:description" content="Discover Bucharest's impressive architecture, vibrant nightlife, and rich cultural heritage.">
-    <meta property="og:image" content="https://www.carltravels.com/images/bucharest-og-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/Bucharest.html">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Exploring Bucharest: A Comprehensive Travel Guide - Carl Travels">
+    <meta property="og:description" content="Discover Bucharest's mix of history, culture, and modern energy in this comprehensive travel guide.">
+    <meta property="og:image" content="https://www.carltravels.com/images/bucharest-banner.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/bucharest-travel-guide.html">
+    <meta property="og:type" content="article">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bucharest - Carl Travels">
-    <meta name="twitter:description" content="Discover Bucharest's impressive architecture, vibrant nightlife, and rich cultural heritage.">
+    <meta name="twitter:title" content="Exploring Bucharest: A Comprehensive Travel Guide - Carl Travels">
+    <meta name="twitter:description" content="Discover Bucharest's mix of history, culture, and modern energy in this comprehensive travel guide.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/bucharest-twitter-image.jpg">
 
-    <title>Bucharest - Carl Travels</title>
-
-    <!-- Link to the updated styles.css -->
+    <title>Exploring Bucharest: A Comprehensive Travel Guide - Carl Travels</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
-    <link rel="stylesheet" href="destination.css">
-
-    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link rel="stylesheet" href="city.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Structured Data (JSON-LD) for SEO -->
@@ -40,8 +33,8 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "headline": "Bucharest",
-      "description": "Explore Bucharest, Romania's dynamic capital, known for its impressive architecture, vibrant nightlife, and rich cultural heritage.",
+      "headline": "Exploring Bucharest: A Comprehensive Travel Guide",
+      "description": "Discover Bucharest's mix of history, culture, and modern energy in this comprehensive travel guide.",
       "image": "https://www.carltravels.com/images/bucharest-banner.jpg",
       "author": {
         "@type": "Person",
@@ -58,95 +51,81 @@
       "datePublished": "2024-04-27",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.carltravels.com/Bucharest.html"
+        "@id": "https://www.carltravels.com/bucharest-travel-guide.html"
       }
     }
     </script>
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline Styles -->
     <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-        }
-
-        a {
-            color: #FF6600;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #E55B00;
-        }
-
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto; /* Center the image with spacing */
-            padding: 10px 0; /* Optional padding for spacing */
-            border-radius: 8px; /* Optional: Add rounded corners */
+            margin: 20px auto;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        /* Responsive Video Container -->
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
-
-        /* Enhance header h1 appearance on hover */
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
-        /* Style all h1 titles within the main content */
+        /* Style all h1 titles within main */
         main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 2.5em;
             text-align: center;
         }
-
-        /* Enhance main h1 appearance on hover */
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
-        /* Style all h2 titles within the main content */
+        /* Style all h2 titles within main */
         main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 1.8em;
         }
-
-        /* Enhance main h2 appearance on hover */
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
         /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
@@ -156,7 +135,7 @@
         /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -167,17 +146,11 @@
             main h3 {
                 font-size: 1.2em;
             }
-            /* Adjust iframe size for smaller screens */
-            .video-container iframe {
-                width: 100%;
-                height: auto;
-            }
         }
 
         /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
-            margin-bottom: 20px;
             line-height: 1.6;
         }
 
@@ -230,205 +203,35 @@
             border-left: 4px solid #FF6600;
             padding-left: 15px;
             margin: 20px 0;
-            background-color: #f9f9f9;
-            padding: 10px 20px;
-            border-radius: 5px;
         }
 
         blockquote footer {
             text-align: right;
             font-weight: bold;
             color: #333;
-            margin-top: 5px;
         }
 
         /* Testimonial Section Styling */
         .testimonials {
-            background-color: #f1f1f1;
+            background-color: #f9f9f9;
             padding: 20px;
             border-radius: 8px;
         }
 
         .testimonials h2 {
             margin-bottom: 15px;
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-        }
-
-        /* Follow My Adventures Section */
-        .follow-adventures {
-            margin-top: 30px;
-        }
-
-        .follow-adventures h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-        }
-
-        .follow-adventures .follow-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .follow-adventures .follow-links li {
-            margin-bottom: 10px;
-        }
-
-        .follow-adventures .follow-links li a {
-            color: #FF6600;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-            transition: color 0.3s ease;
-        }
-
-        .follow-adventures .follow-links li a:hover {
-            color: #E55B00;
-        }
-
-        /* Hamburger Menu Styling */
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .menu-icon span {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            transition: all 0.3s ease;
-        }
-
-        /* Responsive Navigation Menu */
-        @media (max-width: 768px) {
-            nav ul.nav-menu {
-                display: none;
-                flex-direction: column;
-                gap: 10px;
-                background-color: #fff;
-                position: absolute;
-                top: 60px;
-                right: 20px;
-                padding: 20px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                border-radius: 5px;
-                z-index: 1000;
-                width: 200px;
-            }
-
-            nav ul.nav-menu.active {
-                display: flex;
-                animation: fadeIn 0.3s ease-in-out;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-
-            /* Hamburger Animation */
-            #menu-toggle:checked + .menu-icon span:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-
-            #menu-toggle:checked + .menu-icon span:nth-child(2) {
-                opacity: 0;
-            }
-
-            #menu-toggle:checked + .menu-icon span:nth-child(3) {
-                transform: rotate(-45deg) translate(5px, -5px);
-            }
-        }
-
-        /* Fade-in Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Back to Top Button Styling */
-        #back-to-top {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            background-color: #FF6600;
-            color: #fff;
-            border: none;
-            padding: 12px 16px;
-            border-radius: 50%;
-            font-size: 20px;
-            cursor: pointer;
-            display: none;
-            z-index: 1000;
-            transition: background-color 0.3s ease, opacity 0.3s ease;
-            opacity: 0.8;
-        }
-
-        #back-to-top:hover {
-            background-color: #E55B00;
-            opacity: 1;
-        }
-
-        /* Skip Navigation Link Styling */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #FF6600;
-            color: #fff;
-            padding: 8px 16px;
-            z-index: 100;
-            transition: top 0.3s ease;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .skip-link:focus {
-            top: 10px;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .footer-social {
-            margin-top: 10px;
-        }
-
-        .footer-social a {
-            margin: 0 10px;
-            display: inline-block;
-        }
-
-        .footer-social img {
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s ease;
-        }
-
-        .footer-social a:hover img {
-            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
-    <!-- Skip Navigation Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
-            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -448,137 +251,156 @@
 
             <!-- Social Media Icons -->
             <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
-    <main id="main-content">
-        <section class="destination-details">
+    <main>
+        <section class="blog-post">
             <div class="container">
                 <!-- Breadcrumb Navigation -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Bucharest Voyage</li>
+                        <li aria-current="page">Bucharest</li>
                     </ol>
                 </nav>
 
                 <!-- Page Title -->
-                <h1>Bucharest</h1>
-                <img src="images/bucharest-banner.jpg" alt="Bucharest Banner" class="banner-image responsive-image" loading="lazy">
+                <h1>Exploring Bucharest: A Comprehensive Travel Guide</h1>
+                
+                <!-- Embedded YouTube Video (Banner Replacement) -->
+                <div class="responsive-video video-section">
+                    <iframe src="https://www.youtube.com/embed/example-video-id" title="Discover Bucharest: A Vibrant City Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
-                <!-- What to See Section -->
+                <!-- Introduction -->
                 <section class="section">
-                    <h2>What to See</h2>
-                    <p>Bucharest, often referred to as "Little Paris," boasts an impressive mix of historical and modern architecture. Key sights include the Palace of the Parliament, Romanian Athenaeum, Old Town (Lipscani), Herastrau Park, and the National Museum of Art of Romania.</p>
+                    <h2>Introduction</h2>
+                    <p>Bucharest, the capital of Romania, is a city of contrasts, where historic architecture meets modern energy. Known as the "Little Paris of the East," Bucharest boasts grand boulevards, stunning parks, and a vibrant cultural scene.</p>
+                    <p><strong>Overview:</strong> Bucharest is a city that seamlessly blends its communist past with its dynamic present. From the massive Palace of the Parliament to the charming Old Town, Bucharest offers a unique mix of history, culture, and nightlife.</p>
                 </section>
 
-                <!-- Insert bucharest1.jpg -->
-                <img src="images/bucharest1.jpg" alt="Palace of the Parliament, Bucharest" class="responsive-image" loading="lazy">
-
-                <!-- A Brief History of the City Section -->
+                <!-- Highlights -->
                 <section class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>Bucharest's history dates back to the 14th century. It became the capital of Romania in 1862 and experienced significant growth and modernization in the 20th century. The city endured extensive damage during World War II but has since been rebuilt, blending its rich history with contemporary developments.</p>
-                </section>
-
-                <!-- Insert bucharest2.jpg -->
-                <img src="images/bucharest2.jpg" alt="Romanian Athenaeum, Bucharest" class="responsive-image" loading="lazy">
-
-                <!-- Top 10 Attractions Section -->
-                <section class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li>Palace of the Parliament</li>
-                        <li>Romanian Athenaeum</li>
-                        <li>Old Town (Lipscani)</li>
-                        <li>Herastrau Park</li>
-                        <li>National Museum of Art of Romania</li>
-                        <li>Village Museum (Muzeul Satului)</li>
-                        <li>Revolution Square</li>
-                        <li>Cismigiu Gardens</li>
-                        <li>Chinatown (Cartier Chinezesc)</li>
-                        <li>Grigore Antipa National Museum of Natural History</li>
-                    </ol>
-                </section>
-
-                <!-- Insert bucharest3.jpg -->
-                <img src="images/bucharest3.jpg" alt="Old Town (Lipscani), Bucharest" class="responsive-image" loading="lazy">
-
-                <!-- What to Bring Section -->
-                <section class="section">
-                    <h2>What to Bring</h2>
+                    <h2>Highlights</h2>
                     <ul>
-                        <li>Comfortable walking shoes</li>
-                        <li>Weather-appropriate clothing (Bucharest has a continental climate)</li>
-                        <li>Camera or smartphone for photos</li>
-                        <li>Guidebook or map</li>
-                        <li>Travel adapter (Type F socket)</li>
-                        <li>Reusable water bottle</li>
-                        <li>Personal medications</li>
-                        <li>Sun protection (sunscreen, hat, sunglasses)</li>
-                        <li>Light jacket for cooler evenings</li>
-                        <li>Basic Romanian phrases</li>
+                        <li><strong>Palace of the Parliament:</strong> The world's heaviest building and a symbol of Romania's communist era.</li>
+                        <li><strong>Old Town (Lipscani):</strong> A lively area filled with historic buildings, cafes, and nightlife.</li>
+                        <li><strong>Herăstrău Park:</strong> A vast urban park with a lake, perfect for walking and boating.</li>
+                        <li><strong>Village Museum:</strong> An open-air museum showcasing traditional Romanian village life.</li>
+                        <li><strong>Romanian Athenaeum:</strong> A stunning concert hall and cultural landmark.</li>
+                        <li><strong>Revolution Square:</strong> A historic site where the 1989 Romanian Revolution began.</li>
+                        <li><strong>Arcul de Triumf:</strong> A triumphal arch inspired by Paris's Arc de Triomphe.</li>
+                        <li><strong>National Museum of Art of Romania:</strong> Houses an impressive collection of European and Romanian art.</li>
+                        <li><strong>Calea Victoriei:</strong> A historic boulevard lined with shops, cafes, and landmarks.</li>
+                        <li><strong>Therme Bucharest:</strong> One of Europe's largest thermal spas and wellness centers.</li>
                     </ul>
                 </section>
 
-                <!-- Famous Food Section -->
+                <!-- Top Attractions -->
                 <section class="section">
-                    <h2>Most Famous Food</h2>
-                    <p><strong>Schnitzel:</strong> A traditional Viennese dish consisting of a thin slice of veal coated in breadcrumbs and fried until golden. Often served with lemon, potato salad, or lingonberries.</p>
+                    <h2>Top Attractions</h2>
+                    
+                    <!-- Palace of the Parliament -->
+                    <h3>Palace of the Parliament</h3>
+                    <p>This colossal building is the second-largest administrative building in the world, after the Pentagon. Guided tours offer a glimpse into its opulent interiors and fascinating history.</p>
+                    
+                    <!-- Old Town (Lipscani) -->
+                    <h3>Old Town (Lipscani)</h3>
+                    <p>Bucharest's Old Town is a vibrant area filled with cobblestone streets, historic buildings, and a lively atmosphere. It's the perfect place to explore cafes, bars, and restaurants.</p>
+                    
+                    <!-- Romanian Athenaeum -->
+                    <h3>Romanian Athenaeum</h3>
+                    <p>This iconic concert hall is a masterpiece of neoclassical architecture. Attend a performance or take a guided tour to admire its stunning interiors.</p>
                 </section>
 
-                <!-- Currency Section -->
+                <!-- Adventure and Activities -->
                 <section class="section">
-                    <h2>Currency</h2>
-                    <p>The currency in Bucharest (Romania) is the Romanian Leu (RON).</p>
-                </section>
-
-                <!-- Best Time to Visit Section -->
-                <section class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>Spring (April to June) and Autumn (September to October) offer mild weather and fewer tourists. Summer is ideal for outdoor activities and exploring parks, while winter is perfect for enjoying Christmas markets and cozy cafés.</p>
-                </section>
-
-                <!-- Prices Overview Section -->
-                <section class="section">
-                    <h2>Prices Overview</h2>
-                    <p>Bucharest offers a range of options for all budgets. Accommodation ranges from budget hostels at €20 per night to luxury hotels at €150-€300 per night. Dining out is moderately priced, with meals costing between €10 and €40.</p>
-                </section>
-
-                <!-- Fun Facts Section -->
-                <section class="section">
-                    <h2>Fun Facts</h2>
+                    <h2>Adventure and Activities</h2>
+                    <p>Bucharest offers a variety of activities for every traveler:</p>
                     <ul>
-                        <li>Bucharest is home to the world's second-largest administrative building, the Palace of the Parliament.</li>
-                        <li>The Romanian Athenaeum is renowned for its stunning architecture and is the home of the George Enescu Philharmonic Orchestra.</li>
-                        <li>Bucharest was nicknamed "Little Paris" in the early 20th century due to its elegant architecture and vibrant cultural scene.</li>
-                        <li>The Village Museum showcases traditional Romanian village life with over 300 authentic buildings from across the country.</li>
-                        <li>Revolution Square was the focal point of the 1989 Romanian Revolution that led to the fall of Nicolae Ceaușescu.</li>
+                        <li><strong>Walking Tours:</strong> Explore the city's history and architecture on foot.</li>
+                        <li><strong>Boat Rides:</strong> Enjoy a relaxing boat ride on Herăstrău Lake.</li>
+                        <li><strong>Nightlife:</strong> Experience Bucharest's vibrant nightlife in the Old Town.</li>
+                        <li><strong>Cultural Events:</strong> Attend concerts, theater performances, and festivals.</li>
+                        <li><strong>Shopping:</strong> Visit Calea Victoriei and AFI Cotroceni Mall for retail therapy.</li>
                     </ul>
+                </section>
+
+                <!-- Food and Cuisine -->
+                <section class="section">
+                    <h2>Food and Cuisine</h2>
+                    <p>Bucharest's culinary scene is a mix of traditional Romanian dishes and international flavors:</p>
+                    <ul>
+                        <li><strong>Sarmale:</strong> Cabbage rolls stuffed with meat and rice.</li>
+                        <li><strong>Mămăligă:</strong> A polenta-like dish often served with cheese and sour cream.</li>
+                        <li><strong>Mici:</strong> Grilled sausages made from a mix of meats.</li>
+                        <li><strong>Papanasi:</strong> A delicious dessert of fried dough with sour cream and jam.</li>
+                        <li><strong>Local Wines:</strong> Romania is known for its excellent wines, such as Fetească Neagră.</li>
+                    </ul>
+                </section>
+
+                <!-- Practical Information -->
+                <section class="section">
+                    <h2>Practical Information</h2>
+                    
+                    <h3>Transportation</h3>
+                    <p>Bucharest has an extensive public transportation system, including buses, trams, and the metro. Taxis and ride-sharing services are also widely available. Walking is a great way to explore the city center.</p>
+                    
+                    <h3>Accommodation</h3>
+                    <p>Bucharest offers a range of accommodations, from luxury hotels to budget-friendly hostels. Popular areas to stay include the city center, Old Town, and near Herăstrău Park.</p>
+                    
+                    <h3>Budgeting</h3>
+                    <p>Bucharest is an affordable destination. A daily budget of €30-€70 covers accommodation, meals, transportation, and activities.</p>
+                </section>
+
+                <!-- Tips and Recommendations -->
+                <section class="section">
+                    <h2>Tips and Recommendations</h2>
+                    
+                    <h3>Do’s and Don’ts</h3>
+                    <ul>
+                        <li><strong>Do:</strong> Try traditional Romanian dishes like sarmale and mămăligă.</li>
+                        <li><strong>Don’t:</strong> Forget to carry cash, as some smaller establishments may not accept cards.</li>
+                        <li><strong>Do:</strong> Explore the Old Town at night for a lively atmosphere.</li>
+                        <li><strong>Don’t:</strong> Miss the chance to visit the Palace of the Parliament.</li>
+                    </ul>
+                    
+                    <h3>Packing List</h3>
+                    <ul>
+                        <li>Weather-appropriate clothing (layers are recommended).</li>
+                        <li>Comfortable walking shoes.</li>
+                        <li>Rain jacket or umbrella.</li>
+                        <li>Travel adapter (Type C or F socket).</li>
+                        <li>Camera or smartphone for photos.</li>
+                    </ul>
+                    
+                    <h3>Local Etiquette</h3>
+                    <p>Romanians are warm and hospitable. Greet people with a handshake, and use polite phrases like "Bună ziua" (Good day). Tipping is customary in restaurants (5-10%).</p>
                 </section>
 
                 <!-- Visitor Testimonials -->
                 <section class="section testimonials">
                     <h2>Visitor Testimonials</h2>
                     <blockquote>
-                        "Bucharest's blend of history and modernity is captivating. The impressive architecture and vibrant nightlife made my trip truly memorable."
-                        <footer>- Elena Popescu</footer>
+                        "Bucharest is a city full of surprises. The Old Town and Palace of the Parliament were highlights of my trip. A must-visit for any traveler!"
+                        <footer>- Sarah (Australia)</footer>
                     </blockquote>
                     <blockquote>
-                        "Exploring the Palace of the Parliament and enjoying the lively atmosphere in Old Town was an unforgettable experience. Highly recommend Bucharest!"
-                        <footer>- Adrian Ionescu</footer>
+                        "The Romanian Athenaeum was breathtaking, and the food was incredible. Bucharest exceeded all my expectations!"
+                        <footer>- Max (Germany)</footer>
                     </blockquote>
                 </section>
 
@@ -597,68 +419,23 @@
             </div>
         </section>
     </main>
-    
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to Top">↑</button>
 
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/carlostomich" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                     <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript for Enhanced Navigation and Back to Top Button -->
-    <script>
-        // Toggle navigation menu on hamburger icon click
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.querySelector('nav ul.nav-menu');
-
-        menuToggle.addEventListener('change', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Back to Top Button functionality
-        const backToTopButton = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling down 300px
-                backToTopButton.style.display = 'block';
-                backToTopButton.style.opacity = '1';
-            } else {
-                backToTopButton.style.display = 'none';
-                backToTopButton.style.opacity = '0';
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Close the navigation menu when a link is clicked (for mobile)
-        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (menuToggle.checked) {
-                    menuToggle.checked = false;
-                    navMenu.classList.remove('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
