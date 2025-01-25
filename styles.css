@@ -343,6 +343,20 @@ footer p {
     margin: 0;
 }
 
+/* NEW FOOTER LINK COLOR OVERRIDES */
+.footer-links a:link,
+.footer-links a:visited {
+    color: #fff;       /* White for normal and visited links */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+    color: #ccc;       /* Light gray on hover/active */
+    text-decoration: underline;
+}
+
 /* Responsive Adjustments */
 
 /* Tablet and Below */
