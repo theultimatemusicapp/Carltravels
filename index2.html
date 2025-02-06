@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Explore the world with Carl Travels. Discover destinations, watch videos, and learn travel tips from my adventures." />
+  <meta name="keywords" content="Travel, Destinations, Travel Tips, Adventure" />
+  <meta name="author" content="Carl Tomich" />
+
+  <title>Carl Travels | Explore the World</title>
+
+  <!-- Google Fonts (Roboto, Dancing Script, and Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Async third‑party scripts (e.g. Google Analytics) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-LGFPJ2VMTY");
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">
+        <a href="index.html">Carl Travels</a>
+      </h1>
+
+      <!-- Hamburger Menu for Mobile -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social Media Icons -->
+      <div class="social-media">
+        <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+          <img src="facebook.png" alt="Facebook" loading="lazy" />
+        </a>
+        <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+          <img src="instagram.png" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+          <img src="youtube.png" alt="YouTube" loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Responsive Background Image -->
+  <section class="hero">
+    <picture class="hero-image">
+      <!-- Use different images for different viewport widths -->
+      <source media="(max-width: 450px)" srcset="images/hero-small.jpg">
+      <source media="(min-width: 451px) and (max-width: 768px)" srcset="images/hero-medium.jpg">
+      <source media="(min-width: 769px)" srcset="images/hero-large.jpg">
+      <img src="images/hero-large.jpg" alt="Scenic travel background" />
+    </picture>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h2>Discover the World with Carl Travels</h2>
+      <p>
+        Join me on unforgettable adventures as I explore hidden gems, share travel tips, and document my journey around the globe.
+      </p>
+      <a href="https://www.youtube.com/@CarlTravels" target="_blank" class="cta">Watch My Videos</a>
+    </div>
+  </section>
+
+  <!-- Latest Videos Section -->
+  <section class="latest-videos">
+    <div class="container">
+      <h3>Latest Videos</h3>
+      <div class="video-gallery">
+        <iframe src="https://www.youtube.com/embed/UmykVoIO62w" frameborder="0" allowfullscreen title="Latest Video 1" loading="lazy"></iframe>
+        <iframe src="https://www.youtube.com/embed/n1pWE7QaCds" frameborder="0" allowfullscreen title="Latest Video 2" loading="lazy"></iframe>
+        <iframe src="https://www.youtube.com/embed/7y3dVvYfBiI" frameborder="0" allowfullscreen title="Latest Video 3" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Section (using a grid layout inspired by modern card designs) -->
+  <section class="destinations">
+    <div class="container">
+      <h3>Travel Destinations</h3>
+      <div class="destinations-grid">
+        <a href="destinations.html" class="destination-card">
+          <img src="images/australia.jpg" alt="Australia" loading="lazy">
+          <div class="destination-title">Australia</div>
+        </a>
+        <a href="destinations.html" class="destination-card">
+          <img src="images/europe.jpg" alt="Europe" loading="lazy">
+          <div class="destination-title">Europe</div>
+        </a>
+        <a href="destinations.html" class="destination-card">
+          <img src="images/asia.jpg" alt="Asia" loading="lazy">
+          <div class="destination-title">Asia</div>
+        </a>
+        <a href="destinations.html" class="destination-card">
+          <img src="images/america.jpg" alt="America" loading="lazy">
+          <div class="destination-title">America</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container testimonial-container">
+      <h2 class="testimonial-header">What People Are Saying</h2>
+      <div class="stars">
+        <!-- Example star SVG (repeat five times as needed) -->
+        <svg width="24" height="24" viewBox="0 0 20 20">
+          <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+        </svg>
+        <!-- Repeat the star SVG four more times -->
+      </div>
+      <p class="review" id="currentReview">
+        "I met Carl on the streets of Berlin while he was busking. He took me on an unforgettable tour of the city’s best sites." – Sarah (Australia)
+      </p>
+      <div class="review-navigation">
+        <button class="nav-button" id="prevBtn" aria-label="Previous Review">&#10094;</button>
+        <button class="nav-button" id="nextBtn" aria-label="Next Review">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="destinations.html">Destinations</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+          <img src="facebook.png" alt="Facebook" loading="lazy">
+        </a>
+        <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+          <img src="instagram.png" alt="Instagram" loading="lazy">
+        </a>
+        <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+          <img src="youtube.png" alt="YouTube" loading="lazy">
+        </a>
+      </div>
+      <p>&copy; 2025 Carl Travels. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Testimonial Slider Script -->
+  <script>
+    const reviews = [
+      '"I met Carl on the streets of Berlin while he was busking. He took me on an unforgettable tour of the city’s best sites." – Sarah (Australia)',
+      '"Carl is an amazing travel guide who makes every journey memorable." – Mike (Canada)',
+      '"From unique destinations to hidden gems, Carl’s travels are truly inspiring." – Tilda'
+    ];
+    let currentIndex = 0;
+    const reviewElement = document.getElementById("currentReview");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function updateReview(index) {
+      reviewElement.textContent = reviews[index];
+    }
+    function showNextReview() {
+      currentIndex = (currentIndex + 1) % reviews.length;
+      updateReview(currentIndex);
+    }
+    function showPrevReview() {
+      currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+      updateReview(currentIndex);
+    }
+    nextBtn.addEventListener("click", showNextReview);
+    prevBtn.addEventListener("click", showPrevReview);
+    document.addEventListener("DOMContentLoaded", () => {
+      updateReview(currentIndex);
+      setInterval(showNextReview, 5000);
+    });
+  </script>
+</body>
+</html>
