@@ -91,93 +91,78 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #fff;
         }
-
         a {
             color: #FF6600;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
         a:hover {
             color: #E55B00;
         }
-
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto; /* Center the image with spacing */
-            padding: 10px 0; /* Optional padding for spacing */
-            border-radius: 8px; /* Optional: Add rounded corners */
+            margin: 20px auto;
+            padding: 10px 0;
+            border-radius: 8px;
             loading: lazy;
         }
-
         /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
-
-        /* Enhance header h1 appearance on hover */
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
         /* Style all h1 titles within the main content */
         main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 2.5em;
             text-align: center;
         }
-
-        /* Enhance main h1 appearance on hover */
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
         /* Style all h2 titles within the main content */
         main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 1.8em;
         }
-
-        /* Enhance main h2 appearance on hover */
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
         /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
             font-size: 1.4em;
         }
-
         /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -188,34 +173,28 @@
             main h3 {
                 font-size: 1.2em;
             }
-            /* Adjust iframe size for smaller screens */
             .video-responsive iframe {
                 width: 100%;
                 height: auto;
             }
         }
-
         /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
             margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
         /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
         /* Styling for Sections */
         .section {
             margin-bottom: 30px;
         }
-
         /* Breadcrumb Styling */
         .breadcrumb {
             list-style: none;
@@ -225,25 +204,20 @@
             font-size: 0.9em;
             padding: 10px 0;
         }
-
         .breadcrumb li::after {
             content: ">";
             margin-left: 5px;
         }
-
         .breadcrumb li:last-child::after {
             content: "";
         }
-
         .breadcrumb a {
             color: #FF6600;
             text-decoration: none;
         }
-
         .breadcrumb a:hover {
             text-decoration: underline;
         }
-
         /* Blockquote Styling */
         blockquote {
             font-style: italic;
@@ -255,21 +229,18 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
-
         blockquote footer {
             text-align: right;
             font-weight: bold;
             color: #333;
             margin-top: 5px;
         }
-
         /* Testimonial Section Styling */
         .testimonials {
             background-color: #f1f1f1;
             padding: 40px 0;
             border-radius: 8px;
         }
-
         .testimonial-container {
             max-width: 800px;
             margin: 0 auto;
@@ -277,42 +248,35 @@
             position: relative;
             transition: opacity 0.3s ease;
         }
-
         .testimonial-container.show {
             opacity: 1;
         }
-
         .testimonial-header {
             font-family: 'Poppins', sans-serif;
             color: #FF6600;
             margin-bottom: 15px;
             font-size: 2em;
         }
-
         .stars {
             display: flex;
             justify-content: center;
             margin-bottom: 15px;
         }
-
         .stars svg {
-            fill: #FFD700; /* Gold color for stars */
+            fill: #FFD700;
             margin: 0 2px;
         }
-
         .review {
             font-size: 1.2em;
             font-family: 'Roboto', sans-serif;
             margin-bottom: 20px;
             min-height: 80px;
         }
-
         .navigation {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-
         .nav-button {
             background-color: #FF6600;
             color: #fff;
@@ -323,11 +287,9 @@
             font-size: 1.2em;
             transition: background-color 0.3s ease;
         }
-
         .nav-button:hover {
             background-color: #E55B00;
         }
-
         /* Back to Top Button Styling */
         #back-to-top {
             position: fixed;
@@ -345,12 +307,10 @@
             transition: background-color 0.3s ease, opacity 0.3s ease;
             opacity: 0.8;
         }
-
         #back-to-top:hover {
             background-color: #E55B00;
             opacity: 1;
         }
-
         /* Back to Destinations Button Styling */
         #back-to-destinations {
             display: inline-block;
@@ -361,11 +321,9 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-
         #back-to-destinations:hover {
             background-color: #E55B00;
         }
-
         /* Skip Navigation Link Styling */
         .skip-link {
             position: absolute;
@@ -378,11 +336,9 @@
             transition: top 0.3s ease;
             font-family: 'Roboto', sans-serif;
         }
-
         .skip-link:focus {
             top: 10px;
         }
-
         /* Footer Styling */
         footer {
             background-color: #333;
@@ -391,57 +347,46 @@
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
-
         .footer-social {
             margin-top: 10px;
         }
-
         .footer-social a {
             margin: 0 10px;
             display: inline-block;
         }
-
         .footer-social img {
             width: 24px;
             height: 24px;
             transition: transform 0.3s ease;
         }
-
         .footer-social a:hover img {
             transform: scale(1.2);
         }
-
         /* Follow My Adventures Section */
         .follow-adventures {
             margin-top: 30px;
         }
-
         .follow-adventures h2 {
             font-family: 'Poppins', sans-serif;
             color: #FF6600;
             margin-bottom: 15px;
         }
-
         .follow-adventures .follow-links {
             list-style: none;
             padding: 0;
         }
-
         .follow-adventures .follow-links li {
             margin-bottom: 10px;
         }
-
         .follow-adventures .follow-links li a {
             color: #FF6600;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
             transition: color 0.3s ease;
         }
-
         .follow-adventures .follow-links li a:hover {
             color: #E55B00;
         }
-
         /* Hamburger Menu Styling */
         .menu-icon {
             display: none;
@@ -449,14 +394,12 @@
             flex-direction: column;
             gap: 5px;
         }
-
         .menu-icon span {
             width: 25px;
             height: 3px;
             background-color: #fff;
             transition: all 0.3s ease;
         }
-
         /* Responsive Navigation Menu */
         @media (max-width: 768px) {
             nav ul.nav-menu {
@@ -473,46 +416,37 @@
                 z-index: 1000;
                 width: 200px;
             }
-
             nav ul.nav-menu.active {
                 display: flex;
                 animation: fadeIn 0.3s ease-in-out;
             }
-
             .menu-icon {
                 display: flex;
             }
-
             /* Hamburger Animation */
             #menu-toggle:checked + .menu-icon span:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
             }
-
             #menu-toggle:checked + .menu-icon span:nth-child(2) {
                 opacity: 0;
             }
-
             #menu-toggle:checked + .menu-icon span:nth-child(3) {
                 transform: rotate(-45deg) translate(5px, -5px);
             }
-
             /* Adjust Social Media Icons Color on Mobile */
             .social-media img {
                 filter: brightness(0) invert(1);
             }
         }
-
         /* Fade-in Animation */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
         /* Google AdSense Ad Styling */
         .adsense {
             margin: 40px 0;
         }
-
         .adsense ins.adsbygoogle {
             display: block;
             text-align: center;
@@ -588,6 +522,17 @@
                 </div>
                 <img src="ballarat1.jpg" alt="Sovereign Hill" class="responsive-image" loading="lazy">
 
+                <!-- Metal Detector Adventure Section -->
+                <div class="section">
+                    <h2>Metal Detector Adventure</h2>
+                    <p>In true adventurous spirit, I decided to try my hand at gold mining in Ballarat by purchasing a metal detector. I ventured down to one of the old mining areas—although I didn’t strike gold, it was an incredibly fun and memorable day that connected me with the city’s rich Gold Rush heritage. Check out the video below for a glimpse of my metal detecting adventure!</p>
+                    <div class="video-responsive" style="max-width: 800px; margin: 20px auto;">
+                        <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe src="https://www.youtube.com/embed/YgACI0NSezQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Metal Detector Adventure in Ballarat" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Top 10 Attractions Section -->
                 <div class="section">
                     <h2>Top 10 Attractions</h2>
@@ -621,7 +566,6 @@
                         <li>Cash in Australian Dollars, as some establishments may prefer cash over cards.</li>
                     </ul>
                 </div>
-
                 <img src="ballarat2.jpg" alt="Ballarat Botanical Gardens" class="responsive-image" loading="lazy">
 
                 <!-- Currency Section -->
@@ -773,7 +717,7 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
