@@ -74,91 +74,76 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #fff;
         }
-
         a {
             color: #FF6600;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
         a:hover {
             color: #E55B00;
         }
-
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 20px auto; /* Center the image with spacing */
-            padding: 10px 0; /* Optional padding for spacing */
+            padding: 10px 0;
         }
-
         /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
-
-        /* Enhance header h1 appearance on hover */
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
         /* Style all h1 titles within the main content */
         main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 2.5em;
             text-align: center;
         }
-
-        /* Enhance main h1 appearance on hover */
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
         /* Style all h2 titles within the main content */
         main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 1.8em;
         }
-
-        /* Enhance main h2 appearance on hover */
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
         /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
             font-size: 1.4em;
         }
-
         /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -175,28 +160,23 @@
                 height: auto;
             }
         }
-
         /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
             margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
         /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
         /* Styling for Sections */
         .section {
             margin-bottom: 30px;
         }
-
         /* Breadcrumb Styling */
         .breadcrumb {
             list-style: none;
@@ -206,25 +186,20 @@
             font-size: 0.9em;
             padding: 10px 0;
         }
-
         .breadcrumb li::after {
             content: ">";
             margin-left: 5px;
         }
-
         .breadcrumb li:last-child::after {
             content: "";
         }
-
         .breadcrumb a {
             color: #FF6600;
             text-decoration: none;
         }
-
         .breadcrumb a:hover {
             text-decoration: underline;
         }
-
         /* Blockquote Styling */
         blockquote {
             font-style: italic;
@@ -236,58 +211,48 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
-
         blockquote footer {
             text-align: right;
             font-weight: bold;
             color: #333;
             margin-top: 5px;
         }
-
         /* Testimonial Section Styling */
         .testimonials {
             background-color: #f1f1f1;
             padding: 20px;
             border-radius: 8px;
         }
-
         .testimonials h2 {
             margin-bottom: 15px;
             font-family: 'Poppins', sans-serif;
             color: #FF6600;
         }
-
         /* Follow My Adventures Section */
         .follow-adventures {
             margin-top: 30px;
         }
-
         .follow-adventures h2 {
             font-family: 'Poppins', sans-serif;
             color: #FF6600;
             margin-bottom: 15px;
         }
-
         .follow-adventures .follow-links {
             list-style: none;
             padding: 0;
         }
-
         .follow-adventures .follow-links li {
             margin-bottom: 10px;
         }
-
         .follow-adventures .follow-links li a {
             color: #FF6600;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
             transition: color 0.3s ease;
         }
-
         .follow-adventures .follow-links li a:hover {
             color: #E55B00;
         }
-
         /* Hamburger Menu Styling */
         .menu-icon {
             display: none;
@@ -295,14 +260,12 @@
             flex-direction: column;
             gap: 5px;
         }
-
         .menu-icon span {
             width: 25px;
             height: 3px;
             background-color: #333;
             transition: all 0.3s ease;
         }
-
         /* Responsive Navigation Menu */
         @media (max-width: 768px) {
             nav ul.nav-menu {
@@ -319,36 +282,29 @@
                 z-index: 1000;
                 width: 200px;
             }
-
             nav ul.nav-menu.active {
                 display: flex;
                 animation: fadeIn 0.3s ease-in-out;
             }
-
             .menu-icon {
                 display: flex;
             }
-
             /* Hamburger Animation */
             #menu-toggle:checked + .menu-icon span:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
             }
-
             #menu-toggle:checked + .menu-icon span:nth-child(2) {
                 opacity: 0;
             }
-
             #menu-toggle:checked + .menu-icon span:nth-child(3) {
                 transform: rotate(-45deg) translate(5px, -5px);
             }
         }
-
         /* Fade-in Animation */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
         /* Back to Top Button Styling */
         #back-to-top {
             position: fixed;
@@ -366,12 +322,23 @@
             transition: background-color 0.3s ease, opacity 0.3s ease;
             opacity: 0.8;
         }
-
         #back-to-top:hover {
             background-color: #E55B00;
             opacity: 1;
         }
-
+        /* Back to Destinations Button Styling */
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
+        }
         /* Skip Navigation Link Styling */
         .skip-link {
             position: absolute;
@@ -384,11 +351,9 @@
             transition: top 0.3s ease;
             font-family: 'Roboto', sans-serif;
         }
-
         .skip-link:focus {
             top: 10px;
         }
-
         /* Footer Styling */
         footer {
             background-color: #333;
@@ -397,22 +362,18 @@
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
-
         .footer-social {
             margin-top: 10px;
         }
-
         .footer-social a {
             margin: 0 10px;
             display: inline-block;
         }
-
         .footer-social img {
             width: 24px;
             height: 24px;
             transition: transform 0.3s ease;
         }
-
         .footer-social a:hover img {
             transform: scale(1.2);
         }
@@ -501,39 +462,39 @@
                     </ul>
                 </section>
 
-                <!-- Top Attractions -->
+                <!-- Top Attractions with Stories -->
                 <section class="section">
                     <h2>Top Attractions</h2>
                     
                     <!-- Sagrada Família -->
                     <h3>Sagrada Família</h3>
-                    <p>The Sagrada Família is Barcelona's most famous landmark, designed by the visionary architect Antoni Gaudí. This basilica, still under construction, features intricate facades and stunning interiors that reflect Gaudí's unique architectural style.</p>
+                    <p>The Sagrada Família is Barcelona's most famous landmark, designed by the visionary Antoni Gaudí. I remember standing in awe before its towering spires as sunlight filtered through the stained glass, creating a kaleidoscope of colors. In that moment, I felt a deep connection to the city's artistic soul and imagined how future generations would marvel at this masterpiece.</p>
                     <img src="barcelona2.jpg" alt="Barcelona Architecture" class="responsive-image" loading="lazy">
 
                     <!-- Park Güell -->
                     <h3>Park Güell</h3>
-                    <p>Park Güell is a public park system composed of gardens and architectural elements located on Carmel Hill. Designed by Gaudí, the park offers colorful mosaics, whimsical structures, and panoramic views of the city.</p>
-                    <img src="barcelona1.jpg" alt="Barcelona Beach" class="responsive-image" loading="lazy">
+                    <p>Park Güell is a whimsical wonderland of mosaics, curving benches, and lush gardens. I spent an afternoon wandering its vibrant paths, sketching the playful designs and marveling at panoramic views of the city. It felt like stepping into a living fairytale, where every corner sparked creativity and joy.</p>
+                    <img src="barcelona1.jpg" alt="Park Güell mosaics" class="responsive-image" loading="lazy">
 
                     <!-- La Rambla -->
                     <h3>La Rambla</h3>
-                    <p>La Rambla is Barcelona's most famous street, stretching from Plaça de Catalunya to the Christopher Columbus Monument at Port Vell. It's lined with shops, cafes, and vibrant street performers, making it a lively area to explore.</p>
+                    <p>La Rambla pulses with energy as street performers, market stalls, and local chatter fill the air. I once joined a spontaneous performance on this bustling boulevard—a mix of dance and music that left me laughing and dancing along with locals and fellow travelers alike.</p>
 
                     <!-- Gothic Quarter -->
                     <h3>Gothic Quarter</h3>
-                    <p>The Gothic Quarter is the oldest part of Barcelona, featuring narrow medieval streets, hidden squares, and historic buildings. Key attractions include Barcelona Cathedral and Plaça Reial.</p>
+                    <p>The Gothic Quarter is a labyrinth of narrow medieval streets and hidden squares. During one quiet morning stroll, I discovered a secluded courtyard where an elderly musician played soulful tunes on a guitar. That intimate moment perfectly encapsulated the blend of mystery and history that defines Barcelona.</p>
 
                     <!-- Casa Batlló -->
                     <h3>Casa Batlló</h3>
-                    <p>Casa Batlló is a renowned building designed by Antoni Gaudí, located in the heart of Barcelona. Its unique facade and imaginative interiors showcase Gaudí's innovative approach to architecture.</p>
+                    <p>Casa Batlló is a surreal work of art. As I walked around its undulating façade and peeked into its imaginative interiors, I couldn’t help but envision the building coming to life at night—its colors shifting and its curves dancing under the moonlight. It was a magical experience that sparked my creative spirit.</p>
 
                     <!-- Barceloneta Beach -->
                     <h3>Barceloneta Beach</h3>
-                    <p>Barceloneta Beach is one of Barcelona's most popular beaches, offering sunbathing, swimming, and a vibrant nightlife. It's also a great spot for water sports and enjoying fresh seafood at beachfront restaurants.</p>
+                    <p>Barceloneta Beach offers the perfect mix of relaxation and excitement. I spent a sunny afternoon here, joining an impromptu beach volleyball game with locals and tourists. The combination of refreshing sea breezes, laughter, and the rhythmic sound of waves created a day that remains one of my most cherished memories.</p>
 
                     <!-- Montjuïc Hill -->
                     <h3>Montjuïc Hill</h3>
-                    <p>Montjuïc Hill offers panoramic views of Barcelona and is home to several attractions, including Montjuïc Castle, the Magic Fountain, and various museums and gardens.</p>
+                    <p>Montjuïc Hill provides some of the best views of Barcelona. I hiked up its winding paths at sunset and found a quiet spot near the Magic Fountain, where I sat back and savored the breathtaking panorama. It was a moment of pure tranquility and wonder that perfectly capped my Barcelona adventure.</p>
                 </section>
 
                 <!-- Adventure and Activities -->
@@ -542,7 +503,7 @@
                     <p>Barcelona offers a wide range of activities for adventure enthusiasts and those seeking unique experiences:</p>
                     <ul>
                         <li><strong>Walking Tours:</strong> Explore the city's neighborhoods, architecture, and hidden gems through guided or self-led tours.</li>
-                        <li><strong>Bike Tours:</strong> Discover Barcelona's attractions while cycling through its extensive bike paths.</li>
+                        <li><strong>Bike Tours:</strong> Discover Barcelona's attractions while cycling along its extensive bike paths.</li>
                         <li><strong>Water Sports:</strong> Enjoy activities like paddleboarding, jet skiing, and sailing at Barceloneta Beach.</li>
                         <li><strong>Hot Air Balloon Rides:</strong> Experience breathtaking views of Barcelona and the surrounding Catalonian landscape.</li>
                         <li><strong>Flamenco Shows:</strong> Immerse yourself in Spanish culture by attending authentic flamenco performances.</li>
@@ -551,30 +512,30 @@
                         <li><strong>Nightlife:</strong> Experience Barcelona's vibrant nightlife in areas like El Raval, Eixample, and the Gothic Quarter.</li>
                         <li><strong>Shopping:</strong> Explore trendy boutiques, designer stores, and local markets like La Boqueria.</li>
                     </ul>
-                    <p>One of the most exhilarating activities is taking a hot air balloon ride over Barcelona, offering a unique perspective of the city's stunning skyline and coastal beauty.</p>
+                    <p>One of the most exhilarating activities I experienced was a hot air balloon ride over Barcelona. Floating high above the city, I was treated to a surreal view of the sprawling urban landscape juxtaposed with the shimmering Mediterranean. It was a perspective that truly captured the magic of Barcelona.</p>
                 </section>
 
                 <!-- Cultural Immersion -->
                 <section class="section">
                     <h2>Cultural Immersion</h2>
-                    <p>Engaging with Barcelona's rich cultural heritage provides a deeper understanding of its traditions and way of life. Participate in traditional Spanish dance workshops, art tours, and cultural ceremonies to gain insights into the city's vibrant culture.</p>
-                    <p>Visiting local galleries and museums, such as the Picasso Museum and the Joan Miró Foundation, offers insights into both classical and contemporary Spanish art, fostering a greater appreciation for the region's creative expressions.</p>
+                    <p>Engaging with Barcelona's rich cultural heritage provides a deeper understanding of its traditions and way of life. I attended a traditional flamenco workshop that not only taught me the passionate dance moves but also allowed me to connect with local artists and hear firsthand stories of their craft.</p>
+                    <p>Visiting local galleries like the Picasso Museum and the Joan Miró Foundation further enriched my experience, offering insights into both the classic and modern facets of Spanish art.</p>
                 </section>
 
                 <!-- Food and Cuisine -->
                 <section class="section">
                     <h2>Food and Cuisine</h2>
-                    <p>Barcelona's culinary scene is a delightful mix of traditional Catalan dishes and innovative gastronomy. From bustling markets to elegant restaurants, the city caters to all tastes.</p>
+                    <p>Barcelona's culinary scene is a delightful mix of traditional Catalan dishes and innovative gastronomy. From bustling markets to elegant restaurants, every meal tells a story.</p>
                     <ul>
-                        <li><strong>Paella:</strong> A classic Spanish rice dish with seafood, chicken, or vegetables.</li>
-                        <li><strong>Tapas:</strong> A variety of small dishes like patatas bravas, croquetas, and jamón ibérico.</li>
-                        <li><strong>Bombas:</strong> Deep-fried potato balls filled with meat and topped with spicy sauce.</li>
-                        <li><strong>Crema Catalana:</strong> A creamy dessert similar to crème brûlée.</li>
-                        <li><strong>Fideuà:</strong> Similar to paella but made with short noodles instead of rice.</li>
-                        <li><strong>Fresh Seafood:</strong> Enjoy dishes like grilled octopus, mussels, and prawns at beachfront restaurants.</li>
-                        <li><strong>La Boqueria Market:</strong> Explore a wide array of fresh produce, meats, seafood, and local delicacies.</li>
+                        <li><strong>Paella:</strong> I savored a rich seafood paella by the beach at Barceloneta—a dish that perfectly captured the essence of the Mediterranean.</li>
+                        <li><strong>Tapas:</strong> Enjoy a variety of small plates like patatas bravas and croquetas at a lively tapas bar, where I shared stories with locals over a glass of sangria.</li>
+                        <li><strong>Bombas:</strong> I discovered a hidden gem serving bombas—crispy potato balls filled with meat—an unexpected delight that left me craving more.</li>
+                        <li><strong>Crema Catalana:</strong> Indulge in this creamy dessert, reminiscent of crème brûlée, which provided the perfect sweet ending to an amazing meal.</li>
+                        <li><strong>Fideuà:</strong> A must-try for noodle lovers, this dish is a delightful twist on paella that I enjoyed during a cozy dinner with friends.</li>
+                        <li><strong>Fresh Seafood:</strong> Savor dishes like grilled octopus and mussels at beachfront restaurants while listening to the sound of the waves.</li>
+                        <li><strong>La Boqueria Market:</strong> Wander through this bustling market, where the vibrant colors and aromas of fresh produce and local delicacies sparked my creativity and appetite.</li>
                     </ul>
-                    <p>I highly recommend trying the tapas at El Xampanyet, where the vibrant atmosphere and delicious offerings create a memorable dining experience.</p>
+                    <p>I highly recommend trying the tapas at El Xampanyet, where the vibrant atmosphere and delicious offerings create a dining experience that is as authentic as it is unforgettable.</p>
                 </section>
 
                 <!-- Practical Information -->
@@ -584,37 +545,37 @@
                     <h3 id="transportation">Transportation</h3>
                     <p>Barcelona boasts an extensive and efficient public transportation system, making it easy to navigate the city and its surroundings. Here are the main transportation options:</p>
                     <ul>
-                        <li><strong>Metro:</strong> Barcelona's metro system is fast and covers most of the city. A single ticket costs approximately €2.40.</li>
-                        <li><strong>Bus:</strong> Comprehensive bus network with routes covering all major areas. A single ticket costs around €2.40.</li>
-                        <li><strong>Tram:</strong> Modern tram lines that connect various parts of the city. A single ticket costs approximately €2.40.</li>
-                        <li><strong>Taxis:</strong> Available 24/7 with fares starting around €2.20 plus €1.10 per kilometer.</li>
-                        <li><strong>Bike Rentals:</strong> Numerous bike-sharing services available for convenient city exploration.</li>
-                        <li><strong>Train:</strong> Renfe trains connect Barcelona to other Spanish cities and nearby regions.</li>
+                        <li><strong>Metro:</strong> Fast and efficient, the metro covers most of the city. A single ticket costs approximately €2.40.</li>
+                        <li><strong>Bus:</strong> A comprehensive network that reaches all major areas. A single ticket costs around €2.40.</li>
+                        <li><strong>Tram:</strong> Modern and reliable tram lines connecting various parts of the city.</li>
+                        <li><strong>Taxis:</strong> Readily available with fares starting around €2.20 plus €1.10 per kilometer.</li>
+                        <li><strong>Bike Rentals:</strong> Numerous bike-sharing services for convenient exploration.</li>
+                        <li><strong>Train:</strong> Renfe trains connect Barcelona to other Spanish cities and regions.</li>
                     </ul>
                     
                     <h3 id="ways-to-get-from-airport">Ways to Get from Airport to City</h3>
-                    <p>If you're arriving at Barcelona-El Prat Airport, here are the main transportation options to get to the city center:</p>
+                    <p>If you're arriving at Barcelona-El Prat Airport, here are your best options:</p>
                     <ul>
-                        <li><strong>Aerobús:</strong> Express bus service connecting the airport to Plaça de Catalunya. Cost: Approximately €5.90 one-way.</li>
+                        <li><strong>Aerobús:</strong> An express bus service connecting the airport to Plaça de Catalunya. Cost: Approximately €5.90 one-way.</li>
                         <li><strong>Train (Rodalies R2 Nord):</strong> Connects the airport to Barcelona Sants station. Cost: Approximately €4.20 one-way.</li>
                         <li><strong>Taxi:</strong> Available 24/7 with a flat rate to the city center starting at €30.</li>
-                        <li><strong>Private Transfer:</strong> Pre-booked services offering door-to-door convenience. Cost: Approximately €35-€50 depending on the service.</li>
-                        <li><strong>Metro (Line L9 Sud):</strong> Connects the airport to various metro stations. Cost: Approximately €5.15 one-way.</li>
+                        <li><strong>Private Transfer:</strong> Pre-booked services offering door-to-door convenience. Cost: Approximately €35-€50.</li>
+                        <li><strong>Metro (Line L9 Sud):</strong> A convenient option connecting the airport to various metro stations. Cost: Approximately €5.15 one-way.</li>
                     </ul>
                     
                     <h3 id="accommodation">Accommodation</h3>
-                    <p>Barcelona offers a wide range of accommodations, from budget hostels to luxurious hotels. Popular areas to stay include:</p>
+                    <p>Barcelona offers a wide range of accommodations, from budget hostels to luxurious hotels. Popular areas include:</p>
                     <ul>
-                        <li><strong>Eixample:</strong> Known for its modernist architecture and upscale shops.</li>
-                        <li><strong>Gothic Quarter:</strong> Historic area with narrow streets and vibrant nightlife.</li>
+                        <li><strong>Eixample:</strong> Modernist architecture and upscale shopping.</li>
+                        <li><strong>Gothic Quarter:</strong> Historic charm and vibrant nightlife.</li>
                         <li><strong>El Born:</strong> Trendy neighborhood with boutique shops and cafes.</li>
                         <li><strong>Barceloneta:</strong> Close to the beach with a lively atmosphere.</li>
-                        <li><strong>Gràcia:</strong> Bohemian district with a local feel and unique plazas.</li>
+                        <li><strong>Gràcia:</strong> A bohemian district with a local feel and unique plazas.</li>
                     </ul>
-                    <p>I stayed at a mid-range boutique hotel in El Born, which provided comfortable amenities and easy access to major attractions and dining options.</p>
+                    <p>During my stay, I opted for a mid-range boutique hotel in El Born, which offered a perfect blend of comfort, style, and proximity to the best attractions.</p>
                     
                     <h3 id="budgeting">Budgeting</h3>
-                    <p>Barcelona is relatively affordable, though costs can vary depending on your lifestyle and preferences. A comfortable daily budget ranges from €50 to €100 ($75-$150 AUD), covering accommodation, meals, transportation, and activities.</p>
+                    <p>Barcelona is relatively affordable, though costs vary. A comfortable daily budget ranges from €50 to €100, covering accommodation, meals, transportation, and activities.</p>
                 </section>
 
                 <!-- Tips and Recommendations -->
@@ -624,29 +585,28 @@
                     <h3 id="dos-and-donts">Do’s and Don’ts</h3>
                     <ul>
                         <li><strong>Do:</strong> Purchase tickets for major attractions like Sagrada Família and Park Güell in advance to avoid long queues.</li>
-                        <li><strong>Don’t:</strong> Carry large amounts of cash; use credit/debit cards and keep valuables secure.</li>
+                        <li><strong>Don’t:</strong> Carry large amounts of cash; use credit/debit cards and secure your valuables.</li>
                         <li><strong>Do:</strong> Respect local customs and dress appropriately when visiting religious sites.</li>
                         <li><strong>Don’t:</strong> Leave belongings unattended, especially in crowded areas like La Rambla.</li>
                         <li><strong>Do:</strong> Learn a few basic phrases in Spanish or Catalan to enhance your interactions.</li>
-                        <li><strong>Don’t:</strong> Engage in aggressive bargaining; prices are generally fixed in most establishments.</li>
+                        <li><strong>Don’t:</strong> Engage in aggressive bargaining; prices are generally fixed.</li>
                     </ul>
                     
                     <h3 id="packing-list">Packing List</h3>
                     <ul>
-                        <li>Lightweight, breathable clothing suitable for warm weather.</li>
-                        <li>Comfortable walking shoes for exploring the city's streets and attractions.</li>
+                        <li>Lightweight, breathable clothing for warm weather.</li>
+                        <li>Comfortable walking shoes for city exploration.</li>
                         <li>Swimwear and beach essentials for Barceloneta Beach.</li>
-                        <li>Insect repellent and sunscreen to protect against sun and bugs.</li>
-                        <li>Reusable water bottle to stay hydrated.</li>
+                        <li>Insect repellent and sunscreen.</li>
+                        <li>Reusable water bottle.</li>
                         <li>Power adapter for international plugs.</li>
-                        <li>Camera or smartphone for capturing memorable moments.</li>
-                        <li>Travel insurance documents for peace of mind.</li>
-                        <li>Basic first-aid kit.</li>
-                        <li>Portable charger for electronic devices.</li>
+                        <li>Camera or smartphone for memorable moments.</li>
+                        <li>Travel insurance documents and basic first-aid kit.</li>
+                        <li>Portable charger.</li>
                     </ul>
                     
                     <h3 id="local-etiquette">Local Etiquette</h3>
-                    <p>Spanish and Catalan cultures emphasize politeness and respect. Always greet with a "Hola" or "Bon dia" and use "Por favor" (please) and "Gracias" (thank you) when interacting with locals. Avoid loud behavior in public places and dress modestly when visiting religious sites.</p>
+                    <p>Spanish and Catalan cultures value politeness and respect. Greet with a cheerful "Hola" or "Bon dia," and always use "Por favor" and "Gracias." Keep your voice down in public areas and dress modestly when visiting religious sites.</p>
                 </section>
 
                 <!-- Visitor Testimonials -->
@@ -713,7 +673,7 @@
         const backToTopButton = document.getElementById('back-to-top');
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling down 300px
+            if (window.scrollY > 300) {
                 backToTopButton.style.display = 'block';
                 backToTopButton.style.opacity = '1';
             } else {
@@ -726,17 +686,6 @@
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
-            });
-        });
-
-        // Close the navigation menu when a link is clicked (for mobile)
-        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (menuToggle.checked) {
-                    menuToggle.checked = false;
-                    navMenu.classList.remove('active');
-                }
             });
         });
     </script>
