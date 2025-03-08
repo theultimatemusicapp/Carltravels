@@ -76,8 +76,388 @@
 
     <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Inline styles matching the newer pages -->
+    <style>
+        /* Responsive video styles */
+        .video-responsive {
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 0;
+            border-radius: 8px;
+            loading: lazy;
+        }
+        header h1 a {
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
+        }
+        header h1 a:hover {
+            color: #E55B00;
+        }
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+            font-size: 1.8em;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+        main h3 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+        @media (max-width: 768px) {
+            header h1 a {
+                font-size: 2em;
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+            main h3 {
+                font-size: 1.2em;
+            }
+            .video-responsive iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+        .breadcrumb a {
+            color: #FF6600;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 40px 0;
+            border-radius: 8px;
+        }
+        .testimonial-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            transition: opacity 0.3s ease;
+        }
+        .testimonial-container.show {
+            opacity: 1;
+        }
+        .testimonial-header {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .stars svg {
+            fill: #FFD700;
+            margin: 0 2px;
+        }
+        .review {
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-button {
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #E55B00;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-links {
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: #FF6600;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+        .follow-adventures {
+            margin-top: 30px;
+        }
+        .follow-adventures h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+        .follow-adventures .follow-links {
+            list-style: none;
+            padding: 0;
+        }
+        .follow-adventures .follow-links li {
+            margin-bottom: 10px;
+        }
+        .follow-adventures .follow-links li a {
+            color: #FF6600;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            transition: color 0.3s ease;
+        }
+        .follow-adventures .follow-links li a:hover {
+            color: #E55B00;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .adsense {
+            margin: 40px 0;
+        }
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -107,13 +487,13 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
@@ -124,7 +504,7 @@
         <section class="destination-details">
             <div class="container">
                 <!-- Main Title -->
-                <h1>Hiroshima: Reflecting on History & Hope</h1>
+                <h1>Hiroshima: Reflecting on History &amp; Hope</h1>
 
                 <!-- Banner Image for Hiroshima -->
                 <div class="continent-header">
@@ -162,7 +542,7 @@
 
                 <!-- What to See & Do Section -->
                 <div class="section">
-                    <h2>What to See & Do</h2>
+                    <h2>What to See &amp; Do</h2>
                     <p>
                         Hiroshima’s significance extends far beyond its historical sites, yet those remain essential to fully grasp the city’s story. Here are five recommended places—three widely known, and two more personal picks:
                     </p>
@@ -177,7 +557,7 @@
 
                 <!-- Itinerary & Essentials Section -->
                 <div class="section">
-                    <h2>Itinerary & Essentials</h2>
+                    <h2>Itinerary &amp; Essentials</h2>
                     <p>
                         If you’re visiting Hiroshima to understand its history and pay your respects, here’s a concise plan to help you navigate:
                     </p>
@@ -192,7 +572,7 @@
 
                 <!-- Fun Facts & Local Trivia Section -->
                 <div class="section">
-                    <h2>Fun Facts & Local Trivia</h2>
+                    <h2>Fun Facts &amp; Local Trivia</h2>
                     <ul>
                         <li>Hiroshima is home to <em>okonomiyaki</em> with a unique layered style, often dubbed “Hiroshimayaki.” Don’t miss trying it if you have time.</li>
                         <li>The paper crane (orizuru) is a global peace symbol partly thanks to Sadako Sasaki’s story, inspiring millions of cranes folded each year.</li>
@@ -235,7 +615,7 @@
             <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             
             <!-- Footer Navigation Links (Optional) -->
-            <div class="footer-links" style="margin-bottom: 10px;">
+            <div class="footer-links">
                 <a href="index.html">Home</a> |
                 <a href="about.html">About Me</a> |
                 <a href="work.html">My Work</a> |
@@ -267,6 +647,7 @@
         menuToggle.addEventListener('change', () => {
             navMenu.classList.toggle('active');
         });
+
         const backToTopButton = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
@@ -280,6 +661,7 @@
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
         const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
