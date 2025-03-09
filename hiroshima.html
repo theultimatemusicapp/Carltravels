@@ -77,7 +77,7 @@
     <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline styles matching the newer pages, plus two-column layout -->
     <style>
         /* Responsive video styles */
         .video-responsive {
@@ -98,7 +98,7 @@
           width: 100%;
           height: 100%;
         }
-        
+
         /* Reset and Base Styles */
         * {
             margin: 0;
@@ -124,7 +124,6 @@
             height: auto;
             display: block;
             margin: 20px auto;
-            padding: 10px 0;
             border-radius: 8px;
             loading: lazy;
         }
@@ -168,6 +167,34 @@
             margin-bottom: 8px;
             font-size: 1.4em;
         }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
         @media (max-width: 768px) {
             header h1 a {
                 font-size: 2em;
@@ -199,143 +226,6 @@
         }
         .section {
             margin-bottom: 30px;
-        }
-        .breadcrumb {
-            list-style: none;
-            display: flex;
-            gap: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 0.9em;
-            padding: 10px 0;
-        }
-        .breadcrumb li::after {
-            content: ">";
-            margin-left: 5px;
-        }
-        .breadcrumb li:last-child::after {
-            content: "";
-        }
-        .breadcrumb a {
-            color: #FF6600;
-        }
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #FF6600;
-            padding-left: 15px;
-            margin: 20px 0;
-            background-color: #f9f9f9;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        blockquote footer {
-            text-align: right;
-            font-weight: bold;
-            color: #333;
-            margin-top: 5px;
-        }
-        .testimonials {
-            background-color: #f1f1f1;
-            padding: 40px 0;
-            border-radius: 8px;
-        }
-        .testimonial-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            transition: opacity 0.3s ease;
-        }
-        .testimonial-container.show {
-            opacity: 1;
-        }
-        .testimonial-header {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-            font-size: 2em;
-        }
-        .stars {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .stars svg {
-            fill: #FFD700;
-            margin: 0 2px;
-        }
-        .review {
-            font-size: 1.2em;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 20px;
-            min-height: 80px;
-        }
-        .navigation {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .nav-button {
-            background-color: #FF6600;
-            color: #fff;
-            border: none;
-            padding: 10px 16px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-        .nav-button:hover {
-            background-color: #E55B00;
-        }
-        #back-to-top {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            background-color: #FF6600;
-            color: #fff;
-            border: none;
-            padding: 12px 16px;
-            border-radius: 50%;
-            font-size: 20px;
-            cursor: pointer;
-            display: none;
-            z-index: 1000;
-            transition: background-color 0.3s ease, opacity 0.3s ease;
-            opacity: 0.8;
-        }
-        #back-to-top:hover {
-            background-color: #E55B00;
-            opacity: 1;
-        }
-        #back-to-destinations {
-            display: inline-block;
-            margin-top: 20px;
-            background-color: #FF6600;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        #back-to-destinations:hover {
-            background-color: #E55B00;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #FF6600;
-            color: #fff;
-            padding: 8px 16px;
-            z-index: 100;
-            transition: top 0.3s ease;
-            font-family: 'Roboto', sans-serif;
-        }
-        .skip-link:focus {
-            top: 10px;
         }
         footer {
             background-color: #333;
@@ -370,29 +260,44 @@
         .footer-social a:hover img {
             transform: scale(1.2);
         }
-        .follow-adventures {
-            margin-top: 30px;
+        .adsense {
+            margin: 40px 0;
         }
-        .follow-adventures h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
         }
-        .follow-adventures .follow-links {
-            list-style: none;
-            padding: 0;
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
         }
-        .follow-adventures .follow-links li {
-            margin-bottom: 10px;
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
         }
-        .follow-adventures .follow-links li a {
-            color: #FF6600;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-            transition: color 0.3s ease;
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        .follow-adventures .follow-links li a:hover {
-            color: #E55B00;
+        #back-to-destinations:hover {
+            background-color: #E55B00;
         }
         .menu-icon {
             display: none;
@@ -444,13 +349,6 @@
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
-        }
-        .adsense {
-            margin: 40px 0;
-        }
-        .adsense ins.adsbygoogle {
-            display: block;
-            text-align: center;
         }
     </style>
 </head>
@@ -506,91 +404,133 @@
                 <!-- Main Title -->
                 <h1>Hiroshima: Reflecting on History &amp; Hope</h1>
 
-                <!-- Banner Image for Hiroshima -->
-                <div class="continent-header">
-                    <img src="hiroshima-banner.jpg" alt="Hiroshima Banner" style="max-width:100%; border-radius:8px; margin-bottom:20px;">
-                </div>
-                
-                <!-- Video Embed -->
-                <div class="video-responsive">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/4OZMWM9KRKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Hiroshima Video" loading="lazy"></iframe>
-                    </div>
-                </div>
+                <!-- Two-Column Layout -->
+                <div class="content-row">
+                    
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Back to Destinations Button -->
-                <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
+                        <!-- Video Embed -->
+                        <div class="video-responsive">
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/4OZMWM9KRKQ" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen 
+                                    title="Hiroshima Video" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
 
-                <!-- Hiroshima Blog Section -->
-                <div class="section">
-                    <p>
-                        Visiting <strong>Hiroshima</strong> is unlike any other experience in Japan. Known globally for the tragic events of August 6, 1945, it’s also a city of remarkable resilience and dedication to peace. My time here reminded me that history isn’t just about dates or monuments—it’s about the people, the stories, and the hope for a better future.
-                    </p>
-                    <p>
-                        Walking through the <em>Hiroshima Peace Memorial Park</em>, I felt a solemn stillness. The <strong>Atomic Bomb Dome</strong> stands as a stark reminder of war’s devastation, and the museum’s exhibits—though sobering—offer insights into humanity’s capacity for both destruction and renewal. Each photo and personal testimony underscores the fragility of life and the power of unity.
-                    </p>
-                    <p>
-                        This isn’t a place for lighthearted tourism. Rather, it’s an invitation to reflect, to honor those who lost their lives, and to acknowledge Hiroshima’s journey of rebuilding. Seeing families lay flowers at memorials and speak in hushed tones felt like witnessing history still unfolding, a quiet reminder that we must learn from the past to shape a more peaceful world.
-                    </p>
-                    <p>
-                        Despite its somber background, Hiroshima today is vibrant and forward-looking. Strolling by the rivers, you’ll find modern cafés, friendly locals, and a city determined to move beyond its darkest chapter. If you visit, come with respect and an open heart; there’s more to Hiroshima than its tragedy, but understanding its story is essential to appreciating its spirit.
-                    </p>
-                    <p>
-                        —Carl, <em>Carl Travels</em>
-                    </p>
-                </div>
+                        <!-- Back to Destinations Button -->
+                        <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
 
-                <!-- What to See & Do Section -->
-                <div class="section">
-                    <h2>What to See &amp; Do</h2>
-                    <p>
-                        Hiroshima’s significance extends far beyond its historical sites, yet those remain essential to fully grasp the city’s story. Here are five recommended places—three widely known, and two more personal picks:
-                    </p>
-                    <ol>
-                        <li><strong>Hiroshima Peace Memorial Museum</strong> (TripAdvisor Favorite): A detailed look into the events of 1945 and their lasting impact.</li>
-                        <li><strong>Atomic Bomb Dome</strong> (TripAdvisor Favorite): Preserved ruins marking ground zero, symbolizing both tragedy and hope.</li>
-                        <li><strong>Miyajima (Itsukushima Shrine)</strong> (TripAdvisor Favorite): Famous for its “floating” torii gate, offering a serene contrast to the city’s solemn past.</li>
-                        <li><strong>Hiroshima Orizuru Tower</strong> (Reflective Spot): Overlooking the A-Bomb Dome, this space allows visitors to fold paper cranes and admire panoramic city views.</li>
-                        <li><strong>Local Riverside Walks</strong> (Personal Pick): For quiet moments away from tourist hubs—ideal for contemplation and absorbing the city’s resilient atmosphere.</li>
-                    </ol>
-                </div>
+                        <!-- Hiroshima Blog Section -->
+                        <div class="section">
+                            <p>
+                                Visiting <strong>Hiroshima</strong> is unlike any other experience in Japan. Known globally for the tragic events of August 6, 1945, it’s also a city of remarkable resilience and dedication to peace. My time here reminded me that history isn’t just about dates or monuments—it’s about the people, the stories, and the hope for a better future.
+                            </p>
+                            <p>
+                                Walking through the <em>Hiroshima Peace Memorial Park</em>, I felt a solemn stillness. The <strong>Atomic Bomb Dome</strong> stands as a stark reminder of war’s devastation, and the museum’s exhibits—though sobering—offer insights into humanity’s capacity for both destruction and renewal. Each photo and personal testimony underscores the fragility of life and the power of unity.
+                            </p>
+                            <p>
+                                This isn’t a place for lighthearted tourism. Rather, it’s an invitation to reflect, to honor those who lost their lives, and to acknowledge Hiroshima’s journey of rebuilding. Seeing families lay flowers at memorials and speak in hushed tones felt like witnessing history still unfolding, a quiet reminder that we must learn from the past to shape a more peaceful world.
+                            </p>
+                            <p>
+                                Despite its somber background, Hiroshima today is vibrant and forward-looking. Strolling by the rivers, you’ll find modern cafés, friendly locals, and a city determined to move beyond its darkest chapter. If you visit, come with respect and an open heart; there’s more to Hiroshima than its tragedy, but understanding its story is essential to appreciating its spirit.
+                            </p>
+                            <p>
+                                —Carl, <em>Carl Travels</em>
+                            </p>
+                        </div>
 
-                <!-- Itinerary & Essentials Section -->
-                <div class="section">
-                    <h2>Itinerary &amp; Essentials</h2>
-                    <p>
-                        If you’re visiting Hiroshima to understand its history and pay your respects, here’s a concise plan to help you navigate:
-                    </p>
-                    <ul>
-                        <li><strong>Travel Adapter:</strong> Japan uses Type A/B plugs. You’ll need one for charging devices and capturing every poignant moment.</li>
-                        <li><strong>Rain Coat (Spring/Autumn):</strong> Hiroshima’s weather can shift unexpectedly—an umbrella or light jacket can be a day-saver.</li>
-                        <li><strong>Buy an eSIM Before Arrival:</strong> Reliable data helps you find lesser-known memorials or spontaneous local cafés.</li>
-                        <li><strong>Give Yourself Time:</strong> Rushing through the Peace Memorial Park or museum undermines their significance. Allow space for reflection.</li>
-                        <li><strong>Respect the Sites:</strong> This isn’t a typical tourist stop; treat each memorial with quiet consideration and empathy.</li>
-                    </ul>
-                </div>
+                        <!-- What to See & Do Section -->
+                        <div class="section">
+                            <h2>What to See &amp; Do</h2>
+                            <p>
+                                Hiroshima’s significance extends far beyond its historical sites, yet those remain essential to fully grasp the city’s story. Here are five recommended places—three widely known, and two more personal picks:
+                            </p>
+                            <ol>
+                                <li><strong>Hiroshima Peace Memorial Museum</strong> (TripAdvisor Favorite): A detailed look into the events of 1945 and their lasting impact.</li>
+                                <li><strong>Atomic Bomb Dome</strong> (TripAdvisor Favorite): Preserved ruins marking ground zero, symbolizing both tragedy and hope.</li>
+                                <li><strong>Miyajima (Itsukushima Shrine)</strong> (TripAdvisor Favorite): Famous for its “floating” torii gate, offering a serene contrast to the city’s solemn past.</li>
+                                <li><strong>Hiroshima Orizuru Tower</strong> (Reflective Spot): Overlooking the A-Bomb Dome, this space allows visitors to fold paper cranes and admire panoramic city views.</li>
+                                <li><strong>Local Riverside Walks</strong> (Personal Pick): For quiet moments away from tourist hubs—ideal for contemplation and absorbing the city’s resilient atmosphere.</li>
+                            </ol>
+                        </div>
 
-                <!-- Fun Facts & Local Trivia Section -->
-                <div class="section">
-                    <h2>Fun Facts &amp; Local Trivia</h2>
-                    <ul>
-                        <li>Hiroshima is home to <em>okonomiyaki</em> with a unique layered style, often dubbed “Hiroshimayaki.” Don’t miss trying it if you have time.</li>
-                        <li>The paper crane (orizuru) is a global peace symbol partly thanks to Sadako Sasaki’s story, inspiring millions of cranes folded each year.</li>
-                        <li>Locals love baseball—Hiroshima Toyo Carp games can be an unexpectedly lively experience if you want a break from solemn reflection.</li>
-                    </ul>
-                </div>
+                        <!-- Itinerary & Essentials Section -->
+                        <div class="section">
+                            <h2>Itinerary &amp; Essentials</h2>
+                            <p>
+                                If you’re visiting Hiroshima to understand its history and pay your respects, here’s a concise plan to help you navigate:
+                            </p>
+                            <ul>
+                                <li><strong>Travel Adapter:</strong> Japan uses Type A/B plugs. You’ll need one for charging devices and capturing every poignant moment.</li>
+                                <li><strong>Rain Coat (Spring/Autumn):</strong> Hiroshima’s weather can shift unexpectedly—an umbrella or light jacket can be a day-saver.</li>
+                                <li><strong>Buy an eSIM Before Arrival:</strong> Reliable data helps you find lesser-known memorials or spontaneous local cafés.</li>
+                                <li><strong>Give Yourself Time:</strong> Rushing through the Peace Memorial Park or museum undermines their significance. Allow space for reflection.</li>
+                                <li><strong>Respect the Sites:</strong> This isn’t a typical tourist stop; treat each memorial with quiet consideration and empathy.</li>
+                            </ul>
+                        </div>
 
-                <!-- Best Time to Visit Section -->
-                <div class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>
-                        Spring (March–May) and autumn (September–November) offer mild weather and scenic backdrops. Cherry blossoms can make memorial sites feel both heartbreakingly beautiful and crowded, so plan accordingly. Whenever you visit, remember that Hiroshima’s story deserves your time and respect.
-                    </p>
-                </div>
+                        <!-- Fun Facts & Local Trivia Section -->
+                        <div class="section">
+                            <h2>Fun Facts &amp; Local Trivia</h2>
+                            <ul>
+                                <li>Hiroshima is home to <em>okonomiyaki</em> with a unique layered style, often dubbed “Hiroshimayaki.” Don’t miss trying it if you have time.</li>
+                                <li>The paper crane (orizuru) is a global peace symbol partly thanks to Sadako Sasaki’s story, inspiring millions of cranes folded each year.</li>
+                                <li>Locals love baseball—Hiroshima Toyo Carp games can be an unexpectedly lively experience if you want a break from solemn reflection.</li>
+                            </ul>
+                        </div>
 
-                <!-- Google AdSense Ad -->
-                <section class="adsense">
-                    <div class="container">
+                        <!-- Best Time to Visit Section -->
+                        <div class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>
+                                Spring (March–May) and autumn (September–November) offer mild weather and scenic backdrops. Cherry blossoms can make memorial sites feel both heartbreakingly beautiful and crowded, so plan accordingly. Whenever you visit, remember that Hiroshima’s story deserves your time and respect.
+                            </p>
+                        </div>
+
+                        <!-- Google AdSense Ad -->
+                        <section class="adsense">
+                            <div class="container">
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-6483721386563068"
+                                     data-ad-slot="8249189982"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+
+                        <!-- Back to Top Button -->
+                        <button id="back-to-top" aria-label="Back to Top">↑</button>
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Hiroshima Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Hiroshima Tourism Site</a></li>
+                            <li><a href="#">Peace Memorial Park Map</a></li>
+                            <li><a href="#">Local Okonomiyaki Guides</a></li>
+                            <li><a href="#">Transportation & JR Pass Info</a></li>
+                        </ul>
+
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Japanese Yen (¥). Some smaller shops prefer cash.</p>
+                        <p><strong>Language:</strong> Japanese, with some English signage in major spots.</p>
+                        <p><strong>Time Zone:</strong> Japan Standard Time (UTC+9).</p>
+                        <p><strong>Climate:</strong> Mild springs, hot summers, cool autumns, and crisp winters.</p>
+
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
                         <ins class="adsbygoogle"
                              style="display:block"
                              data-ad-client="ca-pub-6483721386563068"
@@ -598,13 +538,17 @@
                              data-ad-format="auto"
                              data-full-width-responsive="true"></ins>
                         <script>
-                             (adsbygoogle = window.adsbygoogle || []).push({});
+                            (adsbygoogle = window.adsbygoogle || []).push({});
                         </script>
-                    </div>
-                </section>
 
-                <!-- Back to Top Button -->
-                <button id="back-to-top" aria-label="Back to Top">↑</button>
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Hiroshima” - John Hersey</a></li>
+                            <li><a href="#">“Sadako and the Thousand Paper Cranes” - Eleanor Coerr</a></li>
+                            <li><a href="#">“Survival in Hiroshima: Firsthand Accounts”</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
@@ -614,7 +558,7 @@
         <div class="container">
             <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             
-            <!-- Footer Navigation Links (Optional) -->
+            <!-- Footer Navigation Links -->
             <div class="footer-links">
                 <a href="index.html">Home</a> |
                 <a href="about.html">About Me</a> |
