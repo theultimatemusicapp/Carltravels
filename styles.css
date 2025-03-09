@@ -353,6 +353,24 @@ footer p {
     margin: 0 0 10px 0;
 }
 
+.footer-links {
+    text-align: center; /* Center the link group horizontally */
+    margin-bottom: 10px;
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+    color: #fff; /* White for normal and visited links */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+    color: #ccc; /* Light gray on hover/active */
+    text-decoration: underline;
+}
+
 .footer-social {
     display: flex;
     justify-content: center;
@@ -362,20 +380,6 @@ footer p {
 .footer-social img {
     width: 24px;
     margin: 0;
-}
-
-/* NEW FOOTER LINK COLOR OVERRIDES */
-.footer-links a:link,
-.footer-links a:visited {
-    color: #fff;       /* White for normal and visited links */
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer-links a:hover,
-.footer-links a:active {
-    color: #ccc;       /* Light gray on hover/active */
-    text-decoration: underline;
 }
 
 /* Responsive Adjustments */
