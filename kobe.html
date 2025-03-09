@@ -76,13 +76,8 @@
     
     <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline styling for the two-column layout -->
     <style>
         /* Responsive video styles */
         .video-responsive {
@@ -103,7 +98,7 @@
           width: 100%;
           height: 100%;
         }
-        
+
         /* Reset and Base Styles */
         * {
             margin: 0;
@@ -129,7 +124,6 @@
             height: auto;
             display: block;
             margin: 20px auto;
-            padding: 10px 0;
             border-radius: 8px;
             loading: lazy;
         }
@@ -173,6 +167,34 @@
             margin-bottom: 8px;
             font-size: 1.4em;
         }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
         @media (max-width: 768px) {
             header h1 a {
                 font-size: 2em;
@@ -205,96 +227,34 @@
         .section {
             margin-bottom: 30px;
         }
-        .breadcrumb {
-            list-style: none;
-            display: flex;
-            gap: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 0.9em;
-            padding: 10px 0;
-        }
-        .breadcrumb li::after {
-            content: ">";
-            margin-left: 5px;
-        }
-        .breadcrumb li:last-child::after {
-            content: "";
-        }
-        .breadcrumb a {
-            color: #FF6600;
-        }
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #FF6600;
-            padding-left: 15px;
-            margin: 20px 0;
-            background-color: #f9f9f9;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        blockquote footer {
-            text-align: right;
-            font-weight: bold;
-            color: #333;
-            margin-top: 5px;
-        }
-        .testimonials {
-            background-color: #f1f1f1;
-            padding: 40px 0;
-            border-radius: 8px;
-        }
-        .testimonial-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            transition: opacity 0.3s ease;
-        }
-        .testimonial-container.show {
-            opacity: 1;
-        }
-        .testimonial-header {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-            font-size: 2em;
-        }
-        .stars {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .stars svg {
-            fill: #FFD700;
-            margin: 0 2px;
-        }
-        .review {
-            font-size: 1.2em;
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 20px;
-            min-height: 80px;
-        }
-        .navigation {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .nav-button {
-            background-color: #FF6600;
+        footer {
+            background-color: #333;
             color: #fff;
-            border: none;
-            padding: 10px 16px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
         }
-        .nav-button:hover {
-            background-color: #E55B00;
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+        .adsense {
+            margin: 40px 0;
+        }
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
         }
         #back-to-top {
             position: fixed;
@@ -327,66 +287,6 @@
         }
         #back-to-destinations:hover {
             background-color: #E55B00;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #FF6600;
-            color: #fff;
-            padding: 8px 16px;
-            z-index: 100;
-            transition: top 0.3s ease;
-            font-family: 'Roboto', sans-serif;
-        }
-        .skip-link:focus {
-            top: 10px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-        }
-        .footer-social {
-            margin-top: 10px;
-        }
-        .footer-social a {
-            margin: 0 10px;
-            display: inline-block;
-        }
-        .footer-social img {
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s ease;
-        }
-        .footer-social a:hover img {
-            transform: scale(1.2);
-        }
-        .follow-adventures {
-            margin-top: 30px;
-        }
-        .follow-adventures h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-        }
-        .follow-adventures .follow-links {
-            list-style: none;
-            padding: 0;
-        }
-        .follow-adventures .follow-links li {
-            margin-bottom: 10px;
-        }
-        .follow-adventures .follow-links li a {
-            color: #FF6600;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-            transition: color 0.3s ease;
-        }
-        .follow-adventures .follow-links li a:hover {
-            color: #E55B00;
         }
         .menu-icon {
             display: none;
@@ -439,13 +339,6 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        .adsense {
-            margin: 40px 0;
-        }
-        .adsense ins.adsbygoogle {
-            display: block;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -456,8 +349,8 @@
     <header>
         <div class="container">
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
-            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -493,95 +386,140 @@
                 <!-- Main Title -->
                 <h1>Kobe: My Wagyu Adventure & City Insights</h1>
                 
-                <!-- Video Embed (Replace with your actual Kobe video link) -->
-                <div class="video-responsive">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/YOUR_KOBE_VIDEO_LINK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Kobe Video" loading="lazy"></iframe>
-                    </div>
-                </div>
+                <div class="content-row">
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Back to Destinations Button -->
-                <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
+                        <!-- Video Embed -->
+                        <div class="video-responsive">
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/GuSrgoggQCI" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen 
+                                    title="Kobe Video" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
 
-                <!-- Anti-Influencer Kobe Story -->
-                <div class="section">
-                    <p>
-                        If you’ve heard of <strong>Kobe beef</strong>, you know it’s the Rolls-Royce of steaks—priced like gold and supposedly worth every bite. Naturally, I decided to see if it lived up to the hype. First, I hopped on the Hanshin Line from Osaka—only 330 yen, which feels oddly cheap for a place where steak can cost more than my rent.
-                    </p>
-                    <p>
-                        Once in Kobe, I discovered they have a skyrail gondola leading to a herb garden—yes, you read that right. I soared up the mountain, snow started falling (because why not?), and in my infinite wisdom, I bought a hot dog. Great appetizer before the world’s priciest beef, right? 
-                    </p>
-                    <p>
-                        After freezing my butt off, I Googled a 4.9-star steakhouse. “You only live once,” I told myself. I braced for a wallet meltdown and walked in. The chef’s teppan grill skills were mesmerizing—perfect sizzle, insane marbling, and a taste so rich I forgot about the hot dog fiasco. If you’re ever in Kobe, trust me: splurge at least once. 
-                    </p>
-                    <p>
-                        —Carl, <em>Carl Travels</em>
-                    </p>
-                </div>
+                        <!-- Back to Destinations Button -->
+                        <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
 
-                <!-- History of Kobe Section -->
-                <div class="section">
-                    <h2>A Brief History of Kobe</h2>
-                    <p>
-                        Kobe isn’t just about high-end beef. Historically, it’s been a major port city since Japan reopened to foreign trade in the mid-1800s, quickly becoming a cultural crossroads. You’ll see this international influence in the Kitano district’s old Western-style houses, where foreign merchants once lived.
-                    </p>
-                    <p>
-                        The city also endured the tragic Great Hanshin Earthquake in 1995, showcasing its resilience in rebuilding and modernization. Today, Kobe offers a unique blend of mountain views, ocean breezes, and that irresistible aroma of sizzling wagyu.
-                    </p>
-                </div>
+                        <!-- Anti-Influencer Kobe Story -->
+                        <div class="section">
+                            <p>
+                                If you’ve heard of <strong>Kobe beef</strong>, you know it’s the Rolls-Royce of steaks—priced like gold and supposedly worth every bite. Naturally, I decided to see if it lived up to the hype. First, I hopped on the Hanshin Line from Osaka—only 330 yen, which feels oddly cheap for a place where steak can cost more than my rent.
+                            </p>
+                            <p>
+                                Once in Kobe, I discovered they have a skyrail gondola leading to a herb garden—yes, you read that right. I soared up the mountain, snow started falling (because why not?), and in my infinite wisdom, I bought a hot dog. Great appetizer before the world’s priciest beef, right?
+                            </p>
+                            <p>
+                                After freezing my butt off, I Googled a 4.9-star steakhouse. “You only live once,” I told myself. I braced for a wallet meltdown and walked in. The chef’s teppan grill skills were mesmerizing—perfect sizzle, insane marbling, and a taste so rich I forgot about the hot dog fiasco. If you’re ever in Kobe, trust me: splurge at least once.
+                            </p>
+                            <p>
+                                —Carl, <em>Carl Travels</em>
+                            </p>
+                        </div>
 
-                <!-- What to See & Do Section -->
-                <div class="section">
-                    <h2>What to See & Do</h2>
-                    <p>
-                        Kobe might be smaller than Osaka, but it packs a punch. Here are five picks—three well-known favorites and two personal suggestions:
-                    </p>
-                    <ol>
-                        <li><strong>Kobe Harborland</strong> (Popular Favorite): Waterfront shopping, dining, and a stunning night view.</li>
-                        <li><strong>Mount Rokko Cable Car</strong> (Popular Favorite): Panoramic cityscapes and a breath of fresh mountain air.</li>
-                        <li><strong>Ikuta Shrine</strong> (Popular Favorite): One of Japan’s oldest Shinto shrines, a tranquil escape in the city.</li>
-                        <li><strong>Gondola Herb Garden</strong> (Personal Pick): Because who doesn’t want to see herbs in the snow while craving steak?</li>
-                        <li><strong>Kobe Beef Splurge</strong> (Personal Pick): You came all this way—treat yourself to the best cut of your life.</li>
-                    </ol>
-                </div>
+                        <!-- History of Kobe Section -->
+                        <div class="section">
+                            <h2>A Brief History of Kobe</h2>
+                            <p>
+                                Kobe isn’t just about high-end beef. Historically, it’s been a major port city since Japan reopened to foreign trade in the mid-1800s, quickly becoming a cultural crossroads. You’ll see this international influence in the Kitano district’s old Western-style houses, where foreign merchants once lived.
+                            </p>
+                            <p>
+                                The city also endured the tragic Great Hanshin Earthquake in 1995, showcasing its resilience in rebuilding and modernization. Today, Kobe offers a unique blend of mountain views, ocean breezes, and that irresistible aroma of sizzling wagyu.
+                            </p>
+                        </div>
 
-                <!-- Itinerary & Essentials Section -->
-                <div class="section">
-                    <h2>Itinerary & Essentials</h2>
-                    <p>
-                        If time is tight but you want the best of Kobe, here’s your cheat sheet:
-                    </p>
-                    <ul>
-                        <li><strong>Train from Osaka:</strong> Hanshin Line for around 330 yen. Save your money for steak, obviously.</li>
-                        <li><strong>Layer Up (Winter/Spring):</strong> Snow can appear out of nowhere—don’t freeze like I did.</li>
-                        <li><strong>Buy an eSIM Before Arrival:</strong> Quick data means you can snag last-minute reservations at top-rated steakhouses.</li>
-                        <li><strong>Don’t Fill Up on Hot Dogs:</strong> Seems obvious, but hunger does weird things to your logic.</li>
-                        <li><strong>Plan for a Splurge:</strong> If you’re gonna do Kobe, do it right. One bite of wagyu might ruin all other steaks for you.</li>
-                    </ul>
-                </div>
+                        <!-- What to See & Do Section -->
+                        <div class="section">
+                            <h2>What to See & Do</h2>
+                            <p>
+                                Kobe might be smaller than Osaka, but it packs a punch. Here are five picks—three well-known favorites and two personal suggestions:
+                            </p>
+                            <ol>
+                                <li><strong>Kobe Harborland</strong> (Popular Favorite): Waterfront shopping, dining, and a stunning night view.</li>
+                                <li><strong>Mount Rokko Cable Car</strong> (Popular Favorite): Panoramic cityscapes and a breath of fresh mountain air.</li>
+                                <li><strong>Ikuta Shrine</strong> (Popular Favorite): One of Japan’s oldest Shinto shrines, a tranquil escape in the city.</li>
+                                <li><strong>Gondola Herb Garden</strong> (Personal Pick): Because who doesn’t want to see herbs in the snow while craving steak?</li>
+                                <li><strong>Kobe Beef Splurge</strong> (Personal Pick): You came all this way—treat yourself to the best cut of your life.</li>
+                            </ol>
+                        </div>
 
-                <!-- Fun Facts & Local Trivia Section -->
-                <div class="section">
-                    <h2>Fun Facts & Local Trivia</h2>
-                    <ul>
-                        <li><strong>Kobe Beef</strong> originates from Tajima-gyu cattle in Hyogo Prefecture, pampered to achieve legendary marbling.</li>
-                        <li>Kobe’s port opened to international trade in 1868, mixing Western influences with Japanese traditions.</li>
-                        <li>The <em>Great Hanshin Earthquake</em> of 1995 tested Kobe’s resilience—its recovery is often cited as an urban success story.</li>
-                        <li>Locals claim the best nighttime view of Kobe is from Mount Rokko, dubbed the “10 million dollar view.”</li>
-                    </ul>
-                </div>
+                        <!-- Itinerary & Essentials Section -->
+                        <div class="section">
+                            <h2>Itinerary & Essentials</h2>
+                            <p>
+                                If time is tight but you want the best of Kobe, here’s your cheat sheet:
+                            </p>
+                            <ul>
+                                <li><strong>Train from Osaka:</strong> Hanshin Line for around 330 yen. Save your money for steak, obviously.</li>
+                                <li><strong>Layer Up (Winter/Spring):</strong> Snow can appear out of nowhere—don’t freeze like I did.</li>
+                                <li><strong>Buy an eSIM Before Arrival:</strong> Quick data means you can snag last-minute reservations at top-rated steakhouses.</li>
+                                <li><strong>Don’t Fill Up on Hot Dogs:</strong> Seems obvious, but hunger does weird things to your logic.</li>
+                                <li><strong>Plan for a Splurge:</strong> If you’re gonna do Kobe, do it right. One bite of wagyu might ruin all other steaks for you.</li>
+                            </ul>
+                        </div>
 
-                <!-- Best Time to Visit Section -->
-                <div class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>
-                        Spring and autumn offer mild weather, ideal for gondola rides and strolls along the harbor. Winter can bring a magical snowfall—perfect for those cozy mountain views, but pack layers. Whenever you visit, keep an open mind (and an open wallet) for that once-in-a-lifetime Kobe beef feast.
-                    </p>
-                </div>
+                        <!-- Fun Facts & Local Trivia Section -->
+                        <div class="section">
+                            <h2>Fun Facts & Local Trivia</h2>
+                            <ul>
+                                <li><strong>Kobe Beef</strong> originates from Tajima-gyu cattle in Hyogo Prefecture, pampered to achieve legendary marbling.</li>
+                                <li>Kobe’s port opened to international trade in 1868, mixing Western influences with Japanese traditions.</li>
+                                <li>The <em>Great Hanshin Earthquake</em> of 1995 tested Kobe’s resilience—its recovery is often cited as an urban success story.</li>
+                                <li>Locals claim the best nighttime view of Kobe is from Mount Rokko, dubbed the “10 million dollar view.”</li>
+                            </ul>
+                        </div>
 
-                <!-- Google AdSense Ad -->
-                <section class="adsense">
-                    <div class="container">
+                        <!-- Best Time to Visit Section -->
+                        <div class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>
+                                Spring and autumn offer mild weather, ideal for gondola rides and strolls along the harbor. Winter can bring a magical snowfall—perfect for those cozy mountain views, but pack layers. Whenever you visit, keep an open mind (and an open wallet) for that once-in-a-lifetime Kobe beef feast.
+                            </p>
+                        </div>
+
+                        <!-- Google AdSense Ad -->
+                        <section class="adsense">
+                            <div class="container">
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-6483721386563068"
+                                     data-ad-slot="8249189982"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+
+                        <!-- Back to Top Button -->
+                        <button id="back-to-top" aria-label="Back to Top">↑</button>
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Kobe Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Kobe Tourism Site</a></li>
+                            <li><a href="#">Hanshin Line Schedules</a></li>
+                            <li><a href="#">Mount Rokko Visitor Info</a></li>
+                            <li><a href="#">Kobe Earthquake Memorial Museum</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Japanese Yen (¥). Many steakhouses accept credit cards.</p>
+                        <p><strong>Language:</strong> Japanese, but some English support in tourist areas.</p>
+                        <p><strong>Time Zone:</strong> Japan Standard Time (UTC+9).</p>
+                        <p><strong>Climate:</strong> Mild but can be snowy in winter, humid in summer.</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
                         <ins class="adsbygoogle"
                              style="display:block"
                              data-ad-client="ca-pub-6483721386563068"
@@ -589,17 +527,21 @@
                              data-ad-format="auto"
                              data-full-width-responsive="true"></ins>
                         <script>
-                             (adsbygoogle = window.adsbygoogle || []).push({});
+                            (adsbygoogle = window.adsbygoogle || []).push({});
                         </script>
-                    </div>
-                </section>
-
-                <!-- Back to Top Button -->
-                <button id="back-to-top" aria-label="Back to Top">↑</button>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Kobe Beef: A Gourmet’s Guide”</a></li>
+                            <li><a href="#">“Port Cities of Japan: A Historical Look”</a></li>
+                            <li><a href="#">“Japan by Rail” - Travel Handbook</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
-
+    
     <!-- Footer Section -->
     <footer>
         <div class="container">
@@ -618,7 +560,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Enhanced Navigation, Back to Top Button, and More -->
+    <!-- JavaScript for Navigation, Back to Top Button, and More -->
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.querySelector('nav ul.nav-menu');
