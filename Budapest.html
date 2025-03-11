@@ -35,6 +35,7 @@
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -66,7 +67,7 @@
     }
     </script>
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline styles matching the newer pages + Two-Column Layout -->
     <style>
         /* Reset and Base Styles */
         * {
@@ -160,10 +161,6 @@
             main h2 {
                 font-size: 1.5em;
             }
-            .responsive-video iframe {
-                width: 100%;
-                height: auto;
-            }
         }
 
         /* Lists and Bold Text */
@@ -171,11 +168,9 @@
             margin-left: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
         main li strong {
             color: #FF6600;
         }
@@ -194,21 +189,17 @@
             font-size: 0.9em;
             padding: 10px 0;
         }
-
         .breadcrumb li::after {
             content: ">";
             margin-left: 5px;
         }
-
         .breadcrumb li:last-child::after {
             content: "";
         }
-
         .breadcrumb a {
             color: #FF6600;
             text-decoration: none;
         }
-
         .breadcrumb a:hover {
             text-decoration: underline;
         }
@@ -221,7 +212,6 @@
             padding-left: 15px;
             margin: 20px 0;
         }
-
         blockquote footer {
             text-align: right;
             font-weight: bold;
@@ -403,6 +393,33 @@
         .footer-social a:hover img {
             transform: scale(1.2);
         }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -412,18 +429,13 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
             <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
             <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -434,8 +446,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -454,169 +464,199 @@
     <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Budapest</li>
-                    </ol>
-                </nav>
+                <div class="content-row">
+                    
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        <!-- Breadcrumb Navigation -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="destinations.html">Destinations</a></li>
+                                <li aria-current="page">Budapest</li>
+                            </ol>
+                        </nav>
 
-                <!-- Page Title -->
-                <h1>Budapest</h1>
-                <img src="images/budapest-banner.jpg" alt="Budapest Banner" class="banner-image responsive-image" loading="lazy">
+                        <!-- Page Title -->
+                        <h1>Budapest</h1>
+                        <img src="images/budapest-banner.jpg" alt="Budapest Banner" class="banner-image responsive-image" loading="lazy">
 
-                <!-- What to See Section -->
-                <section class="section">
-                    <h2>What to See</h2>
-                    <p>Budapest is a city where history, art, and relaxation come together. From its majestic parliament to its soothing thermal baths, every corner of the city has a story to tell and a view to remember.</p>
-                </section>
+                        <!-- What to See Section -->
+                        <section class="section">
+                            <h2>What to See</h2>
+                            <p>Budapest is a city where history, art, and relaxation come together. From its majestic parliament to its soothing thermal baths, every corner of the city has a story to tell and a view to remember.</p>
+                        </section>
 
-                <!-- Insert budapest1.jpg -->
-                <img src="images/budapest1.jpg" alt="Budapest Historical Architecture" class="responsive-image" loading="lazy">
+                        <!-- Insert budapest1.jpg -->
+                        <img src="images/budapest1.jpg" alt="Budapest Historical Architecture" class="responsive-image" loading="lazy">
 
-                <!-- A Brief History of the City Section -->
-                <section class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>Formed by the unification of Buda and Pest in 1872, Budapest has a fascinating past. Influenced by Roman, Ottoman, and Austro-Hungarian cultures, the city has emerged as a vibrant center of art, music, and history that continues to captivate visitors today.</p>
-                </section>
+                        <!-- A Brief History of the City Section -->
+                        <section class="section">
+                            <h2>A Brief History of the City</h2>
+                            <p>Formed by the unification of Buda and Pest in 1872, Budapest has a fascinating past. Influenced by Roman, Ottoman, and Austro-Hungarian cultures, the city has emerged as a vibrant center of art, music, and history that continues to captivate visitors today.</p>
+                        </section>
 
-                <!-- Insert budapest2.jpg -->
-                <img src="images/budapest2.jpg" alt="Budapest Skyline" class="responsive-image" loading="lazy">
+                        <!-- Insert budapest2.jpg -->
+                        <img src="images/budapest2.jpg" alt="Budapest Skyline" class="responsive-image" loading="lazy">
 
-                <!-- Top 10 Attractions Section -->
-                <section class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li>
-                            <strong>Hungarian Parliament Building</strong> – Standing before the grand Hungarian Parliament Building is truly awe-inspiring. I still recall the moment I first saw its illuminated facade along the Danube—it felt like witnessing history in motion. The intricate details and imposing structure left me with a deep sense of national pride and wonder.
-                        </li>
-                        <li>
-                            <strong>Chain Bridge</strong> – Walking hand-in-hand across the Chain Bridge at dusk was magical. The bridge connects Buda and Pest, and as I watched the river sparkle under city lights, I felt connected to the timeless spirit of Budapest.
-                        </li>
-                        <li>
-                            <strong>Buda Castle</strong> – Exploring Buda Castle was like stepping into a fairytale. Wandering through its courtyards and museums, I could almost hear the echoes of ancient royalty. The panoramic views of the city from its ramparts are simply breathtaking.
-                        </li>
-                        <li>
-                            <strong>St. Stephen's Basilica</strong> – Climbing to the top of St. Stephen's Basilica was a highlight of my trip. The serene atmosphere inside the basilica and the stunning views from its dome made me feel both reflective and uplifted—a true blend of spirituality and art.
-                        </li>
-                        <li>
-                            <strong>Széchenyi Thermal Bath</strong> – Relaxing in the Széchenyi Thermal Bath was an unforgettable experience. Soaking in the warm, healing waters, I felt completely rejuvenated. It was a perfect pause from sightseeing—a moment of pure bliss and self-care.
-                        </li>
-                        <li>
-                            <strong>Fisherman's Bastion</strong> – The fairy-tale turrets of Fisherman's Bastion offered one of the most picturesque views in Budapest. I spent hours here, simply admiring the panorama of the Danube and the city below, feeling as if I were in a dream.
-                        </li>
-                        <li>
-                            <strong>Gellért Hill and Citadel</strong> – Hiking up Gellért Hill was a rewarding challenge. The journey up was filled with charming street scenes, and reaching the top, I was greeted by a view that stretched across Budapest—a vivid reminder of the city’s resilient past.
-                        </li>
-                        <li>
-                            <strong>Heroes' Square</strong> – Heroes' Square is not only grand in scale but also rich in symbolism. Standing amid the statues of national leaders, I felt a profound connection to Hungary's history and the enduring spirit of its people.
-                        </li>
-                        <li>
-                            <strong>Danube River Cruise</strong> – Taking a river cruise on the Danube at night was pure magic. The shimmering lights of Budapest reflecting on the water created a romantic and unforgettable scene that captured the essence of the city.
-                        </li>
-                        <li>
-                            <strong>Vajdahunyad Castle</strong> – Nestled in the City Park, Vajdahunyad Castle is a picturesque mix of architectural styles. Exploring its grounds felt like wandering through a living museum, with every stone telling a story of Hungary's diverse heritage.
-                        </li>
-                    </ol>
-                </section>
+                        <!-- Top 10 Attractions Section -->
+                        <section class="section">
+                            <h2>Top 10 Attractions</h2>
+                            <ol>
+                                <li>
+                                    <strong>Hungarian Parliament Building</strong> – Standing before the grand Hungarian Parliament Building is truly awe-inspiring. I still recall the moment I first saw its illuminated facade along the Danube—it felt like witnessing history in motion.
+                                </li>
+                                <li>
+                                    <strong>Chain Bridge</strong> – Walking hand-in-hand across the Chain Bridge at dusk was magical. The bridge connects Buda and Pest, and as I watched the river sparkle under city lights, I felt connected to the timeless spirit of Budapest.
+                                </li>
+                                <li>
+                                    <strong>Buda Castle</strong> – Exploring Buda Castle was like stepping into a fairytale. Wandering through its courtyards and museums, I could almost hear the echoes of ancient royalty. The panoramic views of the city from its ramparts are simply breathtaking.
+                                </li>
+                                <li>
+                                    <strong>St. Stephen's Basilica</strong> – Climbing to the top of St. Stephen's Basilica was a highlight. The serene atmosphere inside and the stunning views from its dome left me feeling both reflective and uplifted.
+                                </li>
+                                <li>
+                                    <strong>Széchenyi Thermal Bath</strong> – Relaxing in the Széchenyi Thermal Bath was unforgettable. Soaking in the warm, healing waters was the perfect break from sightseeing—a moment of pure bliss.
+                                </li>
+                                <li>
+                                    <strong>Fisherman's Bastion</strong> – The fairy-tale turrets of Fisherman's Bastion offered some of the most picturesque views in Budapest. I spent hours there, simply admiring the panorama of the Danube and the city below.
+                                </li>
+                                <li>
+                                    <strong>Gellért Hill and Citadel</strong> – Hiking up Gellért Hill was a rewarding challenge. The panoramic view at the top reminded me of Budapest’s resilient past and vibrant present.
+                                </li>
+                                <li>
+                                    <strong>Heroes' Square</strong> – A grand space with statues of national leaders, Heroes' Square is a powerful tribute to Hungary's rich history.
+                                </li>
+                                <li>
+                                    <strong>Danube River Cruise</strong> – Taking a river cruise on the Danube at night was pure magic. The city lights reflecting on the water created a romantic and unforgettable scene.
+                                </li>
+                                <li>
+                                    <strong>Vajdahunyad Castle</strong> – Nestled in the City Park, Vajdahunyad Castle is a charming mix of architectural styles, telling stories of Hungary's diverse heritage.
+                                </li>
+                            </ol>
+                        </section>
 
-                <!-- Insert budapest3.jpg -->
-                <img src="images/budapest3.jpg" alt="Budapest Thermal Baths" class="responsive-image" loading="lazy">
+                        <!-- Insert budapest3.jpg -->
+                        <img src="images/budapest3.jpg" alt="Budapest Thermal Baths" class="responsive-image" loading="lazy">
 
-                <!-- What to Bring Section -->
-                <section class="section">
-                    <h2>What to Bring</h2>
-                    <ul>
-                        <li>Comfortable walking shoes for exploring the city.</li>
-                        <li>Weather-appropriate clothing—Budapest's weather can be changeable.</li>
-                        <li>A camera or smartphone to capture memorable moments.</li>
-                        <li>A guidebook or map for extra local insights.</li>
-                        <li>Travel adapter (Type C or F) for charging devices.</li>
-                        <li>A reusable water bottle to stay hydrated.</li>
-                        <li>Personal medications and a basic first-aid kit.</li>
-                        <li>Sun protection: hat, sunglasses, and sunscreen.</li>
-                        <li>A light jacket for cooler evenings.</li>
-                        <li>Basic Hungarian phrases to enhance interactions.</li>
-                    </ul>
-                </section>
+                        <!-- What to Bring Section -->
+                        <section class="section">
+                            <h2>What to Bring</h2>
+                            <ul>
+                                <li>Comfortable walking shoes for exploring the city.</li>
+                                <li>Weather-appropriate clothing—Budapest's weather can be changeable.</li>
+                                <li>A camera or smartphone to capture memorable moments.</li>
+                                <li>A guidebook or map for extra local insights.</li>
+                                <li>Travel adapter (Type C or F) for charging devices.</li>
+                                <li>A reusable water bottle to stay hydrated.</li>
+                                <li>Personal medications and a basic first-aid kit.</li>
+                                <li>Sun protection: hat, sunglasses, and sunscreen.</li>
+                                <li>A light jacket for cooler evenings.</li>
+                                <li>Basic Hungarian phrases to enhance interactions.</li>
+                            </ul>
+                        </section>
 
-                <!-- Most Famous Food Section -->
-                <section class="section">
-                    <h2>Most Famous Food</h2>
-                    <p><strong>Lángos:</strong> No visit to Budapest is complete without trying lángos, a delicious deep-fried dough often topped with garlic, sour cream, and cheese. It’s a humble dish that carries the taste of local tradition.</p>
-                </section>
+                        <!-- Most Famous Food Section -->
+                        <section class="section">
+                            <h2>Most Famous Food</h2>
+                            <p><strong>Lángos:</strong> No visit to Budapest is complete without trying lángos, a delicious deep-fried dough often topped with garlic, sour cream, and cheese. It’s a humble dish that carries the taste of local tradition.</p>
+                        </section>
 
-                <!-- Currency Section -->
-                <section class="section">
-                    <h2>Currency</h2>
-                    <p>The official currency in Budapest is the Hungarian Forint (HUF). While many places accept credit cards, it's wise to carry some cash for smaller vendors and local markets.</p>
-                </section>
+                        <!-- Currency Section -->
+                        <section class="section">
+                            <h2>Currency</h2>
+                            <p>The official currency in Budapest is the Hungarian Forint (HUF). While many places accept credit cards, it's wise to carry some cash for smaller vendors and local markets.</p>
+                        </section>
 
-                <!-- Best Time to Visit Section -->
-                <section class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>The best time to visit Budapest is during the spring (April to June) and fall (September to October) when the weather is mild and the crowds are smaller. Summer is lively and great for outdoor festivals, while winter brings a festive charm with its Christmas markets.</p>
-                </section>
+                        <!-- Best Time to Visit Section -->
+                        <section class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>The best time to visit Budapest is during the spring (April to June) and fall (September to October) when the weather is mild and the crowds are smaller. Summer is lively with outdoor festivals, while winter brings festive Christmas markets.</p>
+                        </section>
 
-                <!-- Prices Overview Section -->
-                <section class="section">
-                    <h2>Prices Overview</h2>
-                    <p>Budapest is known for being affordable. Budget travelers can find hostels for as little as €15 per night, while mid-range hotels range between €60 and €120. Meals are reasonably priced, typically between €8 and €25, and public transportation is both efficient and inexpensive.</p>
-                </section>
+                        <!-- Prices Overview Section -->
+                        <section class="section">
+                            <h2>Prices Overview</h2>
+                            <p>Budapest is known for being affordable. Budget travelers can find hostels for as little as €15 per night, while mid-range hotels range between €60 and €120. Meals typically cost between €8 and €25, and public transportation is both efficient and inexpensive.</p>
+                        </section>
 
-                <!-- Fun Facts Section -->
-                <section class="section">
-                    <h2>Fun Facts</h2>
-                    <ul>
-                        <li>Budapest was formed by the unification of Buda and Pest in 1872.</li>
-                        <li>The city boasts over 100 thermal springs, fueling its famous spa culture.</li>
-                        <li>Hungarian Parliament is the third-largest parliament building in the world.</li>
-                        <li>Budapest hosts one of Europe’s largest Christmas markets, attracting visitors from all over.</li>
-                        <li>The city’s underground metro, opened in 1896, is the oldest in continental Europe.</li>
-                    </ul>
-                </section>
+                        <!-- Fun Facts Section -->
+                        <section class="section">
+                            <h2>Fun Facts</h2>
+                            <ul>
+                                <li>Budapest was formed by the unification of Buda and Pest in 1872.</li>
+                                <li>The city has over 100 thermal springs, fueling its famous spa culture.</li>
+                                <li>Hungarian Parliament is the third-largest parliament building in the world.</li>
+                                <li>Budapest hosts one of Europe’s largest Christmas markets.</li>
+                                <li>The city’s underground metro, opened in 1896, is the oldest in continental Europe.</li>
+                            </ul>
+                        </section>
 
-                <!-- What People Are Saying About My Journeys -->
-                <section class="section testimonials">
-                    <div class="testimonial-container">
-                        <h2 class="testimonial-header">What People Are Saying About My Journeys</h2>
-                        <div class="stars" id="stars">
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
+                        <!-- Testimonials Section -->
+                        <div class="section testimonials">
+                            <div class="testimonial-container">
+                                <h2 class="testimonial-header">What People Are Saying About My Journeys</h2>
+                                <div class="stars" id="stars">
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                </div>
+                                <p class="review" id="currentReview">
+                                    "Budapest with Carl was an eye-opening journey. His personal stories and genuine passion for the city made every moment feel truly special." – Jamie (USA)
+                                </p>
+                            </div>
                         </div>
-                        <p class="review" id="currentReview">
-                            "Budapest with Carl was an eye-opening journey. His personal stories and genuine passion for the city made every moment feel truly special." - Jamie (USA)
-                        </p>
-                    </div>
-                </section>
 
-                <!-- Follow My Adventures Section -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@CarlTravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Budapest Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Budapest Tourism Site</a></li>
+                            <li><a href="#">Hungarian Parliament Tour Info</a></li>
+                            <li><a href="#">Danube River Cruise Options</a></li>
+                            <li><a href="#">Thermal Baths & Spa Bookings</a></li>
+                        </ul>
+
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Hungarian Forint (HUF)</p>
+                        <p><strong>Language:</strong> Hungarian (English is common in tourist areas)</p>
+                        <p><strong>Time Zone:</strong> Central European Time (UTC+1)</p>
+                        <p><strong>Climate:</strong> Continental – hot summers, cold winters</p>
+
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“A Taste of Budapest”</a></li>
+                            <li><a href="#">“Bathing Culture in Hungary”</a></li>
+                            <li><a href="#">“Danube Tales: Exploring Europe's Rivers”</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
@@ -649,12 +689,15 @@
         menuToggle.addEventListener('change', () => {
             navMenu.classList.toggle('active');
         });
+
         const backToTopButton = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
             } else {
                 backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
             }
         });
         backToTopButton.addEventListener('click', () => {
