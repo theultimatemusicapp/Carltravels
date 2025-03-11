@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Auckland: A Comprehensive Travel Guide – Carl Travels</title>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
-     crossorigin="anonymous"></script>
-    
-    <!-- Primary Meta Tags -->
+    <!-- SEO Meta Description -->
     <meta name="description" content="Explore Auckland, New Zealand with Carl Travels: Discover stunning landscapes, vibrant culture, thrilling adventures, and essential travel tips for an unforgettable experience.">
-    <meta name="keywords" content="Auckland, New Zealand, Travel Guide, Sky Tower, Waiheke Island, Adventure, Hiking, Tourism">
-    <meta name="author" content="Carl Ostomich">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Auckland, New Zealand, Carl Travels, City of Sails, Sky Tower, Waiheke Island, Culture, Adventure">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Exploring Auckland: A Comprehensive Travel Guide - Carl Travels">
+    <meta property="og:title" content="Exploring Auckland: A Comprehensive Travel Guide – Carl Travels">
     <meta property="og:description" content="Discover Auckland's stunning landscapes, vibrant culture, thrilling adventures, and essential travel tips for an unforgettable experience.">
     <meta property="og:image" content="https://www.carltravels.com/images/auckland-banner.jpg">
     <meta property="og:url" content="https://www.carltravels.com/Auckland-travel-guide.html">
@@ -22,20 +21,9 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Exploring Auckland: A Comprehensive Travel Guide - Carl Travels">
+    <meta name="twitter:title" content="Exploring Auckland: A Comprehensive Travel Guide – Carl Travels">
     <meta name="twitter:description" content="Discover Auckland's stunning landscapes, vibrant culture, thrilling adventures, and essential travel tips for an unforgettable experience.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/auckland-twitter-image.jpg">
-
-    <title>Exploring Auckland: A Comprehensive Travel Guide - Carl Travels</title>
-    <!-- Link to the updated styles.css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for city pages -->
-    <link rel="stylesheet" href="city.css">
-
-    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
@@ -57,7 +45,7 @@
           "url": "https://www.carltravels.com/logo.png"
         }
       },
-      "datePublished": "2024-04-27",
+      "datePublished": "2025-04-27",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://www.carltravels.com/Auckland-travel-guide.html"
@@ -65,81 +53,141 @@
     }
     </script>
 
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+     crossorigin="anonymous"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Specific styles for city pages -->
+    <link rel="stylesheet" href="city.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Inline styles matching the newer pages -->
     <style>
-        /* Ensure images within the main content are responsive */
+        /* Responsive video styles */
+        .video-responsive {
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; 
-            padding: 10px 0;
+            margin: 20px auto;
+            border-radius: 8px;
+            loading: lazy;
         }
-
-        /* Responsive Video Container */
-        .responsive-video {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            padding-top: 25px;
-            height: 0;
-        }
-
-        .responsive-video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
+            color: #FF6600;
             font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within main */
         main h1 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
         }
         main h1:hover {
             color: #E55B00;
         }
-
-        /* Style all h2 titles within main */
         main h2 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 1.8em;
         }
         main h2:hover {
             color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
+            font-size: 1.4em;
         }
 
-        /* Responsive typography adjustments */
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; 
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -147,144 +195,146 @@
             main h2 {
                 font-size: 1.5em;
             }
+            main h3 {
+                font-size: 1.2em;
+            }
+            .video-responsive iframe {
+                width: 100%;
+                height: auto;
+            }
         }
-
-        /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
+            margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
-        /* Styling for Sections */
         .section {
             margin-bottom: 30px;
         }
-
-        /* Breadcrumb Styling */
-        .breadcrumb {
-            list-style: none;
-            display: flex;
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+        .adsense {
+            margin: 40px 0;
+        }
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
             gap: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 0.9em;
-            padding: 10px 0;
         }
-
-        .breadcrumb li::after {
-            content: ">";
-            margin-left: 5px;
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
         }
-
-        .breadcrumb li:last-child::after {
-            content: "";
-        }
-
-        .breadcrumb a {
-            color: #FF6600;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        /* Blockquote Styling */
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #FF6600;
-            padding-left: 15px;
-            margin: 20px 0;
-        }
-
-        blockquote footer {
-            text-align: right;
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* Testimonial Section Styling */
-        .testimonials {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .testimonials h2 {
-            margin-bottom: 15px;
-        }
-
-        /* Video Section Styling */
-        .video-section {
-            margin-bottom: 30px;
-        }
-
-        /* Additional Video Styling */
-        .additional-video {
-            margin-bottom: 30px;
-        }
-
-        /* Follow My Adventures Section */
-        .follow-adventures {
-            margin-top: 30px;
-        }
-
-        .follow-adventures h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-        }
-
-        .follow-adventures .video-container {
-            margin-bottom: 20px;
-        }
-
-        .follow-adventures .video-title {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-
-        /* Arrange Videos in a Row */
-        .video-row {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .video-row .video-container {
-            flex: 1 1 30%; /* Allows three videos per row with flexibility */
-            max-width: 32%;
-        }
-
-        /* Ensure Responsiveness */
-        @media (max-width: 992px) {
-            .video-row .video-container {
-                flex: 1 1 45%;
-                max-width: 45%;
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
             }
         }
-
-        @media (max-width: 600px) {
-            .video-row .video-container {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -305,7 +355,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
                     <li><a href="donate.html">Donate</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -325,267 +375,325 @@
             </div>
         </div>
     </header>
-
+    
     <!-- Main Content -->
-    <main>
-        <section class="blog-post">
+    <main id="main-content">
+        <section class="destination-details">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Auckland</li>
-                    </ol>
-                </nav>
-
+                
                 <!-- Page Title -->
                 <h1>Exploring Auckland: A Comprehensive Travel Guide</h1>
                 
-                <!-- Embedded YouTube Video (Banner Replacement: ONE day in Auckland) -->
-                <div class="responsive-video video-section">
-                    <iframe src="https://www.youtube.com/embed/8lu19C3c4UM" title="ONE day in Auckland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <div class="content-row">
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Auckland, often called the “City of Sails,” is New Zealand’s largest and most cosmopolitan city. Surrounded by sparkling harbors, volcanic cones, and lush green spaces, Auckland offers an enticing blend of urban sophistication and natural wonder. Whether you’re an adrenaline junkie looking for adventure or a culture seeker yearning for local experiences, Auckland has you covered.</p>
+                            <p><strong>Overview:</strong> From world-class dining and shopping to epic hiking trails and coastal retreats, Auckland is a city that captivates at every turn.</p>
+                        </section>
+                        
+                        <!-- Carl's Auckland Adventure (Personal Story) -->
+                        <section class="section">
+                            <h2>Carl’s Auckland Adventure</h2>
+                            <p>My first trip to Auckland was an eye-opener. I arrived in the early morning, jet-lagged but excited. As soon as I stepped out of the airport, I was greeted by a refreshing coastal breeze. Within hours, I found myself on a ferry to Waiheke Island, sipping locally produced wine while overlooking the ocean—an unforgettable introduction to the city’s laid-back charm.</p>
+                            <p>Over the next few days, I hiked up Mount Eden for panoramic views, tasted fresh seafood at the Viaduct Harbour, and soaked in the multicultural vibe of Queen Street. Each new experience reminded me why taking a chance on travel is worth every challenge: Auckland’s blend of natural beauty and urban energy is truly one-of-a-kind. It’s a city where you can start your day with a scenic walk among volcanic cones and end it dining at a top-tier restaurant, sharing stories with new friends you’ve met along the way.</p>
+                        </section>
+                        
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li>Sky Tower: Panoramic views of Auckland and the surrounding harbors.</li>
+                                <li>Waiheke Island: Renowned for vineyards, beaches, and olive groves.</li>
+                                <li>Mount Eden: Volcanic cone with a stunning overlook of the city.</li>
+                                <li>Viaduct Harbour: Lively waterfront district for dining and entertainment.</li>
+                                <li>Auckland Domain & War Memorial Museum: Historical exhibits in a lush park setting.</li>
+                                <li>Queen Street: The city’s main shopping and cultural hub.</li>
+                                <li>Waitakere Ranges: Rugged rainforest and black-sand beaches perfect for day trips.</li>
+                                <li>Rangitoto Island: Volcanic island for hiking and scenic exploration.</li>
+                                <li>Mission Bay: Popular beach area for swimming, cafes, and relaxed strolls.</li>
+                            </ul>
+                        </section>
 
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Auckland, known as the "City of Sails," is New Zealand's largest and most vibrant city. Nestled between two harbors and surrounded by volcanic landscapes, Auckland offers a unique mix of urban sophistication and natural beauty. Whether you're here for the adrenaline-pumping adventures or to relax by the sea, this city has something extraordinary waiting for you.</p>
-                    <p><strong>Overview:</strong> From its multicultural heritage to its thriving arts and culinary scenes, Auckland is a dynamic destination that invites exploration and discovery at every turn.</p>
-                </section>
+                        <!-- Top Attractions -->
+                        <section class="section">
+                            <h2>Top Attractions</h2>
+                            
+                            <!-- Sky Tower -->
+                            <div class="section">
+                                <h3>1. Sky Tower</h3>
+                                <p>Auckland’s iconic Sky Tower stands at 328 meters, offering breathtaking 360-degree views of the city and beyond. Thrill-seekers can try the SkyJump or SkyWalk for an adrenaline rush, while others can dine at the rotating restaurant for a more relaxed experience.</p>
+                            </div>
+                            
+                            <!-- Waiheke Island -->
+                            <div class="section">
+                                <h3>2. Waiheke Island</h3>
+                                <p>Just a short ferry ride from Auckland, Waiheke Island is a paradise of vineyards, olive groves, and sandy beaches. Wine-tasting tours are a must, and the island’s laid-back atmosphere makes it perfect for a day trip or a weekend getaway.</p>
+                            </div>
+                            
+                            <!-- Mount Eden -->
+                            <div class="section">
+                                <h3>3. Mount Eden</h3>
+                                <p>Hike up this volcanic cone for panoramic views of Auckland’s skyline and harbors. The grassy crater at the top is a unique geological feature and a peaceful spot to watch the sunset over the city.</p>
+                            </div>
+                            
+                            <!-- Viaduct Harbour -->
+                            <div class="section">
+                                <h3>4. Viaduct Harbour</h3>
+                                <p>Known for its vibrant nightlife and dining scene, Viaduct Harbour is a waterfront precinct where you can enjoy fresh seafood, craft cocktails, and lively events. It’s also a great place to catch a ferry or simply watch the boats come and go.</p>
+                            </div>
+                            
+                            <!-- Auckland War Memorial Museum -->
+                            <div class="section">
+                                <h3>5. Auckland War Memorial Museum</h3>
+                                <p>Located in the Auckland Domain, this museum showcases New Zealand’s natural, cultural, and military history. Don’t miss the Māori cultural performances for an immersive experience of indigenous traditions.</p>
+                            </div>
+                        </section>
 
-                <!-- Highlights -->
-                <section class="section">
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li>Sky Tower: Iconic landmark offering panoramic views of the city and beyond.</li>
-                        <li>Waiheke Island: Renowned for its vineyards, beaches, and olive groves.</li>
-                        <li>Auckland Domain: Historic park with gardens, museums, and walking trails.</li>
-                        <li>Viaduct Harbour: Bustling waterfront area with restaurants, bars, and entertainment.</li>
-                        <li>Museum of Transport and Technology (MOTAT): Interactive exhibits on transportation and innovation.</li>
-                        <li>Mount Eden: Volcanic cone providing stunning city views.</li>
-                        <li>Rangitoto Island: Volcanic island perfect for hiking and exploration.</li>
-                        <li>Auckland Art Gallery Toi o Tāmaki: Premier art institution showcasing local and international art.</li>
-                        <li>Queen Street: Main shopping street mixing high-end boutiques with local charm.</li>
-                        <li>Waitakere Ranges: Lush rainforest and rugged coastline ideal for hiking and beach escapes.</li>
-                    </ul>
-                </section>
+                        <!-- Itinerary & Essentials Section (5 items) -->
+                        <section class="section">
+                            <h2>Itinerary & Essentials</h2>
+                            <p>Short on time? Here’s a quick guide to make the most of Auckland:</p>
+                            <ul>
+                                <li><strong>Catch the Ferry to Waiheke Island:</strong> Spend half a day wine-tasting and beach-hopping.</li>
+                                <li><strong>Climb Mount Eden:</strong> Enjoy panoramic city views and a memorable sunset.</li>
+                                <li><strong>Explore Viaduct Harbour:</strong> Indulge in fresh seafood or grab a drink with a view.</li>
+                                <li><strong>Visit the Auckland Domain:</strong> Stroll through the gardens and learn local history at the museum.</li>
+                                <li><strong>Try SkyJump or SkyWalk:</strong> If you’re feeling brave, conquer the Sky Tower’s adrenaline attractions.</li>
+                            </ul>
+                        </section>
 
-                <!-- Top Attractions -->
-                <section class="section">
-                    <h2>Top Attractions</h2>
-                    
-                    <!-- Sky Tower -->
-                    <h3 id="sky-tower">Sky Tower</h3>
-                    <p>The Sky Tower is Auckland's most recognizable landmark. Standing at 328 meters, it offers breathtaking 360-degree views of the city, harbors, and surrounding landscapes. For thrill-seekers, options like the SkyJump and SkyWalk provide a heart-pounding adventure.</p>
-                    
-                    <!-- Waiheke Island -->
-                    <h3 id="waiheke-island">Waiheke Island</h3>
-                    <p>A short ferry ride from Auckland, Waiheke Island is a paradise for wine enthusiasts and beach lovers. Explore boutique vineyards, enjoy fresh seafood by the sea, and relax on sandy beaches surrounded by natural beauty.</p>
-                    
-                    <!-- Auckland Domain -->
-                    <h3 id="auckland-domain">Auckland Domain</h3>
-                    <p>As the city's oldest park, Auckland Domain features expansive green spaces, beautiful gardens, and cultural attractions such as the Auckland War Memorial Museum—an ideal spot for picnics and leisurely strolls.</p>
-                    
-                    <!-- Viaduct Harbour -->
-                    <h3 id="viaduct-harbour">Viaduct Harbour</h3>
-                    <p>Viaduct Harbour is a lively waterfront precinct known for its upscale dining, buzzing nightlife, and stunning marina views. It’s the perfect place to enjoy a meal or an evening out.</p>
-                    
-                    <!-- Mount Eden -->
-                    <h3 id="mount-eden">Mount Eden</h3>
-                    <p>Mount Eden is Auckland's highest natural point, offering panoramic vistas of the city. This volcanic cone is encircled by parks and trails, making it a popular destination for both locals and visitors.</p>
-                    
-                    <!-- Sculptareum -->
-                    <h3 id="sculptareum">Sculptareum</h3>
-                    <p>The Sculptareum is a unique cultural landmark that showcases stunning sculptures and innovative art installations. Dive into a creative journey as you explore this dynamic space that reflects Auckland’s modern artistic spirit.</p>
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/JTV9zReq6qg" title="Sculptareum - Auckland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
+                        <!-- Fun Facts & Local Trivia Section (5 items) -->
+                        <section class="section">
+                            <h2>Fun Facts & Local Trivia</h2>
+                            <ul>
+                                <li>Auckland is home to the largest Polynesian population of any city in the world.</li>
+                                <li>There are around 50 volcanoes in the Auckland volcanic field.</li>
+                                <li>The city’s nickname, “City of Sails,” reflects its high per-capita boat ownership.</li>
+                                <li>Waiheke Island has over 30 vineyards, making it a top wine destination.</li>
+                                <li>Auckland’s Sky Tower is the tallest free-standing structure in the Southern Hemisphere.</li>
+                            </ul>
+                        </section>
 
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Auckland offers a wealth of activities—from sailing in the Hauraki Gulf to hiking volcanic trails. Whether you’re looking for an adrenaline rush or a relaxing day by the water, there’s an adventure waiting for you.</p>
-                    <ul>
-                        <li><strong>Sailing and Boating:</strong> Take advantage of Auckland's maritime heritage with sailing lessons, yacht charters, or scenic boat tours.</li>
-                        <li><strong>Skydiving:</strong> Experience the thrill of freefalling while enjoying spectacular aerial views.</li>
-                        <li><strong>Hiking:</strong> Explore trails in the Waitakere Ranges, Rangitoto Island, and Auckland Domain.</li>
-                        <li><strong>Wine Tours:</strong> Visit vineyards in nearby regions like Matakana for wine tasting and tours.</li>
-                        <li><strong>Mountain Biking:</strong> Ride through rugged trails in the Waitakere Ranges or dedicated bike parks.</li>
-                        <li><strong>Fishing:</strong> Enjoy freshwater and saltwater fishing opportunities around Auckland's lakes and coast.</li>
-                        <li><strong>Paragliding:</strong> Soar above Auckland’s landscapes for a unique aerial view.</li>
-                        <li><strong>Golf:</strong> Play a round at scenic golf courses with spectacular views.</li>
-                        <li><strong>Hot Air Ballooning:</strong> Take a serene ride over diverse landscapes for an unforgettable perspective.</li>
-                        <li><strong>Scuba Diving and Snorkeling:</strong> Discover underwater wonders around Rangitoto Island and marine reserves.</li>
-                    </ul>
-                    <p>Sailing around the Hauraki Gulf is one of my most exhilarating experiences, offering both adventure and moments of tranquil beauty.</p>
-                </section>
+                        <!-- Adventure and Activities -->
+                        <section class="section">
+                            <h2>Adventure and Activities</h2>
+                            <p>From water sports to mountain hikes, Auckland has an array of activities for every interest:</p>
+                            <ul>
+                                <li><strong>Boating & Sailing:</strong> Explore the Hauraki Gulf or try a sunset yacht tour.</li>
+                                <li><strong>Hiking:</strong> Trails abound in the Waitakere Ranges and on Rangitoto Island.</li>
+                                <li><strong>Bungy Jumping:</strong> Thrill-seekers can take the leap from the Auckland Harbour Bridge.</li>
+                                <li><strong>Sea Kayaking:</strong> Paddle around coastal inlets for unique perspectives of the city.</li>
+                                <li><strong>Wine Tours:</strong> Enjoy tastings at local vineyards on Waiheke or in Matakana.</li>
+                            </ul>
+                            <p>One of my favorite memories was taking a sailboat tour around the harbor at dusk, watching the city lights reflect on the water.</p>
+                        </section>
 
-                <!-- Cultural Immersion -->
-                <section class="section">
-                    <h2>Cultural Immersion</h2>
-                    <p>Engage with Auckland’s rich cultural tapestry by visiting art galleries, museums, and local events. Experience authentic Māori cultural performances, explore historic sites, and immerse yourself in the creative energy of the city.</p>
-                    <ul>
-                        <li><strong>Auckland Art Gallery Toi o Tāmaki:</strong> Home to a vast collection of New Zealand and international art.</li>
-                        <li><strong>Māori Cultural Experiences:</strong> Participate in traditional performances and workshops.</li>
-                        <li><strong>MOTAT:</strong> Discover interactive exhibits on transport and technology.</li>
-                        <li><strong>Local Festivals:</strong> Enjoy events like the Auckland Lantern Festival and Pasifika Festival.</li>
-                        <li><strong>Historic Sites:</strong> Explore heritage landmarks such as the Devonport Naval Base.</li>
-                        <li><strong>Performing Arts:</strong> Catch live performances at venues like the Civic Theatre.</li>
-                        <li><strong>Craft Workshops:</strong> Engage in hands-on experiences to learn local crafts.</li>
-                        <li><strong>Street Art Tours:</strong> Discover vibrant murals in neighborhoods like Ponsonby.</li>
-                    </ul>
-                </section>
+                        <!-- Cultural Immersion -->
+                        <section class="section">
+                            <h2>Cultural Immersion</h2>
+                            <p>Auckland’s cultural scene is as diverse as its population. Dive into Māori heritage, explore international art exhibits, and engage with the city’s creative community at local markets and festivals.</p>
+                            <ul>
+                                <li><strong>Māori Cultural Performances:</strong> Experience traditional dance and music at the museum or dedicated cultural centers.</li>
+                                <li><strong>Art Galleries:</strong> Discover local talent at the Auckland Art Gallery and smaller indie galleries.</li>
+                                <li><strong>Festivals:</strong> Attend events like the Pasifika Festival and Lantern Festival for a multicultural celebration.</li>
+                                <li><strong>Street Markets:</strong> Sample global cuisine and crafts at weekend markets across the city.</li>
+                            </ul>
+                        </section>
 
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Auckland's culinary scene is as diverse as it is delicious. Enjoy everything from fresh seafood and innovative fusion dishes to authentic local cafes and bustling food markets.</p>
-                    <ul>
-                        <li><strong>Seafood:</strong> Savor fresh catches at waterfront restaurants.</li>
-                        <li><strong>Asian Cuisine:</strong> Experience a range of flavors from sushi to Thai curries.</li>
-                        <li><strong>Fine Dining:</strong> Indulge in gourmet meals at top-rated eateries like Depot Eatery and Sidart.</li>
-                        <li><strong>Local Cafes:</strong> Relax with a coffee and brunch at cozy spots like Orphans Kitchen.</li>
-                        <li><strong>Food Markets:</strong> Visit La Cigale French Market and Eden Food Market for diverse culinary treats.</li>
-                        <li><strong>Wine Bars:</strong> Enjoy tasting sessions featuring New Zealand's renowned wines.</li>
-                        <li><strong>Fusion Cuisine:</strong> Delight in innovative dishes that blend different culinary traditions.</li>
-                        <li><strong>Street Food:</strong> Grab quick bites from local vendors offering everything from gourmet burgers to fresh salads.</li>
-                        <li><strong>Vegetarian and Vegan Options:</strong> Numerous restaurants cater to plant-based diets.</li>
-                        <li><strong>Craft Breweries:</strong> Sample locally brewed craft beers at popular spots like Brothers Beer.</li>
-                    </ul>
-                    <p>I highly recommend dining at Depot Eatery for an authentic taste of Auckland’s vibrant food scene.</p>
-                </section>
+                        <!-- Food and Cuisine -->
+                        <section class="section">
+                            <h2>Food and Cuisine</h2>
+                            <p>Auckland’s dining scene spans fresh seafood, Asian fusion, and hearty local fare. Here are a few must-try experiences:</p>
+                            <ul>
+                                <li><strong>Fresh Seafood:</strong> Enjoy fish & chips, mussels, and oysters along the waterfront.</li>
+                                <li><strong>Asian Fusion:</strong> Discover a melting pot of flavors in areas like Dominion Road.</li>
+                                <li><strong>Local Cafés:</strong> Experience New Zealand’s renowned coffee culture.</li>
+                                <li><strong>Craft Beer & Wine:</strong> Sample local brews and wines from nearby vineyards.</li>
+                                <li><strong>Farmers’ Markets:</strong> Stock up on artisanal cheeses, produce, and baked goods.</li>
+                            </ul>
+                            <p>Don’t miss the chance to try the famous “Fergburger” in the city—worth every bite!</p>
+                        </section>
 
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3 id="transportation">Transportation</h3>
-                    <p>Auckland offers a comprehensive transport network to help you navigate the city and beyond:</p>
-                    <ul>
-                        <li><strong>Auckland Transport:</strong> A robust network of buses, trains, and ferries serving the entire region.</li>
-                        <li><strong>AT HOP Card:</strong> A smart, rechargeable card for seamless travel across all public transport modes.</li>
-                        <li><strong>Taxis and Ride-Sharing:</strong> Readily available options like Uber and Ola provide convenient point-to-point travel.</li>
-                        <li><strong>Rental Cars and Bikes:</strong> Flexible choices for exploring the city and its scenic outskirts.</li>
-                        <li><strong>Ferries:</strong> Connect to nearby islands such as Waiheke and Devonport for leisurely cruises.</li>
-                        <li><strong>Walking:</strong> Central Auckland is highly walkable, especially around Viaduct Harbour and Britomart.</li>
-                    </ul>
-                    
-                    <h3 id="ways-to-get-from-airport">Ways to Get from Airport to City</h3>
-                    <p>Upon arriving at Auckland Airport, you can choose from multiple transport options:</p>
-                    <ul>
-                        <li><strong>SkyBus:</strong> Direct express bus service from the airport to key city locations. Cost: ~NZD 18 one-way.</li>
-                        <li><strong>Taxis:</strong> Available 24/7 with fares starting around NZD 35, depending on your destination.</li>
-                        <li><strong>Ride-Sharing:</strong> Cost-effective services like Uber provide door-to-door convenience.</li>
-                        <li><strong>Rental Cars:</strong> Numerous agencies offer vehicles right from the airport.</li>
-                        <li><strong>Public Bus:</strong> The Western Busway is an affordable option for city transit. Cost: ~NZD 8 one-way.</li>
-                        <li><strong>Airport Shuttle:</strong> Pre-booked shuttles offer door-to-door service. Cost: ~NZD 20-30 one-way.</li>
-                    </ul>
-                    
-                    <h3 id="accommodation">Accommodation</h3>
-                    <p>Auckland features a diverse range of accommodations, from upscale hotels in the CBD to charming bed & breakfasts and budget-friendly hostels in trendy neighborhoods.</p>
-                    <ul>
-                        <li><strong>Central Business District (CBD):</strong> Ideal for easy access to shops, dining, and attractions.</li>
-                        <li><strong>Viaduct Harbour:</strong> A lively waterfront district with upscale dining and nightlife.</li>
-                        <li><strong>Ponsonby:</strong> A trendy area known for boutique shops, cafes, and vibrant culture.</li>
-                        <li><strong>Devonport:</strong> A historic seaside village with a relaxed atmosphere and scenic views.</li>
-                        <li><strong>Luxury Resorts & Budget Hostels:</strong> Options to suit all budgets and preferences.</li>
-                    </ul>
-                    <p>During my stay, I opted for a mid-range boutique hotel in the CBD that offered both comfort and convenient access to all major attractions.</p>
-                    
-                    <h3 id="budgeting">Budgeting</h3>
-                    <p>Auckland can be on the pricier side, especially during peak seasons. A comfortable daily budget typically ranges from NZD 100 to NZD 250, which covers accommodation, meals, transport, and activities.</p>
-                </section>
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            
+                            <h3 id="transportation">Transportation</h3>
+                            <p>Auckland boasts a well-connected transport network for seamless travel:</p>
+                            <ul>
+                                <li><strong>Auckland Transport:</strong> Buses, trains, and ferries connect the city and outer suburbs.</li>
+                                <li><strong>AT HOP Card:</strong> A reloadable card for convenient, cashless travel.</li>
+                                <li><strong>Taxis & Ride-Sharing:</strong> Uber, Ola, and local cabs are widely available.</li>
+                                <li><strong>Rental Cars & Bikes:</strong> Ideal for exploring surrounding regions at your own pace.</li>
+                                <li><strong>Walking:</strong> Central Auckland is pedestrian-friendly, especially around the Viaduct and Britomart.</li>
+                            </ul>
+                            
+                            <h3 id="ways-to-get-from-airport">Ways to Get from Airport to City</h3>
+                            <ul>
+                                <li><strong>SkyBus:</strong> An express bus to central Auckland (approx. NZD 18 one-way).</li>
+                                <li><strong>Taxis:</strong> Fares start around NZD 35 depending on traffic and location.</li>
+                                <li><strong>Ride-Sharing:</strong> Uber and Ola offer convenient, app-based pickups.</li>
+                                <li><strong>Rental Cars:</strong> Multiple agencies at the airport for on-the-spot car hire.</li>
+                                <li><strong>Airport Shuttle:</strong> Door-to-door service, often cheaper if booked in advance.</li>
+                            </ul>
+                            
+                            <h3 id="accommodation">Accommodation</h3>
+                            <p>Auckland caters to all budgets and styles, from luxury hotels in the CBD to backpacker hostels and boutique B&Bs in suburbs like Ponsonby or Devonport.</p>
+                            <ul>
+                                <li><strong>City Centre (CBD):</strong> Perfect for business travelers and easy access to attractions.</li>
+                                <li><strong>Viaduct Harbour:</strong> Upscale dining and nightlife by the water.</li>
+                                <li><strong>Parnell & Ponsonby:</strong> Trendy neighborhoods with cafes, shops, and local charm.</li>
+                                <li><strong>Devonport:</strong> Seaside village vibes with quick ferry access to the city.</li>
+                            </ul>
+                            
+                            <h3 id="budgeting">Budgeting</h3>
+                            <p>Auckland can be pricey, especially during peak travel seasons. Plan for around NZD 100-250 per day, covering accommodation, meals, transport, and activities.</p>
+                        </section>
 
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3 id="dos-and-donts">Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Book adventure activities and accommodations well in advance during peak seasons.</li>
-                        <li><strong>Don’t:</strong> Carry large amounts of cash; use cards and secure your valuables.</li>
-                        <li><strong>Do:</strong> Dress in layers to adapt to Auckland's variable weather.</li>
-                        <li><strong>Don’t:</strong> Engage in risky behavior during adventure activities; always prioritize safety.</li>
-                        <li><strong>Do:</strong> Respect local customs and follow "Leave No Trace" principles when exploring nature.</li>
-                        <li><strong>Don’t:</strong> Litter in public areas; help keep Auckland pristine.</li>
-                        <li><strong>Do:</strong> Use sunscreen and stay hydrated during outdoor excursions.</li>
-                        <li><strong>Don’t:</strong> Underestimate costs—plan your budget carefully.</li>
-                        <li><strong>Do:</strong> Learn a few basic phrases to enhance local interactions.</li>
-                        <li><strong>Don’t:</strong> Venture into remote areas without proper guidance or equipment.</li>
-                    </ul>
-                    
-                    <h3 id="packing-list">Packing List</h3>
-                    <ul>
-                        <li>Lightweight, breathable clothing with layers for varying weather.</li>
-                        <li>Warm layers for cooler evenings and higher altitudes.</li>
-                        <li>Comfortable walking shoes and hiking boots.</li>
-                        <li>Swimwear and beach essentials.</li>
-                        <li>Insect repellent and sunscreen.</li>
-                        <li>Reusable water bottle and portable charger.</li>
-                        <li>Power adapter (for NZ plugs) and camera/smartphone.</li>
-                        <li>Travel insurance documents and a basic first-aid kit.</li>
-                        <li>Rain jacket or umbrella for sudden showers.</li>
-                    </ul>
-                    
-                    <h3 id="local-etiquette">Local Etiquette</h3>
-                    <p>Kiwis are known for their friendly and laid-back demeanor. Here are some tips to ensure a smooth experience:</p>
-                    <ul>
-                        <li><strong>Greeting:</strong> A warm “Kia Ora” or simple hello goes a long way.</li>
-                        <li><strong>Respect Nature:</strong> Follow "Leave No Trace" and respect the environment.</li>
-                        <li><strong>Queuing:</strong> Kiwis are polite and orderly—always wait your turn.</li>
-                        <li><strong>Public Behavior:</strong> Keep noise to a minimum in residential areas.</li>
-                        <li><strong>Tipping:</strong> Not mandatory, but small tips for good service are appreciated.</li>
-                        <li><strong>Dress Code:</strong> Casual attire is usually acceptable, but dress appropriately when needed.</li>
-                    </ul>
-                </section>
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <h3 id="dos-and-donts">Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Book popular attractions (SkyJump, Waiheke wine tours) in advance.</li>
+                                <li><strong>Don’t:</strong> Forget a rain jacket—Auckland’s weather can shift quickly.</li>
+                                <li><strong>Do:</strong> Embrace local customs, greet with “Kia ora,” and respect Māori culture.</li>
+                                <li><strong>Don’t:</strong> Underestimate distances—some areas are spread out, so plan your commute.</li>
+                                <li><strong>Do:</strong> Keep an eye out for special events or festivals—Auckland loves a celebration.</li>
+                                <li><strong>Don’t:</strong> Leave valuables in plain sight—petty theft can occur in touristy spots.</li>
+                            </ul>
+                            
+                            <h3 id="packing-list">Packing List</h3>
+                            <ul>
+                                <li>Comfortable walking shoes and weather-appropriate layers.</li>
+                                <li>Reusable water bottle and travel umbrella.</li>
+                                <li>Camera or smartphone for scenic shots.</li>
+                                <li>Power adapter for New Zealand plugs.</li>
+                                <li>Travel insurance documents and a small first-aid kit.</li>
+                            </ul>
+                            
+                            <h3 id="local-etiquette">Local Etiquette</h3>
+                            <ul>
+                                <li><strong>Greeting:</strong> A friendly “Kia ora” goes a long way.</li>
+                                <li><strong>Environment:</strong> Practice “Leave No Trace” and protect natural areas.</li>
+                                <li><strong>Social Courtesy:</strong> Stand on the left when using escalators; queue politely.</li>
+                                <li><strong>Māori Culture:</strong> Respect sacred sites and learn about traditional customs.</li>
+                            </ul>
+                        </section>
 
-                <!-- Visitor Testimonials -->
-                <section class="section testimonials">
-                    <h2>Visitor Testimonials</h2>
-                    <blockquote>
-                        "Auckland is a vibrant city with so much to offer! From the stunning Sky Tower views to the beautiful Waiheke Island, every moment was unforgettable."
-                        <footer>- Mia Johnson</footer>
-                    </blockquote>
-                    <blockquote>
-                        "Exploring Auckland's diverse neighborhoods and enjoying the local cuisine made my trip truly special. Highly recommend visiting during the spring season."
-                        <footer>- Noah Smith</footer>
-                    </blockquote>
-                </section>
+                        <!-- Google AdSense Ad -->
+                        <section class="adsense">
+                            <div class="container">
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-6483721386563068"
+                                     data-ad-slot="8249189982"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
 
-                <!-- Follow My Adventures -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                        <!-- Back to Top Button -->
+                        <button id="back-to-top" aria-label="Back to Top">↑</button>
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Auckland Travel Resources</h3>
+                        <ul>
+                            <li><a href="https://www.aucklandnz.com/" target="_blank">Official Auckland Site</a></li>
+                            <li><a href="https://at.govt.nz/bus-train-ferry/" target="_blank">Auckland Transport</a></li>
+                            <li><a href="https://www.fullers.co.nz/" target="_blank">Ferries to Waiheke</a></li>
+                            <li><a href="https://www.doc.govt.nz/" target="_blank">Department of Conservation</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> New Zealand Dollar (NZD).</p>
+                        <p><strong>Language:</strong> English and Māori are official languages.</p>
+                        <p><strong>Time Zone:</strong> NZST (UTC+12) / NZDT in summer.</p>
+                        <p><strong>Climate:</strong> Mild, but can be rainy—pack layers!</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Auckland: The City of Sails” - Travel Handbook</a></li>
+                            <li><a href="#">“Lonely Planet: New Zealand”</a></li>
+                            <li><a href="#">“Te Ara: The Encyclopedia of New Zealand”</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
-
+    
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Enhanced Navigation, Back to Top Button, and More -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
