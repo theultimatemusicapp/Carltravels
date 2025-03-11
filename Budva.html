@@ -5,7 +5,8 @@
     <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+            crossorigin="anonymous"></script>
 
     <!-- Primary Meta Tags -->
     <meta name="description" content="Explore the picturesque town of Budva in Montenegro with Carl Travels. Discover its stunning beaches, historic Old Town, and essential travel tips.">
@@ -34,18 +35,40 @@
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline styles matching the newer pages + Two-Column Layout -->
     <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 10px 0;
+            border-radius: 8px;
         }
         /* Responsive Video Container */
         .responsive-video {
@@ -106,4 +129,523 @@
         }
         @media (max-width: 768px) {
             header h1 a {
-                fo
+                font-size: 2em;
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+        /* Lists and Bold Text */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
+        /* Section Styling */
+        .section {
+            margin-bottom: 30px;
+        }
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+        .breadcrumb a {
+            color: #FF6600;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        /* Blockquote Styling */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #FF6600;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+        blockquote footer {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .testimonial-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            transition: opacity 0.3s ease;
+        }
+        .testimonial-container.show {
+            opacity: 1;
+        }
+        .testimonial-header {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .stars svg {
+            fill: #FFD700;
+            margin: 0 2px;
+        }
+        .review {
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+        /* Follow My Adventures Section */
+        .follow-adventures {
+            margin-top: 30px;
+        }
+        .follow-adventures h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+        .follow-adventures .follow-links {
+            list-style: none;
+            padding: 0;
+        }
+        .follow-adventures .follow-links li {
+            margin-bottom: 10px;
+        }
+        .follow-adventures .follow-links li a {
+            color: #FF6600;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            transition: color 0.3s ease;
+        }
+        .follow-adventures .follow-links li a:hover {
+            color: #E55B00;
+        }
+        /* Hamburger Menu Styling */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #fff;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Back to Top Button Styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+        /* Skip Navigation Link Styling */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <section class="destination-details">
+            <div class="container">
+                <div class="content-row">
+                    
+                    <!-- Main Column -->
+                    <div class="main-column">
+
+                        <!-- Page Title -->
+                        <h1>Budva</h1>
+                        
+                        <!-- Introduction & Overview -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Budva, located along the Adriatic coast of Montenegro, is a popular seaside resort known for its stunning beaches, vibrant nightlife, and rich cultural heritage. Its medieval Old Town, picturesque coastline, and welcoming atmosphere make it a must-visit destination for travelers seeking both relaxation and adventure.</p>
+                        </section>
+
+                        <!-- Insert budva1.jpg or any images you might have for Budva -->
+                        <img src="images/budva1.jpg" alt="Budva Old Town" class="responsive-image" loading="lazy">
+
+                        <!-- Historic Overview -->
+                        <section class="section">
+                            <h2>History & Heritage</h2>
+                            <p>With a history spanning over 2,500 years, Budva is one of the oldest settlements on the Adriatic coast. Over centuries, it has been influenced by the Illyrians, Romans, Byzantines, Venetians, and Austro-Hungarians, leaving behind a cultural tapestry evident in its architecture and traditions.</p>
+                        </section>
+
+                        <!-- Top Attractions -->
+                        <section class="section">
+                            <h2>Top Attractions</h2>
+                            <ol>
+                                <li>
+                                    <strong>Old Town (Stari Grad)</strong> – Wandering the narrow streets of Budva’s Old Town feels like stepping back in time. Surrounded by ancient walls, you’ll find charming squares, hidden churches, and cozy cafes where locals and travelers alike gather.
+                                </li>
+                                <li>
+                                    <strong>Mogren Beach</strong> – A short walk from the Old Town, Mogren Beach is a picturesque spot perfect for sunbathing and swimming. I vividly remember the crystal-clear waters and the serene beauty that made it feel like a hidden paradise.
+                                </li>
+                                <li>
+                                    <strong>Sveti Stefan</strong> – While technically an islet and resort, Sveti Stefan is a symbol of Montenegro’s coastal allure. The view from afar is iconic, and the historic charm of the fortress-like structures is unforgettable.
+                                </li>
+                                <li>
+                                    <strong>Citadel</strong> – Located within the Old Town, the Citadel offers panoramic views of the Adriatic and Budva’s red-tiled roofs. I spent an afternoon there, soaking in the sun and marveling at the timeless beauty of the coast.
+                                </li>
+                                <li>
+                                    <strong>Budva Riviera</strong> – The entire Budva Riviera boasts a string of beautiful beaches, each with its own personality. Exploring them felt like an adventure, with each new cove offering a unique blend of scenery and vibe.
+                                </li>
+                                <li>
+                                    <strong>Maritime Museum</strong> – For a deeper look into Budva’s seafaring past, the Maritime Museum showcases artifacts and exhibits that celebrate the city’s maritime heritage.
+                                </li>
+                                <li>
+                                    <strong>Nightlife & Seafront Promenade</strong> – Budva’s vibrant nightlife is famous throughout the region. The seafront promenade buzzes with bars, restaurants, and clubs, offering a lively atmosphere that lasts well into the night.
+                                </li>
+                            </ol>
+                        </section>
+
+                        <!-- Insert budva2.jpg or any other images -->
+                        <img src="images/budva2.jpg" alt="Budva Beachfront" class="responsive-image" loading="lazy">
+
+                        <!-- What to Bring Section -->
+                        <section class="section">
+                            <h2>What to Bring</h2>
+                            <ul>
+                                <li>Lightweight, breathable clothing for warm coastal weather.</li>
+                                <li>Comfortable sandals or water shoes for exploring beaches and rocky shores.</li>
+                                <li>A hat, sunglasses, and sunscreen to protect against strong Adriatic sun.</li>
+                                <li>A reusable water bottle to stay hydrated.</li>
+                                <li>A small daypack for essentials during boat trips or beach visits.</li>
+                                <li>Swimwear, towels, and beach gear.</li>
+                                <li>Camera or smartphone to capture stunning coastal vistas.</li>
+                                <li>Portable charger for electronic devices.</li>
+                                <li>Cash in Euros, especially for smaller vendors or beach kiosks.</li>
+                            </ul>
+                        </section>
+
+                        <!-- Food Section -->
+                        <section class="section">
+                            <h2>Food & Cuisine</h2>
+                            <p>Budva’s culinary scene reflects Montenegro’s Mediterranean influences, featuring fresh seafood, grilled meats, and local produce. Don’t miss trying <strong>cevapi</strong> (grilled sausages), <strong>burek</strong> (savory pastry), and the region’s excellent wines.</p>
+                        </section>
+
+                        <!-- Currency Section -->
+                        <section class="section">
+                            <h2>Currency</h2>
+                            <p>Montenegro uses the Euro (€). While credit cards are widely accepted in Budva’s tourist areas, carrying some cash is advisable for smaller establishments and local markets.</p>
+                        </section>
+
+                        <!-- Best Time to Visit Section -->
+                        <section class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>The summer months (June to August) are peak season, offering sunny weather and a lively atmosphere. If you prefer fewer crowds, consider visiting in May or September, when the weather remains pleasant but the beaches are less crowded.</p>
+                        </section>
+
+                        <!-- Fun Facts Section -->
+                        <section class="section">
+                            <h2>Fun Facts</h2>
+                            <ul>
+                                <li>Budva’s Old Town is over 2,500 years old, making it one of the oldest urban centers on the Adriatic coast.</li>
+                                <li>The Budva Riviera stretches for about 35 km, encompassing numerous beaches and small towns.</li>
+                                <li>Sveti Stefan, once a fishing village, is now an exclusive resort frequented by celebrities and royalty.</li>
+                                <li>Montenegro is known for its breathtaking landscapes, from rugged mountains to crystal-clear bays.</li>
+                            </ul>
+                        </section>
+
+                        <!-- Testimonials Section -->
+                        <section class="section testimonials">
+                            <div class="testimonial-container">
+                                <h2 class="testimonial-header">What People Are Saying About My Journeys</h2>
+                                <div class="stars" id="stars">
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                </div>
+                                <p class="review" id="currentReview">
+                                    "Carl’s guidance in Budva helped us find hidden beaches and local eateries. It was an unforgettable seaside escape!" – Mark (Australia)
+                                </p>
+                            </div>
+                        </section>
+
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Budva Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Budva Tourism Site</a></li>
+                            <li><a href="#">Budva Riviera Info</a></li>
+                            <li><a href="#">Boat Tours & Island Hopping</a></li>
+                            <li><a href="#">Local Montenegrin Cuisine</a></li>
+                        </ul>
+
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Euro (€)</p>
+                        <p><strong>Language:</strong> Montenegrin (English is common in tourist areas)</p>
+                        <p><strong>Time Zone:</strong> Central European Time (UTC+1)</p>
+                        <p><strong>Climate:</strong> Mediterranean—warm summers, mild winters</p>
+
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">"Montenegro: Hidden Gems of the Adriatic"</a></li>
+                            <li><a href="#">"Coastal Adventures in Budva"</a></li>
+                            <li><a href="#">"Mediterranean Flavors: Recipes from the Balkans"</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+
+                </div> <!-- End of content-row -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Enhanced Navigation, Back to Top Button, and Testimonials -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
