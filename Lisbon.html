@@ -58,7 +58,7 @@
           "url": "https://www.carltravels.com/images/logo.png"
         }
       },
-      "datePublished": "2024-04-27",
+      "datePublished": "2025-01-01",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://www.carltravels.com/lisbon.html"
@@ -66,26 +66,36 @@
     }
     </script>
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline styles matching the newer pages and two-column layout -->
     <style>
-        /* Ensure images within the main content are responsive */
-        main img.responsive-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto; 
-            padding: 10px 0;
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        /* Responsive Video Container */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
+        /* Responsive video styles */
         .responsive-video {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             padding-top: 25px;
             height: 0;
-            margin-bottom: 20px; /* Some spacing below the video */
+            margin-bottom: 20px;
         }
-
         .responsive-video iframe {
             position: absolute;
             top: 0;
@@ -93,89 +103,95 @@
             width: 100%;
             height: 100%;
         }
-
-        /* Style the header h1 (Carl Travels) */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            loading: lazy;
+        }
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
+            color: #FF6600;
             font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within main */
         main h1 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
         }
         main h1:hover {
             color: #E55B00;
         }
-
-        /* Style all h2 titles within main */
         main h2 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 1.8em;
         }
         main h2:hover {
             color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
             color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
+            font-size: 1.4em;
         }
-
-        /* Responsive typography adjustments */
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
         @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; 
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
-            /* Adjust iframe size for smaller screens */
-            .responsive-video iframe {
+            .sidebar {
                 width: 100%;
-                height: auto;
+                order: 2;
+            }
+            .main-column {
+                order: 1;
             }
         }
-
-        /* Additional Styling for Lists */
-        main ul, main ol {
-            margin-left: 20px;
-            line-height: 1.6;
-        }
-
-        main ul li, main ol li {
-            margin-bottom: 10px;
-        }
-
-        /* Bold Styling for Important Points */
-        main li strong {
-            color: #FF6600;
-        }
-
-        /* Styling for Sections */
+        /* Additional Section Styling */
         .section {
             margin-bottom: 30px;
         }
-
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
         /* Breadcrumb Styling */
         .breadcrumb {
             list-style: none;
@@ -185,152 +201,44 @@
             font-size: 0.9em;
             padding: 10px 0;
         }
-
         .breadcrumb li::after {
             content: ">";
             margin-left: 5px;
         }
-
         .breadcrumb li:last-child::after {
             content: "";
         }
-
         .breadcrumb a {
             color: #FF6600;
             text-decoration: none;
         }
-
         .breadcrumb a:hover {
             text-decoration: underline;
         }
-
-        /* Blockquote Styling */
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #FF6600;
-            padding-left: 15px;
-            margin: 20px 0;
-        }
-
-        blockquote footer {
-            text-align: right;
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* Testimonial Section Styling */
-        .testimonials {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .testimonials h2 {
-            margin-bottom: 15px;
-        }
-
-        /* Video Section Styling */
-        .video-section {
-            margin-bottom: 30px;
-        }
-
-        /* Additional Video Styling */
-        .additional-video {
-            margin-bottom: 30px;
-        }
-
-        /* Follow My Adventures Section */
-        .follow-adventures {
-            margin-top: 30px;
-        }
-
-        .follow-adventures h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-        }
-
-        .follow-adventures .video-container {
-            margin-bottom: 20px;
-        }
-
-        .follow-adventures .video-title {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-
-        /* Arrange Videos in a Row */
-        .video-row {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .video-row .video-container {
-            flex: 1 1 30%; /* Allows three videos per row with flexibility */
-            max-width: 32%;
-        }
-
-        /* Ensure Responsiveness */
-        @media (max-width: 992px) {
-            .video-row .video-container {
-                flex: 1 1 45%;
-                max-width: 45%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .video-row .video-container {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
-
-        /* Hamburger Menu Styling */
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .menu-icon span {
-            width: 25px;
-            height: 3px;
+        /* Footer Styling */
+        footer {
             background-color: #333;
-            transition: all 0.3s ease;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
         }
-
-        /* Responsive Navigation Menu */
-        @media (max-width: 768px) {
-            nav ul.nav-menu {
-                display: none;
-                flex-direction: column;
-                gap: 10px;
-                background-color: #fff;
-                position: absolute;
-                top: 60px;
-                right: 20px;
-                padding: 20px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                border-radius: 5px;
-                z-index: 1000;
-            }
-
-            nav ul.nav-menu.active {
-                display: flex;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
+        .footer-social {
+            margin-top: 10px;
         }
-
-        /* Back to Top Button Styling */
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+        /* Back to Top Button */
         #back-to-top {
             position: fixed;
             bottom: 40px;
@@ -338,17 +246,53 @@
             background-color: #FF6600;
             color: #fff;
             border: none;
-            padding: 10px 15px;
+            padding: 12px 16px;
             border-radius: 50%;
-            font-size: 18px;
+            font-size: 20px;
             cursor: pointer;
             display: none;
             z-index: 1000;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
         }
-
         #back-to-top:hover {
             background-color: #E55B00;
+            opacity: 1;
+        }
+        /* Hamburger Menu */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+            }
+            .menu-icon {
+                display: flex;
+            }
         }
     </style>
 </head>
@@ -395,263 +339,307 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Lisbon</li>
-                    </ol>
-                </nav>
 
-                <!-- Main Title -->
-                <h1>Exploring Lisbon: A Comprehensive Travel Guide</h1>
+                <!-- Two-Column Layout -->
+                <div class="content-row">
 
-                <!-- Responsive Video Embed -->
-                <div class="responsive-video video-section">
-                    <iframe src="https://www.youtube.com/embed/gTuKzbPNMlU" title="Exploring Lisbon: A Vibrant City Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                </div>
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Lisbon, the capital of Portugal, is one of the oldest cities in Europe, with a history stretching back over 2,000 years. It has been a major trading hub, especially during the Age of Discovery when explorers set sail from its shores to discover new lands. Today, Lisbon is a vibrant city that beautifully blends its rich historical heritage with modern attractions and a lively cultural scene.</p>
-                    <p><strong>Overview:</strong> Nestled along the Atlantic coast, Lisbon offers stunning views from its seven hills, picturesque neighborhoods with narrow streets, and a welcoming atmosphere that makes it a favorite destination for travelers from around the world.</p>
-                </section>
+                        <!-- Breadcrumb Navigation -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="destinations.html">Destinations</a></li>
+                                <li aria-current="page">Lisbon</li>
+                            </ol>
+                        </nav>
 
-                <!-- Highlights -->
-                <section class="section">
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li>Belém Tower: A historic fortress with panoramic views of the Tagus River.</li>
-                        <li>Jerónimos Monastery: A masterpiece of Manueline architecture and a UNESCO World Heritage site.</li>
-                        <li>São Jorge Castle: Perched atop one of Lisbon's hills, offering breathtaking cityscapes.</li>
-                        <li>Alfama District: The oldest neighborhood in Lisbon, known for its narrow streets and traditional Fado music.</li>
-                        <li>Lisbon Oceanarium: One of the largest indoor aquariums in Europe, home to a diverse range of marine life.</li>
-                    </ul>
-                </section>
+                        <!-- Page Title -->
+                        <h1>Exploring Lisbon: A Comprehensive Travel Guide</h1>
 
-                <!-- Top Attractions -->
-                <section class="section">
-                    <h2>Top Attractions</h2>
-                    
-                    <!-- Belém Tower -->
-                    <h3>Belém Tower</h3>
-                    <p>The Belém Tower is an iconic symbol of Lisbon's maritime heritage. Built in the early 16th century, this fortified tower served as a point of embarkation and disembarkation for Portuguese explorers during the Age of Discovery. Visitors can explore its historic rooms and enjoy stunning views from the top.</p>
-                    
-                   
-                    
-                    <!-- Jerónimos Monastery -->
-                    <h3>Jerónimos Monastery</h3>
-                    <p>Jerónimos Monastery is a masterpiece of Manueline architecture and a UNESCO World Heritage site. Founded in 1501, it commemorates Vasco da Gama's successful voyage to India. The monastery houses the tombs of prominent Portuguese figures and offers visitors a glimpse into the country's rich history and architectural prowess.</p>
-                    
-                   
-                    
-                    <!-- São Jorge Castle -->
-                    <h3>São Jorge Castle</h3>
-                    <p>São Jorge Castle is one of Lisbon's most prominent landmarks, situated atop one of the city's seven hills. This Moorish castle offers panoramic views of Lisbon, the Tagus River, and the surrounding areas. Visitors can explore its ancient walls, towers, and gardens while immersing themselves in the city's history.</p>
-                    
-                    
-                    
-                    <!-- Alfama District -->
-                    <h3>Alfama District</h3>
-                    <p>The Alfama District is Lisbon's oldest neighborhood, characterized by its labyrinthine streets, colorful houses, and vibrant Fado music scene. Exploring Alfama offers a unique blend of history, culture, and local life, making it a must-visit area for any traveler to Lisbon.</p>
-                    
-                   
-                    
-                    <!-- Lisbon Oceanarium -->
-                    <h3>Lisbon Oceanarium</h3>
-                    <p>Lisbon Oceanarium is one of the largest indoor aquariums in Europe, home to a vast array of marine species from around the world. The oceanarium's innovative design replicates different marine habitats, providing visitors with an immersive and educational experience.</p>
-                    
-                   
-                </section>
+                        <!-- Video Section -->
+                        <div class="responsive-video video-section">
+                            <iframe src="https://www.youtube.com/embed/gTuKzbPNMlU" 
+                                    title="Exploring Lisbon: A Vibrant City Guide" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen 
+                                    loading="lazy">
+                            </iframe>
+                        </div>
 
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Lisbon offers a variety of activities for adventure enthusiasts and those seeking unique experiences:</p>
-                    <ul>
-                        <li><strong>Surfing:</strong> Head to Costa da Caparica or Carcavelos Beach for surfing lessons and enjoy the Atlantic waves.</li>
-                        <li><strong>Hiking:</strong> Explore trails in Sintra-Cascais Natural Park, offering stunning coastal views and lush forests.</li>
-                        <li><strong>Bike Tours:</strong> Navigate Lisbon's diverse neighborhoods and scenic routes on guided bike tours.</li>
-                        <li><strong>Kayaking:</strong> Paddle along the Tagus River and explore Lisbon from a different perspective.</li>
-                        <li><strong>Wine Tours:</strong> Discover Portugal's renowned wines with guided tours and tastings at local wineries.</li>
-                        <li><strong>Hot Air Ballooning:</strong> Experience a serene balloon ride over Lisbon and the surrounding landscapes for breathtaking aerial views.</li>
-                        <li><strong>Climbing:</strong> Engage in indoor climbing at local gyms or explore outdoor climbing spots in nearby regions.</li>
-                        <li><strong>Boat Cruises:</strong> Take a scenic cruise along the Tagus River to admire Lisbon's skyline and historic landmarks.</li>
-                        <li><strong>Street Art Tours:</strong> Explore Lisbon's vibrant street art scene with guided tours highlighting the best murals and graffiti.</li>
-                        <li><strong>Escape Rooms:</strong> Challenge yourself with themed escape room adventures across the city.</li>
-                    </ul>
-                    <p>One of the most exhilarating activities is taking a surfing lesson at Costa da Caparica, where you can ride the waves of the Atlantic Ocean while enjoying the beach's vibrant atmosphere.</p>
-                </section>
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Lisbon, the capital of Portugal, is one of the oldest cities in Europe, with a history stretching back over 2,000 years. It has been a major trading hub, especially during the Age of Discovery when explorers set sail from its shores to discover new lands. Today, Lisbon is a vibrant city that beautifully blends its rich historical heritage with modern attractions and a lively cultural scene.</p>
+                            <p><strong>Overview:</strong> Nestled along the Atlantic coast, Lisbon offers stunning views from its seven hills, picturesque neighborhoods with narrow streets, and a welcoming atmosphere that makes it a favorite destination for travelers from around the world.</p>
+                        </section>
 
-                <!-- Cultural Immersion -->
-                <section class="section">
-                    <h2>Cultural Immersion</h2>
-                    <p>Immerse yourself in Lisbon's rich cultural scene by exploring its museums, galleries, theaters, and local events. Engage with the community and gain insights into the city's diverse heritage:</p>
-                    <ul>
-                        <li><strong>Fado Performances:</strong> Experience traditional Portuguese Fado music at venues like Clube de Fado and Mesa de Frades.</li>
-                        <li><strong>Museu Nacional de Arte Antiga:</strong> Discover Portuguese and European art from the Middle Ages to the early 19th century.</li>
-                        <li><strong>Local Festivals:</strong> Participate in events like Santo António Festival, celebrating Lisbon's patron saint with parades, music, and street parties.</li>
-                        <li><strong>Cooking Classes:</strong> Learn to prepare traditional Portuguese dishes with local chefs in hands-on cooking workshops.</li>
-                        <li><strong>Street Markets:</strong> Explore markets like Mercado da Ribeira (Time Out Market) for fresh produce, local crafts, and vibrant street life.</li>
-                        <li><strong>Theater and Performances:</strong> Enjoy performances at theaters such as Teatro Nacional de São Carlos and Teatro da Trindade.</li>
-                        <li><strong>Art Galleries:</strong> Discover contemporary and traditional art at galleries scattered throughout Lisbon's art districts.</li>
-                        <li><strong>Historic Walks:</strong> Take guided tours through Lisbon's historic neighborhoods to learn about the city's transformation over the centuries.</li>
-                        <li><strong>Language Exchange Meetups:</strong> Engage with locals and other travelers through language exchange events to practice Portuguese and make new friends.</li>
-                        <li><strong>Bookstores and Libraries:</strong> Explore Lisbon's literary scene at places like Bertrand Bookstore, the oldest operating bookstore in the world.</li>
-                    </ul>
-                    <p>Attending a live Fado performance is a fantastic way to experience Lisbon's traditional music and connect with the city's cultural roots.</p>
-                </section>
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li>Belém Tower: A historic fortress with panoramic views of the Tagus River.</li>
+                                <li>Jerónimos Monastery: A masterpiece of Manueline architecture and a UNESCO World Heritage site.</li>
+                                <li>São Jorge Castle: Perched atop one of Lisbon's hills, offering breathtaking cityscapes.</li>
+                                <li>Alfama District: The oldest neighborhood in Lisbon, known for its narrow streets and traditional Fado music.</li>
+                                <li>Lisbon Oceanarium: One of the largest indoor aquariums in Europe, home to a diverse range of marine life.</li>
+                            </ul>
+                        </section>
 
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Lisbon's culinary scene is a delightful blend of traditional Portuguese flavors and modern gastronomic innovations. From hearty local dishes to international cuisine, the city offers a diverse array of dining options to satisfy every palate:</p>
-                    <ul>
-                        <li><strong>Pastéis de Nata:</strong> Indulge in Lisbon's famous custard tarts at iconic bakeries like Pastéis de Belém.</li>
-                        <li><strong>Bacalhau:</strong> Enjoy various codfish dishes, a staple in Portuguese cuisine, at local restaurants.</li>
-                        <li><strong>Seafood:</strong> Savor fresh seafood like grilled sardines, octopus, and shrimp at riverside eateries.</li>
-                        <li><strong>Francesinha:</strong> A hearty sandwich layered with meats, covered in melted cheese, and smothered in a rich tomato and beer sauce.</li>
-                        <li><strong>Tapas and Petiscos:</strong> Savor small plates of traditional Portuguese appetizers at cozy tapas bars.</li>
-                        <li><strong>Local Markets:</strong> Visit Mercado da Ribeira (Time Out Market) for a variety of fresh produce, artisanal products, and local delicacies.</li>
-                        <li><strong>Fine Dining:</strong> Experience gourmet cuisine at top-rated restaurants like Belcanto and Alma.</li>
-                        <li><strong>Vegan and Vegetarian Options:</strong> A growing number of restaurants offer extensive vegan and vegetarian menus, catering to diverse dietary preferences.</li>
-                        <li><strong>Pastry Shops and Bakeries:</strong> Delight in traditional Portuguese pastries like pastéis de nata (custard tarts) at renowned bakeries.</li>
-                        <li><strong>International Cuisine:</strong> Discover a variety of international flavors, including Italian, Japanese, Middle Eastern, and more, spread throughout the city.</li>
-                    </ul>
-                    <p>I highly recommend dining at Time Out Market for an authentic Lisbon food experience. With a wide selection of stalls offering everything from traditional Portuguese dishes to international cuisine, it's a food lover's paradise.</p>
-                </section>
+                        <!-- Top Attractions -->
+                        <section class="section">
+                            <h2>Top Attractions</h2>
+                            
+                            <!-- Belém Tower -->
+                            <h3>Belém Tower</h3>
+                            <p>The Belém Tower is an iconic symbol of Lisbon's maritime heritage. Built in the early 16th century, this fortified tower served as a point of embarkation and disembarkation for Portuguese explorers during the Age of Discovery. Visitors can explore its historic rooms and enjoy stunning views from the top.</p>
 
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3 id="transportation">Transportation</h3>
-                    <p>Lisbon offers a variety of transportation options to help you navigate the city and explore its surroundings:</p>
-                    <ul>
-                        <li><strong>Metro:</strong> Lisbon's metro system is efficient and connects key areas of the city, including the airport, city center, and suburbs.</li>
-                        <li><strong>Trams:</strong> Historic trams operate in Lisbon, offering scenic routes through the city.</li>
-                        <li><strong>Buses:</strong> Extensive bus network covering all parts of Lisbon and nearby regions.</li>
-                        <li><strong>Taxis:</strong> Easily available throughout the city with fares starting around €3 plus €0.50 per kilometer.</li>
-                        <li><strong>Ride-Sharing:</strong> Services like Uber and Bolt operate in Lisbon for convenient point-to-point travel.</li>
-                        <li><strong>Bike Rentals:</strong> Explore Lisbon on two wheels with bike rental services available at various locations.</li>
-                        <li><strong>Walking:</strong> Many of Lisbon's attractions are within walking distance of each other, especially in the historic center.</li>
-                        <li><strong>Ferries:</strong> Connect Lisbon to nearby coastal towns and the Tagus River islands.</li>
-                        <li><strong>Car Rentals:</strong> Numerous rental agencies offer cars for self-guided exploration outside the city.</li>
-                        <li><strong>Funiculars:</strong> Use the Elevador da Glória or Elevador da Bica to easily navigate Lisbon's hilly terrain.</li>
-                    </ul>
-                    
-                    <h3 id="ways-to-get-from-airport">Ways to Get from Airport to City</h3>
-                    <p>If you're arriving at Humberto Delgado Airport (LIS), here are the main transportation options to get to the city center:</p>
-                    <ul>
-                        <li><strong>Metro:</strong> Line Red connects the airport directly to Lisbon's city center. Cost: Approximately €1.50 one-way.</li>
-                        <li><strong>Bus Services:</strong> Various bus lines operate between the airport and different parts of Lisbon. Cost: Approximately €2.00–€3.00 one-way.</li>
-                        <li><strong>Taxis:</strong> Available 24/7 with fares starting around €10, depending on your destination.</li>
-                        <li><strong>Ride-Sharing:</strong> Services like Uber and Bolt are operational and provide a cost-effective way to reach your accommodation.</li>
-                        <li><strong>Car Rentals:</strong> Rent a car directly from the airport for flexibility in your travels. Costs vary based on the vehicle and duration.</li>
-                        <li><strong>Airport Shuttle:</strong> Pre-booked shuttle services offer door-to-door convenience. Cost: Approximately €15–€25 one-way.</li>
-                    </ul>
-                    
-                    <h3 id="accommodation">Accommodation</h3>
-                    <p>Lisbon offers a wide range of accommodations to suit all budgets and preferences. Popular areas to stay include:</p>
-                    <ul>
-                        <li><strong>Baixa:</strong> Central business district offering easy access to shopping, dining, and nightlife.</li>
-                        <li><strong>Alfama:</strong> Historic neighborhood known for its narrow streets, traditional Fado houses, and charming atmosphere.</li>
-                        <li><strong>Bairro Alto:</strong> Vibrant district famous for its nightlife, bars, and restaurants.</li>
-                        <li><strong>Chiado:</strong> Elegant area with upscale shops, theaters, and cultural venues.</li>
-                        <li><strong>Belém:</strong> Riverside district home to many of Lisbon's historical landmarks and museums.</li>
-                        <li><strong>Foz do Douro:</strong> Upscale coastal area with beautiful beaches, parks, and luxury accommodations.</li>
-                        <li><strong>Luxury Hotels:</strong> High-end options offering premium amenities and personalized services.</li>
-                        <li><strong>Budget Hostels:</strong> Affordable accommodations for backpackers and budget travelers.</li>
-                        <li><strong>Bed & Breakfasts:</strong> Cozy and personalized stays with a local touch.</li>
-                        <li><strong>Holiday Apartments:</strong> Fully furnished apartments ideal for longer stays or families.</li>
-                        <li><strong>Boutique Hotels:</strong> Stylish accommodations offering unique designs and personalized experiences.</li>
-                    </ul>
-                    <p>I stayed at a mid-range boutique hotel in the Alfama District, which provided comfortable amenities and easy access to all major attractions and dining options.</p>
-                    
-                    <h3 id="budgeting">Budgeting</h3>
-                    <p>Lisbon is relatively affordable compared to other major European capitals. However, costs can vary depending on your lifestyle and preferences. A comfortable daily budget ranges from €80 to €200 ($90-$225 AUD), covering accommodation, meals, transportation, and activities.</p>
-                </section>
+                            <!-- Jerónimos Monastery -->
+                            <h3>Jerónimos Monastery</h3>
+                            <p>Jerónimos Monastery is a masterpiece of Manueline architecture and a UNESCO World Heritage site. Founded in 1501, it commemorates Vasco da Gama's successful voyage to India. The monastery houses the tombs of prominent Portuguese figures and offers visitors a glimpse into the country's rich history and architectural prowess.</p>
 
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3 id="dos-and-donts">Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Book accommodations and popular attractions in advance, especially during peak seasons.</li>
-                        <li><strong>Don’t:</strong> Carry large amounts of cash; use credit/debit cards and keep valuables secure.</li>
-                        <li><strong>Do:</strong> Dress in layers to accommodate changing weather conditions.</li>
-                        <li><strong>Don’t:</strong> Engage in reckless behavior during adventure activities; prioritize safety.</li>
-                        <li><strong>Do:</strong> Respect local customs and environment; follow the "Leave No Trace" principles when exploring nature.</li>
-                        <li><strong>Don’t:</strong> Litter in public spaces; help keep Lisbon clean and beautiful.</li>
-                        <li><strong>Do:</strong> Use sunscreen and stay hydrated, especially during outdoor activities.</li>
-                        <li><strong>Don’t:</strong> Underestimate the cost of certain activities and plan your budget accordingly.</li>
-                        <li><strong>Do:</strong> Learn a few basic phrases in Portuguese to enhance your interactions.</li>
-                        <li><strong>Don’t:</strong> Venture into remote areas without proper guidance or equipment.</li>
-                    </ul>
-                    
-                    <h3 id="packing-list">Packing List</h3>
-                    <ul>
-                        <li>Lightweight, breathable clothing suitable for varying weather.</li>
-                        <li>Warm layers for chilly evenings and cooler months.</li>
-                        <li>Comfortable walking shoes and hiking boots for outdoor activities.</li>
-                        <li>Swimwear and beach essentials for boat cruises and swimming.</li>
-                        <li>Insect repellent and sunscreen to protect against bugs and sunburn.</li>
-                        <li>Reusable water bottle to stay hydrated.</li>
-                        <li>Power adapter for European plugs (Type C or F).</li>
-                        <li>Camera or smartphone for capturing stunning landscapes and moments.</li>
-                        <li>Travel insurance documents for peace of mind.</li>
-                        <li>Basic first-aid kit for minor injuries.</li>
-                        <li>Portable charger for electronic devices.</li>
-                        <li>Rain jacket or umbrella for unexpected weather changes.</li>
-                    </ul>
-                    
-                    <h3 id="local-etiquette">Local Etiquette</h3>
-                    <p>Portuguese people are known for their friendliness, hospitality, and respect for traditions. Here are some cultural tips to enhance your stay:</p>
-                    <ul>
-                        <li><strong>Greeting:</strong> A simple "Olá" (Hello) or "Bom dia" (Good morning) is appreciated.</li>
-                        <li><strong>Respect Privacy:</strong> Portuguese value personal space and privacy. Be mindful in social interactions.</li>
-                        <li><strong>Queuing:</strong> Always wait your turn in lines; jumping queues is frowned upon.</li>
-                        <li><strong>Language:</strong> While many Portuguese speak English, learning a few basic Portuguese phrases can enhance your interactions.</li>
-                        <li><strong>Public Behavior:</strong> Keep noise levels reasonable, especially in residential areas.</li>
-                        <li><strong>Tipping:</strong> Not mandatory, but rounding up the bill or leaving a small tip (5-10%) for good service is appreciated.</li>
-                        <li><strong>Recycling:</strong> Portugal has recycling systems in place. Follow local guidelines for waste disposal.</li>
-                        <li><strong>Dress Code:</strong> Casual attire is acceptable for most places, but dress appropriately when visiting religious or formal sites.</li>
-                        <li><strong>Table Manners:</strong> Keep your hands visible on the table and wait for everyone to be served before starting your meal.</li>
-                        <li><strong>Personal Responsibility:</strong> Take responsibility for your actions and respect local laws and regulations.</li>
-                    </ul>
-                </section>
+                            <!-- São Jorge Castle -->
+                            <h3>São Jorge Castle</h3>
+                            <p>São Jorge Castle is one of Lisbon's most prominent landmarks, situated atop one of the city's seven hills. This Moorish castle offers panoramic views of Lisbon, the Tagus River, and the surrounding areas. Visitors can explore its ancient walls, towers, and gardens while immersing themselves in the city's history.</p>
 
-                <!-- Visitor Testimonials -->
-                <section class="section testimonials">
-                    <h2>Visitor Testimonials</h2>
-                    <blockquote>
-                        "Lisbon is a city of stunning architecture and vibrant culture. From the historic trams to the lively Fado music, every corner has something unique to offer."
-                        <footer>- Maria Silva</footer>
-                    </blockquote>
-                    <blockquote>
-                        "Exploring Lisbon's narrow streets and enjoying the panoramic views from São Jorge Castle made my trip truly unforgettable. Highly recommend visiting during the spring!"
-                        <footer>- Pedro Santos</footer>
-                    </blockquote>
-                </section>
+                            <!-- Alfama District -->
+                            <h3>Alfama District</h3>
+                            <p>The Alfama District is Lisbon's oldest neighborhood, characterized by its labyrinthine streets, colorful houses, and vibrant Fado music scene. Exploring Alfama offers a unique blend of history, culture, and local life, making it a must-visit area for any traveler to Lisbon.</p>
 
-                <!-- Follow My Adventures -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                            <!-- Lisbon Oceanarium -->
+                            <h3>Lisbon Oceanarium</h3>
+                            <p>Lisbon Oceanarium is one of the largest indoor aquariums in Europe, home to a vast array of marine species from around the world. The oceanarium's innovative design replicates different marine habitats, providing visitors with an immersive and educational experience.</p>
+                        </section>
+
+                        <!-- Adventure and Activities -->
+                        <section class="section">
+                            <h2>Adventure and Activities</h2>
+                            <p>Lisbon offers a variety of activities for adventure enthusiasts and those seeking unique experiences:</p>
+                            <ul>
+                                <li><strong>Surfing:</strong> Head to Costa da Caparica or Carcavelos Beach for surfing lessons and enjoy the Atlantic waves.</li>
+                                <li><strong>Hiking:</strong> Explore trails in Sintra-Cascais Natural Park, offering stunning coastal views and lush forests.</li>
+                                <li><strong>Bike Tours:</strong> Navigate Lisbon's diverse neighborhoods and scenic routes on guided bike tours.</li>
+                                <li><strong>Kayaking:</strong> Paddle along the Tagus River and explore Lisbon from a different perspective.</li>
+                                <li><strong>Wine Tours:</strong> Discover Portugal's renowned wines with guided tours and tastings at local wineries.</li>
+                                <li><strong>Hot Air Ballooning:</strong> Experience a serene balloon ride over Lisbon and the surrounding landscapes for breathtaking aerial views.</li>
+                                <li><strong>Climbing:</strong> Engage in indoor climbing at local gyms or explore outdoor climbing spots in nearby regions.</li>
+                                <li><strong>Boat Cruises:</strong> Take a scenic cruise along the Tagus River to admire Lisbon's skyline and historic landmarks.</li>
+                                <li><strong>Street Art Tours:</strong> Explore Lisbon's vibrant street art scene with guided tours highlighting the best murals and graffiti.</li>
+                                <li><strong>Escape Rooms:</strong> Challenge yourself with themed escape room adventures across the city.</li>
+                            </ul>
+                            <p>One of the most exhilarating activities is taking a surfing lesson at Costa da Caparica, where you can ride the waves of the Atlantic Ocean while enjoying the beach's vibrant atmosphere.</p>
+                        </section>
+
+                        <!-- Cultural Immersion -->
+                        <section class="section">
+                            <h2>Cultural Immersion</h2>
+                            <p>Immerse yourself in Lisbon's rich cultural scene by exploring its museums, galleries, theaters, and local events. Engage with the community and gain insights into the city's diverse heritage:</p>
+                            <ul>
+                                <li><strong>Fado Performances:</strong> Experience traditional Portuguese Fado music at venues like Clube de Fado and Mesa de Frades.</li>
+                                <li><strong>Museu Nacional de Arte Antiga:</strong> Discover Portuguese and European art from the Middle Ages to the early 19th century.</li>
+                                <li><strong>Local Festivals:</strong> Participate in events like Santo António Festival, celebrating Lisbon's patron saint with parades, music, and street parties.</li>
+                                <li><strong>Cooking Classes:</strong> Learn to prepare traditional Portuguese dishes with local chefs in hands-on cooking workshops.</li>
+                                <li><strong>Street Markets:</strong> Explore markets like Mercado da Ribeira (Time Out Market) for fresh produce, local crafts, and vibrant street life.</li>
+                                <li><strong>Theater and Performances:</strong> Enjoy performances at theaters such as Teatro Nacional de São Carlos and Teatro da Trindade.</li>
+                                <li><strong>Art Galleries:</strong> Discover contemporary and traditional art at galleries scattered throughout Lisbon's art districts.</li>
+                                <li><strong>Historic Walks:</strong> Take guided tours through Lisbon's historic neighborhoods to learn about the city's transformation over the centuries.</li>
+                                <li><strong>Language Exchange Meetups:</strong> Engage with locals and other travelers through language exchange events to practice Portuguese and make new friends.</li>
+                                <li><strong>Bookstores and Libraries:</strong> Explore Lisbon's literary scene at places like Bertrand Bookstore, the oldest operating bookstore in the world.</li>
+                            </ul>
+                            <p>Attending a live Fado performance is a fantastic way to experience Lisbon's traditional music and connect with the city's cultural roots.</p>
+                        </section>
+
+                        <!-- Food and Cuisine -->
+                        <section class="section">
+                            <h2>Food and Cuisine</h2>
+                            <p>Lisbon's culinary scene is a delightful blend of traditional Portuguese flavors and modern gastronomic innovations. From hearty local dishes to international cuisine, the city offers a diverse array of dining options to satisfy every palate:</p>
+                            <ul>
+                                <li><strong>Pastéis de Nata:</strong> Indulge in Lisbon's famous custard tarts at iconic bakeries like Pastéis de Belém.</li>
+                                <li><strong>Bacalhau:</strong> Enjoy various codfish dishes, a staple in Portuguese cuisine, at local restaurants.</li>
+                                <li><strong>Seafood:</strong> Savor fresh seafood like grilled sardines, octopus, and shrimp at riverside eateries.</li>
+                                <li><strong>Francesinha:</strong> A hearty sandwich layered with meats, covered in melted cheese, and smothered in a rich tomato and beer sauce.</li>
+                                <li><strong>Tapas and Petiscos:</strong> Savor small plates of traditional Portuguese appetizers at cozy tapas bars.</li>
+                                <li><strong>Local Markets:</strong> Visit Mercado da Ribeira (Time Out Market) for a variety of fresh produce, artisanal products, and local delicacies.</li>
+                                <li><strong>Fine Dining:</strong> Experience gourmet cuisine at top-rated restaurants like Belcanto and Alma.</li>
+                                <li><strong>Vegan and Vegetarian Options:</strong> A growing number of restaurants offer extensive vegan and vegetarian menus, catering to diverse dietary preferences.</li>
+                                <li><strong>Pastry Shops and Bakeries:</strong> Delight in traditional Portuguese pastries like pastéis de nata (custard tarts) at renowned bakeries.</li>
+                                <li><strong>International Cuisine:</strong> Discover a variety of international flavors, including Italian, Japanese, Middle Eastern, and more, spread throughout the city.</li>
+                            </ul>
+                            <p>I highly recommend dining at Time Out Market for an authentic Lisbon food experience. With a wide selection of stalls offering everything from traditional Portuguese dishes to international cuisine, it's a food lover's paradise.</p>
+                        </section>
+
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            
+                            <h3 id="transportation">Transportation</h3>
+                            <p>Lisbon offers a variety of transportation options to help you navigate the city and explore its surroundings:</p>
+                            <ul>
+                                <li><strong>Metro:</strong> Lisbon's metro system is efficient and connects key areas of the city, including the airport, city center, and suburbs.</li>
+                                <li><strong>Trams:</strong> Historic trams operate in Lisbon, offering scenic routes through the city.</li>
+                                <li><strong>Buses:</strong> Extensive bus network covering all parts of Lisbon and nearby regions.</li>
+                                <li><strong>Taxis:</strong> Easily available throughout the city with fares starting around €3 plus €0.50 per kilometer.</li>
+                                <li><strong>Ride-Sharing:</strong> Services like Uber and Bolt operate in Lisbon for convenient point-to-point travel.</li>
+                                <li><strong>Bike Rentals:</strong> Explore Lisbon on two wheels with bike rental services available at various locations.</li>
+                                <li><strong>Walking:</strong> Many of Lisbon's attractions are within walking distance of each other, especially in the historic center.</li>
+                                <li><strong>Ferries:</strong> Connect Lisbon to nearby coastal towns and the Tagus River islands.</li>
+                                <li><strong>Car Rentals:</strong> Numerous rental agencies offer cars for self-guided exploration outside the city.</li>
+                                <li><strong>Funiculars:</strong> Use the Elevador da Glória or Elevador da Bica to easily navigate Lisbon's hilly terrain.</li>
+                            </ul>
+                            
+                            <h3 id="ways-to-get-from-airport">Ways to Get from Airport to City</h3>
+                            <p>If you're arriving at Humberto Delgado Airport (LIS), here are the main transportation options to get to the city center:</p>
+                            <ul>
+                                <li><strong>Metro:</strong> Line Red connects the airport directly to Lisbon's city center. Cost: Approximately €1.50 one-way.</li>
+                                <li><strong>Bus Services:</strong> Various bus lines operate between the airport and different parts of Lisbon. Cost: Approximately €2.00–€3.00 one-way.</li>
+                                <li><strong>Taxis:</strong> Available 24/7 with fares starting around €10, depending on your destination.</li>
+                                <li><strong>Ride-Sharing:</strong> Services like Uber and Bolt are operational and provide a cost-effective way to reach your accommodation.</li>
+                                <li><strong>Car Rentals:</strong> Rent a car directly from the airport for flexibility in your travels. Costs vary based on the vehicle and duration.</li>
+                                <li><strong>Airport Shuttle:</strong> Pre-booked shuttle services offer door-to-door convenience. Cost: Approximately €15–€25 one-way.</li>
+                            </ul>
+                            
+                            <h3 id="accommodation">Accommodation</h3>
+                            <p>Lisbon offers a wide range of accommodations to suit all budgets and preferences. Popular areas to stay include:</p>
+                            <ul>
+                                <li><strong>Baixa:</strong> Central business district offering easy access to shopping, dining, and nightlife.</li>
+                                <li><strong>Alfama:</strong> Historic neighborhood known for its narrow streets, traditional Fado houses, and charming atmosphere.</li>
+                                <li><strong>Bairro Alto:</strong> Vibrant district famous for its nightlife, bars, and restaurants.</li>
+                                <li><strong>Chiado:</strong> Elegant area with upscale shops, theaters, and cultural venues.</li>
+                                <li><strong>Belém:</strong> Riverside district home to many of Lisbon's historical landmarks and museums.</li>
+                                <li><strong>Foz do Douro:</strong> Upscale coastal area with beautiful beaches, parks, and luxury accommodations.</li>
+                                <li><strong>Luxury Hotels:</strong> High-end options offering premium amenities and personalized services.</li>
+                                <li><strong>Budget Hostels:</strong> Affordable accommodations for backpackers and budget travelers.</li>
+                                <li><strong>Bed & Breakfasts:</strong> Cozy and personalized stays with a local touch.</li>
+                                <li><strong>Holiday Apartments:</strong> Fully furnished apartments ideal for longer stays or families.</li>
+                                <li><strong>Boutique Hotels:</strong> Stylish accommodations offering unique designs and personalized experiences.</li>
+                            </ul>
+                            <p>I stayed at a mid-range boutique hotel in the Alfama District, which provided comfortable amenities and easy access to all major attractions and dining options.</p>
+                            
+                            <h3 id="budgeting">Budgeting</h3>
+                            <p>Lisbon is relatively affordable compared to other major European capitals. However, costs can vary depending on your lifestyle and preferences. A comfortable daily budget ranges from €80 to €200 ($90-$225 AUD), covering accommodation, meals, transportation, and activities.</p>
+                        </section>
+
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <h3 id="dos-and-donts">Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Book accommodations and popular attractions in advance, especially during peak seasons.</li>
+                                <li><strong>Don’t:</strong> Carry large amounts of cash; use credit/debit cards and keep valuables secure.</li>
+                                <li><strong>Do:</strong> Dress in layers to accommodate changing weather conditions.</li>
+                                <li><strong>Don’t:</strong> Engage in reckless behavior during adventure activities; prioritize safety.</li>
+                                <li><strong>Do:</strong> Respect local customs and environment; follow the "Leave No Trace" principles when exploring nature.</li>
+                                <li><strong>Don’t:</strong> Litter in public spaces; help keep Lisbon clean and beautiful.</li>
+                                <li><strong>Do:</strong> Use sunscreen and stay hydrated, especially during outdoor activities.</li>
+                                <li><strong>Don’t:</strong> Underestimate the cost of certain activities and plan your budget accordingly.</li>
+                                <li><strong>Do:</strong> Learn a few basic phrases in Portuguese to enhance your interactions.</li>
+                                <li><strong>Don’t:</strong> Venture into remote areas without proper guidance or equipment.</li>
+                            </ul>
+                            
+                            <h3 id="packing-list">Packing List</h3>
+                            <ul>
+                                <li>Lightweight, breathable clothing suitable for varying weather.</li>
+                                <li>Warm layers for chilly evenings and cooler months.</li>
+                                <li>Comfortable walking shoes and hiking boots for outdoor activities.</li>
+                                <li>Swimwear and beach essentials for boat cruises and swimming.</li>
+                                <li>Insect repellent and sunscreen to protect against bugs and sunburn.</li>
+                                <li>Reusable water bottle to stay hydrated.</li>
+                                <li>Power adapter for European plugs (Type C or F).</li>
+                                <li>Camera or smartphone for capturing stunning landscapes and moments.</li>
+                                <li>Travel insurance documents for peace of mind.</li>
+                                <li>Basic first-aid kit for minor injuries.</li>
+                                <li>Portable charger for electronic devices.</li>
+                                <li>Rain jacket or umbrella for unexpected weather changes.</li>
+                            </ul>
+                            
+                            <h3 id="local-etiquette">Local Etiquette</h3>
+                            <p>Portuguese people are known for their friendliness, hospitality, and respect for traditions. Here are some cultural tips to enhance your stay:</p>
+                            <ul>
+                                <li><strong>Greeting:</strong> A simple "Olá" (Hello) or "Bom dia" (Good morning) is appreciated.</li>
+                                <li><strong>Respect Privacy:</strong> Portuguese value personal space and privacy. Be mindful in social interactions.</li>
+                                <li><strong>Queuing:</strong> Always wait your turn in lines; jumping queues is frowned upon.</li>
+                                <li><strong>Language:</strong> While many Portuguese speak English, learning a few basic Portuguese phrases can enhance your interactions.</li>
+                                <li><strong>Public Behavior:</strong> Keep noise levels reasonable, especially in residential areas.</li>
+                                <li><strong>Tipping:</strong> Not mandatory, but rounding up the bill or leaving a small tip (5-10%) for good service is appreciated.</li>
+                                <li><strong>Recycling:</strong> Portugal has recycling systems in place. Follow local guidelines for waste disposal.</li>
+                                <li><strong>Dress Code:</strong> Casual attire is acceptable for most places, but dress appropriately when visiting religious or formal sites.</li>
+                                <li><strong>Table Manners:</strong> Keep your hands visible on the table and wait for everyone to be served before starting your meal.</li>
+                                <li><strong>Personal Responsibility:</strong> Take responsibility for your actions and respect local laws and regulations.</li>
+                            </ul>
+                        </section>
+
+                        <!-- Visitor Testimonials -->
+                        <section class="section testimonials">
+                            <h2>Visitor Testimonials</h2>
+                            <blockquote>
+                                "Lisbon is a city of stunning architecture and vibrant culture. From the historic trams to the lively Fado music, every corner has something unique to offer."
+                                <footer>- Maria Silva</footer>
+                            </blockquote>
+                            <blockquote>
+                                "Exploring Lisbon's narrow streets and enjoying the panoramic views from São Jorge Castle made my trip truly unforgettable. Highly recommend visiting during the spring!"
+                                <footer>- Pedro Santos</footer>
+                            </blockquote>
+                        </section>
+
+                        <!-- Follow My Adventures -->
+                        <section class="section follow-adventures">
+                            <h2>Follow My Adventures</h2>
+                            <p>Stay connected and follow my journey through the links below:</p>
+                            <ul class="follow-links">
+                                <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                                <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                                <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                            </ul>
+                        </section>
+
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Lisbon Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Lisbon Tourism Site</a></li>
+                            <li><a href="#">Metro Lisbon Information</a></li>
+                            <li><a href="#">Top Fado Music Venues</a></li>
+                            <li><a href="#">Local Events & Festivals</a></li>
+                        </ul>
+
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Euro (€)</p>
+                        <p><strong>Language:</strong> Portuguese (many speak English)</p>
+                        <p><strong>Time Zone:</strong> WET/WEST (UTC+0/+1)</p>
+                        <p><strong>Climate:</strong> Mild, but can be rainy; pack layers</p>
+
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Lisbon: City of Explorers”</a></li>
+                            <li><a href="#">“Portuguese Cuisine: A Journey”</a></li>
+                            <li><a href="#">“Fado and the Soul of Lisbon”</a></li>
+                        </ul>
+
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </aside> <!-- End of Sidebar -->
+
+                </div> <!-- End of content-row -->
+
             </div>
         </section>
     </main>
@@ -662,7 +650,7 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -677,32 +665,28 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Hamburger Menu and Back to Top Button -->
+    <!-- JavaScript for Enhanced Navigation, Back to Top Button, and More -->
     <script>
-        // Toggle navigation menu on hamburger icon click
+        // Toggle navigation menu
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.querySelector('nav ul.nav-menu');
-
         menuToggle.addEventListener('change', () => {
             navMenu.classList.toggle('active');
         });
 
-        // Back to Top Button functionality
+        // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling down 300px
+            if (window.scrollY > 300) {
                 backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
             } else {
                 backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
             }
         });
-
         backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
