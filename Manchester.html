@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester – Carl Travels: Your Travel Guide</title>
 
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Explore Manchester, England's vibrant city known for its rich industrial heritage, dynamic cultural scene, and iconic music history.">
-    <meta name="keywords" content="Manchester, England, Travel, Music, Culture, History, Industrial Heritage, Football">
-    <meta name="author" content="Carl Tomich">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Discover Manchester, England's cultural powerhouse with a legendary music scene and rich industrial heritage. Join Carl for a personal glimpse into this dynamic city.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Manchester, Carl Travels, England, Travel Guide, Music Scene, Industrial Heritage, Football, Culture">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Exploring Manchester: A Comprehensive Travel Guide - Carl Travels">
-    <meta property="og:description" content="Discover Manchester's industrial heritage, vibrant cultural scene, and iconic music history in this comprehensive travel guide.">
-    <meta property="og:image" content="https://www.carltravels.com/images/manchester-banner.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/manchester-travel-guide.html">
-    <meta property="og:type" content="article">
+    <meta property="og:title" content="Manchester – Carl Travels: Your Travel Guide">
+    <meta property="og:description" content="Discover Manchester, England's cultural powerhouse with a legendary music scene and rich industrial heritage. Join Carl for a personal glimpse into this dynamic city.">
+    <meta property="og:image" content="https://www.carltravels.com/images/manchester-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/manchester.html">
+    <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Exploring Manchester: A Comprehensive Travel Guide - Carl Travels">
-    <meta name="twitter:description" content="Discover Manchester's industrial heritage, vibrant cultural scene, and iconic music history in this comprehensive travel guide.">
+    <meta name="twitter:title" content="Manchester – Carl Travels: Your Travel Guide">
+    <meta name="twitter:description" content="Discover Manchester, England's cultural powerhouse with a legendary music scene and rich industrial heritage. Join Carl for a personal glimpse into this dynamic city.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/manchester-twitter-image.jpg">
-
-    <title>Exploring Manchester: A Comprehensive Travel Guide - Carl Travels</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "headline": "Exploring Manchester: A Comprehensive Travel Guide",
-      "description": "Discover Manchester's industrial heritage, vibrant cultural scene, and iconic music history in this comprehensive travel guide.",
-      "image": "https://www.carltravels.com/images/manchester-banner.jpg",
+      "headline": "Manchester – Carl Travels: Your Travel Guide",
+      "description": "Discover Manchester, England's cultural powerhouse with a legendary music scene and rich industrial heritage. Join Carl for a personal glimpse into this dynamic city.",
+      "image": "https://www.carltravels.com/images/manchester-og-image.jpg",
       "author": {
         "@type": "Person",
         "name": "Carl Tomich"
@@ -45,46 +42,69 @@
         "name": "Carl Travels",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.carltravels.com/logo.png"
+          "url": "https://www.carltravels.com/images/logo.png"
         }
       },
-      "datePublished": "2024-04-27",
+      "datePublished": "2025-01-01",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.carltravels.com/manchester-travel-guide.html"
+        "@id": "https://www.carltravels.com/manchester.html"
       }
     }
     </script>
 
-    <!-- Inline Styles -->
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+         crossorigin="anonymous"></script>
+
+    <!-- Google Analytics Script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Inline styling to match the two-column layout approach -->
     <style>
-        /* Ensure images within the main content are responsive */
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 20px auto;
-            padding: 10px 0;
             border-radius: 8px;
         }
-
-        /* Responsive Video Container */
-        .responsive-video {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            padding-top: 25px;
-            height: 0;
-        }
-
-        .responsive-video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Style the header h1 (Carl Travels) */
         header h1 a {
             color: #FF6600;
             font-family: 'Dancing Script', cursive;
@@ -95,8 +115,6 @@
         header h1 a:hover {
             color: #E55B00;
         }
-
-        /* Style all h1 titles within main */
         main h1 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
@@ -109,8 +127,6 @@
         main h1:hover {
             color: #E55B00;
         }
-
-        /* Style all h2 titles within main */
         main h2 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
@@ -122,8 +138,6 @@
         main h2:hover {
             color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
             color: #333;
             font-family: 'Roboto', sans-serif;
@@ -131,8 +145,32 @@
             margin-bottom: 8px;
             font-size: 1.4em;
         }
-
-        /* Responsive typography adjustments */
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            .main-column {
+                order: 1;
+            }
+        }
         @media (max-width: 768px) {
             header h1 a {
                 font-size: 2em;
@@ -147,79 +185,111 @@
                 font-size: 1.2em;
             }
         }
-
-        /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
+            margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
-        /* Styling for Sections */
         .section {
             margin-bottom: 30px;
         }
-
-        /* Breadcrumb Styling */
-        .breadcrumb {
-            list-style: none;
-            display: flex;
-            gap: 5px;
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
             font-family: 'Roboto', sans-serif;
-            font-size: 0.9em;
-            padding: 10px 0;
         }
-
-        .breadcrumb li::after {
-            content: ">";
-            margin-left: 5px;
+        .footer-social {
+            margin-top: 10px;
         }
-
-        .breadcrumb li:last-child::after {
-            content: "";
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
         }
-
-        .breadcrumb a {
-            color: #FF6600;
-            text-decoration: none;
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
         }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
+        .footer-social a:hover img {
+            transform: scale(1.2);
         }
-
-        /* Blockquote Styling */
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #FF6600;
-            padding-left: 15px;
-            margin: 20px 0;
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
         }
-
-        blockquote footer {
-            text-align: right;
-            font-weight: bold;
-            color: #333;
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
         }
-
-        /* Testimonial Section Styling */
-        .testimonials {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
         }
-
-        .testimonials h2 {
-            margin-bottom: 15px;
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+            }
+            .menu-icon {
+                display: flex;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -228,16 +298,12 @@
     <header>
         <div class="container">
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -248,8 +314,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -266,164 +330,113 @@
 
     <!-- Main Content -->
     <main>
-        <section class="blog-post">
+        <section class="destination-details">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Manchester</li>
-                    </ol>
-                </nav>
-
-                <!-- Page Title -->
-                <h1>Exploring Manchester: A Comprehensive Travel Guide</h1>
                 
-                <!-- Embedded YouTube Video (Banner Replacement) -->
-                <div class="responsive-video video-section">
-                    <iframe src="https://youtu.be/o_TKIM1vUEs?si=p_2AommBuG0cLrV9" title="Discover Manchester: A Vibrant City Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Manchester, a city in northwest England, is renowned for its rich industrial heritage, vibrant cultural scene, and iconic music history. Known as the birthplace of the Industrial Revolution, Manchester has transformed into a modern metropolis while preserving its historical charm.</p>
-                    <p><strong>Overview:</strong> Manchester is a hub for arts, sports, and education, home to world-class museums, football clubs, and universities. Its dynamic atmosphere and friendly locals make it a must-visit destination for travelers.</p>
-                </section>
-
-                <!-- Highlights -->
-                <section class="section">
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li><strong>Museum of Science and Industry:</strong> Explore the city's industrial past.</li>
-                        <li><strong>Manchester Cathedral:</strong> A stunning example of Gothic architecture.</li>
-                        <li><strong>John Rylands Library:</strong> A historic library with breathtaking interiors.</li>
-                        <li><strong>Old Trafford Stadium:</strong> Home to Manchester United Football Club.</li>
-                        <li><strong>The Lowry:</strong> A cultural hub for arts and performances.</li>
-                        <li><strong>Northern Quarter:</strong> A vibrant area filled with street art, cafes, and boutiques.</li>
-                        <li><strong>Manchester Art Gallery:</strong> Houses an impressive collection of fine art.</li>
-                        <li><strong>Etihad Stadium:</strong> Home to Manchester City Football Club.</li>
-                        <li><strong>Castlefield:</strong> A historic area with Roman ruins and canals.</li>
-                        <li><strong>Heaton Park:</strong> One of the largest municipal parks in Europe.</li>
-                    </ul>
-                </section>
-
-                <!-- Top Attractions -->
-                <section class="section">
-                    <h2>Top Attractions</h2>
+                <!-- Page Title -->
+                <h1>Manchester: Your Travel Guide</h1>
+                
+                <!-- Two-column layout row -->
+                <div class="content-row">
                     
-                    <!-- Museum of Science and Industry -->
-                    <h3>Museum of Science and Industry</h3>
-                    <p>This museum showcases Manchester's pivotal role in the Industrial Revolution. Visitors can explore interactive exhibits, historic machinery, and learn about the city's contributions to science and technology.</p>
-                    
-                    <!-- Manchester Cathedral -->
-                    <h3>Manchester Cathedral</h3>
-                    <p>Dating back to the 15th century, Manchester Cathedral is a masterpiece of Gothic architecture. Its stunning stained glass windows and intricate carvings make it a must-visit.</p>
-                    
-                    <!-- Old Trafford Stadium -->
-                    <h3>Old Trafford Stadium</h3>
-                    <p>Known as the "Theatre of Dreams," Old Trafford is the home of Manchester United. Take a stadium tour to explore the history of one of the world's most famous football clubs.</p>
-                </section>
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Manchester offers a variety of activities for adventure enthusiasts and culture lovers:</p>
-                    <ul>
-                        <li><strong>Football Tours:</strong> Visit Old Trafford and Etihad Stadium.</li>
-                        <li><strong>Cultural Walks:</strong> Explore the Northern Quarter and Castlefield.</li>
-                        <li><strong>Boat Tours:</strong> Cruise along the Manchester Ship Canal.</li>
-                        <li><strong>Live Music:</strong> Experience the city's legendary music scene.</li>
-                        <li><strong>Museum Visits:</strong> Discover art, history, and science at local museums.</li>
-                    </ul>
-                </section>
+                        <!-- 2 Paragraphs: History + Personal Experience -->
+                        <section class="section">
+                            <p>
+                                Manchester’s story begins with its role as the epicenter of the Industrial Revolution—where cotton mills once powered the world and Victorian-era canals threaded through bustling factories. Today, those red-brick warehouses have found new life as chic apartments and art spaces, preserving the city’s working-class roots in every beam and cobblestone. But it’s not just about heritage here; Manchester has always been at the forefront of change, from progressive politics to boundary-pushing music scenes.
+                            </p>
+                            <p>
+                                I first visited Manchester in <strong>2014</strong>, driven by my love for its iconic indie rock legacy (The Smiths, Joy Division, Oasis—just to name a few). As someone from across the globe, stepping into legendary music venues like the former Factory Records haunt felt like a pilgrimage. I also caught a local football match at Old Trafford, which was an electrifying contrast to the more laid-back stadiums I’d seen back home. The city’s unwavering energy—whether in a dimly lit pub or a roaring stadium—truly made me feel part of something bigger.
+                            </p>
+                        </section>
 
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Manchester's culinary scene is diverse and vibrant, offering everything from traditional British fare to international cuisines:</p>
-                    <ul>
-                        <li><strong>Manchester Tart:</strong> A classic dessert with raspberry jam and coconut.</li>
-                        <li><strong>Pies:</strong> Try steak and ale or chicken and mushroom pies.</li>
-                        <li><strong>Curry Mile:</strong> A stretch of Indian and Pakistani restaurants.</li>
-                        <li><strong>Afternoon Tea:</strong> Enjoy a traditional British tea experience.</li>
-                        <li><strong>Craft Beer:</strong> Sample locally brewed beers at trendy pubs.</li>
-                    </ul>
-                </section>
+                        <!-- Why Manchester is Unique -->
+                        <section class="section">
+                            <h2>Why Manchester Stands Out</h2>
+                            <p>
+                                Manchester is the city where grit meets glamour. It’s where old cotton mills sit beside modern architecture, and where a proud, working-class spirit fuses with cutting-edge creativity. Whether you’re wandering through the Northern Quarter’s graffiti-splashed alleys or exploring the avant-garde exhibits at the Whitworth, you’ll sense a constant drive for reinvention. And with two of the world’s biggest football clubs calling Manchester home, the city’s sporting passion is unmatched.
+                            </p>
+                            <p>
+                                If you’re after a destination that offers rich history, a legendary music background, and a warm, unpretentious vibe, Manchester won’t disappoint. You can lose yourself in cultural treasures by day and belt out anthems in a lively pub by night. There’s an honesty here—a straightforwardness that makes you feel at ease the moment you arrive.
+                            </p>
+                        </section>
 
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3>Transportation</h3>
-                    <p>Manchester is well-connected by public transport, including buses, trams, and trains. The city center is walkable, and cycling is a popular option. Manchester Airport provides international and domestic flights.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>Manchester offers a range of accommodations, from luxury hotels to budget-friendly hostels. Popular areas to stay include the city center, Northern Quarter, and Salford Quays.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Manchester is moderately priced. A daily budget of €50-€100 covers accommodation, meals, transportation, and activities.</p>
-                </section>
+                        <!-- 5 Attractions -->
+                        <section class="section">
+                            <h2>Top 5 Attractions</h2>
+                            <ol>
+                                <li><strong>Science and Industry Museum</strong> – Celebrate Manchester’s industrial roots with interactive exhibits.</li>
+                                <li><strong>John Rylands Library</strong> – Marvel at Neo-Gothic architecture and rare manuscripts.</li>
+                                <li><strong>Northern Quarter</strong> – Street art, vintage shops, and the city’s indie heart.</li>
+                                <li><strong>Old Trafford Stadium</strong> – The “Theatre of Dreams” for Manchester United fans.</li>
+                                <li><strong>Manchester Art Gallery</strong> – An impressive mix of fine art, from Pre-Raphaelites to contemporary pieces.</li>
+                            </ol>
+                        </section>
 
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Book football stadium tours in advance.</li>
-                        <li><strong>Don’t:</strong> Forget an umbrella; Manchester is known for its rain.</li>
-                        <li><strong>Do:</strong> Explore the Northern Quarter for unique shops and cafes.</li>
-                        <li><strong>Don’t:</strong> Miss the chance to try local craft beers.</li>
-                    </ul>
-                    
-                    <h3>Packing List</h3>
-                    <ul>
-                        <li>Weather-appropriate clothing (layers are recommended).</li>
-                        <li>Comfortable walking shoes.</li>
-                        <li>Umbrella or raincoat.</li>
-                        <li>Travel adapter (Type G socket).</li>
-                        <li>Camera or smartphone for photos.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Manchester locals are friendly and welcoming. Tipping is customary in restaurants (10-15%) and for taxi drivers. Be respectful when discussing football, as the city is passionate about its teams.</p>
-                </section>
+                        <!-- 5 "What to Bring" -->
+                        <section class="section">
+                            <h2>What to Bring</h2>
+                            <ul>
+                                <li>Sturdy umbrella for unpredictable rain</li>
+                                <li>Comfortable shoes for walking & exploring</li>
+                                <li>A lightweight jacket for cooler evenings</li>
+                                <li>Travel adapter (Type G) for UK sockets</li>
+                                <li>Camera or smartphone to capture music/football moments</li>
+                            </ul>
+                        </section>
 
-                <!-- Visitor Testimonials -->
-                <section class="section testimonials">
-                    <h2>Visitor Testimonials</h2>
-                    <blockquote>
-                        "Manchester's mix of history, culture, and sports is incredible. The Museum of Science and Industry and Old Trafford were highlights of my trip."
-                        <footer>- Sarah (Australia)</footer>
-                    </blockquote>
-                    <blockquote>
-                        "The Northern Quarter is a hidden gem. I loved the street art and vibrant atmosphere. Manchester is a city full of surprises!"
-                        <footer>- Max (Germany)</footer>
-                    </blockquote>
-                </section>
+                    </div> <!-- End of Main Column -->
 
-                <!-- Follow My Adventures -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Manchester Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Manchester Tourism Site</a></li>
+                            <li><a href="#">Public Transport Info (Metrolink)</a></li>
+                            <li><a href="#">Music Venue Guide</a></li>
+                            <li><a href="#">Football Stadium Tours</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> British Pound Sterling (£).</p>
+                        <p><strong>Language:</strong> English.</p>
+                        <p><strong>Time Zone:</strong> GMT (UTC+0), BST (UTC+1 in summer).</p>
+                        <p><strong>Climate:</strong> Temperate, frequent rain—pack layers.</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Manchester: The Warehouse Legacy”</a></li>
+                            <li><a href="#">“Football & Culture in the North”</a></li>
+                            <li><a href="#">“Indie Rock Roots: A Mancunian Tale”</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+                    
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
 
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -437,5 +450,41 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Navigation, Back to Top Button, etc. -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
