@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edinburgh – Carl Travels</title>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
-     crossorigin="anonymous"></script>
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Discover Edinburgh, Scotland's capital, known for its historic castles, vibrant festivals, and stunning natural scenery.">
 
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Explore Edinburgh, Scotland's capital, known for its historic and architectural landmarks, vibrant festivals, and stunning natural scenery.">
+    <!-- SEO Keywords -->
     <meta name="keywords" content="Edinburgh, Scotland, Travel, Festivals, Architecture, History">
-    <meta name="author" content="Carl Tomich">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Edinburgh - Carl Travels">
@@ -26,88 +25,330 @@
     <meta name="twitter:description" content="Discover Edinburgh's historic castles, vibrant festivals, and beautiful landscapes.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/edinburgh-twitter-image.jpg">
 
-    <title>Edinburgh - Carl Travels</title>
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Edinburgh – Carl Travels",
+      "description": "Discover Edinburgh, Scotland's capital, known for its historic castles, vibrant festivals, and stunning natural scenery.",
+      "image": "https://www.carltravels.com/images/edinburgh-og-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/Edinburgh.html"
+      }
+    }
+    </script>
 
-    <!-- Link to the updated styles.css -->
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+         crossorigin="anonymous"></script>
+
+    <!-- Google Analytics Script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
     <link rel="stylesheet" href="destination.css">
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <!-- Favicon -->
+
+    <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Responsive Images and Heading Titles CSS -->
+    <!-- Inline styles for Two-Column Layout and Overall Styling -->
     <style>
-        /* Ensure images within the main content are responsive */
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
+
+        /* Responsive Images */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; /* Center the image */
-            padding: 10px 0; /* Optional padding for spacing */
+            margin: 20px auto;
+            padding: 10px 0;
+            border-radius: 8px;
         }
 
-        /* Style the header h1 (Carl Travels) */
+        /* Header and Logo */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
-
-        /* Enhance header h1 appearance on hover */
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
-        /* Style all h1 titles within the main content */
+        /* Main H1 Title */
         main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
         }
-
-        /* Enhance main h1 appearance on hover */
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
-        /* Style all h2 titles within the main content */
+        /* H2 Titles */
         main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
+            font-size: 1.8em;
         }
-
-        /* Enhance main h2 appearance on hover */
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
-        /* Optional: Responsive Typography */
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
         @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
+            .sidebar {
+                width: 100%;
+                order: 2;
             }
+            .main-column {
+                order: 1;
+            }
+        }
 
-            main h1 {
-                font-size: 2em;
-            }
+        /* Additional Section Styling */
+        .section {
+            margin-bottom: 30px;
+        }
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
 
-            main h2 {
-                font-size: 1.5em;
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Hamburger Menu */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
             }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Back to Destinations Button */
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -137,109 +378,204 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Main Title -->
-                <h1>Edinburgh</h1>
-                <img src="edinburgh-banner.jpg" alt="Copenhagen" class="banner-image responsive-image">
+                
+                <div class="content-row">
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <div class="section">
-                    <h2>What to See</h2>
-                    <p>Edinburgh is famous for its historic and architectural landmarks. Key attractions include Edinburgh Castle, the Royal Mile, Holyrood Palace, Arthur's Seat, and the National Museum of Scotland.</p>
-                </div>
+                        <!-- Page Title -->
+                        <h1>Edinburgh</h1>
+                        <img src="edinburgh-banner.jpg" alt="Edinburgh Banner" class="banner-image responsive-image" loading="lazy">
 
-                <div class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>Edinburgh has a rich history dating back to at least the 7th century. It served as the capital of Scotland and has been a center for education, literature, and the arts. The city's medieval Old Town and elegant Georgian New Town reflect its historical and cultural evolution.</p>
-                </div>
+                        <!-- Back to Destinations Button -->
+                        <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
 
-                <div class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li>Edinburgh Castle</li>
-                        <li>The Royal Mile</li>
-                        <li>Holyrood Palace</li>
-                        <li>Arthur's Seat</li>
-                        <li>National Museum of Scotland</li>
-                        <li>Scottish National Gallery</li>
-                        <li>Calton Hill</li>
-                        <li>Princes Street Gardens</li>
-                        <li>Royal Yacht Britannia</li>
-                        <li>Edinburgh Zoo</li>
-                    </ol>
-                </div>
+                        <!-- What to See Section -->
+                        <div class="section">
+                            <h2>What to See</h2>
+                            <p>Edinburgh is the vibrant capital of Scotland, famous for its historic and architectural landmarks. Key attractions include Edinburgh Castle, the Royal Mile, Holyrood Palace, Arthur's Seat, and the National Museum of Scotland.</p>
+                        </div>
 
-                <div class="section">
-                    <h2>What to Bring</h2>
-                    <ul>
-                        <li>Comfortable walking shoes</li>
-                        <li>Weather-appropriate clothing (Edinburgh can be chilly and rainy)</li>
-                        <li>Camera or smartphone for photos</li>
-                        <li>Guidebook or map</li>
-                        <li>Travel adapter (Type G socket)</li>
-                        <li>Reusable water bottle</li>
-                        <li>Personal medications</li>
-                        <li>Umbrella or raincoat</li>
-                        <li>Light jacket for cooler evenings</li>
-                        <li>Basic English phrases</li>
-                    </ul>
-                </div>
-                <img src="carlcamera.jpg" alt="Carl with a camera in Edinburgh" class="responsive-image">
+                        <!-- Brief History Section -->
+                        <div class="section">
+                            <h2>A Brief History of the City</h2>
+                            <p>Edinburgh has a rich history dating back to at least the 7th century. It served as the capital of Scotland and has been a center for education, literature, and the arts. The city's medieval Old Town and elegant Georgian New Town reflect its historical and cultural evolution.</p>
+                        </div>
 
-                <div class="section">
-                    <h2>Currency</h2>
-                    <p>The currency in Edinburgh (Scotland) is the British Pound Sterling (£).</p>
-                </div>
+                        <!-- Top 10 Attractions Section -->
+                        <div class="section">
+                            <h2>Top 10 Attractions</h2>
+                            <ol>
+                                <li>Edinburgh Castle</li>
+                                <li>The Royal Mile</li>
+                                <li>Holyrood Palace</li>
+                                <li>Arthur's Seat</li>
+                                <li>National Museum of Scotland</li>
+                                <li>Scottish National Gallery</li>
+                                <li>Calton Hill</li>
+                                <li>Princes Street Gardens</li>
+                                <li>Royal Yacht Britannia</li>
+                                <li>Edinburgh Zoo</li>
+                            </ol>
+                        </div>
 
-                <div class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>Spring (April to June) and Autumn (September to October) offer mild weather and vibrant city life. Summer is bustling with festivals like the Edinburgh Festival Fringe, while winter is ideal for enjoying festive markets and cozy pubs.</p>
-                </div>
+                        <!-- What to Bring Section -->
+                        <div class="section">
+                            <h2>What to Bring</h2>
+                            <ul>
+                                <li>Comfortable walking shoes</li>
+                                <li>Weather-appropriate clothing (Edinburgh can be chilly and rainy)</li>
+                                <li>Camera or smartphone for photos</li>
+                                <li>Guidebook or map</li>
+                                <li>Travel adapter (Type G socket)</li>
+                                <li>Reusable water bottle</li>
+                                <li>Personal medications</li>
+                                <li>Umbrella or raincoat</li>
+                                <li>Light jacket for cooler evenings</li>
+                                <li>Basic English phrases</li>
+                            </ul>
+                        </div>
 
-                <div class="section">
-                    <h2>Fun Facts</h2>
-                    <ul>
-                        <li>Edinburgh hosts the world's largest arts festival, the Edinburgh Festival Fringe.</li>
-                        <li>The city is home to the University of Edinburgh, one of the oldest universities in the English-speaking world.</li>
-                        <li>Edinburgh Castle has been involved in many historical conflicts and is a symbol of Scottish heritage.</li>
-                        <li>Arthur's Seat offers panoramic views of the city and is a popular hiking spot.</li>
-                        <li>Edinburgh was the first UNESCO City of Literature.</li>
-                    </ul>
-                </div>
+                        <img src="carlcamera.jpg" alt="Carl with a camera in Edinburgh" class="responsive-image" loading="lazy">
+
+                        <!-- Currency Section -->
+                        <div class="section">
+                            <h2>Currency</h2>
+                            <p>The currency in Edinburgh (Scotland) is the British Pound Sterling (£).</p>
+                        </div>
+
+                        <!-- Best Time to Visit Section -->
+                        <div class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>Spring (April to June) and Autumn (September to October) offer mild weather and vibrant city life. Summer is bustling with festivals like the Edinburgh Festival Fringe, while winter is ideal for enjoying festive markets and cozy pubs.</p>
+                        </div>
+
+                        <!-- Fun Facts Section -->
+                        <div class="section">
+                            <h2>Fun Facts</h2>
+                            <ul>
+                                <li>Edinburgh hosts the world's largest arts festival, the Edinburgh Festival Fringe.</li>
+                                <li>The city is home to the University of Edinburgh, one of the oldest universities in the English-speaking world.</li>
+                                <li>Edinburgh Castle has been involved in many historical conflicts and is a symbol of Scottish heritage.</li>
+                                <li>Arthur's Seat offers panoramic views of the city and is a popular hiking spot.</li>
+                                <li>Edinburgh was the first UNESCO City of Literature.</li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Edinburgh Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Edinburgh Tourism Site</a></li>
+                            <li><a href="#">Edinburgh Castle Information</a></li>
+                            <li><a href="#">Edinburgh Festival Fringe Info</a></li>
+                            <li><a href="#">Local Events & Festivals</a></li>
+                        </ul>
+
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> British Pound Sterling (£)</p>
+                        <p><strong>Language:</strong> English (with Scots Gaelic influences)</p>
+                        <p><strong>Time Zone:</strong> Greenwich Mean Time (GMT) or British Summer Time (BST)</p>
+                        <p><strong>Climate:</strong> Temperate—often cool and rainy, pack accordingly</p>
+
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">"Scottish Heritage: A Cultural Exploration"</a></li>
+                            <li><a href="#">"Hiking the Highlands"</a></li>
+                            <li><a href="#">"Edinburgh's Literary Legacy"</a></li>
+                        </ul>
+
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </aside> <!-- End of Sidebar -->
+
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
     
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Navigation, Back to Top Button, and More -->
+    <script>
+        // Toggle navigation menu on hamburger icon click
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close the navigation menu when a link is clicked (for mobile)
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
