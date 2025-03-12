@@ -3,6 +3,7 @@
 <head>
     <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardiff - Carl Travels</title>
 
@@ -63,7 +64,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-LGFPJ2VMTY');
     </script>
 
@@ -82,7 +82,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline styles matching the newer pages + Two-Column Layout -->
     <style>
         /* Reset and Base Styles */
         * {
@@ -90,93 +90,73 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #fff;
         }
-
         a {
             color: #FF6600;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
         a:hover {
             color: #E55B00;
         }
-
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto; /* Center the image with spacing */
-            padding: 10px 0; /* Optional padding for spacing */
-            border-radius: 8px; /* Optional: Add rounded corners */
-            loading: lazy;
+            margin: 20px auto;
+            padding: 10px 0;
+            border-radius: 8px;
         }
-
-        /* Style the header h1 (Carl Travels) */
+        /* Header and Main Titles */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
-
-        /* Enhance header h1 appearance on hover */
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within the main content */
         main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 2.5em;
             text-align: center;
         }
-
-        /* Enhance main h1 appearance on hover */
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h2 titles within the main content */
         main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 1.8em;
         }
-
-        /* Enhance main h2 appearance on hover */
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
             font-size: 1.4em;
         }
-
-        /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -187,34 +167,22 @@
             main h3 {
                 font-size: 1.2em;
             }
-            /* Adjust iframe size for smaller screens */
-            .video-responsive iframe {
-                width: 100%;
-                height: auto;
-            }
         }
-
-        /* Additional Styling for Lists */
+        /* Lists and Bold Text */
         main ul, main ol {
             margin-left: 20px;
-            margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
-        /* Styling for Sections */
+        /* Section Styling */
         .section {
             margin-bottom: 30px;
         }
-
         /* Breadcrumb Styling */
         .breadcrumb {
             list-style: none;
@@ -224,25 +192,19 @@
             font-size: 0.9em;
             padding: 10px 0;
         }
-
         .breadcrumb li::after {
             content: ">";
             margin-left: 5px;
         }
-
         .breadcrumb li:last-child::after {
             content: "";
         }
-
         .breadcrumb a {
             color: #FF6600;
-            text-decoration: none;
         }
-
         .breadcrumb a:hover {
             text-decoration: underline;
         }
-
         /* Blockquote Styling */
         blockquote {
             font-style: italic;
@@ -254,21 +216,18 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
-
         blockquote footer {
             text-align: right;
             font-weight: bold;
             color: #333;
             margin-top: 5px;
         }
-
-        /* Testimonial Section Styling */
+        /* Testimonials Section */
         .testimonials {
             background-color: #f1f1f1;
             padding: 40px 0;
             border-radius: 8px;
         }
-
         .testimonial-container {
             max-width: 800px;
             margin: 0 auto;
@@ -276,42 +235,35 @@
             position: relative;
             transition: opacity 0.3s ease;
         }
-
         .testimonial-container.show {
             opacity: 1;
         }
-
         .testimonial-header {
             font-family: 'Poppins', sans-serif;
             color: #FF6600;
             margin-bottom: 15px;
             font-size: 2em;
         }
-
         .stars {
             display: flex;
             justify-content: center;
             margin-bottom: 15px;
         }
-
         .stars svg {
-            fill: #FFD700; /* Gold color for stars */
+            fill: #FFD700;
             margin: 0 2px;
         }
-
         .review {
             font-size: 1.2em;
             font-family: 'Roboto', sans-serif;
             margin-bottom: 20px;
             min-height: 80px;
         }
-
         .navigation {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-
         .nav-button {
             background-color: #FF6600;
             color: #fff;
@@ -322,11 +274,9 @@
             font-size: 1.2em;
             transition: background-color 0.3s ease;
         }
-
         .nav-button:hover {
             background-color: #E55B00;
         }
-
         /* Back to Top Button Styling */
         #back-to-top {
             position: fixed;
@@ -344,13 +294,11 @@
             transition: background-color 0.3s ease, opacity 0.3s ease;
             opacity: 0.8;
         }
-
         #back-to-top:hover {
             background-color: #E55B00;
             opacity: 1;
         }
-
-        /* Back to Destinations Button Styling */
+        /* Back to Destinations Button */
         #back-to-destinations {
             display: inline-block;
             margin-top: 20px;
@@ -360,12 +308,10 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-
         #back-to-destinations:hover {
             background-color: #E55B00;
         }
-
-        /* Skip Navigation Link Styling */
+        /* Skip Navigation Link */
         .skip-link {
             position: absolute;
             top: -40px;
@@ -377,12 +323,10 @@
             transition: top 0.3s ease;
             font-family: 'Roboto', sans-serif;
         }
-
         .skip-link:focus {
             top: 10px;
         }
-
-        /* Footer Styling */
+        /* Footer */
         footer {
             background-color: #333;
             color: #fff;
@@ -390,73 +334,59 @@
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
-
         .footer-social {
             margin-top: 10px;
         }
-
         .footer-social a {
             margin: 0 10px;
             display: inline-block;
         }
-
         .footer-social img {
             width: 24px;
             height: 24px;
             transition: transform 0.3s ease;
         }
-
         .footer-social a:hover img {
             transform: scale(1.2);
         }
-
         /* Follow My Adventures Section */
         .follow-adventures {
             margin-top: 30px;
         }
-
         .follow-adventures h2 {
             font-family: 'Poppins', sans-serif;
             color: #FF6600;
             margin-bottom: 15px;
         }
-
         .follow-adventures .follow-links {
             list-style: none;
             padding: 0;
         }
-
         .follow-adventures .follow-links li {
             margin-bottom: 10px;
         }
-
         .follow-adventures .follow-links li a {
             color: #FF6600;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
             transition: color 0.3s ease;
         }
-
         .follow-adventures .follow-links li a:hover {
             color: #E55B00;
         }
-
-        /* Hamburger Menu Styling */
+        /* Hamburger Menu */
         .menu-icon {
             display: none;
             cursor: pointer;
             flex-direction: column;
             gap: 5px;
         }
-
         .menu-icon span {
             width: 25px;
             height: 3px;
             background-color: #fff;
             transition: all 0.3s ease;
         }
-
-        /* Responsive Navigation Menu */
         @media (max-width: 768px) {
             nav ul.nav-menu {
                 display: none;
@@ -472,49 +402,63 @@
                 z-index: 1000;
                 width: 200px;
             }
-
             nav ul.nav-menu.active {
                 display: flex;
                 animation: fadeIn 0.3s ease-in-out;
             }
-
             .menu-icon {
                 display: flex;
             }
-
-            /* Hamburger Animation */
             #menu-toggle:checked + .menu-icon span:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
             }
-
             #menu-toggle:checked + .menu-icon span:nth-child(2) {
                 opacity: 0;
             }
-
             #menu-toggle:checked + .menu-icon span:nth-child(3) {
                 transform: rotate(-45deg) translate(5px, -5px);
             }
-
-            /* Adjust Social Media Icons Color on Mobile */
             .social-media img {
                 filter: brightness(0) invert(1);
             }
         }
-
-        /* Fade-in Animation */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
         /* Google AdSense Ad Styling */
         .adsense {
             margin: 40px 0;
         }
-
         .adsense ins.adsbygoogle {
             display: block;
             text-align: center;
+        }
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
         }
     </style>
 </head>
@@ -529,8 +473,8 @@
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
-            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -567,201 +511,235 @@
     <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Page Title -->
-                <h1>Cardiff</h1>
-                <img src="images/cardiff-banner.jpg" alt="Cardiff" class="banner-image responsive-image" loading="lazy">
 
-                <!-- Back to Destinations Button -->
-                <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
-
-                <!-- What to See Section -->
-                <div class="section">
-                    <h2>What to See</h2>
-                    <p>Cardiff is the vibrant capital of Wales, offering a mix of historic sites and modern attractions. Key sights include Cardiff Castle, Millennium Stadium, Principality Stadium, the Wales Millennium Centre, and the National Museum Cardiff.</p>
-                </div>
-
-                <!-- A Brief History of the City Section -->
-                <div class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>Cardiff has a rich history that dates back to Roman times. It became a major port and industrial center during the Victorian era, especially known for its coal exports. Today, Cardiff blends its historical heritage with a thriving cultural scene and modern developments.</p>
-                </div>
-
-                <!-- Top 10 Attractions Section -->
-                <div class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li>Cardiff Castle</li>
-                        <li>Wales Millennium Centre</li>
-                        <li>Principality Stadium</li>
-                        <li>National Museum Cardiff</li>
-                        <li>St Fagans National Museum of History</li>
-                        <li>Cardiff Bay</li>
-                        <li>Millennium Stadium</li>
-                        <li>Techniquest</li>
-                        <li>Roath Park</li>
-                        <li>Cardiff Market</li>
-                    </ol>
-                </div>
-
-                <!-- What to Bring Section -->
-                <div class="section">
-                    <h2>What to Bring</h2>
-                    <ul>
-                        <li>Comfortable walking shoes</li>
-                        <li>Weather-appropriate clothing (Wales can be rainy)</li>
-                        <li>Camera or smartphone for photos</li>
-                        <li>Guidebook or map</li>
-                        <li>Travel adapter (Type G socket)</li>
-                        <li>Reusable water bottle</li>
-                        <li>Personal medications</li>
-                        <li>Umbrella or raincoat</li>
-                        <li>Light jacket for cooler evenings</li>
-                        <li>Basic English phrases</li>
-                    </ul>
-                </div>
-
-                <!-- Currency Section -->
-                <div class="section">
-                    <h2>Currency</h2>
-                    <p>The currency in Cardiff (Wales) is the British Pound Sterling (£).</p>
-                </div>
-
-                <!-- Best Time to Visit Section -->
-                <div class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>Spring (April to June) and Autumn (September to October) offer pleasant weather and fewer tourists. Summer is ideal for outdoor festivals and events, while winter provides a cozy atmosphere with festive decorations and indoor attractions.</p>
-                </div>
-
-                <!-- Fun Facts Section -->
-                <div class="section">
-                    <h2>Fun Facts</h2>
-                    <ul>
-                        <li>Cardiff is home to the oldest theater in Wales, the New Theatre.</li>
-                        <li>The city hosts the annual Cardiff International Food and Drink Festival.</li>
-                        <li>Cardiff Bay was transformed from a docklands area to a vibrant leisure and residential area.</li>
-                        <li>The Principality Stadium is one of the most iconic sports venues in the world.</li>
-                        <li>Cardiff was named the UK City of Culture in 2017.</li>
-                    </ul>
-                </div>
-
-                <!-- Tips and Recommendations Section -->
-                <div class="section">
-                    <h2>Tips and Recommendations</h2>
+                <div class="content-row">
                     
-                    <!-- Do’s and Don’ts -->
-                    <div class="sub-section">
-                        <h3>Do’s and Don’ts</h3>
-                        <ul>
-                            <li><strong>Do:</strong> Learn a few basic Welsh phrases to enhance your interactions with locals.</li>
-                            <li><strong>Don’t:</strong> Litter or disturb the natural environment. Cardiff prides itself on its clean and green spaces.</li>
-                            <li><strong>Do:</strong> Visit during the shoulder seasons (May-June or September-October) for pleasant weather and fewer crowds.</li>
-                            <li><strong>Don’t:</strong> Underestimate the importance of carrying an umbrella or raincoat due to unpredictable Welsh weather.</li>
-                            <li><strong>Do:</strong> Embrace the local cuisine and try traditional dishes for an authentic experience.</li>
-                            <li><strong>Don’t:</strong> Forget to carry some cash, as smaller establishments may prefer cash over cards.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Packing Lists -->
-                    <div class="sub-section">
-                        <h3>Packing Lists</h3>
-                        <ul>
-                            <li>Lightweight, waterproof jacket</li>
-                            <li>Comfortable walking shoes or boots</li>
-                            <li>Travel umbrella</li>
-                            <li>Daypack for excursions</li>
-                            <li>Portable charger for electronic devices</li>
-                            <li>Swimwear for coastal areas</li>
-                            <li>Guidebook or travel app</li>
-                            <li>Sunscreen and sunglasses</li>
-                            <li>Basic first-aid kit</li>
-                            <li>Reusable water bottle</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Local Etiquette -->
-                    <div class="sub-section">
-                        <h3>Local Etiquette</h3>
-                        <p>Welsh culture values politeness and respect. Here are some local etiquette tips to enhance your visit to Cardiff:</p>
-                        <ul>
-                            <li>Always greet with a smile and a friendly "Bore da" (Good morning).</li>
-                            <li>It's customary to remove your shoes before entering someone's home.</li>
-                            <li>Dress modestly when visiting religious sites or churches.</li>
-                            <li>Public displays of affection are generally acceptable but should remain respectful.</li>
-                            <li>When dining, wait for everyone to be served before starting your meal.</li>
-                        </ul>
-                    </div>
-                </div>
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Testimonials Section -->
-                <div class="testimonials">
-                    <div class="testimonial-container">
-                        <h2 class="testimonial-header">What People Are Saying About Carl</h2>
-                        <div class="stars" id="stars">
-                            <!-- Star SVGs with explicit width and height -->
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06 -.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
+                        <!-- Page Title -->
+                        <h1>Cardiff</h1>
+                        <img src="images/cardiff-banner.jpg" alt="Cardiff" class="banner-image responsive-image" loading="lazy">
+
+                        <!-- Back to Destinations Button -->
+                        <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
+
+                        <!-- What to See Section -->
+                        <div class="section">
+                            <h2>What to See</h2>
+                            <p>Cardiff is the vibrant capital of Wales, offering a mix of historic sites and modern attractions. Key sights include Cardiff Castle, Millennium Stadium, Principality Stadium, the Wales Millennium Centre, and the National Museum Cardiff.</p>
                         </div>
-                        <p class="review" id="currentReview">
-                            "Carl guided us through Cardiff with such enthusiasm and knowledge. Every site we visited was explained in detail, making our trip both educational and enjoyable." - Mark (USA)
-                        </p>
-                        <div class="navigation">
-                            <button class="nav-button" id="prevBtn" aria-label="Previous Review">&#10094;</button>
-                            <button class="nav-button" id="nextBtn" aria-label="Next Review">&#10095;</button>
+
+                        <!-- A Brief History of the City Section -->
+                        <div class="section">
+                            <h2>A Brief History of the City</h2>
+                            <p>Cardiff has a rich history that dates back to Roman times. It became a major port and industrial center during the Victorian era, especially known for its coal exports. Today, Cardiff blends its historical heritage with a thriving cultural scene and modern developments.</p>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Follow My Adventures Section -->
-                <section class="follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@CarlTravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                        <!-- Top 10 Attractions Section -->
+                        <div class="section">
+                            <h2>Top 10 Attractions</h2>
+                            <ol>
+                                <li>Cardiff Castle</li>
+                                <li>Wales Millennium Centre</li>
+                                <li>Principality Stadium</li>
+                                <li>National Museum Cardiff</li>
+                                <li>St Fagans National Museum of History</li>
+                                <li>Cardiff Bay</li>
+                                <li>Millennium Stadium</li>
+                                <li>Techniquest</li>
+                                <li>Roath Park</li>
+                                <li>Cardiff Market</li>
+                            </ol>
+                        </div>
 
-                <!-- Google AdSense Ad -->
-                <section class="adsense">
-                    <div class="container">
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-client="ca-pub-6483721386563068"
-                             data-ad-slot="8249189982"
-                             data-ad-format="auto"
-                             data-full-width-responsive="true"></ins>
-                        <script>
-                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                </section>
+                        <!-- What to Bring Section -->
+                        <div class="section">
+                            <h2>What to Bring</h2>
+                            <ul>
+                                <li>Comfortable walking shoes</li>
+                                <li>Weather-appropriate clothing (Wales can be rainy)</li>
+                                <li>Camera or smartphone for photos</li>
+                                <li>Guidebook or map</li>
+                                <li>Travel adapter (Type G socket)</li>
+                                <li>Reusable water bottle</li>
+                                <li>Personal medications</li>
+                                <li>Umbrella or raincoat</li>
+                                <li>Light jacket for cooler evenings</li>
+                                <li>Basic English phrases</li>
+                            </ul>
+                        </div>
 
-                <!-- Back to Top Button -->
-                <button id="back-to-top" aria-label="Back to Top">↑</button>
+                        <!-- Currency Section -->
+                        <div class="section">
+                            <h2>Currency</h2>
+                            <p>The currency in Cardiff (Wales) is the British Pound Sterling (£).</p>
+                        </div>
+
+                        <!-- Best Time to Visit Section -->
+                        <div class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>Spring (April to June) and Autumn (September to October) offer pleasant weather and fewer tourists. Summer is ideal for outdoor festivals and events, while winter provides a cozy atmosphere with festive decorations and indoor attractions.</p>
+                        </div>
+
+                        <!-- Fun Facts Section -->
+                        <div class="section">
+                            <h2>Fun Facts</h2>
+                            <ul>
+                                <li>Cardiff is home to the oldest theater in Wales, the New Theatre.</li>
+                                <li>The city hosts the annual Cardiff International Food and Drink Festival.</li>
+                                <li>Cardiff Bay was transformed from a docklands area to a vibrant leisure and residential area.</li>
+                                <li>The Principality Stadium is one of the most iconic sports venues in the world.</li>
+                                <li>Cardiff was named the UK City of Culture in 2017.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Tips and Recommendations Section -->
+                        <div class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <!-- Do’s and Don’ts -->
+                            <div class="sub-section">
+                                <h3>Do’s and Don’ts</h3>
+                                <ul>
+                                    <li><strong>Do:</strong> Learn a few basic Welsh phrases to enhance your interactions with locals.</li>
+                                    <li><strong>Don’t:</strong> Litter or disturb the natural environment. Cardiff prides itself on its clean and green spaces.</li>
+                                    <li><strong>Do:</strong> Visit during the shoulder seasons (May-June or September-October) for pleasant weather and fewer crowds.</li>
+                                    <li><strong>Don’t:</strong> Underestimate the importance of carrying an umbrella or raincoat due to unpredictable Welsh weather.</li>
+                                    <li><strong>Do:</strong> Embrace the local cuisine and try traditional dishes for an authentic experience.</li>
+                                    <li><strong>Don’t:</strong> Forget to carry some cash, as smaller establishments may prefer it over cards.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Packing Lists -->
+                            <div class="sub-section">
+                                <h3>Packing Lists</h3>
+                                <ul>
+                                    <li>Lightweight, waterproof jacket</li>
+                                    <li>Comfortable walking shoes or boots</li>
+                                    <li>Travel umbrella</li>
+                                    <li>Daypack for excursions</li>
+                                    <li>Portable charger for electronic devices</li>
+                                    <li>Swimwear for coastal areas</li>
+                                    <li>Guidebook or travel app</li>
+                                    <li>Sunscreen and sunglasses</li>
+                                    <li>Basic first-aid kit</li>
+                                    <li>Reusable water bottle</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Local Etiquette -->
+                            <div class="sub-section">
+                                <h3>Local Etiquette</h3>
+                                <p>Welsh culture values politeness and respect. Here are some local etiquette tips to enhance your visit to Cardiff:</p>
+                                <ul>
+                                    <li>Always greet with a smile and a friendly "Bore da" (Good morning).</li>
+                                    <li>It's customary to remove your shoes before entering someone's home.</li>
+                                    <li>Dress modestly when visiting religious sites or churches.</li>
+                                    <li>Public displays of affection are generally acceptable but should remain respectful.</li>
+                                    <li>When dining, wait for everyone to be served before starting your meal.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Testimonials Section -->
+                        <div class="testimonials">
+                            <div class="testimonial-container">
+                                <h2 class="testimonial-header">What People Are Saying About Carl</h2>
+                                <div class="stars" id="stars">
+                                    <!-- Star SVGs -->
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
+                                    </svg>
+                                </div>
+                                <p class="review" id="currentReview">
+                                    "Carl guided us through Cardiff with such enthusiasm and knowledge. Every site we visited was explained in detail, making our trip both educational and enjoyable." - Mark (USA)
+                                </p>
+                                <div class="navigation">
+                                    <button class="nav-button" id="prevBtn" aria-label="Previous Review">&#10094;</button>
+                                    <button class="nav-button" id="nextBtn" aria-label="Next Review">&#10095;</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Follow My Adventures Section -->
+                        <section class="follow-adventures">
+                            <h2>Follow My Adventures</h2>
+                            <p>Stay connected and follow my journey through the links below:</p>
+                            <ul class="follow-links">
+                                <li><a href="https://www.youtube.com/@CarlTravels" target="_blank">Carl Travels on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                                <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                                <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                            </ul>
+                        </section>
+
+                        <!-- Google AdSense Ad -->
+                        <section class="adsense">
+                            <div class="container">
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-6483721386563068"
+                                     data-ad-slot="8249189982"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                     (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Cardiff Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Cardiff Tourism Site</a></li>
+                            <li><a href="#">Transport for Wales</a></li>
+                            <li><a href="#">Historic Wales Attractions</a></li>
+                            <li><a href="#">Welsh Language Basics</a></li>
+                        </ul>
+
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> British Pound Sterling (£)</p>
+                        <p><strong>Language:</strong> English, Welsh</p>
+                        <p><strong>Time Zone:</strong> GMT (UTC+0) / BST (UTC+1 in summer)</p>
+                        <p><strong>Climate:</strong> Temperate—expect rain and mild temperatures</p>
+
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">"Exploring Wales: A Cultural Journey"</a></li>
+                            <li><a href="#">"The Best of Cardiff’s Food Scene"</a></li>
+                            <li><a href="#">"Castles of the United Kingdom"</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -781,16 +759,14 @@
         // Toggle navigation menu on hamburger icon click
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.querySelector('nav ul.nav-menu');
-
         menuToggle.addEventListener('change', () => {
             navMenu.classList.toggle('active');
         });
 
         // Back to Top Button functionality
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling down 300px
+            if (window.scrollY > 300) {
                 backToTopButton.style.display = 'block';
                 backToTopButton.style.opacity = '1';
             } else {
@@ -798,7 +774,6 @@
                 backToTopButton.style.opacity = '0';
             }
         });
-
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -839,7 +814,7 @@
             setTimeout(() => {
                 reviewElement.textContent = reviews[index];
                 testimonialContainer.classList.add("show");
-            }, 300); // Slight delay for smooth transition
+            }, 300);
         }
 
         // Show next review
@@ -869,7 +844,6 @@
             showNextReview();
             resetReviewRotation();
         });
-
         prevBtn.addEventListener("click", () => {
             showPrevReview();
             resetReviewRotation();
