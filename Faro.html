@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faro – Carl Travels</title>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068" crossorigin="anonymous"></script>
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Explore Faro, Portugal with Carl Travels. Discover its historic old town, stunning coastline, and essential travel tips for an unforgettable experience.">
 
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Explore the vibrant city of Bristol with Carl Travels. Discover its rich maritime history, creative street art, and essential travel tips.">
-    <meta name="keywords" content="Bristol, Travel, UK Destinations, Carl Travels, Attractions, History">
-    <meta name="author" content="Carl Tomich">
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Faro, Portugal, Travel, Carl Travels, Attractions, History, Peri Peri Chicken, Beaches">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Bristol - Carl Travels">
-    <meta property="og:description" content="Discover the best of Bristol with Carl Travels. Explore top attractions, history, and essential travel tips.">
-    <meta property="og:image" content="https://www.carltravels.com/images/bristol-og-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/bristol.html">
+    <meta property="og:title" content="Faro – Carl Travels">
+    <meta property="og:description" content="Discover Faro’s historic center, delicious peri peri chicken, ferry rides to pristine beaches, and essential travel tips with Carl.">
+    <meta property="og:image" content="https://www.carltravels.com/images/faro-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/faro.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bristol - Carl Travels">
-    <meta name="twitter:description" content="Discover the best of Bristol with Carl Travels. Explore top attractions, history, and essential travel tips.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/bristol-twitter-image.jpg">
+    <meta name="twitter:title" content="Faro – Carl Travels">
+    <meta name="twitter:description" content="Explore Faro, Portugal’s coastal gem. Taste authentic peri peri chicken, discover the Old Town, and enjoy ferry rides to stunning beaches.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/faro-twitter-image.jpg">
 
-    <title>Bristol - Carl Travels</title>
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Faro – Carl Travels",
+      "description": "Explore Faro, Portugal with Carl Travels. Discover its historic old town, stunning coastline, and essential travel tips for an unforgettable experience.",
+      "image": "https://www.carltravels.com/images/faro-og-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/faro.html"
+      }
+    }
+    </script>
 
-    <!-- Link to the updated styles.css -->
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+         crossorigin="anonymous"></script>
+
+    <!-- Google Analytics Script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
     <link rel="stylesheet" href="destination.css">
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <!-- Favicon -->
+
+    <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Responsive Images and Heading Titles CSS -->
+    <!-- Inline styling for the two-column layout and overall styling -->
     <style>
-        /* Ensure images within the main content are responsive */
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
-            padding: 10px 0;
+            margin: 20px auto;
+            border-radius: 8px;
+            loading: lazy;
         }
-
-        /* Style the header h1 (Carl Travels) */
         header h1 a {
             color: #FF6600;
             font-family: 'Dancing Script', cursive;
@@ -59,8 +116,6 @@
         header h1 a:hover {
             color: #E55B00;
         }
-
-        /* Style all h1 titles within main */
         main h1 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
@@ -73,8 +128,6 @@
         main h1:hover {
             color: #E55B00;
         }
-
-        /* Style all h2 titles within main */
         main h2 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
@@ -86,8 +139,6 @@
         main h2:hover {
             color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
             color: #333;
             font-family: 'Roboto', sans-serif;
@@ -96,36 +147,228 @@
             font-size: 1.4em;
         }
 
-        /* Responsive Typography Adjustments */
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
         @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em;
+            .sidebar {
+                width: 100%;
+                order: 2;
             }
-            main h1 {
-                font-size: 2em;
+            .main-column {
+                order: 1;
             }
-            main h2 {
-                font-size: 1.5em;
+        }
+
+        /* Additional Section Styling */
+        .section {
+            margin-bottom: 30px;
+        }
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+        .breadcrumb a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+
+        /* Skip Navigation Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #FF6600;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Back to Destinations Button */
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
+        }
+
+        /* Hamburger Menu */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
             }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Ads Section */
+        .adsense {
+            margin: 40px 0;
+        }
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
+            <input type="checkbox" id="menu-toggle" hidden>
             <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-            <input type="checkbox" id="menu-toggle" hidden>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -136,8 +379,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -153,150 +394,153 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Bristol</li>
-                    </ol>
-                </nav>
 
-                <!-- Main Title -->
-                <h1>Bristol</h1>
-                <img src="images/bristol-banner.jpg" alt="Bristol" class="responsive-image">
+                <div class="content-row">
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        <!-- Breadcrumb Navigation -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="destinations.html">Destinations</a></li>
+                                <li aria-current="page">Bristol</li>
+                            </ol>
+                        </nav>
 
-                <!-- What to See -->
-                <div class="section">
-                    <h2>What to See</h2>
-                    <p>Bristol is a city that effortlessly fuses a rich maritime past with a modern, creative spirit. Whether you're wandering along its historic docks or admiring the eclectic street art, every turn brings a new discovery.</p>
-                </div>
+                        <!-- Page Title -->
+                        <h1>Bristol</h1>
+                        <img src="images/bristol-banner.jpg" alt="Bristol" class="responsive-image">
 
-                <!-- A Brief History of the City -->
-                <div class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>With a history spanning over a thousand years, Bristol has evolved from a bustling medieval port to a vibrant center of culture and innovation. Its storied docks and industrial landmarks now coexist with contemporary art and sustainable living initiatives.</p>
-                </div>
-
-                <!-- Top 10 Attractions with Extended Stories -->
-                <div class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li>
-                            <strong>Clifton Suspension Bridge</strong> – I still remember my first time crossing Clifton Suspension Bridge. The gentle sway beneath my feet and the breathtaking view over the Avon Gorge made me feel like I was walking on air. Every time I visit, I pause to enjoy the cool breeze and the expansive view of rolling green hills—a moment of quiet wonder that never gets old.
-                        </li>
-                        <li>
-                            <strong>SS Great Britain</strong> – Stepping aboard the SS Great Britain was like traveling back in time. As I explored its elegantly restored decks and quaint cabins, I imagined the grand adventures of yesteryear. It felt like every corner of the ship whispered stories of daring voyages and bygone eras.
-                        </li>
-                        <li>
-                            <strong>Bristol Harbourside</strong> – The harbourside is the vibrant heart of modern Bristol. I spent an afternoon strolling along the waterfront, sipping coffee at a quirky café, and listening to street musicians. The mix of historic dockside charm and contemporary buzz created a lively atmosphere that’s hard to forget.
-                        </li>
-                        <li>
-                            <strong>Bristol Museum & Art Gallery</strong> – This museum is a treasure trove of art and history. I lost myself in its varied collections—from ancient artifacts to modern masterpieces—and every exhibit sparked new insights. It’s a place where creativity and history meet in a very personal way.
-                        </li>
-                        <li>
-                            <strong>Cabot Tower</strong> – Climbing Cabot Tower on Brandon Hill was a small adventure with a huge reward. The view from the top stretched across Bristol’s skyline and beyond. Standing there, I felt a sense of achievement and a deep connection to the city that was both exhilarating and calming.
-                        </li>
-                        <li>
-                            <strong>Ashton Court Estate</strong> – Visiting Ashton Court Estate was like escaping into a tranquil countryside retreat. I spent a day picnicking among ancient trees and exploring its vast parklands. It was a refreshing contrast to the urban pace of Bristol—a day of pure relaxation.
-                        </li>
-                        <li>
-                            <strong>St Mary Redcliffe Church</strong> – The majestic St Mary Redcliffe Church left me speechless. Its soaring Gothic arches and detailed stonework spoke volumes of centuries past. I found a quiet corner inside to reflect, and the serene atmosphere made it a truly moving experience.
-                        </li>
-                        <li>
-                            <strong>Brandon Hill Nature Park</strong> – Brandon Hill is Bristol’s green lung. I enjoyed a leisurely walk along its winding paths, marveled at the local flora and fauna, and felt completely at ease in its natural beauty. It’s a gentle reminder that even a busy city can offer pockets of peace.
-                        </li>
-                        <li>
-                            <strong>Street Art Tours</strong> – Bristol’s street art is legendary. Joining a guided tour, I discovered hidden murals and creative expressions that add a modern twist to the city’s historic backdrop. Every piece of art told its own story, and I loved how the city’s vibrant spirit shone through each one.
-                        </li>
-                        <li>
-                            <strong>Wild Place Project</strong> – The Wild Place Project is a lively wildlife park that combines fun and education. I had a blast exploring the park, interacting with animals, and learning about conservation efforts. It was an exciting, hands-on experience that added a whole new dimension to my visit.
-                        </li>
-                    </ol>
-                </div>
-
-                <!-- What to Bring -->
-                <div class="section">
-                    <h2>What to Bring</h2>
-                    <ul>
-                        <li>Comfortable walking shoes for Bristol’s hilly terrain.</li>
-                        <li>A raincoat or umbrella—Bristol’s weather can change quickly.</li>
-                        <li>A map or GPS for navigating its charming streets.</li>
-                        <li>A camera or smartphone to capture every memorable moment.</li>
-                        <li>A guidebook or travel app for extra local insights.</li>
-                        <li>A reusable water bottle to stay hydrated.</li>
-                        <li>A light jacket for cooler evenings.</li>
-                        <li>A portable charger for your devices.</li>
-                        <li>Snacks to keep your energy up during long explorations.</li>
-                        <li>Personal medications and a small first-aid kit.</li>
-                    </ul>
-                </div>
-
-                <!-- Currency Section -->
-                <div class="section">
-                    <h2>Currency</h2>
-                    <p>Bristol uses the British Pound (£). While most places accept credit cards, having some cash on hand is useful for small shops and local markets.</p>
-                </div>
-
-                <!-- Best Time to Visit Section -->
-                <div class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>The best time to visit Bristol is from April to October when the weather is mild and the city hosts lively festivals like the Bristol Harbour Festival and the Bristol Balloon Fiesta.</p>
-                </div>
-
-                <!-- Fun Facts Section -->
-                <div class="section">
-                    <h2>Fun Facts</h2>
-                    <ul>
-                        <li>Bristol is widely regarded as the birthplace of street art and is where Banksy first began his work.</li>
-                        <li>In 2017, The Sunday Times named Bristol the 'Best Place to Live in Britain.'</li>
-                        <li>The city is known for its green initiatives and extensive network of cycle paths.</li>
-                        <li>The Bristol Pound is a local currency that encourages shopping within the community.</li>
-                    </ul>
-                </div>
-
-                <!-- What People Are Saying About My Journeys -->
-                <section class="section testimonials">
-                    <div class="testimonial-container">
-                        <h2 class="testimonial-header">What People Are Saying About My Journeys</h2>
-                        <div class="stars" id="stars">
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
-                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true">
-                                <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-                            </svg>
+                        <!-- What to See Section -->
+                        <div class="section">
+                            <h2>What to See</h2>
+                            <p>Bristol is a city that effortlessly fuses a rich maritime past with a modern, creative spirit. Whether you're wandering along its historic docks or admiring the eclectic street art, every turn brings a new discovery.</p>
                         </div>
-                        <p class="review" id="currentReview">
-                            "Bristol with Carl felt like a breath of fresh air. His genuine stories and down-to-earth style made exploring the city truly unforgettable." - Jamie (UK)
-                        </p>
-                    </div>
-                </section>
 
-                <!-- Follow My Adventures Section -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@CarlTravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                        <!-- A Brief History of the City Section -->
+                        <div class="section">
+                            <h2>A Brief History of the City</h2>
+                            <p>With a history spanning over a thousand years, Bristol has evolved from a bustling medieval port to a vibrant center of culture and innovation. Its storied docks and industrial landmarks now coexist with contemporary art and sustainable living initiatives.</p>
+                        </div>
+
+                        <!-- Top 10 Attractions with Extended Stories -->
+                        <div class="section">
+                            <h2>Top 10 Attractions</h2>
+                            <ol>
+                                <li>
+                                    <strong>Clifton Suspension Bridge</strong> – I still remember my first time crossing Clifton Suspension Bridge. The gentle sway beneath my feet and the breathtaking view over the Avon Gorge made me feel like I was walking on air. Every time I visit, I pause to enjoy the cool breeze and the expansive view of rolling green hills—a moment of quiet wonder that never gets old.
+                                </li>
+                                <li>
+                                    <strong>SS Great Britain</strong> – Stepping aboard the SS Great Britain was like traveling back in time. As I explored its elegantly restored decks and quaint cabins, I imagined the grand adventures of yesteryear. It felt like every corner of the ship whispered stories of daring voyages and bygone eras.
+                                </li>
+                                <li>
+                                    <strong>Bristol Harbourside</strong> – The harbourside is the vibrant heart of modern Bristol. I spent an afternoon strolling along the waterfront, sipping coffee at a quirky café, and listening to street musicians. The mix of historic dockside charm and contemporary buzz created a lively atmosphere that’s hard to forget.
+                                </li>
+                                <li>
+                                    <strong>Bristol Museum & Art Gallery</strong> – This museum is a treasure trove of art and history. I lost myself in its varied collections—from ancient artifacts to modern masterpieces—and every exhibit sparked new insights. It’s a place where creativity and history meet in a very personal way.
+                                </li>
+                                <li>
+                                    <strong>Cabot Tower</strong> – Climbing Cabot Tower on Brandon Hill was a small adventure with a huge reward. The view from the top stretched across Bristol’s skyline and beyond. Standing there, I felt a sense of achievement and a deep connection to the city that was both exhilarating and calming.
+                                </li>
+                                <li>
+                                    <strong>Ashton Court Estate</strong> – Visiting Ashton Court Estate was like escaping into a tranquil countryside retreat. I spent a day picnicking among ancient trees and exploring its vast parklands. It was a refreshing contrast to the urban pace of Bristol—a day of pure relaxation.
+                                </li>
+                                <li>
+                                    <strong>St Mary Redcliffe Church</strong> – The majestic St Mary Redcliffe Church left me speechless. Its soaring Gothic arches and detailed stonework spoke volumes of centuries past. I found a quiet corner inside to reflect, and the serene atmosphere made it a truly moving experience.
+                                </li>
+                                <li>
+                                    <strong>Brandon Hill Nature Park</strong> – Brandon Hill is Bristol’s green lung. I enjoyed a leisurely walk along its winding paths, marveled at the local flora and fauna, and felt completely at ease in its natural beauty. It’s a gentle reminder that even a busy city can offer pockets of peace.
+                                </li>
+                                <li>
+                                    <strong>Street Art Tours</strong> – Bristol’s street art is legendary. Joining a guided tour, I discovered hidden murals and creative expressions that add a modern twist to the city’s historic backdrop. Every piece of art told its own story, and I loved how the city’s vibrant spirit shone through each one.
+                                </li>
+                                <li>
+                                    <strong>Wild Place Project</strong> – The Wild Place Project is a lively wildlife park that combines fun and education. I had a blast exploring the park, interacting with animals, and learning about conservation efforts. It was an exciting, hands-on experience that added a whole new dimension to my visit.
+                                </li>
+                            </ol>
+                        </div>
+
+                        <!-- What to Bring Section -->
+                        <div class="section">
+                            <h2>What to Bring</h2>
+                            <ul>
+                                <li>Comfortable walking shoes for Bristol’s hilly terrain.</li>
+                                <li>A raincoat or umbrella—Bristol’s weather can change quickly.</li>
+                                <li>A map or GPS for navigating its charming streets.</li>
+                                <li>A camera or smartphone to capture every memorable moment.</li>
+                                <li>A guidebook or travel app for extra local insights.</li>
+                                <li>A reusable water bottle to stay hydrated.</li>
+                                <li>A light jacket for cooler evenings.</li>
+                                <li>A portable charger for your devices.</li>
+                                <li>Snacks to keep your energy up during long explorations.</li>
+                                <li>Personal medications and a small first-aid kit.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Currency Section -->
+                        <div class="section">
+                            <h2>Currency</h2>
+                            <p>Bristol uses the British Pound (£). While most places accept credit cards, having some cash on hand is useful for small shops and local markets.</p>
+                        </div>
+
+                        <!-- Best Time to Visit Section -->
+                        <div class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>The best time to visit Bristol is from April to October when the weather is mild and the city hosts lively festivals like the Bristol Harbour Festival and the Bristol Balloon Fiesta.</p>
+                        </div>
+
+                        <!-- Fun Facts Section -->
+                        <div class="section">
+                            <h2>Fun Facts</h2>
+                            <ul>
+                                <li>Bristol is widely regarded as the birthplace of street art and is where Banksy first began his work.</li>
+                                <li>In 2017, The Sunday Times named Bristol the 'Best Place to Live in Britain.'</li>
+                                <li>The city is known for its green initiatives and extensive network of cycle paths.</li>
+                                <li>The Bristol Pound is a local currency that encourages shopping within the community.</li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Bristol Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Bristol Tourism Site</a></li>
+                            <li><a href="#">Clifton Suspension Bridge Info</a></li>
+                            <li><a href="#">Bristol Museum & Art Gallery</a></li>
+                            <li><a href="#">Local Events & Festivals</a></li>
+                        </ul>
+
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> British Pound (£)</p>
+                        <p><strong>Language:</strong> English</p>
+                        <p><strong>Time Zone:</strong> GMT/BST</p>
+                        <p><strong>Climate:</strong> Mild but can be rainy, pack layers</p>
+
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Banksy and the Street Art of Bristol”</a></li>
+                            <li><a href="#">“Maritime History of Bristol”</a></li>
+                            <li><a href="#">“Exploring the West Country”</a></li>
+                        </ul>
+
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </aside> <!-- End of Sidebar -->
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
@@ -322,23 +566,36 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Hamburger Menu and Back to Top Button -->
+    <!-- JavaScript for Enhanced Navigation, Back to Top Button, and More -->
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.querySelector('nav ul.nav-menu');
         menuToggle.addEventListener('change', () => {
             navMenu.classList.toggle('active');
         });
+
         const backToTopButton = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
             } else {
                 backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
             }
         });
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
         });
     </script>
 </body>
