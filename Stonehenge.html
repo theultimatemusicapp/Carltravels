@@ -1,41 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stonehenge – Carl Travels: Mysterious Stone Circle</title>
 
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Visit Stonehenge, the iconic prehistoric monument in England, renowned for its massive stone circle and mysterious origins.">
-    <meta name="keywords" content="Stonehenge, England, Travel, Prehistoric, Monuments, History">
-    <meta name="author" content="Carl Tomich">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Explore Stonehenge, the iconic prehistoric monument in England, known for its massive stone circle and mysterious origins. Discover its history, tips for visiting, and what to expect in this ultimate guide to Stonehenge." />
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Stonehenge, England, Travel, Prehistoric, Monuments, History, Carl Travels" />
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Stonehenge - Carl Travels">
-    <meta property="og:description" content="Explore Stonehenge's ancient stone circle and uncover the mysteries surrounding its origins.">
-    <meta property="og:image" content="https://www.carltravels.com/images/stonehenge-og-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/Stonehenge.html">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stonehenge – Carl Travels: Mysterious Stone Circle" />
+    <meta property="og:description" content="Explore Stonehenge, the iconic prehistoric monument in England, known for its massive stone circle and mysterious origins. Discover its history, tips for visiting, and what to expect in this ultimate guide to Stonehenge." />
+    <meta property="og:image" content="https://www.carltravels.com/images/stonehenge-og-image.jpg" />
+    <meta property="og:url" content="https://www.carltravels.com/Stonehenge.html" />
+    <meta property="og:type" content="website" />
 
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Stonehenge - Carl Travels">
-    <meta name="twitter:description" content="Explore Stonehenge's ancient stone circle and uncover the mysteries surrounding its origins.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/stonehenge-twitter-image.jpg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stonehenge – Carl Travels: Mysterious Stone Circle" />
+    <meta name="twitter:description" content="Explore Stonehenge, the iconic prehistoric monument in England, known for its massive stone circle and mysterious origins. Discover its history, tips for visiting, and what to expect in this ultimate guide to Stonehenge." />
+    <meta name="twitter:image" content="https://www.carltravels.com/images/stonehenge-twitter-image.jpg" />
 
-    <title>Stonehenge - Carl Travels</title>
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Stonehenge – Carl Travels: Mysterious Stone Circle",
+      "description": "Explore Stonehenge, the iconic prehistoric monument in England, known for its massive stone circle and mysterious origins. Discover its history, tips for visiting, and what to expect in this ultimate guide to Stonehenge.",
+      "image": "https://www.carltravels.com/images/stonehenge-og-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-01-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/Stonehenge.html"
+      }
+    }
+    </script>
 
-    <!-- Link to the updated styles.css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
-    <link rel="stylesheet" href="destination.css">
+    <!-- Google AdSense Script -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Analytics Script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-LGFPJ2VMTY");
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="destination.css" />
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Inline styles for two-column layout -->
+    <style>
+        /* Responsive video styles */
+        .video-responsive {
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
+        header h1 a {
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
+        }
+        header h1 a:hover {
+            color: #E55B00;
+        }
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+            font-size: 1.8em;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+        main h3 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+        main ul,
+        main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        main ul li,
+        main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .adsense {
+            margin: 40px 0;
+        }
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
+        }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        #menu-toggle {
+            display: none;
+        }
+        nav ul.nav-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 58px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+                cursor: pointer;
+                padding: 10px;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -43,8 +355,8 @@
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" />
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -65,107 +377,208 @@
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy" />
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy" />
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy" />
                 </a>
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <h1>Stonehenge</h1>
-                <img src="images/stonehenge-banner.jpg" alt="Stonehenge" class="banner-image">
+                
+                <!-- Page Title -->
+                <h1>Stonehenge: England’s Mysterious Prehistoric Monument</h1>
 
-                <div class="section">
-                    <h2>What to See</h2>
-                    <p>Stonehenge is one of the world's most famous prehistoric monuments. Visitors can explore the stone circle, visitor center exhibits, and the surrounding landscape, which is steeped in mystery and legend.</p>
-                </div>
+                <!-- Two-Column Layout -->
+                <div class="content-row">
+                    
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        
+                        <!-- Optional Video or Banner Image -->
+                        <img src="images/stonehenge-banner.jpg" alt="Stonehenge" class="responsive-image" style="border-radius: 8px;" loading="lazy" />
 
-                <div class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>Stonehenge was constructed between 3000 BC and 2000 BC. Its exact purpose remains unknown, but theories suggest it was used for religious ceremonies, astronomical observations, or as a burial site.</p>
-                </div>
+                        <!-- Back to Destinations Button -->
+                        <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
 
-                <div class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li>The Stone Circle</li>
-                        <li>Visitor Center Exhibits</li>
-                        <li>Stonehenge Landscape</li>
-                        <li>Stonehenge Visitor Platform</li>
-                        <li>Winter Solstice Celebrations</li>
-                        <li>Durrington Walls</li>
-                        <li>Amesbury Abbey</li>
-                        <li>Woodhenge</li>
-                        <li>South Circular Road Walks</li>
-                        <li>Stonehenge Art Installations</li>
-                    </ol>
-                </div>
+                        <!-- Introduction & History Section -->
+                        <section class="section">
+                            <h2>What to See</h2>
+                            <p>
+                                Stonehenge is one of the world’s most iconic prehistoric monuments, famous for its massive stone circle and the enduring mystery surrounding its construction. Visitors can explore the ancient stones up close, learn about the site’s significance in the modern visitor center, and wander through the rolling Salisbury Plain to soak in the area’s rich atmosphere.
+                            </p>
+                        </section>
 
-                <div class="section">
-                    <h2>What to Bring</h2>
-                    <ul>
-                        <li>Comfortable walking shoes</li>
-                        <li>Weather-appropriate clothing</li>
-                        <li>Camera or smartphone for photos</li>
-                        <li>Guidebook or map</li>
-                        <li>Travel adapter (Type G socket)</li>
-                        <li>Reusable water bottle</li>
-                        <li>Personal medications</li>
-                        <li>Sun protection (sunscreen, hat, sunglasses)</li>
-                        <li>Light jacket for cooler evenings</li>
-                        <li>Umbrella or raincoat</li>
-                    </ul>
-                </div>
+                        <section class="section">
+                            <h2>A Brief History</h2>
+                            <p>
+                                Constructed between 3000 BC and 2000 BC, Stonehenge has puzzled historians and archaeologists for centuries. Its exact purpose remains unknown—some believe it was an astronomical observatory, others suggest it was a religious site or burial ground. Despite the theories, Stonehenge stands as a testament to ancient engineering and the human fascination with celestial events.
+                            </p>
+                        </section>
 
-                <div class="section">
-                    <h2>Currency</h2>
-                    <p>The currency in Stonehenge (England) is the British Pound Sterling (£).</p>
-                </div>
+                        <!-- Top 10 Attractions -->
+                        <section class="section">
+                            <h2>Top 10 Attractions</h2>
+                            <ol>
+                                <li><strong>The Stone Circle:</strong> The main attraction—massive standing stones arranged in a circular layout.</li>
+                                <li><strong>Visitor Center Exhibits:</strong> Interactive displays showcasing Stonehenge’s history, artifacts, and theories.</li>
+                                <li><strong>Stonehenge Landscape:</strong> Surrounding fields and ancient pathways that add to the site’s mysterious charm.</li>
+                                <li><strong>Stonehenge Visitor Platform:</strong> Offers closer views of the stones while preserving the site.</li>
+                                <li><strong>Winter Solstice Celebrations:</strong> Druids and pagans gather to celebrate the shortest day of the year.</li>
+                                <li><strong>Durrington Walls:</strong> A nearby Neolithic settlement providing further insight into prehistoric life.</li>
+                                <li><strong>Amesbury Abbey:</strong> A historic site just a short drive away, offering a glimpse into medieval England.</li>
+                                <li><strong>Woodhenge:</strong> Another ancient monument featuring timber posts, thought to be related to Stonehenge.</li>
+                                <li><strong>South Circular Road Walks:</strong> Scenic footpaths around the perimeter for panoramic views.</li>
+                                <li><strong>Stonehenge Art Installations:</strong> Occasionally hosts modern art exhibits or installations that blend with the prehistoric setting.</li>
+                            </ol>
+                        </section>
 
-                <div class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>Spring (April to June) and Autumn (September to October) offer pleasant weather and fewer crowds. Visiting during the summer solstice provides a unique experience with traditional ceremonies, while winter visits are quieter but still awe-inspiring.</p>
-                </div>
+                        <!-- What to Bring Section -->
+                        <section class="section">
+                            <h2>What to Bring</h2>
+                            <ul>
+                                <li>Comfortable walking shoes—uneven terrain around the site.</li>
+                                <li>Weather-appropriate clothing—England’s weather can be unpredictable.</li>
+                                <li>Camera or smartphone—plenty of photo-worthy moments.</li>
+                                <li>Guidebook or map—enhance your understanding of the site.</li>
+                                <li>Travel adapter (Type G socket)—for charging devices.</li>
+                                <li>Reusable water bottle—stay hydrated.</li>
+                                <li>Personal medications—bring any essentials you may need.</li>
+                                <li>Sun protection (sunscreen, hat, sunglasses)—especially during summer months.</li>
+                                <li>Light jacket for cooler evenings—temperatures can drop quickly.</li>
+                                <li>Umbrella or raincoat—be prepared for rain!</li>
+                            </ul>
+                        </section>
 
-                <div class="section">
-                    <h2>Fun Facts</h2>
-                    <ul>
-                        <li>Stonehenge consists of around 30 standing stones, each weighing up to 25 tons.</li>
-                        <li>The stones were transported from Wales, over 200 kilometers away.</li>
-                        <li>Stonehenge aligns with the sunrise during the summer solstice and the sunset during the winter solstice.</li>
-                        <li>It is estimated that over 1,000 people were involved in the construction of Stonehenge.</li>
-                        <li>Stonehenge remains one of the most enduring mysteries of ancient engineering and architecture.</li>
-                    </ul>
+                        <!-- Currency & Best Time to Visit -->
+                        <section class="section">
+                            <h2>Currency &amp; Best Time to Visit</h2>
+                            <p>
+                                <strong>Currency:</strong> The British Pound Sterling (£) is used throughout England. Most major cards are accepted at Stonehenge’s visitor center and nearby shops.
+                            </p>
+                            <p>
+                                <strong>Best Time to Visit:</strong> Spring (April–June) and Autumn (September–October) provide pleasant weather and fewer crowds. For a unique experience, visit during the summer solstice (late June) or winter solstice (late December) when the sunrise and sunset align dramatically with the stones—though expect larger gatherings during these events.
+                            </p>
+                        </section>
+
+                        <!-- Fun Facts Section -->
+                        <section class="section">
+                            <h2>Fun Facts</h2>
+                            <ul>
+                                <li>Each standing stone weighs up to 25 tons, transported from over 200 kilometers away in Wales.</li>
+                                <li>The arrangement aligns with the sunrise during the summer solstice and the sunset during the winter solstice.</li>
+                                <li>Estimated to have required the labor of hundreds of people over centuries of construction.</li>
+                                <li>Stonehenge is a UNESCO World Heritage Site, recognized for its cultural significance and historical value.</li>
+                                <li>Modern theories range from celestial calendars to elaborate burial grounds—yet its true purpose remains elusive.</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                    <!-- End Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Stonehenge Quick Facts</h3>
+                        <ul>
+                            <li><strong>Location:</strong> Salisbury Plain, Wiltshire, England</li>
+                            <li><strong>Built:</strong> Between 3000 BC and 2000 BC</li>
+                            <li><strong>Nearest Town:</strong> Amesbury (about 3 miles away)</li>
+                            <li><strong>UNESCO Status:</strong> World Heritage Site since 1986</li>
+                            <li><strong>Language:</strong> English</li>
+                            <li><strong>Time Zone:</strong> GMT (UTC+0), BST in summer</li>
+                        </ul>
+
+                        <h3>Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">English Heritage (Official Site)</a></li>
+                            <li><a href="#">Local Bus & Tour Services</a></li>
+                            <li><a href="#">Nearby Accommodation Options</a></li>
+                            <li><a href="#">Regional Tourist Information</a></li>
+                        </ul>
+
+                        <h3>Safety &amp; Tips</h3>
+                        <ul>
+                            <li>Stick to marked paths—protect the site and yourself.</li>
+                            <li>Check weather forecasts—sudden rain or cold spells are common.</li>
+                            <li>Book tickets in advance—especially during peak tourist seasons.</li>
+                            <li>Respect any barriers—stone damage can lead to penalties.</li>
+                            <li>Plan for limited public transport—shuttle buses run from visitor centers.</li>
+                        </ul>
+
+                        <!-- Example AdSense or other ad -->
+                        <div class="adsense">
+                            <ins class="adsbygoogle"
+                                 style="display:block"
+                                 data-ad-client="ca-pub-6483721386563068"
+                                 data-ad-slot="8249189982"
+                                 data-ad-format="auto"
+                                 data-full-width-responsive="true"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">"Stonehenge Decoded" – Gerald Hawkins</a></li>
+                            <li><a href="#">"The Stonehenge Enigma" – Various Authors</a></li>
+                            <li><a href="#">"English Heritage Official Guide" – Stonehenge Edition</a></li>
+                        </ul>
+                    </aside>
+                    <!-- End Sidebar Column -->
                 </div>
+                <!-- End .content-row -->
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy" />
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy" />
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy" />
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Enhanced Navigation and Back to Top Button -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
