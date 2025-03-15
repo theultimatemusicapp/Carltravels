@@ -68,7 +68,6 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
     <link rel="stylesheet" href="destination.css">
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
@@ -82,7 +81,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Inline styles for two-column layout and page design -->
     <style>
         /* Responsive video styles */
         .video-responsive {
@@ -316,7 +315,7 @@
             background-color: #E55B00;
             opacity: 1;
         }
-        
+
         /* Two-column layout */
         .content-row {
             display: flex;
@@ -387,6 +386,15 @@
     <main id="main-content">
         <section class="destination-details">
             <div class="container">
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Bangkok</li>
+                    </ol>
+                </nav>
+
                 <!-- Page Title -->
                 <h1>Bangkok: Khaosan Road, Bugs on Sticks, and City High-Rises</h1>
 
@@ -395,22 +403,21 @@
                     
                     <!-- Main Column -->
                     <div class="main-column">
-                        
                         <!-- Introduction & Personal Take -->
-                        <div class="section">
+                        <section class="section">
                             <p>
-                                Let's be honest: I’m more of a beaches guy. But that doesn’t mean <strong>Bangkok</strong> isn’t a blast. It’s the big, bustling capital where most of us fly in, and it has a certain chaotic charm that grows on you. 
+                                Let’s be honest: I’m more of a beaches guy. But that doesn’t mean <strong>Bangkok</strong> isn’t a blast. It’s the big, bustling capital where most of us fly in, and it has a certain chaotic charm that grows on you.
                             </p>
                             <p>
-                                You can go **ultra-luxe** here, renting a cheap high-rise apartment and feeling like a king, or you can backpack it up in a no-frills hostel. Both approaches work in a city that never really sleeps. If you’re craving neon lights, strange street food (bugs on sticks, anyone?), or a giant golden Buddha, Bangkok’s got you covered.
+                                You can go <strong>ultra-luxe</strong> here, renting a cheap high-rise apartment and feeling like a king, or you can backpack it up in a no-frills hostel. Both approaches work in a city that never really sleeps. If you’re craving neon lights, strange street food (bugs on sticks, anyone?), or a giant golden Buddha, Bangkok’s got you covered.
                             </p>
                             <p>
                                 Then there’s <strong>Khaosan Road</strong>—the infamous party street where you can slurp cheap cocktails out of buckets and maybe question your life choices at 3 AM. But hey, it’s all part of the Bangkok experience.
                             </p>
-                        </div>
+                        </section>
 
                         <!-- Must-See Highlights -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Highlights & Must-Sees</h2>
                             <ul>
                                 <li><strong>Khaosan Road:</strong> Backpacker central for cheap drinks, weird street eats, and questionable tattoos.</li>
@@ -419,10 +426,10 @@
                                 <li><strong>High-Rise Apartments:</strong> Treat yourself to a skyline view for surprisingly affordable rates.</li>
                                 <li><strong>Chinatown Street Food:</strong> If you can survive the crowd, the flavors are out of this world.</li>
                             </ul>
-                        </div>
+                        </section>
 
                         <!-- Personal Anecdotes & Safety -->
-                        <div class="section">
+                        <section class="section">
                             <h2>My Bangkok Adventures</h2>
                             <p>
                                 I’ve visited Bangkok a few times, usually as a pit stop before hitting the islands. Still, I’ve learned a few things:
@@ -436,23 +443,23 @@
                             <p>
                                 Despite the heat and the chaos, Bangkok can be a real hoot—just be prepared to sweat and eat your weight in street food.
                             </p>
-                        </div>
+                        </section>
 
                         <!-- Transportation & Getting Around -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Getting Around & Practical Tips</h2>
                             <p>
                                 Suvarnabhumi Airport is typically where you’ll land. From there:
                             </p>
                             <ul>
                                 <li><strong>Airport Rail Link:</strong> Cheap, quick, and direct into the city. Under $3 AUD if you’re budget-minded.</li>
-                                <li><strong>Taxi or Grab:</strong> More convenient, about 300-400 THB ($10-$13 AUD) plus tolls. Traffic can be a beast, though.</li>
+                                <li><strong>Taxi or Grab:</strong> More convenient, about 300–400 THB ($10–$13 AUD) plus tolls. Traffic can be a beast, though.</li>
                                 <li><strong>Public Buses:</strong> Cheapest option, but can be slow and crowded.</li>
                             </ul>
                             <p>
                                 Once you’re downtown, the BTS Skytrain and MRT are lifesavers for dodging traffic. Tuk-tuks are fun for short hops, but <em>negotiate first</em> to avoid “tourist pricing.”
                             </p>
-                        </div>
+                        </section>
 
                         <!-- Quick Video Embed (Optional) -->
                         <div class="video-responsive">
@@ -469,10 +476,10 @@
                         </div>
 
                         <!-- Khaosan Road Section -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Khaosan Road: Backpacker Wonderland</h2>
                             <p>
-                                <strong>Khaosan Road</strong> is the epicenter of Bangkok’s backpacker scene. Expect loud music, neon signs, bars competing for your baht, and travel agencies offering bus tickets to the islands. 
+                                <strong>Khaosan Road</strong> is the epicenter of Bangkok’s backpacker scene. Expect loud music, neon signs, bars competing for your baht, and travel agencies offering bus tickets to the islands.
                             </p>
                             <ul>
                                 <li><strong>Cheap Drinks:</strong> Buckets of mixed booze for a few dollars—just watch your tolerance.</li>
@@ -483,10 +490,10 @@
                                 "I once tried a fried scorpion here. Tasted like crunchy regret. But hey, it’s all part of the Bangkok story!"
                                 <footer>– Carl, <em>Carl Travels</em></footer>
                             </blockquote>
-                        </div>
+                        </section>
 
                         <!-- Foodie Finds -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Foodie Finds</h2>
                             <p>
                                 From Michelin-starred restaurants to plastic-stool street stalls, Bangkok is a foodie paradise:
@@ -500,10 +507,10 @@
                             <p>
                                 Pro tip: If a vendor looks busy with locals, it’s probably legit. Don’t be shy to point and smile if you can’t read the menu.
                             </p>
-                        </div>
+                        </section>
 
                         <!-- Final Thoughts & Return Link -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Final Thoughts</h2>
                             <p>
                                 Bangkok may not be my personal favorite compared to Thailand’s gorgeous beaches, but it’s a **must-experience** city. Whether you’re sipping rooftop cocktails, munching on fried tarantulas, or bar-hopping on Khaosan Road, you’ll find Bangkok’s pulse is electric—just be ready to embrace the chaos.
@@ -512,7 +519,7 @@
                                 Safe travels and happy munching—bugs optional!
                             </p>
                             <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
-                        </div>
+                        </section>
 
                         <!-- Google AdSense Ad (Optional) -->
                         <section class="adsense">
@@ -535,7 +542,7 @@
 
                     <!-- Sidebar Column -->
                     <aside class="sidebar">
-                        <h3>Bangkok Resources</h3>
+                        <h3>Bangkok Travel Resources</h3>
                         <ul>
                             <li><a href="#">Official Bangkok Tourism</a></li>
                             <li><a href="#">Top Street Food Spots</a></li>
@@ -545,7 +552,7 @@
                         
                         <h3>Quick Tips</h3>
                         <p><strong>Currency:</strong> Thai Baht (฿). ATMs everywhere, but watch out for fees.</p>
-                        <p><strong>Language:</strong> Thai, but English is widely understood in tourist areas.</p>
+                        <p><strong>Language:</strong> Thai, though English is widely understood in tourist areas.</p>
                         <p><strong>Time Zone:</strong> UTC+7.</p>
                         <p><strong>Climate:</strong> Tropical—humid, hot, and random downpours.</p>
                         
@@ -568,12 +575,11 @@
                             <li><a href="#">“Lonely Planet Thailand” - Travel Guide</a></li>
                         </ul>
                     </aside> <!-- End of .sidebar -->
-
                 </div> <!-- End of .content-row -->
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
