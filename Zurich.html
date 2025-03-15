@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zurich – Carl Travels: A 4-Day Urban Adventure</title>
 
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Explore Zurich, Switzerland's largest city, known for its pristine lakes, historic old town, and vibrant cultural scene.">
-    <meta name="keywords" content="Zurich, Switzerland, Travel, Attractions, History">
-    <meta name="author" content="Carl Tomich">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Join Carl on a 4-day journey through Zurich, Switzerland’s largest city. Experience pristine lakes, historic old towns, and a vibrant cultural scene.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Zurich, Switzerland, Carl Travels, Lake Zurich, Swiss Cuisine, Travel Guide, Adventure, Culture">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Zurich Voyage: A 4-Day Urban Adventure - Carl Travels">
-    <meta property="og:description" content="Discover Zurich's blend of natural beauty, historical landmarks, and modern attractions with Carl Travels.">
-    <meta property="og:image" content="https://www.carltravels.com/zurich-banner.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/Zurich.html">
-    <meta property="og:type" content="article">
+    <meta property="og:title" content="Zurich – Carl Travels: A 4-Day Urban Adventure">
+    <meta property="og:description" content="Explore Zurich’s natural beauty, historic charm, and modern sophistication with Carl.">
+    <meta property="og:image" content="https://www.carltravels.com/images/zurich-banner.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/zurich.html">
+    <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zurich Voyage: A 4-Day Urban Adventure - Carl Travels">
-    <meta name="twitter:description" content="Discover Zurich's blend of natural beauty, historical landmarks, and modern attractions with Carl Travels.">
-    <meta name="twitter:image" content="https://www.carltravels.com/zurich-banner.jpg">
-
-    <title>Zurich Voyage: A 4-Day Urban Adventure - Carl Travels</title>
-
-    <!-- Link to the updated styles.css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
-    <link rel="stylesheet" href="destination.css">
-
-    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="twitter:title" content="Zurich – Carl Travels: A 4-Day Urban Adventure">
+    <meta name="twitter:description" content="Explore Zurich’s natural beauty, historic charm, and modern sophistication with Carl.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/zurich-banner.jpg">
 
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "headline": "Zurich Voyage: A 4-Day Urban Adventure",
-      "description": "Discover Zurich's blend of natural beauty, historical landmarks, and modern attractions with Carl Travels.",
-      "image": "https://www.carltravels.com/zurich-banner.jpg",
+      "headline": "Zurich – Carl Travels: A 4-Day Urban Adventure",
+      "description": "Join Carl on a 4-day journey through Zurich, Switzerland’s largest city. Experience pristine lakes, historic old towns, and a vibrant cultural scene.",
+      "image": "https://www.carltravels.com/images/zurich-banner.jpg",
       "author": {
         "@type": "Person",
         "name": "Carl Tomich"
@@ -52,301 +42,134 @@
         "name": "Carl Travels",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.carltravels.com/logo.png"
+          "url": "https://www.carltravels.com/images/logo.png"
         }
       },
       "datePublished": "2024-04-27",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.carltravels.com/Zurich.html"
+        "@id": "https://www.carltravels.com/zurich.html"
       }
     }
     </script>
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Google AdSense Script (Optional) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+         crossorigin="anonymous"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Inline styles for two-column layout -->
     <style>
+        /* Responsive video styles (if needed) */
+        .video-responsive {
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
         /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #fff;
         }
-
         a {
             color: #FF6600;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
         a:hover {
             color: #E55B00;
         }
-
-        /* Ensure images within the main content are responsive */
-        main img.responsive-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto; /* Center the image with spacing */
-            padding: 10px 0; /* Optional padding for spacing */
-        }
-
-        /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
-
-        /* Enhance header h1 appearance on hover */
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within the main content */
         main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 2.5em;
             text-align: center;
         }
-
-        /* Enhance main h1 appearance on hover */
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h2 titles within the main content */
         main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
             font-size: 1.8em;
         }
-
-        /* Enhance main h2 appearance on hover */
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
             font-size: 1.4em;
         }
-
-        /* Responsive typography adjustments */
-        @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
-            main h3 {
-                font-size: 1.2em;
-            }
-            /* Adjust iframe size for smaller screens */
-            .video-container iframe {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
             margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
-        /* Styling for Sections */
         .section {
             margin-bottom: 30px;
         }
-
-        /* Breadcrumb Styling */
-        .breadcrumb {
-            list-style: none;
-            display: flex;
-            gap: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 0.9em;
-            padding: 10px 0;
+        .adsense {
+            margin: 40px 0;
         }
-
-        .breadcrumb li::after {
-            content: ">";
-            margin-left: 5px;
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
         }
-
-        .breadcrumb li:last-child::after {
-            content: "";
-        }
-
-        .breadcrumb a {
-            color: #FF6600;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        /* Blockquote Styling */
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #FF6600;
-            padding-left: 15px;
-            margin: 20px 0;
-            background-color: #f9f9f9;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-
-        blockquote footer {
-            text-align: right;
-            font-weight: bold;
-            color: #333;
-            margin-top: 5px;
-        }
-
-        /* Testimonial Section Styling */
-        .testimonials {
-            background-color: #f1f1f1;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .testimonials h2 {
-            margin-bottom: 15px;
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-        }
-
-        /* Follow My Adventures Section */
-        .follow-adventures {
-            margin-top: 30px;
-        }
-
-        .follow-adventures h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-        }
-
-        .follow-adventures .follow-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .follow-adventures .follow-links li {
-            margin-bottom: 10px;
-        }
-
-        .follow-adventures .follow-links li a {
-            color: #FF6600;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-            transition: color 0.3s ease;
-        }
-
-        .follow-adventures .follow-links li a:hover {
-            color: #E55B00;
-        }
-
-        /* Hamburger Menu Styling */
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .menu-icon span {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            transition: all 0.3s ease;
-        }
-
-        /* Responsive Navigation Menu */
-        @media (max-width: 768px) {
-            nav ul.nav-menu {
-                display: none;
-                flex-direction: column;
-                gap: 10px;
-                background-color: #fff;
-                position: absolute;
-                top: 60px;
-                right: 20px;
-                padding: 20px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                border-radius: 5px;
-                z-index: 1000;
-                width: 200px;
-            }
-
-            nav ul.nav-menu.active {
-                display: flex;
-                animation: fadeIn 0.3s ease-in-out;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-
-            /* Hamburger Animation */
-            #menu-toggle:checked + .menu-icon span:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-
-            #menu-toggle:checked + .menu-icon span:nth-child(2) {
-                opacity: 0;
-            }
-
-            #menu-toggle:checked + .menu-icon span:nth-child(3) {
-                transform: rotate(-45deg) translate(5px, -5px);
-            }
-        }
-
-        /* Fade-in Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Back to Top Button Styling */
         #back-to-top {
             position: fixed;
             bottom: 40px;
@@ -363,30 +186,39 @@
             transition: background-color 0.3s ease, opacity 0.3s ease;
             opacity: 0.8;
         }
-
         #back-to-top:hover {
             background-color: #E55B00;
             opacity: 1;
         }
 
-        /* Skip Navigation Link Styling */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #FF6600;
-            color: #fff;
-            padding: 8px 16px;
-            z-index: 100;
-            transition: top 0.3s ease;
-            font-family: 'Roboto', sans-serif;
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
         }
 
-        .skip-link:focus {
-            top: 10px;
-        }
-
-        /* Footer Styling */
+        /* Footer Styles */
         footer {
             background-color: #333;
             color: #fff;
@@ -394,24 +226,91 @@
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
-
         .footer-social {
             margin-top: 10px;
         }
-
         .footer-social a {
             margin: 0 10px;
             display: inline-block;
         }
-
         .footer-social img {
             width: 24px;
             height: 24px;
             transition: transform 0.3s ease;
         }
-
         .footer-social a:hover img {
             transform: scale(1.2);
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        #menu-toggle {
+            display: none;
+        }
+        nav ul.nav-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 58px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+                cursor: pointer;
+                padding: 10px;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -422,18 +321,13 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
             <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
             <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -444,8 +338,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -464,6 +356,7 @@
     <main id="main-content">
         <section class="destination-details">
             <div class="container">
+                
                 <!-- Breadcrumb Navigation -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -473,212 +366,244 @@
                     </ol>
                 </nav>
 
-                <!-- Main Title -->
-                <h1>Zurich Voyage: A 4-Day Urban Adventure</h1>
-                <img src="zurich-banner.jpg" alt="Zurich Banner" class="banner-image responsive-image" loading="lazy">
+                <!-- Two-Column Layout -->
+                <div class="content-row">
 
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Zurich, Switzerland's largest city, is known for its pristine lakes, historic old town, and vibrant cultural scene. The city beautifully combines natural beauty with urban sophistication, making it a must-visit destination for travelers seeking both relaxation and adventure.</p>
-                    <p><strong>A Brief History of Zurich:</strong> Zurich's history dates back to Roman times when it was established as a customs post. During the Middle Ages, it became a significant center for trade and finance. The city played a pivotal role in the Protestant Reformation and has evolved into a global financial hub while retaining its historical charm.</p>
-                </section>
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Day 1 -->
-                <section class="section">
-                    <h2>Day 1: Arrival and Historical Exploration</h2>
-                    <p>Upon arriving at Zurich Airport, I took a taxi to my hotel located in the heart of the city. The first day was dedicated to exploring Zurich's rich historical landmarks.</p>
-                    <img src="zurich1.jpg" alt="Lake Zurich" class="responsive-image" loading="lazy">
-                    <p>Wandering through the bustling streets, I marveled at the stunning Lake Zurich. A stroll along the lakeside promenade offered breathtaking views and a peaceful atmosphere. Later, I visited the Old Town (Altstadt), where narrow cobblestone streets are lined with medieval buildings, charming cafes, and boutique shops. The evening was spent enjoying a delightful dinner at a traditional Swiss restaurant, savoring dishes like Zürcher Geschnetzeltes and Rösti.</p>
-                </section>
+                        <!-- Page Title -->
+                        <h1>Zurich Voyage: A 4-Day Urban Adventure</h1>
+                        <img src="zurich-banner.jpg" alt="Zurich Banner" class="responsive-image" loading="lazy">
 
-                <!-- Day 2 -->
-                <section class="section">
-                    <h2>Day 2: Art, Culture, and Modern Zurich</h2>
-                    <p>The second day was all about immersing myself in Zurich's artistic and modern attractions.</p>
-                    <img src="zurich2.jpg" alt="Old Town (Altstadt), Zurich" class="responsive-image" loading="lazy">
-                    <p>I began the day with a visit to the Swiss National Museum, where I delved into Switzerland's cultural history through fascinating exhibits. The afternoon was spent exploring the vibrant Bahnhofstrasse, one of the world's most exclusive shopping streets, known for its high-end boutiques and luxury brands. Later, I headed to the Lindenhof district, a serene area offering panoramic views of the city and the river. The day concluded with a visit to Kunsthaus Zurich, an impressive art gallery showcasing an extensive collection of modern and contemporary art.</p>
-                </section>
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Zurich, Switzerland’s largest city, is a place where pristine lakeside views meet cosmopolitan flair. Known for its historic old town, vibrant cultural scene, and mouthwatering Swiss cuisine, Zurich offers a seamless blend of natural beauty and urban sophistication. Join me, Carl, as I explore this city for four unforgettable days—embracing everything from the medieval cobblestone streets to the sleek modern districts.</p>
+                            <p><strong>A Brief History:</strong> Originally a Roman customs post, Zurich evolved into a significant trade hub in the Middle Ages. It played a vital role in the Protestant Reformation under the leadership of Huldrych Zwingli. Today, Zurich stands as a global financial powerhouse while still cherishing its rich heritage and breathtaking landscapes.</p>
+                        </section>
 
-                <!-- Day 3 -->
-                <section class="section">
-                    <h2>Day 3: Natural Beauty and Scenic Views</h2>
-                    <p>On the third day, I ventured into Zurich's natural landscapes and enjoyed some of the city's scenic views.</p>
-                    <img src="zurich3.jpg" alt="Uetliberg Mountain, Zurich" class="responsive-image" loading="lazy">
-                    <p>I took a short train ride to Uetliberg Mountain, Zurich's local mountain offering stunning panoramic views of the entire city and the Alps. Hiking along the trails provided a refreshing escape from the urban hustle. In the afternoon, I visited the Zurich Zoo, home to a diverse range of animals and beautifully landscaped habitats. The evening was perfect for a leisurely boat ride on Lake Zurich, enjoying the serene waters and the illuminated cityscape.</p>
-                </section>
+                        <!-- Day 1 -->
+                        <section class="section">
+                            <h2>Day 1: Arrival & Lakeside Strolls</h2>
+                            <p>After landing at Zurich Airport, I hopped on a train (quick tip: Swiss trains are super punctual!) to reach the city center. My hotel was a stone’s throw from the historic Old Town, making it the perfect base for day one’s explorations. I spent the afternoon wandering along the shores of Lake Zurich, watching swans glide by and soaking in the mountain views. If you’re jet-lagged, nothing beats the serenity of this lakeside promenade.</p>
+                            <p>For dinner, I dove right into local flavors with a plate of <strong>Zürcher Geschnetzeltes</strong>—thinly sliced veal in a creamy mushroom sauce—accompanied by crisp Rösti. Delicious enough to make you forget you ever complained about airline food.</p>
+                        </section>
 
-                <!-- Day 4 -->
-                <section class="section">
-                    <h2>Day 4: Culinary Delights and Farewell</h2>
-                    <p>On my final day, I indulged in Zurich's culinary scene and enjoyed some last-minute exploration before bidding farewell to the city.</p>
-                    <img src="zurich4.jpg" alt="Kunsthaus Zurich Art Gallery" class="responsive-image" loading="lazy">
-                    <p>I started the morning with a visit to the vibrant Zurich West district, known for its modern architecture and trendy eateries. Sampling local delicacies like Raclette and Fondue was a delightful experience. The afternoon was dedicated to exploring the vibrant local markets, where I picked up souvenirs, fresh produce, and traditional crafts. I also revisited my favorite spots around the city, capturing final photographs and soaking in the serene ambiance. The trip concluded with a farewell dinner at a rooftop restaurant, offering stunning views of Zurich's skyline as I reflected on an enriching journey.</p>
-                </section>
+                        <!-- Day 2 -->
+                        <section class="section">
+                            <h2>Day 2: Old Town Charms & Modern Marvels</h2>
+                            <p>Waking up bright and early, I ventured into the <strong>Altstadt</strong> (Old Town), where narrow alleys reveal medieval architecture, quaint cafes, and boutique shops. The Grossmünster, with its iconic twin towers, was a highlight—climbing to the top rewards you with panoramic city views.</p>
+                            <p>By afternoon, I switched gears and explored the sleek side of Zurich at <strong>Bahnhofstrasse</strong>. Known as one of the world’s priciest shopping avenues, it’s the place to admire Swiss watches, designer labels, and maybe grab a bite at Sprüngli for some heavenly chocolate indulgence. (Warning: Your wallet might cry a little.)</p>
+                        </section>
 
-                <!-- Highlights -->
-                <section class="section">
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li>Lake Zurich: Scenic lakeside promenade offering breathtaking views.</li>
-                        <li>Old Town (Altstadt): Charming medieval district with historic architecture.</li>
-                        <li>Bahnhofstrasse: Prestigious shopping street featuring luxury brands.</li>
-                        <li>Swiss National Museum: Comprehensive exhibits on Swiss cultural history.</li>
-                        <li>Lindenhof District: Serene area providing panoramic city views.</li>
-                        <li>Uetliberg Mountain: Local mountain with stunning panoramic vistas.</li>
-                        <li>Kunsthaus Zurich: Renowned art gallery showcasing modern and contemporary art.</li>
-                        <li>Zurich Zoo: Diverse animal habitats and beautifully landscaped grounds.</li>
-                        <li>Navigli Canals: Vibrant area known for its picturesque canals and nightlife.</li>
-                        <li>Zurich West: Modern district with trendy restaurants and innovative architecture.</li>
-                    </ul>
-                </section>
+                        <!-- Day 3 -->
+                        <section class="section">
+                            <h2>Day 3: Mountain Escapes & Art Escapades</h2>
+                            <p>Day three took me beyond the city limits to <strong>Uetliberg</strong>, Zurich’s very own “mountain.” A short train ride whisks you up to a realm of hiking trails and jaw-dropping views over the city and the Alps. If you’re into nature photography, this is the spot for those postcard-perfect shots.</p>
+                            <p>Back in town, I spent the afternoon at <strong>Kunsthaus Zurich</strong>, the city’s premier art museum. Whether you’re a fan of Old Masters or modern installations, there’s plenty to feast your eyes on. Dinner was a casual affair at a local beer hall, where I sampled craft brews and struck up conversations with fellow travelers.</p>
+                        </section>
 
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3>Transportation</h3>
-                    <p>Zurich is easily accessible by air via Zurich Airport, which offers regular flights from major global cities. Within the city, public transportation includes an efficient network of trams, buses, and trains operated by VBZ. The Zurich Card provides unlimited 2nd class travel by tram, bus, train, boat, and cableway in the city and surrounding regions, as well as free or reduced admission to most museums.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>Zurich offers a wide range of accommodations, from luxury hotels in the city center to budget-friendly hostels and charming guesthouses. I stayed at a mid-range hotel in the Old Town, which provided excellent amenities and easy access to key attractions.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Zurich is known for being moderately expensive. A comfortable daily budget ranges from CHF 80 to CHF 250, covering accommodation, meals, transportation, and activities.</p>
-                </section>
+                        <!-- Day 4 -->
+                        <section class="section">
+                            <h2>Day 4: Market Finds & Fond Farewells</h2>
+                            <p>My last day was all about immersion in local life. First stop: <strong>Bürkliplatz Market</strong>, a bustling gathering of farmers, artisans, and florists. Strolling between stalls of fresh produce, cheese wheels, and handcrafted souvenirs felt like a crash course in Swiss culture.</p>
+                            <p>In the afternoon, I wandered around the emerging creative hub of Zurich West—an industrial area turned hipster paradise filled with trendy cafes, street art, and quirky boutiques. By evening, I was back by the lake, savoring a final Swiss chocolate-laced sunset, pondering how Zurich managed to be both so chill and so sophisticated at once.</p>
+                        </section>
 
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Purchase a Zurich Card for unlimited travel and museum discounts.</li>
-                        <li><strong>Don’t:</strong> Litter or disturb public spaces; help preserve Zurich's cleanliness and beauty.</li>
-                        <li><strong>Do:</strong> Wear comfortable footwear for extensive walking and exploring.</li>
-                        <li><strong>Don’t:</strong> Engage in unsafe activities without proper guidance and equipment.</li>
-                        <li><strong>Do:</strong> Carry a refillable water bottle; public drinking fountains are available throughout the city.</li>
-                        <li><strong>Don’t:</strong> Skip validating your public transport tickets; fines are issued for non-validated tickets.</li>
-                        <li><strong>Do:</strong> Respect local customs and traditions; observe proper etiquette when interacting with locals.</li>
-                        <li><strong>Don’t:</strong> Jump queues; always wait your turn at popular attractions.</li>
-                        <li><strong>Do:</strong> Use sunscreen and wear a hat, especially during summer months.</li>
-                        <li><strong>Don’t:</strong> Forget to learn a few basic German phrases to enhance your interactions.</li>
-                    </ul>
-                    
-                    <h3>Packing List</h3>
-                    <ul>
-                        <li>Comfortable walking shoes</li>
-                        <li>Weather-appropriate clothing</li>
-                        <li>Camera or smartphone for photos</li>
-                        <li>Guidebook or map of Zurich</li>
-                        <li>Travel adapter (Type C or Type J socket)</li>
-                        <li>Reusable water bottle</li>
-                        <li>Personal medications</li>
-                        <li>Umbrella or raincoat</li>
-                        <li>Light jacket for cooler evenings</li>
-                        <li>Basic German phrases</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Respect the local community and their cultural practices. Always greet with a friendly smile and a polite gesture. Dress appropriately when visiting religious and historical sites. When interacting with locals, use polite language and be mindful of cultural norms.</p>
-                </section>
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li><strong>Lake Zurich</strong> – A tranquil setting perfect for scenic walks and boat rides.</li>
+                                <li><strong>Altstadt</strong> – Medieval charm meets modern cafes and boutiques.</li>
+                                <li><strong>Bahnhofstrasse</strong> – Luxury shopping, Swiss watches, and top-notch chocolate.</li>
+                                <li><strong>Uetliberg</strong> – Panoramic hikes and postcard-perfect views.</li>
+                                <li><strong>Kunsthaus Zurich</strong> – A must-visit for art aficionados.</li>
+                                <li><strong>Bürkliplatz Market</strong> – Fresh produce, local crafts, and vibrant ambiance.</li>
+                                <li><strong>Zurich West</strong> – Hipster district teeming with street art and trendy hangouts.</li>
+                            </ul>
+                        </section>
 
-                <!-- Cultural Immersion -->
-                <section class="section">
-                    <h2>Cultural Immersion</h2>
-                    <p>Engaging with local Zurich residents provided a deeper understanding of the city's cultural heritage and daily life. I participated in a traditional Swiss cooking class, learning to prepare authentic dishes like fondue and raclette, and experienced the rich flavors of Zurich's cuisine firsthand.</p>
-                    <p>Visiting local markets and attending cultural events offered insights into Zurich's artistic and cultural evolution, fostering a greater appreciation for the city's dynamic spirit and enduring traditions.</p>
-                </section>
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            
+                            <h3>Transportation</h3>
+                            <p>Zurich Airport (ZRH) connects globally, and the Swiss rail system is famously reliable. Within the city, trams and buses are punctual and clean. Consider a Zurich Card for unlimited travel and discounted museum entries. Taxis can be pricey, so plan accordingly.</p>
+                            
+                            <h3>Accommodation</h3>
+                            <p>Zurich offers a range of stays—from five-star lakeside hotels to cozy hostels. I picked a mid-range spot near the Old Town for easy access to both medieval squares and modern districts.</p>
+                            
+                            <h3>Budgeting</h3>
+                            <p>Switzerland is known for higher living costs. Expect to spend CHF 80–250 daily, depending on accommodation, dining, and activities. Lunch at a cafe can run around CHF 15–25, while dinner might climb to CHF 30–50 or more.</p>
+                        </section>
 
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Zurich's culinary scene is a delightful blend of traditional Swiss flavors, modern gastronomy, and international influences.</p>
-                    <ul>
-                        <li><strong>Zürcher Geschnetzeltes:</strong> Sliced veal in a creamy mushroom sauce, typically served with Rösti.</li>
-                        <li><strong>Fondue:</strong> Melted cheese dish served with bread for dipping.</li>
-                        <li><strong>Raclette:</strong> Melted cheese served over potatoes, pickles, and onions.</li>
-                        <li><strong>Rösti:</strong> Crispy potato dish, a staple of Swiss cuisine.</li>
-                        <li><strong>Basler Läckerli:</strong> Traditional Swiss gingerbread with nuts and candied peel.</li>
-                        <li><strong>Swiss Chocolate:</strong> Renowned for its quality and variety.</li>
-                        <li><strong>Local Wines:</strong> A selection of Swiss wines, including Chasselas and Pinot Noir.</li>
-                        <li><strong>Bircher Muesli:</strong> Healthy breakfast dish made with oats, yogurt, fruits, and nuts.</li>
-                        <li><strong>Polenta:</strong> Cornmeal dish served as a side or base for various toppings.</li>
-                        <li><strong>Helado Artesanal:</strong> Artisan ice cream available in numerous creative flavors.</li>
-                    </ul>
-                    <p>I highly recommend dining at a traditional Swiss restaurant in the Old Town, where you can savor authentic dishes while enjoying the charming ambiance of local eateries.</p>
-                </section>
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips & Recommendations</h2>
+                            
+                            <h3>Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Validate your tram or bus ticket; Swiss ticket inspectors do exist!</li>
+                                <li><strong>Don’t:</strong> Be late. Swiss punctuality is no joke.</li>
+                                <li><strong>Do:</strong> Bring layers. Weather can shift quickly near the lake and mountains.</li>
+                                <li><strong>Don’t:</strong> Litter. Cleanliness is part of Zurich’s charm.</li>
+                                <li><strong>Do:</strong> Try local dishes like Fondue or Zürcher Geschnetzeltes.</li>
+                                <li><strong>Don’t:</strong> Assume everything is walkable—some hills can be steep, so plan for public transport.</li>
+                            </ul>
+                            
+                            <h3>Packing List</h3>
+                            <ul>
+                                <li>Comfortable shoes for cobblestone streets and mountain trails</li>
+                                <li>Weather-appropriate clothing (bring a light jacket even in summer)</li>
+                                <li>Reusable water bottle (Swiss tap water is top-notch)</li>
+                                <li>Camera or smartphone for those Alpine vistas</li>
+                                <li>Travel adapter (Type C or J) for Swiss outlets</li>
+                            </ul>
+                            
+                            <h3>Local Etiquette</h3>
+                            <p>In Zurich, courtesy is key. Greet shopkeepers with a friendly “Grüezi” (hello), maintain a quiet demeanor on public transport, and always respect queue lines. Tipping around 5–10% in restaurants is customary but not mandatory.</p>
+                        </section>
 
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Zurich offers a variety of activities for adventure enthusiasts and those seeking unique experiences:</p>
-                    <ul>
-                        <li><strong>Guided City Tours:</strong> Explore Zurich's historical and cultural landmarks with expert guides.</li>
-                        <li><strong>Boat Tours on Lake Zurich:</strong> Enjoy scenic boat rides offering unique perspectives of the city.</li>
-                        <li><strong>Hiking on Uetliberg Mountain:</strong> Trek along trails providing stunning panoramic views.</li>
-                        <li><strong>Kunsthaus Zurich:</strong> Visit the renowned art gallery showcasing an extensive collection.</li>
-                        <li><strong>Shopping:</strong> Discover luxury brands and unique boutiques along Bahnhofstrasse.</li>
-                        <li><strong>Nightlife:</strong> Experience Zurich's vibrant nightlife with numerous bars, clubs, and live music venues.</li>
-                        <li><strong>Photography Tours:</strong> Capture Zurich's architectural beauty and lively streets with guided sessions.</li>
-                        <li><strong>Local Markets:</strong> Explore bustling markets like Bürkliplatz for fresh produce and traditional crafts.</li>
-                        <li><strong>Cooking Classes:</strong> Learn to prepare traditional Swiss dishes with local chefs.</li>
-                        <li><strong>Relaxation:</strong> Enjoy spa days or leisurely walks along the lakeside for ultimate relaxation.</li>
-                    </ul>
-                    <p>One of the most thrilling activities was taking a guided bike tour through Zurich's green spaces and along the picturesque Lake Zurich, offering a perfect blend of urban exploration and natural beauty.</p>
-                </section>
+                        <!-- Cultural Immersion -->
+                        <section class="section">
+                            <h2>Cultural Immersion</h2>
+                            <p>Want a deeper dive? Sign up for a Swiss cooking class to master the art of <strong>Fondue</strong> or <strong>Raclette</strong>. Alternatively, drop by the Opera House for a classical music performance—Zurich’s passion for the arts is as strong as its love for precise timekeeping.</p>
+                            <p>If you’re feeling bold, consider a swim in the <strong>Limmat River</strong> at one of the designated “badis.” It’s a local summer tradition and offers a refreshing new angle of the city skyline.</p>
+                        </section>
 
-                <!-- Personal Stories -->
-                <section class="section">
-                    <h2>Personal Stories</h2>
-                    <p>Meeting Lukas, a local tour guide, was a highlight of my trip. He shared fascinating stories about Zurich's history and culture, making my exploration even more meaningful. His passion for the city's heritage brought the sights to life, providing deeper insights into Zurich's rich background.</p>
-                    <p>Another unforgettable moment was attending a traditional Swiss folk music performance, where I experienced the lively rhythms and cultural expressions that define Zurich's vibrant community.</p>
-                </section>
+                        <!-- Food & Cuisine -->
+                        <section class="section">
+                            <h2>Food & Cuisine</h2>
+                            <p>Zurich’s culinary scene is a feast of Swiss classics and international innovations. Highlights include:</p>
+                            <ul>
+                                <li><strong>Zürcher Geschnetzeltes</strong> – Veal in a creamy sauce, best paired with Rösti.</li>
+                                <li><strong>Fondue</strong> – Melted cheese heaven, often shared with friends.</li>
+                                <li><strong>Raclette</strong> – Hot melted cheese scraped over potatoes and pickles.</li>
+                                <li><strong>Swiss Chocolate</strong> – Because you’re in Switzerland. Enough said.</li>
+                                <li><strong>Birchermüesli</strong> – A Swiss breakfast staple of oats, fruit, and yogurt.</li>
+                            </ul>
+                            <p>For a sweet tooth fix, indulge in <strong>Luxemburgerli</strong> (mini macarons) at Confiserie Sprüngli—just try not to eat the whole box in one go.</p>
+                        </section>
 
-                <!-- Conclusion -->
-                <section class="section">
-                    <h2>Conclusion</h2>
-                    <p>Zurich is a captivating destination that offers a perfect blend of natural beauty, historical charm, and modern sophistication. My 4-day journey was an enriching and exhilarating experience, uncovering the dynamic spirit and enduring traditions of one of Europe's most vibrant cities.</p>
-                    <p>If you're planning a trip to Switzerland, Zurich should definitely be on your list. Whether you're seeking serene lakeside relaxation, cultural immersion, or thrilling adventures, Zurich has something for everyone.</p>
-                    <p>Until next time, happy travels!</p>
-                </section>
+                        <!-- Adventure & Activities -->
+                        <section class="section">
+                            <h2>Adventure & Activities</h2>
+                            <p>Zurich might be compact, but it’s full of surprises. From kayaking on Lake Zurich to paragliding over the nearby Alps, you can easily balance city life with outdoor thrills. If you prefer a slower pace, rent a bike and pedal through the city’s leafy parks, or explore hidden alleyways in the Altstadt for an off-the-beaten-path vibe.</p>
+                            <p>One of my personal favorites? Hiking the Uetliberg trail for jaw-dropping vistas—just be prepared to break a sweat on the incline!</p>
+                        </section>
 
-                <!-- Visitor Testimonials -->
-                <section class="section testimonials">
-                    <h2>Visitor Testimonials</h2>
-                    <blockquote>
-                        "Zurich is a perfect blend of nature and urban life. The lakeside walks are breathtaking, and the Old Town is full of charm and history. Every day brought a new adventure!"
-                        <footer>- Anna Müller</footer>
-                    </blockquote>
-                    <blockquote>
-                        "Exploring Zurich's museums and enjoying the local cuisine was an unforgettable experience. The city's vibrant cultural scene and friendly locals made my trip truly special."
-                        <footer>- Markus Schmid</footer>
-                    </blockquote>
-                </section>
+                        <!-- Personal Stories -->
+                        <section class="section">
+                            <h2>Personal Stories</h2>
+                            <p>One evening, I struck up a conversation with a local artist at a riverside pop-up bar along the Limmat. We chatted about Swiss design, global politics, and of course, cheese. By the end of our chat, I felt like I’d gained a friend and a fresh perspective on how Zurich’s creative community thrives beneath its polished exterior.</p>
+                            <p>Another memorable moment was discovering a small chocolate workshop in a side street near Bahnhofstrasse, where the chocolatier let me sample new flavors in development. Let’s just say Swiss chocolate will never taste “ordinary” to me again.</p>
+                        </section>
 
-                <!-- Follow My Adventures -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                        <!-- Conclusion -->
+                        <section class="section">
+                            <h2>Conclusion</h2>
+                            <p>Zurich manages to be both serenely beautiful and buzzingly modern—a place where you can watch swans on the lake by day and dance at an underground club by night. My four days here were a testament to Switzerland’s knack for blending tradition with innovation, and I left with a heart full of scenic memories and a belly full of cheese and chocolate.</p>
+                            <p>Until next time, happy travels!</p>
+                        </section>
+
+                        <!-- Testimonials Section -->
+                        <section class="section testimonials">
+                            <h2>Visitor Testimonials</h2>
+                            <blockquote>
+                                "Zurich’s pristine streets and stunning lake views took my breath away. The local food scene was a pleasant surprise—fondue for days!"
+                                <footer>- Anna Müller</footer>
+                            </blockquote>
+                            <blockquote>
+                                "I loved how you can hop from historic squares to futuristic skyscrapers in minutes. Zurich truly has something for everyone."
+                                <footer>- Markus Schmid</footer>
+                            </blockquote>
+                        </section>
+
+                        <!-- Follow My Adventures -->
+                        <section class="section follow-adventures">
+                            <h2>Follow My Adventures</h2>
+                            <p>Stay connected and follow my journey through the links below:</p>
+                            <ul class="follow-links">
+                                <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                                <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                                <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                            </ul>
+                        </section>
+
+                        <!-- Example AdSense Section (optional) -->
+                        <section class="adsense">
+                            <div class="container">
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-6483721386563068"
+                                     data-ad-slot="8249189982"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+
+                        <!-- Back to Top Button -->
+                        <button id="back-to-top" aria-label="Back to Top">↑</button>
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <!-- Profile / About Carl -->
+                        <img src="carlcircle.png" alt="Carl's Profile Picture" style="width:100px; height:100px; border-radius:50%; margin-bottom:20px;">
+                        <h3>About Carl</h3>
+                        <p>
+                            Carl is a travel vlogger who creates cinematic journeys, showcasing his adventures and all the weird and wonderful things he sees. Join him for an authentic look at each destination—from iconic highlights to hidden local corners.
+                        </p>
+
+                        <h3>Zurich Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Zurich Tourism Site</a></li>
+                            <li><a href="#">Public Transport & Zurich Card</a></li>
+                            <li><a href="#">Uetliberg Hiking Trails</a></li>
+                            <li><a href="#">Lake Zurich Boat Tours</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Swiss Franc (CHF). Credit cards widely accepted, but small vendors may prefer cash.</p>
+                        <p><strong>Language:</strong> German is predominant, but English is common in tourist areas.</p>
+                        <p><strong>Time Zone:</strong> Central European Time (UTC+1), with DST in summer.</p>
+                        <p><strong>Climate:</strong> Mild summers, cold winters—pack layers and comfy shoes.</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Lonely Planet: Switzerland Edition”</a></li>
+                            <li><a href="#">“Swiss Watching” by Diccon Bewes</a></li>
+                            <li><a href="#">“Swiss Chocolate: The Definitive Guide”</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to Top">↑</button>
-
+    
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -693,21 +618,19 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Enhanced Navigation and Back to Top Button -->
+    <!-- JavaScript for Enhanced Navigation, Back to Top Button, etc. -->
     <script>
         // Toggle navigation menu on hamburger icon click
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.querySelector('nav ul.nav-menu');
-
         menuToggle.addEventListener('change', () => {
             navMenu.classList.toggle('active');
         });
 
         // Back to Top Button functionality
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling down 300px
+            if (window.scrollY > 300) {
                 backToTopButton.style.display = 'block';
                 backToTopButton.style.opacity = '1';
             } else {
@@ -715,12 +638,8 @@
                 backToTopButton.style.opacity = '0';
             }
         });
-
         backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
         // Close the navigation menu when a link is clicked (for mobile)
