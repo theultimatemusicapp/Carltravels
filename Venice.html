@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venice Voyage: A 4-Day Canals and Culture Adventure - Carl Travels</title>
 
-    <!-- Primary Meta Tags -->
+    <!-- SEO Meta Description -->
     <meta name="description" content="Explore Venice, the enchanting city of canals in Italy, with Carl Travels. Discover its history, attractions, and travel tips.">
     <meta name="keywords" content="Venice, Italy, Travel, Carl Travels, Attractions, History">
     <meta name="author" content="Carl Tomich">
@@ -22,18 +23,6 @@
     <meta name="twitter:title" content="Venice Voyage: A 4-Day Canals and Culture Adventure - Carl Travels">
     <meta name="twitter:description" content="Discover Venice's rich history, stunning canals, and vibrant cultural scene with Carl Travels.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/Venice.jpg">
-
-    <title>Venice Voyage: A 4-Day Canals and Culture Adventure - Carl Travels</title>
-
-    <!-- Link to the updated styles.css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
-    <link rel="stylesheet" href="destination.css">
-
-    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
@@ -63,225 +52,132 @@
     }
     </script>
 
-    <!-- Inline styles matching the newer pages -->
+    <!-- Google AdSense Script (if needed) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+         crossorigin="anonymous"></script>
+
+    <!-- Google Analytics Script (if needed) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Inline styling for two-column layout -->
     <style>
-        /* Ensure images within the main content are responsive */
-        main img.responsive-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto; 
-            padding: 10px 0;
+        /* Responsive video styles (if needed) */
+        .video-responsive {
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
         }
 
-        /* Style the header h1 (Carl Travels) */
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
+            color: #FF6600;
             font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within main */
         main h1 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
         }
         main h1:hover {
             color: #E55B00;
         }
-
-        /* Style all h2 titles within main */
         main h2 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 1.8em;
         }
         main h2:hover {
             color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
             color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
+            font-size: 1.4em;
         }
-
-        /* Responsive typography adjustments */
-        @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; 
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
-            /* Adjust iframe size for smaller screens */
-            .responsive-video iframe {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
+            margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
-        /* Styling for Sections */
         .section {
             margin-bottom: 30px;
         }
-
-        /* Breadcrumb Styling */
-        .breadcrumb {
-            list-style: none;
-            display: flex;
-            gap: 5px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 0.9em;
-            padding: 10px 0;
+        .adsense {
+            margin: 40px 0;
         }
-
-        .breadcrumb li::after {
-            content: ">";
-            margin-left: 5px;
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
         }
-
-        .breadcrumb li:last-child::after {
-            content: "";
-        }
-
-        .breadcrumb a {
-            color: #FF6600;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        /* Blockquote Styling */
-        blockquote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #FF6600;
-            padding-left: 15px;
-            margin: 20px 0;
-        }
-
-        blockquote footer {
-            text-align: right;
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* Testimonial Section Styling */
-        .testimonials {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .testimonials h2 {
-            margin-bottom: 15px;
-        }
-
-        /* Follow My Adventures Section */
-        .follow-adventures {
-            margin-top: 30px;
-        }
-
-        .follow-adventures h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #FF6600;
-            margin-bottom: 15px;
-        }
-
-        .follow-adventures .follow-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .follow-adventures .follow-links li {
-            margin-bottom: 10px;
-        }
-
-        .follow-adventures .follow-links li a {
-            color: #FF6600;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-            transition: color 0.3s ease;
-        }
-
-        .follow-adventures .follow-links li a:hover {
-            color: #E55B00;
-        }
-
-        /* Hamburger Menu Styling */
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .menu-icon span {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            transition: all 0.3s ease;
-        }
-
-        /* Responsive Navigation Menu */
-        @media (max-width: 768px) {
-            nav ul.nav-menu {
-                display: none;
-                flex-direction: column;
-                gap: 10px;
-                background-color: #fff;
-                position: absolute;
-                top: 60px;
-                right: 20px;
-                padding: 20px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                border-radius: 5px;
-                z-index: 1000;
-            }
-
-            nav ul.nav-menu.active {
-                display: flex;
-            }
-
-            .menu-icon {
-                display: flex;
-            }
-        }
-
-        /* Back to Top Button Styling */
         #back-to-top {
             position: fixed;
             bottom: 40px;
@@ -289,36 +185,169 @@
             background-color: #FF6600;
             color: #fff;
             border: none;
-            padding: 10px 15px;
+            padding: 12px 16px;
             border-radius: 50%;
-            font-size: 18px;
+            font-size: 20px;
             cursor: pointer;
             display: none;
             z-index: 1000;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
         }
-
         #back-to-top:hover {
             background-color: #E55B00;
+            opacity: 1;
+        }
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
+        }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        #menu-toggle {
+            display: none;
+        }
+        nav ul.nav-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 58px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+                cursor: pointer;
+                padding: 10px;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-            <input type="checkbox" id="menu-toggle" hidden>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -329,8 +358,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook" loading="lazy">
@@ -346,219 +373,239 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-        <section class="blog-post">
+    <main id="main-content">
+        <section class="destination-details">
             <div class="container">
-                <!-- Breadcrumb Navigation -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li aria-current="page">Venice Voyage</li>
-                    </ol>
-                </nav>
 
-                <!-- Main Title -->
+                <!-- Page Title -->
                 <h1>Venice Voyage: A 4-Day Canals and Culture Adventure</h1>
 
-                <!-- Banner Image -->
-                <div class="banner-image">
-                    <img src="Venice.jpg" alt="Venice Banner" class="responsive-image" loading="lazy">
-                </div>
+                <!-- Two-Column Layout -->
+                <div class="content-row">
 
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Venice, the enchanting city of canals in Italy, is renowned for its stunning architecture, rich history, and vibrant cultural scene. Known as "La Serenissima," Venice offers a unique blend of romance, art, and tradition. As Carl, a 38-year-old traveler from Australia, I embarked on a 4-day voyage to explore the timeless beauty of Venice.</p>
-                    <p><strong>Brief History:</strong> Founded in the 5th century, Venice rose to prominence as a major maritime power during the Middle Ages and Renaissance. Its strategic location and mastery of navigation made it a center of commerce and art, leaving a lasting legacy visible in its magnificent palaces, churches, and public squares.</p>
-                </section>
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Day 1 -->
-                <section class="section">
-                    <h2>Day 1: Arrival and St. Mark's Square Exploration</h2>
-                    <p>Upon arriving at Venice Marco Polo Airport, I took a water taxi to my hotel located near St. Mark's Square, the heart of Venice. The first day was dedicated to exploring this iconic area.</p>
-                    <!-- Removed non-existent photo 'veniceday1.jpg' -->
-                    <p>I wandered through the narrow alleys and over the charming bridges, taking in the breathtaking views of St. Mark's Basilica and the Campanile. In the afternoon, I visited the Doge's Palace, marveling at its intricate Gothic architecture and rich historical artifacts. The evening was spent enjoying a gondola ride through the serene canals, offering a romantic and picturesque experience of Venice's unique waterways.</p>
-                </section>
+                        <!-- Banner Image -->
+                        <img src="Venice.jpg" alt="Venice Banner" class="responsive-image" loading="lazy">
 
-                <!-- Day 2 -->
-                <section class="section">
-                    <h2>Day 2: Art and Culture Immersion</h2>
-                    <p>The second day was all about immersing myself in Venice's rich artistic and cultural heritage.</p>
-                    <!-- Removed non-existent photo 'veniceday2.jpg' -->
-                    <p>I started the day at the Gallerie dell'Accademia, home to an extensive collection of Venetian paintings from the 14th to the 18th centuries. The afternoon was dedicated to exploring the Peggy Guggenheim Collection, showcasing modern art in a beautiful palazzo setting. In the evening, I attended a classical music concert at a historic venue, experiencing the harmonious blend of Venice's architectural grandeur and musical traditions.</p>
-                </section>
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Venice, the enchanting city of canals in Italy, is renowned for its stunning architecture, rich history, and vibrant cultural scene. Known as "La Serenissima," Venice offers a unique blend of romance, art, and tradition. As Carl, a 38-year-old traveler from Australia, I embarked on a 4-day voyage to explore the timeless beauty of Venice.</p>
+                            <p><strong>Brief History:</strong> Founded in the 5th century, Venice rose to prominence as a major maritime power during the Middle Ages and Renaissance. Its strategic location and mastery of navigation made it a center of commerce and art, leaving a lasting legacy visible in its magnificent palaces, churches, and public squares.</p>
+                        </section>
 
-                <!-- Day 3 -->
-                <section class="section">
-                    <h2>Day 3: Day Trip to Murano and Burano</h2>
-                    <p>On the third day, I took a day trip to the nearby islands of Murano and Burano, each renowned for their unique crafts and vibrant atmospheres.</p>
-                    <!-- Removed non-existent photo 'veniceday3.jpg' -->
-                    <p>The morning was spent in Murano, visiting its famous glass factories where artisans create exquisite glass pieces. Observing the intricate glass-blowing techniques was truly mesmerizing. In the afternoon, I traveled to Burano, known for its brightly colored houses and lace-making tradition. Strolling through the picturesque streets and enjoying fresh seafood at a local trattoria made for a delightful experience. The day concluded with a relaxing walk along the canals, soaking in the island's charm.</p>
-                </section>
+                        <!-- Day 1 -->
+                        <section class="section">
+                            <h2>Day 1: Arrival and St. Mark's Square Exploration</h2>
+                            <p>Upon arriving at Venice Marco Polo Airport, I took a water taxi to my hotel located near St. Mark's Square, the heart of Venice. The first day was dedicated to exploring this iconic area.</p>
+                            <p>I wandered through the narrow alleys and over the charming bridges, taking in the breathtaking views of St. Mark's Basilica and the Campanile. In the afternoon, I visited the Doge's Palace, marveling at its intricate Gothic architecture and rich historical artifacts. The evening was spent enjoying a gondola ride through the serene canals, offering a romantic and picturesque experience of Venice's unique waterways.</p>
+                        </section>
 
-                <!-- Day 4 -->
-                <section class="section">
-                    <h2>Day 4: Markets, Shopping, and Farewell</h2>
-                    <p>On my final day, I enjoyed a mix of local markets, shopping, and leisurely exploration.</p>
-                    <!-- Removed non-existent photo 'veniceday4.jpg' -->
-                    <p>I visited the Rialto Market in the morning, exploring the vibrant stalls selling fresh produce, seafood, and traditional Venetian products. The afternoon was dedicated to shopping for souvenirs and handmade crafts along the Rialto Bridge and nearby boutiques. The trip concluded with a leisurely walk through the less-traveled parts of Venice, discovering hidden gems and enjoying a final espresso at a charming café before heading back to my hotel to prepare for departure.</p>
-                </section>
+                        <!-- Day 2 -->
+                        <section class="section">
+                            <h2>Day 2: Art and Culture Immersion</h2>
+                            <p>The second day was all about immersing myself in Venice's rich artistic and cultural heritage.</p>
+                            <p>I started the day at the Gallerie dell'Accademia, home to an extensive collection of Venetian paintings from the 14th to the 18th centuries. The afternoon was dedicated to exploring the Peggy Guggenheim Collection, showcasing modern art in a beautiful palazzo setting. In the evening, I attended a classical music concert at a historic venue, experiencing the harmonious blend of Venice's architectural grandeur and musical traditions.</p>
+                        </section>
 
-                <!-- Highlights -->
-                <section class="section">
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li>St. Mark's Square: Iconic public square with stunning architecture.</li>
-                        <li>Doge's Palace: Historic palace showcasing Venetian Gothic architecture.</li>
-                        <li>Gallerie dell'Accademia: Premier art gallery with extensive Venetian collections.</li>
-                        <li>Peggy Guggenheim Collection: Modern art museum housed in a beautiful palazzo.</li>
-                        <li>Murano and Burano: Charming islands known for glassmaking and colorful houses.</li>
-                        <li>Rialto Market: Vibrant local market offering fresh produce and traditional goods.</li>
-                    </ul>
-                </section>
+                        <!-- Day 3 -->
+                        <section class="section">
+                            <h2>Day 3: Day Trip to Murano and Burano</h2>
+                            <p>On the third day, I took a day trip to the nearby islands of Murano and Burano, each renowned for their unique crafts and vibrant atmospheres.</p>
+                            <p>The morning was spent in Murano, visiting its famous glass factories where artisans create exquisite glass pieces. Observing the intricate glass-blowing techniques was truly mesmerizing. In the afternoon, I traveled to Burano, known for its brightly colored houses and lace-making tradition. Strolling through the picturesque streets and enjoying fresh seafood at a local trattoria made for a delightful experience. The day concluded with a relaxing walk along the canals, soaking in the island's charm.</p>
+                        </section>
 
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3>Transportation</h3>
-                    <p>Venice is accessible by air via Venice Marco Polo Airport and by train from major Italian cities. Within Venice, transportation is primarily by boat; vaporetti (water buses), water taxis, and gondolas are common. Exploring the city on foot is also highly recommended, as Venice is a pedestrian-friendly city with no cars.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>Venice offers a wide range of accommodations, from luxury hotels overlooking the canals to budget-friendly guesthouses. I stayed at a mid-range hotel near St. Mark's Square, which provided excellent amenities and easy access to key attractions.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Venice can be relatively expensive compared to other Italian cities. A comfortable daily budget ranges from €70 to €150, covering accommodation, meals, transportation, and activities.</p>
-                </section>
+                        <!-- Day 4 -->
+                        <section class="section">
+                            <h2>Day 4: Markets, Shopping, and Farewell</h2>
+                            <p>On my final day, I enjoyed a mix of local markets, shopping, and leisurely exploration.</p>
+                            <p>I visited the Rialto Market in the morning, exploring the vibrant stalls selling fresh produce, seafood, and traditional Venetian products. The afternoon was dedicated to shopping for souvenirs and handmade crafts along the Rialto Bridge and nearby boutiques. The trip concluded with a leisurely walk through the less-traveled parts of Venice, discovering hidden gems and enjoying a final espresso at a charming café before heading back to my hotel to prepare for departure.</p>
+                        </section>
 
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Book accommodations and major attractions in advance, especially during peak seasons.</li>
-                        <li><strong>Don’t:</strong> Feed the pigeons in St. Mark's Square; it's prohibited and can lead to fines.</li>
-                        <li><strong>Do:</strong> Wear comfortable footwear for walking on uneven cobblestone streets and bridges.</li>
-                        <li><strong>Don’t:</strong> Venture into less safe areas late at night; stick to well-populated and lit areas.</li>
-                        <li><strong>Do:</strong> Carry a refillable water bottle; public drinking fountains are available throughout the city.</li>
-                        <li><strong>Don’t:</strong> Forget to validate your vaporetto tickets; fines are issued for non-validated tickets.</li>
-                    </ul>
-                    
-                    <h3>Packing Lists</h3>
-                    <ul>
-                        <li>Lightweight, breathable clothing suitable for warm weather.</li>
-                        <li>Comfortable walking shoes and waterproof footwear for wet conditions.</li>
-                        <li>Swimwear and beach essentials if planning to visit nearby beaches.</li>
-                        <li>Insect repellent and sunscreen to protect against bugs and sunburn.</li>
-                        <li>Reusable water bottle to stay hydrated.</li>
-                        <li>Power adapter for European plugs (Type C or F).</li>
-                        <li>Camera or smartphone for capturing stunning landscapes and moments.</li>
-                        <li>Travel insurance documents for peace of mind.</li>
-                        <li>Basic first-aid kit for minor injuries.</li>
-                        <li>Portable charger for electronic devices.</li>
-                        <li>Rain jacket or umbrella for unexpected weather changes.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Venetians are known for their hospitality and appreciation of art and culture. Here are some cultural tips to enhance your stay:</p>
-                    <ul>
-                        <li><strong>Greeting:</strong> A simple "Ciao" (Hello) or "Buongiorno" (Good morning) is appreciated.</li>
-                        <li><strong>Respect Privacy:</strong> Venetians value personal space and privacy. Be mindful in social interactions.</li>
-                        <li><strong>Queuing:</strong> Always wait your turn in lines; jumping queues is frowned upon.</li>
-                        <li><strong>Language:</strong> While many Venetians speak English, learning a few basic Italian phrases can enhance your interactions.</li>
-                        <li><strong>Public Behavior:</strong> Keep noise levels reasonable, especially in residential areas and public spaces.</li>
-                        <li><strong>Tipping:</strong> Not mandatory, but rounding up the bill or leaving a small tip (5-10%) for good service is appreciated.</li>
-                        <li><strong>Recycling:</strong> Italy has recycling systems in place. Follow local guidelines for waste disposal.</li>
-                        <li><strong>Dress Code:</strong> Casual attire is acceptable for most places, but dress appropriately when visiting religious or formal sites.</li>
-                        <li><strong>Table Manners:</strong> Keep your hands visible on the table and wait for everyone to be served before starting your meal.</li>
-                        <li><strong>Personal Responsibility:</strong> Take responsibility for your actions and respect local laws and regulations.</li>
-                    </ul>
-                </section>
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li>St. Mark's Square: Iconic public square with stunning architecture.</li>
+                                <li>Doge's Palace: Historic palace showcasing Venetian Gothic architecture.</li>
+                                <li>Gallerie dell'Accademia: Premier art gallery with extensive Venetian collections.</li>
+                                <li>Peggy Guggenheim Collection: Modern art museum housed in a beautiful palazzo.</li>
+                                <li>Murano and Burano: Charming islands known for glassmaking and colorful houses.</li>
+                                <li>Rialto Market: Vibrant local market offering fresh produce and traditional goods.</li>
+                            </ul>
+                        </section>
 
-                <!-- Cultural Immersion -->
-                <section class="section">
-                    <h2>Cultural Immersion</h2>
-                    <p>Interacting with local Venetian communities provided a deep understanding of their cultural practices and connection to the city's maritime heritage. I participated in a traditional mask-making workshop, learning about the significance of masks during the Venice Carnival and creating my own souvenir.</p>
-                    <p>Visiting the Teatro La Fenice, one of Italy's most renowned opera houses, and exploring lesser-known art galleries offered insights into Venice's vibrant arts scene and the city's enduring influence on global culture.</p>
-                </section>
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            
+                            <h3>Transportation</h3>
+                            <p>Venice is accessible by air via Venice Marco Polo Airport and by train from major Italian cities. Within Venice, transportation is primarily by boat; vaporetti (water buses), water taxis, and gondolas are common. Exploring the city on foot is also highly recommended, as Venice is a pedestrian-friendly city with no cars.</p>
+                            
+                            <h3>Accommodation</h3>
+                            <p>Venice offers a wide range of accommodations, from luxury hotels overlooking the canals to budget-friendly guesthouses. I stayed at a mid-range hotel near St. Mark's Square, which provided excellent amenities and easy access to key attractions.</p>
+                            
+                            <h3>Budgeting</h3>
+                            <p>Venice can be relatively expensive compared to other Italian cities. A comfortable daily budget ranges from €70 to €150, covering accommodation, meals, transportation, and activities.</p>
+                        </section>
 
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Venice's culinary scene is a delightful blend of traditional Venetian flavors, Mediterranean influences, and innovative gastronomy.</p>
-                    <ul>
-                        <li><strong>Sarde in Saor:</strong> Sweet and sour sardines marinated with onions, vinegar, and raisins.</li>
-                        <li><strong>Risotto al Nero di Seppia:</strong> Creamy risotto cooked with squid ink for a rich, dark color and unique flavor.</li>
-                        <li><strong>Bigoli in Salsa:</strong> Thick spaghetti-like pasta served with a savory anchovy and onion sauce.</li>
-                        <li><strong>Fegato alla Veneziana:</strong> Sliced calf's liver cooked with onions and served with polenta.</li>
-                        <li><strong>Spritz Veneziano:</strong> Classic Venetian cocktail made with Prosecco, Aperol or Campari, and soda water.</li>
-                        <li><strong>Tiramisu:</strong> Beloved Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cream.</li>
-                        <li><strong>Local Wines:</strong> A selection of Italian wines, including Prosecco and Amarone, available at local enotecas and restaurants.</li>
-                    </ul>
-                    <p>I highly recommend dining at a traditional osteria in the Cannaregio district, where you can savor authentic Venetian dishes while enjoying the charming ambiance of local eateries.</p>
-                </section>
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <h3>Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Book accommodations and major attractions in advance, especially during peak seasons.</li>
+                                <li><strong>Don’t:</strong> Feed the pigeons in St. Mark's Square; it's prohibited and can lead to fines.</li>
+                                <li><strong>Do:</strong> Wear comfortable footwear for walking on uneven cobblestone streets and bridges.</li>
+                                <li><strong>Don’t:</strong> Venture into less safe areas late at night; stick to well-populated and lit areas.</li>
+                                <li><strong>Do:</strong> Carry a refillable water bottle; public drinking fountains are available throughout the city.</li>
+                                <li><strong>Don’t:</strong> Forget to validate your vaporetto tickets; fines are issued for non-validated tickets.</li>
+                            </ul>
+                            
+                            <h3>Packing List</h3>
+                            <ul>
+                                <li>Lightweight, breathable clothing for warm weather</li>
+                                <li>Comfortable walking shoes (and waterproof footwear if visiting in rainy season)</li>
+                                <li>Reusable water bottle</li>
+                                <li>Travel adapter (Type C or F)</li>
+                                <li>Camera or smartphone for photos</li>
+                                <li>Basic first-aid kit</li>
+                                <li>Rain jacket or umbrella</li>
+                                <li>Travel insurance documents</li>
+                                <li>Any required medications</li>
+                            </ul>
+                            
+                            <h3>Local Etiquette</h3>
+                            <p>Venetians are known for their hospitality and appreciation of art and culture. Here are some cultural tips to enhance your stay:</p>
+                            <ul>
+                                <li><strong>Greeting:</strong> A simple "Ciao" or "Buongiorno" is appreciated.</li>
+                                <li><strong>Respect Privacy:</strong> Venetians value personal space; be mindful in social interactions.</li>
+                                <li><strong>Queuing:</strong> Always wait your turn; line-jumping is frowned upon.</li>
+                                <li><strong>Language:</strong> While many speak English, learning a few basic Italian phrases is helpful.</li>
+                                <li><strong>Public Behavior:</strong> Keep noise levels reasonable, especially in residential areas.</li>
+                                <li><strong>Tipping:</strong> Not mandatory, but leaving a small tip (5-10%) is appreciated for good service.</li>
+                            </ul>
+                        </section>
 
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Venice offers a variety of activities for adventure enthusiasts and those seeking unique experiences:</p>
-                    <ul>
-                        <li><strong>Gondola Rides:</strong> Experience the quintessential Venetian activity by taking a serene gondola ride through the canals.</li>
-                        <li><strong>Vaporetto Tours:</strong> Navigate the city's waterways using the public water buses, providing a practical and scenic way to explore.</li>
-                        <li><strong>Water Sports:</strong> Engage in water activities like kayaking and paddleboarding in the lagoon.</li>
-                        <li><strong>Exploring Hidden Canals:</strong> Discover the less-traveled parts of Venice by exploring hidden canals and alleys.</li>
-                        <li><strong>Photography Tours:</strong> Capture the beauty of Venice with guided photography tours focusing on the city's architectural and natural beauty.</li>
-                        <li><strong>Cooking Classes:</strong> Learn to prepare traditional Venetian dishes with local chefs in hands-on cooking workshops.</li>
-                        <li><strong>Art Workshops:</strong> Participate in art classes and workshops to immerse yourself in Venice's artistic heritage.</li>
-                        <li><strong>Historical Walking Tours:</strong> Gain insights into Venice's history and architecture with guided walking tours.</li>
-                        <li><strong>Festivals and Events:</strong> Attend local festivals like the Venice Carnival to experience the city's vibrant traditions.</li>
-                        <li><strong>Shopping for Murano Glass:</strong> Visit Murano island to shop for authentic Murano glass pieces and watch artisans at work.</li>
-                    </ul>
-                    <p>One of the most thrilling activities was exploring the lesser-known islands of Torcello and Sant'Erasmo by kayak, offering a peaceful escape from the bustling main islands and a chance to connect with Venice's natural beauty.</p>
-                </section>
+                        <!-- Cultural Immersion -->
+                        <section class="section">
+                            <h2>Cultural Immersion</h2>
+                            <p>Interacting with local Venetian communities provided a deep understanding of their cultural practices and maritime heritage. I participated in a traditional mask-making workshop, learning about the significance of masks during the Venice Carnival and creating my own souvenir.</p>
+                            <p>Visiting the Teatro La Fenice and exploring lesser-known art galleries offered insights into Venice’s vibrant arts scene and the city's enduring influence on global culture.</p>
+                        </section>
 
-                <!-- Personal Stories -->
-                <section class="section">
-                    <h2>Personal Stories</h2>
-                    <p>Meeting Marco, a local gondolier, was a highlight of my trip. He shared fascinating stories about Venice's history and guided me through the intricate canal system, enhancing my understanding of the city's unique layout and charm.</p>
-                    <p>Another unforgettable moment was participating in a Venetian mask-making workshop during the Venice Carnival season. Creating my own mask provided a hands-on experience of one of Venice's most cherished traditions and left me with a unique souvenir to remember my voyage.</p>
-                </section>
+                        <!-- Food and Cuisine -->
+                        <section class="section">
+                            <h2>Food and Cuisine</h2>
+                            <p>Venice’s culinary scene is a delightful blend of traditional Venetian flavors, Mediterranean influences, and innovative gastronomy.</p>
+                            <ul>
+                                <li><strong>Sarde in Saor:</strong> Sweet and sour sardines with onions, vinegar, and raisins.</li>
+                                <li><strong>Risotto al Nero di Seppia:</strong> Creamy risotto colored with squid ink.</li>
+                                <li><strong>Bigoli in Salsa:</strong> Thick pasta in a savory anchovy and onion sauce.</li>
+                                <li><strong>Spritz Veneziano:</strong> Classic Venetian cocktail made with Prosecco, Aperol or Campari, and soda.</li>
+                                <li><strong>Tiramisu:</strong> Iconic Italian dessert layered with coffee-soaked ladyfingers and mascarpone.</li>
+                            </ul>
+                            <p>Try a traditional osteria in the Cannaregio district for authentic Venetian dishes and a cozy local atmosphere.</p>
+                        </section>
 
-                <!-- Conclusion -->
-                <section class="section">
-                    <h2>Conclusion</h2>
-                    <p>Venice is a captivating destination that offers a perfect blend of romance, adventure, and cultural immersion. As Carl, I found my 4-day journey to be an enriching and exhilarating experience, uncovering the timeless beauty and vibrant spirit of one of Italy's most beloved cities.</p>
-                    <p>If you're planning a trip to Italy, Venice should definitely be on your list. Whether you're seeking romantic gondola rides, artistic inspiration, or simply a unique urban escape, Venice has something for everyone.</p>
-                    <p>Until next time, happy travels!</p>
-                </section>
+                        <!-- Adventure and Activities -->
+                        <section class="section">
+                            <h2>Adventure and Activities</h2>
+                            <p>Venice offers a variety of activities for adventure enthusiasts and those seeking unique experiences:</p>
+                            <ul>
+                                <li><strong>Gondola Rides:</strong> Enjoy serene rides through the canals.</li>
+                                <li><strong>Vaporetto Tours:</strong> Public water buses provide a practical, scenic way to explore.</li>
+                                <li><strong>Water Sports:</strong> Kayaking or paddleboarding in the lagoon for a unique view.</li>
+                                <li><strong>Hidden Canals:</strong> Wander off the main tourist paths to discover lesser-known gems.</li>
+                                <li><strong>Photography Tours:</strong> Capture Venice’s architecture and natural beauty with guided sessions.</li>
+                                <li><strong>Cooking Classes:</strong> Learn to prepare Venetian dishes with local chefs.</li>
+                                <li><strong>Festivals and Events:</strong> Experience the Venice Carnival for colorful masks and parades.</li>
+                            </ul>
+                            <p>One highlight was exploring Torcello and Sant’Erasmo by kayak, offering a peaceful escape from the busy main islands.</p>
+                        </section>
 
-                <!-- Visitor Testimonials -->
-                <section class="section testimonials">
-                    <h2>Visitor Testimonials</h2>
-                    <blockquote>
-                        "Venice is a dream come true for any traveler. The intricate canals, stunning architecture, and vibrant culture make every moment unforgettable. Exploring St. Mark's Square and enjoying a gondola ride were the highlights of my trip."
-                        <footer>- Lucia Rossi</footer>
-                    </blockquote>
-                    <blockquote>
-                        "The charm of Venice lies in its ability to blend history with modernity. From visiting ancient churches to enjoying contemporary art galleries, every day offered something new and exciting. Highly recommend experiencing Venice's unique atmosphere!"
-                        <footer>- Alessandro Bianchi</footer>
-                    </blockquote>
-                </section>
+                        <!-- Personal Stories -->
+                        <section class="section">
+                            <h2>Personal Stories</h2>
+                            <p>Meeting Marco, a local gondolier, was a highlight of my trip. He shared fascinating stories about Venice’s history while guiding me through the canal system, enhancing my appreciation of the city’s layout and charm.</p>
+                            <p>Another unforgettable moment was creating my own Venetian mask during Carnival season—an immersive way to engage with one of Venice’s most cherished traditions.</p>
+                        </section>
 
-                <!-- Follow My Adventures -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                        <!-- Conclusion -->
+                        <section class="section">
+                            <h2>Conclusion</h2>
+                            <p>Venice is a captivating destination, offering a perfect blend of romance, adventure, and cultural immersion. My 4-day journey revealed the timeless beauty and vibrant spirit of Italy’s most enchanting city. If you’re planning a trip to Italy, Venice should be on your list—whether you’re seeking gondola rides, artistic inspiration, or a unique urban escape, it has something for everyone.</p>
+                            <p>Until next time, happy travels!</p>
+                        </section>
+
+                        <!-- Visitor Testimonials -->
+                        <section class="section testimonials">
+                            <h2>Visitor Testimonials</h2>
+                            <blockquote>
+                                "Venice is a dream come true for any traveler. The intricate canals, stunning architecture, and vibrant culture make every moment unforgettable."
+                                <footer>- Lucia Rossi</footer>
+                            </blockquote>
+                            <blockquote>
+                                "The charm of Venice lies in its ability to blend history with modernity. From ancient churches to contemporary art galleries, every day offered something new and exciting."
+                                <footer>- Alessandro Bianchi</footer>
+                            </blockquote>
+                        </section>
+
+                        <!-- Follow My Adventures -->
+                        <section class="section follow-adventures">
+                            <h2>Follow My Adventures</h2>
+                            <p>Stay connected and follow my journey through the links below:</p>
+                            <ul class="follow-links">
+                                <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                                <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                                <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                            </ul>
+                        </section>
+
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Venice Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Venice Tourism Site</a></li>
+                            <li><a href="#">Vaporetto Schedules & Tickets</a></li>
+                            <li><a href="#">Mask-Making Workshops</a></li>
+                            <li><a href="#">Local Event Calendar</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Euro (€). Credit cards are widely accepted, but keep cash for small purchases.</p>
+                        <p><strong>Language:</strong> Italian; English is common in tourist areas.</p>
+                        <p><strong>Time Zone:</strong> Central European Time (UTC+1), UTC+2 in summer.</p>
+                        <p><strong>Climate:</strong> Humid subtropical; warm summers, cool winters.</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Venetian Architecture Through the Ages”</a></li>
+                            <li><a href="#">“Cicchetti & Venetian Cuisine”</a></li>
+                            <li><a href="#">“Lonely Planet: Venice Edition”</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
@@ -584,31 +631,38 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Hamburger Menu and Back to Top Button -->
+    <!-- JavaScript for Enhanced Navigation, Back to Top Button, etc. -->
     <script>
         // Toggle navigation menu on hamburger icon click
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.querySelector('nav ul.nav-menu');
-
         menuToggle.addEventListener('change', () => {
             navMenu.classList.toggle('active');
         });
 
         // Back to Top Button functionality
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling down 300px
+            if (window.scrollY > 300) {
                 backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
             } else {
                 backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
             }
         });
-
         backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close the navigation menu when a link is clicked (for mobile)
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
             });
         });
     </script>
