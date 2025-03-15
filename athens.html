@@ -1,145 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athens – Carl Travels: A 4-Day Cultural Adventure</title>
 
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Explore Athens, Greece's historic capital, famous for its ancient landmarks, vibrant culture, and stunning Mediterranean views.">
-    <meta name="keywords" content="Athens, Greece, Travel, Ancient, Attractions, History">
-    <meta name="author" content="Carl Tomich">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Join Carl on a 4-day odyssey through Athens, Greece’s historic capital. Explore ancient wonders, vibrant neighborhoods, and unforgettable Greek flavors.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Athens, Greece, Carl Travels, Acropolis, Ancient Landmarks, Greek Cuisine, Travel Guide, Adventure, Culture">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Athens - Carl Travels">
-    <meta property="og:description" content="Discover Athens' ancient landmarks, vibrant neighborhoods, and rich cultural heritage.">
+    <meta property="og:title" content="Athens – Carl Travels: A 4-Day Cultural Adventure">
+    <meta property="og:description" content="Explore Athens’ ancient history, lively districts, and mouthwatering cuisine with Carl.">
     <meta property="og:image" content="https://www.carltravels.com/images/athens-og-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/Athens.html">
+    <meta property="og:url" content="https://www.carltravels.com/athens.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Athens - Carl Travels">
-    <meta name="twitter:description" content="Discover Athens' ancient landmarks, vibrant neighborhoods, and rich cultural heritage.">
+    <meta name="twitter:title" content="Athens – Carl Travels: A 4-Day Cultural Adventure">
+    <meta name="twitter:description" content="Explore Athens’ ancient history, lively districts, and mouthwatering cuisine with Carl.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/athens-twitter-image.jpg">
 
-    <title>Athens - Carl Travels</title>
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Athens – Carl Travels: A 4-Day Cultural Adventure",
+      "description": "Join Carl on a 4-day odyssey through Athens, Greece’s historic capital. Explore ancient wonders, vibrant neighborhoods, and unforgettable Greek flavors.",
+      "image": "https://www.carltravels.com/images/athens-og-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2024-04-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/athens.html"
+      }
+    }
+    </script>
 
-    <!-- Link to the updated styles.css -->
+    <!-- Google AdSense Script (Optional) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+         crossorigin="anonymous"></script>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
     <link rel="stylesheet" href="destination.css">
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Inline styles matching the newer pages -->
+    
+    <!-- Inline styles for two-column layout -->
     <style>
-        /* Ensure images within the main content are responsive */
-        main img.responsive-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto; 
-            padding: 10px 0;
+        /* Responsive video styles (if needed) */
+        .video-responsive {
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
         }
 
-        /* Style the header h1 (Carl Travels) */
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
+            color: #FF6600;
             font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within main */
         main h1 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
         }
         main h1:hover {
             color: #E55B00;
         }
-
-        /* Style all h2 titles within main */
         main h2 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+            font-size: 1.8em;
         }
         main h2:hover {
             color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
+            font-size: 1.4em;
         }
-
-        /* Responsive typography adjustments */
-        @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; 
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
-        }
-
-        /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
+            margin-bottom: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
-        /* Styling for Sections */
         .section {
             margin-bottom: 30px;
+        }
+        .adsense {
+            margin: 40px 0;
+        }
+        .adsense ins.adsbygoogle {
+            display: block;
+            text-align: center;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        #back-to-top:hover {
+            background-color: #E55B00;
+            opacity: 1;
+        }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; /* so it can stack under main content if needed */
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        #menu-toggle {
+            display: none;
+        }
+        nav ul.nav-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            nav ul.nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #333;
+                position: absolute;
+                top: 58px;
+                right: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 5px;
+                z-index: 1000;
+                width: 200px;
+            }
+            nav ul.nav-menu.active {
+                display: flex;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            .menu-icon {
+                display: flex;
+                cursor: pointer;
+                padding: 10px;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+            #menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .social-media img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -150,241 +338,256 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Page Title -->
-                <h1>Journey Through Athens: Your Comprehensive Travel Guide</h1>
-                
-                <!-- Existing Banner Image -->
-                <img src="athens-banner.jpg" alt="Athens" class="banner-image responsive-image">
 
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Athens, the historic capital of Greece, is a city where ancient history seamlessly blends with modern life. Known as the cradle of Western civilization and democracy, Athens offers a rich tapestry of archaeological wonders, vibrant neighborhoods, and stunning Mediterranean views. Whether you're an art enthusiast, history buff, or simply seeking a dynamic urban experience, Athens promises an unforgettable journey.</p>
-                </section>
-                
-                <!-- How to Get There -->
-                <section class="section">
-                    <h2>How to Get There</h2>
-                    <p>Athens is well-connected to various parts of Greece and the world. Here’s how you can reach this magnificent city:</p>
-                    <ul>
-                        <li><strong>By Air:</strong> Athens International Airport (Eleftherios Venizelos) is the main gateway, serving numerous international and domestic flights. From the airport, you can take the Metro (Line 3), express buses, taxis, or private transfers to reach the city center.</li>
-                        <li><strong>By Train:</strong> While Athens is not a major hub for international train travel, it is connected to other Greek cities via the national rail network. The main railway station is Athens Railway Station (Larissa Station).</li>
-                        <li><strong>By Bus:</strong> KTEL buses operate from various cities in Greece, offering affordable and convenient travel options to Athens. Long-distance buses connect Athens to cities like Thessaloniki, Patras, and Heraklion.</li>
-                        <li><strong>By Car:</strong> Athens is accessible by road through the Attiki Odos (A6) highway, connecting the city to other parts of Greece. Driving provides flexibility to explore surrounding areas at your own pace.</li>
-                        <li><strong>By Ferry:</strong> For those traveling from the islands, ferries connect Athens (Piraeus and Rafina ports) to numerous Greek islands, including Mykonos, Santorini, and Crete.</li>
-                    </ul>
-                </section>
-                
-                <!-- Top Attractions -->
-                <section class="section">
-                    <h2>Top Attractions in Athens</h2>
-                    
-                    <!-- Acropolis and Parthenon -->
-                    <section class="section">
-                        <h3>1. Acropolis and Parthenon</h3>
-                        <p>No visit to Athens is complete without exploring the Acropolis, a UNESCO World Heritage Site. Dominating the city skyline, the Parthenon stands as a testament to ancient Greek architecture and philosophy. Visitors can marvel at the intricate sculptures and panoramic views of Athens from this historic citadel.</p>
-                    </section>
-                    
-                    <!-- Ancient Agora -->
-                    <section class="section">
-                        <h3>2. Ancient Agora</h3>
-                        <p>The Ancient Agora was the heart of ancient Athens, serving as a marketplace and a hub for political and social activities. Today, it offers a fascinating glimpse into classical Greece, with well-preserved temples, stoas, and the remarkable Hephaisteion (Temple of Hephaestus).</p>
-                    </section>
-                    
-                    <!-- National Archaeological Museum -->
-                    <section class="section">
-                        <h3>3. National Archaeological Museum</h3>
-                        <p>Home to one of the world's finest collections of ancient Greek art, the National Archaeological Museum boasts artifacts spanning over 5,000 years. Highlights include the Mask of Agamemnon, the Antikythera Mechanism, and an extensive array of sculptures, pottery, and jewelry.</p>
-                    </section>
-                    
-                    <!-- Plaka Neighborhood -->
-                    <section class="section">
-                        <h3>4. Plaka Neighborhood</h3>
-                        <p>Known as the "Neighborhood of the Gods," Plaka is Athens' oldest district, nestled beneath the Acropolis. Its charming streets are lined with neoclassical buildings, boutique shops, traditional tavernas, and vibrant cafes, making it a perfect area for leisurely exploration.</p>
-                    </section>
-                    
-                    <!-- Mount Lycabettus -->
-                    <section class="section">
-                        <h3>5. Mount Lycabettus</h3>
-                        <p>Offering some of the best views of Athens, Mount Lycabettus is a prominent hill that rises 300 meters above the city. Visitors can hike to the summit or take the funicular railway. At the top, you'll find the Chapel of St. George and a panoramic view that captures the essence of Athens.</p>
-                    </section>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <!-- Do’s and Don’ts -->
-                    <section class="section">
-                        <h3>Do’s and Don’ts</h3>
+                <!-- Page Title & Two-Column Layout -->
+                <div class="content-row">
+
+                    <!-- Main Column -->
+                    <div class="main-column">
+
+                        <!-- Page Title -->
+                        <h1>Journey Through Athens: A 4-Day Cultural Adventure</h1>
+                        <img src="athens-banner.jpg" alt="Athens Banner" class="banner-image responsive-image" loading="lazy">
+
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Athens, the historic capital of Greece, is where ancient wonders meet modern urban life. From the iconic Acropolis to the bustling Plaka district, this city blends time-honored traditions with contemporary energy. I'm Carl—a 38-year-old traveler from Australia—here to share my four-day odyssey in the cradle of Western civilization. If you’re into dramatic history, Mediterranean sunshine, and mouthwatering souvlaki, Athens is calling your name.</p>
+                            <p><strong>A Brief History:</strong> Founded thousands of years ago, Athens has been a focal point of art, philosophy, and democracy since classical antiquity. Despite challenges—from invasions to economic crises—the city has reinvented itself repeatedly, standing as a testament to Greek resilience and creativity.</p>
+                        </section>
+
+                        <!-- Day 1 -->
+                        <section class="section">
+                            <h2>Day 1: Arrival & Exploring the Old Town</h2>
+                            <p>Touchdown at Eleftherios Venizelos Airport, and I'm already feeling the legendary Greek hospitality. A quick Metro ride whisks me into the city center, where my cozy hotel is tucked near Monastiraki Square. After settling in, I dive into the Old Town vibes—think cobblestone streets, lively markets, and ancient ruins peeking around every corner.</p>
+                            <p>By evening, I'm at a rustic taverna in Plaka, savoring <strong>moussaka</strong> and raising a glass of local wine. The smell of grilled meats and the echo of bouzouki music set the perfect Athenian mood. If you’re feeling adventurous, order a shot of ouzo—but fair warning, it’s an acquired taste!</p>
+                        </section>
+
+                        <!-- Day 2 -->
+                        <section class="section">
+                            <h2>Day 2: Ancient Marvels & City Views</h2>
+                            <p>Day two is all about Athens’ greatest hits: the <strong>Acropolis</strong> and the <strong>Parthenon</strong>. It’s a bit of a climb, but the panoramic views over the city are worth every step. Seeing the Parthenon up close—its columns soaring against the blue sky—felt surreal, like stepping into a history book. Tip: Get there early to beat the midday crowds and scorching sun.</p>
+                            <p>Afternoon calls for a stroll around the <strong>Ancient Agora</strong>, once the heart of Athenian commerce and politics. I can't help but imagine Socrates or Plato strolling these paths, waxing philosophical. Later, I pop into the <strong>National Archaeological Museum</strong> to marvel at treasures like the Mask of Agamemnon. By evening, a short hike up <strong>Mount Lycabettus</strong> rewards me with an epic sunset—one of the best vantage points in Athens.</p>
+                        </section>
+
+                        <!-- Day 3 -->
+                        <section class="section">
+                            <h2>Day 3: Cultural Immersion & Local Flavors</h2>
+                            <p>Time to explore the modern side of Athens. First stop: the <strong>POLIN Museum</strong>—just kidding, that’s in Warsaw. Here, I check out the <strong>Benaki Museum</strong> for a taste of Greek art spanning from antiquity to modern times. Then I hop over to the <strong>Central Market</strong> for a gastronomic adventure—fresh olives, feta cheese, and produce galore. It's a feast for the senses.</p>
+                            <p>In the evening, I sign up for a cooking class. Rolling out phyllo dough and whipping up <strong>spanakopita</strong> under the guidance of a friendly local chef? Priceless. And yes, my spanakopita might not look perfect, but the taste was all the reward I needed.</p>
+                        </section>
+
+                        <!-- Day 4 -->
+                        <section class="section">
+                            <h2>Day 4: Island Vibes & Fond Farewells</h2>
+                            <p>For my last day, I escape the city bustle with a ferry ride to the nearby <strong>Saronic Islands</strong>. In just an hour or two, I'm surrounded by turquoise waters and laid-back island life. I choose Aegina for its pistachio farms and charming harbor. Relaxing on a cafe terrace, sipping Greek coffee, I realize how Athens can be both a bustling metropolis and a gateway to dreamy island getaways.</p>
+                            <p>By evening, I'm back in the city, enjoying one last stroll through Plaka’s winding alleys. Street musicians play soft tunes, and the glow of the Acropolis lights the sky. Athens—ancient yet alive—has truly captured my heart. I'll be back for sure.</p>
+                        </section>
+
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li><strong>Acropolis & Parthenon</strong> – Timeless architectural wonders with sweeping city views.</li>
+                                <li><strong>Ancient Agora</strong> – Once the bustling core of Athenian democracy.</li>
+                                <li><strong>Mount Lycabettus</strong> – A short climb or funicular ride for unbeatable sunsets.</li>
+                                <li><strong>Plaka District</strong> – Quaint streets, historic tavernas, and local crafts galore.</li>
+                                <li><strong>National Archaeological Museum</strong> – Home to Greece’s most treasured ancient artifacts.</li>
+                                <li><strong>Central Market</strong> – Fresh produce, local delicacies, and an authentic slice of daily life.</li>
+                                <li><strong>Island Day Trips</strong> – Quick ferries to the Saronic Islands for a taste of Greek island life.</li>
+                            </ul>
+                        </section>
+
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            
+                            <h3>Transportation</h3>
+                            <p>Fly into Athens International Airport (Eleftherios Venizelos). From there, the Metro’s Line 3 or express buses get you downtown. Within the city, rely on the Metro, buses, trams, or your own two feet—Athens is surprisingly walkable, though hilly in parts.</p>
+                            
+                            <h3>Accommodation</h3>
+                            <p>Athens boasts everything from luxury hotels with Acropolis views to budget-friendly hostels near Monastiraki. I stayed at a mid-range spot in Plaka, close to historical sites and lively nightlife.</p>
+                            
+                            <h3>Budgeting</h3>
+                            <p>Greece is fairly wallet-friendly, though Athens can be pricier in tourist hotspots. Expect to spend €40–120 daily, covering meals, attractions, and moderate accommodation.</p>
+                        </section>
+
+                        <!-- Tips & Recommendations -->
+                        <section class="section">
+                            <h2>Tips & Recommendations</h2>
+                            
+                            <h3>Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Carry cash for small purchases—some tavernas prefer it.</li>
+                                <li><strong>Don’t:</strong> Miss lesser-known museums like the Benaki or the Museum of Cycladic Art.</li>
+                                <li><strong>Do:</strong> Hydrate and wear sunscreen—Greek sun is no joke.</li>
+                                <li><strong>Don’t:</strong> Forget respectful attire when visiting religious sites.</li>
+                                <li><strong>Do:</strong> Embrace public transport; it’s cheap, efficient, and scenic.</li>
+                                <li><strong>Don’t:</strong> Shy away from Greek phrases—locals appreciate even a simple “Efcharistó!” (Thank you).</li>
+                            </ul>
+                            
+                            <h3>Packing List</h3>
+                            <ul>
+                                <li>Comfortable walking shoes (those cobblestones are unforgiving)</li>
+                                <li>Light, breathable clothing for hot days</li>
+                                <li>Reusable water bottle (public fountains are a lifesaver)</li>
+                                <li>Portable charger for your phone/camera</li>
+                                <li>Travel adapter (Type C/F for Greece)</li>
+                            </ul>
+                            
+                            <h3>Local Etiquette</h3>
+                            <p>A warm “Yassas” (hello) goes a long way. Greeks are friendly and laid-back, but remember to show respect at ancient sites. Tipping 5–10% is common in restaurants, and always stand to the right on escalators to let folks pass on the left.</p>
+                        </section>
+
+                        <!-- Cultural Immersion -->
+                        <section class="section">
+                            <h2>Cultural Immersion</h2>
+                            <p>Want to dive deeper? Catch a Greek dance performance in an open-air theater, or sign up for a cooking class to master <strong>spanakopita</strong> and <strong>baklava</strong>. For a spiritual twist, explore lesser-known Byzantine churches—tiny pockets of history scattered across the city, each with centuries-old frescoes and a serene atmosphere.</p>
+                            <p>If you visit during Greek Easter, prepare for fireworks, feasts, and a deep dive into local traditions. The city comes alive with processions and midnight celebrations, an unforgettable spectacle.</p>
+                        </section>
+
+                        <!-- Food & Cuisine -->
+                        <section class="section">
+                            <h2>Food & Cuisine</h2>
+                            <p>Greek cuisine is hearty, flavorful, and steeped in tradition. Highlights include:</p>
+                            <ul>
+                                <li><strong>Moussaka</strong> – Layered eggplant, spiced meat, and béchamel sauce.</li>
+                                <li><strong>Souvlaki & Gyro</strong> – Street food classics with grilled meat, pita, and tzatziki.</li>
+                                <li><strong>Spanakopita</strong> – Spinach and feta pastry wrapped in flaky phyllo.</li>
+                                <li><strong>Tzatziki</strong> – Cool yogurt dip with cucumber, garlic, and dill.</li>
+                                <li><strong>Baklava</strong> – Sweet pastry with layers of nuts and honey syrup.</li>
+                            </ul>
+                            <p>Don’t forget to pair your meals with local wine or <strong>raki</strong> (if you dare). And for dessert? <strong>Loukoumades</strong> (fried dough balls drizzled with honey) are a must-try. Just one more, right?</p>
+                        </section>
+
+                        <!-- Adventure & Activities -->
+                        <section class="section">
+                            <h2>Adventure & Activities</h2>
+                            <p>Athens may be famous for history, but it also caters to thrill-seekers. From hiking <strong>Mount Lycabettus</strong> to kayaking around the <strong>Athenian Riviera</strong>, you can balance cultural tours with a dash of adrenaline. Day trips to the <strong>Saronic Islands</strong> are also popular for snorkeling, beach time, or simply enjoying a laid-back island vibe.</p>
+                            <p>One personal highlight? A morning run around the <strong>Panathenaic Stadium</strong>, the birthplace of the modern Olympics. There’s something magical about jogging on the same track where ancient athletes once competed—especially with the Acropolis peeking in the distance.</p>
+                        </section>
+
+                        <!-- Personal Stories -->
+                        <section class="section">
+                            <h2>Personal Stories</h2>
+                            <p>One night, I found myself at a cozy <strong>ouzeri</strong> near Psiri district. A local musician started playing the bouzouki, and soon the entire place was clapping along to Greek folk tunes. I might have even joined in a bit of <strong>syrtaki</strong> dancing—though I’ll let the locals decide if I did them proud.</p>
+                            <p>Another memorable encounter was meeting a retired professor at a bookstore in <strong>Exarcheia</strong>. We ended up chatting about ancient philosophy and modern Greek politics over strong Greek coffee. It’s moments like these that remind me how travel can be the greatest teacher.</p>
+                        </section>
+
+                        <!-- Conclusion -->
+                        <section class="section">
+                            <h2>Conclusion</h2>
+                            <p>Athens is more than a city—it's a living museum of Western civilization, brimming with life, music, and mouthwatering aromas. Four days barely scratched the surface, but it left me yearning for more. Whether you’re chasing ancient ruins or modern Greek culture, Athens will greet you with open arms and a table full of meze.</p>
+                            <p>Until next time—<em>antío sas</em>, Athens!</p>
+                        </section>
+
+                        <!-- Testimonials Section -->
+                        <section class="section testimonials">
+                            <h2>Visitor Testimonials</h2>
+                            <blockquote>
+                                "The Acropolis was breathtaking, but the real charm was in the small alleyways and local tavernas. I felt like part of the community!"
+                                <footer>- Maria Papadopoulos</footer>
+                            </blockquote>
+                            <blockquote>
+                                "Every meal was a celebration of flavors, and the city’s history is awe-inspiring. Can’t wait to go back and explore more!"
+                                <footer>- Andreas Antoniou</footer>
+                            </blockquote>
+                        </section>
+
+                        <!-- Follow My Adventures -->
+                        <section class="section follow-adventures">
+                            <h2>Follow My Adventures</h2>
+                            <p>Stay connected and follow my journey through the links below:</p>
+                            <ul class="follow-links">
+                                <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
+                                <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                                <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                            </ul>
+                        </section>
+
+                        <!-- Example AdSense Section (optional) -->
+                        <section class="adsense">
+                            <div class="container">
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-6483721386563068"
+                                     data-ad-slot="8249189982"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+
+                        <!-- Back to Top Button -->
+                        <button id="back-to-top" aria-label="Back to Top">↑</button>
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <!-- Profile / About Carl -->
+                        <img src="carlcircle.png" alt="Carl's Profile Picture" style="width:100px; height:100px; border-radius:50%; margin-bottom:20px;">
+                        <h3>About Carl</h3>
+                        <p>
+                            Carl is a travel vlogger who creates cinematic journeys, showcasing his adventures and all the weird and wonderful things he sees. Join him for an authentic look at each destination—from iconic highlights to hidden local corners.
+                        </p>
+
+                        <h3>Athens Travel Resources</h3>
                         <ul>
-                            <li><strong>Do:</strong> Wear comfortable walking shoes, as Athens involves a lot of walking, especially on uneven surfaces near archaeological sites.</li>
-                            <li><strong>Don’t:</strong> Miss the opportunity to visit lesser-known museums and galleries that showcase contemporary Greek art.</li>
-                            <li><strong>Do:</strong> Bring a hat, sunglasses, and sunscreen, particularly if visiting during the summer months.</li>
-                            <li><strong>Don’t:</strong> Ignore the local customs and etiquette, especially when visiting religious sites.</li>
-                            <li><strong>Do:</strong> Take advantage of the extensive public transportation system, including the Metro, buses, and trams, to navigate the city efficiently.</li>
-                            <li><strong>Don’t:</strong> Engage in loud or disruptive behavior in public places, as Greeks value politeness and respect.</li>
+                            <li><a href="#">Official Athens Tourism Site</a></li>
+                            <li><a href="#">Metro & Public Transport Guides</a></li>
+                            <li><a href="#">Acropolis & Museum Tickets</a></li>
+                            <li><a href="#">Greek Island Ferry Schedules</a></li>
                         </ul>
-                    </section>
-                    
-                    <!-- Packing List -->
-                    <section class="section">
-                        <h3>Packing List</h3>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Euro (€). Credit cards widely accepted, but small tavernas may prefer cash.</p>
+                        <p><strong>Language:</strong> Greek is official, but English is common in tourist areas.</p>
+                        <p><strong>Time Zone:</strong> Eastern European Time (UTC+2), with DST in summer.</p>
+                        <p><strong>Climate:</strong> Hot summers, mild winters—pack accordingly.</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Google AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
                         <ul>
-                            <li>Comfortable walking shoes.</li>
-                            <li>Weather-appropriate clothing (layers for spring/fall, sun protection for summer).</li>
-                            <li>Reusable water bottle to stay hydrated while exploring.</li>
-                            <li>A backpack for carrying snacks and essentials.</li>
-                            <li>A map or guidebook to navigate Athens’ sprawling attractions.</li>
-                            <li>Insect repellent and personal hygiene items.</li>
-                            <li>Portable charger for your electronic devices.</li>
-                            <li>Light jacket or sweater for cooler evenings.</li>
-                            <li>Umbrella or raincoat for unexpected weather changes.</li>
-                            <li>Basic Greek phrases to enhance your interactions with locals.</li>
+                            <li><a href="#">“Lonely Planet: Greece Edition”</a></li>
+                            <li><a href="#">“Greek Mythology: Timeless Tales”</a></li>
+                            <li><a href="#">“Tastes of the Aegean: Greek Cuisine Explored”</a></li>
                         </ul>
-                    </section>
-                    
-                    <!-- Costs -->
-                    <section class="section">
-                        <h3>Costs</h3>
-                        <ul>
-                            <li><strong>Entry Fees:</strong> Most archaeological sites and museums charge an entrance fee (e.g., €20 for the Acropolis).</li>
-                            <li><strong>Transportation:</strong> A 24-hour public transport ticket costs around €4.50 and covers the Metro, buses, and trams.</li>
-                            <li><strong>Food:</strong> Meals at local tavernas and restaurants range from €10-25 per person, depending on the establishment.</li>
-                            <li><strong>Accommodation:</strong> Prices vary widely based on location and quality, from budget hostels at €20 per night to luxury hotels exceeding €200 per night.</li>
-                        </ul>
-                    </section>
-                </section>
-                
-                <!-- Currency and Money Matters -->
-                <section class="section">
-                    <h2>Currency and Money Matters</h2>
-                    <p>The official currency in Athens, as in the rest of Greece, is the Euro (€). Here's what you need to know about managing your finances during your trip:</p>
-                    
-                    <h3>Currency Exchange</h3>
-                    <p>Currency exchange services are widely available in Athens, including at the airport, banks, and authorized exchange counters. It's advisable to exchange a small amount of money upon arrival for immediate expenses.</p>
-                    
-                    <h3>ATMs and Banking</h3>
-                    <p>ATMs are readily accessible throughout the city, especially in major districts and tourist areas. Most ATMs accept international debit and credit cards. However, it's a good practice to inform your bank of your travel plans to avoid any issues with card usage abroad.</p>
-                    
-                    <h3>Credit Cards</h3>
-                    <p>Credit cards (Visa and Mastercard) are widely accepted in hotels, restaurants, and larger shops. However, smaller establishments and street vendors may prefer cash, so it's recommended to carry some euros for such situations.</p>
-                    
-                    <h3>Tips</h3>
-                    <p>Tipping in Athens is appreciated but not mandatory. A tip of 5-10% is common for good service in restaurants, while rounding up the bill is sufficient for cafes and casual dining.</p>
-                </section>
-                
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3>Best Time to Visit</h3>
-                    <p>The optimal times to visit Athens are during the spring (April to June) and fall (September to November). During these periods, the weather is mild, and the tourist crowds are more manageable compared to the peak summer months. Springtime brings blooming flowers and pleasant temperatures, while autumn offers crisp air and colorful foliage.</p>
-                    
-                    <h3>Getting There</h3>
-                    <p>Athens is well-connected by air, rail, and road:</p>
-                    <ul>
-                        <li><strong>By Air:</strong> Athens International Airport (Eleftherios Venizelos) is the main gateway, serving numerous international and domestic flights. From the airport, you can take the Metro (Line 3), express buses, taxis, or private transfers to reach the city center.</li>
-                        <li><strong>By Train:</strong> While Athens is not a major hub for international train travel, it is connected to other Greek cities via the national rail network. The main railway station is Athens Railway Station (Larissa Station).</li>
-                        <li><strong>By Car:</strong> Athens is accessible via the Attiki Odos (A6) highway, connecting the city to other parts of Greece. The drive from the airport to the city center typically takes around 40 minutes, depending on traffic.</li>
-                        <li><strong>By Bus:</strong> KTEL buses operate from various cities in Greece, offering affordable and convenient travel options to Athens. Long-distance buses connect Athens to cities like Thessaloniki, Patras, and Heraklion.</li>
-                        <li><strong>By Ferry:</strong> For those traveling from the islands, ferries connect Athens (Piraeus and Rafina ports) to numerous Greek islands, including Mykonos, Santorini, and Crete.</li>
-                    </ul>
-                    
-                    <h3>Language</h3>
-                    <p>The official language is Greek. While English is commonly spoken in tourist areas, learning a few basic Greek phrases can enhance your interactions with locals and enrich your travel experience.</p>
-                    
-                    <h3>Health and Safety</h3>
-                    <p>Athens is generally safe for travelers, but it's important to take standard precautions:</p>
-                    <ul>
-                        <li>Stay hydrated and protect yourself from the sun, especially during summer months.</li>
-                        <li>Be cautious with your belongings, particularly in crowded areas and on public transport.</li>
-                        <li>Use reputable tour operators and guides for activities and excursions.</li>
-                        <li>Ensure you have appropriate travel insurance covering health and activities.</li>
-                    </ul>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section class="section">
-                    <h2>Cultural Immersion</h2>
-                    <p>Immerse yourself in Athens’s rich culture through various local traditions and activities:</p>
-                    <ul>
-                        <li><strong>Palace Tours:</strong> Explore the grandeur of Athens’s numerous palaces and historical buildings, each with its unique architectural style and historical significance.</li>
-                        <li><strong>Local Markets:</strong> Visit markets like the Monastiraki Flea Market and Varvakios Agora to experience the local cuisine, crafts, and vibrant community life.</li>
-                        <li><strong>Art and Music:</strong> Attend performances at local theaters and concert halls, or visit art galleries showcasing regional artists.</li>
-                        <li><strong>Festivals:</strong> Participate in events such as the Athens and Epidaurus Festival, which celebrates theater, music, and dance, or the annual Athens Marathon to experience local festivities.</li>
-                        <li><strong>Historical Workshops:</strong> Engage in workshops that delve into Athens’s history, architecture, and cultural heritage, offering a deeper understanding of the city's legacy.</li>
-                        <li><strong>Boat Tours:</strong> Take a boat tour along the Athenian Riviera or around the Saronic Gulf to enjoy scenic views of Athens’s landscapes and maritime beauty.</li>
-                    </ul>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Athens offers a delightful mix of traditional Greek cuisine and modern culinary innovations. Here are some must-try dishes and dining experiences:</p>
-                    <ul>
-                        <li><strong>Moussaka:</strong> A layered casserole dish made with eggplant, minced meat, and béchamel sauce.</li>
-                        <li><strong>Souvlaki:</strong> Grilled skewers of meat, typically served with pita bread, tomatoes, onions, and tzatziki sauce.</li>
-                        <li><strong>Gyro:</strong> Similar to souvlaki, gyros are made with meat cooked on a vertical rotisserie and served in pita bread with various toppings.</li>
-                        <li><strong>Tzatziki:</strong> A refreshing dip made from yogurt, cucumber, garlic, and dill, perfect for pairing with grilled meats.</li>
-                        <li><strong>Spanakopita:</strong> A savory pastry filled with spinach, feta cheese, and herbs, wrapped in flaky phyllo dough.</li>
-                        <li><strong>Baklava:</strong> A sweet dessert made of layers of phyllo dough filled with chopped nuts and sweetened with honey or syrup.</li>
-                        <li><strong>Fresh Seafood:</strong> Enjoy freshly caught fish and seafood dishes at coastal tavernas along the Athenian Riviera.</li>
-                        <li><strong>Local Wines:</strong> Savor a variety of Greek wines, including Assyrtiko and Agiorgitiko, available at numerous wine bars and restaurants.</li>
-                        <li><strong>Street Food:</strong> Taste authentic Greek street food like koulouri (sesame bread rings) and loukoumades (honey-soaked dough balls) from local vendors.</li>
-                        <li><strong>Fine Dining:</strong> For a more upscale experience, visit Athens’s gourmet restaurants offering innovative dishes and exquisite wines.</li>
-                    </ul>
-                    <p>I highly recommend dining at local tavernas and cafes to savor authentic Athens flavors and enjoy the city's lively atmosphere.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Athens offers a wide range of activities for adventure enthusiasts and nature lovers:</p>
-                    <ul>
-                        <li><strong>Boat Tours:</strong> Explore the scenic waterways of the Athenian Riviera and the Saronic Gulf on a guided boat tour, offering unique perspectives of Athens’s landscapes and maritime beauty.</li>
-                        <li><strong>Hiking and Biking:</strong> Discover Athens’s natural beauty through its extensive network of hiking and biking trails in areas like Mount Lycabettus and the National Garden.</li>
-                        <li><strong>Segway Tours:</strong> Navigate the city’s landmarks and parks effortlessly on a guided Segway tour, providing a fun and efficient way to explore Athens.</li>
-                        <li><strong>Horseback Riding:</strong> Enjoy horseback riding excursions through Athens’s picturesque landscapes and forested areas, offering a tranquil escape from the urban bustle.</li>
-                        <li><strong>Golfing:</strong> Play a round of golf at one of Athens’s beautiful golf courses, surrounded by lush greenery and scenic views.</li>
-                        <li><strong>Kayaking and Canoeing:</strong> Paddle along Athens’s waterways, exploring hidden coves and enjoying the tranquility of the water.</li>
-                        <li><strong>Winter Sports:</strong> In the winter months, visit nearby resorts for skiing, snowboarding, and other snow activities, providing a unique contrast to the city's historic charm.</li>
-                        <li><strong>Photography Tours:</strong> Capture stunning photographs of Athens’s architecture, gardens, and natural scenery on a specialized photography tour, perfect for both amateur and professional photographers.</li>
-                        <li><strong>Escape Rooms:</strong> Challenge yourself with interactive escape room experiences that test your problem-solving skills and provide a fun group activity.</li>
-                        <li><strong>Live Music and Theatre:</strong> Attend live performances at local venues, ranging from classical concerts at the Odeon of Herodes Atticus to contemporary theatre productions at the Stavros Niarchos Foundation Cultural Center.</li>
-                    </ul>
-                    <p>One of the most exhilarating activities is taking a boat tour through the Saronic Gulf, offering breathtaking views of the coastline and nearby islands, making it a memorable addition to your Athens adventure.</p>
-                </section>
-                
-                <!-- About Athens -->
-                <section class="section">
-                    <h2>About Athens</h2>
-                    <p><strong>Athens</strong>, the capital city of Greece, is renowned for its historical significance, architectural grandeur, and vibrant cultural scene. Situated in the Attica region, Athens serves as the political, economic, and cultural heart of Greece, blending ancient heritage with modern dynamism.</p>
-                    <p>The city is famously home to the Acropolis, a symbol of classical spirit and civilization, and a UNESCO World Heritage Site. Beyond its ancient landmarks, Athens boasts a bustling metropolis with diverse neighborhoods like Plaka, Monastiraki, and Kolonaki, each offering unique experiences ranging from traditional tavernas to chic boutiques and lively nightlife.</p>
-                    <p>Athens also embraces contemporary art and culture, with numerous museums, galleries, theaters, and cultural institutions contributing to its rich artistic landscape. The National Archaeological Museum, the Benaki Museum, and the Museum of Cycladic Art are just a few examples of the city's commitment to preserving and showcasing its cultural heritage.</p>
-                    <p>Additionally, Athens serves as a gateway to the Greek islands and the stunning Aegean and Ionian Seas, providing travelers with opportunities for island-hopping, beach activities, and maritime adventures. The city's Mediterranean climate ensures pleasant weather for most of the year, making it an attractive destination for tourists seeking both historical exploration and modern leisure.</p>
-                    <p>With its blend of ancient history, vibrant culture, and modern amenities, Athens is an ideal destination for travelers seeking a comprehensive and enriching experience. Whether you're exploring its iconic landmarks, enjoying its culinary delights, or immersing yourself in its lively atmosphere, Athens offers something for every visitor.</p>
-                </section>
+                    </aside> <!-- End of Sidebar -->
+
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
@@ -392,19 +595,52 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Enhanced Navigation, Back to Top Button, etc. -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.display = 'none';
+                backToTopButton.style.opacity = '0';
+            }
+        });
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const navLinks = document.querySelectorAll('nav ul.nav-menu li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuToggle.checked) {
+                    menuToggle.checked = false;
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
