@@ -310,6 +310,13 @@
 
                     <!-- Sidebar Column -->
                     <aside class="sidebar">
+                        
+                        <!-- Carl's snippet as a travel vlogger -->
+                        <div style="text-align:center; margin-bottom:20px;">
+                            <img src="carlcircle.png" alt="Carl's Profile" style="width:100px; height:100px; border-radius:50%; margin-bottom:10px;">
+                            <p><strong>Carl is a travel vlogger</strong>, creating cinematic journeys to showcase all the weird and wonderful things he sees around the globe.</p>
+                        </div>
+                        
                         <h3>Doha Travel Resources</h3>
                         <ul>
                             <li><a href="#">Hamad International Airport Info</a></li>
@@ -366,5 +373,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Mobile Menu (Optional) -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
