@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bath - Carl Travels</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Primary Meta Tags -->
     <meta name="description" content="Discover the historic city of Bath with Carl Travels. Explore its Roman baths, Georgian architecture, and cultural charm.">
     <meta name="keywords" content="Bath, Travel, UK Destinations, Carl Travels, Attractions, History">
+    <meta name="author" content="Carl Tomich">
 
-    <!-- Open Graph Meta Tags -->
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Bath - Carl Travels">
     <meta property="og:description" content="Uncover the history and beauty of Bath with Carl Travels. Learn about top attractions, local history, and travel essentials.">
     <meta property="og:image" content="images/bath-og-image.jpg">
@@ -22,8 +23,169 @@
     <meta name="twitter:description" content="Uncover the history and beauty of Bath with Carl Travels. Learn about top attractions, local history, and travel essentials.">
     <meta name="twitter:image" content="images/bath-twitter-image.jpg">
 
+    <title>Bath - Carl Travels</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Inline Styles for Two-Column Layout -->
+    <style>
+        /* Basic resets and container styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
+        header h1 a {
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
+        }
+        header h1 a:hover {
+            color: #E55B00;
+        }
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+            font-size: 1.8em;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+        main h3 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; 
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
+        /* Basic section styling */
+        .section {
+            margin-bottom: 30px;
+        }
+        .city-banner {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        /* Breadcrumb styling */
+        .breadcrumb {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em;
+            padding: 10px 0;
+        }
+        .breadcrumb li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+        .breadcrumb a {
+            color: #FF6600;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional style for back button */
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
+        }
+
+        /* Carl snippet in sidebar */
+        .sidebar-profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar-profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -45,7 +207,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
                     <li><a href="donate.html">Donate</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -68,69 +230,144 @@
     
     <!-- Main Content -->
     <main>
-        <section class="city-page">
+        <section class="blog-post">
             <div class="container">
-                <h1>Bath</h1>
-                <img src="images/bath-banner.jpg" alt="Bath" class="city-banner">
 
-                <!-- What to See -->
-                <section class="section">
-                    <h2>What to See</h2>
-                    <p>Bath is a UNESCO World Heritage site famous for its Roman baths and stunning Georgian architecture. The city offers visitors an enchanting experience with its hot springs, museums, and delightful countryside views surrounding the region.</p>
-                </section>
-
-                <!-- Brief History -->
-                <section class="section">
-                    <h2>A Brief History of the City</h2>
-                    <p>Bath's history dates back to Roman times when it was known as Aquae Sulis, named for its hot springs. It became popular as a spa town during the Georgian era, attracting visitors seeking its healing waters. Today, Bath's rich history and well-preserved architecture make it a top destination in the UK.</p>
-                </section>
-
-                <!-- Top 10 Attractions -->
-                <section class="section">
-                    <h2>Top 10 Attractions</h2>
-                    <ol>
-                        <li><strong>The Roman Baths:</strong> Explore the ancient bathing complex and museum.</li>
-                        <li><strong>Bath Abbey:</strong> A stunning example of Gothic architecture, offering city views.</li>
-                        <li><strong>The Royal Crescent:</strong> Iconic Georgian architecture housing historic residences.</li>
-                        <li><strong>The Circus:</strong> A circular street known for its unique decorative street layout.</li>
-                        <li><strong>The Holburne Museum:</strong> Featuring fine and decorative arts collections.</li>
-                        <li><strong>Pulteney Bridge:</strong> A historic bridge and major landmark in Bath.</li>
-                        <li><strong>Sally Lunn's House:</strong> Home to the original Bath bun, a must-try treat.</li>
-                        <li><strong>No. 1 Royal Crescent:</strong> A museum showcasing Georgian life.</li>
-                        <li><strong>Thermae Bath Spa:</strong> Experience natural thermal waters in a modern spa setting.</li>
-                        <li><strong>Alexandra Park:</strong> Offers panoramic views of the city.</li>
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Bath</li>
                     </ol>
-                </section>
+                </nav>
 
-                <!-- What to Bring -->
-                <section class="section">
-                    <h2>What to Bring</h2>
-                    <p>Pack layers of clothing to adapt to Bath's changing weather. Walking shoes are essential for exploring cobblestoned streets. If planning to visit the spa, remember to bring swimwear.</p>
-                </section>
+                <!-- Page Title -->
+                <h1>Bath</h1>
 
-                <!-- Currency -->
-                <section class="section">
-                    <h2>Currency</h2>
-                    <p>The currency in Bath is the British Pound Sterling (£). Credit cards are accepted widely, but carrying some cash is helpful for small purchases or independent vendors.</p>
-                </section>
+                <!-- Two-Column Layout -->
+                <div class="content-row">
+                    
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Best Time to Visit -->
-                <section class="section">
-                    <h2>Best Time to Visit</h2>
-                    <p>The best time to visit Bath is in the spring (March to May) or autumn (September to November) when the weather is pleasant, and the city is less crowded than in peak summer months.</p>
-                </section>
+                        <!-- Banner Image -->
+                        <img src="images/bath-banner.jpg" alt="Bath" class="city-banner">
 
-                <!-- Fun Facts -->
-                <section class="section">
-                    <h2>Fun Facts</h2>
-                    <ul>
-                        <li>Bath is the only city in the UK to be designated a UNESCO World Heritage site.</li>
-                        <li>Jane Austen, a famed English novelist, lived in Bath from 1801 to 1806.</li>
-                        <li>The city has more listed buildings per capita than any other city in the UK.</li>
-                        <li>Bath's Roman Baths receive over a million visitors yearly.</li>
-                        <li>The Royal Crescent and Circus feature prominently in films and television shows due to their unique architecture.</li>
-                    </ul>
-                </section>
+                        <!-- Introduction Section -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Bath is a UNESCO World Heritage site famous for its Roman baths and stunning Georgian architecture. The city offers visitors an enchanting experience with its hot springs, museums, and delightful countryside views surrounding the region.</p>
+                        </section>
+
+                        <!-- Personal Anecdote / Story -->
+                        <section class="section">
+                            <h2>My Bath Adventure</h2>
+                            <p>I remember arriving in Bath on a misty morning—my breath fogging up as I stood by the ancient Roman Baths. After a quick dip in the Thermae Bath Spa (where I nearly dozed off in the rooftop pool), I found myself wandering the cobblestone streets. I stumbled upon a small bakery that served the fluffiest Bath buns I’d ever tasted. The friendly owner insisted I try their homemade jam, and it was like a sweet time machine back to Georgian England. </p>
+                            <p>Later that evening, I joined a local ghost tour—listening to eerie tales of restless spirits haunting the Georgian crescents. By the end of it, I was half-convinced I'd spotted a phantom in the Royal Crescent's windows. Whether real or just my imagination, Bath's charm (and occasional spookiness) left me completely spellbound.</p>
+                        </section>
+
+                        <!-- Brief History -->
+                        <section class="section">
+                            <h2>A Brief History of the City</h2>
+                            <p>Bath's history dates back to Roman times when it was known as Aquae Sulis, named for its hot springs. It became popular as a spa town during the Georgian era, attracting visitors seeking its healing waters. Today, Bath's rich history and well-preserved architecture make it a top destination in the UK.</p>
+                        </section>
+
+                        <!-- Top 10 Attractions -->
+                        <section class="section">
+                            <h2>Top 10 Attractions</h2>
+                            <ol>
+                                <li><strong>The Roman Baths:</strong> Explore the ancient bathing complex and museum.</li>
+                                <li><strong>Bath Abbey:</strong> A stunning example of Gothic architecture, offering city views.</li>
+                                <li><strong>The Royal Crescent:</strong> Iconic Georgian architecture housing historic residences.</li>
+                                <li><strong>The Circus:</strong> A circular street known for its unique decorative street layout.</li>
+                                <li><strong>The Holburne Museum:</strong> Featuring fine and decorative arts collections.</li>
+                                <li><strong>Pulteney Bridge:</strong> A historic bridge and major landmark in Bath.</li>
+                                <li><strong>Sally Lunn's House:</strong> Home to the original Bath bun, a must-try treat.</li>
+                                <li><strong>No. 1 Royal Crescent:</strong> A museum showcasing Georgian life.</li>
+                                <li><strong>Thermae Bath Spa:</strong> Experience natural thermal waters in a modern spa setting.</li>
+                                <li><strong>Alexandra Park:</strong> Offers panoramic views of the city.</li>
+                            </ol>
+                        </section>
+
+                        <!-- What to Bring -->
+                        <section class="section">
+                            <h2>What to Bring</h2>
+                            <p>Pack layers of clothing to adapt to Bath's changing weather. Walking shoes are essential for exploring cobblestoned streets. If planning to visit the spa, remember to bring swimwear.</p>
+                        </section>
+
+                        <!-- Currency -->
+                        <section class="section">
+                            <h2>Currency</h2>
+                            <p>The currency in Bath is the British Pound Sterling (£). Credit cards are accepted widely, but carrying some cash is helpful for small purchases or independent vendors.</p>
+                        </section>
+
+                        <!-- Best Time to Visit -->
+                        <section class="section">
+                            <h2>Best Time to Visit</h2>
+                            <p>The best time to visit Bath is in the spring (March to May) or autumn (September to November) when the weather is pleasant, and the city is less crowded than in peak summer months. Pro tip: visiting in December for the Christmas markets can also be magical—though a bit busier.</p>
+                        </section>
+
+                        <!-- Fun Facts -->
+                        <section class="section">
+                            <h2>Fun Facts</h2>
+                            <ul>
+                                <li>Bath is the only city in the UK to be designated a UNESCO World Heritage site.</li>
+                                <li>Jane Austen, a famed English novelist, lived in Bath from 1801 to 1806 and set two of her novels here.</li>
+                                <li>The city has more listed buildings per capita than any other city in the UK.</li>
+                                <li>Bath's Roman Baths receive over a million visitors yearly.</li>
+                                <li>The Royal Crescent and Circus feature prominently in films and TV shows due to their iconic architecture.</li>
+                            </ul>
+                        </section>
+
+                        <!-- Return to Destinations -->
+                        <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
+
+                    </div> <!-- End of .main-column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <!-- 'Carl is a travel vlogger' snippet with circle photo -->
+                        <div class="sidebar-profile">
+                            <img src="carlcircle.png" alt="Carl Profile">
+                            <p><strong>Carl is a travel vlogger</strong> who creates cinematic journeys, showcasing his travels and all the weird and wonderful things he sees around the globe.</p>
+                        </div>
+
+                        <h3>Bath Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Visit Bath Site</a></li>
+                            <li><a href="#">Roman Baths Tickets &amp; Info</a></li>
+                            <li><a href="#">Guided City Walks</a></li>
+                            <li><a href="#">Thermae Bath Spa Packages</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> British Pound (£). Credit cards widely accepted.</p>
+                        <p><strong>Language:</strong> English.</p>
+                        <p><strong>Time Zone:</strong> GMT (UTC+0), UTC+1 in summer.</p>
+                        <p><strong>Climate:</strong> Mild, but often rainy—pack an umbrella!</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Insert Ad or Booking Widget here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Persuasion” - Jane Austen (set partly in Bath)</a></li>
+                            <li><a href="#">“Lonely Planet: Great Britain” - Travel Guide</a></li>
+                            <li><a href="#">“Georgian Architecture in Bath” - John Smith</a></li>
+                        </ul>
+                    </aside> <!-- End of .sidebar -->
+
+                </div> <!-- End of .content-row -->
             </div>
         </section>
     </main>
@@ -138,19 +375,30 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <!-- Date changed to 2025 -->
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
