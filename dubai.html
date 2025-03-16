@@ -76,7 +76,7 @@
     
     <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+    
     <!-- Inline styling to match the “two-column layout” approach -->
     <style>
         /* Ensure images within the main content are responsive */
@@ -363,5 +363,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Mobile Menu (Optional) -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
