@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journey Through the Majestic Ha Long Bay: A 3-Day Cruise Experience</title>
+
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Ha Long Bay, a UNESCO World Heritage Site, is renowned for its emerald waters and limestone islands. Join Carl on a 3-day cruise adventure, exploring floating villages, hidden caves, and unforgettable sunrises.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Ha Long Bay, Vietnam, Cruise, UNESCO World Heritage, Kayaking, Caves, Limestone Islands, Travel Blog, Carl Travels">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Journey Through the Majestic Ha Long Bay: A 3-Day Cruise Experience">
+    <meta property="og:description" content="Join Carl on a 3-day cruise exploring the wonders of Ha Long Bay—floating villages, hidden lagoons, and stunning limestone karsts.">
+    <meta property="og:image" content="images/halongday1.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/halongbay.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Journey Through the Majestic Ha Long Bay: A 3-Day Cruise Experience">
+    <meta name="twitter:description" content="Join Carl on a 3-day cruise exploring the wonders of Ha Long Bay—floating villages, hidden lagoons, and stunning limestone karsts.">
+    <meta name="twitter:image" content="images/halongday1.jpg">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="city.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Adding Roboto and Poppins Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Inline Styles for Two-Column Layout and Responsiveness -->
+    <style>
+        /* Ensure images within the main content are responsive */
+        main img.responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        /* Responsive Video Container */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 25px;
+            height: 0;
+            margin-bottom: 20px;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Header h1 (Carl Travels) styling */
+        header h1 a {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
+        }
+        header h1 a:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h1 titles within main */
+        main h1 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+            text-align: center;
+        }
+        main h1:hover {
+            color: #E55B00;
+        }
+
+        /* Style all h2 titles within main */
+        main h2 {
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        main h2:hover {
+            color: #E55B00;
+        }
+
+        /* Style h3 or smaller headings in main */
+        main h3 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Two-column layout: main content + sidebar */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
+        /* Additional styling for Lists and Sections */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Sidebar styling */
+        .sidebar h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+        .sidebar p, .sidebar ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .sidebar ul li {
+            margin-bottom: 8px;
+        }
+        .sidebar a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -41,141 +201,196 @@
     <main>
         <section class="blog-post">
             <div class="container">
-                <h1>Journey Through the Majestic Ha Long Bay: A 3-Day Cruise Experience</h1>
-               <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/gWw7ygXH_Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
 
+                <!-- Page Title -->
+                <h1>Journey Through the Majestic Ha Long Bay: A 3-Day Cruise Experience</h1>
                 
-                <!-- Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <p>Ha Long Bay, a UNESCO World Heritage Site, is renowned for its emerald waters and thousands of towering limestone islands topped with rainforests. As Carl, a 38-year-old traveler from Australia, I embarked on a 3-day cruise to explore the natural wonders and tranquil beauty of this iconic destination.</p>
-                </section>
-                
-                <!-- Day 1 -->
-                <section>
-                    <h2>Day 1: Departure and Exploring the Floating Villages</h2>
-                    <p>My adventure began early in the morning as I boarded a traditional wooden junk boat for the cruise. The first day was spent navigating through the bay's picturesque seascape, passing by towering limestone karsts and serene waters.</p>
-                    <img src="halongday1.jpg" alt="Ha Long Bay Cruise">
-                    <p>We visited a floating fishing village, where I interacted with the local fishermen and learned about their unique lifestyle living on the water. The afternoon was dedicated to kayaking through hidden lagoons and caves, offering a close-up view of Ha Long Bay's stunning geological formations.</p>
-                </section>
-                
-                <!-- Day 2 -->
-                <section>
-                    <h2>Day 2: Caving and Island Exploration</h2>
-                    <p>The second day was filled with exploration and adventure. We visited Sung Sot Cave, one of the largest and most impressive caves in Ha Long Bay, adorned with intricate stalactites and stalagmites.</p>
-                    <img src="halongday2.jpg" alt="Sung Sot Cave">
-                    <p>Next, we anchored at Titop Island, where I climbed to the summit for panoramic views of the bay. The afternoon was spent relaxing on the sandy beaches, soaking in the sun, and enjoying a delicious seafood lunch prepared on board.</p>
-                </section>
-                
-                <!-- Day 3 -->
-                <section>
-                    <h2>Day 3: Sunrise and Farewell</h2>
-                    <p>On the final day, I woke up to a breathtaking sunrise over the bay, painting the sky in hues of orange and pink. The serene morning was perfect for a leisurely breakfast on deck.</p>
-                    <img src="halongday3.jpg" alt="Sunrise Ha Long Bay">
-                    <p>We spent the morning exploring Luon Cave by bamboo boat, marveling at the limestone cliffs reflected in the calm waters. As the cruise concluded, I felt a deep sense of gratitude for the unforgettable experiences and the natural beauty of Ha Long Bay.</p>
-                </section>
-                
-                <!-- Highlights -->
-                <section>
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li>Floating Fishing Village: Insight into the unique community living on water.</li>
-                        <li>Sung Sot Cave: Exploring one of Ha Long Bay's most impressive caves.</li>
-                        <li>Titop Island: Climbing to the summit for stunning panoramic views.</li>
-                        <li>Kayaking and Canoeing: Navigating through hidden lagoons and caves.</li>
-                        <li>Luon Cave: A serene and picturesque limestone cave experience.</li>
-                    </ul>
-                </section>
-                
-                <!-- Practical Information -->
-                <section>
-                    <h2>Practical Information</h2>
-                    <h3>Transportation</h3>
-                    <p>To reach Ha Long Bay, take a bus or private transfer from Hanoi. The journey takes approximately 4 hours. Upon arrival, booking a reputable cruise is essential for a safe and enjoyable experience.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>Ha Long Bay offers a range of cruise options, from budget-friendly boats to luxury vessels. I chose a mid-range cruise that provided comfortable cabins, delicious meals, and excellent tour services.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>A 3-day cruise in Ha Long Bay typically costs between $200 to $500 AUD, depending on the type of boat and included amenities. It's advisable to book in advance, especially during peak seasons.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section>
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Bring a waterproof bag for your belongings during kayaking and boat excursions.</li>
-                        <li><strong>Don’t:</strong> Litter or disturb the natural environment.</li>
-                        <li><strong>Do:</strong> Apply sunscreen regularly to protect against the tropical sun.</li>
-                        <li><strong>Don’t:</strong> Engage in loud or disruptive behavior that may disturb other passengers.</li>
-                    </ul>
-                    
-                    <h3>Packing Lists</h3>
-                    <ul>
-                        <li>Lightweight, quick-dry clothing.</li>
-                        <li>Swimwear and beachwear.</li>
-                        <li>Comfortable walking shoes or sandals.</li>
-                        <li>Hat and sunglasses for sun protection.</li>
-                        <li>Insect repellent and personal hygiene items.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Vietnamese culture values respect and politeness. Always greet with a smile and a slight bow. It's customary to remove your shoes before entering someone's home or a temple. Public displays of affection are generally discouraged.</p>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section>
-                    <h2>Cultural Immersion</h2>
-                    <p>Interacting with local fishermen provided a unique perspective into their daily lives and the challenges they face living on the water. Learning about their sustainable fishing practices and the importance of Ha Long Bay to their livelihood was enlightening.</p>
-                    <p>Participating in a traditional Vietnamese cooking class onboard allowed me to prepare and enjoy authentic dishes, deepening my appreciation for the local cuisine.</p>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section>
-                    <h2>Food and Cuisine</h2>
-                    <p>Ha Long Bay's culinary offerings are a delightful mix of fresh seafood and traditional Vietnamese flavors.</p>
-                    <ul>
-                        <li><strong>Grilled Squid:</strong> Freshly grilled squid served with spicy dipping sauce.</li>
-                        <li><strong>Seafood BBQ:</strong> A variety of grilled seafood including prawns, fish, and calamari.</li>
-                        <li><strong>Com Chay:</strong> Crispy rice served with savory toppings like minced pork and vegetables.</li>
-                        <li><strong>Bún Thang:</strong> Delicate noodle soup with chicken, egg, and herbs.</li>
-                        <li><strong>Trà Chanh:</strong> Refreshing lemon tea, perfect for cooling down during excursions.</li>
-                    </ul>
-                    <p>I highly recommend trying the fresh seafood at the cruise's main dining area, where the catch of the day is cooked to perfection and served with a variety of flavorful sauces.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section>
-                    <h2>Adventure and Activities</h2>
-                    <p>Ha Long Bay is a haven for adventure enthusiasts, offering a range of activities:</p>
-                    <ul>
-                        <li><strong>Kayaking:</strong> Explore hidden lagoons and narrow passages between limestone cliffs.</li>
-                        <li><strong>Rock Climbing:</strong> Climb the towering karsts for an exhilarating experience and stunning views.</li>
-                        <li><strong>Snorkeling and Diving:</strong> Discover the vibrant marine life and underwater landscapes.</li>
-                        <li><strong>Cave Exploration:</strong> Wander through majestic caves adorned with stalactites and stalagmites.</li>
-                        <li><strong>Fishing Trips:</strong> Learn traditional fishing techniques from local fishermen.</li>
-                    </ul>
-                    <p>One of the most thrilling activities was the kayaking expedition through the pristine waters, allowing me to access secluded beaches and observe marine life up close.</p>
-                </section>
-                
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>During the cruise, I befriended Tomas, a fellow traveler from the UK, and we shared stories of our adventures across Southeast Asia. Our camaraderie made the journey even more enjoyable.</p>
-                    <p>Another unforgettable moment was witnessing a traditional lantern release at sunset. Watching the lanterns float away, symbolizing hopes and dreams, was a serene and moving experience.</p>
-                </section>
-                
-                <!-- Conclusion -->
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Ha Long Bay is a breathtaking destination that offers a perfect blend of natural beauty, adventure, and cultural experiences. As Carl, I found the 3-day cruise to be an enlightening and impactful journey through one of the world's most stunning seascapes.</p>
-                    <p>If you're visiting Vietnam, a trip to Ha Long Bay is essential. Whether you're a history enthusiast, an adventure seeker, or simply looking to relax amidst nature, Ha Long Bay delivers it all.</p>
-                    <p>Until next time, happy travels!</p>
-                </section>
+                <!-- Two-column layout -->
+                <div class="content-row">
+
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        
+                        <!-- Embedded Video (Ha Long Bay) -->
+                        <div style="text-align: center;" class="video-responsive">
+                            <iframe 
+                                src="https://www.youtube.com/embed/gWw7ygXH_Eo" 
+                                title="Ha Long Bay Cruise Video" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Ha Long Bay, a UNESCO World Heritage Site, is renowned for its emerald waters and thousands of towering limestone islands topped with rainforests. As Carl, a 38-year-old traveler from Australia, I embarked on a 3-day cruise to explore the natural wonders and tranquil beauty of this iconic destination.</p>
+                        </section>
+                        
+                        <!-- Day 1 -->
+                        <section class="section">
+                            <h2>Day 1: Departure and Exploring the Floating Villages</h2>
+                            <p>My adventure began early in the morning as I boarded a traditional wooden junk boat for the cruise. The first day was spent navigating through the bay's picturesque seascape, passing by towering limestone karsts and serene waters.</p>
+                            <img src="halongday1.jpg" alt="Ha Long Bay Cruise" class="responsive-image">
+                            <p>We visited a floating fishing village, where I interacted with the local fishermen and learned about their unique lifestyle living on the water. The afternoon was dedicated to kayaking through hidden lagoons and caves, offering a close-up view of Ha Long Bay's stunning geological formations.</p>
+                        </section>
+                        
+                        <!-- Day 2 -->
+                        <section class="section">
+                            <h2>Day 2: Caving and Island Exploration</h2>
+                            <p>The second day was filled with exploration and adventure. We visited Sung Sot Cave, one of the largest and most impressive caves in Ha Long Bay, adorned with intricate stalactites and stalagmites.</p>
+                            <img src="halongday2.jpg" alt="Sung Sot Cave" class="responsive-image">
+                            <p>Next, we anchored at Titop Island, where I climbed to the summit for panoramic views of the bay. The afternoon was spent relaxing on the sandy beaches, soaking in the sun, and enjoying a delicious seafood lunch prepared on board.</p>
+                        </section>
+                        
+                        <!-- Day 3 -->
+                        <section class="section">
+                            <h2>Day 3: Sunrise and Farewell</h2>
+                            <p>On the final day, I woke up to a breathtaking sunrise over the bay, painting the sky in hues of orange and pink. The serene morning was perfect for a leisurely breakfast on deck.</p>
+                            <img src="halongday3.jpg" alt="Sunrise Ha Long Bay" class="responsive-image">
+                            <p>We spent the morning exploring Luon Cave by bamboo boat, marveling at the limestone cliffs reflected in the calm waters. As the cruise concluded, I felt a deep sense of gratitude for the unforgettable experiences and the natural beauty of Ha Long Bay.</p>
+                        </section>
+                        
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li>Floating Fishing Village: Insight into the unique community living on water.</li>
+                                <li>Sung Sot Cave: Exploring one of Ha Long Bay's most impressive caves.</li>
+                                <li>Titop Island: Climbing to the summit for stunning panoramic views.</li>
+                                <li>Kayaking and Canoeing: Navigating through hidden lagoons and caves.</li>
+                                <li>Luon Cave: A serene and picturesque limestone cave experience.</li>
+                            </ul>
+                        </section>
+                        
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            <h3>Transportation</h3>
+                            <p>To reach Ha Long Bay, take a bus or private transfer from Hanoi. The journey takes approximately 4 hours. Upon arrival, booking a reputable cruise is essential for a safe and enjoyable experience.</p>
+                            
+                            <h3>Accommodation</h3>
+                            <p>Ha Long Bay offers a range of cruise options, from budget-friendly boats to luxury vessels. I chose a mid-range cruise that provided comfortable cabins, delicious meals, and excellent tour services.</p>
+                            
+                            <h3>Budgeting</h3>
+                            <p>A 3-day cruise in Ha Long Bay typically costs between $200 to $500 AUD, depending on the type of boat and included amenities. It's advisable to book in advance, especially during peak seasons.</p>
+                        </section>
+                        
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <h3>Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Bring a waterproof bag for your belongings during kayaking and boat excursions.</li>
+                                <li><strong>Don’t:</strong> Litter or disturb the natural environment.</li>
+                                <li><strong>Do:</strong> Apply sunscreen regularly to protect against the tropical sun.</li>
+                                <li><strong>Don’t:</strong> Engage in loud or disruptive behavior that may disturb other passengers.</li>
+                            </ul>
+                            
+                            <h3>Packing Lists</h3>
+                            <ul>
+                                <li>Lightweight, quick-dry clothing.</li>
+                                <li>Swimwear and beachwear.</li>
+                                <li>Comfortable walking shoes or sandals.</li>
+                                <li>Hat and sunglasses for sun protection.</li>
+                                <li>Insect repellent and personal hygiene items.</li>
+                            </ul>
+                            
+                            <h3>Local Etiquette</h3>
+                            <p>Vietnamese culture values respect and politeness. Always greet with a smile and a slight bow. It's customary to remove your shoes before entering someone's home or a temple. Public displays of affection are generally discouraged.</p>
+                        </section>
+                        
+                        <!-- Cultural Immersion -->
+                        <section class="section">
+                            <h2>Cultural Immersion</h2>
+                            <p>Interacting with local fishermen provided a unique perspective into their daily lives and the challenges they face living on the water. Learning about their sustainable fishing practices and the importance of Ha Long Bay to their livelihood was enlightening.</p>
+                            <p>Participating in a traditional Vietnamese cooking class onboard allowed me to prepare and enjoy authentic dishes, deepening my appreciation for the local cuisine.</p>
+                        </section>
+                        
+                        <!-- Food and Cuisine -->
+                        <section class="section">
+                            <h2>Food and Cuisine</h2>
+                            <p>Ha Long Bay's culinary offerings are a delightful mix of fresh seafood and traditional Vietnamese flavors.</p>
+                            <ul>
+                                <li><strong>Grilled Squid:</strong> Freshly grilled squid served with spicy dipping sauce.</li>
+                                <li><strong>Seafood BBQ:</strong> A variety of grilled seafood including prawns, fish, and calamari.</li>
+                                <li><strong>Com Chay:</strong> Crispy rice served with savory toppings like minced pork and vegetables.</li>
+                                <li><strong>Bún Thang:</strong> Delicate noodle soup with chicken, egg, and herbs.</li>
+                                <li><strong>Trà Chanh:</strong> Refreshing lemon tea, perfect for cooling down during excursions.</li>
+                            </ul>
+                            <p>I highly recommend trying the fresh seafood at the cruise's main dining area, where the catch of the day is cooked to perfection and served with a variety of flavorful sauces.</p>
+                        </section>
+                        
+                        <!-- Adventure and Activities -->
+                        <section class="section">
+                            <h2>Adventure and Activities</h2>
+                            <p>Ha Long Bay is a haven for adventure enthusiasts, offering a range of activities:</p>
+                            <ul>
+                                <li><strong>Kayaking:</strong> Explore hidden lagoons and narrow passages between limestone cliffs.</li>
+                                <li><strong>Rock Climbing:</strong> Climb the towering karsts for an exhilarating experience and stunning views.</li>
+                                <li><strong>Snorkeling and Diving:</strong> Discover the vibrant marine life and underwater landscapes.</li>
+                                <li><strong>Cave Exploration:</strong> Wander through majestic caves adorned with stalactites and stalagmites.</li>
+                                <li><strong>Fishing Trips:</strong> Learn traditional fishing techniques from local fishermen.</li>
+                            </ul>
+                            <p>One of the most thrilling activities was the kayaking expedition through the pristine waters, allowing me to access secluded beaches and observe marine life up close.</p>
+                        </section>
+                        
+                        <!-- Personal Stories -->
+                        <section class="section">
+                            <h2>Personal Stories</h2>
+                            <p>During the cruise, I befriended Tomas, a fellow traveler from the UK, and we shared stories of our adventures across Southeast Asia. Our camaraderie made the journey even more enjoyable.</p>
+                            <p>Another unforgettable moment was witnessing a traditional lantern release at sunset. Watching the lanterns float away, symbolizing hopes and dreams, was a serene and moving experience.</p>
+                        </section>
+                        
+                        <!-- Conclusion -->
+                        <section class="section">
+                            <h2>Conclusion</h2>
+                            <p>Ha Long Bay is a breathtaking destination that offers a perfect blend of natural beauty, adventure, and cultural experiences. As Carl, I found the 3-day cruise to be an enlightening and impactful journey through one of the world's most stunning seascapes.</p>
+                            <p>If you're visiting Vietnam, a trip to Ha Long Bay is essential. Whether you're a history enthusiast, an adventure seeker, or simply looking to relax amidst nature, Ha Long Bay delivers it all.</p>
+                            <p>Until next time, happy travels!</p>
+                        </section>
+
+                    </div> <!-- End of main-column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Ha Long Bay Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Ha Long Bay Tourism Site</a></li>
+                            <li><a href="#">Recommended Cruise Operators</a></li>
+                            <li><a href="#">Local Fishing Villages Info</a></li>
+                            <li><a href="#">Kayaking & Adventure Tours</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Vietnamese Dong (VND). Some places accept USD, but Dong is preferred.</p>
+                        <p><strong>Language:</strong> Vietnamese is official; English is spoken in tourist areas.</p>
+                        <p><strong>Time Zone:</strong> Indochina Time (UTC+7).</p>
+                        <p><strong>Climate:</strong> Tropical—humid with a rainy season (May–September).</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Placeholder for Ad or Booking Widget -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Vietnam: A Traveler's Guide”</a></li>
+                            <li><a href="#">“Southeast Asia on a Shoestring” - Lonely Planet</a></li>
+                            <li><a href="#">“Vietnamese Cuisine: From Pho to Bun Thang”</a></li>
+                        </ul>
+                    </aside> <!-- End of sidebar -->
+
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
@@ -183,7 +398,7 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank">
                     <img src="facebook.png" alt="Facebook">
