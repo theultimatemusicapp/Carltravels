@@ -25,7 +25,7 @@
     <meta name="twitter:description" content="Discover Dubrovnik with our comprehensive travel guide. Explore historic Old Town, stunning city walls, vibrant cultural festivals, and exquisite vineyard tours.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/dubrovnik-featured-image.jpg">
     
-    <!-- Link to the same stylesheets as Berlin -->
+    <!-- Link to your stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="city.css">
     
@@ -60,14 +60,14 @@
     }
     </script>
 
-    <!-- Inline styles matching the Berlin page -->
+    <!-- Inline styles for a two-column layout -->
     <style>
         /* Ensure images within the main content are responsive */
         main img.responsive-image {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; 
+            margin: 0 auto;
             padding: 10px 0;
         }
 
@@ -77,7 +77,7 @@
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             padding-top: 25px;
             height: 0;
-            margin-bottom: 20px; /* Some spacing below the video */
+            margin-bottom: 20px;
         }
         .video-responsive iframe {
             position: absolute;
@@ -89,14 +89,14 @@
 
         /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
+            color: #FF6600;
             font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
         /* Style all h1 titles within main */
@@ -125,7 +125,7 @@
 
         /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as you wish */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
@@ -134,7 +134,7 @@
         /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; 
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -142,6 +142,70 @@
             main h2 {
                 font-size: 1.5em;
             }
+        }
+
+        /* Two-column layout: main content + sidebar */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
+        /* Additional styling for lists and sections */
+        main ul, main ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Sidebar styling */
+        .sidebar h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+            margin-bottom: 15px;
+        }
+        .sidebar p, .sidebar ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .sidebar ul li {
+            margin-bottom: 8px;
+        }
+        .sidebar a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -183,254 +247,302 @@
     <main>
         <section class="blog-post">
             <div class="container">
+
                 <!-- Main Title -->
                 <h1>Journey Through the Historic Dubrovnik: Your Ultimate Travel Guide</h1>
                 
-                <!-- Embedded YouTube Video #1 (Old Town Intro) -->
-                <div class="video-responsive">
-                    <iframe 
-                        src="https://www.youtube.com/embed/5fUtJgxq-2w" 
-                        title="Exploring Dubrovnik's Old Town" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                
-                <!-- Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <p>Welcome to our comprehensive travel guide to <strong>Dubrovnik</strong>, often referred to as the "Pearl of the Adriatic." This historic city in southern Croatia is renowned for its stunning Old Town, magnificent city walls, vibrant cultural festivals, and exquisite vineyards. Whether you're a history enthusiast, an adventure seeker, or a culinary explorer, Dubrovnik offers something for everyone.</p>
-                </section>
-                
-                <!-- Historical Background -->
-                <section>
-                    <h2>Historical Background</h2>
-                    <p><strong>Dubrovnik</strong> has a rich and storied history that dates back to the 7th century. Originally a refuge for people fleeing the Slavic invasions, Dubrovnik developed into a powerful maritime republic known for its skilled sailors, robust trade networks, and impressive fortifications. The city's resilience was tested during various sieges, yet it emerged as a beacon of culture and prosperity in the Adriatic.</p>
-                    <p>The influence of the Venetians is evident in Dubrovnik's stunning architecture and strategic city walls, which encircle the Old Town and offer breathtaking views of the Adriatic Sea. Today, Dubrovnik is a UNESCO World Heritage Site, celebrated for its well-preserved medieval structures and vibrant cultural scene.</p>
-                </section>
-                
-                <!-- Where to Go and What to See -->
-                <section>
-                    <h2>Where to Go and What to See</h2>
-                    <p>Dubrovnik is brimming with attractions that cater to a variety of interests. Here are some must-visit places and experiences:</p>
+                <!-- Layout Row for two-column approach -->
+                <div class="content-row">
+                    
+                    <!-- Main Column -->
+                    <div class="main-column">
 
-                <!-- Embedded YouTube Video #2 (City Walls Tour) -->
-                <div class="video-responsive">
-                    <iframe 
-                        src="https://www.youtube.com/embed/HL6slingVss" 
-                        title="Dubrovnik City Walls Tour" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                    
-                    <!-- Old Town -->
-                    <section>
-                        <h3>Dubrovnik's Old Town</h3>
-                        <p>Enclosed within massive stone walls, Dubrovnik's Old Town is a treasure trove of history and architecture. Wander through narrow cobblestone streets, explore ancient churches, and admire the well-preserved Baroque buildings.</p>
-                        <ul>
-                            <li><strong>Stradun (Placa):</strong> The main thoroughfare of the Old Town, lined with shops, cafes, and historic buildings.</li>
-                            <li><strong>Rector's Palace:</strong> A beautiful Gothic-Renaissance palace that now houses a museum.</li>
-                            <li><strong>St. Blaise Church:</strong> Dedicated to the city's patron saint, this Baroque church is a must-see landmark.</li>
-                        </ul>
-                    </section>
-                    
-                    <!-- City Walls -->
-                    <section>
-                        <h3>Dubrovnik City Walls Tour</h3>
-                        <p>A walk along Dubrovnik's iconic city walls offers unparalleled views of the Adriatic Sea and the city's stunning skyline. The walls span approximately 2 kilometers, featuring numerous towers, fortresses, and bastions.</p>
-                        <ul>
-                            <li><strong>Minčeta Tower:</strong> One of the tallest towers, offering panoramic views of the city and sea.</li>
-                            <li><strong>Fort Lovrijenac:</strong> Also known as St. Lawrence Fortress, it stands on a rocky cliff and is a perfect spot for photography.</li>
-                            <li><strong>Buza Bar:</strong> A popular cliffside bar along the walls, perfect for a refreshing drink with a view.</li>
-                        </ul>
-                    </section>
+                        <!-- Embedded YouTube Video #1 (Old Town Intro) -->
+                        <div class="video-responsive">
+                            <iframe 
+                                src="https://www.youtube.com/embed/5fUtJgxq-2w" 
+                                title="Exploring Dubrovnik's Old Town" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <!-- Introduction -->
+                        <section>
+                            <h2>Introduction</h2>
+                            <p>Welcome to our comprehensive travel guide to <strong>Dubrovnik</strong>, often referred to as the "Pearl of the Adriatic." This historic city in southern Croatia is renowned for its stunning Old Town, magnificent city walls, vibrant cultural festivals, and exquisite vineyards. Whether you're a history enthusiast, an adventure seeker, or a culinary explorer, Dubrovnik offers something for everyone.</p>
+                        </section>
+                        
+                        <!-- Historical Background -->
+                        <section>
+                            <h2>Historical Background</h2>
+                            <p><strong>Dubrovnik</strong> has a rich and storied history that dates back to the 7th century. Originally a refuge for people fleeing the Slavic invasions, Dubrovnik developed into a powerful maritime republic known for its skilled sailors, robust trade networks, and impressive fortifications. The city's resilience was tested during various sieges, yet it emerged as a beacon of culture and prosperity in the Adriatic.</p>
+                            <p>The influence of the Venetians is evident in Dubrovnik's stunning architecture and strategic city walls, which encircle the Old Town and offer breathtaking views of the Adriatic Sea. Today, Dubrovnik is a UNESCO World Heritage Site, celebrated for its well-preserved medieval structures and vibrant cultural scene.</p>
+                        </section>
+                        
+                        <!-- Where to Go and What to See -->
+                        <section>
+                            <h2>Where to Go and What to See</h2>
+                            <p>Dubrovnik is brimming with attractions that cater to a variety of interests. Here are some must-visit places and experiences:</p>
+                            
+                            <!-- Embedded YouTube Video #2 (City Walls Tour) -->
+                            <div class="video-responsive">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/HL6slingVss" 
+                                    title="Dubrovnik City Walls Tour" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <!-- Old Town -->
+                            <section>
+                                <h3>Dubrovnik's Old Town</h3>
+                                <p>Enclosed within massive stone walls, Dubrovnik's Old Town is a treasure trove of history and architecture. Wander through narrow cobblestone streets, explore ancient churches, and admire the well-preserved Baroque buildings.</p>
+                                <ul>
+                                    <li><strong>Stradun (Placa):</strong> The main thoroughfare of the Old Town, lined with shops, cafes, and historic buildings.</li>
+                                    <li><strong>Rector's Palace:</strong> A beautiful Gothic-Renaissance palace that now houses a museum.</li>
+                                    <li><strong>St. Blaise Church:</strong> Dedicated to the city's patron saint, this Baroque church is a must-see landmark.</li>
+                                </ul>
+                            </section>
+                            
+                            <!-- City Walls -->
+                            <section>
+                                <h3>Dubrovnik City Walls Tour</h3>
+                                <p>A walk along Dubrovnik's iconic city walls offers unparalleled views of the Adriatic Sea and the city's stunning skyline. The walls span approximately 2 kilometers, featuring numerous towers, fortresses, and bastions.</p>
+                                <ul>
+                                    <li><strong>Minčeta Tower:</strong> One of the tallest towers, offering panoramic views of the city and sea.</li>
+                                    <li><strong>Fort Lovrijenac:</strong> Also known as St. Lawrence Fortress, it stands on a rocky cliff and is a perfect spot for photography.</li>
+                                    <li><strong>Buza Bar:</strong> A popular cliffside bar along the walls, perfect for a refreshing drink with a view.</li>
+                                </ul>
+                            </section>
+                            
+                            <!-- Embedded YouTube Video #3 (Vineyard Tours) -->
+                            <div class="video-responsive">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/kOacooTeZk4" 
+                                    title="Vineyard Tours in Dubrovnik" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <!-- Cultural Festivals -->
+                            <section>
+                                <h3>Cultural Festivals in Dubrovnik</h3>
+                                <p>Dubrovnik hosts a variety of cultural festivals throughout the year, celebrating everything from music and theater to traditional crafts and cuisine.</p>
+                                <ul>
+                                    <li><strong>Dubrovnik Summer Festival:</strong> A month-long event featuring open-air performances, concerts, and art exhibitions.</li>
+                                    <li><strong>INmusic Festival:</strong> Croatia's largest open-air music festival, attracting international artists and music lovers.</li>
+                                    <li><strong>Dubrovnik Carnival:</strong> A vibrant celebration with parades, masquerade balls, and street performances.</li>
+                                </ul>
+                            </section>
+                            
+                            <!-- Vineyard Tours -->
+                            <section>
+                                <h3>Vineyard Tours in Dubrovnik</h3>
+                                <p>The region surrounding Dubrovnik is renowned for its excellent wine production. Vineyard tours offer a delightful way to explore the local winemaking traditions and taste some of Croatia's finest wines.</p>
+                                <ul>
+                                    <li><strong>Dubrovnik Vineyards:</strong> Participate in guided tours that include wine tastings and insights into the winemaking process.</li>
+                                    <li><strong>Family-Owned Wineries:</strong> Visit small, family-run vineyards to experience personalized tours and exclusive wine selections.</li>
+                                    <li><strong>Wine Tasting Events:</strong> Attend local wine festivals and tasting events to sample a variety of Croatian wines.</li>
+                                </ul>
+                            </section>
+                            
+                        </section>
+                        
+                        <!-- Embedded YouTube Video #4 (Cultural Festivals) -->
+                        <div class="video-responsive">
+                            <iframe 
+                                src="https://www.youtube.com/embed/JUBNVo1VTBY" 
+                                title="Cultural Festivals in Dubrovnik" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <!-- Costs and Budgeting -->
+                        <section>
+                            <h2>Costs and Budgeting</h2>
+                            <p>Planning your budget is essential to ensure a smooth and enjoyable trip to Dubrovnik. Here's a general overview of the costs you can expect:</p>
+                            
+                            <h3>Accommodation</h3>
+                            <p>Dubrovnik offers a wide range of accommodation options to suit different budgets:</p>
+                            <ul>
+                                <li><strong>Budget Hotels and Hostels:</strong> Prices range from €30 to €70 per night.</li>
+                                <li><strong>Mid-Range Hotels:</strong> Expect to pay between €80 and €150 per night for comfortable accommodations with good amenities.</li>
+                                <li><strong>Luxury Hotels:</strong> High-end options range from €200 to €500 per night, offering premium services and stunning views.</li>
+                            </ul>
+                            
+                            <h3>Dining</h3>
+                            <p>The cost of dining in Dubrovnik varies based on the type of restaurant:</p>
+                            <ul>
+                                <li><strong>Budget:</strong> Local eateries and fast food options cost around €5 to €15 per meal.</li>
+                                <li><strong>Mid-Range:</strong> Restaurants offering traditional Croatian cuisine range from €20 to €40 per person.</li>
+                                <li><strong>Fine Dining:</strong> High-end restaurants can cost upwards of €50 per person, offering gourmet experiences.</li>
+                            </ul>
+                            
+                            <h3>Transportation</h3>
+                            <p>Getting around Dubrovnik is convenient and affordable:</p>
+                            <ul>
+                                <li><strong>Public Buses:</strong> Fares are approximately €2 per ride, with day passes available for around €5.</li>
+                                <li><strong>Taxis:</strong> Base fare starts at around €4, with additional charges per kilometer.</li>
+                                <li><strong>Car Rentals:</strong> Prices range from €30 to €70 per day, depending on the vehicle type and rental duration.</li>
+                                <li><strong>Bicycle Rentals:</strong> Available for around €10 to €20 per day, ideal for exploring the city at your own pace.</li>
+                            </ul>
+                            
+                            <h3>Activities and Attractions</h3>
+                            <p>Many of Dubrovnik's attractions are free to visit, but some may have entry fees:</p>
+                            <ul>
+                                <li><strong>City Walls:</strong> Entrance fees range from €20 to €35, depending on the season and access level.</li>
+                                <li><strong>Fort Lovrijenac:</strong> Admission is approximately €7.</li>
+                                <li><strong>Dubrovnik Cable Car:</strong> Round-trip tickets cost around €25, offering stunning aerial views of the city.</li>
+                                <li><strong>Vineyard Tours:</strong> Prices vary, typically ranging from €15 to €50, including tastings and guided tours.</li>
+                            </ul>
+                            
+                            <h3>Miscellaneous</h3>
+                            <p>Other expenses to consider include souvenirs, tips, and optional excursions. It's advisable to carry some local currency (Kuna) for small purchases, although many places accept credit cards.</p>
+                        </section>
+                        
+                        <!-- Tips and Recommendations -->
+                        <section>
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <!-- Do’s and Don’ts -->
+                            <section>
+                                <h3>Do’s and Don’ts</h3>
+                                <ul>
+                                    <li><strong>Do:</strong> Bring a waterproof bag for your belongings during boat excursions and water activities.</li>
+                                    <li><strong>Don’t:</strong> Litter or disturb the natural environment. Dubrovnik prides itself on its pristine landscapes.</li>
+                                    <li><strong>Do:</strong> Apply sunscreen regularly to protect against the Mediterranean sun.</li>
+                                    <li><strong>Don’t:</strong> Engage in loud or disruptive behavior that may disturb other visitors and locals.</li>
+                                </ul>
+                            </section>
+                            
+                            <!-- Packing Lists -->
+                            <section>
+                                <h3>Packing Lists</h3>
+                                <ul>
+                                    <li>Lightweight, quick-dry clothing suitable for warm Mediterranean climates.</li>
+                                    <li>Swimwear and beachwear for enjoying Dubrovnik's beautiful beaches.</li>
+                                    <li>Comfortable walking shoes or sandals for exploring cobblestone streets.</li>
+                                    <li>Hat and sunglasses for sun protection during outdoor activities.</li>
+                                    <li>Insect repellent and personal hygiene items.</li>
+                                    <li>Reusable water bottle to stay hydrated while touring the city.</li>
+                                    <li>Portable charger for your electronic devices.</li>
+                                </ul>
+                            </section>
+                            
+                            <!-- Local Etiquette -->
+                            <section>
+                                <h3>Local Etiquette</h3>
+                                <p>Croatian culture values respect and politeness. Here are some local etiquette tips to enhance your visit to Dubrovnik:</p>
+                                <ul>
+                                    <li>Always greet with a smile and a friendly "Dobar dan" (Good day).</li>
+                                    <li>It's customary to remove your shoes before entering someone's home.</li>
+                                    <li>Dress modestly when visiting religious sites or churches.</li>
+                                    <li>Public displays of affection are generally acceptable but should remain respectful.</li>
+                                    <li>When dining, wait for everyone to be served before starting your meal.</li>
+                                    <li>Respect local customs and traditions, especially during cultural festivals and events.</li>
+                                </ul>
+                            </section>
+                        </section>
+                        
+                        <!-- Cultural Immersion -->
+                        <section>
+                            <h2>Cultural Immersion</h2>
+                            <p>Immerse yourself in Dubrovnik's rich cultural heritage by engaging in local traditions and activities:</p>
+                            <ul>
+                                <li><strong>Traditional Croatian Cooking Classes:</strong> Learn to prepare authentic Croatian dishes using local ingredients.</li>
+                                <li><strong>Winery Tours:</strong> Discover the art of Croatian winemaking and taste a variety of exquisite wines.</li>
+                                <li><strong>Local Festivals:</strong> Participate in vibrant festivals that showcase Dubrovnik's music, dance, and culinary delights.</li>
+                                <li><strong>Art and Craft Workshops:</strong> Engage in workshops that highlight traditional Croatian crafts and art forms.</li>
+                                <li><strong>Historical Tours:</strong> Join guided tours to explore Dubrovnik's historical landmarks and learn about its fascinating past.</li>
+                            </ul>
+                        </section>
+                        
+                        <!-- Food and Cuisine -->
+                        <section>
+                            <h2>Food and Cuisine</h2>
+                            <p>Dubrovnik's culinary scene is a delightful blend of fresh seafood, traditional Croatian flavors, and Mediterranean influences. Here are some must-try dishes:</p>
+                            <ul>
+                                <li><strong>Grilled Fish:</strong> Freshly caught fish grilled to perfection and served with olive oil and herbs.</li>
+                                <li><strong>Black Risotto (Crni Rižot):</strong> A savory risotto made with cuttlefish ink, giving it a rich, dark color and unique flavor.</li>
+                                <li><strong>Ćevapčići:</strong> Small, flavorful grilled minced meat sausages served with flatbread and ajvar (red pepper relish).</li>
+                                <li><strong>Brodet (Fish Stew):</strong> A hearty stew made with a variety of fish, tomatoes, and spices, typically served with polenta.</li>
+                                <li><strong>Rozata:</strong> A traditional Dalmatian custard pudding flavored with rose liqueur.</li>
+                            </ul>
+                            <p>I highly recommend trying the fresh seafood at local konobas (taverns), where the catch of the day is cooked to perfection and served with a variety of flavorful sauces.</p>
+                        </section>
+                        
+                        <!-- Adventure and Activities -->
+                        <section>
+                            <h2>Adventure and Activities</h2>
+                            <p>Dubrovnik is a haven for adventure enthusiasts, offering a range of activities to suit all interests:</p>
+                            <ul>
+                                <li><strong>Kayaking:</strong> Explore hidden coves and crystal-clear waters along the city's rugged coastline.</li>
+                                <li><strong>Sailing:</strong> Charter a sailboat to discover nearby islands and enjoy the serene Adriatic Sea.</li>
+                                <li><strong>Hiking:</strong> Trek through scenic trails that offer panoramic views of the city's lush landscapes and historic sites.</li>
+                                <li><strong>Snorkeling and Diving:</strong> Discover vibrant marine life and underwater landscapes in Dubrovnik's pristine waters.</li>
+                                <li><strong>Historical Tours:</strong> Visit ancient churches, museums, and landmarks that showcase Dubrovnik's rich history and cultural heritage.</li>
+                                <li><strong>Zip Lining:</strong> Experience the thrill of zip-lining over the city walls, offering a unique perspective of Dubrovnik.</li>
+                                <li><strong>ATV Tours:</strong> Explore the rugged terrain surrounding Dubrovnik on an exhilarating ATV adventure.</li>
+                            </ul>
+                            <p>One of the most thrilling activities is the zip-lining expedition over the city walls, providing an adrenaline rush and stunning aerial views of Dubrovnik and the Adriatic Sea.</p>
+                        </section>
+                        
+                        <!-- About Dubrovnik -->
+                        <section>
+                            <h2>About Dubrovnik</h2>
+                            <p><strong>Dubrovnik</strong> is a picturesque city in southern Croatia, renowned for its stunning Old Town, fortified walls, and vibrant cultural scene. Often referred to as the "Pearl of the Adriatic," Dubrovnik boasts narrow cobblestone streets, historic churches, and beautiful beaches.</p>
+                            <p>The city is a UNESCO World Heritage Site, celebrated for its well-preserved medieval architecture and its role as a significant maritime republic. Visitors can explore scenic trails along the city walls, enjoy water sports, and immerse themselves in the local culture through festivals and traditional events.</p>
+                            <p>Dubrovnik's strategic location along the Adriatic Sea has made it a melting pot of cultures, reflected in its diverse architecture, cuisine, and traditions. Whether you're exploring the ancient streets, enjoying a seaside meal, or participating in a local festival, Dubrovnik offers an unforgettable travel experience.</p>
+                        </section>
+                        
+                    </div> <!-- End of main-column -->
 
-                <!-- Embedded YouTube Video #3 (Vineyard Tours) -->
-                <div class="video-responsive">
-                    <iframe 
-                        src="https://www.youtube.com/embed/kOacooTeZk4" 
-                        title="Vineyard Tours in Dubrovnik" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                    
-                    <!-- Cultural Festivals -->
-                    <section>
-                        <h3>Cultural Festivals in Dubrovnik</h3>
-                        <p>Dubrovnik hosts a variety of cultural festivals throughout the year, celebrating everything from music and theater to traditional crafts and cuisine.</p>
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <h3>Dubrovnik Travel Resources</h3>
                         <ul>
-                            <li><strong>Dubrovnik Summer Festival:</strong> A month-long event featuring open-air performances, concerts, and art exhibitions.</li>
-                            <li><strong>INmusic Festival:</strong> Croatia's largest open-air music festival, attracting international artists and music lovers.</li>
-                            <li><strong>Dubrovnik Carnival:</strong> A vibrant celebration with parades, masquerade balls, and street performances.</li>
+                            <li><a href="#">Official Dubrovnik Tourism Site</a></li>
+                            <li><a href="#">City Walls Tour Info & Tickets</a></li>
+                            <li><a href="#">Local Wine Tasting Events</a></li>
+                            <li><a href="#">Croatian Cultural Festivals</a></li>
                         </ul>
-                    </section>
-                    
-                    <!-- Vineyard Tours -->
-                    <section>
-                        <h3>Vineyard Tours in Dubrovnik</h3>
-                        <p>The region surrounding Dubrovnik is renowned for its excellent wine production. Vineyard tours offer a delightful way to explore the local winemaking traditions and taste some of Croatia's finest wines.</p>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Croatian Kuna (HRK), though euros are sometimes accepted in tourist areas.</p>
+                        <p><strong>Language:</strong> Croatian is official, but English is widely understood in tourist spots.</p>
+                        <p><strong>Time Zone:</strong> Central European Time (UTC+1), switching to UTC+2 in summer.</p>
+                        <p><strong>Climate:</strong> Mediterranean—warm summers, mild winters.</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- AdSense or any other ad can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
                         <ul>
-                            <li><strong>Dubrovnik Vineyards:</strong> Participate in guided tours that include wine tastings and insights into the winemaking process.</li>
-                            <li><strong>Family-Owned Wineries:</strong> Visit small, family-run vineyards to experience personalized tours and exclusive wine selections.</li>
-                            <li><strong>Wine Tasting Events:</strong> Attend local wine festivals and tasting events to sample a variety of Croatian wines.</li>
+                            <li><a href="#">“Dubrovnik: A History” - Robin Harris</a></li>
+                            <li><a href="#">“Lonely Planet Croatia” - Travel Guide</a></li>
+                            <li><a href="#">“Game of Thrones Filming Locations” - Dubrovnik Edition</a></li>
                         </ul>
-                    </section>
-                </section>
+                    </aside> <!-- End of sidebar -->
 
-                <!-- Embedded YouTube Video #4 (Cultural Festivals) -->
-                <div class="video-responsive">
-                    <iframe 
-                        src="https://www.youtube.com/embed/JUBNVo1VTBY" 
-                        title="Cultural Festivals in Dubrovnik" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                
-                <!-- Costs and Budgeting -->
-                <section>
-                    <h2>Costs and Budgeting</h2>
-                    <p>Planning your budget is essential to ensure a smooth and enjoyable trip to Dubrovnik. Here's a general overview of the costs you can expect:</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>Dubrovnik offers a wide range of accommodation options to suit different budgets:</p>
-                    <ul>
-                        <li><strong>Budget Hotels and Hostels:</strong> Prices range from €30 to €70 per night.</li>
-                        <li><strong>Mid-Range Hotels:</strong> Expect to pay between €80 and €150 per night for comfortable accommodations with good amenities.</li>
-                        <li><strong>Luxury Hotels:</strong> High-end options range from €200 to €500 per night, offering premium services and stunning views.</li>
-                    </ul>
-                    
-                    <h3>Dining</h3>
-                    <p>The cost of dining in Dubrovnik varies based on the type of restaurant:</p>
-                    <ul>
-                        <li><strong>Budget:</strong> Local eateries and fast food options cost around €5 to €15 per meal.</li>
-                        <li><strong>Mid-Range:</strong> Restaurants offering traditional Croatian cuisine range from €20 to €40 per person.</li>
-                        <li><strong>Fine Dining:</strong> High-end restaurants can cost upwards of €50 per person, offering gourmet experiences.</li>
-                    </ul>
-                    
-                    <h3>Transportation</h3>
-                    <p>Getting around Dubrovnik is convenient and affordable:</p>
-                    <ul>
-                        <li><strong>Public Buses:</strong> Fares are approximately €2 per ride, with day passes available for around €5.</li>
-                        <li><strong>Taxis:</strong> Base fare starts at around €4, with additional charges per kilometer.</li>
-                        <li><strong>Car Rentals:</strong> Prices range from €30 to €70 per day, depending on the vehicle type and rental duration.</li>
-                        <li><strong>Bicycle Rentals:</strong> Available for around €10 to €20 per day, ideal for exploring the city at your own pace.</li>
-                    </ul>
-                    
-                    <h3>Activities and Attractions</h3>
-                    <p>Many of Dubrovnik's attractions are free to visit, but some may have entry fees:</p>
-                    <ul>
-                        <li><strong>City Walls:</strong> Entrance fees range from €20 to €35, depending on the season and access level.</li>
-                        <li><strong>Fort Lovrijenac:</strong> Admission is approximately €7.</li>
-                        <li><strong>Dubrovnik Cable Car:</strong> Round-trip tickets cost around €25, offering stunning aerial views of the city.</li>
-                        <li><strong>Vineyard Tours:</strong> Prices vary, typically ranging from €15 to €50, including tastings and guided tours.</li>
-                    </ul>
-                    
-                    <h3>Miscellaneous</h3>
-                    <p>Other expenses to consider include souvenirs, tips, and optional excursions. It's advisable to carry some local currency (Kuna) for small purchases, although many places accept credit cards.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section>
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <!-- Do’s and Don’ts -->
-                    <section>
-                        <h3>Do’s and Don’ts</h3>
-                        <ul>
-                            <li><strong>Do:</strong> Bring a waterproof bag for your belongings during boat excursions and water activities.</li>
-                            <li><strong>Don’t:</strong> Litter or disturb the natural environment. Dubrovnik prides itself on its pristine landscapes.</li>
-                            <li><strong>Do:</strong> Apply sunscreen regularly to protect against the Mediterranean sun.</li>
-                            <li><strong>Don’t:</strong> Engage in loud or disruptive behavior that may disturb other visitors and locals.</li>
-                        </ul>
-                    </section>
-                    
-                    <!-- Packing Lists -->
-                    <section>
-                        <h3>Packing Lists</h3>
-                        <ul>
-                            <li>Lightweight, quick-dry clothing suitable for warm Mediterranean climates.</li>
-                            <li>Swimwear and beachwear for enjoying Dubrovnik's beautiful beaches.</li>
-                            <li>Comfortable walking shoes or sandals for exploring cobblestone streets.</li>
-                            <li>Hat and sunglasses for sun protection during outdoor activities.</li>
-                            <li>Insect repellent and personal hygiene items.</li>
-                            <li>Reusable water bottle to stay hydrated while touring the city.</li>
-                            <li>Portable charger for your electronic devices.</li>
-                        </ul>
-                    </section>
-                    
-                    <!-- Local Etiquette -->
-                    <section>
-                        <h3>Local Etiquette</h3>
-                        <p>Croatian culture values respect and politeness. Here are some local etiquette tips to enhance your visit to Dubrovnik:</p>
-                        <ul>
-                            <li>Always greet with a smile and a friendly "Dobar dan" (Good day).</li>
-                            <li>It's customary to remove your shoes before entering someone's home.</li>
-                            <li>Dress modestly when visiting religious sites or churches.</li>
-                            <li>Public displays of affection are generally acceptable but should remain respectful.</li>
-                            <li>When dining, wait for everyone to be served before starting your meal.</li>
-                            <li>Respect local customs and traditions, especially during cultural festivals and events.</li>
-                        </ul>
-                    </section>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section>
-                    <h2>Cultural Immersion</h2>
-                    <p>Immerse yourself in Dubrovnik's rich cultural heritage by engaging in local traditions and activities:</p>
-                    <ul>
-                        <li><strong>Traditional Croatian Cooking Classes:</strong> Learn to prepare authentic Croatian dishes using local ingredients.</li>
-                        <li><strong>Winery Tours:</strong> Discover the art of Croatian winemaking and taste a variety of exquisite wines.</li>
-                        <li><strong>Local Festivals:</strong> Participate in vibrant festivals that showcase Dubrovnik's music, dance, and culinary delights.</li>
-                        <li><strong>Art and Craft Workshops:</strong> Engage in workshops that highlight traditional Croatian crafts and art forms.</li>
-                        <li><strong>Historical Tours:</strong> Join guided tours to explore Dubrovnik's historical landmarks and learn about its fascinating past.</li>
-                    </ul>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section>
-                    <h2>Food and Cuisine</h2>
-                    <p>Dubrovnik's culinary scene is a delightful blend of fresh seafood, traditional Croatian flavors, and Mediterranean influences. Here are some must-try dishes:</p>
-                    <ul>
-                        <li><strong>Grilled Fish:</strong> Freshly caught fish grilled to perfection and served with a drizzle of olive oil and herbs.</li>
-                        <li><strong>Black Risotto (Crni Rižot):</strong> A savory risotto made with cuttlefish ink, giving it a rich, dark color and unique flavor.</li>
-                        <li><strong>Ćevapčići:</strong> Small, flavorful grilled minced meat sausages served with flatbread and ajvar (red pepper relish).</li>
-                        <li><strong>Brodet (Fish Stew):</strong> A hearty stew made with a variety of fish, tomatoes, and spices, typically served with polenta.</li>
-                        <li><strong>Rozata:</strong> A traditional Dalmatian custard pudding flavored with rose liqueur, perfect for dessert.</li>
-                    </ul>
-                    <p>I highly recommend trying the fresh seafood at the local konobas (taverns), where the catch of the day is cooked to perfection and served with a variety of flavorful sauces.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section>
-                    <h2>Adventure and Activities</h2>
-                    <p>Dubrovnik is a haven for adventure enthusiasts, offering a range of activities to suit all interests:</p>
-                    <ul>
-                        <li><strong>Kayaking:</strong> Explore hidden coves and crystal-clear waters along the city's rugged coastline.</li>
-                        <li><strong>Sailing:</strong> Charter a sailboat to discover nearby islands and enjoy the serene Adriatic Sea.</li>
-                        <li><strong>Hiking:</strong> Trek through scenic trails that offer panoramic views of the city's lush landscapes and historic sites.</li>
-                        <li><strong>Snorkeling and Diving:</strong> Discover vibrant marine life and underwater landscapes in Dubrovnik's pristine waters.</li>
-                        <li><strong>Historical Tours:</strong> Visit ancient churches, museums, and landmarks that showcase Dubrovnik's rich history and cultural heritage.</li>
-                        <li><strong>Zip Lining:</strong> Experience the thrill of zip-lining over the city walls, offering a unique perspective of Dubrovnik.</li>
-                        <li><strong>ATV Tours:</strong> Explore the rugged terrain surrounding Dubrovnik on an exhilarating ATV adventure.</li>
-                    </ul>
-                    <p>One of the most thrilling activities is the zip-lining expedition over the city walls, providing an adrenaline rush and stunning aerial views of Dubrovnik and the Adriatic Sea.</p>
-                </section>
-                
-                <!-- About Dubrovnik -->
-                <section>
-                    <h2>About Dubrovnik</h2>
-                    <p><strong>Dubrovnik</strong> is a picturesque city in southern Croatia, renowned for its stunning Old Town, fortified walls, and vibrant cultural scene. Often referred to as the "Pearl of the Adriatic," Dubrovnik boasts narrow cobblestone streets, historic churches, and beautiful beaches.</p>
-                    <p>The city is a UNESCO World Heritage Site, celebrated for its well-preserved medieval architecture and its role as a significant maritime republic. Visitors can explore scenic trails along the city walls, enjoy water sports, and immerse themselves in the local culture through festivals and traditional events.</p>
-                    <p>Dubrovnik's strategic location along the Adriatic Sea has made it a melting pot of cultures, reflected in its diverse architecture, cuisine, and traditions. Whether you're exploring the ancient streets, enjoying a seaside meal, or participating in a local festival, Dubrovnik offers an unforgettable travel experience.</p>
-                </section>
-                
+                </div> <!-- End of content-row -->
+
             </div><!-- .container -->
         </section><!-- .blog-post -->
     </main>
@@ -438,17 +550,16 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt
-
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
