@@ -4,7 +4,7 @@
     <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiroshima – Carl Travels: Reflecting on History & Hope</title>
+    <title>Hiroshima – Carl Travels: Reflecting on History &amp; Hope</title>
 
     <!-- SEO Meta Description -->
     <meta name="description" content="Join Carl on a reflective journey through Hiroshima, Japan. Learn about its history, the Peace Memorial Park, and insights for a meaningful visit.">
@@ -13,7 +13,7 @@
     <meta name="keywords" content="Hiroshima, Japan, Carl Travels, Peace Memorial, Atomic Bomb Dome, Travel, History, Culture">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Hiroshima – Carl Travels: Reflecting on History & Hope">
+    <meta property="og:title" content="Hiroshima – Carl Travels: Reflecting on History &amp; Hope">
     <meta property="og:description" content="Join Carl on a reflective journey through Hiroshima, Japan. Learn about its history, the Peace Memorial Park, and insights for a meaningful visit.">
     <meta property="og:image" content="https://www.carltravels.com/images/hiroshima-og-image.jpg">
     <meta property="og:url" content="https://www.carltravels.com/hiroshima.html">
@@ -21,7 +21,7 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hiroshima – Carl Travels: Reflecting on History & Hope">
+    <meta name="twitter:title" content="Hiroshima – Carl Travels: Reflecting on History &amp; Hope">
     <meta name="twitter:description" content="Join Carl on a reflective journey through Hiroshima, Japan. Learn about its history, the Peace Memorial Park, and insights for a meaningful visit.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/hiroshima-twitter-image.jpg">
 
@@ -66,20 +66,19 @@
       gtag('config', 'G-LGFPJ2VMTY');
     </script>
 
-    <!-- Stylesheets -->
+    <!-- Linking to CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for destination pages -->
     <link rel="stylesheet" href="destination.css">
 
     <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-
-    <!-- Favicon and Icons -->
+    
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Inline styles matching the newer pages, plus two-column layout -->
+    <!-- Inline Styles for Two-Column Layout & Responsiveness -->
     <style>
-        /* Responsive video styles */
+        /* Responsive Video Styles */
         .video-responsive {
           max-width: 800px;
           margin: 20px auto;
@@ -127,6 +126,8 @@
             border-radius: 8px;
             loading: lazy;
         }
+
+        /* Header and Main Titles */
         header h1 a {
             color: #FF6600;
             font-family: 'Dancing Script', cursive;
@@ -188,13 +189,14 @@
         @media (max-width: 768px) {
             .sidebar {
                 width: 100%;
-                order: 2; /* so it can stack under main content if needed */
+                order: 2;
             }
             .main-column {
                 order: 1;
             }
         }
 
+        /* Responsive Typography */
         @media (max-width: 768px) {
             header h1 a {
                 font-size: 2em;
@@ -213,6 +215,8 @@
                 height: auto;
             }
         }
+
+        /* Additional styling for lists, sections */
         main ul, main ol {
             margin-left: 20px;
             margin-bottom: 20px;
@@ -227,6 +231,8 @@
         .section {
             margin-bottom: 30px;
         }
+
+        /* Footer Styles */
         footer {
             background-color: #333;
             color: #fff;
@@ -260,6 +266,8 @@
         .footer-social a:hover img {
             transform: scale(1.2);
         }
+
+        /* AdSense Section */
         .adsense {
             margin: 40px 0;
         }
@@ -267,6 +275,8 @@
             display: block;
             text-align: center;
         }
+
+        /* Back to Top Button */
         #back-to-top {
             position: fixed;
             bottom: 40px;
@@ -299,6 +309,8 @@
         #back-to-destinations:hover {
             background-color: #E55B00;
         }
+
+        /* Hamburger Menu (Mobile) */
         .menu-icon {
             display: none;
             cursor: pointer;
@@ -363,8 +375,8 @@
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
 
             <!-- Hamburger Menu Icon for Mobile -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -396,14 +408,15 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
     <main id="main-content">
         <section class="destination-details">
             <div class="container">
-                <!-- Main Title -->
+                
+                <!-- Page Title -->
                 <h1>Hiroshima: Reflecting on History &amp; Hope</h1>
-
+                
                 <!-- Two-Column Layout -->
                 <div class="content-row">
                     
@@ -428,7 +441,7 @@
                         <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
 
                         <!-- Hiroshima Blog Section -->
-                        <div class="section">
+                        <section class="section">
                             <p>
                                 Visiting <strong>Hiroshima</strong> is unlike any other experience in Japan. Known globally for the tragic events of August 6, 1945, it’s also a city of remarkable resilience and dedication to peace. My time here reminded me that history isn’t just about dates or monuments—it’s about the people, the stories, and the hope for a better future.
                             </p>
@@ -444,10 +457,10 @@
                             <p>
                                 —Carl, <em>Carl Travels</em>
                             </p>
-                        </div>
+                        </section>
 
                         <!-- What to See & Do Section -->
-                        <div class="section">
+                        <section class="section">
                             <h2>What to See &amp; Do</h2>
                             <p>
                                 Hiroshima’s significance extends far beyond its historical sites, yet those remain essential to fully grasp the city’s story. Here are five recommended places—three widely known, and two more personal picks:
@@ -459,10 +472,10 @@
                                 <li><strong>Hiroshima Orizuru Tower</strong> (Reflective Spot): Overlooking the A-Bomb Dome, this space allows visitors to fold paper cranes and admire panoramic city views.</li>
                                 <li><strong>Local Riverside Walks</strong> (Personal Pick): For quiet moments away from tourist hubs—ideal for contemplation and absorbing the city’s resilient atmosphere.</li>
                             </ol>
-                        </div>
+                        </section>
 
                         <!-- Itinerary & Essentials Section -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Itinerary &amp; Essentials</h2>
                             <p>
                                 If you’re visiting Hiroshima to understand its history and pay your respects, here’s a concise plan to help you navigate:
@@ -474,25 +487,25 @@
                                 <li><strong>Give Yourself Time:</strong> Rushing through the Peace Memorial Park or museum undermines their significance. Allow space for reflection.</li>
                                 <li><strong>Respect the Sites:</strong> This isn’t a typical tourist stop; treat each memorial with quiet consideration and empathy.</li>
                             </ul>
-                        </div>
+                        </section>
 
                         <!-- Fun Facts & Local Trivia Section -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Fun Facts &amp; Local Trivia</h2>
                             <ul>
-                                <li>Hiroshima is home to <em>okonomiyaki</em> with a unique layered style, often dubbed “Hiroshimayaki.” Don’t miss trying it if you have time.</li>
+                                <li>Hiroshima is home to <em>okonomiyaki</em> with a unique layered style—sometimes called “Hiroshimayaki.”</li>
                                 <li>The paper crane (orizuru) is a global peace symbol partly thanks to Sadako Sasaki’s story, inspiring millions of cranes folded each year.</li>
                                 <li>Locals love baseball—Hiroshima Toyo Carp games can be an unexpectedly lively experience if you want a break from solemn reflection.</li>
                             </ul>
-                        </div>
+                        </section>
 
                         <!-- Best Time to Visit Section -->
-                        <div class="section">
+                        <section class="section">
                             <h2>Best Time to Visit</h2>
                             <p>
-                                Spring (March–May) and autumn (September–November) offer mild weather and scenic backdrops. Cherry blossoms can make memorial sites feel both heartbreakingly beautiful and crowded, so plan accordingly. Whenever you visit, remember that Hiroshima’s story deserves your time and respect.
+                                Spring (March–May) and autumn (September–November) offer mild weather and scenic backdrops. Cherry blossoms can make memorial sites especially moving—but also more crowded. Regardless of the season, come with an open heart and respect for Hiroshima’s past and present.
                             </p>
-                        </div>
+                        </section>
 
                         <!-- Google AdSense Ad -->
                         <section class="adsense">
@@ -520,7 +533,7 @@
                             <li><a href="#">Official Hiroshima Tourism Site</a></li>
                             <li><a href="#">Peace Memorial Park Map</a></li>
                             <li><a href="#">Local Okonomiyaki Guides</a></li>
-                            <li><a href="#">Transportation & JR Pass Info</a></li>
+                            <li><a href="#">Transportation &amp; JR Pass Info</a></li>
                         </ul>
 
                         <h3>Quick Tips</h3>
