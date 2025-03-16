@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
@@ -23,9 +24,16 @@
     <meta name="twitter:image" content="https://www.carltravels.com/images/bucharest-twitter-image.jpg">
 
     <title>Exploring Bucharest: A Comprehensive Travel Guide - Carl Travels</title>
+
+    <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
+    <!-- Specific styles for destination pages -->
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Structured Data (JSON-LD) for SEO -->
@@ -63,37 +71,41 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
+            margin: 20px auto; 
             padding: 10px 0;
             border-radius: 8px;
         }
 
-        /* Responsive Video Container -->
-        .responsive-video {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            padding-top: 25px;
-            height: 0;
+        /* Responsive Video Container */
+        .video-responsive {
+          max-width: 800px;
+          margin: 20px auto;
         }
-
-        .responsive-video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+          height: 0;
+          overflow: hidden;
+        }
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
         }
 
         /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600;
-            font-family: 'Dancing Script', cursive;
-            text-decoration: none;
-            font-size: 2.5em;
-            transition: color 0.3s ease;
+            color: #FF6600; /* Vibrant orange color */
+            font-family: 'Dancing Script', cursive; 
+            text-decoration: none; 
+            font-size: 2.5em; 
+            transition: color 0.3s ease; 
         }
         header h1 a:hover {
-            color: #E55B00;
+            color: #E55B00; 
         }
 
         /* Style all h1 titles within main */
@@ -132,38 +144,19 @@
             font-size: 1.4em;
         }
 
-        /* Responsive typography adjustments */
-        @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em;
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
-            main h3 {
-                font-size: 1.2em;
-            }
-        }
-
         /* Additional Styling for Lists */
         main ul, main ol {
             margin-left: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
 
-        /* Styling for Sections */
+        /* Sections and spacing */
         .section {
             margin-bottom: 30px;
         }
@@ -177,21 +170,17 @@
             font-size: 0.9em;
             padding: 10px 0;
         }
-
         .breadcrumb li::after {
             content: ">";
             margin-left: 5px;
         }
-
         .breadcrumb li:last-child::after {
             content: "";
         }
-
         .breadcrumb a {
             color: #FF6600;
             text-decoration: none;
         }
-
         .breadcrumb a:hover {
             text-decoration: underline;
         }
@@ -203,23 +192,69 @@
             border-left: 4px solid #FF6600;
             padding-left: 15px;
             margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
-
         blockquote footer {
             text-align: right;
             font-weight: bold;
             color: #333;
+            margin-top: 5px;
         }
 
-        /* Testimonial Section Styling */
+        /* Testimonials */
         .testimonials {
             background-color: #f9f9f9;
             padding: 20px;
             border-radius: 8px;
         }
-
         .testimonials h2 {
             margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            color: #FF6600;
+        }
+
+        /* Two-column layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2; 
+            }
+            .main-column {
+                order: 1;
+            }
+        }
+
+        /* Back to Destinations Button */
+        #back-to-destinations {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #FF6600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        #back-to-destinations:hover {
+            background-color: #E55B00;
         }
     </style>
 </head>
@@ -228,7 +263,6 @@
     <header>
         <div class="container">
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
             <!-- Hamburger Menu Icon for Mobile -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
@@ -236,7 +270,6 @@
                 <span></span>
                 <span></span>
             </label>
-
             <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
@@ -248,7 +281,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
             <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -265,9 +297,10 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <section class="blog-post">
             <div class="container">
+                
                 <!-- Breadcrumb Navigation -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -280,142 +313,190 @@
                 <!-- Page Title -->
                 <h1>Exploring Bucharest: A Comprehensive Travel Guide</h1>
                 
-                <!-- Embedded YouTube Video (Banner Replacement) -->
-                <div class="responsive-video video-section">
-                    <iframe src="https://youtu.be/R1Vxl0pq97k?si=7ck5vzyreYJ4r9Bv" title="Discover Bucharest: A Vibrant City Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Bucharest, the capital of Romania, is a city of contrasts, where historic architecture meets modern energy. Known as the "Little Paris of the East," Bucharest boasts grand boulevards, stunning parks, and a vibrant cultural scene.</p>
-                    <p><strong>Overview:</strong> Bucharest is a city that seamlessly blends its communist past with its dynamic present. From the massive Palace of the Parliament to the charming Old Town, Bucharest offers a unique mix of history, culture, and nightlife.</p>
-                </section>
-
-                <!-- Highlights -->
-                <section class="section">
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li><strong>Palace of the Parliament:</strong> The world's heaviest building and a symbol of Romania's communist era.</li>
-                        <li><strong>Old Town (Lipscani):</strong> A lively area filled with historic buildings, cafes, and nightlife.</li>
-                        <li><strong>Herăstrău Park:</strong> A vast urban park with a lake, perfect for walking and boating.</li>
-                        <li><strong>Village Museum:</strong> An open-air museum showcasing traditional Romanian village life.</li>
-                        <li><strong>Romanian Athenaeum:</strong> A stunning concert hall and cultural landmark.</li>
-                        <li><strong>Revolution Square:</strong> A historic site where the 1989 Romanian Revolution began.</li>
-                        <li><strong>Arcul de Triumf:</strong> A triumphal arch inspired by Paris's Arc de Triomphe.</li>
-                        <li><strong>National Museum of Art of Romania:</strong> Houses an impressive collection of European and Romanian art.</li>
-                        <li><strong>Calea Victoriei:</strong> A historic boulevard lined with shops, cafes, and landmarks.</li>
-                        <li><strong>Therme Bucharest:</strong> One of Europe's largest thermal spas and wellness centers.</li>
-                    </ul>
-                </section>
-
-                <!-- Top Attractions -->
-                <section class="section">
-                    <h2>Top Attractions</h2>
+                <!-- Two-Column Layout -->
+                <div class="content-row">
                     
-                    <!-- Palace of the Parliament -->
-                    <h3>Palace of the Parliament</h3>
-                    <p>This colossal building is the second-largest administrative building in the world, after the Pentagon. Guided tours offer a glimpse into its opulent interiors and fascinating history.</p>
-                    
-                    <!-- Old Town (Lipscani) -->
-                    <h3>Old Town (Lipscani)</h3>
-                    <p>Bucharest's Old Town is a vibrant area filled with cobblestone streets, historic buildings, and a lively atmosphere. It's the perfect place to explore cafes, bars, and restaurants.</p>
-                    
-                    <!-- Romanian Athenaeum -->
-                    <h3>Romanian Athenaeum</h3>
-                    <p>This iconic concert hall is a masterpiece of neoclassical architecture. Attend a performance or take a guided tour to admire its stunning interiors.</p>
-                </section>
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        
+                        <!-- Embedded YouTube Video (Banner Replacement) -->
+                        <div class="video-responsive">
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://youtu.be/R1Vxl0pq97k?si=7ck5vzyreYJ4r9Bv" 
+                                    title="Discover Bucharest: A Vibrant City Guide" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
 
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Bucharest offers a variety of activities for every traveler:</p>
-                    <ul>
-                        <li><strong>Walking Tours:</strong> Explore the city's history and architecture on foot.</li>
-                        <li><strong>Boat Rides:</strong> Enjoy a relaxing boat ride on Herăstrău Lake.</li>
-                        <li><strong>Nightlife:</strong> Experience Bucharest's vibrant nightlife in the Old Town.</li>
-                        <li><strong>Cultural Events:</strong> Attend concerts, theater performances, and festivals.</li>
-                        <li><strong>Shopping:</strong> Visit Calea Victoriei and AFI Cotroceni Mall for retail therapy.</li>
-                    </ul>
-                </section>
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Bucharest, the capital of Romania, is a city of contrasts, where historic architecture meets modern energy. Known as the "Little Paris of the East," Bucharest boasts grand boulevards, stunning parks, and a vibrant cultural scene.</p>
+                            <p><strong>Overview:</strong> Bucharest is a city that seamlessly blends its communist past with its dynamic present. From the massive Palace of the Parliament to the charming Old Town, Bucharest offers a unique mix of history, culture, and nightlife.</p>
+                        </section>
 
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Bucharest's culinary scene is a mix of traditional Romanian dishes and international flavors:</p>
-                    <ul>
-                        <li><strong>Sarmale:</strong> Cabbage rolls stuffed with meat and rice.</li>
-                        <li><strong>Mămăligă:</strong> A polenta-like dish often served with cheese and sour cream.</li>
-                        <li><strong>Mici:</strong> Grilled sausages made from a mix of meats.</li>
-                        <li><strong>Papanasi:</strong> A delicious dessert of fried dough with sour cream and jam.</li>
-                        <li><strong>Local Wines:</strong> Romania is known for its excellent wines, such as Fetească Neagră.</li>
-                    </ul>
-                </section>
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li><strong>Palace of the Parliament:</strong> The world's heaviest building and a symbol of Romania's communist era.</li>
+                                <li><strong>Old Town (Lipscani):</strong> A lively area filled with historic buildings, cafes, and nightlife.</li>
+                                <li><strong>Herăstrău Park:</strong> A vast urban park with a lake, perfect for walking and boating.</li>
+                                <li><strong>Village Museum:</strong> An open-air museum showcasing traditional Romanian village life.</li>
+                                <li><strong>Romanian Athenaeum:</strong> A stunning concert hall and cultural landmark.</li>
+                                <li><strong>Revolution Square:</strong> A historic site where the 1989 Romanian Revolution began.</li>
+                                <li><strong>Arcul de Triumf:</strong> A triumphal arch inspired by Paris's Arc de Triomphe.</li>
+                                <li><strong>National Museum of Art of Romania:</strong> Houses an impressive collection of European and Romanian art.</li>
+                                <li><strong>Calea Victoriei:</strong> A historic boulevard lined with shops, cafes, and landmarks.</li>
+                                <li><strong>Therme Bucharest:</strong> One of Europe's largest thermal spas and wellness centers.</li>
+                            </ul>
+                        </section>
 
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3>Transportation</h3>
-                    <p>Bucharest has an extensive public transportation system, including buses, trams, and the metro. Taxis and ride-sharing services are also widely available. Walking is a great way to explore the city center.</p>
-                    
-                    <h3>Accommodation</h3>
-                    <p>Bucharest offers a range of accommodations, from luxury hotels to budget-friendly hostels. Popular areas to stay include the city center, Old Town, and near Herăstrău Park.</p>
-                    
-                    <h3>Budgeting</h3>
-                    <p>Bucharest is an affordable destination. A daily budget of €30-€70 covers accommodation, meals, transportation, and activities.</p>
-                </section>
+                        <!-- Top Attractions -->
+                        <section class="section">
+                            <h2>Top Attractions</h2>
+                            
+                            <h3>Palace of the Parliament</h3>
+                            <p>This colossal building is the second-largest administrative building in the world, after the Pentagon. Guided tours offer a glimpse into its opulent interiors and fascinating history.</p>
+                            
+                            <h3>Old Town (Lipscani)</h3>
+                            <p>Bucharest's Old Town is a vibrant area filled with cobblestone streets, historic buildings, and a lively atmosphere. It's the perfect place to explore cafes, bars, and restaurants.</p>
+                            
+                            <h3>Romanian Athenaeum</h3>
+                            <p>This iconic concert hall is a masterpiece of neoclassical architecture. Attend a performance or take a guided tour to admire its stunning interiors.</p>
+                        </section>
 
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Try traditional Romanian dishes like sarmale and mămăligă.</li>
-                        <li><strong>Don’t:</strong> Forget to carry cash, as some smaller establishments may not accept cards.</li>
-                        <li><strong>Do:</strong> Explore the Old Town at night for a lively atmosphere.</li>
-                        <li><strong>Don’t:</strong> Miss the chance to visit the Palace of the Parliament.</li>
-                    </ul>
-                    
-                    <h3>Packing List</h3>
-                    <ul>
-                        <li>Weather-appropriate clothing (layers are recommended).</li>
-                        <li>Comfortable walking shoes.</li>
-                        <li>Rain jacket or umbrella.</li>
-                        <li>Travel adapter (Type C or F socket).</li>
-                        <li>Camera or smartphone for photos.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Romanians are warm and hospitable. Greet people with a handshake, and use polite phrases like "Bună ziua" (Good day). Tipping is customary in restaurants (5-10%).</p>
-                </section>
+                        <!-- Adventure and Activities -->
+                        <section class="section">
+                            <h2>Adventure and Activities</h2>
+                            <p>Bucharest offers a variety of activities for every traveler:</p>
+                            <ul>
+                                <li><strong>Walking Tours:</strong> Explore the city's history and architecture on foot.</li>
+                                <li><strong>Boat Rides:</strong> Enjoy a relaxing boat ride on Herăstrău Lake.</li>
+                                <li><strong>Nightlife:</strong> Experience Bucharest's vibrant nightlife in the Old Town.</li>
+                                <li><strong>Cultural Events:</strong> Attend concerts, theater performances, and festivals.</li>
+                                <li><strong>Shopping:</strong> Visit Calea Victoriei and AFI Cotroceni Mall for retail therapy.</li>
+                            </ul>
+                        </section>
 
-                <!-- Visitor Testimonials -->
-                <section class="section testimonials">
-                    <h2>Visitor Testimonials</h2>
-                    <blockquote>
-                        "Bucharest is a city full of surprises. The Old Town and Palace of the Parliament were highlights of my trip. A must-visit for any traveler!"
-                        <footer>- Sarah (Australia)</footer>
-                    </blockquote>
-                    <blockquote>
-                        "The Romanian Athenaeum was breathtaking, and the food was incredible. Bucharest exceeded all my expectations!"
-                        <footer>- Max (Germany)</footer>
-                    </blockquote>
-                </section>
+                        <!-- Food and Cuisine -->
+                        <section class="section">
+                            <h2>Food and Cuisine</h2>
+                            <p>Bucharest's culinary scene is a mix of traditional Romanian dishes and international flavors:</p>
+                            <ul>
+                                <li><strong>Sarmale:</strong> Cabbage rolls stuffed with meat and rice.</li>
+                                <li><strong>Mămăligă:</strong> A polenta-like dish often served with cheese and sour cream.</li>
+                                <li><strong>Mici:</strong> Grilled sausages made from a mix of meats.</li>
+                                <li><strong>Papanasi:</strong> A delicious dessert of fried dough with sour cream and jam.</li>
+                                <li><strong>Local Wines:</strong> Romania is known for its excellent wines, such as Fetească Neagră.</li>
+                            </ul>
+                        </section>
 
-                <!-- Follow My Adventures -->
-                <section class="section follow-adventures">
-                    <h2>Follow My Adventures</h2>
-                    <p>Stay connected and follow my journey through the links below:</p>
-                    <ul class="follow-links">
-                        <li><a href="https://www.youtube.com/@carltravels" target="_blank">Carl Travels on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@sonymoviemasters" target="_blank">Sony Movie Masters on YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
-                </section>
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            
+                            <h3>Transportation</h3>
+                            <p>Bucharest has an extensive public transportation system, including buses, trams, and the metro. Taxis and ride-sharing services are also widely available. Walking is a great way to explore the city center.</p>
+                            
+                            <h3>Accommodation</h3>
+                            <p>Bucharest offers a range of accommodations, from luxury hotels to budget-friendly hostels. Popular areas to stay include the city center, Old Town, and near Herăstrău Park.</p>
+                            
+                            <h3>Budgeting</h3>
+                            <p>Bucharest is an affordable destination. A daily budget of €30-€70 covers accommodation, meals, transportation, and activities.</p>
+                        </section>
+
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <h3>Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Try traditional Romanian dishes like sarmale and mămăligă.</li>
+                                <li><strong>Don’t:</strong> Forget to carry cash, as some smaller establishments may not accept cards.</li>
+                                <li><strong>Do:</strong> Explore the Old Town at night for a lively atmosphere.</li>
+                                <li><strong>Don’t:</strong> Miss the chance to visit the Palace of the Parliament.</li>
+                            </ul>
+                            
+                            <h3>Packing List</h3>
+                            <ul>
+                                <li>Weather-appropriate clothing (layers are recommended).</li>
+                                <li>Comfortable walking shoes.</li>
+                                <li>Rain jacket or umbrella.</li>
+                                <li>Travel adapter (Type C or F socket).</li>
+                                <li>Camera or smartphone for photos.</li>
+                            </ul>
+                            
+                            <h3>Local Etiquette</h3>
+                            <p>Romanians are warm and hospitable. Greet people with a handshake, and use polite phrases like "Bună ziua" (Good day). Tipping is customary in restaurants (5-10%).</p>
+                        </section>
+
+                        <!-- Visitor Testimonials -->
+                        <section class="section testimonials">
+                            <h2>Visitor Testimonials</h2>
+                            <blockquote>
+                                "Bucharest is a city full of surprises. The Old Town and Palace of the Parliament were highlights of my trip. A must-visit for any traveler!"
+                                <footer>- Sarah (Australia)</footer>
+                            </blockquote>
+                            <blockquote>
+                                "The Romanian Athenaeum was breathtaking, and the food was incredible. Bucharest exceeded all my expectations!"
+                                <footer>- Max (Germany)</footer>
+                            </blockquote>
+                        </section>
+
+                        <!-- Back to Destinations Button -->
+                        <a href="destinations.html" id="back-to-destinations" aria-label="Back to Destinations">← Back to Destinations</a>
+                    </div> <!-- End of Main Column -->
+
+                    <!-- Sidebar Column -->
+                    <aside class="sidebar">
+                        <!-- 'Carl is a travel vlogger' snippet with circle photo -->
+                        <div class="sidebar-profile">
+                            <img src="carlcircle.png" alt="Carl Profile" style="width:100px; height:100px; border-radius:50%; display:block; margin:0 auto 10px;">
+                            <p style="text-align:center;">
+                                <strong>Carl is a travel vlogger</strong> who creates cinematic journeys, showcasing his travels and all the weird and wonderful things he sees around the globe.
+                            </p>
+                        </div>
+                        
+                        <h3>Bucharest Travel Resources</h3>
+                        <ul>
+                            <li><a href="#">Official Bucharest Tourism Site</a></li>
+                            <li><a href="#">Palace of the Parliament Tours</a></li>
+                            <li><a href="#">Old Town Nightlife Guides</a></li>
+                            <li><a href="#">Local Cuisine & Restaurants</a></li>
+                        </ul>
+                        
+                        <h3>Quick Tips</h3>
+                        <p><strong>Currency:</strong> Romanian Leu (RON). ATMs widely available, credit cards accepted in most places.</p>
+                        <p><strong>Language:</strong> Romanian is official; English is common in tourist areas.</p>
+                        <p><strong>Time Zone:</strong> Eastern European Time (UTC+2), UTC+3 in summer.</p>
+                        <p><strong>Climate:</strong> Continental, with cold winters and hot summers.</p>
+                        
+                        <h3>Featured Ad / Booking Widget</h3>
+                        <!-- Ad or booking widget can go here -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6483721386563068"
+                             data-ad-slot="8249189982"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <h3>Recommended Reads</h3>
+                        <ul>
+                            <li><a href="#">“Bucharest: A Cultural and Literary History” - Deborah Parédez</a></li>
+                            <li><a href="#">“Lonely Planet Romania & Bulgaria” - Travel Guide</a></li>
+                            <li><a href="#">“In Europe’s Shadow” - Robert D. Kaplan</a></li>
+                        </ul>
+                    </aside> <!-- End of Sidebar -->
+
+                </div> <!-- End of content-row -->
             </div>
         </section>
     </main>
@@ -437,5 +518,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Enhanced Navigation, etc. (Optional) -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
