@@ -1,87 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <!-- Responsive Design Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nadi, Fiji - Carl Travels</title>
-    
-    <!-- Link to the updated styles.css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Specific styles for city pages -->
-    <link rel="stylesheet" href="city.css">
+    <title>Nadi, Fiji – My Personal Journey: Tropical Adventures & Hidden Gems</title>
 
-    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Join me on my personal journey through Nadi, Fiji. Discover tropical adventures, cultural encounters, and hidden gems in this vibrant Fijian town.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Nadi, Fiji, Travel Stories, Tropical Adventures, Hidden Gems, Carl Travels, Personal Journey">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Nadi, Fiji – My Personal Journey: Tropical Adventures & Hidden Gems">
+    <meta property="og:description" content="Experience my personal adventures in Nadi, Fiji—from bustling local markets to serene tropical escapes, all wrapped in genuine travel tales.">
+    <meta property="og:image" content="https://www.carltravels.com/images/nadi-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/nadi.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nadi, Fiji – My Personal Journey: Tropical Adventures & Hidden Gems">
+    <meta name="twitter:description" content="Join me in Nadi, Fiji as I recount my tropical adventures and reveal hidden gems in this vibrant destination.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/nadi-twitter-image.jpg">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Nadi, Fiji – My Personal Journey: Tropical Adventures & Hidden Gems",
+      "description": "Join me on my personal journey through Nadi, Fiji, where I share unforgettable travel stories, cultural encounters, and the hidden gems of this tropical paradise.",
+      "image": "https://www.carltravels.com/images/nadi-og-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Carl Tomich"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Carl Travels",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.carltravels.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-03-10",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.carltravels.com/nadi.html"
+      }
+    }
+    </script>
+
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+         crossorigin="anonymous"></script>
+
+    <!-- Google Analytics Script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="destination.css">
+
+    <!-- Adding Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Responsive Images, Headings, and Video CSS -->
+    
+    <!-- Inline Styles for Layout & Responsive Videos -->
     <style>
-        /* Ensure images within the main content are responsive */
-        main img.responsive-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto; /* Center the image */
-            padding: 10px 0; /* Optional padding for spacing */
-        }
-
-        /* Make embedded YouTube videos responsive */
+        /* Responsive video styles */
         .video-responsive {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            padding-top: 25px;
-            height: 0;
+          max-width: 800px;
+          margin: 20px auto;
         }
-        .video-responsive iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
         }
-
-        /* Style the header h1 (Carl Travels) */
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        a {
+            color: #FF6600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E55B00;
+        }
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #FF6600;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within the main content */
         main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
+            font-size: 2.5em;
+            text-align: center;
         }
         main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h2 titles within the main content */
         main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+            color: #FF6600;
+            font-family: 'Poppins', sans-serif;
             margin-top: 20px;
             margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease;
+            font-size: 1.8em;
         }
         main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Optional: Responsive Typography */
+        main h3 {
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+        main ul, main ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        main ul li, main ol li {
+            margin-bottom: 10px;
+        }
+        main li strong {
+            color: #FF6600;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
+        /* Responsive adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -93,15 +209,21 @@
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Navigation Menu -->
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="work.html">My Work</a></li>
@@ -110,136 +232,244 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
-    <main>
-        <section class="city">
+    <main id="main-content">
+        <section class="destination-details">
             <div class="container">
-                <!-- Main Title -->
-                <h1>Nadi, Fiji</h1>
-                
-                <!-- TOP VIDEO (YouTube) -->
-                <div class="video-responsive">
-                    <iframe 
-                        src="https://www.youtube.com/embed/-5ln-_IoKUs" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                
-                <!-- History Section -->
-                <h2>History</h2>
-                <p>
-                    Located on the western side of Viti Levu, Fiji's main island, Nadi has grown from a small colonial-era settlement into one of the country’s most bustling tourism hubs. Established originally as an agricultural community, Nadi’s strategic location near an international airport transformed it into a gateway for tourists exploring the Fijian archipelago. 
-                </p>
-                
-                <!-- Population Section -->
-                <h2>Population</h2>
-                <p>
-                    Nadi is considered one of Fiji's larger urban centers, with an estimated population of around 58,000 people (2023). The population is diverse, consisting of indigenous Fijians, Indo-Fijians, and a mix of other ethnic groups.
-                </p>
-                
-                <!-- Notable Attractions / Things to Do Section -->
-                <h2>Notable Attractions & Things to Do</h2>
+                <!-- Breadcrumb Navigation -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li aria-current="page">Nadi, Fiji</li>
+                    </ol>
+                </nav>
 
-                <!-- Responsive YouTube Video for Attractions/Things to Do -->
+                <!-- Page Title -->
+                <h1>Nadi, Fiji – My Personal Journey: Tropical Adventures & Hidden Gems</h1>
+
+                <!-- Top Video (YouTube) -->
                 <div class="video-responsive">
-                    <iframe 
-                        src="https://www.youtube.com/embed/63785nQMU64" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/-5ln-_IoKUs" 
+                                title="Exploring Nadi, Fiji" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen loading="lazy"></iframe>
+                    </div>
                 </div>
 
-                <ul>
-                    <li><strong>Sri Siva Subramaniya Temple:</strong> One of the largest Hindu temples in the Southern Hemisphere, known for its stunning Dravidian architecture.</li>
-                    <li><strong>Garden of the Sleeping Giant:</strong> A peaceful botanical garden famous for its vast orchid collection and lush rainforest walks.</li>
-                    <li><strong>Wailoaloa Beach:</strong> Enjoy sun, sand, and water sports along one of Nadi’s most accessible beaches.</li>
-                    <li><strong>Sabeto Hot Springs & Mud Pool:</strong> Relax in geothermal mud pools believed to have therapeutic benefits.</li>
-                    <li><strong>Day Trips to the Mamanuca Islands:</strong> Take a boat tour to experience crystal-clear waters, snorkeling, and pristine beaches.</li>
-                </ul>
+                <!-- Personal Travel Story Section -->
+                <section class="section">
+                    <h2>My Journey Through Nadi</h2>
+                    <p>
+                        My time in Nadi was a captivating blend of cultural immersion and tropical bliss. I still remember stepping off the plane and feeling the warm Fijian welcome as I ventured into a town that balanced modern tourism with rich local traditions.
+                    </p>
+                    <p>
+                        Wandering through bustling markets and tranquil gardens alike, I discovered hidden alleyways and vibrant street art that spoke of Nadi’s colorful history. Whether it was savoring freshly prepared tropical fruits or sharing stories with friendly locals, every moment felt like an intimate conversation with Fiji itself.
+                    </p>
+                </section>
+
+                <!-- History & Culture Section -->
+                <section class="section">
+                    <h2>History & Culture</h2>
+                    <p>
+                        Once a modest colonial settlement, Nadi has transformed into a thriving gateway for travelers exploring the Fijian archipelago. I found myself fascinated by the blend of indigenous Fijian customs and the influence of modern tourism. Exploring local temples and community centers, I gained a deeper appreciation for the traditions that continue to shape this vibrant town.
+                    </p>
+                </section>
+
+                <!-- Notable Attractions Section -->
+                <section class="section">
+                    <h2>Notable Attractions & Things to Do</h2>
+                    <!-- Responsive Video for Attractions -->
+                    <div class="video-responsive">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/63785nQMU64" 
+                                    title="Nadi Attractions" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><strong>Sri Siva Subramaniya Temple:</strong> I marveled at the stunning Dravidian architecture and found peace amidst the intricate carvings.</li>
+                        <li><strong>Garden of the Sleeping Giant:</strong> Meandering through lush orchid gardens felt like stepping into a tropical paradise.</li>
+                        <li><strong>Wailoaloa Beach:</strong> The golden sands and crystal-clear waters provided the perfect backdrop for a day of relaxation and reflection.</li>
+                        <li><strong>Sabeto Hot Springs & Mud Pool:</strong> An impromptu visit here left me rejuvenated, as I soaked in the natural, therapeutic warmth of the springs.</li>
+                        <li><strong>Mamanuca Islands Day Trip:</strong> A boat ride to these idyllic islands offered a taste of Fiji’s serene seascape and vibrant marine life.</li>
+                    </ul>
+                </section>
 
                 <!-- Where to Stay Section -->
-                <h2>Where to Stay</h2>
-                <p>
-                    Nadi offers a wide range of accommodation options—from budget-friendly hostels and guesthouses near the airport to luxurious beach resorts along Denarau Island. Many places provide easy access to local attractions and are known for Fijian hospitality.
-                </p>
+                <section class="section">
+                    <h2>Where to Stay</h2>
+                    <p>
+                        Nadi offers a range of accommodations—from charming guesthouses with authentic Fijian hospitality to upscale resorts boasting breathtaking ocean views. I personally enjoyed the blend of comfort and local charm that made each stay a unique experience.
+                    </p>
+                    <!-- Responsive Video for Accommodation -->
+                    <div class="video-responsive">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/BW6SgdiE4lA" 
+                                    title="Nadi Accommodations" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </section>
 
-                <!-- Responsive YouTube Video for Where to Stay -->
-                <div class="video-responsive">
-                    <iframe 
-                        src="https://www.youtube.com/embed/BW6SgdiE4lA" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+                <!-- Practical Information Section -->
+                <section class="section">
+                    <h2>Practical Information</h2>
+                    <h3>Currency</h3>
+                    <p>
+                        Fiji’s official currency is the Fijian Dollar (FJD). While most major establishments accept credit cards, I found it useful to carry some local cash for markets and small vendors.
+                    </p>
+                    <h3>Best Time to Visit</h3>
+                    <p>
+                        The dry season from May to October is ideal for exploring Nadi, with sunny days and less humidity. I recommend booking accommodations in advance during peak travel times.
+                    </p>
+                    <h3>Average Prices</h3>
+                    <p>
+                        In Nadi, budget-friendly hostels can cost around USD $20–$40 per night, while mid-range hotels hover between USD $70–$120. Upscale resorts may exceed USD $150, but the experience is worth every penny.
+                    </p>
+                    <h3>Fun Facts</h3>
+                    <ul>
+                        <li>Nadi serves as the main international gateway into Fiji.</li>
+                        <li>The town is a melting pot of indigenous Fijian and Indo-Fijian cultures.</li>
+                        <li>The surrounding islands—numbering over 300—offer endless opportunities for adventure.</li>
+                    </ul>
+                </section>
 
-                <!-- Currency Section -->
-                <h2>Currency</h2>
-                <p>
-                    The official currency of Fiji is the Fijian Dollar (FJD). Major hotels, restaurants, and shops often accept credit cards, but carrying some local currency is advised for smaller businesses and local markets.
-                </p>
+                <!-- Testimonials Section -->
+                <section class="section testimonials">
+                    <div class="testimonial-container">
+                        <h2 class="testimonial-header">What People Are Saying About My Adventures</h2>
+                        <div class="stars" id="stars">
+                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06.88-4.878 3.635 1.698 5.545z"/></svg>
+                        </div>
+                        <p class="review" id="currentReview">
+                            "Carl’s insights into Nadi transformed my idea of Fiji—his personal stories and genuine recommendations made all the difference!" – Sam (Australia)
+                        </p>
+                        <div class="navigation">
+                            <button class="nav-button" id="prevBtn" aria-label="Previous Review">&#10094;</button>
+                            <button class="nav-button" id="nextBtn" aria-label="Next Review">&#10095;</button>
+                        </div>
+                    </div>
+                </section>
 
-                <!-- Best Time to Visit Section -->
-                <h2>Best Time to Visit</h2>
-                <p>
-                    Fiji’s climate is warm year-round, but the dry season from May to October typically offers the most pleasant weather and less rainfall. Keep in mind that peak travel season often means higher prices and more crowds.
-                </p>
-                
-                <!-- Prices Overview Section -->
-                <h2>Average Prices</h2>
-                <p>
-                    Accommodation in Nadi ranges from about USD $20–$40 per night for budget options (hostels, budget hotels) to USD $150+ for upscale resorts. Mid-range hotels typically fall in the USD $70–$120 range. Local food and market meals can be quite affordable, with restaurant meals varying from USD $5 at inexpensive eateries to USD $25+ at higher-end venues.
-                </p>
-                
-                <!-- Fun Facts Section -->
-                <h2>Fun Facts</h2>
-                <ul>
-                    <li>Fiji is made up of over 300 islands—Nadi is the main entry point for travelers due to its international airport.</li>
-                    <li>While English is widely spoken, the local iTaukei and Fiji Hindi languages offer a fascinating cultural diversity.</li>
-                    <li>The area around Nadi is known for its year-round tropical climate, making it a favorite destination for sun-seekers.</li>
-                </ul>
+                <!-- Follow My Adventures Section -->
+                <section class="section follow-adventures">
+                    <h2>Follow My Adventures</h2>
+                    <p>Stay connected and follow my journey through these platforms:</p>
+                    <ul class="follow-links">
+                        <li><a href="https://www.youtube.com/@CarlTravels" target="_blank">Carl Travels on YouTube</a></li>
+                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
+                    </ul>
+                </section>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Carl Travels. All rights reserved.</p>
+            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
+                    <img src="facebook.png" alt="Facebook" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
+                    <img src="instagram.png" alt="Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
+                    <img src="youtube.png" alt="YouTube" loading="lazy">
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Navigation, Back to Top Button, and Testimonials -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul.nav-menu');
+        menuToggle.addEventListener('change', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Testimonials rotation script
+        const reviews = [
+            '"Carl’s insights into Nadi transformed my idea of Fiji—his personal stories and genuine recommendations made all the difference!" – Sam (Australia)',
+            '"Exploring Nadi with Carl’s guide felt like discovering a secret paradise, where every corner had a story to tell." – Maya (USA)',
+            '"My journey through Nadi was enriched by Carl’s firsthand experiences and his deep love for the island’s culture." – Riko (Japan)'
+        ];
+        let currentIndex = 0;
+        const reviewElement = document.getElementById("currentReview");
+        const testimonialContainer = document.querySelector(".testimonial-container");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        let reviewInterval;
+
+        function updateReview(index) {
+            testimonialContainer.classList.remove("show");
+            setTimeout(() => {
+                reviewElement.textContent = reviews[index];
+                testimonialContainer.classList.add("show");
+            }, 300);
+        }
+
+        function showNextReview() {
+            currentIndex = (currentIndex + 1) % reviews.length;
+            updateReview(currentIndex);
+        }
+
+        function showPrevReview() {
+            currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+            updateReview(currentIndex);
+        }
+
+        function startReviewRotation() {
+            reviewInterval = setInterval(showNextReview, 5000);
+        }
+
+        function resetReviewRotation() {
+            clearInterval(reviewInterval);
+            startReviewRotation();
+        }
+
+        nextBtn.addEventListener("click", () => {
+            showNextReview();
+            resetReviewRotation();
+        });
+
+        prevBtn.addEventListener("click", () => {
+            showPrevReview();
+            resetReviewRotation();
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            updateReview(currentIndex);
+            startReviewRotation();
+        });
+    </script>
 </body>
 </html>
