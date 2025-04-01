@@ -128,23 +128,10 @@
 
         /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
-        }
-
-        /* Responsive typography adjustments */
-        @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; 
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
         }
 
         /* Additional Styling for Lists */
@@ -157,7 +144,6 @@
             margin-bottom: 10px;
         }
 
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
@@ -230,6 +216,66 @@
         .additional-video {
             margin-bottom: 30px;
         }
+
+        /* Two-Column Layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            .main-column {
+                order: 1;
+            }
+            header h1 a {
+                font-size: 2em; 
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-social {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .footer-social a:hover img {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
@@ -298,8 +344,25 @@
                 <!-- Introduction -->
                 <section class="section">
                     <h2>Introduction</h2>
-                    <p>Port Douglas, nestled in Far North Queensland, is a picturesque coastal town renowned for its stunning beaches, vibrant cultural scene, and proximity to some of Australia's most iconic natural wonders. As Carl, a 38-year-old traveler from Australia, I embarked on a journey to uncover the perfect blend of urban sophistication and natural beauty that Port Douglas has to offer.</p>
-                    <p><strong>Brief History:</strong> Established in the late 19th century as a mining port, Port Douglas has evolved into a premier tourist destination. The town beautifully balances its rich Indigenous heritage with modern developments, offering visitors a unique and diverse experience.</p>
+                    <p>Port Douglas, nestled in Far North Queensland, is a picturesque coastal town renowned for its stunning beaches, vibrant cultural scene, and proximity to some of Australia's most iconic natural wonders. Whether you're here for a relaxing getaway or an adventurous exploration, there's always something new to learn and experience.</p>
+                    <p><strong>Brief History:</strong> Originally established as a mining port in the late 19th century, Port Douglas has evolved into a premier tourist destination that beautifully balances its rich Indigenous heritage with modern comforts.</p>
+                </section>
+                
+                <!-- Travel Tips & Insider Advice -->
+                <section class="section">
+                    <h2>Travel Tips & Insider Advice</h2>
+                    <p>
+                        <strong>Plan Your Itinerary:</strong> Spend at least three days here to truly appreciate everything Port Douglas offers. Start with a morning visit to the local markets for fresh produce and handicrafts, then head to the marina for a leisurely stroll and a bite at a waterfront café.
+                    </p>
+                    <p>
+                        <strong>Explore Beyond the Surface:</strong> Don’t just stick to the main attractions. Venture off the beaten track by joining a guided eco-tour in the Daintree Rainforest or booking a snorkeling trip that includes a visit to secluded coral reefs.
+                    </p>
+                    <p>
+                        <strong>Practical Advice:</strong> Use local buses or rent a bicycle to get around town. These options are both economical and eco-friendly, and they offer a chance to interact with locals who can share insider tips on the best spots to eat and explore.
+                    </p>
+                    <p>
+                        <strong>Stay Informed:</strong> Check the weather forecast and seasonal events before your trip. Many local tours and activities are best enjoyed during the dry season, and knowing when festivals or cultural events take place can greatly enhance your experience.
+                    </p>
                 </section>
                 
                 <!-- Highlights -->
@@ -308,11 +371,11 @@
                     <ul>
                         <li>Port Douglas Marina: Scenic waterfront with boutique shops and dining.</li>
                         <li>Great Barrier Reef: Unforgettable snorkeling and diving experiences.</li>
-                        <li>Low Isles: Pristine beaches and poignant historical significance.</li>
-                        <li>Daintree Rainforest: Exploring ancient rainforests and diverse ecosystems.</li>
-                        <li>Four Mile Beach: Stunning beaches perfect for relaxation and water activities.</li>
-                        <li>Palm Cove: A popular getaway beach town with breathtaking beaches.</li>
-                        <li>Cairns Botanical Gardens: A lush retreat featuring diverse plant species.</li>
+                        <li>Low Isles: Pristine beaches with rich historical significance.</li>
+                        <li>Daintree Rainforest: Explore ancient ecosystems on guided tours.</li>
+                        <li>Four Mile Beach: Perfect for relaxation and water sports.</li>
+                        <li>Palm Cove: A popular getaway beach town with breathtaking views.</li>
+                        <li>Cairns Botanical Gardens: Lush retreat featuring diverse plant species.</li>
                     </ul>
                 </section>
                 
@@ -322,7 +385,7 @@
                     
                     <!-- Great Barrier Reef -->
                     <h3>Great Barrier Reef</h3>
-                    <p>The Great Barrier Reef, one of the world's most renowned marine ecosystems, is a must-visit for any traveler to Port Douglas. Whether you're snorkeling, diving, or taking a scenic flight, the reef offers unparalleled opportunities to witness vibrant coral formations and diverse marine life.</p>
+                    <p>The Great Barrier Reef is a must-visit for its unparalleled marine biodiversity. Whether you're snorkeling or diving, you'll witness vibrant coral formations and a dazzling array of marine life. Consider booking a guided tour to learn about reef conservation and marine ecosystems.</p>
                     
                     <!-- Embedded Video: Great Barrier Reef Snorkeling -->
                     <div class="responsive-video additional-video">
@@ -331,7 +394,7 @@
                     
                     <!-- Low Isles -->
                     <h3>Low Isles</h3>
-                    <p>Located just off the coast of Port Douglas, Low Isles are a group of small islands known for their pristine beaches and abundant marine life. This tranquil spot is not only perfect for a day of relaxation but also holds historical significance as the location where beloved wildlife expert Steve Irwin tragically passed away.</p>
+                    <p>Just off the coast, the Low Isles offer a tranquil escape with their pristine beaches and abundant marine life. This is also a place steeped in local history—learn about its significance and the stories that have shaped its legacy.</p>
                     
                     <!-- Embedded Video: Low Isles and Steve Irwin -->
                     <div class="responsive-video additional-video">
@@ -340,20 +403,20 @@
                     
                     <!-- Daintree Rainforest -->
                     <h3>Daintree Rainforest</h3>
-                    <p>The Daintree Rainforest, a UNESCO World Heritage site, is one of the oldest rainforests on Earth. Visitors can embark on guided walks, river cruises, and canopy tours to explore its rich biodiversity and stunning landscapes.</p>
+                    <p>As one of the oldest rainforests on Earth, the Daintree offers guided walks, river cruises, and canopy tours that are both educational and awe-inspiring. Learn about the unique flora and fauna while understanding the environmental challenges and conservation efforts in place.</p>
                     
                     <!-- Cairns Botanical Gardens -->
                     <h3>Cairns Botanical Gardens</h3>
                     <div class="responsive-video">
                         <iframe src="https://www.youtube.com/embed/7C6eLNHJUc4" title="Cairns Botanical Gardens" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p>The Cairns Botanical Gardens are a lush oasis offering a diverse collection of tropical plants and themed gardens. Walking through the gardens, you can enjoy vibrant flora and tranquil water features, providing a perfect setting for relaxation and reflection.</p>
+                    <p>The gardens offer a peaceful retreat and serve as a practical example of sustainable tourism. They provide insights into local horticulture and the importance of preserving native plant species.</p>
                     
                     <!-- Palm Cove -->
                     <h3>Palm Cove</h3>
-                    <p>Palm Cove, a short drive from Port Douglas, is a popular beach town known for its stunning beaches, upscale resorts, and vibrant dining scene. It's an ideal spot for those seeking both relaxation and a touch of luxury.</p>
+                    <p>Palm Cove is a short drive away and a favorite among visitors for its pristine beaches and upscale yet relaxed atmosphere. It's an excellent spot for a leisurely day trip or an overnight retreat to recharge.</p>
                     
-                    <!-- Embedded Video: Palm Cove - Popular Getaway Beach Town -->
+                    <!-- Embedded Video: Palm Cove -->
                     <div class="responsive-video additional-video">
                         <iframe src="https://www.youtube.com/embed/_2ROw0H4N18" title="Palm Cove - Popular Getaway Beach Town" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -362,39 +425,37 @@
                 <!-- Adventure and Activities -->
                 <section class="section">
                     <h2>Adventure and Activities</h2>
-                    <p>Port Douglas offers a myriad of activities for adventure enthusiasts and those seeking unique experiences:</p>
+                    <p>Port Douglas offers a myriad of activities that combine fun with learning:</p>
                     <ul>
-                        <li><strong>Great Barrier Reef Tours:</strong> Snorkeling and diving to explore vibrant marine life.</li>
-                        <li><strong>Daintree Rainforest Walks:</strong> Guided hikes through ancient rainforests.</li>
-                        <li><strong>Kayaking:</strong> Navigate the crystal-clear waters and explore nearby waterways.</li>
-                        <li><strong>Ziplining:</strong> Experience the thrill of ziplining through lush landscapes.</li>
-                        <li><strong>Wildlife Watching:</strong> Spot native animals at wildlife sanctuaries.</li>
-                        <li><strong>Mountain Biking:</strong> Tackle challenging trails amidst stunning scenery.</li>
-                        <li><strong>Low Isles:</strong> Visit the pristine Low Isles for unforgettable beach experiences.</li>
-                        <li><strong>Palm Cove:</strong> Relax in the popular getaway beach town with breathtaking beaches.</li>
+                        <li><strong>Great Barrier Reef Tours:</strong> Snorkeling and diving adventures that reveal the secrets of this underwater wonderland.</li>
+                        <li><strong>Daintree Rainforest Walks:</strong> Guided hikes that educate you about ancient ecosystems and conservation efforts.</li>
+                        <li><strong>Kayaking:</strong> Explore crystal-clear waterways while learning about the local geography.</li>
+                        <li><strong>Ziplining:</strong> Experience the thrill of ziplining while soaking in the lush landscape.</li>
+                        <li><strong>Wildlife Watching:</strong> Visit sanctuaries and reserves to learn about native species and sustainable practices.</li>
+                        <li><strong>Mountain Biking:</strong> Challenge yourself on trails that combine exercise with nature exploration.</li>
                     </ul>
-                    <p>One of the most thrilling activities is the snorkeling expedition on the Great Barrier Reef, where you can swim alongside vibrant corals and a myriad of marine species, creating unforgettable underwater memories.</p>
+                    <p>These activities not only offer adventure but also valuable insights into the natural and cultural heritage of the region.</p>
                 </section>
                 
                 <!-- Cultural Immersion -->
                 <section class="section">
                     <h2>Cultural Immersion</h2>
-                    <p>Engaging with local Indigenous communities provides a deeper understanding of their cultural practices and connection to the land. Participate in traditional dance workshops, art tours, and cultural ceremonies to gain insights into the rich heritage of the region.</p>
-                    <p>Visiting local galleries and museums, such as the Cairns Regional Gallery, offers insights into contemporary Australian art and local cultural initiatives, fostering a greater appreciation for the region's creative expressions.</p>
+                    <p>Engage with local Indigenous communities and participate in cultural ceremonies, art tours, and traditional dance workshops. Learning about their customs and history offers a deeper understanding of the region’s rich heritage and fosters respect for the local culture.</p>
+                    <p>Visiting galleries and museums—such as those featuring Aboriginal art—will enhance your knowledge of both contemporary and historical perspectives.</p>
                 </section>
                 
                 <!-- Food and Cuisine -->
                 <section class="section">
                     <h2>Food and Cuisine</h2>
-                    <p>Port Douglas' culinary scene is a delightful blend of fresh seafood, tropical fruits, and international flavors.</p>
+                    <p>Port Douglas' culinary scene is a fusion of fresh local ingredients and international influences. Beyond just savoring delicious dishes, learn about the origins of the ingredients and the cooking techniques that make each meal unique.</p>
                     <ul>
-                        <li><strong>Grilled Barramundi:</strong> Freshly grilled fish served with seasonal vegetables.</li>
-                        <li><strong>Seafood Platter:</strong> A variety of shellfish, prawns, and calamari.</li>
-                        <li><strong>Thai Curry:</strong> Spicy and aromatic curries with tender meats and vegetables.</li>
-                        <li><strong>Tropical Fruit Salads:</strong> Fresh local fruits mixed into refreshing salads.</li>
-                        <li><strong>Craft Beers:</strong> Sampling locally brewed craft beers at trendy pubs.</li>
+                        <li><strong>Grilled Barramundi:</strong> Learn about sustainable fishing practices while enjoying this local favorite.</li>
+                        <li><strong>Seafood Platter:</strong> A taste of the ocean, showcasing the diversity of marine produce in the region.</li>
+                        <li><strong>Thai Curry:</strong> Discover the blend of spices and herbs that create authentic flavors.</li>
+                        <li><strong>Tropical Fruit Salads:</strong> Explore the nutritional benefits of locally grown fruits.</li>
+                        <li><strong>Craft Beers:</strong> Sample locally brewed beers and learn about the craft brewing process.</li>
                     </ul>
-                    <p>I highly recommend dining at one of the waterfront restaurants along the marina, where you can enjoy the freshest catches while taking in stunning views of the Coral Sea.</p>
+                    <p>Dining at waterfront restaurants not only satisfies your palate but also offers educational insights into local culinary traditions and sustainability.</p>
                 </section>
                 
                 <!-- Practical Information -->
@@ -402,13 +463,13 @@
                     <h2>Practical Information</h2>
                     
                     <h3 id="transportation">Transportation</h3>
-                    <p>Port Douglas is accessible by air via Cairns Airport, with regular flights from major Australian cities. Within the town, public transportation includes buses and taxis. Renting a car provides flexibility in exploring surrounding areas. For trips to the Great Barrier Reef and Daintree Rainforest, booking guided tours is recommended for safety and convenience.</p>
+                    <p>Port Douglas is accessible by air via Cairns Airport, with regular flights from major Australian cities. Local buses, taxis, and even bicycle rentals provide affordable ways to explore the town. For longer trips, consider guided tours to nearby attractions for a hassle-free experience.</p>
                     
                     <h3 id="accommodation">Accommodation</h3>
-                    <p>Port Douglas offers a wide range of accommodations, from luxury beachfront resorts to budget-friendly hostels. I recommend staying near the marina or Four Mile Beach for easy access to key attractions and dining options.</p>
+                    <p>Options range from luxury beachfront resorts to budget-friendly hostels. When booking, look for accommodations near the marina or Four Mile Beach to minimize travel time and maximize relaxation.</p>
                     
                     <h3 id="budgeting">Budgeting</h3>
-                    <p>Port Douglas is moderately priced. A comfortable daily budget ranges from $50 to $150 AUD, covering accommodation, meals, transportation, and activities.</p>
+                    <p>Plan on a daily budget of around $50 to $150 AUD to cover lodging, meals, transportation, and activities. Booking tours and activities in advance can often save money and ensure availability during peak seasons.</p>
                 </section>
                 
                 <!-- Tips and Recommendations -->
@@ -417,28 +478,27 @@
                     
                     <h3 id="dos-and-donts">Do’s and Don’ts</h3>
                     <ul>
-                        <li><strong>Do:</strong> Book Great Barrier Reef and Daintree Rainforest tours in advance, especially during peak seasons.</li>
-                        <li><strong>Don’t:</strong> Litter or disturb marine and wildlife environments.</li>
-                        <li><strong>Do:</strong> Wear appropriate footwear for hiking and water activities.</li>
-                        <li><strong>Don’t:</strong> Engage in unsafe activities without proper guidance and equipment.</li>
+                        <li><strong>Do:</strong> Book tours (Great Barrier Reef, Daintree) in advance and research local customs to show respect.</li>
+                        <li><strong>Don’t:</strong> Litter or disturb the natural environment; always practice sustainable tourism.</li>
+                        <li><strong>Do:</strong> Try local foods and interact with community members to gain authentic insights.</li>
+                        <li><strong>Don’t:</strong> Overpack your schedule; leave room for spontaneous discoveries.</li>
                     </ul>
                     
                     <h3 id="packing-list">Packing List</h3>
                     <ul>
-                        <li>Lightweight, breathable clothing suitable for tropical climates.</li>
+                        <li>Lightweight, breathable clothing for tropical climates.</li>
                         <li>Swimwear and beach essentials.</li>
-                        <li>Insect repellent and sunscreen.</li>
+                        <li>Insect repellent, sunscreen, and a hat for sun protection.</li>
                         <li>Comfortable walking shoes or sandals.</li>
                         <li>Rain jacket or umbrella for unexpected showers.</li>
                         <li>Camera or smartphone for capturing memorable moments.</li>
-                        <li>Travel insurance documents for peace of mind.</li>
                         <li>Reusable water bottle to stay hydrated.</li>
+                        <li>Portable charger and travel insurance documents.</li>
                         <li>Basic first-aid kit.</li>
-                        <li>Portable charger for electronic devices.</li>
                     </ul>
                     
                     <h3 id="local-etiquette">Local Etiquette</h3>
-                    <p>Respect the local community and their cultural practices. Always greet with a friendly smile and a polite gesture. Dress modestly when visiting cultural and historical sites. When interacting with wildlife, maintain a respectful distance and avoid feeding animals.</p>
+                    <p>Respect local customs and the natural environment. Always greet locals politely, dress appropriately at cultural sites, and avoid activities that harm wildlife or the reef ecosystem.</p>
                 </section>
                 
                 <!-- Visitor Testimonials -->
