@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Discover Prague's stunning architecture, historic landmarks, and vibrant cultural scene.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/prague-twitter-image.jpg">
 
-    <title>Prague - Carl Travels</title>
+    <title>Journey Through Prague: Your Comprehensive Travel Guide</title>
 
     <!-- Link to the updated styles.css -->
     <link rel="stylesheet" href="styles.css">
@@ -76,14 +76,14 @@
 
         /* Style the header h1 (Carl Travels) */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
+            color: #FF6600;
             font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
 
         /* Style all h1 titles within main */
@@ -112,7 +112,7 @@
 
         /* Style h3 or smaller headings in main */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
@@ -121,7 +121,7 @@
         /* Responsive typography adjustments */
         @media (max-width: 768px) {
             header h1 a {
-                font-size: 2em; 
+                font-size: 2em;
             }
             main h1 {
                 font-size: 2em;
@@ -150,24 +150,46 @@
         .section {
             margin-bottom: 30px;
         }
+
+        /* Two-Column Layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            .main-column {
+                order: 1;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -178,8 +200,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
@@ -203,234 +223,157 @@
                 
                 <!-- Existing Banner Image -->
                 <img src="prague-banner.jpg" alt="Prague Banner" class="responsive-image">
-
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>Prague, the capital of the Czech Republic, is a city where history and modernity coexist in perfect harmony. Known as the "City of a Hundred Spires," Prague boasts stunning architecture, rich cultural heritage, and vibrant nightlife. Whether you're an art enthusiast, history buff, or simply seeking a charming European getaway, Prague offers an unforgettable experience.</p>
-                </section>
                 
-                <!-- History -->
-                <section class="section">
-                    <h2>History</h2>
-                    <p>Prague's history spans over a thousand years, serving as a significant cultural, economic, and political center in Central Europe. From its medieval origins to its pivotal role in the Austro-Hungarian Empire and the Velvet Revolution, Prague has been at the heart of major historical events. The city's architectural landscape reflects its diverse history, with influences from Gothic, Renaissance, Baroque, and Art Nouveau styles.</p>
-                </section>
-                
-                <!-- How to Get There -->
-                <section class="section">
-                    <h2>How to Get There</h2>
-                    <p>Prague is well-connected to various parts of Europe and the world, making it an accessible destination for travelers. Here are the primary ways to reach Prague:</p>
-                    <ul>
-                        <li><strong>By Air:</strong> Václav Havel Airport Prague (PRG) is the main international gateway, serving numerous global destinations. From the airport, you can take the Airport Express (AE) train, buses, taxis, or private transfers to reach the city center.</li>
-                        <li><strong>By Train:</strong> Prague is a central hub in Europe's extensive rail network. High-speed trains connect Prague to major cities like Berlin, Vienna, Budapest, and Munich. The main railway station is Praha hlavní nádraží (Prague Main Station).</li>
-                        <li><strong>By Bus:</strong> Long-distance buses operated by companies like FlixBus and RegioJet offer affordable travel options to Prague from various European cities, including Berlin, Vienna, and Kraków.</li>
-                        <li><strong>By Car:</strong> Renting a car provides flexibility, allowing you to explore the Czech countryside and neighboring countries at your own pace. Prague is accessible via major highways from cities like Dresden, Vienna, and Bratislava.</li>
-                        <li><strong>By Ferry:</strong> While less common, ferries connect Prague to nearby countries via the Vltava River, primarily for leisure cruises rather than direct transportation.</li>
-                    </ul>
-                </section>
-                
-                <!-- Top Attractions -->
-                <section class="section">
-                    <h2>Top Attractions in Prague</h2>
+                <!-- Wrap content in a two-column layout -->
+                <div class="content-row">
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>Prague, the capital of the Czech Republic, is a city where history and modernity intertwine in perfect harmony. Known as the "City of a Hundred Spires," Prague captivates visitors with its stunning architecture, rich cultural heritage, and vibrant street life. Whether you're an art enthusiast, a history buff, or simply seeking a magical European escape, Prague has endless treasures waiting for you.</p>
+                        </section>
+                        
+                        <!-- My Personal Journey Section -->
+                        <section class="section">
+                            <h2>My Personal Journey Through Prague</h2>
+                            <p>
+                                I still vividly recall my first encounter with Prague’s enchanting atmosphere. Wandering along the narrow cobblestone streets, I was mesmerized by the blend of ancient charm and modern energy. Every historic façade and hidden courtyard seemed to hold a secret waiting to be discovered.
+                            </p>
+                            <p>
+                                Over the years, I've learned that the true essence of Prague lies in its details. I spent countless hours watching the Astronomical Clock in Old Town Square, a ritual that not only marked the passing of time but also connected me to the city's storied past. The spontaneity of street performances and the quiet moments in tucked-away cafés taught me to savor every experience.
+                            </p>
+                            <p>
+                                My journeys in Prague have also been about practical learning—figuring out the best ways to navigate the maze-like streets using efficient public transport, discovering lesser-known neighborhoods like Vyšehrad, and even picking up a few basic Czech phrases that opened doors to genuine local interactions. These insights made every visit a rewarding lesson in travel.
+                            </p>
+                            <p>
+                                I encourage every traveler to take the time to explore Prague beyond the typical tourist spots. Delve into its rich culture, embrace its history, and discover practical tips that will enhance your experience. Prague is not just a destination—it's a living classroom that offers inspiration, education, and unforgettable memories.
+                            </p>
+                        </section>
+                        
+                        <!-- History -->
+                        <section class="section">
+                            <h2>History</h2>
+                            <p>Prague's history spans over a thousand years, serving as a major cultural, economic, and political center in Central Europe. From its medieval roots and the reign of the Přemyslid dynasty to the influence of the Habsburgs and the events of the Velvet Revolution, every era has left its mark on the city's architecture and soul.</p>
+                        </section>
+                        
+                        <!-- How to Get There -->
+                        <section class="section">
+                            <h2>How to Get There</h2>
+                            <p>Prague is well-connected through multiple transportation options:</p>
+                            <ul>
+                                <li><strong>By Air:</strong> Václav Havel Airport Prague (PRG) serves as the main international gateway, with easy transfers to the city center via train, bus, or taxi.</li>
+                                <li><strong>By Train:</strong> High-speed trains from Berlin, Vienna, and Budapest make Prague a convenient destination in Europe.</li>
+                                <li><strong>By Bus:</strong> Affordable bus services connect Prague to several major European cities.</li>
+                                <li><strong>By Car:</strong> Renting a car provides flexibility to explore the Czech countryside and nearby countries.</li>
+                            </ul>
+                        </section>
+                        
+                        <!-- Top Attractions -->
+                        <section class="section">
+                            <h2>Top Attractions in Prague</h2>
+                            
+                            <h3>Old Town Square and Astronomical Clock</h3>
+                            <p>The vibrant heart of Prague, Old Town Square, is surrounded by historical buildings and home to the famous Astronomical Clock. Witness the clock's hourly show and soak in the lively atmosphere of street performers and local vendors.</p>
+                            <img src="prague1.jpg" alt="Astronomical Clock in Prague" class="responsive-image">
+                            
+                            <h3>Charles Bridge</h3>
+                            <p>This iconic 14th-century bridge spans the Vltava River, offering breathtaking views of Prague Castle and the city skyline. Enjoy a leisurely walk across and discover its many legends.</p>
+                            <img src="prague2.jpg" alt="Charles Bridge in Prague" class="responsive-image">
+                            
+                            <h3>Prague Castle</h3>
+                            <p>Dominating the city skyline, Prague Castle is the largest ancient castle complex in the world. Explore its vast grounds, historic halls, and stunning chapels for a deep dive into Czech history.</p>
+                            <img src="prague3.jpg" alt="Prague Castle" class="responsive-image">
+                            
+                            <h3>St. Vitus Cathedral</h3>
+                            <p>Located within the Prague Castle complex, this Gothic masterpiece features intricate stained glass windows and soaring spires that capture the grandeur of the city.</p>
+                            <img src="prague4.jpg" alt="St. Vitus Cathedral in Prague" class="responsive-image">
+                        </section>
+                        
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <h3>Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Wear comfortable shoes—the cobblestone streets of Prague can be challenging.</li>
+                                <li><strong>Don’t:</strong> Overpack your schedule; allow time for spontaneous exploration.</li>
+                                <li><strong>Do:</strong> Use public transport or walk to truly experience the local vibe.</li>
+                                <li><strong>Don’t:</strong> Leave valuables unattended in crowded areas.</li>
+                            </ul>
+                            
+                            <h3>Packing List</h3>
+                            <ul>
+                                <li>Comfortable walking shoes.</li>
+                                <li>Weather-appropriate clothing and a light jacket.</li>
+                                <li>Reusable water bottle and portable charger.</li>
+                                <li>Basic Czech phrases and a guidebook or map.</li>
+                            </ul>
+                            
+                            <h3>Costs</h3>
+                            <ul>
+                                <li><strong>Entry Fees:</strong> Expect to pay around €14 for Prague Castle.</li>
+                                <li><strong>Transportation:</strong> A 24-hour public transport ticket costs roughly €4.50.</li>
+                                <li><strong>Meals:</strong> Enjoy local cuisine for about €10-25 per meal.</li>
+                                <li><strong>Accommodation:</strong> Options range from budget hostels at €15 per night to luxury hotels over €150 per night.</li>
+                            </ul>
+                        </section>
+                        
+                        <!-- Currency and Money Matters -->
+                        <section class="section">
+                            <h2>Currency and Money Matters</h2>
+                            <p>The official currency is the Czech Koruna (CZK). Exchange rates are competitive, and ATMs are widely available throughout Prague. Remember to carry some cash for small vendors and markets, and always inform your bank before international travel.</p>
+                        </section>
+                        
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            <h3>Best Time to Visit</h3>
+                            <p>The ideal seasons to visit Prague are spring (April to June) and autumn (September to October) when the weather is mild and the crowds are fewer. These periods are perfect for exploring the city's outdoor attractions and historic sites.</p>
+                            <h3>Language</h3>
+                            <p>While Czech is the official language, many people in Prague speak English—especially in tourist areas. Learning a few basic phrases in Czech can go a long way in enhancing your experience.</p>
+                            <h3>Health and Safety</h3>
+                            <p>Prague is generally safe for tourists, but it’s wise to be mindful of your belongings in crowded areas and to follow standard travel precautions.</p>
+                        </section>
+                        
+                        <!-- Cultural Immersion -->
+                        <section class="section">
+                            <h2>Cultural Immersion</h2>
+                            <p>Immerse yourself in Prague's cultural scene by attending local festivals, visiting art galleries, and exploring historical neighborhoods. Whether it’s joining a guided tour of the Jewish Quarter or sampling local street food at Havelské tržiště, these experiences offer invaluable insights into the city's vibrant heritage.</p>
+                        </section>
+                        
+                        <!-- Food and Cuisine -->
+                        <section class="section">
+                            <h2>Food and Cuisine</h2>
+                            <p>Prague’s culinary offerings are as rich and diverse as its history. From hearty Czech goulash and dumplings to sweet treats like trdelník, there’s something to satisfy every palate. Visit traditional pubs (hospoda) for authentic experiences, or try contemporary restaurants for a modern twist on classic dishes.</p>
+                        </section>
+                        
+                        <!-- Adventure and Activities -->
+                        <section class="section">
+                            <h2>Adventure and Activities</h2>
+                            <p>Prague offers an array of activities that combine excitement with learning opportunities. Enjoy a twilight boat tour on the Vltava River, join a photography tour to capture the city's iconic views, or challenge yourself with an interactive escape room experience.</p>
+                        </section>
+                        
+                        <!-- About Prague -->
+                        <section class="section">
+                            <h2>About Prague</h2>
+                            <p>Prague is a city steeped in history and bursting with cultural vibrancy. It serves as both a gateway to the rich traditions of Central Europe and a modern, dynamic metropolis. With its blend of medieval architecture, world-class museums, and lively street scenes, Prague promises to inspire and educate every traveler.</p>
+                        </section>
+                    </div>
                     
-                    <!-- Astronomical Clock -->
-                    <section class="section">
-                        <h3>1. Old Town Square and Astronomical Clock</h3>
-                        <p>The Old Town Square is the heart of Prague, surrounded by colorful baroque buildings, Gothic churches, and historical monuments. The Astronomical Clock (Orloj) is a must-see attraction, featuring a fascinating mechanical display that comes to life every hour, attracting crowds with its intricate craftsmanship.</p>
-                        <img src="prague1.jpg" alt="Astronomical Clock in Prague" class="responsive-image">
-                    </section>
-                    
-                    <!-- Charles Bridge -->
-                    <section class="section">
-                        <h3>2. Charles Bridge</h3>
-                        <p>Spanning the Vltava River, the Charles Bridge is one of Prague's most iconic landmarks. Lined with 30 Baroque statues, the bridge offers stunning views of the city's skyline, including Prague Castle and the National Theatre. It's a popular spot for artists, musicians, and street performers.</p>
-                        <img src="prague2.jpg" alt="Charles Bridge resembling the Eiffel Tower in Prague" class="responsive-image">
-                    </section>
-                    
-                    <!-- Prague Castle -->
-                    <section class="section">
-                        <h3>3. Prague Castle</h3>
-                        <p>Perched atop a hill, Prague Castle is the largest ancient castle complex in the world. It encompasses palaces, churches, gardens, and fortifications, serving as the official residence of the Czech President. Highlights include St. Vitus Cathedral, the Old Royal Palace, and Golden Lane.</p>
-                        <img src="prague3.jpg" alt="Prague Castle complex" class="responsive-image">
-                    </section>
-                    
-                    <!-- St. Vitus Cathedral -->
-                    <section class="section">
-                        <h3>4. St. Vitus Cathedral</h3>
-                        <p>Located within Prague Castle, St. Vitus Cathedral is a masterpiece of Gothic architecture. Its soaring spires, intricate stained glass windows, and stunning interiors make it a must-visit site. The cathedral also houses the tombs of Czech kings and saints.</p>
-                        <img src="prague4.jpg" alt="St. Vitus Cathedral in Prague" class="responsive-image">
-                    </section>
-                    
-                    <!-- Beautiful Architecture -->
-                    <section class="section">
-                        <h3>5. Beautiful Architecture</h3>
-                        <p>Prague is renowned for its diverse architectural styles. From the Gothic spires of the Powder Tower to the Art Nouveau façade of the Municipal House, the city's buildings are a testament to its rich cultural heritage. Don't miss the iconic Dancing House, a modern architectural marvel.</p>
-                        <img src="prague5.jpg" alt="Beautiful architecture in Prague" class="responsive-image">
-                    </section>
-                    
-                    <!-- Beautiful Building -->
-                    <section class="section">
-                        <h3>6. Beautiful Building</h3>
-                        <p>The National Theatre is a stunning example of Neo-Renaissance architecture and a cultural landmark in Prague. It hosts opera, ballet, and drama performances, and its grand façade and opulent interiors are worth exploring even outside of performance times.</p>
-                        <img src="prague6.jpg" alt="National Theatre in Prague" class="responsive-image">
-                    </section>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <!-- Do’s and Don’ts -->
-                    <section class="section">
-                        <h3>Do’s and Don’ts</h3>
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <h2>More From My Travels</h2>
                         <ul>
-                            <li><strong>Do:</strong> Wear comfortable walking shoes, as Prague involves a lot of walking on cobblestone streets.</li>
-                            <li><strong>Don’t:</strong> Miss the opportunity to explore Prague’s lesser-known neighborhoods like Vyšehrad and Žižkov for a more authentic experience.</li>
-                            <li><strong>Do:</strong> Bring a map or use a reliable navigation app to help you navigate the city's maze-like streets.</li>
-                            <li><strong>Don’t:</strong> Leave your belongings unattended, especially in crowded areas like Old Town Square and public transportation.</li>
-                            <li><strong>Do:</strong> Take advantage of Prague’s excellent public transportation system, including trams, buses, and the metro, to get around efficiently.</li>
-                            <li><strong>Don’t:</strong> Engage in loud or disruptive behavior in public places, respecting the local customs and tranquility.</li>
+                            <li><a href="tokyo.html">Tokyo – Urban Legends & Hidden Gems</a></li>
+                            <li><a href="nadi.html">Nadi, Fiji – Tropical Adventures</a></li>
+                            <li><a href="nusalembongan.html">Nusa Lembongan – Indonesian Escape</a></li>
+                            <li><a href="portdouglas.html">Port Douglas – A Comprehensive Guide</a></li>
                         </ul>
-                    </section>
-                    
-                    <!-- Packing List -->
-                    <section class="section">
-                        <h3>Packing List</h3>
-                        <ul>
-                            <li>Comfortable walking shoes.</li>
-                            <li>Weather-appropriate clothing (layers for spring/fall, warm clothes for winter).</li>
-                            <li>Reusable water bottle to stay hydrated while exploring.</li>
-                            <li>A backpack for carrying snacks and essentials.</li>
-                            <li>A map or guidebook to navigate Prague’s historic attractions.</li>
-                            <li>Insect repellent and personal hygiene items.</li>
-                            <li>Portable charger for your electronic devices.</li>
-                            <li>Light jacket or sweater for cooler evenings.</li>
-                            <li>Umbrella or raincoat for unexpected weather changes.</li>
-                            <li>Basic Czech phrases to enhance your interactions with locals.</li>
-                        </ul>
-                    </section>
-                    
-                    <!-- Costs -->
-                    <section class="section">
-                        <h3>Costs</h3>
-                        <ul>
-                            <li><strong>Entry Fees:</strong> Most major attractions and museums charge an entrance fee (e.g., €14 for Prague Castle).</li>
-                            <li><strong>Transportation:</strong> A 24-hour public transport ticket costs around €4.50 and covers trams, buses, and the metro.</li>
-                            <li><strong>Food:</strong> Meals at local restaurants range from €10-25 per person, depending on the establishment.</li>
-                            <li><strong>Accommodation:</strong> Prices vary widely based on location and quality, from budget hostels at €15 per night to luxury hotels exceeding €150 per night.</li>
-                        </ul>
-                    </section>
-                </section>
-                
-                <!-- Currency and Money Matters -->
-                <section class="section">
-                    <h2>Currency and Money Matters</h2>
-                    <p>The official currency in Prague, as in the rest of the Czech Republic, is the Czech Koruna (CZK). Here's what you need to know about managing your finances during your trip:</p>
-                    
-                    <h3>Currency Exchange</h3>
-                    <p>Currency exchange services are widely available in Prague, including at the airport, banks, and authorized exchange counters. It's advisable to exchange a small amount of money upon arrival for immediate expenses.</p>
-                    
-                    <h3>ATMs and Banking</h3>
-                    <p>ATMs are readily accessible throughout the city, especially in major districts and tourist areas. Most ATMs accept international debit and credit cards. However, it's a good practice to inform your bank of your travel plans to avoid any issues with card usage abroad.</p>
-                    
-                    <h3>Credit Cards</h3>
-                    <p>Credit cards (Visa and Mastercard) are widely accepted in hotels, restaurants, and larger shops. However, smaller establishments and street vendors may prefer cash, so it's recommended to carry some Czech Koruna for such situations.</p>
-                    
-                    <h3>Tips</h3>
-                    <p>Tipping in Prague is appreciated but not mandatory. A tip of 5-10% is common for good service in restaurants, while rounding up the bill is sufficient for cafes and casual dining.</p>
-                </section>
-                
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3>Best Time to Visit</h3>
-                    <p>The optimal times to visit Prague are during the spring (April to June) and fall (September to October). During these periods, the weather is mild, and the tourist crowds are more manageable compared to the peak summer months. Springtime brings blooming flowers and pleasant temperatures, while autumn offers crisp air and colorful foliage.</p>
-                    
-                    <h3>Getting There</h3>
-                    <p>Prague is well-connected by air, rail, and road:</p>
-                    <ul>
-                        <li><strong>By Air:</strong> Václav Havel Airport Prague (PRG) is the main international gateway, serving numerous global destinations. From the airport, you can take the Airport Express (AE) train, buses, taxis, or private transfers to reach the city center.</li>
-                        <li><strong>By Train:</strong> Prague is a central hub in Europe's extensive rail network. High-speed trains connect Prague to major cities like Berlin, Vienna, Budapest, and Munich. The main railway station is Praha hlavní nádraží (Prague Main Station).</li>
-                        <li><strong>By Car:</strong> Renting a car provides flexibility, allowing you to explore the Czech countryside and neighboring countries at your own pace. Prague is accessible via major highways from cities like Dresden, Vienna, and Bratislava.</li>
-                        <li><strong>By Bus:</strong> Long-distance buses operated by companies like FlixBus and RegioJet offer affordable travel options to Prague from various European cities, including Berlin, Vienna, and Kraków.</li>
-                        <li><strong>By Ferry:</strong> While less common, ferries connect Prague to nearby countries via the Vltava River, primarily for leisure cruises rather than direct transportation.</li>
-                    </ul>
-                    
-                    <h3>Language</h3>
-                    <p>The official language is Czech. While English is commonly spoken in tourist areas, learning a few basic Czech phrases can enhance your interactions with locals and enrich your travel experience.</p>
-                    
-                    <h3>Health and Safety</h3>
-                    <p>Prague is generally safe for travelers, but it's important to take standard precautions:</p>
-                    <ul>
-                        <li>Stay hydrated and protect yourself from the sun, especially during summer months.</li>
-                        <li>Be cautious with your belongings, particularly in crowded areas and on public transport.</li>
-                        <li>Use reputable tour operators and guides for activities and excursions.</li>
-                        <li>Ensure you have appropriate travel insurance covering health and activities.</li>
-                    </ul>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section class="section">
-                    <h2>Cultural Immersion</h2>
-                    <p>Immerse yourself in Prague’s rich culture through various local traditions and activities:</p>
-                    <ul>
-                        <li><strong>Palace Tours:</strong> Explore the grandeur of Prague’s numerous palaces and historical buildings, each with its unique architectural style and historical significance.</li>
-                        <li><strong>Local Markets:</strong> Visit markets like the Havelské tržiště (Havel’s Market) and Naplavka Farmers' Market to experience the local cuisine, crafts, and vibrant community life.</li>
-                        <li><strong>Art and Music:</strong> Attend performances at local theaters and concert halls, or visit art galleries showcasing regional artists.</li>
-                        <li><strong>Festivals:</strong> Participate in events such as the Prague Spring International Music Festival or the Signal Festival to experience local festivities and cultural celebrations.</li>
-                        <li><strong>Historical Workshops:</strong> Engage in workshops that delve into Prague’s history, architecture, and cultural heritage, offering a deeper understanding of the city's legacy.</li>
-                        <li><strong>Boat Tours:</strong> Take a boat tour along the Vltava River to enjoy scenic views of Prague’s landscapes and landmarks from the water.</li>
-                    </ul>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>Prague offers a delightful mix of traditional Czech cuisine and modern culinary innovations. Here are some must-try dishes and dining experiences:</p>
-                    <ul>
-                        <li><strong>Goulash (Guláš):</strong> A hearty stew made with beef, onions, and paprika, typically served with bread dumplings.</li>
-                        <li><strong>Trdelník:</strong> A sweet pastry rolled in sugar and nuts, often filled with ice cream or other sweet fillings.</li>
-                        <li><strong>Svíčková na smetaně:</strong> Marinated beef sirloin served with a creamy vegetable sauce, cranberry sauce, and bread dumplings.</li>
-                        <li><strong>Koláče:</strong> Traditional Czech pastries filled with fruit, cheese, or poppy seeds.</li>
-                        <li><strong>Pilsner Urquell:</strong> Enjoy the famous Czech beer at one of Prague’s many historic beer halls and pubs.</li>
-                        <li><strong>Local Wines:</strong> Savor a variety of Czech wines, including Moravian whites, available at numerous wine bars and restaurants.</li>
-                        <li><strong>Traditional Pubs (Hospoda):</strong> Experience authentic Czech hospitality and cuisine at traditional pubs, where you can enjoy live music and local dishes.</li>
-                        <li><strong>Fine Dining:</strong> For a more upscale experience, visit Prague’s gourmet restaurants offering innovative dishes and exquisite wines.</li>
-                        <li><strong>Street Food:</strong> Taste authentic Czech street food like smažený sýr (fried cheese) and langoš from local vendors.</li>
-                        <li><strong>Cooking Classes:</strong> Participate in Czech cooking classes to learn how to prepare traditional dishes, offering a hands-on cultural experience.</li>
-                    </ul>
-                    <p>I highly recommend dining at local restaurants and cafes to savor authentic Prague flavors and enjoy the city's lively atmosphere.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>Prague offers a wide range of activities for adventure enthusiasts and nature lovers:</p>
-                    <ul>
-                        <li><strong>Boat Tours:</strong> Explore the scenic waterways of the Vltava River on a guided boat tour, offering unique perspectives of Prague’s landscapes and maritime beauty.</li>
-                        <li><strong>Hiking and Biking:</strong> Discover Prague’s natural beauty through its extensive network of hiking and biking trails in areas like Petřín Hill and Divoká Šárka.</li>
-                        <li><strong>Segway Tours:</strong> Navigate the city’s landmarks and parks effortlessly on a guided Segway tour, providing a fun and efficient way to explore Prague.</li>
-                        <li><strong>Horseback Riding:</strong> Enjoy horseback riding excursions through Prague’s picturesque landscapes and forested areas, offering a tranquil escape from the urban bustle.</li>
-                        <li><strong>Kayaking and Canoeing:</strong> Paddle along Prague’s waterways, exploring hidden coves and enjoying the tranquility of the water.</li>
-                        <li><strong>Photography Tours:</strong> Capture stunning photographs of Prague’s architecture, gardens, and natural scenery on a specialized photography tour, perfect for both amateur and professional photographers.</li>
-                        <li><strong>Escape Rooms:</strong> Challenge yourself with interactive escape room experiences that test your problem-solving skills and provide a fun group activity.</li>
-                        <li><strong>Live Music and Theatre:</strong> Attend live performances at local venues, ranging from classical concerts at the National Theatre to contemporary theatre productions at the Laterna Magika.</li>
-                        <li><strong>Cooking Classes:</strong> Participate in Czech cooking classes to learn how to prepare traditional dishes, offering a hands-on cultural experience.</li>
-                        <li><strong>Historical Walks:</strong> Join guided historical walks to explore Prague’s rich heritage, including tours of the Jewish Quarter and medieval Prague.</li>
-                    </ul>
-                    <p>One of the most exhilarating activities is taking a twilight boat tour on the Vltava River, offering breathtaking views of Prague’s illuminated landmarks and a magical perspective of the city’s beauty.</p>
-                </section>
-                
-                <!-- About Prague -->
-                <section class="section">
-                    <h2>About Prague</h2>
-                    <p><strong>Prague</strong>, the capital city of the Czech Republic, is renowned for its historical significance, architectural grandeur, and vibrant cultural scene. Situated in the heart of Europe, Prague serves as a political, economic, and cultural hub, blending ancient heritage with modern dynamism.</p>
-                    <p>The city is famously home to the Charles Bridge, the largest ancient bridge in Europe, and Prague Castle, the largest castle complex in the world. Prague’s Old Town (Staré Město) is a UNESCO World Heritage Site, featuring a stunning array of Gothic, Renaissance, and Baroque architecture, including the iconic Astronomical Clock and the Church of Our Lady before Týn.</p>
-                    <p>Prague also embraces contemporary art and culture, with numerous museums, galleries, theaters, and cultural institutions contributing to its rich artistic landscape. The National Museum, the National Gallery, and the Estates Theatre are just a few examples of Prague's commitment to preserving and showcasing its cultural heritage.</p>
-                    <p>Additionally, Prague serves as a gateway to the Czech countryside and the stunning Bohemian and Moravian landscapes, providing travelers with opportunities for day trips, outdoor activities, and countryside excursions. The city's blend of ancient history, vibrant culture, and modern amenities makes Prague an ideal destination for travelers seeking a comprehensive and enriching experience.</p>
-                    <p>Whether you're exploring its iconic landmarks, enjoying its culinary delights, or immersing yourself in its lively atmosphere, Prague offers something for every visitor, ensuring an unforgettable journey through one of Europe’s most enchanting cities.</p>
-                </section>
+                        <h2>Quick Tips</h2>
+                        <p>Explore off the beaten path, use local transport to save money, and always take time to soak in the culture—Prague is full of surprises!</p>
+                    </aside>
+                </div>
             </div>
         </section>
     </main>
