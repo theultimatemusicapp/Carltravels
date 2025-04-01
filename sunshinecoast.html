@@ -73,7 +73,6 @@
             margin: 0 auto; 
             padding: 10px 0;
         }
-
         /* Responsive Video Container */
         .responsive-video {
             position: relative;
@@ -81,7 +80,6 @@
             padding-top: 25px;
             height: 0;
         }
-
         .responsive-video iframe {
             position: absolute;
             top: 0;
@@ -89,20 +87,18 @@
             width: 100%;
             height: 100%;
         }
-
-        /* Style the header h1 (Carl Travels) */
+        /* Header h1 styling */
         header h1 a {
-            color: #FF6600; /* Vibrant orange color */
+            color: #FF6600;
             font-family: 'Dancing Script', cursive;
-            text-decoration: none; 
-            font-size: 2.5em; 
-            transition: color 0.3s ease; 
+            text-decoration: none;
+            font-size: 2.5em;
+            transition: color 0.3s ease;
         }
         header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+            color: #E55B00;
         }
-
-        /* Style all h1 titles within main */
+        /* Main title styling */
         main h1 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
@@ -113,8 +109,7 @@
         main h1:hover {
             color: #E55B00;
         }
-
-        /* Style all h2 titles within main */
+        /* h2 styling */
         main h2 {
             color: #FF6600;
             font-family: 'Poppins', sans-serif;
@@ -125,48 +120,55 @@
         main h2:hover {
             color: #E55B00;
         }
-
-        /* Style h3 or smaller headings in main */
+        /* h3 styling */
         main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
+            color: #333;
             font-family: 'Roboto', sans-serif;
             margin-top: 15px;
             margin-bottom: 8px;
         }
-
         /* Responsive typography adjustments */
         @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; 
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
+            header h1 a { font-size: 2em; }
+            main h1 { font-size: 2em; }
+            main h2 { font-size: 1.5em; }
         }
-
-        /* Additional Styling for Lists */
+        /* Additional styling for lists */
         main ul, main ol {
             margin-left: 20px;
             line-height: 1.6;
         }
-
         main ul li, main ol li {
             margin-bottom: 10px;
         }
-
-        /* Bold Styling for Important Points */
         main li strong {
             color: #FF6600;
         }
-
-        /* Styling for Sections */
+        /* Styling for sections */
         .section {
             margin-bottom: 30px;
         }
-
+        /* Two-Column Layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .sidebar { width: 100%; order: 2; }
+            .main-column { order: 1; }
+        }
         /* Breadcrumb Styling */
         .breadcrumb {
             list-style: none;
@@ -176,25 +178,20 @@
             font-size: 0.9em;
             padding: 10px 0;
         }
-
         .breadcrumb li::after {
             content: ">";
             margin-left: 5px;
         }
-
         .breadcrumb li:last-child::after {
             content: "";
         }
-
         .breadcrumb a {
             color: #FF6600;
             text-decoration: none;
         }
-
         .breadcrumb a:hover {
             text-decoration: underline;
         }
-
         /* Blockquote Styling */
         blockquote {
             font-style: italic;
@@ -203,29 +200,24 @@
             padding-left: 15px;
             margin: 20px 0;
         }
-
         blockquote footer {
             text-align: right;
             font-weight: bold;
             color: #333;
         }
-
         /* Testimonial Section Styling */
         .testimonials {
             background-color: #f9f9f9;
             padding: 20px;
             border-radius: 8px;
         }
-
         .testimonials h2 {
             margin-bottom: 15px;
         }
-
         /* Video Section Styling */
         .video-section {
             margin-bottom: 30px;
         }
-
         /* Additional Video Styling */
         .additional-video {
             margin-bottom: 30px;
@@ -236,18 +228,13 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Logo -->
             <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Hamburger Menu Icon for Mobile -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
-            <!-- Navigation Menu -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -258,8 +245,6 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Social Media Icons -->
             <div class="social-media">
                 <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
                     <img src="facebook.png" alt="Facebook">
@@ -295,156 +280,130 @@
                     <iframe src="https://www.youtube.com/embed/s3BC033tARI" title="Best Hidden Swimming Hole - Sunshine Coast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
-                <!-- Introduction -->
-                <section class="section">
-                    <h2>Introduction</h2>
-                    <p>The Sunshine Coast, located in Southeast Queensland, is renowned for its stunning beaches, vibrant hinterland, and relaxed coastal lifestyle. As Carl, a 38-year-old traveler from Australia, I embarked on a journey to uncover the perfect blend of beach relaxation, nature exploration, and cultural immersion that the Sunshine Coast has to offer.</p>
-                    <p><strong>Brief History:</strong> The Sunshine Coast has evolved from a series of small coastal communities into a thriving region known for its tourism, agriculture, and lifestyle appeal. The area retains its natural beauty while offering modern amenities and attractions for visitors.</p>
-                </section>
-                
-                <!-- Highlights -->
-                <section class="section">
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li>Noosa Main Beach: Pristine beaches with clear waters and stunning sunsets.</li>
-                        <li>Hastings Street: Eclectic mix of shops, cafes, and restaurants.</li>
-                        <li>Montville and Maleny: Charming hinterland towns with scenic beauty.</li>
-                        <li>Kondalilla National Park: Stunning waterfalls and lush rainforest trails.</li>
-                        <li>Great Barrier Reef: Unforgettable snorkeling and marine life encounters.</li>
-                        <li>Ben Bennett Bushland Park: Expansive park with diverse flora and fauna.</li>
-                        <li>Hidden Swimming Holes: Secluded spots offering tranquility and natural beauty.</li>
-                    </ul>
-                </section>
-                
-                <!-- Top Attractions -->
-                <section class="section">
-                    <h2>Top Attractions</h2>
-                    
-                    <!-- Hidden Swimming Holes -->
-                    <h3>Hidden Swimming Holes</h3>
-                    <p>The Sunshine Coast is home to some of the best hidden swimming holes, perfect for those seeking a peaceful retreat away from the bustling beaches. These secluded spots offer crystal-clear waters surrounded by lush greenery, providing an ideal setting for relaxation and nature appreciation.</p>
-                    
-                    <!-- Embedded Video: Best Hidden Swimming Hole -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/s3BC033tARI" title="Best Hidden Swimming Hole - Sunshine Coast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- Two-Column Layout -->
+                <div class="content-row">
+                    <!-- Main Column -->
+                    <div class="main-column">
+                        <!-- Introduction -->
+                        <section class="section">
+                            <h2>Introduction</h2>
+                            <p>The Sunshine Coast, located in Southeast Queensland, is a breathtaking blend of pristine beaches, lush hinterland, and a relaxed coastal vibe. As a traveler who has explored this region on numerous trips, I’ve uncovered hidden swimming holes, scenic hiking trails, and charming local spots that make this region truly special.</p>
+                            <p><strong>Brief History:</strong> Originally a collection of small coastal towns, the Sunshine Coast has grown into a premier destination while retaining its natural beauty and local charm.</p>
+                        </section>
+                        
+                        <!-- My Personal Journey Section -->
+                        <section class="section">
+                            <h2>My Personal Journey Through the Sunshine Coast</h2>
+                            <p>
+                                My adventures on the Sunshine Coast have been nothing short of transformative. I remember the first time I discovered a secret swimming hole tucked away behind a thicket of native flora—its clear, cool waters were a welcome escape from the summer heat and set the tone for many more discoveries.
+                            </p>
+                            <p>
+                                Over the years, I’ve cycled along scenic coastal roads and wandered through vibrant hinterland villages like Montville and Maleny, where every turn revealed breathtaking vistas and friendly locals eager to share their stories. These moments not only filled my soul with wonder but also taught me practical tips for traveling on a budget.
+                            </p>
+                            <p>
+                                I’ve also spent many evenings in Noosa, dining in quaint seaside cafés and enjoying the magical sunsets that paint the sky with hues of orange and pink. These relaxed yet unforgettable moments remind me why the Sunshine Coast is my go-to destination for both adventure and rejuvenation.
+                            </p>
+                            <p>
+                                Whether you’re a seasoned explorer or a first-time visitor, I encourage you to embrace the spontaneity of the Sunshine Coast. Venture off the beaten path, sample local produce at bustling markets, and always keep an eye out for those hidden gems that make your journey truly personal and rewarding.
+                            </p>
+                        </section>
+                        
+                        <!-- Highlights -->
+                        <section class="section">
+                            <h2>Highlights</h2>
+                            <ul>
+                                <li>Noosa Main Beach: Pristine sands and crystal-clear waters perfect for sunbathing and swimming.</li>
+                                <li>Hastings Street: An eclectic mix of boutiques, cafés, and restaurants.</li>
+                                <li>Montville & Maleny: Quaint hinterland towns with breathtaking views.</li>
+                                <li>Kondalilla National Park: Lush trails and stunning waterfalls.</li>
+                                <li>Ben Bennett Bushland Park: A haven for nature lovers and wildlife enthusiasts.</li>
+                                <li>Hidden Swimming Holes: Secluded spots offering tranquility and natural beauty.</li>
+                            </ul>
+                        </section>
+                        
+                        <!-- Top Attractions -->
+                        <section class="section">
+                            <h2>Top Attractions</h2>
+                            
+                            <h3>Hidden Swimming Holes</h3>
+                            <p>Discover secret spots where you can swim in crystal-clear waters surrounded by untouched nature. These hidden gems are ideal for those who crave a peaceful escape away from crowded beaches.</p>
+                            
+                            <h3>Ben Bennett Bushland Park</h3>
+                            <p>Explore expansive trails and immerse yourself in the rich biodiversity of this beautiful park. It's perfect for hiking, bird watching, and reconnecting with nature.</p>
+                            
+                            <h3>Great Barrier Reef Excursions</h3>
+                            <p>No trip to the Sunshine Coast is complete without experiencing the marine wonder of the Great Barrier Reef. Snorkeling or diving here is an unforgettable adventure that reveals the vibrant underwater world.</p>
+                        </section>
+                        
+                        <!-- Adventure and Activities -->
+                        <section class="section">
+                            <h2>Adventure and Activities</h2>
+                            <p>Whether you're an adrenaline junkie or a leisure seeker, the Sunshine Coast offers activities that educate and inspire:</p>
+                            <ul>
+                                <li><strong>Snorkeling and Diving:</strong> Discover the marine life of the Great Barrier Reef with guided tours.</li>
+                                <li><strong>Rainforest Walks:</strong> Join eco-tours in Kondalilla National Park to learn about native flora and fauna.</li>
+                                <li><strong>Kayaking:</strong> Paddle along serene coastlines and mangrove trails for an intimate nature experience.</li>
+                                <li><strong>Mountain Biking:</strong> Tackle scenic trails that wind through lush landscapes.</li>
+                                <li><strong>Surfing:</strong> Ride the waves at Noosa Main Beach for an exhilarating water sport experience.</li>
+                                <li><strong>Cultural Tours:</strong> Explore local art, history, and indigenous heritage through guided tours.</li>
+                            </ul>
+                        </section>
+                        
+                        <!-- Practical Information -->
+                        <section class="section">
+                            <h2>Practical Information</h2>
+                            
+                            <h3 id="transportation">Transportation</h3>
+                            <p>The Sunshine Coast is served by its own airport with regular flights from major Australian cities. Renting a car is the best way to explore the region, though local buses and shuttles are available for short trips.</p>
+                            
+                            <h3 id="accommodation">Accommodation</h3>
+                            <p>Options range from luxury beachfront resorts to budget-friendly hostels. For convenience, consider staying in Noosa Heads or Mooloolaba for easy access to attractions and dining options.</p>
+                            
+                            <h3 id="budgeting">Budgeting</h3>
+                            <p>A typical daily budget of $50 to $150 AUD will cover accommodation, meals, transport, and activities. Booking tours and excursions in advance can save money and secure your spot during peak seasons.</p>
+                        </section>
+                        
+                        <!-- Tips and Recommendations -->
+                        <section class="section">
+                            <h2>Tips and Recommendations</h2>
+                            
+                            <h3>Do’s and Don’ts</h3>
+                            <ul>
+                                <li><strong>Do:</strong> Book tours (Great Barrier Reef, hinterland) in advance to avoid disappointment.</li>
+                                <li><strong>Don’t:</strong> Litter or disturb the natural environment—practice sustainable tourism.</li>
+                                <li><strong>Do:</strong> Wear appropriate footwear for hiking and water activities.</li>
+                                <li><strong>Don’t:</strong> Over-schedule; leave room for spontaneous discoveries.</li>
+                            </ul>
+                            
+                            <h3>Packing List</h3>
+                            <ul>
+                                <li>Light, breathable clothing suitable for tropical weather.</li>
+                                <li>Swimwear and beach essentials.</li>
+                                <li>Insect repellent and sunscreen.</li>
+                                <li>Comfortable hiking or water shoes.</li>
+                                <li>Rain jacket or umbrella for unpredictable weather.</li>
+                                <li>Camera or smartphone to capture your adventures.</li>
+                                <li>Reusable water bottle to stay hydrated.</li>
+                            </ul>
+                            
+                            <h3>Local Etiquette</h3>
+                            <p>Always show respect for the local environment and communities. Greet locals with a friendly smile, and take care to follow cultural norms—especially when visiting natural and heritage sites.</p>
+                        </section>
                     </div>
                     
-                    <!-- Ben Bennett Bushland Park -->
-                    <h3>Ben Bennett Bushland Park</h3>
-                    <p>Ben Bennett Bushland Park is a vast natural reserve that offers a diverse range of flora and fauna. The park is perfect for hiking, bird watching, and enjoying the serene beauty of nature. Trails wind through dense forests, past sparkling creeks, and open meadows, providing ample opportunities for outdoor enthusiasts.</p>
-                    
-                    <!-- Embedded Video: Ben Bennett Bushland Park -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/iIicZpbiukk" title="Ben Bennett Bushland Park - Sunshine Coast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
-                    <!-- Great Barrier Reef -->
-                    <h3>Great Barrier Reef</h3>
-                    <p>The Great Barrier Reef, one of the world's most renowned marine ecosystems, is accessible from the Sunshine Coast. Whether you're snorkeling, diving, or taking a scenic flight, the reef offers unparalleled opportunities to witness vibrant coral formations and diverse marine life.</p>
-                    
-                    <!-- Embedded Video: Sunshine Coast Adventure -->
-                    <div class="responsive-video additional-video">
-                        <iframe src="https://www.youtube.com/embed/EH7exN57kMs" title="Sunshine Coast Adventure - Great Barrier Reef" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section class="section">
-                    <h2>Adventure and Activities</h2>
-                    <p>The Sunshine Coast offers a myriad of activities for adventure enthusiasts and those seeking unique experiences:</p>
-                    <ul>
-                        <li><strong>Snorkeling and Diving:</strong> Explore the vibrant marine life of the Great Barrier Reef.</li>
-                        <li><strong>Rainforest Walks:</strong> Guided hikes through ancient rainforests in Kondalilla National Park.</li>
-                        <li><strong>Kayaking:</strong> Paddle along serene coastlines and mangrove waterways.</li>
-                        <li><strong>Wildlife Watching:</strong> Spot diverse bird species and native animals at wildlife sanctuaries.</li>
-                        <li><strong>Mountain Biking:</strong> Tackle challenging trails amidst lush landscapes.</li>
-                        <li><strong>Surfing:</strong> Enjoy world-class waves at Noosa Main Beach and Mooloolaba Beach.</li>
-                        <li><strong>Cultural Tours:</strong> Explore Sunshine Coast's rich cultural heritage through guided tours.</li>
-                        <li><strong>Stand-Up Paddleboarding:</strong> Glide across calm waters for a full-body workout and scenic views.</li>
-                        <li><strong>Helicopter Tours:</strong> Experience breathtaking aerial views of the Sunshine Coast and surrounding areas.</li>
-                    </ul>
-                    <p>One of the most exhilarating activities is kayaking through hidden waterways, allowing you to access secluded beaches and observe marine life up close.</p>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section class="section">
-                    <h2>Cultural Immersion</h2>
-                    <p>Engaging with local Indigenous communities provides a profound understanding of their cultural practices and connection to the land. Participate in traditional dance workshops, art tours, and cultural ceremonies to gain insights into the rich heritage of the region.</p>
-                    <p>Visiting local galleries and museums, such as the Sunshine Coast Regional Botanic Gardens, offers insights into contemporary Australian art and local cultural initiatives, fostering a greater appreciation for the region's creative expressions.</p>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section class="section">
-                    <h2>Food and Cuisine</h2>
-                    <p>The Sunshine Coast's culinary scene is a delightful blend of fresh seafood, tropical fruits, and international influences.</p>
-                    <ul>
-                        <li><strong>Grilled Barramundi:</strong> Freshly grilled fish served with seasonal vegetables.</li>
-                        <li><strong>Seafood Platter:</strong> A variety of shellfish, prawns, and calamari.</li>
-                        <li><strong>Tropical Fruit Salads:</strong> Fresh local fruits mixed into refreshing salads.</li>
-                        <li><strong>Thai Curry:</strong> Spicy and aromatic curries with tender meats and vegetables.</li>
-                        <li><strong>Homemade Pastries:</strong> Delicious baked goods from local bakeries.</li>
-                        <li><strong>Sunshine Coast Cafés:</strong> Experience the vibrant café culture with gourmet coffee and pastries.</li>
-                        <li><strong>Local Breweries:</strong> Sample craft beers brewed locally at trendy pubs.</li>
-                    </ul>
-                    <p>I highly recommend dining at one of the beachfront restaurants in Noosa, where you can enjoy the freshest catches while taking in stunning views of the Pacific Ocean.</p>
-                </section>
-                
-                <!-- Practical Information -->
-                <section class="section">
-                    <h2>Practical Information</h2>
-                    
-                    <h3 id="transportation">Transportation</h3>
-                    <p>The Sunshine Coast is accessible by air via Sunshine Coast Airport, with regular flights from major Australian cities. Within the region, renting a car is recommended for flexibility in exploring the hinterland and beaches. Local buses and shuttle services are also available for shorter trips.</p>
-                    
-                    <h3 id="accommodation">Accommodation</h3>
-                    <p>The Sunshine Coast offers a wide range of accommodations, from luxury beachfront resorts to cozy boutique hotels. I recommend staying in Noosa Heads or Mooloolaba for easy access to key attractions and dining options.</p>
-                    
-                    <h3 id="budgeting">Budgeting</h3>
-                    <p>The Sunshine Coast is moderately priced. A comfortable daily budget ranges from $50 to $150 AUD, covering accommodation, meals, transportation, and activities.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section class="section">
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3 id="dos-and-donts">Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Book Great Barrier Reef tours and hinterland excursions in advance, especially during peak seasons.</li>
-                        <li><strong>Don’t:</strong> Litter or disturb marine and wildlife environments.</li>
-                        <li><strong>Do:</strong> Wear appropriate footwear for hiking and water activities.</li>
-                        <li><strong>Don’t:</strong> Engage in unsafe activities without proper guidance and equipment.</li>
-                    </ul>
-                    
-                    <h3 id="packing-list">Packing List</h3>
-                    <ul>
-                        <li>Lightweight, breathable clothing suitable for tropical climates.</li>
-                        <li>Swimwear and beach essentials.</li>
-                        <li>Insect repellent and sunscreen.</li>
-                        <li>Comfortable hiking boots or shoes.</li>
-                        <li>Rain jacket or umbrella for unexpected showers.</li>
-                        <li>Camera or smartphone for capturing memorable moments.</li>
-                        <li>Travel insurance documents for peace of mind.</li>
-                        <li>Reusable water bottle to stay hydrated.</li>
-                        <li>Basic first-aid kit.</li>
-                        <li>Portable charger for electronic devices.</li>
-                    </ul>
-                    
-                    <h3 id="local-etiquette">Local Etiquette</h3>
-                    <p>Respect the local community and their cultural practices. Always greet with a friendly smile and a polite gesture. Dress modestly when visiting cultural and historical sites. When interacting with wildlife, maintain a respectful distance and avoid feeding animals.</p>
-                </section>
-                
-                <!-- Visitor Testimonials -->
-                <section class="section testimonials">
-                    <h2>Visitor Testimonials</h2>
-                    <blockquote>
-                        "The Sunshine Coast is a hidden gem! The beaches are stunning, and the hinterland offers so much to explore."
-                        <footer>- Jessica Lee</footer>
-                    </blockquote>
-                    <blockquote>
-                        "Exploring the hidden swimming holes and Ben Bennett Bushland Park was an unforgettable experience. Highly recommend visiting!"
-                        <footer>- David Wilson</footer>
-                    </blockquote>
-                </section>
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <h2>More From My Travels</h2>
+                        <ul>
+                            <li><a href="tokyo.html">Tokyo – Urban Legends & Hidden Gems</a></li>
+                            <li><a href="nadi.html">Nadi, Fiji – Tropical Adventures</a></li>
+                            <li><a href="nusalembongan.html">Nusa Lembongan – Indonesian Escape</a></li>
+                            <li><a href="portdouglas.html">Port Douglas – A Comprehensive Guide</a></li>
+                        </ul>
+                        <h2>Quick Tips</h2>
+                        <p>Plan your itinerary in advance, pack light, and embrace local experiences to make the most of your Sunshine Coast adventure!</p>
+                    </aside>
+                </div>
             </div>
         </section>
     </main>
