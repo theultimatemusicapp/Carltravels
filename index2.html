@@ -1,207 +1,893 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Primary Meta Tags -->
-  <meta name="description" content="Explore the world with Carl Travels. Discover destinations, watch videos, and learn travel tips from my adventures." />
-  <meta name="keywords" content="Travel, Destinations, Travel Tips, Adventure" />
-  <meta name="author" content="Carl Tomich" />
-
-  <title>Carl Travels | Explore the World</title>
-
-  <!-- Google Fonts (Roboto, Dancing Script, and Poppins) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Async third‑party scripts (e.g. Google Analytics) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-LGFPJ2VMTY");
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Travels - Adventure Awaits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #3b82f6;
+            --secondary: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .destination-card {
+            transition: all 0.3s ease;
+            perspective: 1000px;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .destination-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .destination-card:hover .destination-card-inner {
+            transform: rotateY(10deg);
+        }
+        
+        .video-card:hover .play-icon {
+            transform: scale(1.2);
+            opacity: 0.9;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+            backdrop-filter: blur(5px);
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+        
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+    </style>
 </head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container header-container">
-      <h1 class="logo">
-        <a href="index.html">Carl Travels</a>
-      </h1>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#destinations" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
+                    <a href="#videos" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
+                    <a href="#blog" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="#" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
+                    <a href="#destinations" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
+                    <a href="#videos" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
+                    <a href="#blog" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-      <!-- Hamburger Menu for Mobile -->
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-screen flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Discover the World <br>With <span class="text-yellow-300">Carl Travels</span>
+                    </h1>
+                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                        Join me on unforgettable journeys to the most breathtaking destinations around the globe. From hidden gems to iconic landmarks, let's explore together.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#destinations" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                            Explore Destinations
+                        </a>
+                        <a href="#videos" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
+                            Watch Videos <i class="fas fa-play ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
+                            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Travel Adventure" class="w-full h-auto">
+                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Australia Adventure</h3>
+                                <p class="text-sm opacity-90">Exploring the Outback</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Navigation -->
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Featured Destinations -->
+    <section id="destinations" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium mb-2 inline-block">EXPLORE THE WORLD</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Featured Destinations</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination 1 -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Australia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Australia</h3>
+                                <p class="text-sm">Far North Queensland</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Oceania</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.9</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Explore the stunning Great Barrier Reef and lush Daintree Rainforest in this tropical paradise.</p>
+                            <a href="#" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3bfdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Japan" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Japan</h3>
+                                <p class="text-sm">Kyoto & Tokyo</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Experience the perfect blend of ancient traditions and cutting-edge technology in the Land of the Rising Sun.</p>
+                            <a href="#" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Italy" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Italy</h3>
+                                <p class="text-sm">Amalfi Coast</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Popular</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.7</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Discover breathtaking coastal views, delicious cuisine, and rich history along Italy's stunning shoreline.</p>
+                            <a href="#" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                    View All Destinations <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-      <!-- Social Media Icons -->
-      <div class="social-media">
-        <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-          <img src="facebook.png" alt="Facebook" loading="lazy" />
-        </a>
-        <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-          <img src="instagram.png" alt="Instagram" loading="lazy" />
-        </a>
-        <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-          <img src="youtube.png" alt="YouTube" loading="lazy" />
-        </a>
-      </div>
-    </div>
-  </header>
+    <!-- Video Section -->
+    <section id="videos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL VLOGS</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Latest Travel Videos</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Video Thumbnail" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
+                                <i class="fas fa-play text-blue-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">12:34</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Exploring the Australian Outback</h3>
+                        <p class="text-gray-600 text-sm mb-4">Join me as I venture into the heart of Australia's rugged wilderness.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-eye mr-2"></i> 24.5K views
+                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 2 weeks ago
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Video Thumbnail" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
+                                <i class="fas fa-play text-blue-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">18:22</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Tokyo Nightlife Adventure</h3>
+                        <p class="text-gray-600 text-sm mb-4">Experience the vibrant nightlife of Tokyo's famous districts.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-eye mr-2"></i> 45.2K views
+                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 1 month ago
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Video Thumbnail" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
+                                <i class="fas fa-play text-blue-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">22:15</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Amalfi Coast Road Trip</h3>
+                        <p class="text-gray-600 text-sm mb-4">Driving along one of the most beautiful coastal roads in the world.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-eye mr-2"></i> 32.7K views
+                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 3 weeks ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                    <i class="fab fa-youtube mr-2"></i> Visit YouTube Channel
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Hero Section with Responsive Background Image -->
-  <section class="hero">
-    <picture class="hero-image">
-      <!-- Use different images for different viewport widths -->
-      <source media="(max-width: 450px)" srcset="images/hero-small.jpg">
-      <source media="(min-width: 451px) and (max-width: 768px)" srcset="images/hero-medium.jpg">
-      <source media="(min-width: 769px)" srcset="images/hero-large.jpg">
-      <img src="images/hero-large.jpg" alt="Scenic travel background" />
-    </picture>
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <h2>Discover the World with Carl Travels</h2>
-      <p>
-        Join me on unforgettable adventures as I explore hidden gems, share travel tips, and document my journey around the globe.
-      </p>
-      <a href="https://www.youtube.com/@CarlTravels" target="_blank" class="cta">Watch My Videos</a>
-    </div>
-  </section>
+    <!-- Travel Blog -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL STORIES</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Latest From The Blog</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Featured Blog Post -->
+                <div class="lg:col-span-2">
+                    <div class="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-lg">
+                        <div class="md:w-1/2 h-80">
+                            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Blog Post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full mr-3">Featured</span>
+                                <span class="text-gray-500 text-sm">June 15, 2023</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">10 Hidden Gems in Far North Queensland</h3>
+                            <p class="text-gray-600 mb-4">Discover the lesser-known but equally stunning locations in Australia's tropical north that most tourists miss...</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-gray-300 overflow-hidden mr-3">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author" class="w-full h-full object-cover">
+                                    </div>
+                                    <span class="text-sm text-gray-700">Carl Tomich</span>
+                                </div>
+                                <a href="#" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Blog Post" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm">May 28, 2023</span>
+                            <span class="mx-2 text-gray-300">•</span>
+                            <span class="text-gray-500 text-sm">8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Surviving Tokyo on a Budget</h3>
+                        <p class="text-gray-600 mb-4">Japan might seem expensive, but with these tips you can experience Tokyo without breaking the bank...</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Blog Post" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm">May 15, 2023</span>
+                            <span class="mx-2 text-gray-300">•</span>
+                            <span class="text-gray-500 text-sm">6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">The Ultimate Amalfi Coast Itinerary</h3>
+                        <p class="text-gray-600 mb-4">How to make the most of your time along Italy's most breathtaking coastline with this 7-day itinerary...</p>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                    View All Articles <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Latest Videos Section -->
-  <section class="latest-videos">
-    <div class="container">
-      <h3>Latest Videos</h3>
-      <div class="video-gallery">
-        <iframe src="https://www.youtube.com/embed/UmykVoIO62w" frameborder="0" allowfullscreen title="Latest Video 1" loading="lazy"></iframe>
-        <iframe src="https://www.youtube.com/embed/n1pWE7QaCds" frameborder="0" allowfullscreen title="Latest Video 2" loading="lazy"></iframe>
-        <iframe src="https://www.youtube.com/embed/7y3dVvYfBiI" frameborder="0" allowfullscreen title="Latest Video 3" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <span class="text-blue-500 font-medium mb-2 inline-block">GET TO KNOW ME</span>
+                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-6">Hi, I'm Carl</h2>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate traveler, photographer, and storyteller who left the corporate world behind to explore our beautiful planet. What started as a short sabbatical turned into a lifelong journey of discovery.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Through my travels, I've learned that the world is both much bigger and much smaller than we imagine. My mission is to inspire others to step outside their comfort zones and experience the transformative power of travel.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            My Story <i class="fas fa-book-open ml-2"></i>
+                        </a>
+                        <a href="#contact" class="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                            Get In Touch <i class="fas fa-paper-plane ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform -rotate-2">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Carl Tomich" class="w-full h-auto">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <div class="text-3xl font-bold text-blue-500 mb-1">47</div>
+                            <div class="text-sm text-gray-600">Countries</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <div class="text-3xl font-bold text-blue-500 mb-1">120+</div>
+                            <div class="text-sm text-gray-600">Cities</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <div class="text-3xl font-bold text-blue-500 mb-1">5</div>
+                            <div class="text-sm text-gray-600">Continents</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Destinations Section (using a grid layout inspired by modern card designs) -->
-  <section class="destinations">
-    <div class="container">
-      <h3>Travel Destinations</h3>
-      <div class="destinations-grid">
-        <a href="destinations.html" class="destination-card">
-          <img src="images/australia.jpg" alt="Australia" loading="lazy">
-          <div class="destination-title">Australia</div>
-        </a>
-        <a href="destinations.html" class="destination-card">
-          <img src="images/europe.jpg" alt="Europe" loading="lazy">
-          <div class="destination-title">Europe</div>
-        </a>
-        <a href="destinations.html" class="destination-card">
-          <img src="images/asia.jpg" alt="Asia" loading="lazy">
-          <div class="destination-title">Asia</div>
-        </a>
-        <a href="destinations.html" class="destination-card">
-          <img src="images/america.jpg" alt="America" loading="lazy">
-          <div class="destination-title">America</div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Testimonials -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-200 font-medium mb-2 inline-block">TRAVEL COMMUNITY</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">What People Say</h2>
+                <div class="w-20 h-1 bg-white bg-opacity-50 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah J.</h4>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "Carl's guide to Far North Queensland was a game-changer for our trip. We visited places we never would have found on our own!"
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Followed Australia Guide
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael T.</h4>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "The Tokyo budget tips saved me hundreds of dollars. His insider knowledge made all the difference in experiencing the real Japan."
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Used Japan Resources
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma R." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emma R.</h4>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "Following Carl's Amalfi Coast itinerary was the best decision we made. Every recommendation was spot on and made our trip unforgettable."
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Followed Italy Itinerary
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <div class="container testimonial-container">
-      <h2 class="testimonial-header">What People Are Saying</h2>
-      <div class="stars">
-        <!-- Example star SVG (repeat five times as needed) -->
-        <svg width="24" height="24" viewBox="0 0 20 20">
-          <path d="M10 15l-5.878 3.09L5.82 12.545.942 8.91l6.06-.88L10 2l2.998 5.03 6.06 .88-4.878 3.635 1.698 5.545z"/>
-        </svg>
-        <!-- Repeat the star SVG four more times -->
-      </div>
-      <p class="review" id="currentReview">
-        "I met Carl on the streets of Berlin while he was busking. He took me on an unforgettable tour of the city’s best sites." – Sarah (Australia)
-      </p>
-      <div class="review-navigation">
-        <button class="nav-button" id="prevBtn" aria-label="Previous Review">&#10094;</button>
-        <button class="nav-button" id="nextBtn" aria-label="Next Review">&#10095;</button>
-      </div>
-    </div>
-  </section>
+    <!-- Newsletter -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 md:p-12 shadow-lg">
+                <div class="text-center mb-8">
+                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-2">Join My Travel Community</h2>
+                    <p class="text-gray-600 max-w-lg mx-auto">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
+                </div>
+                
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                        Subscribe <i class="fas fa-paper-plane ml-1"></i>
+                    </button>
+                </form>
+                
+                <p class="text-center text-sm text-gray-500 mt-4">No spam, ever. Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-container">
-      <div class="footer-links">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Me</a> |
-        <a href="destinations.html">Destinations</a> |
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-          <img src="facebook.png" alt="Facebook" loading="lazy">
-        </a>
-        <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-          <img src="instagram.png" alt="Instagram" loading="lazy">
-        </a>
-        <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-          <img src="youtube.png" alt="YouTube" loading="lazy">
-        </a>
-      </div>
-      <p>&copy; 2025 Carl Travels. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium mb-2 inline-block">GET IN TOUCH</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Let's Connect</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Send Me a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-lg font-medium hover:shadow-lg transition-all">
+                                Send Message <i class="fas fa-paper-plane ml-1"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <p class="text-gray-600 mb-8">Have questions about my travels, want to collaborate, or just say hello? Feel free to reach out through any of these channels.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 mb-1">Email</h4>
+                                    <a href="mailto:hello@carltravels.com" class="text-blue-500 hover:text-blue-600">hello@carltravels.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 mb-1">Phone</h4>
+                                    <a href="tel:+1234567890" class="text-blue-500 hover:text-blue-600">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 mb-1">Location</h4>
+                                    <p class="text-gray-600">Currently exploring: Far North Queensland, Australia</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h4 class="font-medium text-gray-800 mb-4">Follow My Journey</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Testimonial Slider Script -->
-  <script>
-    const reviews = [
-      '"I met Carl on the streets of Berlin while he was busking. He took me on an unforgettable tour of the city’s best sites." – Sarah (Australia)',
-      '"Carl is an amazing travel guide who makes every journey memorable." – Mike (Canada)',
-      '"From unique destinations to hidden gems, Carl’s travels are truly inspiring." – Tilda'
-    ];
-    let currentIndex = 0;
-    const reviewElement = document.getElementById("currentReview");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                        </div>
+                        <span class="heading-font">Carl Travels</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#destinations" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                        <li><a href="#videos" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Australia</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Japan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Italy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Thailand</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">New Zealand</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">All Destinations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2023 Carl Travels. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    function updateReview(index) {
-      reviewElement.textContent = reviews[index];
-    }
-    function showNextReview() {
-      currentIndex = (currentIndex + 1) % reviews.length;
-      updateReview(currentIndex);
-    }
-    function showPrevReview() {
-      currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
-      updateReview(currentIndex);
-    }
-    nextBtn.addEventListener("click", showNextReview);
-    prevBtn.addEventListener("click", showPrevReview);
-    document.addEventListener("DOMContentLoaded", () => {
-      updateReview(currentIndex);
-      setInterval(showNextReview, 5000);
-    });
-  </script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('open');
+                this.querySelector('i').classList.toggle('fa-bars');
+                this.querySelector('i').classList.toggle('fa-times');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const id = this.getAttribute('href');
+                    if (id !== '#') {
+                        const el = document.querySelector(id);
+                        if (el) {
+                            // Close mobile menu if open
+                            if (mobileMenu.classList.contains('open')) {
+                                mobileMenu.classList.remove('open');
+                                mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+                                mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+                            }
+                            
+                            window.scrollTo({
+                                top: el.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Simple form submission handler (would be replaced with actual form submission in production)
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Form submitted! In a real implementation, this would send the data to a server.');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
