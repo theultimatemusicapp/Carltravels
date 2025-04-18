@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Travels - Adventure Stories & Travel Tips</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary: #38b2ac;
+            --secondary: #f6ad55;
+            --dark: #2d3748;
+            --light: #f7fafc;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .logo {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+        }
+        
+        .travel-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .travel-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10;
+        }
+        
+        .map-marker {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .newsletter {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-plane-departure text-3xl text-teal-500 mr-2"></i>
+                        <span class="logo text-2xl font-bold text-gray-800">Carl Travels</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-800 hover:text-teal-500 px-3 py-2 font-medium">Home</a>
+                    <a href="#" class="text-gray-800 hover:text-teal-500 px-3 py-2 font-medium">Stories</a>
+                    <a href="#" class="text-gray-800 hover:text-teal-500 px-3 py-2 font-medium">Destinations</a>
+                    <a href="#" class="text-gray-800 hover:text-teal-500 px-3 py-2 font-medium">Tips</a>
+                    <a href="#" class="text-gray-800 hover:text-teal-500 px-3 py-2 font-medium">About</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="md:hidden text-gray-800">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                    <div class="hidden md:block">
+                        <a href="https://youtube.com/@carltravels" target="_blank" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full font-medium transition duration-300">
+                            Watch Videos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Adventure Awaits Around Every Corner</h1>
+            <p class="text-xl mb-8">Join Carl as he explores hidden gems, shares travel stories, and uncovers the world's most fascinating places.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-full font-medium text-lg transition duration-300">
+                    Read Latest Stories
+                </button>
+                <a href="https://youtube.com/@carltravels" target="_blank" class="bg-transparent hover:bg-white hover:text-gray-800 border-2 border-white text-white px-6 py-3 rounded-full font-medium text-lg transition duration-300 text-center">
+                    Watch Travel Videos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Stories -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Featured Travel Stories</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover captivating tales from around the globe that will inspire your next adventure.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Story 1 -->
+            <div class="travel-card bg-white relative">
+                <div class="category-badge bg-orange-400 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Adventure
+                </div>
+                <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hot air balloons" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="fas fa-map-marker-alt mr-1 text-teal-500"></i>
+                        <span>Cappadocia, Turkey</span>
+                        <span class="mx-2">•</span>
+                        <i class="far fa-calendar-alt mr-1 text-teal-500"></i>
+                        <span>May 15, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Floating Above Fairy Chimneys</h3>
+                    <p class="text-gray-600 mb-4">An unforgettable sunrise hot air balloon ride over Cappadocia's surreal landscape of fairy chimneys and cave dwellings.</p>
+                    <a href="#" class="text-teal-500 font-medium hover:text-teal-600 inline-flex items-center">
+                        Read More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Story 2 -->
+            <div class="travel-card bg-white relative">
+                <div class="category-badge bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Culture
+                </div>
+                <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3bfdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Kyoto temple" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="fas fa-map-marker-alt mr-1 text-teal-500"></i>
+                        <span>Kyoto, Japan</span>
+                        <span class="mx-2">•</span>
+                        <i class="far fa-calendar-alt mr-1 text-teal-500"></i>
+                        <span>March 22, 2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Finding Zen in Kyoto's Temples</h3>
+                    <p class="text-gray-600 mb-4">A meditative journey through Kyoto's ancient temples, tea ceremonies, and the quiet beauty of Japanese gardens.</p>
+                    <a href="#" class="text-teal-500 font-medium hover:text-teal-600 inline-flex items-center">
+                        Read More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Story 3 -->
+            <div class="travel-card bg-white relative">
+                <div class="category-badge bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Wildlife
+                </div>
+                <img src="https://images.unsplash.com/photo-1589552235879-68324aeadc8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="African safari" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <i class="fas fa-map-marker-alt mr-1 text-teal-500"></i>
+                        <span>Serengeti, Tanzania</span>
+                        <span class="mx-2">•</span>
+                        <i class="far fa-calendar-alt mr-1 text-teal-500"></i>
+                        <span>October 5, 2022</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Safari Under the African Sky</h3>
+                    <p class="text-gray-600 mb-4">Witnessing the Great Migration and coming face-to-face with Africa's majestic wildlife in their natural habitat.</p>
+                    <a href="#" class="text-teal-500 font-medium hover:text-teal-600 inline-flex items-center">
+                        Read More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <button class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-full font-medium text-lg transition duration-300 inline-flex items-center">
+                View All Stories
+                <i class="fas fa-book-open ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Essential Travel Tips</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Practical advice from years of globetrotting to help you travel smarter.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-passport text-2xl text-teal-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Document Safety</h3>
+                    <p class="text-gray-600">Always keep digital copies of important documents and share your itinerary with someone back home.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wallet text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Money Matters</h3>
+                    <p class="text-gray-600">Carry multiple payment options and always have some local currency for emergencies.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-language text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Local Phrases</h3>
+                    <p class="text-gray-600">Learn basic greetings and phrases in the local language—it opens doors and hearts.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-route text-2xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Off the Beaten Path</h3>
+                    <p class="text-gray-600">Some of the best experiences come from wandering without a strict itinerary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Spotlight -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 relative">
+                <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Machu Picchu" class="rounded-2xl shadow-xl w-full">
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg z-10 hidden md:block">
+                    <div class="flex items-center">
+                        <div class="map-marker">
+                            <i class="fas fa-map-marker-alt text-3xl text-red-500"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-gray-500">Current Location</p>
+                            <p class="font-bold text-gray-800">Peru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Destination Spotlight: Machu Picchu</h2>
+                <p class="text-gray-600 text-lg mb-6">The ancient Inca citadel of Machu Picchu is more than just a tourist attraction—it's a mystical journey back in time. Perched high in the Andes, this UNESCO World Heritage site continues to captivate visitors with its breathtaking architecture and enigmatic history.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-center">
+                        <div class="bg-teal-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-hiking text-teal-500"></i>
+                        </div>
+                        <span class="text-gray-700">Inca Trail Trek</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-orange-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-sun text-orange-500"></i>
+                        </div>
+                        <span class="text-gray-700">Best at Sunrise</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-mountain text-blue-500"></i>
+                        </div>
+                        <span class="text-gray-700">2,430m Elevation</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-history text-purple-500"></i>
+                        </div>
+                        <span class="text-gray-700">15th Century</span>
+                    </div>
+                </div>
+                
+                <button class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-full font-medium transition duration-300 inline-flex items-center">
+                    Read Full Guide
+                    <i class="fas fa-compass ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter py-16 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="floating inline-block mb-8">
+                <i class="fas fa-paper-plane text-6xl text-white opacity-90"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Join the Adventure</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Subscribe to Carl Travels newsletter for exclusive stories, travel tips, and destination guides straight to your inbox.</p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-300">
+                <button type="submit" class="bg-white text-gray-800 hover:bg-gray-100 px-6 py-3 rounded-full font-medium transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+            
+            <p class="text-sm mt-4 opacity-80">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Readers Say</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Join thousands of fellow travelers who find inspiration in Carl's adventures.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="testimonial-card p-8 rounded-2xl shadow-md">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J." class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-800">Sarah J.</h4>
+                        <p class="text-sm text-gray-500">Travel Enthusiast</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic mb-4">"Carl's story about the Trans-Siberian Railway inspired my own month-long journey across Russia. His practical tips were invaluable!"</p>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="testimonial-card p-8 rounded-2xl shadow-md">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-800">Michael T.</h4>
+                        <p class="text-sm text-gray-500">Photographer</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic mb-4">"The hidden photography spots Carl shared for Iceland helped me capture landscapes I would have never found on my own."</p>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            
+            <div class="testimonial-card p-8 rounded-2xl shadow-md">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya K." class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-800">Priya K.</h4>
+                        <p class="text-sm text-gray-500">Solo Traveler</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic mb-4">"As a solo female traveler, Carl's safety guides gave me the confidence to explore Southeast Asia on my own terms."</p>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Follow Along on Instagram</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Daily travel inspiration from around the world.</p>
+                <a href="https://instagram.com/carlostomich" target="_blank" class="inline-block mt-4 text-teal-500 hover:text-teal-600 font-medium">
+                    @CarlTravels
+                    <i class="fab fa-instagram ml-2"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+                <a href="https://instagram.com/carlostomich" target="_blank" class="overflow-hidden rounded-lg hover:opacity-90 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1520250497591-1124c0c138d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Instagram post" class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                </a>
+                <a href="https://instagram.com/carlostomich" target="_blank" class="overflow-hidden rounded-lg hover:opacity-90 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Instagram post" class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                </a>
+                <a href="https://instagram.com/carlostomich" target="_blank" class="overflow-hidden rounded-lg hover:opacity-90 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Instagram post" class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                </a>
+                <a href="https://instagram.com/carlostomich" target="_blank" class="overflow-hidden rounded-lg hover:opacity-90 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Instagram post" class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                </a>
+                <a href="https://instagram.com/carlostomich" target="_blank" class="overflow-hidden rounded-lg hover:opacity-90 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1508672019048-805ead876419?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Instagram post" class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                </a>
+                <a href="https://instagram.com/carlostomich" target="_blank" class="overflow-hidden rounded-lg hover:opacity-90 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Instagram post" class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-plane-departure text-3xl text-teal-500 mr-2"></i>
+                        <span class="logo text-2xl font-bold">Carl Travels</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Sharing the world's wonders one story at a time.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Explore</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Travel Stories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Photo Essays</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Video Diaries</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Travel Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Packing Lists</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Budget Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Solo Travel</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Family Travel</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Travel Gear</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-2 text-teal-500"></i>
+                            <span>hello@carltravels.com</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-2 text-teal-500"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1 text-teal-500"></i>
+                            <span>123 Travel Lane<br>Adventure City, AC 98765</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Carl Travels. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-teal-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-teal-600 transition duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Mobile Menu Toggle (would need more implementation)
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        mobileMenuButton.addEventListener('click', () => {
+            // This would toggle a mobile menu in a real implementation
+            alert('Mobile menu would open here in a complete implementation');
+        });
+    </script>
+</body>
+</html>
