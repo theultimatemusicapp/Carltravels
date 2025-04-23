@@ -55,7 +55,6 @@
     body { font-family: 'Poppins', sans-serif; }
     .logo { font-family: 'Dancing Script', cursive; }
     .hero { background-size: cover; background-position: center; min-height: 60vh; }
-    /* Back to Top */
     #backToTop { transition: opacity 0.3s ease; }
   </style>
 </head>
@@ -88,64 +87,66 @@
     </div>
   </section>
 
-  <!-- Main Content -->
-  <main id="main-content" class="max-w-4xl mx-auto px-4 py-16 space-y-12">
-    <!-- Breadcrumb -->
-    <nav aria-label="breadcrumb" class="text-sm text-gray-600">
-      <ol class="flex space-x-2">
-        <li><a href="/" class="hover:text-gray-800">Home</a></li>
-        <li>&gt;</li>
-        <li><a href="/destinations" class="hover:text-gray-800">Destinations</a></li>
-        <li>&gt;</li>
-        <li class="text-gray-900">Berlin</li>
-      </ol>
-    </nav>
+  <!-- Main Content with Two-Column Layout -->
+  <main id="main-content" class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Left Column: Main Sections -->
+      <div class="md:col-span-2 space-y-12">
+        <!-- Introduction -->
+        <section>
+          <h2 class="text-2xl font-semibold mb-4 text-teal-600">Introduction</h2>
+          <p class="mb-4">Berlin is a city unlike any other—steeped in history, yet constantly reinventing itself. From the remnants of the Berlin Wall to cutting-edge street art, the German capital offers a dynamic fusion of past, present, and future. Whether you're exploring historic landmarks, enjoying world-class nightlife, or discovering hidden gems in eclectic neighborhoods, Berlin promises an experience that is as enlightening as it is exhilarating.</p>
+          <p><strong>Why Berlin?</strong> Known for its affordability, thriving art scene, and a spirit of creative freedom, Berlin attracts dreamers, doers, and everyone in between. Its multicultural tapestry weaves together diverse influences that shape the city’s ever-evolving identity.</p>
+        </section>
 
-    <!-- Video Embed -->
-    <div class="responsive-video mb-8">
-      <iframe src="https://www.youtube.com/embed/OV3aCWs2zjE" title="Berlin Travel Highlights" class="w-full h-64 md:h-96 rounded-lg shadow-lg" frameborder="0" allowfullscreen></iframe>
+        <!-- Carl's Berlin Story -->
+        <section>
+          <h2 class="text-2xl font-semibold mb-4 text-teal-600">Carl’s Berlin Story</h2>
+          <p class="mb-4">My journey with Berlin began in the summer of 2011. I arrived with my family, staying in the western side near the zoo—modern malls and glitzy shops at every turn. Yet, it was the gritty, artsy east that captured my heart. By 2013, I returned to busk at the East Side Gallery and film “Busking for Berlin,” a decision that changed my life. The city was cheap, raw, and full of creative energy. Over a decade, rents rose but Berlin’s soul remained.</p>
+        </section>
+
+        <!-- Video Embed -->
+        <section>
+          <div class="responsive-video mb-8">
+            <iframe src="https://www.youtube.com/embed/OV3aCWs2zjE" title="Berlin Travel Highlights" class="w-full h-64 md:h-96 rounded-lg shadow-lg" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column: Sidebar with Highlights & Practical Info -->
+      <aside class="space-y-12">
+        <!-- Highlights -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4 text-dark">Highlights</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Brandenburg Gate:</strong> A unifying symbol and historic gateway.</li>
+            <li><strong>East Side Gallery:</strong> 1.3 km of Wall turned into vibrant street art.</li>
+            <li><strong>Museum Island:</strong> Five world-class museums on the Spree River.</li>
+            <li><strong>Alexanderplatz:</strong> The bustling heart of modern Berlin.</li>
+            <li><strong>Kreuzberg & Friedrichshain:</strong> Edgy neighborhoods with art, nightlife, and history.</li>
+          </ul>
+        </section>
+
+        <!-- Practical Information -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4 text-dark">Practical Information</h3>
+          <h4 class="font-medium mt-2">Transportation</h4>
+          <ul class="list-disc list-inside space-y-2 mb-4">
+            <li><strong>U-Bahn & S-Bahn:</strong> Fast and frequent metro lines.</li>
+            <li><strong>Trams & Buses:</strong> Great for exploring East Berlin routes.</li>
+            <li><strong>Bike Rentals:</strong> Flat terrain makes cycling a breeze.</li>
+          </ul>
+          <h4 class="font-medium mt-2">Accommodation</h4>
+          <ul class="list-disc list-inside space-y-2 mb-4">
+            <li><strong>Mitte:</strong> Central, near major landmarks.</li>
+            <li><strong>Kreuzberg/Friedrichshain:</strong> Trendy, artistic, nightlife hub.</li>
+            <li><strong>Charlottenburg:</strong> Upscale, western flair, near Kurfürstendamm.</li>
+          </ul>
+          <h4 class="font-medium mt-2">Budgeting</h4>
+          <p>Plan <strong>€60–€120/day</strong> depending on your accommodation and nightlife plans.</p>
+        </section>
+      </aside>
     </div>
-
-    <!-- Sections -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 text-teal-600">Introduction</h2>
-      <p class="mb-4">Berlin is a city unlike any other—steeped in history, yet constantly reinventing itself. From the remnants of the Berlin Wall to cutting-edge street art, the German capital offers a dynamic fusion of past, present, and future. Whether you're exploring historic landmarks, enjoying world-class nightlife, or discovering hidden gems in eclectic neighborhoods, Berlin promises an experience that is as enlightening as it is exhilarating.</p>
-      <p><strong>Why Berlin?</strong> Known for its affordability, thriving art scene, and a spirit of creative freedom, Berlin attracts dreamers, doers, and everyone in between. Its multicultural tapestry weaves together diverse influences that shape the city’s ever-evolving identity.</p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 text-teal-600">Carl’s Berlin Story</h2>
-      <p class="mb-4">My journey with Berlin began in the summer of 2011. I arrived with my family, staying in the western side near the zoo—modern malls and glitzy shops at every turn. Yet, it was the gritty, artsy east that captured my heart. By 2013, I returned to busk at the East Side Gallery and film “Busking for Berlin,” a decision that changed my life. The city was cheap, raw, and full of creative energy. Over a decade, rents rose but Berlin’s soul remained.</p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 text-teal-600">Highlights</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li><strong>Brandenburg Gate:</strong> A unifying symbol and historic gateway.</li>
-        <li><strong>East Side Gallery:</strong> 1.3 km of Wall turned into vibrant street art.</li>
-        <li><strong>Museum Island:</strong> Five world-class museums on the Spree River.</li>
-        <li><strong>Alexanderplatz:</strong> The bustling heart of modern Berlin.</li>
-        <li><strong>Kreuzberg & Friedrichshain:</strong> Edgy neighborhoods with art, nightlife, and history.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 text-teal-600">Practical Information</h2>
-      <h3 class="text-xl font-medium mb-2">Transportation</h3>
-      <ul class="list-disc list-inside space-y-2 mb-4">
-        <li><strong>U-Bahn & S-Bahn:</strong> Fast and frequent metro lines.</li>
-        <li><strong>Trams & Buses:</strong> Great for exploring East Berlin routes.</li>
-        <li><strong>Bike Rentals:</strong> Flat terrain makes cycling a breeze.</li>
-      </ul>
-      <h3 class="text-xl font-medium mb-2">Accommodation</h3>
-      <ul class="list-disc list-inside space-y-2 mb-4">
-        <li><strong>Mitte:</strong> Central, near major landmarks.</li>
-        <li><strong>Kreuzberg/Friedrichshain:</strong> Trendy, artistic, nightlife hub.</li>
-        <li><strong>Charlottenburg:</strong> Upscale, western flair, near Kurfürstendamm.</li>
-      </ul>
-      <h3 class="text-xl font-medium mb-2">Budgeting</h3>
-      <p>Plan <strong>€60–€120/day</strong> depending on your accommodation and nightlife plans.</p>
-    </section>
   </main>
 
   <!-- Footer -->
