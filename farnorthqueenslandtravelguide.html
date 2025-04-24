@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far North Queensland Guide - Carl Travels</title>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Far North Queensland with Carl Travels. Discover Port Douglas, Green Island, Fitzroy Island, Double Island, and Crystal Cascades in Cairns, where the Great Barrier Reef meets the Daintree Rainforest.">
+    <meta name="keywords" content="Far North Queensland, Cairns, Great Barrier Reef, Daintree Rainforest, Port Douglas, Green Island, Fitzroy Island, Double Island, Crystal Cascades, Carl Travels">
+    <meta name="author" content="Carl Ostomich">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Far North Queensland Guide - Carl Travels">
+    <meta property="og:description" content="Join Carl Travels to explore Cairns’ stunning attractions, from Port Douglas to Crystal Cascades, in the heart of Far North Queensland.">
+    <meta property="og:image" content="https://www.carltravels.com/images/far-north-queensland-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/farnorthqueenslandguide.html">
+    <meta property="og:type" content="article">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Far North Queensland Guide - Carl Travels">
+    <meta name="twitter:description" content="Join Carl Travels to explore Cairns’ stunning attractions, from Port Douglas to Crystal Cascades, in the heart of Far North Queensland.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/far-north-queensland-twitter-image.jpg">
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #3b82f6;
+            --secondary: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .destination-card {
+            transition: all 0.3s ease;
+            perspective: 1000px;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .destination-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .destination-card:hover .destination-card-inner {
+            transform: rotateY(10deg);
+        }
+        
+        .video-card:hover .play-icon {
+            transform: scale(1.2);
+            opacity: 0.9;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+            backdrop-filter: blur(5px);
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+        
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[80vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Far North Queensland <br>With <span class="text-yellow-300">Carl Travels</span>
+                    </h1>
+                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                        Discover Cairns, where the Great Barrier Reef meets the Daintree Rainforest. Join me to explore Port Douglas, island adventures, and hidden gems like Crystal Cascades.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#blog" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                            Explore Guide
+                        </a>
+                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
+                            Watch Videos <i class="fas fa-play ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
+                            <img src="/greatbarrierreef.jpg" alt="Great Barrier Reef" class="w-full h-auto">
+                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Far North Queensland</h3>
+                                <p class="text-sm opacity-90">Reef & Rainforest Adventure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Blog -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL GUIDE</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Far North Queensland Adventures</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Blog Post 1: Port Douglas -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Port Douglas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm">October 15, 2024</span>
+                            <span class="mx-2 text-gray-300">•</span>
+                            <span class="text-gray-500 text-sm">6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Exploring Port Douglas: A Tropical Paradise</h3>
+                        <p class="text-gray-600 mb-4">Just an hour from Cairns, Port Douglas is your gateway to the Great Barrier Reef and Daintree Rainforest. Stroll Four Mile Beach, dine on Macrossan Street, or catch a sunset at Rex Smeal Park. My video takes you through the town’s highlights, including local markets and the Wildlife Habitat.</p>
+                        <iframe src="https://www.youtube.com/embed/jlHPcAebOWU" class="w-full h-64 mb-4" allowfullscreen></iframe>
+                        <p class="text-gray-600 mb-4">Don’t miss a day trip to Mossman Gorge for a swim or a crocodile-spotting river cruise in the Daintree. Port Douglas’ laid-back vibe makes it a perfect base for adventure.</p>
+                        <a href="https://www.youtube.com/watch?v=jlHPcAebOWU" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                            Watch Full Video <i class="fas fa-play ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2: Green Island vs. Fitzroy Island -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Green Island" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm">October 10, 2024</span>
+                            <span class="mx-2 text-gray-300">•</span>
+                            <span class="text-gray-500 text-sm">8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Green Island vs. Fitzroy Island: Which to Choose?</h3>
+                        <p class="text-gray-600 mb-4">Both a 45-minute ferry from Cairns and $100 per person, Green Island and Fitzroy Island offer stunning reefs. Green Island’s coral cay suits families with its waterslide, while Fitzroy’s trails and Nudey Beach appeal to adventurers. My video breaks it down.</p>
+                        <iframe src="https://www.youtube.com/embed/BbJnIqomlmI" class="w-full h-64 mb-4" allowfullscreen></iframe>
+                        <p class="text-gray-600 mb-4">Green Island has extras like Seawalker diving, while Fitzroy’s turtle center and hiking trails feel wilder. Snorkeling is top-notch at both!</p>
+                        <a href="https://www.youtube.com/watch?v=BbJnIqomlmI" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                            Watch Full Video <i class="fas fa-play ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3: Double Island -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Double Island" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm">October 5, 2024</span>
+                            <span class="mx-2 text-gray-300">•</span>
+                            <span class="text-gray-500 text-sm">5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Double Island: Cairns’ Hidden Gem</h3>
+                        <p class="text-gray-600 mb-4">Off Palm Cove, 30 minutes from Cairns, Double Island is a secluded escape accessible by kayak or private boat. I explored it with an inflatable boat in my video. Recently bought by the government, it may see eco-tourism development soon.</p>
+                        <iframe src="https://www.youtube.com/embed/5ezwJAVN9r4" class="w-full h-64 mb-4" allowfullscreen></iframe>
+                        <p class="text-gray-600 mb-4">Palm Cove’s coconut-lined beach is a bonus stop. Double Island’s untouched vibe is perfect for off-the-grid adventurers.</p>
+                        <a href="https://www.youtube.com/watch?v=5ezwJAVN9r4" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                            Watch Full Video <i class="fas fa-play ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 4: Crystal Cascades -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1518542331925-4e91e9f375f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Crystal Cascades" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm">October 1, 2024</span>
+                            <span class="mx-2 text-gray-300">•</span>
+                            <span class="text-gray-500 text-sm">5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Crystal Cascades: Cairns’ Local Swimming Spot</h3>
+                        <p class="text-gray-600 mb-4">A 20-minute drive from Cairns CBD, Crystal Cascades is a free, rainforest-surrounded swimming hole. It’s a local favorite, especially in the hot months (November-April). My video shows the trail and “No Fear” cliff diving spot.</p>
+                        <iframe src="https://www.youtube.com/embed/s5wknDLdGbg" class="w-full h-64 mb-4" allowfullscreen></iframe>
+                        <p class="text-gray-600 mb-4">For a longer hike, check out nearby Fairy Falls. Crystal Cascades is a budget-friendly must-visit for cooling off in nature.</p>
+                        <a href="https://www.youtube.com/watch?v=s5wknDLdGbg" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                            Watch Full Video <i class="fas fa-play ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 5: Why Far North Queensland -->
+                <div class="lg:col-span-2">
+                    <div class="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-lg">
+                        <div class="md:w-1/2 h-80">
+                            <img src="https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Far North Queensland" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full mr-3">Featured</span>
+                                <span class="text-gray-500 text-sm">October 20, 2024</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-3">Why Far North Queensland?</h3>
+                            <p class="text-gray-600 mb-4">Cairns is where the Great Barrier Reef meets the Daintree Rainforest—two UNESCO World Heritage Sites. Swim at the Esplanade Lagoon, hike the Atherton Tablelands, or ride the Kuranda Scenic Railway. Learn about Kuku Yalanji culture and explore Cape Tribulation or Mossman Gorge. This tropical paradise has it all.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-gray-300 overflow-hidden mr-3">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author" class="w-full h-full object-cover">
+                                    </div>
+                                    <span class="text-sm text-gray-700">Carl Tomich</span>
+                                </div>
+                                <a href="destinations.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Explore More <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                    View All Articles <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 md:p-12 shadow-lg">
+                <div class="text-center mb-8">
+                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-2">Join My Travel Community</h2>
+                    <p class="text-gray-600 max-w-lg mx-auto">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
+                </div>
+                
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                        Subscribe <i class="fas fa-paper-plane ml-1"></i>
+                    </button>
+                </form>
+                
+                <p class="text-center text-sm text-gray-500 mt-4">No spam, ever. Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                        </div>
+                        <span class="heading-font">Carl Travels</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
+                        <li><a href="melbourne.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
+                        <li><a href="cairns.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
+                        <li><a href="phuket.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
+                        <li><a href="hanoi.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
+                        <li><a href="osaka.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Carl Travels. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript with Error Handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Mobile Menu Toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', function() {
+                        mobileMenu.classList.toggle('open');
+                        this.querySelector('i').classList.toggle('fa-bars');
+                        this.querySelector('i').classList.toggle('fa-times');
+                    });
+                }
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const id = this.getAttribute('href');
+                        if (id !== '#') {
+                            const el = document.querySelector(id);
+                            if (el) {
+                                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                                    mobileMenu.classList.remove('open');
+                                    if (mobileMenuButton) {
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+                                    }
+                                }
+                                window.scrollTo({
+                                    top: el.offsetTop - 80,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+
+                // Navbar scroll effect
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 50) {
+                            navbar.classList.add('scrolled');
+                        } else {
+                            navbar.classList.remove('scrolled');
+                        }
+                    });
+                }
+
+                // Back to top button
+                const backToTopButton = document.getElementById('back-to-top');
+                if (backToTopButton) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 300) {
+                            backToTopButton.classList.remove('opacity-0', 'invisible');
+                            backToTopButton.classList.add('opacity-100', 'visible');
+                        } else {
+                            backToTopButton.classList.remove('opacity-100', 'visible');
+                            backToTopButton.classList.add('opacity-0', 'invisible');
+                        }
+                    });
+                    backToTopButton.addEventListener('click', function() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            } catch (error) {
+                console.error('JavaScript Error in farnorthqueenslandguide.html:', error);
+            }
+        });
+    </script>
+</body>
+</html>
