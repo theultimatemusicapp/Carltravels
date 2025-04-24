@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Carl Travels</title>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore travel tips, personal stories, and digital nomad advice on the Carl Travels blog. Learn about saving money with Wise, why I left Australia, and secrets to endless travel.">
+    <meta name="keywords" content="Travel Blog, Carl Travels, Wise Card, Digital Nomad, Australia Economy, Travel Tips">
+    <meta name="author" content="Carl Ostomich">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog - Carl Travels">
+    <meta property="og:description" content="Discover travel insights and stories from Carl Travels, including tips on saving with Wise, why I left Australia, and how to become a digital nomad.">
+    <meta property="og:image" content="https://www.carltravels.com/images/blog-og-image.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/blog.html">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Carl Travels">
+    <meta name="twitter:description" content="Discover travel insights and stories from Carl Travels, including tips on saving with Wise, why I left Australia, and how to become a digital nomad.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/blog-twitter-image.jpg">
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #3b82f6;
+            --secondary: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+        
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-blue-600 font-medium transition-colors">Blog</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Blog</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="text-center">
+                <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Travel Insights & Stories <br>With <span class="text-yellow-300">Carl Travels</span>
+                </h1>
+                <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+                    Discover practical travel tips, personal stories, and digital nomad advice to inspire your next adventure.
+                </p>
+                <a href="#blog-posts" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    Explore Posts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL BLOG</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Stories & Tips for Nomads</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1: Using the Wise Card -->
+                <div class="blog-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="/wise-card.jpg" alt="Wise Card" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Using the Wise Card to Save on Travel</h3>
+                            <p class="text-sm">Smart Money Management</p>
+                        </div>
+                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Travel Tip</span>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-gray-500 text-sm"><i class="fas fa-credit-card mr-1 text-blue-500"></i> Finance</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.8</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Discover how the Wise card can save you money on transaction fees and currency exchanges, making travel more affordable.
+                        </p>
+                        <div class="prose text-gray-600 mb-4">
+                            <p>The Wise card is a game-changer for travelers. With fees as low as 0.5-1% compared to 3-5% from traditional banks, it offers real exchange rates and supports over 40 currencies. Use it for ATM withdrawals (up to $350/month fee-free), online purchases, or in-store payments worldwide.</p>
+                            <p><strong>Top Tips:</strong> Always pay in local currency to avoid dynamic conversion fees, check Wise’s app for real-time rates, and hold multiple currencies to lock in rates before you travel.</p>
+                        </div>
+                        <a href="https://wise.com/invite/u/yourname" target="_blank" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            Get Your Wise Card <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2: Why I Left Australia (Vlog) -->
+                <div class="blog-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="/australia-vlog.jpg" alt="Why I Left Australia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Why I Left Australia</h3>
+                            <p class="text-sm">A Personal Vlog</p>
+                        </div>
+                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Vlog</span>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-gray-500 text-sm"><i class="fas fa-video mr-1 text-blue-500"></i> Personal Story</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.9</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            My reasons for leaving Australia, from economic challenges to the freedom of nomadic life.
+                        </p>
+                        <div class="prose text-gray-600 mb-4">
+                            <p>Australia’s soaring costs—median Sydney homes at $1.5M AUD, rents doubling in a decade—made living feel like surviving. Stagnant wages and a struggling economy pushed me to embrace digital nomadism. Now, I live richer experiences for $1,500/month in places like Southeast Asia.</p>
+                            <p>Watch my vlog to hear my story and why I believe nomad life offers more freedom and fun than staying in Australia.</p>
+                            <div class="relative" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/placeholder" title="Why I Left Australia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            Watch More Vlogs <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3: Top 10 Secrets to Endless Travel -->
+                <div class="blog-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="/digital-nomad.jpg" alt="Digital Nomad Secrets" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">My Top 10 Secrets to Endless Travel</h3>
+                            <p class="text-sm">Digital Nomad Guide</p>
+                        </div>
+                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Guide</span>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-gray-500 text-sm"><i class="fas fa-laptop mr-1 text-blue-500"></i> Lifestyle</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.7</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Learn my top 10 secrets to becoming a digital nomad and traveling the world endlessly.
+                        </p>
+                        <div class="prose text-gray-600 mb-4">
+                            <ol class="list-decimal pl-5 space-y-2">
+                                <li><strong>Master Remote Work:</strong> Secure freelance gigs on platforms like Upwork or Fiverr.</li>
+                                <li><strong>Budget Smart:</strong> Live in low-cost destinations like Thailand ($1,000/month).</li>
+                                <li><strong>Use Travel Rewards:</strong> Leverage credit card points for free flights.</li>
+                                <li><strong>Learn Visa Hacks:</strong> Stay 90 days in Schengen countries, then move to visa-free regions.</li>
+                                <li><strong>Travel Light:</strong> Pack only essentials in a 40L backpack.</li>
+                                <li><strong>Stay Connected:</strong> Use eSIMs or local SIMs for cheap data.</li>
+                                <li><strong>Book Smart:</strong> Use Skyscanner for flights, Airbnb for long stays.</li>
+                                <li><strong>Build Passive Income:</strong> Create blogs, YouTube channels, or e-books.</li>
+                                <li><strong>Join Communities:</strong> Connect with nomads on Nomad List or Reddit.</li>
+                                <li><strong>Embrace Flexibility:</strong> Be open to last-minute deals and detours.</li>
+                            </ol>
+                            <p>Start your nomad journey today and explore the world on your terms!</p>
+                        </div>
+                        <a href="destinations.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            Explore Destinations <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">
+                    Love these stories and tips? Support my journey to create more content!
+                </p>
+                <a href="donate.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                    Support Carl Travels <i class="fas fa-heart ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                        </div>
+                        <span class="heading-font">Carl Travels</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
+                        <li><a href="melbourne.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
+                        <li><a href="cairns.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
+                        <li><a href="phuket.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
+                        <li><a href="hanoi.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
+                        <li><a href="osaka.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Carl Travels. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript with Error Handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Mobile Menu Toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', function() {
+                        mobileMenu.classList.toggle('open');
+                        this.querySelector('i').classList.toggle('fa-bars');
+                        this.querySelector('i').classList.toggle('fa-times');
+                    });
+                }
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const id = this.getAttribute('href');
+                        if (id !== '#') {
+                            const el = document.querySelector(id);
+                            if (el) {
+                                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                                    mobileMenu.classList.remove('open');
+                                    if (mobileMenuButton) {
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+                                    }
+                                }
+                                window.scrollTo({
+                                    top: el.offsetTop - 80,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+
+                // Navbar scroll effect
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 50) {
+                            navbar.classList.add('scrolled');
+                        } else {
+                            navbar.classList.remove('scrolled');
+                        }
+                    });
+                }
+
+                // Back to top button
+                const backToTopButton = document.getElementById('back-to-top');
+                if (backToTopButton) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 300) {
+                            backToTopButton.classList.remove('opacity-0', 'invisible');
+                            backToTopButton.classList.add('opacity-100', 'visible');
+                        } else {
+                            backToTopButton.classList.remove('opacity-100', 'visible');
+                            backToTopButton.classList.add('opacity-0', 'invisible');
+                        }
+                    });
+                    backToTopButton.addEventListener('click', function() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            } catch (error) {
+                console.error('JavaScript Error in blog.html:', error);
+            }
+        });
+    </script>
+</body>
+</html>
