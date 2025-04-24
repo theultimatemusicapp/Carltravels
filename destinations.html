@@ -124,7 +124,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
                     <a href="#" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="#videos" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
                     <a href="#blog" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
                     <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
                     <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
@@ -140,42 +140,407 @@
                 <div class="pt-4 pb-2 space-y-2">
                     <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
                     <a href="#" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Destinations</a>
-                    <a href="#videos" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
                     <a href="#blog" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="#about" Hostel = document.getElementById('mobile-menu');
-                    
+                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="text-center">
+                <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Explore Our Destinations <br>With <span class="text-yellow-300">Carl Travels</span>
+                </h1>
+                <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+                    Discover breathtaking cities and hidden gems across the globe. From vibrant urban hubs to serene coastal escapes, start your journey here.
+                </p>
+                <a href="#destinations" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    Browse Destinations
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-medium mb-2 inline-block">OUR DESTINATIONS</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Explore the World</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination 1: Berlin -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/berlinlogo.jpg" alt="Berlin" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Berlin</h3>
+                                <p class="text-sm">Mitte & Kreuzberg</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Popular</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Immerse yourself in Berlin's vibrant history, art scene, and nightlife in this dynamic capital city.</p>
+                            <a href="berlin.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 2: Melbourne -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/melbournelogo.jpg" alt="Melbourne" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Melbourne</h3>
+                                <p class="text-sm">Yarra River & St Kilda</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Oceania</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.7</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Experience Melbourne's cultural richness, coffee culture, and coastal charm in Australia's vibrant south.</p>
+                            <a href="melbourne.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 3: Cairns -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/cairnslogo.jpg" alt="Cairns" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Cairns</h3>
+                                <p class="text-sm">Great Barrier Reef</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Oceania</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.9</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Dive into the wonders of the Great Barrier Reef and explore the tropical beauty of Cairns.</p>
+                            <a href="cairns.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 4: Phuket -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/phuketlogo.jpg" alt="Phuket" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Phuket</h3>
+                                <p class="text-sm">Patong Beach</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.6</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Relax on Phuket's stunning beaches and explore its vibrant markets and island adventures.</p>
+                            <a href="phuket.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 5: Hanoi -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/hanoilogo.jpg" alt="Hanoi" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Hanoi</h3>
+                                <p class="text-sm">Old Quarter</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.7</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Discover Hanoi's rich history, bustling streets, and authentic Vietnamese culture.</p>
+                            <a href="hanoi.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 6: Osaka -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/osakalogo.jpg" alt="Osaka" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Osaka</h3>
+                                <p class="text-sm">Dotonbori</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Savor Osaka's culinary delights and explore its lively streets and modern attractions.</p>
+                            <a href="osaka.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 7: Prague -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/praguelogo.jpg" alt="Prague" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Prague</h3>
+                                <p class="text-sm">Old Town</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Popular</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.9</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Step into a fairytale in Prague with its historic castles, bridges, and charming streets.</p>
+                            <a href="prague.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 8: Korcula -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/korculalogo.jpg" alt="Korcula" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Korcula</h3>
+                                <p class="text-sm">Korcula Town</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.6</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Unwind on Korcula's pristine beaches and explore its medieval charm in Croatia's Adriatic.</p>
+                            <a href="korcula.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                    More Destinations Coming Soon <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                        </div>
+                        <span class="heading-font">Carl Travels</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
+                        <li><a href="melbourne.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
+                        <li><a href="cairns.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
+                        <li><a href="phuket.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
+                        <li><a href="hanoi.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
+                        <li><a href="osaka.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2023 Carl Travels. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript with Error Handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Mobile Menu Toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
                     mobileMenuButton.addEventListener('click', function() {
                         mobileMenu.classList.toggle('open');
                         this.querySelector('i').classList.toggle('fa-bars');
                         this.querySelector('i').classList.toggle('fa-times');
                     });
-                    
-                    // Smooth scrolling for anchor links
-                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                        anchor.addEventListener('click', function(e) {
-                            e.preventDefault();
-                            const id = this.getAttribute('href');
-                            if (id !== '#') {
-                                const el = document.querySelector(id);
-                                if (el) {
-                                    // Close mobile menu if open
-                                    if (mobileMenu.classList.contains('open')) {
-                                        mobileMenu.classList.remove('open');
+                }
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const id = this.getAttribute('href');
+                        if (id !== '#') {
+                            const el = document.querySelector(id);
+                            if (el) {
+                                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                                    mobileMenu.classList.remove('open');
+                                    if (mobileMenuButton) {
                                         mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
                                         mobileMenuButton.querySelector('i').classList.toggle('fa-times');
                                     }
-                                    
-                                    window.scrollTo({
-                                        top: el.offsetTop - 80,
-                                        behavior: 'smooth'
-                                    });
                                 }
+                                window.scrollTo({
+                                    top: el.offsetTop - 80,
+                                    behavior: 'smooth'
+                                });
                             }
-                        });
+                        }
                     });
-                    
-                    // Navbar scroll effect
-                    const navbar = document.getElementById('navbar');
+                });
+
+                // Navbar scroll effect
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
                     window.addEventListener('scroll', function() {
                         if (window.scrollY > 50) {
                             navbar.classList.add('scrolled');
@@ -183,9 +548,11 @@
                             navbar.classList.remove('scrolled');
                         }
                     });
-                    
-                    // Back to top button
-                    const backToTopButton = document.getElementById('back-to-top');
+                }
+
+                // Back to top button
+                const backToTopButton = document.getElementById('back-to-top');
+                if (backToTopButton) {
                     window.addEventListener('scroll', function() {
                         if (window.scrollY > 300) {
                             backToTopButton.classList.remove('opacity-0', 'invisible');
@@ -195,14 +562,17 @@
                             backToTopButton.classList.add('opacity-0', 'invisible');
                         }
                     });
-                    
                     backToTopButton.addEventListener('click', function() {
                         window.scrollTo({
                             top: 0,
                             behavior: 'smooth'
                         });
                     });
-                });
-            </script>
-        </body>
-    </html>
+                }
+            } catch (error) {
+                console.error('JavaScript Error in destinations.html:', error);
+            }
+        });
+    </script>
+</body>
+</html>
