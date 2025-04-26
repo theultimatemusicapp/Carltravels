@@ -1,388 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journey Through the Enchanting Korčula: A Personal Exploration</title>
-    
-    <!-- SEO Meta Description -->
-    <meta name="description" content="Join Carl on a deeply personal journey to Korčula, exploring family roots, medieval charm, stunning landscapes, and rich cultural heritage. Discover Korčula's history, vineyards, and ancestral connections.">
-    
-    <!-- SEO Keywords -->
-    <meta name="keywords" content="Korčula travel, Korčula island, Croatian islands, family heritage, Korčula history, vineyard tours Korčula, Morellec Winery, exploring Korčula, Croatian culture, ancestral journey">
-    
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Journey Through the Enchanting Korčula: A Personal Exploration">
-    <meta property="og:description" content="Join Carl on a deeply personal journey to Korčula, exploring family roots, medieval charm, stunning landscapes, and rich cultural heritage.">
-    <meta property="og:image" content="https://www.carltravels.com/images/korcula-featured-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/destinations/korcula.html">
-    <meta property="og:type" content="website">
-    
+    <title>Your Ultimate Guide to Visiting Korčula, Croatia - Carl Travels</title>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Korčula, Croatia, with Carl Travels' ultimate guide. Watch a video tour, see stunning images, and discover ferries, accommodation, beaches, Old Town, and wineries.">
+    <meta name="keywords" content="Korčula Croatia, Korčula travel guide, Croatia island, Korčula Old Town, Carl Travels, Croatia beaches, wine tasting">
+    <meta name="author" content="Carl Ostomich">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Your Ultimate Guide to Visiting Korčula, Croatia - Carl Travels">
+    <meta property="og:description" content="Join Carl Travels to explore Korčula, Croatia. Watch a video tour, see stunning images, and learn about ferries, accommodation, beaches, Old Town, and wineries.">
+    <meta property="og:image" content="https://www.carltravels.com/images/korcula.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/korculaguide.html">
+    <meta property="og:type" content="article">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Journey Through the Enchanting Korčula: A Personal Exploration">
-    <meta name="twitter:description" content="Join Carl on a deeply personal journey to Korčula, exploring family roots, medieval charm, stunning landscapes, and rich cultural heritage.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/korcula-featured-image.jpg">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="city.css">
-    
-    <!-- Adding Roboto, Dancing Script, and Poppins Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    
-    <!-- Structured Data (JSON-LD) for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Journey Through the Enchanting Korčula: A Personal Exploration",
-      "description": "Join Carl on a deeply personal journey to Korčula, exploring family roots, medieval charm, stunning landscapes, and rich cultural heritage.",
-      "image": "https://www.carltravels.com/images/korcula-featured-image.jpg",
-      "author": {
-        "@type": "Person",
-        "name": "Carl"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Carl Travels",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.carltravels.com/images/logo.png"
-        }
-      },
-      "datePublished": "2025-04-27",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.carltravels.com/destinations/korcula.html"
-      }
-    }
-    </script>
-
-    <!-- Inline styles matching the newer pages -->
+    <meta name="twitter:title" content="Your Ultimate Guide to Visiting Korčula, Croatia - Carl Travels">
+    <meta name="twitter:description" content="Join Carl Travels to explore Korčula, Croatia. Watch a video tour, see stunning images, and learn about ferries, accommodation, beaches, Old Town, and wineries.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/korcula-twitter-image.jpg">
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Ensure images within the main content are responsive */
-        main img.responsive-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto; 
-            padding: 10px 0;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #3b82f6;
+            --secondary: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
         }
-
-        /* Make embedded YouTube videos responsive */
-        .video-responsive {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            padding-top: 25px;
-            height: 0;
-            margin-bottom: 20px; /* Some spacing below the video */
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
         }
-        .video-responsive iframe {
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .destination-card {
+            transition: all 0.3s ease;
+            perspective: 1000px;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .destination-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .destination-card:hover .destination-card-inner {
+            transform: rotateY(10deg);
+        }
+        
+        .video-card:hover .play-icon {
+            transform: scale(1.2);
+            opacity: 0.9;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+            backdrop-filter: blur(5px);
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .wave-shape {
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            overflow: hidden;
+            line-height: 0;
         }
-
-        /* Style the header h1 (Carl Travels) */
-        header h1 a {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Dancing Script', cursive; /* Cursive font */
-            text-decoration: none; /* Remove underline */
-            font-size: 2.5em; /* Adjust as needed */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
         }
-        header h1 a:hover {
-            color: #E55B00; /* Darker shade on hover */
+        
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
         }
-
-        /* Style all h1 titles within the main content */
-        main h1 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
-            margin-top: 20px;
-            margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
         }
-        main h1:hover {
-            color: #E55B00; /* Darker shade on hover */
-        }
-
-        /* Style all h2 titles within the main content */
-        main h2 {
-            color: #FF6600; /* Vibrant orange color */
-            font-family: 'Poppins', sans-serif; /* Modern, clean font */
-            margin-top: 20px;
-            margin-bottom: 10px;
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
-        }
-        main h2:hover {
-            color: #E55B00; /* Darker shade on hover */
-        }
-
-        /* Style h3 or smaller headings in main */
-        main h3 {
-            color: #333; /* Keep these neutral or adapt as needed */
-            font-family: 'Roboto', sans-serif;
-            margin-top: 15px;
-            margin-bottom: 8px;
-        }
-
-        /* Responsive typography adjustments */
-        @media (max-width: 768px) {
-            header h1 a {
-                font-size: 2em; /* Adjust logo size on smaller screens */
-            }
-            main h1 {
-                font-size: 2em;
-            }
-            main h2 {
-                font-size: 1.5em;
-            }
+        
+        .mobile-menu.open {
+            max-height: 500px;
         }
     </style>
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-
-            <!-- Navigation Menu -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="work.html">My Work</a></li>
-                    <li><a href="destinations.html" class="active">Destinations</a></li>
-                    <li><a href="donate.html">Donate</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <!-- Social Media Icons -->
-            <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook" loading="lazy">
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram" loading="lazy">
-                </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube" loading="lazy">
-                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                </div>
             </div>
         </div>
-    </header>
-    
-    <!-- Main Content -->
-    <main>
-        <section class="blog-post">
-            <div class="container">
-                <!-- Page Title -->
-                <h1>Journey Through the Enchanting Korčula: A Personal Exploration</h1>
+    </nav>
 
-                <!-- First Embedded YouTube Video (Responsive) -->
-                <div class="video-responsive">
-                    <iframe
-                        src="https://www.youtube.com/embed/NPpCfDRM2PY"
-                        title="Journey Through Korčula"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[80vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Your Ultimate Guide to Visiting Korčula, Croatia <br>With <span class="text-yellow-300">Carl Travels</span>
+                    </h1>
+                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                        Discover family roots, ancient towns, vineyards, and crystal-clear waters on Korčula, Croatia’s magical island, with Carl Travels.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                            Read the Guide
+                        </a>
+                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
+                            Watch Videos <i class="fas fa-play ml-2"></i>
+                        </a>
+                    </div>
                 </div>
                 
-                <!-- Introduction -->
-                <section>
-                    <h2>Introduction</h2>
-                    <p>Welcome to Korčula, a gem in the Adriatic Sea, known for its lush landscapes, historic architecture, and rich cultural heritage. This island holds a special place in my heart as it connects me to my family's ancestral roots. Join me as I delve into Korčula's enchanting beauty and uncover the stories that bind my past to this picturesque destination.</p>
-                </section>
-                
-                <!-- Tracing Ancestral Roots -->
-                <section>
-                    <h2>Tracing My Ancestral Roots</h2>
-                    <p>My journey to Korčula began with a deep desire to connect with my family's heritage. My grandfather, who emigrated to New Zealand in his youth, often shared fragmented stories of his homeland. These tales, though brief, sparked a longing to explore the island where my ancestors once lived.</p>
-                </section>
-                
-                <!-- Preparing for the Journey -->
-                <section>
-                    <h2>Preparing for the Journey</h2>
-                    <p>With a mix of excitement and anticipation, I planned my trip to Korčula. I arranged for a rental car to give me the flexibility to explore the island at my own pace. My itinerary included visits to historic sites, vineyard tours, and, most importantly, meeting distant relatives who still call Korčula home.</p>
-                </section>
-                
-                <!-- Exploring the Old Town -->
-                <section>
-                    <h2>Exploring the Old Town</h2>
-                    <p>The heart of Korčula lies in its charming Old Town, often referred to as "Little Dubrovnik" for its stunning medieval architecture. Wandering through narrow cobblestone streets, I marveled at the fortified walls, ancient churches, and vibrant piazzas. The Old Town's rich history and lively atmosphere provided the perfect backdrop for my exploration.</p>
-                </section>
-                
-                <!-- Historical Background -->
-                <section>
-                    <h2>Historical Background</h2>
-                    <p>Korčula's history is a tapestry woven with influences from the Illyrians, Venetians, and Ottomans. The island's strategic location in the Adriatic made it a coveted prize for various empires, each leaving their mark on its culture and architecture. Today, Korčula stands as a testament to its resilient spirit and diverse heritage.</p>
-                </section>
-                
-                <!-- Journey to Chara -->
-                <section>
-                    <h2>Journey to Chara</h2>
-                    <p>Determined to uncover more about my family's past, I set off towards Chara, the village where my grandfather was born. The drive through scenic landscapes dotted with olive groves and vineyards felt like a step back in time, connecting me to the land my ancestors once called home.</p>
-                </section>
-                
-                <!-- Discovering Family -->
-                <section>
-                    <h2>Discovering Family</h2>
-                    <p>In Chara, my journey took an unexpected turn when I met Ingrid, an elderly woman who recognized my family's surname. Despite the language barrier, Ingrid's warm welcome bridged the gap between past and present. She introduced me to her husband, James, who shared stories about our shared lineage and the lives our ancestors led here.</p>
-                </section>
-                
-                <!-- Vineyard Tour -->
-                <section>
-                    <h2>Vineyard Tour</h2>
-                    <p>No visit to Korčula would be complete without experiencing its renowned wine culture. At <strong>Morellec Winery</strong>, I not only tasted exquisite local wines but also connected with family members who continued the winemaking traditions. The vineyard tour was a delightful blend of heritage and craftsmanship, offering insights into the meticulous process that produces Korčula's signature wines.</p>
-                </section>
-                
-                <!-- Winery Experience -->
-                <section>
-                    <h2>Winery Experience</h2>
-                    <p>Walking through the expansive vineyards, I learned about the unique grape varieties and the sustainable practices that Morellec Winery employs. Each bottle of wine told a story of passion, perseverance, and the enduring legacy of my ancestors. Sharing these moments with Ingrid and James deepened my appreciation for both the land and my family's history.</p>
-                </section>
-                
-                <!-- Second Embedded YouTube Video (Responsive) -->
-                <div class="video-responsive">
-                    <iframe
-                        src="https://www.youtube.com/embed/pS4B4IbXLjs"
-                        title="How to get your Croatian Citizenship through descent"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+                <div class="lg:w-1/2 relative">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
+                            <img src="/korcula.jpg" alt="Korčula Old Town" class="w-full h-auto">
+                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Korčula, Croatia</h3>
+                                <p class="text-sm opacity-90">Island of History & Beauty</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- Visiting the Cemetery -->
-                <section>
-                    <h2>Visiting the Cemetery</h2>
-                    <p>Our journey culminated at the family cemetery, a serene resting place for generations of my relatives. Standing among the gravestones, I felt a profound connection to those who came before me. The cemetery, nestled amidst olive trees, whispered tales of love, loss, and the unbreakable bonds of family.</p>
-                </section>
-                
-                <!-- Personal Stories -->
-                <section>
-                    <h2>Personal Stories</h2>
-                    <p>During my stay, I stumbled upon a small local festival dedicated to St. Theodore, one of the island’s lesser-known patron saints. The celebration included folk dancing, home-baked pastries, and a lively accordion band that had everyone on their feet. Despite the language barrier, I found myself swirling through a traditional dance with locals cheering me on—an unforgettable moment of community and camaraderie.</p>
-                    <p>On another evening, while wandering the coastal path, I ran into an old fisherman named Petar who invited me aboard his tiny boat at sunrise. He showed me how his family has fished these waters for generations. Over a simple breakfast of freshly caught fish grilled on a portable stove, Petar shared local legends about sea nymphs rumored to guard Korčula's shores—a magical tale that made the island feel even more enchanting.</p>
-                </section>
-                
-                <!-- Reflection -->
-                <section>
-                    <h2>Reflection</h2>
-                    <p>This trip to Korčula was more than a mere vacation; it was a pilgrimage of self-discovery and reconnection. Walking the paths my ancestors once did, meeting family members who carry our shared legacy, and immersing myself in the island's beauty have left an indelible mark on my soul. Korčula has not only enriched my understanding of my heritage but also inspired me to cherish and preserve these familial bonds.</p>
-                </section>
-                
-                <!-- Tips and Recommendations -->
-                <section>
-                    <h2>Tips and Recommendations</h2>
-                    
-                    <h3>Do’s and Don’ts</h3>
-                    <ul>
-                        <li><strong>Do:</strong> Learn a few basic Croatian phrases to enhance your interactions with locals.</li>
-                        <li><strong>Don’t:</strong> Litter or disturb the natural environment. Korčula prides itself on its pristine landscapes.</li>
-                        <li><strong>Do:</strong> Visit during the shoulder seasons (May-June or September-October) for pleasant weather and fewer crowds.</li>
-                        <li><strong>Don’t:</strong> Underestimate the importance of renting a car to fully explore the island's hidden gems.</li>
-                        <li><strong>Do:</strong> Embrace the local cuisine and try traditional dishes for an authentic experience.</li>
-                        <li><strong>Don’t:</strong> Forget to carry some cash, as smaller establishments may prefer cash over cards.</li>
-                    </ul>
-                    
-                    <h3>Packing Lists</h3>
-                    <ul>
-                        <li>Lightweight, quick-dry clothing suitable for warm Mediterranean climates.</li>
-                        <li>Swimwear and beachwear for enjoying Korčula's beautiful beaches.</li>
-                        <li>Comfortable walking shoes or sandals for exploring cobblestone streets.</li>
-                        <li>Hat and sunglasses for sun protection during outdoor activities.</li>
-                        <li>Insect repellent and personal hygiene items.</li>
-                        <li>Reusable water bottle to stay hydrated while touring the island.</li>
-                        <li>Portable charger for your electronic devices.</li>
-                        <li>Light jacket or sweater for cooler evenings.</li>
-                    </ul>
-                    
-                    <h3>Local Etiquette</h3>
-                    <p>Croatian culture values respect and politeness. Here are some local etiquette tips to enhance your visit to Korčula:</p>
-                    <ul>
-                        <li>Always greet with a smile and a friendly "Dobar dan" (Good day).</li>
-                        <li>It's customary to remove your shoes before entering someone's home.</li>
-                        <li>Dress modestly when visiting religious sites or churches.</li>
-                        <li>Public displays of affection are generally acceptable but should remain respectful.</li>
-                        <li>When dining, wait for everyone to be served before starting your meal.</li>
-                    </ul>
-                </section>
-                
-                <!-- Cultural Immersion -->
-                <section>
-                    <h2>Cultural Immersion</h2>
-                    <p>To fully embrace Korčula's rich culture, I engaged in several immersive activities:</p>
-                    <ul>
-                        <li><strong>Winemaking Workshops:</strong> Participating in winemaking sessions at Morellec Winery allowed me to understand the intricate process behind Korčula's esteemed wines.</li>
-                        <li><strong>Traditional Croatian Cooking Classes:</strong> Learning to prepare local dishes with a seasoned chef deepened my appreciation for the island's culinary traditions.</li>
-                        <li><strong>Local Festivals:</strong> Attending traditional festivals provided insights into Korčula's vibrant cultural celebrations and communal spirit.</li>
-                        <li><strong>Historical Tours:</strong> Guided tours of ancient churches, museums, and historical landmarks enriched my understanding of the island's storied past.</li>
-                    </ul>
-                </section>
-                
-                <!-- Food and Cuisine -->
-                <section>
-                    <h2>Food and Cuisine</h2>
-                    <p>Korčula's culinary scene is a delightful mix of fresh seafood, traditional Croatian flavors, and Mediterranean influences. Here are some must-try dishes:</p>
-                    <ul>
-                        <li><strong>Grilled Fish:</strong> Freshly caught fish grilled to perfection and served with a drizzle of olive oil and herbs.</li>
-                        <li><strong>Black Risotto (Crni Rižot):</strong> A savory risotto made with cuttlefish ink, giving it a rich, dark color and unique flavor.</li>
-                        <li><strong>Ćevapčići:</strong> Small, flavorful grilled minced meat sausages served with flatbread and ajvar (red pepper relish).</li>
-                        <li><strong>Brodet (Fish Stew):</strong> A hearty stew made with a variety of fish, tomatoes, and spices, typically served with polenta.</li>
-                        <li><strong>Rozata:</strong> A traditional Dalmatian custard pudding flavored with rose liqueur, perfect for dessert.</li>
-                    </ul>
-                    <p>I highly recommend dining at local konobas (taverns) to savor authentic Korčula flavors and enjoy the island’s lively atmosphere.</p>
-                </section>
-                
-                <!-- Adventure and Activities -->
-                <section>
-                    <h2>Adventure and Activities</h2>
-                    <p>Korčula is a haven for adventure enthusiasts, offering a range of activities:</p>
-                    <ul>
-                        <li><strong>Kayaking:</strong> Explore hidden coves and crystal-clear waters along the island's rugged coastline.</li>
-                        <li><strong>Sailing:</strong> Charter a sailboat to discover the nearby islands and enjoy the serene Adriatic Sea.</li>
-                        <li><strong>Hiking:</strong> Trek through scenic trails that offer panoramic views of the island's lush landscapes and historic sites.</li>
-                        <li><strong>Snorkeling and Diving:</strong> Discover vibrant marine life and underwater landscapes in Korčula's pristine waters.</li>
-                        <li><strong>Historical Tours:</strong> Visit ancient churches, museums, and landmarks that showcase Korčula's rich history and cultural heritage.</li>
-                    </ul>
-                    <p>One of the most thrilling activities was the kayaking expedition along the unspoiled coastline, allowing me to access secluded beaches and observe marine life up close.</p>
-                </section>
-                
-                <!-- About Korčula -->
-                <section>
-                    <h2>About Korčula</h2>
-                    <p><strong>Korčula</strong> is a picturesque island in the Adriatic Sea, known for its lush landscapes, charming medieval architecture, and rich cultural heritage. Often referred to as "Little Dubrovnik," Korčula boasts narrow cobblestone streets, historic churches, and beautiful beaches.</p>
-                    <p>The island is renowned for its winemaking traditions, with numerous vineyards producing high-quality Croatian wines. Visitors can explore scenic trails, enjoy water sports, and immerse themselves in the local culture through festivals and traditional events.</p>
-                </section>
             </div>
-        </section>
-    </main>
-    
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Carl Travels. All rights reserved.</p>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook" loading="lazy">
-                </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram" loading="lazy">
-                </a>
-                <a href="https://www.youtube.com/@CarlTravels" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube" loading="lazy">
-                </a>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section id="article" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Article Content -->
+                <div class="lg:col-span-2">
+                    <div class="text-center mb-16">
+                        <span class="text-blue-500 font-medium mb-2 inline-block">KORČULA TRAVEL GUIDE</span>
+                        <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Your Ultimate Guide to Visiting Korčula, Croatia</h2>
+                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                    </div>
+                    
+                    <div class="prose max-w-none">
+                        <p class="text-gray-600 mb-8">Some places you visit once and never forget. For me, Korčula isn’t just another Croatian island—it’s family history, old-world charm, and some of the best wine and beaches you’ll ever find. I recently spent a few unforgettable days exploring Korčula with friends, tracing family roots, and discovering why this island deserves a spot on your Croatian itinerary. Here’s everything you need to know about getting there, where to stay, what to see, and why 4 nights is the perfect amount of time on this magical island.</p>
+                        
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-blue-500"></i> How to Get to Korčula</h2>
+                        <p class="text-gray-600 mb-4">From Dubrovnik, we took a ferry to Korčula Town. The ferry ride takes about 2 hours. Tickets cost around €16–€22 depending on the operator (we used <a href="https://www.krilo.hr/en/" target="_blank" class="text-blue-500 hover:text-blue-600">Kapetan Luka (Krilo)</a> fast ferry service). You can easily book your tickets online in advance or buy them at the port.</p>
+                        <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro tip:</span> Book early in peak season, especially if you're traveling with a group. Ferry prices and availability may vary, so check schedules in advance.</p>
+                        
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-blue-500"></i> Where to Stay on Korčula</h2>
+                        <p class="text-gray-600 mb-4">We stayed at <a href="https://www.booking.com" target="_blank" class="text-blue-500 hover:text-blue-600">Apartments Filippi</a> in Korčula Town:</p>
+                        <ul class="list-disc pl-6 mb-4 text-gray-600">
+                            <li><strong>📍 Address:</strong> Korčulanskih domobrana 52, 20260 Korčula, Croatia</li>
+                            <li>It was a perfect apartment for a group (there were five of us).</li>
+                            <li>Spacious, clean, affordable, and just a 5–10 minute walk into Old Town.</li>
+                            <li>The owner was super friendly and helpful—highly recommend if you're traveling with friends or family.</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4"><strong>🌟 Bonus:</strong> Having a kitchen and living space made it easy to enjoy a few wines at home after a long day of exploring.</p>
+                        
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-wine-glass mr-2 text-blue-500"></i> First Stop: Lunch and Wine by the Sea</h2>
+                        <p class="text-gray-600 mb-4">After checking in, we wandered into the Old Town and had a late lunch at <a href="https://www.pensatore.hr/" target="_blank" class="text-blue-500 hover:text-blue-600">Pensatore Kitchen & Wine</a>. It’s right on the waterfront with stunning ocean views. The food was absolutely incredible—fresh seafood, hearty local dishes, and of course, Korčula's famous wine. Honestly? One of the best meals I had in Croatia.</p>
+                        
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-umbrella-beach mr-2 text-blue-500"></i> Beaches and Relaxation</h2>
+                        <p class="text-gray-600 mb-4">During our stay, we found some great beach spots to unwind:</p>
+                        <ul class="list-disc pl-6 mb-4 text-gray-600">
+                            <li><strong>Luka Korčulanska Beach:</strong> A fantastic place to swim, relax, and enjoy a low-key day close to town.</li>
+                            <li><strong>Žitna Beach:</strong> Later during our road trip around the island, we found this hidden gem near the town of Čara. Crystal-clear water and fewer crowds make it a perfect local escape.</li>
+                        </ul>
+                        
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-landmark mr-2 text-blue-500"></i> Exploring Korčula Old Town</h2>
+                        <img src="/korculalogo.jpg" alt="Korčula Old Town" class="w-full max-w-md rounded-xl shadow-lg mx-auto mb-6">
+                        <p class="text-gray-600 mb-4">Of course, no visit is complete without exploring Korčula Old Town:</p>
+                        <ul class="list-disc pl-6 mb-4 text-gray-600">
+                            <li>Narrow stone alleyways.</li>
+                            <li>Venetian architecture.</li>
+                            <li>Ancient churches and charming little wine bars.</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">The Old Town feels like a smaller, more relaxed version of Dubrovnik—without the overwhelming tourist crowds. <span class="text-blue-500 font-medium">💡 Fun fact:</span> Korčula is often called "Little Dubrovnik" because of its fortified walls and medieval layout.</p>
+                        <div class="w-full max-w-2xl mx-auto mb-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Watch My Korčula Old Town Adventure</h3>
+                            <div class="relative w-full aspect-video">
+                                <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/VIDEO_ID" title="Korčula Old Town Tour with Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-gray-600 text-sm mt-2">Check out more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a>!</p>
+                        </div>
+                        
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-car mr-2 text-blue-500"></i> Hiring a Car to Explore More of the Island</h2>
+                        <p class="text-gray-600 mb-4">Korčula isn’t huge, but hiring a car is the best way to see beyond the main town. We rented a small car and:</p>
+                        <ul class="list-disc pl-6 mb-4 text-gray-600">
+                            <li>Drove to Čara, the town where my family originally comes from.</li>
+                            <li>Visited local wineries and even met distant relatives!</li>
+                            <li>Found great local wines (Pošip is the specialty) and a much quieter, authentic Croatian vibe.</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">We then continued on to Vela Luka:</p>
+                        <ul class="list-disc pl-6 mb-4 text-gray-600">
+                            <li>A lovely old town with a stunning promenade.</li>
+                            <li>Great spots to swim.</li>
+                            <li>Fantastic seafood restaurants.</li>
+                        </ul>
+                        <p class="text-gray-600 mb-4">Vela Luka feels more local and laid-back compared to Korčula Town—a perfect day trip. <span class="text-blue-500 font-medium">💡 Tip:</span> Check rental car agencies in Korčula Town for availability and book in advance during peak season.</p>
+                        
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-blue-500"></i> Getting Off the Island: Ferry to Split</h2>
+                        <p class="text-gray-600 mb-4">After four amazing nights on Korčula, we caught a ferry from Vela Luka to Split. Tickets are easy to book the day before or even the day of (depending on the season). Another simple, affordable ferry ride.</p>
+                        <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Tip:</span> If you’re flexible, you can also check for high-speed catamarans for quicker travel.</p>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Korčula Highlights</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li><i class="fas fa-landmark mr-2 text-blue-500"></i> Korčula Old Town’s medieval charm</li>
+                            <li><i class="fas fa-umbrella-beach mr-2 text-blue-500"></i> Luka Korčulanska & Žitna Beaches</li>
+                            <li><i class="fas fa-wine-glass mr-2 text-blue-500"></i> Pošip wine tasting in Čara</li>
+                            <li><i class="fas fa-utensils mr-2 text-blue-500"></i> Seafood at Pensatore Kitchen & Wine</li>
+                            <li><i class="fas fa-car mr-2 text-blue-500"></i> Day trip to Vela Luka</li>
+                            <li><i class="fas fa-ferry mr-2 text-blue-500"></i> Easy ferries to Dubrovnik & Split</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
+                        <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
+                        <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                            <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_gotcha" style="display:none">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                                Subscribe <i class="fas fa-paper-plane ml-1"></i>
+                            </button>
+                        </form>
+                        <p class="text-gray-500 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="destinations.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                            More Destinations <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Final Thoughts -->
+            <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-blue-500"></i> Final Thoughts</h2>
+                <p class="text-gray-600 mb-4">Korčula is special. It’s not just beaches and old towns (although those are pretty incredible)—it’s history, wine, and local soul.</p>
+                <p class="text-gray-600 mb-4">Four nights is the sweet spot: enough time to see the main highlights, relax at beaches, explore hidden corners, and drink your way through some vineyards.</p>
+                <p class="text-gray-600 mb-4">If you’re doing a Croatia trip that includes Dubrovnik and Split, make sure you carve out time for Korčula. It’s not just a destination—it’s a feeling you’ll want to return to.</p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-gray-300 overflow-hidden mr-3">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author Carl Tomich" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-sm text-gray-700">Carl Tomich</span>
+                    </div>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                        </div>
+                        <span class="heading-font">Carl Travels</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                        <li><a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="Berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
+                        <li><a href="melbournetravelguide.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
+                        <li><a href="cairnstravelguide.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
+                        <li><a href="phuketravelguide.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
+                        <li><a href="hanoiguide.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
+                        <li><a href="osakatravelguide.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                        <li><a href="korculaguide.html" class="text-gray-400 hover:text-white transition-colors">Korčula</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                    </p>
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Carl Travels. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript with Error Handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Mobile Menu Toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', function() {
+                        mobileMenu.classList.toggle('open');
+                        this.querySelector('i').classList.toggle('fa-bars');
+                        this.querySelector('i').classList.toggle('fa-times');
+                    });
+                }
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"], a[href*="index.html#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const href = this.getAttribute('href');
+                        if (href === '#') return;
+
+                        if (href.includes('index.html#')) {
+                            window.location.href = href; // Navigate to index.html with hash
+                        } else {
+                            const id = href.substring(1);
+                            const el = document.querySelector(`#${id}`);
+                            if (el) {
+                                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                                    mobileMenu.classList.remove('open');
+                                    if (mobileMenuButton) {
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+                                    }
+                                }
+                                window.scrollTo({
+                                    top: el.offsetTop - 80,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+
+                // Navbar scroll effect
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 50) {
+                            navbar.classList.add('scrolled');
+                        } else {
+                            navbar.classList.remove('scrolled');
+                        }
+                    });
+                }
+
+                // Back to top button
+                const backToTopButton = document.getElementById('back-to-top');
+                if (backToTopButton) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 300) {
+                            backToTopButton.classList.remove('opacity-0', 'invisible');
+                            backToTopButton.classList.add('opacity-100', 'visible');
+                        } else {
+                            backToTopButton.classList.remove('opacity-100', 'visible');
+                            backToTopButton.classList.add('opacity-0', 'invisible');
+                        }
+                    });
+                    backToTopButton.addEventListener('click', function() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            } catch (error) {
+                console.error('JavaScript Error in korculaguide.html:', error);
+            }
+        });
+    </script>
 </body>
 </html>
