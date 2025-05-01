@@ -367,7 +367,7 @@
                         <a href="https://youtu.be/uU8ZnALVtlA" target="_blank">
                             <img src="https://img.youtube.com/vi/uU8ZnALVtlA/maxresdefault.jpg" alt="Tokyo Nightlife Adventure" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                                <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
+                                <div class="play-icon-w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
                                     <i class="fas fa-play text-blue-600 text-xl"></i>
                                 </div>
                             </div>
@@ -425,7 +425,7 @@
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 gap-8">
                 <!-- Featured Blog Post -->
                 <div class="lg:col-span-2">
                     <div class="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-lg">
@@ -452,41 +452,63 @@
                     </div>
                 </div>
                 
-                <!-- Blog Post 1 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48">
-                        <img src="/japanonbudget.jpg" alt="Blog Post" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="text-gray-500 text-sm">May 28, 2023</span>
-                            <span class="mx-2 text-gray-300">•</span>
-                            <span class="text-gray-500 text-sm">8 min read</span>
+                <!-- Smaller Blog Posts -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Post 1: Japan on a Budget -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                        <div class="h-48">
+                            <img src="/japanonbudget.jpg" alt="Blog Post" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">Japan on a Budget</h3>
-                        <p class="text-gray-600 mb-4">People thought Japan can be expensive, here I break down several of my tips and tricks to save money and have a better experience on a budget...</p>
-                        <a href="japanonabudget.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Blog Post 2 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48">
-                        <img src="/budgetravel.jpg" alt="Blog Post" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="text-gray-500 text-sm">April 10, 2025</span>
-                            <span class="mx-2 text-gray-300">•</span>
-                            <span class="text-gray-500 text-sm">7 min read</span>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="text-gray-500 text-sm">May 28, 2023</span>
+                                <span class="mx-2 text-gray-300">•</span>
+                                <span class="text-gray-500 text-sm">8 min read</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Japan on a Budget</h3>
+                            <p class="text-gray-600 mb-4">People thought Japan can be expensive, here I break down several of my tips and tricks to save money and have a better experience on a budget...</p>
+                            <a href="japanonabudget.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">My Top 10 Tips to Travel on a Budget</h3>
-                        <p class="text-gray-600 mb-4">How to save the most money on bank fees, flights, hotels, and more...</p>
-                        <a href="mytop10travelhacks.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
+                    </div>
+                    
+                    <!-- Blog Post 2: My Top 10 Tips to Travel on a Budget -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                        <div class="h-48">
+                            <img src="/budgetravel.jpg" alt="Blog Post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="text-gray-500 text-sm">April 10, 2025</span>
+                                <span class="mx-2 text-gray-300">•</span>
+                                <span class="text-gray-500 text-sm">7 min read</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">My Top 10 Tips to Travel on a Budget</h3>
+                            <p class="text-gray-600 mb-4">How to save the most money on bank fees, flights, hotels, and more...</p>
+                            <a href="mytop10travelhacks.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 3: My Essential Travel Filmmaking Kit (2025) -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                        <div class="h-48">
+                            <img src="/travel-gear.jpg" alt="Blog Post" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="text-gray-500 text-sm">May 1, 2025</span>
+                                <span class="mx-2 text-gray-300">•</span>
+                                <span class="text-gray-500 text-sm">10 min read</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">My Essential Travel Filmmaking Kit (2025)</h3>
+                            <p class="text-gray-600 mb-4">Unpack my 2025 travel filmmaking kit, from the Sony A7C II to the DJI Osmo Pocket 3, and see how it all fits in one backpack.</p>
+                            <a href="travel-gear-2025.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
