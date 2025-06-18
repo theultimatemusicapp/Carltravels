@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia's Dating Profile | Definitely Not Carlito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef6f6;
+        }
+        
+        .profile-card {
+            box-shadow: 0 10px 30px -10px rgba(255, 105, 180, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px -10px rgba(255, 105, 180, 0.4);
+        }
+        
+        .photo-gallery {
+            scrollbar-width: none; /* Firefox */
+        }
+        
+        .photo-gallery::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+        
+        .interest-chip {
+            transition: all 0.2s ease;
+        }
+        
+        .interest-chip:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+            overflow: hidden;
+        }
+        
+        .heart {
+            position: absolute;
+            opacity: 0;
+            animation: float-up 4s ease-in-out forwards;
+        }
+        
+        @keyframes float-up {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-pink-50 to-rose-50">
+    <div class="floating-hearts" id="hearts-container"></div>
+    
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <!-- Header with wink wink hint -->
+      <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-rose-600 font-playfair mb-2">Meet Sophia</h1>
+          <p class="text-rose-400 italic">(Definitely not a man named Carl who's great at Photoshop... wink wink)</p>
+        </div>
+        
+        <!-- Main Profile Card -->
+        <div class="profile-card bg-white rounded-3xl overflow-hidden mb-8">
+            <!-- Photo Gallery -->
+            <div class="photo-gallery relative h-80 md:h-96 bg-gradient-to-r from-rose-100 to-pink-100 flex overflow-x-auto snap-x snap-mandatory">
+                <!-- Photo 1 - Snowboarding -->
+                <div class="min-w-full snap-start relative">
+                    <img src="sophiascam.jpgixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Sophia snowboarding" 
+                         class="w-full h-full object-cover object-center">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                        <p class="text-white font-semibold">Snowboarding in the Alps</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-white/80 rounded-full p-2">
+                        <i class="fas fa-snowflake text-blue-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Photo 2 - Yoga -->
+                <div class="min-w-full snap-start relative">
+                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Sophia doing yoga" 
+                         class="w-full h-full object-cover object-center">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                        <p class="text-white font-semibold">Morning yoga session</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-white/80 rounded-full p-2">
+                        <i class="fas fa-spa text-green-500"></i>
+                    </div>
+                </div>
+                
+                <!-- Photo 3 - Cocktails -->
+                <div class="min-w-full snap-start relative">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc1c30d6b49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Sophia with cocktails" 
+                         class="w-full h-full object-cover object-center">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                        <p class="text-white font-semibold">Crafting the perfect cocktail</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-white/80 rounded-full p-2">
+                        <i class="fas fa-cocktail text-purple-500"></i>
+                    </div>
+                </div>
+                
+                <!-- Photo 4 - Bali -->
+                <div class="min-w-full snap-start relative">
+                    <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d17199?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80" 
+                         alt="Sophia in Bali" 
+                         class="w-full h-full object-cover object-center">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                        <p class="text-white font-semibold">Sunset in Bali</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-white/80 rounded-full p-2">
+                        <i class="fas fa-umbrella-beach text-yellow-500"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Profile Info -->
+            <div class="p-6 md:p-8">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 font-playfair">Sophia, 28</h2>
+                        <p class="text-rose-500"><i class="fas fa-map-marker-alt mr-2"></i> New York (but always traveling)</p>
+                    </div>
+                    <div class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-sm font-medium">
+                        <i class="fas fa-check-circle mr-1"></i> Verified
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 font-playfair">About Me</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Adventurous spirit with a love for the mountains and beaches alike. 
+                        I'm passionate about snowboarding down fresh powder, crafting the perfect cocktail, 
+                        finding zen through yoga, and chasing sunsets in Bali. 
+                        Looking for someone to share these experiences with (and no, I didn't Photoshop these photos myself... 
+                        that would be weird, right Carlito? 😉).
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 font-playfair">Interests</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="interest-chip bg-blue-100 text-blue-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-snowboarding mr-2"></i> Snowboarding
+                        </div>
+                        <div class="interest-chip bg-purple-100 text-purple-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-cocktail mr-2"></i> Mixology
+                        </div>
+                        <div class="interest-chip bg-green-100 text-green-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-spa mr-2"></i> Yoga
+                        </div>
+                        <div class="interest-chip bg-yellow-100 text-yellow-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-umbrella-beach mr-2"></i> Bali
+                        </div>
+                        <div class="interest-chip bg-pink-100 text-pink-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-plane mr-2"></i> Travel
+                        </div>
+                        <div class="interest-chip bg-indigo-100 text-indigo-600 px-4 py-2 rounded-full">
+                            <i class="fas fa-camera mr-2"></i> Photography
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 font-playfair">Looking For</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Someone who appreciates adventure and relaxation in equal measure. 
+                        Must be willing to join me on the slopes, at the beach, or at home mixing drinks. 
+                        Bonus points if you can teach me something new (Photoshop skills not required... or are they? 😏).
+                    </p>
+                </div>
+                
+                <div class="flex justify-center space-x-4 pt-4">
+                    <button class="bg-rose-500 hover:bg-rose-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition-all transform hover:scale-105">
+                        <i class="fas fa-heart mr-2"></i> Like
+                    </button>
+                    <button id="super-like" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition-all transform hover:scale-105">
+                        <i class="fas fa-star mr-2"></i> Super Like
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Playful disclaimer -->
+        <div class="text-center text-sm text-gray-500 italic">
+            <p>* All photos are 100% real and definitely not edited by anyone named Carlito</p>
+            <p>** No men were harmed in the making of this profile</p>
+        </div>
+    </div>
+
+    <script>
+        // Floating hearts animation for super like
+        document.getElementById('super-like').addEventListener('click', function() {
+            createHearts(15);
+            
+            // Show a playful alert
+            setTimeout(() => {
+                alert("Carlito, is that you? 😘");
+            }, 1000);
+        });
+        
+        function createHearts(count) {
+            const container = document.getElementById('hearts-container');
+            
+            for (let i = 0; i < count; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = '❤️';
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.top = Math.random() * 100 + '%';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                
+                container.appendChild(heart);
+                
+                // Remove heart after animation
+                setTimeout(() => {
+                    heart.remove();
+                }, 4000);
+            }
+        }
+        
+        // Add some random hearts on load for fun
+        window.addEventListener('load', () => {
+            createHearts(3);
+        });
+    </script>
+</body>
+</html>
