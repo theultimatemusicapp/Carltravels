@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carl Travels - Adventure Awaits</title>
+    <title>Carl Tomich - Cinematic Journeys</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
     <script>
@@ -14,161 +14,162 @@
     </script>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Join Carl Travels on unforgettable journeys to breathtaking destinations. Explore travel vlogs, guides, and stories from around the world.">
-    <meta name="keywords" content="Carl Travels, Travel Vlogs, Destinations, Travel Stories, Digital Nomad, Adventure Travel">
-    <meta name="author" content="Carl Ostomich">
+    <meta name="description" content="Join Carl Tomich on a cinematic journey blending travel, tech, and filmmaking. Explore stunning films, travel stories, and gear reviews.">
+    <meta name="keywords" content="Carl Tomich, Travel Filmmaker, Cinematic Travel, Tech Reviews, Film Portfolio, Adventure Stories">
+    <meta name="author" content="Carl Tomich">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Carl Travels - Adventure Awaits">
-    <meta property="og:description" content="Discover the world with Carl Travels through stunning travel vlogs, destination guides, and inspiring stories.">
-    <meta property="og:image" content="https://www.carltravels.com/images/home-og-image.jpg">
+    <meta property="og:title" content="Carl Tomich - Cinematic Journeys">
+    <meta property="og:description" content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
+    <meta property="og:image" content="https://www.carltravels.com/images/cinematic-og-image.jpg">
     <meta property="og:url" content="https://www.carltravels.com/index.html">
     <meta property="og:type" content="website">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Carl Travels - Adventure Awaits">
-    <meta name="twitter:description" content="Discover the world with Carl Travels through stunning travel vlogs, destination guides, and inspiring stories.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/home-twitter-image.jpg">
+    <meta name="twitter:title" content="Carl Tomich - Cinematic Journeys">
+    <meta name="twitter:description" content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
+    <meta name="twitter:image" content="https://www.carltravels.com/images/cinematic-twitter-image.jpg">
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
-        
+
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.7;
         }
-        
+
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 2px;
         }
-        
-        .destination-card {
+
+        .portfolio-card {
             transition: all 0.3s ease;
-            perspective: 1000px;
+            overflow: hidden;
         }
-        
-        .destination-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+        .portfolio-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
         }
-        
-        .destination-card-inner {
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-        
-        .destination-card:hover .destination-card-inner {
-            transform: rotateY(10deg);
-        }
-        
-        .video-card:hover .play-icon {
-            transform: scale(1.2);
-            opacity: 0.9;
-        }
-        
+
         .parallax {
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-        
+
         .navbar {
             backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(26, 26, 26, 0.9);
             transition: all 0.3s ease;
         }
-        
+
         .navbar.scrolled {
-            background-color: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         }
-        
-        .testimonial-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
-            backdrop-filter: blur(5px);
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease forwards;
         }
-        
-        .floating {
-            animation: floating 6s ease-in-out infinite;
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
         }
-        
-        @keyframes floating {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        .wave-shape {
+
+        .hover-overlay {
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        
-        .wave-shape svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 150px;
+
+        .portfolio-card:hover .hover-overlay {
+            opacity: 1;
         }
-        
-        .wave-shape .shape-fill {
-            fill: #FFFFFF;
-        }
-        
+
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-out;
         }
-        
+
         .mobile-menu.open {
             max-height: 500px;
         }
+
+        .responsive-video {
+            position: relative;
+            overflow: hidden;
+            padding-top: 41.67%; /* Adjusted for 1920x800 aspect ratio */
+            width: 100%;
+            background-color: var(--dark);
+            margin-bottom: 1rem; /* Reduced spacing below video */
+        }
+
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-300">
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
-                        <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-camera text-black text-lg"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Tomich</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Portfolio</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="#about" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
-                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -176,623 +177,314 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Destinations</a>
+                    <a href="portfolio.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Portfolio</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Blog</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">About</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient relative overflow-hidden min-h-screen flex items-center pt-20">
-        <div class="wave-shape">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        
-        <div class="container mx-auto px-6 py-20 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
-                    <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                        Discover the World <br>With <span class="text-yellow-300">Carl Travels</span>
-                    </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
-                        Join me on unforgettable journeys to the most breathtaking destinations around the globe. From hidden gems to iconic landmarks, let's explore together.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#destinations" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
-                            Explore Destinations
-                        </a>
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
-                            Watch Videos <i class="fas fa-play ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="lg:w-1/2 relative">
-                    <div class="relative max-w-md mx-auto">
-                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
-                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
-                            <img src="/berlinworld.jpg" alt="Travel Adventure" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
-                            <div class="absolute bottom-0 left-0 p-6 text-white">
-                                <h3 class="text-xl font-bold">Nomad Adventure</h3>
-                                <p class="text-sm opacity-90">Exploring the World</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="relative overflow-hidden min-h-screen flex items-center justify-center pt-20">
+        <video class="hero-video" autoplay muted loop>
+            <source src="/cinematic-reel.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center fade-in">
+            <div class="responsive-video">
+                <iframe src="https://www.youtube.com/embed/Ef3u83dqN1Y?autoplay=1&mute=1&modestbranding=1&controls=0&showinfo=0&loop=1&playlist=Ef3u83dqN1Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h1 class="heading-font text-5xl md:text-7xl font-bold text-white mb-4 mt-4">
+                Cinematic Journeys <br>With <span class="text-yellow-500">Carl Tomich</span>
+            </h1>
+            <p class="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
+                Filmmaker, traveler, and tech enthusiast. Join me on a visual odyssey through breathtaking destinations and cutting-edge gear.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="portfolio.html" class="px-8 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all shadow-lg">
+                    View Portfolio
+                </a>
+                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="px-8 py-3 border-2 border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
+                    Watch Videos <i class="fas fa-play ml-2"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Featured Destinations -->
-    <section id="destinations" class="py-20 bg-white">
+    <section id="destinations" class="py-20 bg-dark">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">EXPLORE THE WORLD</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Featured Destinations</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            <div class="text-center mb-16 fade-in">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL STORIES</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Cinematic Destinations</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Destination 1 -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="destination-card-inner">
-                        <div class="relative overflow-hidden h-64">
-                            <img src="fnqwaterfall.jpg" alt="Australia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                            <div class="absolute bottom-0 left-0 p-6 text-white">
-                                <h3 class="text-xl font-bold">Australia</h3>
-                                <p class="text-sm">Far North Queensland</p>
-                            </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="fnqwaterfall.jpg" alt="Australia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Australia</h3>
+                            <p class="text-sm">Far North Queensland</p>
                         </div>
-                        <div class="p-6 bg-white">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Oceania</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.9</span>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 mb-4">Explore the stunning Great Barrier Reef and lush Daintree Rainforest in this tropical paradise.</p>
-                            <a href="farnorthqueenslandtravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
-                                View Details <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
+                    </div>
+                    <div class="p-6 bg-secondary">
+                        <p class="text-gray-300 mb-4">Captured the Great Barrier Reef and Daintree Rainforest with my Sony A7S III.</p>
+                        <a href="farnorthqueenslandtravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- Destination 2 -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="destination-card-inner">
-                        <div class="relative overflow-hidden h-64">
-                            <img src="/japanfront.jpg" alt="Japan" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                            <div class="absolute bottom-0 left-0 p-6 text-white">
-                                <h3 class="text-xl font-bold">Japan</h3>
-                                <p class="text-sm">Kyoto & Tokyo</p>
-                            </div>
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="/japanfront.jpg" alt="Japan" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Japan</h3>
+                            <p class="text-sm">Kyoto & Tokyo</p>
                         </div>
-                        <div class="p-6 bg-white">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 mb-4">Experience the perfect blend of ancient traditions and cutting-edge technology in the Land of the Rising Sun.</p>
-                            <a href="destinations.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
-                                View Details <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
+                    </div>
+                    <div class="p-6 bg-secondary">
+                        <p class="text-gray-300 mb-4">Filmed Tokyo’s neon nights using drone shots and gimbal work.</p>
+                        <a href="destinations.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- Destination 3 -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="destination-card-inner">
-                        <div class="relative overflow-hidden h-64">
-                            <img src="/amalficoastlogo.jpg" alt="Italy" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                            <div class="absolute bottom-0 left-0 p-6 text-white">
-                                <h3 class="text-xl font-bold">Italy</h3>
-                                <p class="text-sm">Amalfi Coast</p>
-                            </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Popular</span>
-                        </div>
-                        <div class="p-6 bg-white">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.7</span>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 mb-4">Discover breathtaking coastal views, delicious cuisine, and rich history along Italy's stunning shoreline.</p>
-                            <a href="destinations.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
-                                View Details <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="/amalficoastlogo.jpg" alt="Italy" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Italy</h3>
+                            <p class="text-sm">Amalfi Coast</p>
                         </div>
                     </div>
+                    <div class="p-6 bg-secondary">
+                        <p class="text-gray-300 mb-4">Shot coastal vistas with my Canon C70 for a wedding film.</p>
+                        <a href="destinations.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="destinations.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
-                    View All Destinations <i class="fas fa-arrow-right ml-2"></i>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Video Section -->
-    <section id="videos" class="py-20 bg-gray-50">
+    <!-- Tech Reviews Section -->
+    <section id="tech" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL VLOGS</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Latest Travel Videos</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            <div class="text-center mb-16 fade-in">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">GEAR INSIGHTS</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Tech Reviews</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Video 1 -->
-                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                <!-- Tech Review 1 -->
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-48">
-                        <a href="https://youtu.be/31idWwYdPIc" target="_blank">
-                            <img src="https://img.youtube.com/vi/31idWwYdPIc/maxresdefault.jpg" alt="Hanoi's Famous Train Street" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                                <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
-                                    <i class="fas fa-play text-blue-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">10:45</span>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">Hanoi's Famous Train Street</h3>
-                        <p class="text-gray-600 text-sm mb-4">Embark on a thrilling adventure through Hanoi's iconic Train Street, where trains speed by just inches away in a vibrant, picturesque setting!</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-eye mr-2"></i> 24.5K views
-                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 2 weeks ago
+                        <img src="/sony-a7siii.jpg" alt="Sony A7S III" class="w-full h-full object-cover">
+                        <div class="hover-overlay">
+                            <a href="tech-review-sony-a7siii.html" class="text-white font-bold text-lg">Read Review</a>
                         </div>
+                    </div>
+                    <div class="p-6 bg-dark">
+                        <h3 class="text-lg font-bold text-white mb-2">Sony A7S III</h3>
+                        <p class="text-gray-300 text-sm mb-4">The ultimate low-light camera for cinematic travel films.</p>
                     </div>
                 </div>
                 
-                <!-- Video 2 -->
-                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                <!-- Tech Review 2 -->
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-48">
-                        <a href="https://youtu.be/uU8ZnALVtlA" target="_blank">
-                            <img src="https://img.youtube.com/vi/uU8ZnALVtlA/maxresdefault.jpg" alt="Tokyo Nightlife Adventure" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                                <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
-                                    <i class="fas fa-play text-blue-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">18:22</span>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">Tokyo Nightlife Adventure</h3>
-                        <p class="text-gray-600 text-sm mb-4">Experience the vibrant nightlife of Tokyo's famous districts.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-eye mr-2"></i> 45.2K views
-                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 1 month ago
+                        <img src="/dji-mavic3.jpg" alt="DJI Mavic 3" class="w-full h-full object-cover">
+                        <div class="hover-overlay">
+                            <a href="tech-review-dji-mavic3.html" class="text-white font-bold text-lg">Read Review</a>
                         </div>
+                    </div>
+                    <div class="p-6 bg-dark">
+                        <h3 class="text-lg font-bold text-white mb-2">DJI Mavic 3</h3>
+                        <p class="text-gray-300 text-sm mb-4">Aerial shots that elevate your travel storytelling.</p>
                     </div>
                 </div>
                 
-                <!-- Video 3 -->
-                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                <!-- Tech Review 3 -->
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-48">
-                        <a href="https://youtu.be/NPpCfDRM2PY" target="_blank">
-                            <img src="https://img.youtube.com/vi/NPpCfDRM2PY/maxresdefault.jpg" alt="Korcula, Croatia" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                                <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
-                                    <i class="fas fa-play text-blue-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">15:30</span>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">Korcula, Croatia</h3>
-                        <p class="text-gray-600 text-sm mb-4">Discover my family's hometown of Korcula, a hidden oasis along the Dalmatian Coast, brimming with history and charm.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-eye mr-2"></i> 32.7K views
-                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 3 weeks ago
+                        <img src="/zhiyun-gimbal.jpg" alt="Zhiyun Weebill 2" class="w-full h-full object-cover">
+                        <div class="hover-overlay">
+                            <a href="tech-review-zhiyun-weebill2.html" class="text-white font-bold text-lg">Read Review</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Video 4 -->
-                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
-                    <div class="relative overflow-hidden h-48">
-                        <a href="https://youtu.be/IUZE9UIDvc4" target="_blank">
-                            <img src="https://img.youtube.com/vi/IUZE9UIDvc4/maxresdefault.jpg" alt="The Cost of Living in Hanoi" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                                <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
-                                    <i class="fas fa-play text-blue-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">12:15</span>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">The Cost of Living in Hanoi</h3>
-                        <p class="text-gray-600 text-sm mb-4">A detailed breakdown of the cost of living in Hanoi, from accommodation to street food, perfect for digital nomads and travelers.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-eye mr-2"></i> 18.3K views
-                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 1 week ago
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Video 5 -->
-                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
-                    <div class="relative overflow-hidden h-48">
-                        <a href="https://youtu.be/VIhF9IOX2Rw" target="_blank">
-                            <img src="https://img.youtube.com/vi/VIhF9IOX2Rw/maxresdefault.jpg" alt="The Cost of Living in Da Nang" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                                <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
-                                    <i class="fas fa-play text-blue-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">14:20</span>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">The Cost of Living in Da Nang</h3>
-                        <p class="text-gray-600 text-sm mb-4">Explore the affordability of Da Nang, Vietnam, with insights on housing, dining, and daily expenses for expats and nomads.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-eye mr-2"></i> 22.1K views
-                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 2 weeks ago
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Video 6 -->
-                <div class="video-card bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-xl">
-                    <div class="relative overflow-hidden h-48">
-                        <a href="https://youtu.be/Sxhe1_AQSNA" target="_blank">
-                            <img src="https://img.youtube.com/vi/Sxhe1_AQSNA/maxresdefault.jpg" alt="The Truth about Living in Bali" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                                <div class="play-icon w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center transition-transform duration-300">
-                                    <i class="fas fa-play text-blue-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">20:10</span>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-gray-800 mb-2">The Truth about Living in Bali</h3>
-                        <p class="text-gray-600 text-sm mb-4">Uncover the realities of living in Bali as a digital nomad, including hidden challenges and tips they don't tell you.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-eye mr-2"></i> 35.8K views
-                            <i class="fas fa-calendar-alt ml-4 mr-2"></i> 1 month ago
-                        </div>
+                    <div class="p-6 bg-dark">
+                        <h3 class="text-lg font-bold text-white mb-2">Zhiyun Weebill 2</h3>
+                        <p class="text-gray-300 text-sm mb-4">Smooth gimbal for dynamic filmmaking on the go.</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="text-center mt-12">
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
-                    <i class="fab fa-youtube mr-2"></i> Visit YouTube Channel
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Travel Blog -->
-    <section id="blog" class="py-20 bg-white">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL STORIES</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Latest From The Blog</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            <div class="text-center mb-16 fade-in">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">MY FILMMAKING</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Film Portfolio</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
             
-            <div class="grid grid-cols-1 gap-8">
-                <!-- Featured Blog Post -->
-                <div class="lg:col-span-2">
-                    <div class="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-lg">
-                        <div class="md:w-1/2 h-80">
-                            <img src="/fnqwaterfall.jpg" alt="Blog Post" class="w-full h-full object-cover">
-                        </div>
-                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
-                            <div class="flex items-center mb-4">
-                                <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full mr-3">Featured</span>
-                                <span class="text-gray-500 text-sm">June 15, 2023</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-3">10 Hidden Gems in Far North Queensland</h3>
-                            <p class="text-gray-600 mb-4">Discover the lesser-known but equally stunning locations in Australia's tropical north that most tourists miss...</p>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center">
-                                    <div class="w-8 h-8 rounded-full bg-gray-300 overflow-hidden mr-3">
-                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author" class="w-full h-full object-cover">
-                                    </div>
-                                    <span class="text-sm text-gray-700">Carl Tomich</span>
-                                </div>
-                                <a href="farnorthqueenslandtravelguide.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
-                            </div>
-                        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/placeholder1" title="Wedding Film" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="hover-overlay">
+                        <a href="portfolio.html#wedding1" class="text-white font-bold text-lg">View Wedding Film</a>
                     </div>
                 </div>
                 
-                <!-- Smaller Blog Posts -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog Post 1: Japan on a Budget -->
-                    <div class="bg-white rounded-xl overflow-hidden shadow-lg">
-                        <div class="h-48">
-                            <img src="/japanonbudget.jpg" alt="Blog Post" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-3">
-                                <span class="text-gray-500 text-sm">May 28, 2023</span>
-                                <span class="mx-2 text-gray-300">•</span>
-                                <span class="text-gray-500 text-sm">8 min read</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">Japan on a Budget</h3>
-                            <p class="text-gray-600 mb-4">People thought Japan can be expensive, here I break down several of my tips and tricks to save money and have a better experience on a budget...</p>
-                            <a href="japanonabudget.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
-                                Read More <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/placeholder2" title="Commercial" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="hover-overlay">
+                        <a href="portfolio.html#commercial1" class="text-white font-bold text-lg">View Commercial</a>
                     </div>
-                    
-                    <!-- Blog Post 2: My Top 10 Tips to Travel on a Budget -->
-                    <div class="bg-white rounded-xl overflow-hidden shadow-lg">
-                        <div class="h-48">
-                            <img src="/budgetravel.jpg" alt="Blog Post" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-3">
-                                <span class="text-gray-500 text-sm">April 10, 2025</span>
-                                <span class="mx-2 text-gray-300">•</span>
-                                <span class="text-gray-500 text-sm">7 min read</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">My Top 10 Tips to Travel on a Budget</h3>
-                            <p class="text-gray-600 mb-4">How to save the most money on bank fees, flights, hotels, and more...</p>
-                            <a href="mytop10travelhacks.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
-                                Read More <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 3: Croatian Citizenship -->
-                    <div class="bg-white rounded-xl overflow-hidden shadow-lg">
-                        <div class="h-48">
-                            <img src="/korculalogo.jpg" alt="Croatian Citizenship" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-3">
-                                <span class="text-gray-500 text-sm">July 16, 2025</span>
-                                <span class="mx-2 text-gray-300">•</span>
-                                <span class="text-gray-500 text-sm">10 min read</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">How I Applied for Croatian Citizenship by Descent Through My Grandfather</h3>
-                            <p class="text-gray-600 mb-4">Follow my journey to claim Croatian citizenship through my grandfather, Jakov Tomic, with tips and steps for your application...</p>
-                            <a href="how-to-get-croatian-citizenship-through-your-grandparent.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
-                                Read More <i class="fas fa-arrow-right ml-1"></i>
-                            </a>
-                        </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/placeholder3" title="Travel Film" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="hover-overlay">
+                        <a href="portfolio.html#travel1" class="text-white font-bold text-lg">View Travel Film</a>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
-                    View All Articles <i class="fas fa-arrow-right ml-2"></i>
+                <a href="portfolio.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
+                    View Full Portfolio <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
+    <section id="about" class="py-20 bg-dark">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-                    <span class="text-blue-500 font-medium mb-2 inline-block">GET TO KNOW ME</span>
-                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-6">Hi, I'm Carl</h2>
-                    <p class="text-gray-600 mb-6">
-                        I'm a passionate traveler, photographer, and storyteller who left the corporate world behind to explore our beautiful planet. What started as a short sabbatical turned into a lifelong journey of discovery.
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 fade-in">
+                    <span class="text-yellow-500 font-medium mb-2 inline-block">MY STORY</span>
+                    <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">Carl Tomich</h2>
+                    <p class="text-gray-300 mb-6">
+                        I’m a filmmaker and traveler who traded the 9-to-5 for a life behind the lens. From wedding films to tech reviews, I craft stories that capture the beauty of the world.
                     </p>
-                    <p class="text-gray-600 mb-8">
-                        Through my travels, I've learned that the world is both much bigger and much smaller than we imagine. My mission is to inspire others to step outside their comfort zones and experience the transformative power of travel.
+                    <p class="text-gray-300 mb-8">
+                        With a Sony A7S III in hand, I explore destinations, test gear, and share cinematic journeys to inspire your own adventures.
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#about" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
-                            My Story <i class="fas fa-book-open ml-2"></i>
-                        </a>
-                        <a href="#contact" class="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
-                            Get In Touch <i class="fas fa-paper-plane ml-2"></i>
-                        </a>
-                    </div>
+                    <a href="#contact" class="px-6 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all">
+                        Get In Touch <i class="fas fa-paper-plane ml-2"></i>
+                    </a>
                 </div>
                 
-                <div class="lg:w-1/2 relative">
+                <div class="lg:w-1/2 relative fade-in">
                     <div class="relative max-w-md mx-auto">
-                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
-                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform -rotate-2">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-yellow-500">
                             <img src="/carl.png" alt="Carl Tomich" class="w-full h-auto">
                         </div>
                     </div>
-                    
-                    <div class="mt-8 grid grid-cols-3 gap-4">
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <div class="text-3xl font-bold text-blue-500 mb-1">47</div>
-                            <div class="text-sm text-gray-600">Countries</div>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <div class="text-3xl font-bold text-blue-500 mb-1">120+</div>
-                            <div class="text-sm text-gray-600">Cities</div>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <div class="text-3xl font-bold text-blue-500 mb-1">5</div>
-                            <div class="text-sm text-gray-600">Continents</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
+    <!-- Travel Essentials Section -->
+    <section id="essentials" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-blue-200 font-medium mb-2 inline-block">TRAVEL COMMUNITY</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">What People Say</h2>
-                <div class="w-20 h-1 bg-white bg-opacity-50 mx-auto"></div>
+            <div class="text-center mb-16 fade-in">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL ESSENTIALS</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Tools for Your Journey</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card p-8 rounded-xl">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Sarah J.</h4>
-                            <div class="flex items-center">
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="/wise.jpg" alt="Wise Card" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Wise Travel Card</h3>
+                            <p class="text-sm">Smart Money Management</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "Carl's guide to Far North Queensland was a game-changer for our trip. We visited places we never would have found on our own!"
-                    </p>
-                    <div class="text-sm text-gray-500">
-                        <i class="fas fa-map-marker-alt mr-2"></i> Followed Australia Guide
+                    <div class="p-6 bg-dark">
+                        <p class="text-gray-300 mb-4">Save on transaction fees and currency exchanges with the Wise card.</p>
+                        <a href="getyourwisecard.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card p-8 rounded-xl">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Michael T.</h4>
-                            <div class="flex items-center">
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                            </div>
+                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="/esim.jpg" alt="Airalo eSIM" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Airalo eSIM</h3>
+                            <p class="text-sm">Stay Connected Globally</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "The Tokyo budget tips saved me hundreds of dollars. His insider knowledge made all the difference in experiencing the real Japan."
-                    </p>
-                    <div class="text-sm text-gray-500">
-                        <i class="fas fa-map-marker-alt mr-2"></i> Used Japan Resources
+                    <div class="p-6 bg-dark">
+                        <p class="text-gray-300 mb-4">Stay connected in 200+ countries with Airalo’s eSIMs.</p>
+                        <a href="esim-guide.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card p-8 rounded-xl">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma R." class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Emma R.</h4>
-                            <div class="flex items-center">
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                <i class="fas fa-star-half-alt text-yellow-400"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "Following Carl's Amalfi Coast itinerary was the best decision we made. Every recommendation was spot on and made our trip unforgettable."
-                    </p>
-                    <div class="text-sm text-gray-500">
-                        <i class="fas fa-map-marker-alt mr-2"></i> Followed Italy Itinerary
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 md:p-12 shadow-lg">
-                <div class="text-center mb-8">
-                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-2">Join My Travel Community</h2>
-                    <p class="text-gray-600 max-w-lg mx-auto">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
-                </div>
-                <p class="text-center text-sm text-gray-500 mb-4">By subscribing, you agree to receive our newsletter. You can unsubscribe anytime.</p>
-                <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                    <input type="email" name="_replyto" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
-                    <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
-                    <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_gotcha" style="display:none">
-                    <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
-                        Subscribe <i class="fas fa-paper-plane ml-1"></i>
-                    </button>
-                </form>
-                <p class="text-center text-sm text-gray-500 mt-4">No spam, ever. Unsubscribe anytime.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <section id="contact" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">GET IN TOUCH</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Let's Connect</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+            <div class="text-center mb-16 fade-in">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">LET’S COLLABORATE</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
             
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-1/2">
-                    <div class="bg-white rounded-xl shadow-lg p-8 h-full">
-                        <h3 class="text-xl font-bold text-gray-800 mb-6">Send Me a Message</h3>
+                    <div class="bg-dark rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-white mb-6">Send Me a Message</h3>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST">
                             <div class="mb-6">
-                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
-                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                <label for="name" class="block text-gray-300 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
                             </div>
                             <div class="mb-6">
-                                <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
-                                <input type="email" id="email" name="_replyto" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                <label for="email" class="block text-gray-300 font-medium mb-2">Your Email</label>
+                                <input type="email" id="email" name="_replyto" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
                             </div>
                             <div class="mb-6">
-                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                                <label for="message" class="block text-gray-300 font-medium mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
                             </div>
-                            <!-- Honeypot Field -->
                             <input type="text" name="_gotcha" style="display:none">
-                            <!-- Formspree Hidden Fields -->
-                            <input type="hidden" name="_subject" value="New Contact Form Submission from Carl Travels">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission from Carl Tomich">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
-                            <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-lg font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="w-full px-6 py-3 bg-yellow-500 text-black rounded-lg font-medium hover:bg-yellow-600 transition-all">
                                 Send Message <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -800,38 +492,38 @@
                 </div>
                 
                 <div class="lg:w-1/2">
-                    <div class="bg-white rounded-xl shadow-lg p-8 h-full">
-                        <h3 class="text-xl font-bold text-gray-800 mb-6">Contact Information</h3>
-                        <p class="text-gray-600 mb-8">Have questions about my travels, want to collaborate, or just say hello? Feel free to reach out through any of these channels.</p>
+                    <div class="bg-dark rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-white mb-6">Contact Information</h3>
+                        <p class="text-gray-300 mb-8">Want to collaborate on a film, discuss travel, or talk tech? Reach out anytime.</p>
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-blue-600"></i>
+                                <div class="bg-yellow-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-yellow-500"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-800 mb-1">Email</h4>
-                                    <a href="mailto:watchcarltravel@gmail.com" class="text-blue-500 hover:text-blue-600">watchcarltravel@gmail.com</a>
+                                    <h4 class="font-medium text-white mb-1">Email</h4>
+                                    <a href="mailto:watchcarltravel@gmail.com" class="text-yellow-500 hover:text-yellow-600">watchcarltravel@gmail.com</a>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="mt-12">
-                            <h4 class="font-medium text-gray-800 mb-4">Follow My Journey</h4>
+                            <h4 class="font-medium text-white mb-4">Follow My Work</h4>
                             <div class="flex space-x-4">
-                                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
                                     <i class="fab fa-youtube"></i>
                                 </a>
-                                <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
                                     <i class="fab fa-youtube"></i>
                                 </a>
-                                <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
                                     <i class="fab fa-youtube"></i>
                                 </a>
-                                <a href="https://www.instagram.com/carlostomich" target="_blank" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                <a href="https://www.instagram.com/carlostomich" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </div>
@@ -843,33 +535,33 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-dark text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
-                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                            <i class="fas fa-camera text-black text-lg"></i>
                         </div>
-                        <span class="heading-font">Carl Travels</span>
+                        <span class="heading-font">Carl Tomich</span>
                     </a>
                     <p class="text-gray-400 mb-4">
-                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                        Crafting cinematic stories through travel, tech, and filmmaking.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
@@ -878,40 +570,39 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
-                        <li><a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
-                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                        <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Home</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Destinations</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Portfolio</a></li>
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">Videos</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Blog</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition-colors">About</a></li>
                     </ul>
                 </div>
                 
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Destinations</h3>
                     <ul class="space-y-3">
-                        <li><a href="Berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
-                        <li><a href="melbournetravelguide.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
-                        <li><a href="cairnstravelguide.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
-                        <li><a href="phuketravelguide.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
-                        <li><a href="hanoitravelguide.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
-                        <li><a href="osakatravelguide.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                        <li><a href="Berlin.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Berlin</a></li>
+                        <li><a href="melbournetravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Melbourne</a></li>
+                        <li><a href="cairnstravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Cairns</a></li>
+                        <li><a href="phuketravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Phuket</a></li>
+                        <li><a href="hanoitravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hanoi</a></li>
+                        <li><a href="osakatravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Osaka</a></li>
                     </ul>
                 </div>
                 
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
                     <p class="text-gray-400 mb-4">
-                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                        Subscribe for exclusive filmmaking and travel insights.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
-                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
+                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-black rounded-r-lg hover:bg-yellow-600 transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -920,23 +611,23 @@
             
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2025 Carl Travels. All rights reserved.
+                    © 2025 Carl Tomich. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Cookies</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- JavaScript with Error Handling -->
+    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             try {
