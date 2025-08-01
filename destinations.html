@@ -44,26 +44,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <style>
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         .destination-card {
             transition: all 0.3s ease;
@@ -136,19 +136,19 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="#" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="#" class="text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
@@ -157,13 +157,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="#" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="#" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -181,10 +181,10 @@
                 <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                     Explore Our Destinations <br>With <span class="text-yellow-300">Carl Travels</span>
                 </h1>
-                <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+                <p class="text-lg text-yellow-300 mb-8 max-w-2xl mx-auto">
                     Discover breathtaking cities and hidden gems across the globe. From vibrant urban hubs to serene coastal escapes, start your journey here.
                 </p>
-                <a href="#destinations" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                <a href="#destinations" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                     Browse Destinations
                 </a>
             </div>
@@ -195,9 +195,9 @@
     <section id="destinations" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">OUR DESTINATIONS</span>
+                <span class="text-yellow-500 font-medium mb-2 inline-block">OUR DESTINATIONS</span>
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Explore the World</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Destination 1: Bali -->
@@ -210,18 +210,18 @@
                                 <h3 class="text-xl font-bold">Bali</h3>
                                 <p class="text-sm">Sanur & Canggu</p>
                             </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                            <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Featured</span>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.8</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Discover Bali’s serene beaches, vibrant culture, and hidden challenges in this tropical paradise.</p>
-                            <a href="balitravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="balitravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -237,18 +237,18 @@
                                 <h3 class="text-xl font-bold">Berlin</h3>
                                 <p class="text-sm">Mitte & Kreuzberg</p>
                             </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Popular</span>
+                            <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Popular</span>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.8</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Immerse yourself in Berlin's vibrant history, art scene, and nightlife in this dynamic capital city.</p>
-                            <a href="Berlin.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="Berlin.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -267,14 +267,14 @@
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Oceania</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Oceania</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.7</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Experience Melbourne's cultural richness, coffee culture, and coastal charm in Australia's vibrant south.</p>
-                            <a href="melbournetravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="melbournetravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -290,18 +290,18 @@
                                 <h3 class="text-xl font-bold">Cairns</h3>
                                 <p class="text-sm">Great Barrier Reef</p>
                             </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                            <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Featured</span>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Oceania</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Oceania</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.9</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Dive into the wonders of the Great Barrier Reef and explore the tropical beauty of Cairns.</p>
-                            <a href="cairnstravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="cairnstravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -320,14 +320,14 @@
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.6</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Relax on Phuket's stunning beaches and explore its vibrant markets and island adventures.</p>
-                            <a href="phuketravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="phuketravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -346,14 +346,14 @@
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.7</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Discover Hanoi's rich history, bustling streets, and authentic Vietnamese culture.</p>
-                            <a href="hanoitravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="hanoitravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -372,14 +372,14 @@
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.8</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Savor Osaka's culinary delights and explore its lively streets and modern attractions.</p>
-                            <a href="osakatravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="osakatravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -398,14 +398,14 @@
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.6</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Unwind on Korcula's pristine beaches and explore its medieval charm in Croatia's Adriatic.</p>
-                            <a href="korcula.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="korcula.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -421,18 +421,18 @@
                                 <h3 class="text-xl font-bold">Budva</h3>
                                 <p class="text-sm">Old Town & Beaches</p>
                             </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                            <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Featured</span>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Europe</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.8</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Discover Budva’s historic Old Town, clear Adriatic beaches, and budget-friendly charm in Montenegro.</p>
-                            <a href="budvatravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="budvatravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -448,18 +448,18 @@
                                 <h3 class="text-xl font-bold">Da Nang</h3>
                                 <p class="text-sm">My Khe Beach</p>
                             </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                            <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Featured</span>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.7</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Enjoy Da Nang's golden beaches, Marble Mountains, and vibrant coastal culture in Vietnam.</p>
-                            <a href="danangtravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="danangtravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -475,18 +475,18 @@
                                 <h3 class="text-xl font-bold">Tokyo</h3>
                                 <p class="text-sm">Shibuya & Shinjuku</p>
                             </div>
-                            <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Popular</span>
+                            <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Popular</span>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.9</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Experience Tokyo's vibrant city life, from bustling Shibuya Crossing to serene temples.</p>
-                            <a href="tokyotravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="tokyotravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -505,14 +505,14 @@
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> Asia</span>
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
                                 <div class="flex items-center">
                                     <i class="fas fa-star text-yellow-400 mr-1"></i>
                                     <span class="font-medium">4.8</span>
                                 </div>
                             </div>
                             <p class="text-gray-600 mb-4">Discover Kyoto's timeless temples, tranquil gardens, and rich cultural heritage.</p>
-                            <a href="kyototravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                            <a href="kyototravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                                 View Details <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -520,7 +520,7 @@
                 </div>
             </div>
             <div class="text-center mt-12">
-                <a href="#" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                     More Destinations Coming Soon <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -533,7 +533,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -594,12 +594,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -619,7 +619,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

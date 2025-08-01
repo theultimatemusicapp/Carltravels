@@ -34,28 +34,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .destination-card {
@@ -152,20 +152,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -176,13 +176,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -202,11 +202,11 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         10 Powerful Budget Travel Hacks <br>With <span class="text-yellow-300">Carl Travels</span>
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Travel smarter, lighter, and way cheaper than everyone else. Discover real-world tips to save on flights, accommodation, and more while having epic adventures.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                        <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                             Read the Guide
                         </a>
                         <a href="https://www.youtube.com/@carltravels" target="_blank" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
@@ -218,10 +218,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Budget Travel" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Budget Travel Hacks</h3>
                                 <p class="text-sm opacity-90">Save More, Travel Further</p>
@@ -240,26 +240,26 @@
                 <!-- Main Article Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">BUDGET TRAVEL GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">BUDGET TRAVEL GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">10 Powerful Budget Travel Hacks You Need to Know</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
                         <p class="text-gray-600 mb-8">Everyone talks about "budget travel," but most advice feels pretty shallow. After years of real travel (and pulling off some seriously cheap trips), I can tell you: budget travel is an art form—a mix of strategy, flexibility, and a few smart hacks. Here are my 10 real-world tips to travel more often, spend less, and still have epic experiences.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-plane mr-2 text-blue-500"></i> 1. Master Cheap Flights with Flexible Searches</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-plane mr-2 text-yellow-500"></i> 1. Master Cheap Flights with Flexible Searches</h2>
                         <p class="text-gray-600 mb-4">Your flight is usually your first—and biggest—expense. The good news? You have more control over it than you think. My go-to method:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
-                            <li>Use <a href="https://www.skyscanner.com" target="_blank" class="text-blue-500 hover:text-blue-600">Skyscanner</a> or similar flight aggregators.</li>
+                            <li>Use <a href="https://www.skyscanner.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Skyscanner</a> or similar flight aggregators.</li>
                             <li>Set your departure city (like Melbourne), but leave the destination blank.</li>
                             <li>Choose "Everywhere" or just the country (if you know roughly where you want to go).</li>
                             <li>Set "Whole Month" instead of specific dates.</li>
                             <li>This shows you the cheapest places on the cheapest days.</li>
                         </ul>
-                        <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Tip:</span> Flexibility saves serious money. I’ve saved hundreds just by flying 2–3 days earlier or later.</p>
+                        <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Tip:</span> Flexibility saves serious money. I’ve saved hundreds just by flying 2–3 days earlier or later.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-suitcase mr-2 text-blue-500"></i> 2. Travel Light and Outsmart Baggage Fees</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-suitcase mr-2 text-yellow-500"></i> 2. Travel Light and Outsmart Baggage Fees</h2>
                         <p class="text-gray-600 mb-4">Luggage fees are a sneaky travel killer—and heavy bags slow you down. Travel light strategy:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Wear your heaviest clothes on the plane (jackets, jeans, boots).</li>
@@ -269,42 +269,42 @@
                         </ul>
                         <p class="text-gray-600 mb-4">I’ve turned a 15kg setup into a 7kg carry-on using these tricks—and saved hundreds on budget airlines. <strong>Bonus:</strong> You'll be way more mobile at airports, train stations, and cities.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-wallet mr-2 text-blue-500"></i> 3. Pay Smarter Overseas (and Avoid Hidden Bank Fees)</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-wallet mr-2 text-yellow-500"></i> 3. Pay Smarter Overseas (and Avoid Hidden Bank Fees)</h2>
                         <p class="text-gray-600 mb-4">Every swipe, every ATM withdrawal abroad? Your home bank loves to charge you extra. Instead:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
-                            <li>Get a <a href="https://wise.com/" target="_blank" class="text-blue-500 hover:text-blue-600">Wise card</a> for real exchange rates and low/no fees.</li>
+                            <li>Get a <a href="https://wise.com/" target="_blank" class="text-yellow-500 hover:text-yellow-500">Wise card</a> for real exchange rates and low/no fees.</li>
                             <li>Use credit cards where possible—some offer travel insurance and extra protection.</li>
                             <li>Withdraw larger amounts less often to dodge ATM fee stacking.</li>
                         </ul>
                         <p class="text-gray-600 mb-4">Trust me—Wise alone has saved me hundreds across multiple countries.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-mobile-alt mr-2 text-blue-500"></i> 4. Get Online Instantly with a Local eSIM</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-mobile-alt mr-2 text-yellow-500"></i> 4. Get Online Instantly with a Local eSIM</h2>
                         <p class="text-gray-600 mb-4">Roaming charges? Airport SIM card rip-offs? No thanks. Solution:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
-                            <li>Use an app like <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" class="text-blue-500 hover:text-blue-600">Saily</a> to buy your eSIM before you even land.</li>
+                            <li>Use an app like <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" class="text-yellow-500 hover:text-yellow-500">Saily</a> to buy your eSIM before you even land.</li>
                             <li>Activate as soon as you hit the ground—no local paperwork, no stress.</li>
                         </ul>
                         <p class="text-gray-600 mb-4">I’ve used Saily seamlessly across Germany, Vietnam, Japan, Croatia, Albania, and France. Use my Saily referral code: <strong>CARLRI5370</strong> to save $5 USD! It’s one of the easiest modern travel upgrades.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-blue-500"></i> 5. Stay Smart (and Sometimes Stay Free!)</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-yellow-500"></i> 5. Stay Smart (and Sometimes Stay Free!)</h2>
                         <p class="text-gray-600 mb-4">Accommodation can drain your budget if you're not strategic. Here’s how to win:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
-                            <li>Use <a href="https://www.booking.com" target="_blank" class="text-blue-500 hover:text-blue-600">Booking.com</a> or <a href="https://www.airbnb.com" target="_blank" class="text-blue-500 hover:text-blue-600">Airbnb</a> with filters: lowest price, private room, rating above 8+.</li>
-                            <li><a href="https://www.couchsurfing.com" target="_blank" class="text-blue-500 hover:text-blue-600">Couchsurfing</a>: stay for free with locals (build a profile and references for safety; I hosted 40+ people myself).</li>
-                            <li><a href="https://www.workaway.info" target="_blank" class="text-blue-500 hover:text-blue-600">Workaway</a> or <a href="https://www.wwoof.net" target="_blank" class="text-blue-500 hover:text-blue-600">WWOOFing</a>: work a few hours a day for free room and meals.</li>
+                            <li>Use <a href="https://www.booking.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Booking.com</a> or <a href="https://www.airbnb.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Airbnb</a> with filters: lowest price, private room, rating above 8+.</li>
+                            <li><a href="https://www.couchsurfing.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Couchsurfing</a>: stay for free with locals (build a profile and references for safety; I hosted 40+ people myself).</li>
+                            <li><a href="https://www.workaway.info" target="_blank" class="text-yellow-500 hover:text-yellow-500">Workaway</a> or <a href="https://www.wwoof.net" target="_blank" class="text-yellow-500 hover:text-yellow-500">WWOOFing</a>: work a few hours a day for free room and meals.</li>
                         </ul>
                         <p class="text-gray-600 mb-4">You don't always need a five-star hotel to have a five-star experience—sometimes it’s the people you meet that make the trip.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-taxi mr-2 text-blue-500"></i> 6. Use Local Apps for Transport, Food & Delivery</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-taxi mr-2 text-yellow-500"></i> 6. Use Local Apps for Transport, Food & Delivery</h2>
                         <p class="text-gray-600 mb-4">Locals don’t pay tourist taxi rates—and neither should you. Apps to download:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
-                            <li><a href="https://www.grab.com" target="_blank" class="text-blue-500 hover:text-blue-600">Grab</a> – Southeast Asia ride-hailing and food delivery.</li>
-                            <li><a href="https://www.gojek.com" target="_blank" class="text-blue-500 hover:text-blue-600">Gojek</a> – Bike taxis, food, and more across Asia.</li>
-                            <li><a href="https://www.uber.com" target="_blank" class="text-blue-500 hover:text-blue-600">Uber</a> – Still used in some parts of the world.</li>
+                            <li><a href="https://www.grab.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Grab</a> – Southeast Asia ride-hailing and food delivery.</li>
+                            <li><a href="https://www.gojek.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Gojek</a> – Bike taxis, food, and more across Asia.</li>
+                            <li><a href="https://www.uber.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Uber</a> – Still used in some parts of the world.</li>
                         </ul>
                         <p class="text-gray-600 mb-4">You’ll get fair local prices, avoid arguing with taxi drivers, and often pay less for better service.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-walking mr-2 text-blue-500"></i> 7. Take Advantage of Free Walking Tours</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-walking mr-2 text-yellow-500"></i> 7. Take Advantage of Free Walking Tours</h2>
                         <p class="text-gray-600 mb-4">One of the best things you can do in a new city? Join a free walking tour. Most major cities have them (just Google “free walking tour + [city name]”), and you:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Get your bearings fast.</li>
@@ -312,9 +312,9 @@
                             <li>Meet fellow travellers.</li>
                             <li>Only pay a tip if you enjoyed it (around $5–$10).</li>
                         </ul>
-                        <p class="text-gray-600 mb-4">Apps like <a href="https://www.guruwalk.com" target="_blank" class="text-blue-500 hover:text-blue-600">GuruWalk</a> make it super easy to find tours in advance. I’ve had better experiences on free tours than on expensive “VIP” ones.</p>
+                        <p class="text-gray-600 mb-4">Apps like <a href="https://www.guruwalk.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">GuruWalk</a> make it super easy to find tours in advance. I’ve had better experiences on free tours than on expensive “VIP” ones.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bus mr-2 text-blue-500"></i> 8. Travel Overnight (and Save a Night’s Accommodation)</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bus mr-2 text-yellow-500"></i> 8. Travel Overnight (and Save a Night’s Accommodation)</h2>
                         <p class="text-gray-600 mb-4">Long travel days don’t have to be dead time. Book overnight buses, sleeper trains, or ferries:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>You save money on a night of accommodation.</li>
@@ -323,8 +323,8 @@
                         </ul>
                         <p class="text-gray-600 mb-4">Example: Sleeper trains in Vietnam, overnight buses in Europe, ferry rides between Greek islands. Just pack a neck pillow, earplugs, and a hoodie—and you’re set.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ticket-alt mr-2 text-blue-500"></i> 9. Use City Tourist Passes (Wisely)</h2>
-                        <p class="text-gray-600 mb-4">Many cities offer all-inclusive passes like <a href="https://www.parispass.com" target="_blank" class="text-blue-500 hover:text-blue-600">Paris Pass</a>, <a href="https://www.lisboncard.com" target="_blank" class="text-blue-500 hover:text-blue-600">Lisbon Card</a>, or Tokyo Free Pass. These usually bundle:</p>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ticket-alt mr-2 text-yellow-500"></i> 9. Use City Tourist Passes (Wisely)</h2>
+                        <p class="text-gray-600 mb-4">Many cities offer all-inclusive passes like <a href="https://www.parispass.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Paris Pass</a>, <a href="https://www.lisboncard.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Lisbon Card</a>, or Tokyo Free Pass. These usually bundle:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Public transport.</li>
                             <li>Free or discounted attraction entries.</li>
@@ -332,7 +332,7 @@
                         </ul>
                         <p class="text-gray-600 mb-4"><strong>BUT—always do the math first.</strong> If you plan to visit a lot of sights, they can save you big time. If not, skip them.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-utensils mr-2 text-blue-500"></i> 10. Eat Like a Local (Not Like a Tourist)</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-utensils mr-2 text-yellow-500"></i> 10. Eat Like a Local (Not Like a Tourist)</h2>
                         <p class="text-gray-600 mb-4">Food is one of the best parts of travel—and also a place where you can save (or blow) a lot of money. My simple rule:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Look for busy places packed with locals, not tourists.</li>
@@ -348,29 +348,29 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Quick Tips</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-plane mr-2 text-blue-500"></i> Flexible flight searches</li>
-                            <li><i class="fas fa-suitcase mr-2 text-blue-500"></i> Travel light, avoid baggage fees</li>
-                            <li><i class="fas fa-wallet mr-2 text-blue-500"></i> Use Wise for low-fee payments</li>
-                            <li><i class="fas fa-mobile-alt mr-2 text-blue-500"></i> Get a local eSIM with Saily</li>
-                            <li><i class="fas fa-bed mr-2 text-blue-500"></i> Stay free with Couchsurfing</li>
-                            <li><i class="fas fa-taxi mr-2 text-blue-500"></i> Use local transport apps</li>
-                            <li><i class="fas fa-walking mr-2 text-blue-500"></i> Join free walking tours</li>
-                            <li><i class="fas fa-bus mr-2 text-blue-500"></i> Travel overnight</li>
-                            <li><i class="fas fa-ticket-alt mr-2 text-blue-500"></i> Use city passes wisely</li>
-                            <li><i class="fas fa-utensils mr-2 text-blue-500"></i> Eat at local spots</li>
+                            <li><i class="fas fa-plane mr-2 text-yellow-500"></i> Flexible flight searches</li>
+                            <li><i class="fas fa-suitcase mr-2 text-yellow-500"></i> Travel light, avoid baggage fees</li>
+                            <li><i class="fas fa-wallet mr-2 text-yellow-500"></i> Use Wise for low-fee payments</li>
+                            <li><i class="fas fa-mobile-alt mr-2 text-yellow-500"></i> Get a local eSIM with Saily</li>
+                            <li><i class="fas fa-bed mr-2 text-yellow-500"></i> Stay free with Couchsurfing</li>
+                            <li><i class="fas fa-taxi mr-2 text-yellow-500"></i> Use local transport apps</li>
+                            <li><i class="fas fa-walking mr-2 text-yellow-500"></i> Join free walking tours</li>
+                            <li><i class="fas fa-bus mr-2 text-yellow-500"></i> Travel overnight</li>
+                            <li><i class="fas fa-ticket-alt mr-2 text-yellow-500"></i> Use city passes wisely</li>
+                            <li><i class="fas fa-utensils mr-2 text-yellow-500"></i> Eat at local spots</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -378,7 +378,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             More Travel Tips <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -387,7 +387,7 @@
             
             <!-- Final Thoughts -->
             <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-blue-500"></i> Final Thoughts</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-yellow-500"></i> Final Thoughts</h2>
                 <p class="text-gray-600 mb-4">You don’t need to spend $10,000 to travel the world. You just need $10 worth of strategy.</p>
                 <p class="text-gray-600 mb-4">From smarter flights and lighter packing to local apps and free places to sleep, budget travel isn’t about cutting corners—it’s about cutting waste. The less you waste, the more you can do. More sunsets, more street food, more people you never would have met otherwise.</p>
                 <p class="text-gray-600 mb-4 font-semibold">Travel smarter—and you’ll travel further.</p>
@@ -398,7 +398,7 @@
                         </div>
                         <span class="text-sm text-gray-700">Carl Tomich</span>
                     </div>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
                 </div>
             </div>
         </div>
@@ -410,7 +410,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -468,12 +468,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -494,7 +494,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

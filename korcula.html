@@ -25,28 +25,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .destination-card {
@@ -143,20 +143,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -167,13 +167,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -193,11 +193,11 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Your Ultimate Guide to Visiting Korčula, Croatia <br>With <span class="text-yellow-300">Carl Travels</span>
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Discover family roots, ancient towns, vineyards, and crystal-clear waters on Korčula, Croatia’s magical island, with Carl Travels.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                        <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                             Read the Guide
                         </a>
                         <a href="https://www.youtube.com/@carltravels" target="_blank" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
@@ -209,10 +209,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/korculalogo.jpg" alt="Korčula Old Town" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Korčula, Croatia</h3>
                                 <p class="text-sm opacity-90">Island of History & Beauty</p>
@@ -231,20 +231,20 @@
                 <!-- Main Article Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">KORČULA TRAVEL GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">KORČULA TRAVEL GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Your Ultimate Guide to Visiting Korčula, Croatia</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
                         <p class="text-gray-600 mb-8">Some places you visit once and never forget. For me, Korčula isn’t just another Croatian island—it’s family history, old-world charm, and some of the best wine and beaches you’ll ever find. I recently spent a few unforgettable days exploring Korčula with friends, tracing family roots, and discovering why this island deserves a spot on your Croatian itinerary. Here’s everything you need to know about getting there, where to stay, what to see, and why 4 nights is the perfect amount of time on this magical island.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-blue-500"></i> How to Get to Korčula</h2>
-                        <p class="text-gray-600 mb-4">From Dubrovnik, we took a ferry to Korčula Town. The ferry ride takes about 2 hours. Tickets cost around €16–€22 depending on the operator (we used <a href="https://www.krilo.hr/en/" target="_blank" class="text-blue-500 hover:text-blue-600">Kapetan Luka (Krilo)</a> fast ferry service). You can easily book your tickets online in advance or buy them at the port.</p>
-                        <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro tip:</span> Book early in peak season, especially if you're traveling with a group. Ferry prices and availability may vary, so check schedules in advance.</p>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-yellow-500"></i> How to Get to Korčula</h2>
+                        <p class="text-gray-600 mb-4">From Dubrovnik, we took a ferry to Korčula Town. The ferry ride takes about 2 hours. Tickets cost around €16–€22 depending on the operator (we used <a href="https://www.krilo.hr/en/" target="_blank" class="text-yellow-500 hover:text-yellow-500">Kapetan Luka (Krilo)</a> fast ferry service). You can easily book your tickets online in advance or buy them at the port.</p>
+                        <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro tip:</span> Book early in peak season, especially if you're traveling with a group. Ferry prices and availability may vary, so check schedules in advance.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-blue-500"></i> Where to Stay on Korčula</h2>
-                        <p class="text-gray-600 mb-4">We stayed at <a href="https://www.booking.com" target="_blank" class="text-blue-500 hover:text-blue-600">Apartments Filippi</a> in Korčula Town:</p>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-yellow-500"></i> Where to Stay on Korčula</h2>
+                        <p class="text-gray-600 mb-4">We stayed at <a href="https://www.booking.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Apartments Filippi</a> in Korčula Town:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li><strong>📍 Address:</strong> Korčulanskih domobrana 52, 20260 Korčula, Croatia</li>
                             <li>It was a perfect apartment for a group (there were five of us).</li>
@@ -253,33 +253,33 @@
                         </ul>
                         <p class="text-gray-600 mb-4"><strong>🌟 Bonus:</strong> Having a kitchen and living space made it easy to enjoy a few wines at home after a long day of exploring.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-wine-glass mr-2 text-blue-500"></i> First Stop: Lunch and Wine by the Sea</h2>
-                        <p class="text-gray-600 mb-4">After checking in, we wandered into the Old Town and had a late lunch at <a href="https://www.pensatore.hr/" target="_blank" class="text-blue-500 hover:text-blue-600">Pensatore Kitchen & Wine</a>. It’s right on the waterfront with stunning ocean views. The food was absolutely incredible—fresh seafood, hearty local dishes, and of course, Korčula's famous wine. Honestly? One of the best meals I had in Croatia.</p>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-wine-glass mr-2 text-yellow-500"></i> First Stop: Lunch and Wine by the Sea</h2>
+                        <p class="text-gray-600 mb-4">After checking in, we wandered into the Old Town and had a late lunch at <a href="https://www.pensatore.hr/" target="_blank" class="text-yellow-500 hover:text-yellow-500">Pensatore Kitchen & Wine</a>. It’s right on the waterfront with stunning ocean views. The food was absolutely incredible—fresh seafood, hearty local dishes, and of course, Korčula's famous wine. Honestly? One of the best meals I had in Croatia.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-umbrella-beach mr-2 text-blue-500"></i> Beaches and Relaxation</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-umbrella-beach mr-2 text-yellow-500"></i> Beaches and Relaxation</h2>
                         <p class="text-gray-600 mb-4">During our stay, we found some great beach spots to unwind:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li><strong>Luka Korčulanska Beach:</strong> A fantastic place to swim, relax, and enjoy a low-key day close to town.</li>
                             <li><strong>Žitna Beach:</strong> Later during our road trip around the island, we found this hidden gem near the town of Čara. Crystal-clear water and fewer crowds make it a perfect local escape.</li>
                         </ul>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-landmark mr-2 text-blue-500"></i> Exploring Korčula Old Town</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-landmark mr-2 text-yellow-500"></i> Exploring Korčula Old Town</h2>
                         <p class="text-gray-600 mb-4">Of course, no visit is complete without exploring Korčula Old Town:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Narrow stone alleyways.</li>
                             <li>Venetian architecture.</li>
                             <li>Ancient churches and charming little wine bars.</li>
                         </ul>
-                        <p class="text-gray-600 mb-4">The Old Town feels like a smaller, more relaxed version of Dubrovnik—without the overwhelming tourist crowds. <span class="text-blue-500 font-medium">💡 Fun fact:</span> Korčula is often called "Little Dubrovnik" because of its fortified walls and medieval layout.</p>
+                        <p class="text-gray-600 mb-4">The Old Town feels like a smaller, more relaxed version of Dubrovnik—without the overwhelming tourist crowds. <span class="text-yellow-500 font-medium">💡 Fun fact:</span> Korčula is often called "Little Dubrovnik" because of its fortified walls and medieval layout.</p>
                         <div class="w-full max-w-2xl mx-auto mb-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Watch My Korčula Old Town Adventure</h3>
                             <div class="relative w-full aspect-video">
                                 <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/NPpCfDRM2PY" title="Korčula Old Town Tour with Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <p class="text-gray-600 text-sm mt-2">Check out more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a>!</p>
+                            <p class="text-gray-600 text-sm mt-2">Check out more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a>!</p>
                         </div>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-car mr-2 text-blue-500"></i> Hiring a Car to Explore More of the Island</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-car mr-2 text-yellow-500"></i> Hiring a Car to Explore More of the Island</h2>
                         <p class="text-gray-600 mb-4">Korčula isn’t huge, but hiring a car is the best way to see beyond the main town. We rented a small car and:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Drove to Čara, the town where my family originally comes from.</li>
@@ -292,11 +292,11 @@
                             <li>Great spots to swim.</li>
                             <li>Fantastic seafood restaurants.</li>
                         </ul>
-                        <p class="text-gray-600 mb-4">Vela Luka feels more local and laid-back compared to Korčula Town—a perfect day trip. <span class="text-blue-500 font-medium">💡 Tip:</span> Check rental car agencies in Korčula Town for availability and book in advance during peak season.</p>
+                        <p class="text-gray-600 mb-4">Vela Luka feels more local and laid-back compared to Korčula Town—a perfect day trip. <span class="text-yellow-500 font-medium">💡 Tip:</span> Check rental car agencies in Korčula Town for availability and book in advance during peak season.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-blue-500"></i> Getting Off the Island: Ferry to Split</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-yellow-500"></i> Getting Off the Island: Ferry to Split</h2>
                         <p class="text-gray-600 mb-4">After four amazing nights on Korčula, we caught a ferry from Vela Luka to Split. Tickets are easy to book the day before or even the day of (depending on the season). Another simple, affordable ferry ride.</p>
-                        <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Tip:</span> If you’re flexible, you can also check for high-speed catamarans for quicker travel.</p>
+                        <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Tip:</span> If you’re flexible, you can also check for high-speed catamarans for quicker travel.</p>
                     </div>
                 </div>
                 
@@ -305,25 +305,25 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Korčula Highlights</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-landmark mr-2 text-blue-500"></i> Korčula Old Town’s medieval charm</li>
-                            <li><i class="fas fa-umbrella-beach mr-2 text-blue-500"></i> Luka Korčulanska & Žitna Beaches</li>
-                            <li><i class="fas fa-wine-glass mr-2 text-blue-500"></i> Pošip wine tasting in Čara</li>
-                            <li><i class="fas fa-utensils mr-2 text-blue-500"></i> Seafood at Pensatore Kitchen & Wine</li>
-                            <li><i class="fas fa-car mr-2 text-blue-500"></i> Day trip to Vela Luka</li>
-                            <li><i class="fas fa-ferry mr-2 text-blue-500"></i> Easy ferries to Dubrovnik & Split</li>
+                            <li><i class="fas fa-landmark mr-2 text-yellow-500"></i> Korčula Old Town’s medieval charm</li>
+                            <li><i class="fas fa-umbrella-beach mr-2 text-yellow-500"></i> Luka Korčulanska & Žitna Beaches</li>
+                            <li><i class="fas fa-wine-glass mr-2 text-yellow-500"></i> Pošip wine tasting in Čara</li>
+                            <li><i class="fas fa-utensils mr-2 text-yellow-500"></i> Seafood at Pensatore Kitchen & Wine</li>
+                            <li><i class="fas fa-car mr-2 text-yellow-500"></i> Day trip to Vela Luka</li>
+                            <li><i class="fas fa-ferry mr-2 text-yellow-500"></i> Easy ferries to Dubrovnik & Split</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -331,7 +331,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="destinations.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="destinations.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             More Destinations <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -340,7 +340,7 @@
             
             <!-- Final Thoughts -->
             <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-blue-500"></i> Final Thoughts</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-yellow-500"></i> Final Thoughts</h2>
                 <p class="text-gray-600 mb-4">Korčula is special. It’s not just beaches and old towns (although those are pretty incredible)—it’s history, wine, and local soul.</p>
                 <p class="text-gray-600 mb-4">Four nights is the sweet spot: enough time to see the main highlights, relax at beaches, explore hidden corners, and drink your way through some vineyards.</p>
                 <p class="text-gray-600 mb-4">If you’re doing a Croatia trip that includes Dubrovnik and Split, make sure you carve out time for Korčula. It’s not just a destination—it’s a feeling you’ll want to return to.</p>
@@ -351,7 +351,7 @@
                         </div>
                         <span class="text-sm text-gray-700">Carl Tomich</span>
                     </div>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
                 </div>
             </div>
         </div>
@@ -363,7 +363,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -422,12 +422,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -448,7 +448,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

@@ -33,28 +33,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .navbar {
@@ -105,20 +105,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -129,13 +129,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -155,10 +155,10 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         How to Get Croatian Citizenship
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Unlock an EU passport and the Adriatic lifestyle with Carl Travels’ 2025 guide to Croatian citizenship, based on personal experience.
                     </p>
-                    <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                         Read the Guide
                     </a>
                 </div>
@@ -166,10 +166,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/korculalogo.jpg" alt="Croatian Coastline" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Unlock the EU Lifestyle</h3>
                                 <p class="text-sm opacity-90">Carl Travels</p>
@@ -188,9 +188,9 @@
                 <!-- Main Article Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">CROATIAN CITIZENSHIP GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">CROATIAN CITIZENSHIP GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">🇭🇷 The Real 2025 Guide to Your EU Passport</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
@@ -199,12 +199,12 @@
                         </p>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-passport mr-2 text-blue-500"></i> 🏛️ Who Can Apply for Croatian Citizenship?</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-passport mr-2 text-yellow-500"></i> 🏛️ Who Can Apply for Croatian Citizenship?</h2>
                             <p class="text-gray-600 mb-4">You can apply if you fall into one of these categories:</p>
                             <div class="overflow-x-auto">
                                 <table class="table-auto w-full border-collapse mb-4">
                                     <thead>
-                                        <tr class="bg-blue-50">
+                                        <tr class="bg-yellow-900">
                                             <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Pathway</th>
                                             <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Main Points</th>
                                         </tr>
@@ -244,7 +244,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-check-circle mr-2 text-blue-500"></i> ✍️ How to Qualify (Explained Simply)</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-check-circle mr-2 text-yellow-500"></i> ✍️ How to Qualify (Explained Simply)</h2>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">By Origin</h3>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Born abroad? You qualify if at least one parent was Croatian and you registered before age 21.</li>
@@ -289,33 +289,33 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe mr-2 text-blue-500"></i> 🌍 Applying from Outside the USA?</h2>
-                            <p class="text-gray-600 mb-4">If you're applying from Australia, Canada, or any other country outside the USA, the process is very similar to that for U.S. citizens, with just a few country-specific differences. I worked with a professional service called <a href="https://croatianbydescent.com/" target="_blank" class="text-blue-500 hover:text-blue-600">Croatian by Descent</a>, and my contact, David, was incredibly helpful in guiding me through the nuances of the application process. Their expertise made the experience smoother and less stressful, and I highly recommend reaching out to them for assistance.</p>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe mr-2 text-yellow-500"></i> 🌍 Applying from Outside the USA?</h2>
+                            <p class="text-gray-600 mb-4">If you're applying from Australia, Canada, or any other country outside the USA, the process is very similar to that for U.S. citizens, with just a few country-specific differences. I worked with a professional service called <a href="https://croatianbydescent.com/" target="_blank" class="text-yellow-500 hover:text-yellow-500">Croatian by Descent</a>, and my contact, David, was incredibly helpful in guiding me through the nuances of the application process. Their expertise made the experience smoother and less stressful, and I highly recommend reaching out to them for assistance.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-file-alt mr-2 text-blue-500"></i> 📋 Complete Checklist: Documents You Need</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-file-alt mr-2 text-yellow-500"></i> 📋 Complete Checklist: Documents You Need</h2>
                             <p class="text-gray-600 mb-4">Having gone through this myself, here’s exactly what you’ll need:</p>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Essentials</h3>
                             <ul class="space-y-2 text-gray-600">
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Application Form:</strong> Filled out in Croatian.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Resume (Biography):</strong> A short life story written in Croatian. (You can translate this yourself.)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Your Birth Certificate:</strong> Apostilled if issued outside Croatia. Translated into Croatian by a certified translator.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Parents' Birth Certificates:</strong> Apostilled and translated.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Parents' Marriage Certificate:</strong> Apostilled and translated.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Grandparents' or Great-Grandparents' Birth/Death Certificates:</strong> If applying through them. Apostilled and translated.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Family Tree Chart:</strong> A simple, clear document showing your lineage.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Police Clearance Certificate:</strong> Criminal background check from your country. Issued within the last 6 months. Apostilled and translated.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Letter of Intent:</strong> A short, polite letter in Croatian explaining why you want Croatian citizenship (e.g., "to reconnect with my family’s heritage").</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Passport or National ID Copy:</strong> Proof of your current nationality.</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> <strong>Proof of Address:</strong> Utility bill, national ID, or lease.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Application Form:</strong> Filled out in Croatian.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Resume (Biography):</strong> A short life story written in Croatian. (You can translate this yourself.)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Your Birth Certificate:</strong> Apostilled if issued outside Croatia. Translated into Croatian by a certified translator.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Parents' Birth Certificates:</strong> Apostilled and translated.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Parents' Marriage Certificate:</strong> Apostilled and translated.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Grandparents' or Great-Grandparents' Birth/Death Certificates:</strong> If applying through them. Apostilled and translated.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Family Tree Chart:</strong> A simple, clear document showing your lineage.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Police Clearance Certificate:</strong> Criminal background check from your country. Issued within the last 6 months. Apostilled and translated.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Letter of Intent:</strong> A short, polite letter in Croatian explaining why you want Croatian citizenship (e.g., "to reconnect with my family’s heritage").</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Passport or National ID Copy:</strong> Proof of your current nationality.</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> <strong>Proof of Address:</strong> Utility bill, national ID, or lease.</li>
                             </ul>
                             
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Helpful Extras (Not Mandatory)</h3>
                             <ul class="space-y-2 text-gray-600">
-                                <li><i class="fas fa-search mr-2 text-blue-500"></i> <strong>Migration Records:</strong> Immigration or ship passenger lists showing when your ancestors left Croatia.</li>
-                                <li><i class="fas fa-ship mr-2 text-blue-500"></i> <strong>Boat/Arrival Records:</strong> If they emigrated by ship, getting the arrival record can strengthen your file.</li>
-                                <li><i class="fas fa-folder-open mr-2 text-blue-500"></i> <strong>Old Documents:</strong> Old Croatian passports, domovnica certificates, military records, anything linking your ancestors to Croatia.</li>
+                                <li><i class="fas fa-search mr-2 text-yellow-500"></i> <strong>Migration Records:</strong> Immigration or ship passenger lists showing when your ancestors left Croatia.</li>
+                                <li><i class="fas fa-ship mr-2 text-yellow-500"></i> <strong>Boat/Arrival Records:</strong> If they emigrated by ship, getting the arrival record can strengthen your file.</li>
+                                <li><i class="fas fa-folder-open mr-2 text-yellow-500"></i> <strong>Old Documents:</strong> Old Croatian passports, domovnica certificates, military records, anything linking your ancestors to Croatia.</li>
                             </ul>
                             
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Important Technical Notes</h3>
@@ -327,7 +327,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-clock mr-2 text-blue-500"></i> ⏳ How Long Does It Take?</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-clock mr-2 text-yellow-500"></i> ⏳ How Long Does It Take?</h2>
                             <p class="text-gray-600 mb-4">Be ready for a long wait:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Most applications take <strong>1–2 years</strong> to be processed.</li>
@@ -341,17 +341,17 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-euro-sign mr-2 text-blue-500"></i> 💸 How Much Does It Cost?</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-euro-sign mr-2 text-yellow-500"></i> 💸 How Much Does It Cost?</h2>
                             <p class="text-gray-600 mb-4">Costs vary depending on where you apply:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>In Croatia:</strong> Administrative fees are relatively low.</li>
                                 <li><strong>Abroad:</strong> Consulates usually charge between €200–€400 EUR depending on services.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</strong> Budget extra for apostilles, translations, and potential archive fees.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</strong> Budget extra for apostilles, translations, and potential archive fees.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-lightbulb mr-2 text-blue-500"></i> 🧠 Personal Advice (From Someone Who Did It)</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-lightbulb mr-2 text-yellow-500"></i> 🧠 Personal Advice (From Someone Who Did It)</h2>
                             <p class="text-gray-600 mb-4">When I applied, the hardest part wasn’t filling out the forms—it was tracking down birth, death, and marriage records, getting apostilles, and finding translators I could trust. Tips I learned the hard way:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Always ask for multiple copies of documents when ordering from archives. (Mistakes happen.)</li>
@@ -362,7 +362,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-plane-arrival mr-2 text-blue-500"></i> ✈️ What Happens After Approval?</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-plane-arrival mr-2 text-yellow-500"></i> ✈️ What Happens After Approval?</h2>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>You’ll receive a <strong>Rješenje</strong> (official decision).</li>
                                 <li>Get your <strong>Domovnica</strong> (Croatian citizenship certificate).</li>
@@ -373,25 +373,25 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-list-check mr-2 text-blue-500"></i> 🎯 Final Checklist (Print or Screenshot!)</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-list-check mr-2 text-yellow-500"></i> 🎯 Final Checklist (Print or Screenshot!)</h2>
                             <ul class="space-y-2 text-gray-600">
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Application Form</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Resume (in Croatian)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Your Birth Certificate (apostilled + translated)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Parents’ Birth Certificates (apostilled + translated)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Parents’ Marriage Certificate (apostilled + translated)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Grandparents' Documents (apostilled + translated)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Family Tree Chart</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Police Report (<6 months old, apostilled + translated)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Letter of Intent (in Croatian)</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Copy of Passport or ID</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> Proof of Address</li>
-                                <li><i class="fas fa-check mr-2 text-blue-500"></i> (Optional but helpful) Migration and Boat Records</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Application Form</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Resume (in Croatian)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Your Birth Certificate (apostilled + translated)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Parents’ Birth Certificates (apostilled + translated)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Parents’ Marriage Certificate (apostilled + translated)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Grandparents' Documents (apostilled + translated)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Family Tree Chart</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Police Report (<6 months old, apostilled + translated)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Letter of Intent (in Croatian)</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Copy of Passport or ID</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> Proof of Address</li>
+                                <li><i class="fas fa-check mr-2 text-yellow-500"></i> (Optional but helpful) Migration and Boat Records</li>
                             </ul>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-star mr-2 text-blue-500"></i> 🏁 Final Words</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-star mr-2 text-yellow-500"></i> 🏁 Final Words</h2>
                             <p class="text-gray-600 mb-4">Getting Croatian citizenship is one of the most rewarding things I’ve done—but it demands attention to detail, a bit of detective work, and a lot of patience. If you start organized, take your time preparing documents, and stay positive through the waiting period—you’ll get there.</p>
                             <p class="text-gray-600 mb-4">Check out my personal story of navigating the Croatian citizenship process below, along with a more in-depth video for additional insights:</p>
                             <h3 class="text-xl font-bold text-gray-800 mb-4">My Croatian Citizenship Journey</h3>
@@ -404,7 +404,7 @@
                                 <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/feBJCpoA_LA" title="In-Depth Guide to Croatian Citizenship by Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <p class="text-gray-600 mb-4">For a deeper dive into the process, this video covers additional details and tips to help you navigate your application.</p>
-                            <p class="text-gray-600 mb-4">Good luck! Or as we say in Croatia, <strong>Sretno!</strong> 🇭🇷 Explore more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a>!</p>
+                            <p class="text-gray-600 mb-4">Good luck! Or as we say in Croatia, <strong>Sretno!</strong> 🇭🇷 Explore more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a>!</p>
                         </div>
                     </div>
                 </div>
@@ -414,24 +414,24 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Why Croatian Citizenship?</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-globe-europe mr-2 text-blue-500"></i> Full EU access and travel</li>
-                            <li><i class="fas fa-heart mr-2 text-blue-500"></i> Rich cultural heritage</li>
-                            <li><i class="fas fa-water mr-2 text-blue-500"></i> Adriatic lifestyle</li>
-                            <li><i class="fas fa-passport mr-2 text-blue-500"></i> Strong passport for global mobility</li>
-                            <li><i class="fas fa-home mr-2 text-blue-500"></i> Right to live and work in Croatia</li>
+                            <li><i class="fas fa-globe-europe mr-2 text-yellow-500"></i> Full EU access and travel</li>
+                            <li><i class="fas fa-heart mr-2 text-yellow-500"></i> Rich cultural heritage</li>
+                            <li><i class="fas fa-water mr-2 text-yellow-500"></i> Adriatic lifestyle</li>
+                            <li><i class="fas fa-passport mr-2 text-yellow-500"></i> Strong passport for global mobility</li>
+                            <li><i class="fas fa-home mr-2 text-yellow-500"></i> Right to live and work in Croatia</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -439,7 +439,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="korculaguide.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="korculaguide.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             Explore Korčula <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -449,19 +449,19 @@
     </section>
 
     <!-- Newsletter Call-to-Action -->
-    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Subscribe to Carl Travels for exclusive travel tips, destination guides, and special offers delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Subscribe <i class="fas fa-paper-plane ml-1"></i>
                 </button>
             </form>
@@ -475,7 +475,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -534,12 +534,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -560,7 +560,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

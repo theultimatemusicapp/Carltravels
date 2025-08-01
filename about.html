@@ -19,12 +19,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
-        :root{--primary:#3b82f6;--secondary:#06b6d4;--dark:#1e293b;--light:#f8fafc}
-        body{font-family:'Poppins',sans-serif;background:var(--light);color:var(--dark);scroll-behavior:smooth}
-        .hero-gradient{background:linear-gradient(135deg,rgba(30,64,175,.9),rgba(6,182,212,.9))}
-        .heading-font{font-family:'Playfair Display',serif}
+        :root{--primary: #f5c518; /* Muted gold for accents */--secondary: #2a2a2a; /* Deep charcoal for backgrounds */--dark: #1a1a1a; /* Near-black for text/body */--light: #d4d4d4; /* Light gray for secondary text */}
+        body{font-family:'Montserrat',sans-serif;background-color: var(--dark);color: var(--light);scroll-behavior:smooth}
+        .hero-gradient{background:linear-gradient(135deg,rgba(42,42,42,.9),rgba(26,26,26,.9))}
+        .heading-font{font-family:'Bebas Neue',serif}
         .navbar{backdrop-filter:blur(10px);background:rgba(255,255,255,.9);transition:.3s}
         .navbar.scrolled{background:rgba(255,255,255,.98);box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
         .mobile-menu{max-height:0;overflow:hidden;transition:max-height .5s}
@@ -39,28 +39,28 @@
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold flex items-center">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2"><i class="fas fa-plane text-white -rotate-45"></i></div>
-                <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2"><i class="fas fa-plane text-white -rotate-45"></i></div>
+                <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
             </a>
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
-                <a href="destinations.html" class="text-gray-700 hover:text-blue-600">Destinations</a>
-                <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600">Videos</a>
-                <a href="blog.html" class="text-gray-700 hover:text-blue-600">Blog</a>
-                <a href="#about" class="text-blue-600 font-medium">About</a>
-                <a href="donate.html" class="text-gray-700 hover:text-blue-600">Donate</a>
-                <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg">Contact</a>
+                <a href="index.html" class="text-gray-700 hover:text-yellow-500">Home</a>
+                <a href="destinations.html" class="text-gray-700 hover:text-yellow-500">Destinations</a>
+                <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500">Videos</a>
+                <a href="blog.html" class="text-gray-700 hover:text-yellow-500">Blog</a>
+                <a href="#about" class="text-yellow-500 font-medium">About</a>
+                <a href="donate.html" class="text-gray-700 hover:text-yellow-500">Donate</a>
+                <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg">Contact</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-gray-700"><i class="fas fa-bars text-2xl"></i></button>
         </div>
         <div id="mobile-menu" class="mobile-menu md:hidden px-6 pb-4 space-y-2">
-            <a href="index.html" class="block py-2 px-3 rounded hover:bg-blue-50">Home</a>
-            <a href="destinations.html" class="block py-2 px-3 rounded hover:bg-blue-50">Destinations</a>
-            <a href="https://www.youtube.com/@carltravels" target="_blank" class="block py-2 px-3 rounded hover:bg-blue-50">Videos</a>
-            <a href="blog.html" class="block py-2 px-3 rounded hover:bg-blue-50">Blog</a>
-            <a href="#about" class="block py-2 px-3 rounded bg-blue-50 text-blue-600">About</a>
-            <a href="donate.html" class="block py-2 px-3 rounded hover:bg-blue-50">Donate</a>
-            <a href="#contact" class="block py-2 px-3 rounded hover:bg-blue-50">Contact</a>
+            <a href="index.html" class="block py-2 px-3 rounded hover:bg-yellow-900">Home</a>
+            <a href="destinations.html" class="block py-2 px-3 rounded hover:bg-yellow-900">Destinations</a>
+            <a href="https://www.youtube.com/@carltravels" target="_blank" class="block py-2 px-3 rounded hover:bg-yellow-900">Videos</a>
+            <a href="blog.html" class="block py-2 px-3 rounded hover:bg-yellow-900">Blog</a>
+            <a href="#about" class="block py-2 px-3 rounded bg-yellow-900 text-yellow-500">About</a>
+            <a href="donate.html" class="block py-2 px-3 rounded hover:bg-yellow-900">Donate</a>
+            <a href="#contact" class="block py-2 px-3 rounded hover:bg-yellow-900">Contact</a>
         </div>
     </nav>
 
@@ -82,15 +82,15 @@
         <div class="md:col-span-2 space-y-12">
             <!-- Origins -->
             <section>
-                <h2 class="heading-font text-2xl font-semibold text-blue-600 mb-4">From Perth to Everywhere</h2>
+                <h2 class="heading-font text-2xl font-semibold text-yellow-500 mb-4">From Perth to Everywhere</h2>
                 <p class="mb-4">Born in <strong>Perth, Australia</strong>, I studied sound, music and film production in <strong>Melbourne</strong>—paying the rent by DJing sweat‑soaked warehouse parties. By 2011 I’d sold the decks, packed a Canon 7D and a one‑way ticket to Berlin.</p>
                 <p>Berlin handed me freedom and €0.67 Aldi noodles. With <strong>€30</strong> to my name I began shooting my first feature <em>Busking for Berlin</em> and never looked back.</p>
             </section>
 
             <!-- Filmmaking Journey -->
             <section>
-                <h2 class="heading-font text-2xl font-semibold text-blue-600 mb-4">Filmmaking &amp; Music Videos</h2>
-                <p class="mb-4">Since those noodle days I’ve directed <strong>200+ music videos</strong> for indie bands and platinum artists, three feature films, and dozens of branded shorts. My company <em>Music Records</em> morphed into <a href="https://www.nextdaycinematics.com" target="_blank" class="text-blue-600 underline font-medium">Next Day Cinematics</a> in 2024—same punk speed, shinier logo.</p>
+                <h2 class="heading-font text-2xl font-semibold text-yellow-500 mb-4">Filmmaking &amp; Music Videos</h2>
+                <p class="mb-4">Since those noodle days I’ve directed <strong>200+ music videos</strong> for indie bands and platinum artists, three feature films, and dozens of branded shorts. My company <em>Music Records</em> morphed into <a href="https://www.nextdaycinematics.com" target="_blank" class="text-yellow-500 underline font-medium">Next Day Cinematics</a> in 2024—same punk speed, shinier logo.</p>
                 <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden shadow-lg">
                     <iframe src="https://www.youtube.com/embed/WjtMEQx34NE?si=z19QqQdGitdkmwxe" title="Busking for Berlin – 4K Remaster" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -98,7 +98,7 @@
 
             <!-- Boat build -->
             <section>
-                <h2 class="heading-font text-2xl font-semibold text-blue-600 mb-4">Building “Villa Kunter Boot” (2017)</h2>
+                <h2 class="heading-font text-2xl font-semibold text-yellow-500 mb-4">Building “Villa Kunter Boot” (2017)</h2>
                 <p class="mb-4">In 2017 I found a rusted pontoon and dreamed bigger—turning it into a solar‑powered floating studio on Berlin’s Spree. Eighteen months later <em>Villa Kunter Boot</em> was afloat: home, edit suite and rave venue in one.</p>
                 <div class="aspect-video w-full rounded-lg overflow-hidden shadow-lg mb-4">
                     <iframe src="https://www.youtube.com/embed/orOwD1xb2LU" title="Building Villa Kunter Boot – Time‑lapse" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
@@ -107,14 +107,14 @@
 
             <!-- Recent chapters -->
             <section>
-                <h2 class="heading-font text-2xl font-semibold text-blue-600 mb-4">The Recent Chapters</h2>
-                <p class="mb-4">Covid hit and I swapped crowded clubs for coral reefs—spending 2020‑22 in <strong>Cairns, Australia</strong>. There I launched my first monetised channel <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-blue-600 underline">Globe Travel Adventures</a>, followed by <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-600 underline">Carl Travels</a> and the tech‑focused <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-blue-600 underline">Carl Tomich Tech</a>.</p>
+                <h2 class="heading-font text-2xl font-semibold text-yellow-500 mb-4">The Recent Chapters</h2>
+                <p class="mb-4">Covid hit and I swapped crowded clubs for coral reefs—spending 2020‑22 in <strong>Cairns, Australia</strong>. There I launched my first monetised channel <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-yellow-500 underline">Globe Travel Adventures</a>, followed by <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 underline">Carl Travels</a> and the tech‑focused <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-yellow-500 underline">Carl Tomich Tech</a>.</p>
                 <p class="mb-4">In 2021 I set sail to circle the planet—making it around Australia before the call of film pulled me back to shore. Post‑Brexit bureaucracy sent me digging into family trees: I’m now on the path to <strong>Croatian citizenship</strong> through my grandfather, ready for the next European chapter.</p>
             </section>
 
             <!-- Off Camera -->
             <section>
-                <h2 class="heading-font text-2xl font-semibold text-blue-600 mb-4">Off‑Camera Life</h2>
+                <h2 class="heading-font text-2xl font-semibold text-yellow-500 mb-4">Off‑Camera Life</h2>
                 <ul class="list-disc list-inside space-y-2 mb-4">
                     <li>Certified drone pilot &amp; aerial cinematographer.</li>
                     <li>Vinyl DJ when the vibe (and electricity) is right.</li>
@@ -125,17 +125,17 @@
 
             <!-- Contact Form -->
             <section id="contact">
-                <h2 class="heading-font text-2xl font-semibold text-blue-600 mb-4">Let’s Collaborate</h2>
+                <h2 class="heading-font text-2xl font-semibold text-yellow-500 mb-4">Let’s Collaborate</h2>
                 <p class="mb-6">Got a story, destination or wild idea? Hit me up—whether it’s a music video, documentary or floating film set.</p>
                 <form action="https://formspree.io/f/mnnnoogg" method="POST" class="space-y-4 max-w-lg">
-                    <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
-                    <input type="email" name="_replyto" placeholder="Email Address" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
-                    <textarea name="message" rows="5" placeholder="Message" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500" required></textarea>
+                    <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-yellow-500" required>
+                    <input type="email" name="_replyto" placeholder="Email Address" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-yellow-500" required>
+                    <textarea name="message" rows="5" placeholder="Message" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-yellow-500" required></textarea>
                     <input type="text" name="_gotcha" style="display:none">
                     <input type="hidden" name="_subject" value="New About‑Page Enquiry">
                     <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                     <input type="hidden" name="_captcha" value="false">
-                    <button type="submit" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg flex items-center gap-2"><i class="fas fa-paper-plane"></i>Send</button>
+                    <button type="submit" class="px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg flex items-center gap-2"><i class="fas fa-paper-plane"></i>Send</button>
                 </form>
             </section>
         </div>
@@ -146,7 +146,7 @@
             <section class="bg-white p-6 rounded-lg shadow">
                 <h3 class="heading-font text-xl font-semibold mb-4">Milestones</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><span class="font-medium">2011:</span> Arrived in Berlin with €30 &amp; began shooting <a href="https://youtu.be/WjtMEQx34NE?si=z19QqQdGitdkmwxe" target="_blank" class="text-blue-600 underline">Busking for Berlin</a>.</li>
+                    <li><span class="font-medium">2011:</span> Arrived in Berlin with €30 &amp; began shooting <a href="https://youtu.be/WjtMEQx34NE?si=z19QqQdGitdkmwxe" target="_blank" class="text-yellow-500 underline">Busking for Berlin</a>.</li>
                     <li><span class="font-medium">2013:</span> Founded indie outfit <em>Music Records</em>.</li>
                     <li><span class="font-medium">2017:</span> Launched solar houseboat <em>Villa Kunter Boot</em> on the Spree.</li>
                     <li><span class="font-medium">2020‑22:</span> Cairns era – created <em>Globe Travel Adventures</em> &amp; survived lockdowns underwater.</li>
@@ -159,9 +159,9 @@
             <section class="bg-white p-6 rounded-lg shadow">
                 <h3 class="heading-font text-xl font-semibold mb-4">Fun Facts</h3>
                 <ul class="space-y-2">
-                    <li><i class="fas fa-globe-asia text-blue-500 mr-2"></i>Visited 47 countries – Antarctica next.</li>
-                    <li><i class="fas fa-mug-hot text-blue-500 mr-2"></i>Zero cups of coffee since 2010.</li>
-                    <li><i class="fas fa-horse text-blue-500 mr-2"></i>Alter‑ego: <a href="https://www.instagram.com/theneighkidhorse" target="_blank" class="text-blue-600 underline">@theneighkidhorse</a>.</li>
+                    <li><i class="fas fa-globe-asia text-yellow-500 mr-2"></i>Visited 47 countries – Antarctica next.</li>
+                    <li><i class="fas fa-mug-hot text-yellow-500 mr-2"></i>Zero cups of coffee since 2010.</li>
+                    <li><i class="fas fa-horse text-yellow-500 mr-2"></i>Alter‑ego: <a href="https://www.instagram.com/theneighkidhorse" target="_blank" class="text-yellow-500 underline">@theneighkidhorse</a>.</li>
                 </ul>
             </section>
 
@@ -171,8 +171,8 @@
                 <div class="flex flex-wrap gap-3">
                     <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fab fa-imdb text-yellow-500"></i>IMDb</a>
                     <a href="https://www.instagram.com/carlostomich" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fab fa-instagram text-pink-500"></i>Main Instagram</a>
-                    <a href="https://www.instagram.com/theneighkidhorse" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fas fa-horse text-blue-500"></i>Neigh Kid Horse</a>
-                    <a href="https://www.nextdaycinematics.com" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fas fa-film text-blue-500"></i>NDC Site</a>
+                    <a href="https://www.instagram.com/theneighkidhorse" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fas fa-horse text-yellow-500"></i>Neigh Kid Horse</a>
+                    <a href="https://www.nextdaycinematics.com" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fas fa-film text-yellow-500"></i>NDC Site</a>
                     <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fab fa-youtube text-red-500"></i>GTA YouTube</a>
                     <a href="https://www.youtube.com/@carltravels" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fab fa-youtube text-red-500"></i>Carl Travels YT</a>
                     <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded hover:bg-gray-200"><i class="fas fa-microchip text-gray-600"></i>Tech Channel</a>
@@ -186,7 +186,7 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6"><div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2"><i class="fas fa-plane text-white -rotate-45"></i></div><span class="heading-font">Carl Travels</span></a>
+                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6"><div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2"><i class="fas fa-plane text-white -rotate-45"></i></div><span class="heading-font">Carl Travels</span></a>
                     <p class="text-gray-400 mb-4">Inspiring meaningful travel through authentic storytelling and breathtaking photography.</p>
                     <div class="flex space-x-4 text-2xl">
                         <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
@@ -216,7 +216,7 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
                     <p class="text-gray-400 mb-4">Subscribe for new guides &amp; film drops.</p>
-                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex"><input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required><input type="hidden" name="_subject" value="Newsletter Subscription"><input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html"><input type="hidden" name="_captcha" value="false"><input type="text" name="_gotcha" style="display:none"><button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg"><i class="fas fa-paper-plane"></i></button></form>
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex"><input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required><input type="hidden" name="_subject" value="Newsletter Subscription"><input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html"><input type="hidden" name="_captcha" value="false"><input type="text" name="_gotcha" style="display:none"><button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg"><i class="fas fa-paper-plane"></i></button></form>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"><p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Carl Travels. All rights reserved.</p><div class="flex space-x-6"><a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a><a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm">Terms of Service</a><a href="#" class="text-gray-400 hover:text-white text-sm">Cookies</a></div></div>
@@ -224,7 +224,7 @@
     </footer>
 
     <!-- Back to Top -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-opacity opacity-0 invisible"><i class="fas fa-arrow-up"></i></button>
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-opacity opacity-0 invisible"><i class="fas fa-arrow-up"></i></button>
 
     <script>
         document.addEventListener('DOMContentLoaded',()=>{
