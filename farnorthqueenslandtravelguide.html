@@ -34,28 +34,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .destination-card {
@@ -152,20 +152,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -176,13 +176,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -202,11 +202,11 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Far North Queensland <br>With <span class="text-yellow-300">Carl Travels</span>
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Discover Cairns, where the Great Barrier Reef meets the Daintree Rainforest. Join me to explore Port Douglas, island adventures, and hidden gems like Crystal Cascades.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#blog" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                        <a href="#blog" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                             Explore Guide
                         </a>
                         <a href="https://www.youtube.com/@carltravels" target="_blank" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
@@ -218,10 +218,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="Farnorthq.jpeg" alt="Great Barrier Reef" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Far North Queensland</h3>
                                 <p class="text-sm opacity-90">Reef & Rainforest Adventure</p>
@@ -237,9 +237,9 @@
     <section id="blog" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL GUIDE</span>
+                <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL GUIDE</span>
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Far North Queensland Adventures</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -255,7 +255,7 @@
                         <p class="text-gray-600 mb-4">Just an hour from Cairns, Port Douglas is your gateway to the Great Barrier Reef and Daintree Rainforest. Stroll Four Mile Beach, dine on Macrossan Street, or catch a sunset at Rex Smeal Park. My video takes you through the town’s highlights, including local markets and the Wildlife Habitat.</p>
                         <iframe src="https://www.youtube.com/embed/jlHPcAebOWU" class="w-full h-64 mb-4" allowfullscreen></iframe>
                         <p class="text-gray-600 mb-4">Don’t miss a day trip to Mossman Gorge for a swim or a crocodile-spotting river cruise in the Daintree. Port Douglas’ laid-back vibe makes it a perfect base for adventure.</p>
-                        <a href="https://www.youtube.com/watch?v=jlHPcAebOWU" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                        <a href="https://www.youtube.com/watch?v=jlHPcAebOWU" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm inline-flex items-center">
                             Watch Full Video <i class="fas fa-play ml-1"></i>
                         </a>
                     </div>
@@ -273,7 +273,7 @@
                         <p class="text-gray-600 mb-4">Both a 45-minute ferry from Cairns and $100 per person, Green Island and Fitzroy Island offer stunning reefs. Green Island’s coral cay suits families with its waterslide, while Fitzroy’s trails and Nudey Beach appeal to adventurers. My video breaks it down.</p>
                         <iframe src="https://www.youtube.com/embed/BbJnIqomlmI" class="w-full h-64 mb-4" allowfullscreen></iframe>
                         <p class="text-gray-600 mb-4">Green Island has extras like Seawalker diving, while Fitzroy’s turtle center and hiking trails feel wilder. Snorkeling is top-notch at both!</p>
-                        <a href="https://www.youtube.com/watch?v=BbJnIqomlmI" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                        <a href="https://www.youtube.com/watch?v=BbJnIqomlmI" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm inline-flex items-center">
                             Watch Full Video <i class="fas fa-play ml-1"></i>
                         </a>
                     </div>
@@ -291,7 +291,7 @@
                         <p class="text-gray-600 mb-4">Off Palm Cove, 30 minutes from Cairns, Double Island is a secluded escape accessible by kayak or private boat. I explored it with an inflatable boat in my video. Recently bought by the government, it may see eco-tourism development soon.</p>
                         <iframe src="https://www.youtube.com/embed/5ezwJAVN9r4" class="w-full h-64 mb-4" allowfullscreen></iframe>
                         <p class="text-gray-600 mb-4">Palm Cove’s coconut-lined beach is a bonus stop. Double Island’s untouched vibe is perfect for off-the-grid adventurers.</p>
-                        <a href="https://www.youtube.com/watch?v=5ezwJAVN9r4" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                        <a href="https://www.youtube.com/watch?v=5ezwJAVN9r4" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm inline-flex items-center">
                             Watch Full Video <i class="fas fa-play ml-1"></i>
                         </a>
                     </div>
@@ -309,7 +309,7 @@
                         <p class="text-gray-600 mb-4">A 20-minute drive from Cairns CBD, Crystal Cascades is a free, rainforest-surrounded swimming hole. It’s a local favorite, especially in the hot months (November-April). My video shows the trail and “No Fear” cliff diving spot.</p>
                         <iframe src="https://www.youtube.com/embed/s5wknDLdGbg" class="w-full h-64 mb-4" allowfullscreen></iframe>
                         <p class="text-gray-600 mb-4">For a longer hike, check out nearby Fairy Falls. Crystal Cascades is a budget-friendly must-visit for cooling off in nature.</p>
-                        <a href="https://www.youtube.com/watch?v=s5wknDLdGbg" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                        <a href="https://www.youtube.com/watch?v=s5wknDLdGbg" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm inline-flex items-center">
                             Watch Full Video <i class="fas fa-play ml-1"></i>
                         </a>
                     </div>
@@ -327,7 +327,7 @@
                         <p class="text-gray-600 mb-4">Cape Tribulation, in the heart of the Daintree Rainforest, is a rare spot where two UNESCO World Heritage Sites—the Great Barrier Reef and the Daintree—converge. My video explores its pristine beaches, boardwalk trails, and jungle adventures.</p>
                         <iframe src="https://www.youtube.com/embed/QYuoiKPTHf0" class="w-full h-64 mb-4" allowfullscreen></iframe>
                         <p class="text-gray-600 mb-4">Try a guided night walk to spot nocturnal wildlife or a reef snorkeling tour. Cape Tribulation’s remote beauty is a must for nature lovers.</p>
-                        <a href="https://www.youtube.com/watch?v=QYuoiKPTHf0" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                        <a href="https://www.youtube.com/watch?v=QYuoiKPTHf0" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm inline-flex items-center">
                             Watch Full Video <i class="fas fa-play ml-1"></i>
                         </a>
                     </div>
@@ -345,7 +345,7 @@
                         <p class="text-gray-600 mb-4">Paronella Park, built by Jose Paronella in the 1930s, is a whimsical Spanish-style castle nestled in Far North Queensland’s rainforest. My 4K video showcases its gardens, ruins, and waterfalls, telling the story of a dreamer’s legacy.</p>
                         <iframe src="https://www.youtube.com/embed/UkOiU0FCZww" class="w-full h-64 mb-4" allowfullscreen></iframe>
                         <p class="text-gray-600 mb-4">Take a night tour to see the castle lit up or explore the hydroelectric plant, Australia’s first. Paronella Park is a magical blend of history and nature.</p>
-                        <a href="https://www.youtube.com/watch?v=UkOiU0FCZww" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm inline-flex items-center">
+                        <a href="https://www.youtube.com/watch?v=UkOiU0FCZww" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm inline-flex items-center">
                             Watch Full Video <i class="fas fa-play ml-1"></i>
                         </a>
                     </div>
@@ -355,7 +355,7 @@
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg">
                     <div class="p-8">
                         <div class="flex items-center mb-4">
-                            <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full mr-3">Featured</span>
+                            <span class="bg-yellow-100 text-yellow-500 text-xs px-3 py-1 rounded-full mr-3">Featured</span>
                             <span class="text-gray-500 text-sm">October 20, 2024</span>
                         </div>
                         <h3 class="text-2xl font-bold text-gray-800 mb-3">Why Far North Queensland?</h3>
@@ -367,14 +367,14 @@
                                 </div>
                                 <span class="text-sm text-gray-700">Carl Tomich</span>
                             </div>
-                            <a href="destinations.html" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Explore More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="destinations.html" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm">Explore More <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                     View All Articles <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -384,19 +384,19 @@
     <!-- Newsletter -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6 max-w-4xl">
-            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 md:p-12 shadow-lg">
+            <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-2xl p-8 md:p-12 shadow-lg">
                 <div class="text-center mb-8">
                     <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-2">Join My Travel Community</h2>
                     <p class="text-gray-600 max-w-lg mx-auto">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                 </div>
                 
                 <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                    <input type="email" name="_replyto" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    <input type="email" name="_replyto" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                     <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                     <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_gotcha" style="display:none">
-                    <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                    <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                         Subscribe <i class="fas fa-paper-plane ml-1"></i>
                     </button>
                 </form>
@@ -412,7 +412,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -470,12 +470,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -496,7 +496,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

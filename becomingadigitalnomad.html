@@ -34,28 +34,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .navbar {
@@ -106,20 +106,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -130,13 +130,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -156,10 +156,10 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         The 3 Cheapest Countries to Be a Digital Nomad in 2024
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Discover Vietnam, Bulgaria, and Bali for affordable living, fast internet, and flexible visas with Carl Travels’ guide to your dream remote life.
                     </p>
-                    <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                         Read the Guide
                     </a>
                 </div>
@@ -167,10 +167,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/digitalnomad.jpg" alt="Digital Nomad Working Remotely" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Live Your Best Remote Life</h3>
                                 <p class="text-sm opacity-90">Carl Travels</p>
@@ -189,9 +189,9 @@
                 <!-- Main Article Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">DIGITAL NOMAD GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">DIGITAL NOMAD GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">🌎 Affordable Living, Great Internet, and Smart Visa Run Tips</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
@@ -200,7 +200,7 @@
                         </p>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-laptop mr-2 text-blue-500"></i> 🇻🇳 Vietnam</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-laptop mr-2 text-yellow-500"></i> 🇻🇳 Vietnam</h2>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Why Vietnam?</h3>
                             <p class="text-gray-600 mb-4">Vietnam is exploding as a nomad destination—and for good reason. Incredible food, energetic cities like Hanoi and Ho Chi Minh City, and stunning beach towns like Da Nang and Hoi An, all at prices that seem too good to be true. Vietnam offers one of the best cost-to-quality-of-life ratios in the world.</p>
                             
@@ -220,7 +220,7 @@
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Cost of Living in Vietnam</h3>
                             <table class="table-auto w-full border-collapse mb-4">
                                 <thead>
-                                    <tr class="bg-blue-50">
+                                    <tr class="bg-yellow-900">
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Expense</th>
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Average Monthly Cost</th>
                                     </tr>
@@ -248,13 +248,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">👉 Total Comfortable Budget:</span> $600–$1000 USD per month</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">👉 Total Comfortable Budget:</span> $600–$1000 USD per month</p>
                             
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Smart Visa Run Options from Vietnam</h3>
                             <p class="text-gray-600 mb-4">If you need to reset your visa:</p>
                             <table class="table-auto w-full border-collapse mb-4">
                                 <thead>
-                                    <tr class="bg-blue-50">
+                                    <tr class="bg-yellow-900">
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Visa Run Destination</th>
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Notes</th>
                                     </tr>
@@ -278,11 +278,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">✈️ Tip:</span> Many nomads fly to Bangkok or Kuala Lumpur, stay a few days, and then reapply for Vietnam’s 90-day e-visa.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">✈️ Tip:</span> Many nomads fly to Bangkok or Kuala Lumpur, stay a few days, and then reapply for Vietnam’s 90-day e-visa.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-laptop mr-2 text-blue-500"></i> 🇧🇬 Bulgaria</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-laptop mr-2 text-yellow-500"></i> 🇧🇬 Bulgaria</h2>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Why Bulgaria?</h3>
                             <p class="text-gray-600 mb-4">Bulgaria is Europe’s hidden gem—mountain towns, beaches, and fast internet for less than half the cost of Western Europe. It’s perfect if you want a European vibe without European prices. Cities like Sofia, Plovdiv, and Bansko are popular, and Varna offers an amazing seaside lifestyle at bargain prices.</p>
                             
@@ -296,7 +296,7 @@
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Cost of Living in Bulgaria</h3>
                             <table class="table-auto w-full border-collapse mb-4">
                                 <thead>
-                                    <tr class="bg-blue-50">
+                                    <tr class="bg-yellow-900">
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Expense</th>
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Average Monthly Cost</th>
                                     </tr>
@@ -324,13 +324,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">👉 Total Comfortable Budget:</span> $700–$1100 USD per month</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">👉 Total Comfortable Budget:</span> $700–$1100 USD per month</p>
                             
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Smart Visa Run Options from Bulgaria</h3>
                             <p class="text-gray-600 mb-4">Since Bulgaria is now part of Schengen, once you hit your 90 days, you’ll need to leave the entire Schengen area.</p>
                             <table class="table-auto w-full border-collapse mb-4">
                                 <thead>
-                                    <tr class="bg-blue-50">
+                                    <tr class="bg-yellow-900">
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Visa Run Destination</th>
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Notes</th>
                                     </tr>
@@ -354,11 +354,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">✈️ Tip:</span> Montenegro is one of the best visa-run options—amazing beaches, great food, low costs, and you stay legally for another 90 days.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">✈️ Tip:</span> Montenegro is one of the best visa-run options—amazing beaches, great food, low costs, and you stay legally for another 90 days.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-laptop mr-2 text-blue-500"></i> 🇮🇩 Indonesia (Bali)</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-laptop mr-2 text-yellow-500"></i> 🇮🇩 Indonesia (Bali)</h2>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Why Bali?</h3>
                             <p class="text-gray-600 mb-4">Bali’s been the poster child for digital nomads for a reason: gorgeous beaches, a strong coworking scene, yoga, great food, and a lifestyle that lets you live like royalty on a budget (if you do it smart). Canggu, Ubud, and Uluwatu are the top nomad areas.</p>
                             
@@ -378,7 +378,7 @@
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Cost of Living in Bali</h3>
                             <table class="table-auto w-full border-collapse mb-4">
                                 <thead>
-                                    <tr class="bg-blue-50">
+                                    <tr class="bg-yellow-900">
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Expense</th>
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Average Monthly Cost</th>
                                     </tr>
@@ -406,13 +406,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">👉 Total Comfortable Budget:</span> $800–$1300 USD per month</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">👉 Total Comfortable Budget:</span> $800–$1300 USD per month</p>
                             
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Smart Visa Run Options from Bali</h3>
                             <p class="text-gray-600 mb-4">If you need to leave to reset your stay:</p>
                             <table class="table-auto w-full border-collapse mb-4">
                                 <thead>
-                                    <tr class="bg-blue-50">
+                                    <tr class="bg-yellow-900">
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Visa Run Destination</th>
                                         <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Notes</th>
                                     </tr>
@@ -432,15 +432,15 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">✈️ Tip:</span> Many nomads fly to Kuala Lumpur or Singapore for a few days, enjoy modern city life, then return to Bali fresh with a new visa.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">✈️ Tip:</span> Many nomads fly to Kuala Lumpur or Singapore for a few days, enjoy modern city life, then return to Bali fresh with a new visa.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-table mr-2 text-blue-500"></i> 🧳 Quick Comparison Table</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-table mr-2 text-yellow-500"></i> 🧳 Quick Comparison Table</h2>
                             <div class="overflow-x-auto">
                                 <table class="table-auto w-full border-collapse mb-4">
                                     <thead>
-                                        <tr class="bg-blue-50">
+                                        <tr class="bg-yellow-900">
                                             <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Country</th>
                                             <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Free Visa Length</th>
                                             <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Monthly Budget</th>
@@ -472,7 +472,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray- sixties mb-4"><i class="fas fa-star mr-2 text-blue-500"></i> 🎤 Final Thoughts</h2>
+                            <h2 class="text-2xl font-bold text-gray- sixties mb-4"><i class="fas fa-star mr-2 text-yellow-500"></i> 🎤 Final Thoughts</h2>
                             <p class="text-gray-600 mb-4">If you’re serious about building your remote lifestyle while keeping costs low, Vietnam, Bulgaria, and Bali are the smartest choices in 2024 and beyond. Each offers affordable rent, great food, fast internet, thriving nomad communities, and easy visa options with a little planning.</p>
                             <p class="text-gray-600 mb-4">Visa runs aren’t just chores—they’re mini-adventures built into your journey. So pick a country, pack your bags, and build the life everyone else is dreaming about.</p>
                             <p class="text-gray-600 mb-4">Want to see the digital nomad life in action? Check out my YouTube channel for vlogs from these destinations!</p>
@@ -481,7 +481,7 @@
                                 <div class="relative w-full aspect-video">
                                     <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/VIDEO_ID" title="Digital Nomad Vlog by Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <p class="text-gray-600 text-sm mt-2">[Note: Replace VIDEO_ID with a relevant video from <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a>.]</p>
+                                <p class="text-gray-600 text-sm mt-2">[Note: Replace VIDEO_ID with a relevant video from <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a>.]</p>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center">
@@ -490,7 +490,7 @@
                                     </div>
                                     <span class="text-sm text-gray-700">Carl Tomich</span>
                                 </div>
-                                <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
+                                <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
                             </div>
                         </div>
                     </div>
@@ -501,24 +501,24 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Why These Countries?</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-dollar-sign mr-2 text-blue-500"></i> Low-cost living ($600–$1300/month)</li>
-                            <li><i class="fas fa-wifi mr-2 text-blue-500"></i> Fast, reliable internet</li>
-                            <li><i class="fas fa-users mr-2 text-blue-500"></i> Thriving nomad communities</li>
-                            <li><i class="fas fa-passport mr-2 text-blue-500"></i> Flexible visa options</li>
-                            <li><i class="fas fa-plane mr-2 text-blue-500"></i> Easy visa run destinations</li>
+                            <li><i class="fas fa-dollar-sign mr-2 text-yellow-500"></i> Low-cost living ($600–$1300/month)</li>
+                            <li><i class="fas fa-wifi mr-2 text-yellow-500"></i> Fast, reliable internet</li>
+                            <li><i class="fas fa-users mr-2 text-yellow-500"></i> Thriving nomad communities</li>
+                            <li><i class="fas fa-passport mr-2 text-yellow-500"></i> Flexible visa options</li>
+                            <li><i class="fas fa-plane mr-2 text-yellow-500"></i> Easy visa run destinations</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -526,7 +526,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="destinations.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="destinations.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             More Destinations <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -536,19 +536,19 @@
     </section>
 
     <!-- Newsletter Call-to-Action -->
-    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Subscribe to Carl Travels for exclusive travel tips, destination guides, and special offers delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Subscribe <i class="fas fa-paper-plane ml-1"></i>
                 </button>
             </form>
@@ -562,7 +562,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -621,12 +621,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -647,7 +647,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 
