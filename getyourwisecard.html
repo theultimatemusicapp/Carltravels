@@ -25,28 +25,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .destination-card {
@@ -143,20 +143,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -167,13 +167,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -193,11 +193,11 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Why Every Traveller Should Get a Wise Card <br>With <span class="text-yellow-300">Carl Travels</span>
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Save money, skip hidden fees, and spend like a local with a Wise card. Discover why it’s a must-have for smart travellers.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                        <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                             Read the Guide
                         </a>
                         <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition-all">
@@ -209,10 +209,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/wise.jpg" alt="Wise Card Travel" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Wise Card</h3>
                                 <p class="text-sm opacity-90">Travel Smarter, Save More</p>
@@ -231,15 +231,15 @@
                 <!-- Main Article Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL FINANCE GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL FINANCE GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Every Traveller Should Get a Wise Card</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
-                        <p class="text-gray-600 mb-8">When you're travelling, every little hidden fee adds up. Whether it’s dodgy airport exchange counters, bad ATM rates, or your bank sneakily charging you 3% every time you tap your card abroad—money leaks happen faster than you realize. After years of travelling across dozens of countries, I can honestly say: getting a <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="text-blue-500 hover:text-blue-600">Wise card</a> was one of the best financial moves I ever made for travel. Here’s everything you need to know about it—and why you should set one up before your next trip.</p>
+                        <p class="text-gray-600 mb-8">When you're travelling, every little hidden fee adds up. Whether it’s dodgy airport exchange counters, bad ATM rates, or your bank sneakily charging you 3% every time you tap your card abroad—money leaks happen faster than you realize. After years of travelling across dozens of countries, I can honestly say: getting a <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="text-yellow-500 hover:text-yellow-500">Wise card</a> was one of the best financial moves I ever made for travel. Here’s everything you need to know about it—and why you should set one up before your next trip.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-credit-card mr-2 text-blue-500"></i> What is Wise?</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-credit-card mr-2 text-yellow-500"></i> What is Wise?</h2>
                         <p class="text-gray-600 mb-4">Wise (formerly TransferWise) is an international money service designed for modern travellers, freelancers, remote workers, and basically anyone who moves money across borders. Their Wise debit card is connected to a multi-currency account where you can:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Hold 40+ currencies.</li>
@@ -248,7 +248,7 @@
                         </ul>
                         <p class="text-gray-600 mb-4">You just top up your account online and spend like a local, wherever you are.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-plane mr-2 text-blue-500"></i> Why I Recommend Wise for Travellers</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-plane mr-2 text-yellow-500"></i> Why I Recommend Wise for Travellers</h2>
                         <p class="text-gray-600 mb-4">Here’s why Wise has become my #1 travel finance tool:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li><strong>Best Exchange Rates:</strong> You get the real mid-market exchange rate (the one you see on Google), not a marked-up tourist rate.</li>
@@ -261,7 +261,7 @@
                             <li><strong>Virtual Card Available:</strong> For even more secure online purchases while travelling.</li>
                         </ul>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe mr-2 text-blue-500"></i> Real-World Example</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe mr-2 text-yellow-500"></i> Real-World Example</h2>
                         <p class="text-gray-600 mb-4">When I spent months travelling across Vietnam, Japan, Germany, France, and Albania, I used my Wise card everywhere:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li>Paid for hotels in EUR without my home bank slapping me with a 3% foreign fee.</li>
@@ -270,7 +270,7 @@
                         </ul>
                         <p class="text-gray-600 mb-4">It saved me hundreds of dollars compared to using a traditional bank card.</p>
                         
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-fire mr-2 text-blue-500"></i> How to Get a Wise Card</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-fire mr-2 text-yellow-500"></i> How to Get a Wise Card</h2>
                         <p class="text-gray-600 mb-4">Setting it up is easy:</p>
                         <ol class="list-decimal pl-6 mb-4 text-gray-600">
                             <li>Create an account online (it takes 5 minutes).</li>
@@ -278,9 +278,9 @@
                             <li>Order your Wise card (delivery is usually quick, depending on your country).</li>
                             <li>Start loading money and travelling smarter.</li>
                         </ol>
-                        <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Note:</span> Delivery times and free ATM withdrawal limits may vary by country. Check Wise’s website for details.</p>
-                        <p class="text-gray-600 mb-4">👉 <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Get your Wise card using my link here</a>. You'll support me a little (thanks!) — and honestly, you'll be supporting your own wallet even more.</p>
-                        <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                        <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Note:</span> Delivery times and free ATM withdrawal limits may vary by country. Check Wise’s website for details.</p>
+                        <p class="text-gray-600 mb-4">👉 <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium">Get your Wise card using my link here</a>. You'll support me a little (thanks!) — and honestly, you'll be supporting your own wallet even more.</p>
+                        <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                             Get Your Wise Card Now <i class="fas fa-credit-card ml-2"></i>
                         </a>
                     </div>
@@ -291,27 +291,27 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Quick Benefits</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-exchange-alt mr-2 text-blue-500"></i> Real mid-market exchange rates</li>
-                            <li><i class="fas fa-ban mr-2 text-blue-500"></i> No hidden fees</li>
-                            <li><i class="fas fa-money-bill-wave mr-2 text-blue-500"></i> Free ATM withdrawals (up to limit)</li>
-                            <li><i class="fas fa-globe mr-2 text-blue-500"></i> Hold 40+ currencies</li>
-                            <li><i class="fas fa-sync mr-2 text-blue-500"></i> Instant currency switching</li>
-                            <li><i class="fas fa-bell mr-2 text-blue-500"></i> Real-time spending alerts</li>
-                            <li><i class="fas fa-lock mr-2 text-blue-500"></i> Prepaid, no debt</li>
-                            <li><i class="fas fa-credit-card mr-2 text-blue-500"></i> Virtual card for online purchases</li>
+                            <li><i class="fas fa-exchange-alt mr-2 text-yellow-500"></i> Real mid-market exchange rates</li>
+                            <li><i class="fas fa-ban mr-2 text-yellow-500"></i> No hidden fees</li>
+                            <li><i class="fas fa-money-bill-wave mr-2 text-yellow-500"></i> Free ATM withdrawals (up to limit)</li>
+                            <li><i class="fas fa-globe mr-2 text-yellow-500"></i> Hold 40+ currencies</li>
+                            <li><i class="fas fa-sync mr-2 text-yellow-500"></i> Instant currency switching</li>
+                            <li><i class="fas fa-bell mr-2 text-yellow-500"></i> Real-time spending alerts</li>
+                            <li><i class="fas fa-lock mr-2 text-yellow-500"></i> Prepaid, no debt</li>
+                            <li><i class="fas fa-credit-card mr-2 text-yellow-500"></i> Virtual card for online purchases</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -319,10 +319,10 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all mb-4">
+                        <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all mb-4">
                             Get Your Wise Card <i class="fas fa-credit-card ml-2"></i>
                         </a>
-                        <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             More Travel Tips <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -331,8 +331,8 @@
             
             <!-- Final Thoughts -->
             <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-blue-500"></i> Final Thoughts</h2>
-                <p class="text-gray-600 mb-4">If you love travelling, working remotely, or just hate being ripped off, getting a <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="text-blue-500 hover:text-blue-600">Wise card</a> is honestly a no-brainer.</p>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-yellow-500"></i> Final Thoughts</h2>
+                <p class="text-gray-600 mb-4">If you love travelling, working remotely, or just hate being ripped off, getting a <a href="https://wise.com/invite/irhc/carlt62" target="_blank" class="text-yellow-500 hover:text-yellow-500">Wise card</a> is honestly a no-brainer.</p>
                 <p class="text-gray-600 mb-4">I don't leave my home country without it anymore—and once you see how much you save on your first trip, you'll wonder why you didn’t get one sooner.</p>
                 <p class="text-gray-600 mb-4 font-semibold">💡 Wise isn’t a "hack" — it’s just the smarter, fairer way to move money in the 21st century.</p>
                 <div class="flex items-center justify-between">
@@ -342,7 +342,7 @@
                         </div>
                         <span class="text-sm text-gray-700">Carl Tomich</span>
                     </div>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500 font-medium text-sm">Watch My Travel Videos <i class="fas fa-play ml-1"></i></a>
                 </div>
             </div>
         </div>
@@ -354,7 +354,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -412,12 +412,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -438,7 +438,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

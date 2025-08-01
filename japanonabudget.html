@@ -25,28 +25,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .navbar {
@@ -97,20 +97,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -121,13 +121,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-blue-600 bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-yellow-500 bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -147,10 +147,10 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         How to Visit Japan on a Budget
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Explore Japan without breaking the bank with Carl Travels’ 2025 guide, packed with real tips from months of budget adventures.
                     </p>
-                    <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                         Start Saving
                     </a>
                 </div>
@@ -158,10 +158,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/japanbudget.jpg" alt="Osaka’s Dotonbori on a Budget" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Travel Japan Smart</h3>
                                 <p class="text-sm opacity-90">Carl Travels</p>
@@ -180,9 +180,9 @@
                 <!-- Main Article Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">JAPAN BUDGET GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">JAPAN BUDGET GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">💴 Explore Japan Without Going Broke</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
@@ -191,71 +191,71 @@
                         </p>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-home mr-2 text-blue-500"></i> 1. Book Longer Stays (and Get a Kitchen!)</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-home mr-2 text-yellow-500"></i> 1. Book Longer Stays (and Get a Kitchen!)</h2>
                             <p class="text-gray-600 mb-4">Booking a longer-stay Airbnb was a game-changer for me:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Lower nightly rates compared to hotels.</li>
                                 <li>A kitchen to cook meals, slashing food costs.</li>
                                 <li>Balance cooking with eating out at affordable local spots.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Look for Airbnbs near stations like Namba in Osaka for walkable access to attractions.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Look for Airbnbs near stations like Namba in Osaka for walkable access to attractions.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-store mr-2 text-blue-500"></i> 2. Convenience Stores & Supermarkets</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-store mr-2 text-yellow-500"></i> 2. Convenience Stores & Supermarkets</h2>
                             <p class="text-gray-600 mb-4">Japan’s convenience stores are legendary for a reason:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>7-Eleven, FamilyMart, Lawson:</strong> Fresh meals (bento, onigiri) for ¥300–600.</li>
                                 <li><strong>Supermarkets:</strong> Cheaper pre-cooked meals, especially discounted after 7–8 PM (up to 50% off).</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Hunt for yellow “discount” stickers on bento boxes at supermarkets for the best deals.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Hunt for yellow “discount” stickers on bento boxes at supermarkets for the best deals.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-city mr-2 text-blue-500"></i> 3. Choose the Right City</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-city mr-2 text-yellow-500"></i> 3. Choose the Right City</h2>
                             <p class="text-gray-600 mb-4">Osaka is my top pick for budget travelers:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Cheaper than Tokyo, less crowded, incredible food.</li>
                                 <li>Close to Kyoto, Nara, and Kobe via cheap local trains (e.g., JR Osaka Loop Line).</li>
                                 <li>Stay near Namba Station to walk to attractions, saving on transport.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Walking in Osaka not only saves yen but lets you burn off all that ramen and takoyaki!</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Walking in Osaka not only saves yen but lets you burn off all that ramen and takoyaki!</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-hotel mr-2 text-blue-500"></i> 4. Accommodation: APA Hotels, Airbnbs, Internet Cafes</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-hotel mr-2 text-yellow-500"></i> 4. Accommodation: APA Hotels, Airbnbs, Internet Cafes</h2>
                             <p class="text-gray-600 mb-4">Smart lodging choices keep costs low:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>APA Hotels:</strong> Clean, private rooms in Tokyo for ~¥12,000/night—a steal for the city center.</li>
                                 <li><strong>Airbnbs:</strong> Affordable for longer stays, especially with kitchens.</li>
                                 <li><strong>Internet Cafes (Manga Kissa):</strong> Private booths, Wi-Fi, drinks, showers—cheaper than hostels with more privacy.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Internet cafes are perfect for a night or two when you need a budget-friendly crash pad.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Internet cafes are perfect for a night or two when you need a budget-friendly crash pad.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-train mr-2 text-blue-500"></i> 5. Transport: Skip the JR Pass</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-train mr-2 text-yellow-500"></i> 5. Transport: Skip the JR Pass</h2>
                             <p class="text-gray-600 mb-4">The JR Pass isn’t always worth it anymore:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Regional Passes:</strong> Use passes like the Kansai Wide Area Pass for regional travel (e.g., Osaka to Kyoto).</li>
                                 <li><strong>Night Buses:</strong> Book with Willer Express for cheap, comfortable long-distance trips.</li>
                                 <li><strong>IC Cards:</strong> Get a Suica or Pasmo card for discounted subway fares and easy travel.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Check HyperDia or Google Maps for the cheapest train routes before buying any pass.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Check HyperDia or Google Maps for the cheapest train routes before buying any pass.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-beer mr-2 text-blue-500"></i> 6. Save on Drinks</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-beer mr-2 text-yellow-500"></i> 6. Save on Drinks</h2>
                             <p class="text-gray-600 mb-4">Public drinking is legal in Japan, making it a budget-friendly option:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Buy beers, sake, or chuhai from 7-Eleven or Lawson (¥150–300).</li>
                                 <li>Enjoy drinks in parks or while strolling, saving compared to bars.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Try a Strong Zero chuhai for a cheap, tasty buzz—just don’t overdo it!</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Try a Strong Zero chuhai for a cheap, tasty buzz—just don’t overdo it!</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-torii-gate mr-2 text-blue-500"></i> 7. Free (or Nearly Free) Attractions</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-torii-gate mr-2 text-yellow-500"></i> 7. Free (or Nearly Free) Attractions</h2>
                             <p class="text-gray-600 mb-4">Sightseeing doesn’t have to cost a fortune:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Free Temples/Shrines:</strong> Meiji Shrine (Tokyo), Senso-ji (Tokyo), Yasaka Shrine (Kyoto).</li>
@@ -263,43 +263,43 @@
                                 <li><strong>Observation Decks:</strong> Tokyo Metropolitan Government Building offers free city views.</li>
                                 <li><strong>Discount Passes:</strong> Grutto Pass for Tokyo museums saves on entry fees.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Time your shrine visits for festivals—free cultural experiences!</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Time your shrine visits for festivals—free cultural experiences!</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-shopping-bag mr-2 text-blue-500"></i> 8. Shopping and Extras</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-shopping-bag mr-2 text-yellow-500"></i> 8. Shopping and Extras</h2>
                             <p class="text-gray-600 mb-4">Keep souvenirs and essentials cheap:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>100-Yen Stores:</strong> Daiso for snacks, souvenirs (~¥100).</li>
                                 <li><strong>Second-Hand Shops:</strong> Book Off, Hard Off for clothes, gadgets at low prices.</li>
                                 <li><strong>Tax-Free Shopping:</strong> Show your passport at participating stores for tax savings.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Stock up on quirky souvenirs at Daiso—they’re cheap and fun!</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Stock up on quirky souvenirs at Daiso—they’re cheap and fun!</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-times-circle mr-2 text-blue-500"></i> 9. Avoid Tokyo (If You Can)</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-times-circle mr-2 text-yellow-500"></i> 9. Avoid Tokyo (If You Can)</h2>
                             <p class="text-gray-600 mb-4">Tokyo is iconic but pricey:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Accommodation, food, and transport cost more than elsewhere.</li>
                                 <li>Limit Tokyo to a few days; focus on Osaka, Kyoto, Fukuoka, or Hiroshima.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Osaka offers Tokyo’s energy at a lower cost—my favorite base!</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Osaka offers Tokyo’s energy at a lower cost—my favorite base!</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-umbrella-beach mr-2 text-blue-500"></i> 10. Consider Okinawa</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-umbrella-beach mr-2 text-yellow-500"></i> 10. Consider Okinawa</h2>
                             <p class="text-gray-600 mb-4">Okinawa is a budget traveler’s dream:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li>Accommodation half the price of mainland Japan.</li>
                                 <li>Tropical beaches, friendly locals, slower pace.</li>
                                 <li>Perfect for longer, budget-friendly stays.</li>
                             </ul>
-                            <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Book domestic flights to Okinawa early for the best deals.</p>
+                            <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Book domestic flights to Okinawa early for the best deals.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-star mr-2 text-blue-500"></i> Final Thoughts</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-star mr-2 text-yellow-500"></i> Final Thoughts</h2>
                             <p class="text-gray-600 mb-4">Japan doesn’t have to drain your wallet. With smart planning—longer stays, convenience store meals, regional passes, and free attractions—you can experience its magic affordably. Walk more, eat smart, and dive into the culture. You’ll leave richer in memories, not poorer in cash.</p>
                             <p class="text-gray-600 mb-4">Check out my budget adventures at Osaka’s 1970 Expo site below:</p>
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Exploring Osaka on a Budget</h3>
@@ -307,7 +307,7 @@
                                 <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/xxxx" title="Exploring Osaka’s 1970 Expo Site on a Budget by Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <p class="text-gray-600 mb-4">This video shares my budget-friendly journey to the Expo ’70 site—proof you can explore Japan’s history without spending much!</p>
-                            <p class="text-gray-600 mb-4"><strong>Bon voyage!</strong> 🌸 Explore more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a>!</p>
+                            <p class="text-gray-600 mb-4"><strong>Bon voyage!</strong> 🌸 Explore more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a>!</p>
                         </div>
                     </div>
                 </div>
@@ -317,24 +317,24 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Why Budget Travel in Japan?</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-yen-sign mr-2 text-blue-500"></i> Affordable food at convenience stores</li>
-                            <li><i class="fas fa-torii-gate mr-2 text-blue-500"></i> Free temples and parks</li>
-                            <li><i class="fas fa-train mr-2 text-blue-500"></i> Cheap regional transport</li>
-                            <li><i class="fas fa-home mr-2 text-blue-500"></i> Budget lodging like internet cafes</li>
-                            <li><i class="fas fa-umbrella-beach mr-2 text-blue-500"></i> Low-cost Okinawa escapes</li>
+                            <li><i class="fas fa-yen-sign mr-2 text-yellow-500"></i> Affordable food at convenience stores</li>
+                            <li><i class="fas fa-torii-gate mr-2 text-yellow-500"></i> Free temples and parks</li>
+                            <li><i class="fas fa-train mr-2 text-yellow-500"></i> Cheap regional transport</li>
+                            <li><i class="fas fa-home mr-2 text-yellow-500"></i> Budget lodging like internet cafes</li>
+                            <li><i class="fas fa-umbrella-beach mr-2 text-yellow-500"></i> Low-cost Okinawa escapes</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -342,7 +342,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="osakatravelguide.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="osakatravelguide.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             Explore Osaka <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -352,19 +352,19 @@
     </section>
 
     <!-- Newsletter Call-to-Action -->
-    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Subscribe to Carl Travels for exclusive travel tips, destination guides, and special offers delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Subscribe <i class="fas fa-paper-plane ml-1"></i>
                 </button>
             </form>
@@ -378,7 +378,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -437,12 +437,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -463,7 +463,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

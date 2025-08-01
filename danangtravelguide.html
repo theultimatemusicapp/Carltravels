@@ -25,28 +25,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .navbar {
@@ -97,20 +97,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -121,13 +121,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-blue-600 bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-yellow-500 bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -147,10 +147,10 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Da Nang, Vietnam: Beaches & Hidden Gems
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Discover Da Nang’s golden shores, Marble Mountains, and the surreal Ba Na Hills.
                     </p>
-                    <a href="#guide" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="#guide" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                         Explore Da Nang
                     </a>
                 </div>
@@ -158,10 +158,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/dananglogo.jpg" alt="Da Nang My Khe Beach and Marble Mountains" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Discover Da Nang’s Charm</h3>
                                 <p class="text-sm opacity-90">Carl Travels</p>
@@ -180,9 +180,9 @@
                 <!-- Main Guide Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">🇻🇳 Da Nang: Coastal Bliss & Cultural Wonders</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
@@ -191,12 +191,12 @@
                         </p>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-home mr-2 text-blue-500"></i> Welcome to Da Nang</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-home mr-2 text-yellow-500"></i> Welcome to Da Nang</h2>
                             <p class="text-gray-600 mb-4">Da Nang is Vietnam’s rising star, offering pristine beaches like My Khe, cultural sites like Marble Mountains, and unique attractions like Ba Na Hills. My first day soaking up the sun and exploring local markets set the tone for an unforgettable adventure.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-video mr-2 text-blue-500"></i> My Da Nang Vlogs</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-video mr-2 text-yellow-500"></i> My Da Nang Vlogs</h2>
                             <p class="text-gray-600 mb-4">Check out my vlogs capturing Da Nang’s charm and quirks!</p>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Cost of Living in Da Nang</h3>
                             <div class="relative w-full aspect-video mb-6">
@@ -211,7 +211,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-calendar-alt mr-2 text-blue-500"></i> 3-Day Da Nang Itinerary</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-calendar-alt mr-2 text-yellow-500"></i> 3-Day Da Nang Itinerary</h2>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Day 1: Beaches & City Vibes</h3>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Morning:</strong> Relax at My Khe Beach; grab a coconut.</li>
@@ -232,7 +232,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-lightbulb mr-2 text-blue-500"></i> Travel Tips</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-lightbulb mr-2 text-yellow-500"></i> Travel Tips</h2>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Weather:</strong> Visit Feb–May or Sep–Nov for pleasant weather; avoid rainy season (Oct–Dec).</li>
                                 <li><strong>Language:</strong> Basic English is spoken in tourist areas; learn “xin chào” (hello) to connect with locals.</li>
@@ -240,52 +240,52 @@
                                 <li><strong>Transport Apps:</strong> Use Grab for affordable rides; taxis are reliable too.</li>
                                 <li><strong>Respect:</strong> Dress modestly at temples; remove shoes when required.</li>
                             </ul>
-                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                            <div class="bg-yellow-900 border-l-4 border-yellow-500 p-4 mb-4">
                                 <p class="text-gray-600"><strong>Tip:</strong> Bargain gently at markets, but respect fair prices.</p>
                             </div>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-blue-500"></i> Where to Stay — and What It Costs</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-yellow-500"></i> Where to Stay — and What It Costs</h2>
                             <p class="text-gray-600 mb-4">Da Nang offers budget-friendly options near beaches or downtown.</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Hostels:</strong> 150,000–300,000 VND/night ($6–12)</li>
                                 <li><strong>Budget Hotels:</strong> 400,000–800,000 VND/night ($16–32)</li>
                                 <li><strong>Beachfront Resorts:</strong> 1,000,000–2,000,000 VND/night ($40–80)</li>
                             </ul>
-                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                            <div class="bg-yellow-900 border-l-4 border-yellow-500 p-4 mb-4">
                                 <p class="text-gray-600"><strong>Tip:</strong> Stay near My Khe Beach for easy access to dining and nightlife. Book via Agoda for deals.</p>
                             </div>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-walking mr-2 text-blue-500"></i> Getting Around</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-walking mr-2 text-yellow-500"></i> Getting Around</h2>
                             <p class="text-gray-600 mb-4">Da Nang is compact and easy to navigate.</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Grab/Taxi:</strong> 50,000–150,000 VND per trip ($2–6)</li>
                                 <li><strong>Motorbike Rental:</strong> 100,000–200,000 VND/day ($4–8)</li>
                                 <li><strong>Walking:</strong> My Khe Beach and downtown are walkable.</li>
                             </ul>
-                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                            <div class="bg-yellow-900 border-l-4 border-yellow-500 p-4 mb-4">
                                 <p class="text-gray-600"><strong>Tip:</strong> Rent a motorbike for freedom, but wear a helmet and drive cautiously.</p>
                             </div>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bus mr-2 text-blue-500"></i> Getting to Da Nang</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bus mr-2 text-yellow-500"></i> Getting to Da Nang</h2>
                             <p class="text-gray-600 mb-4">Da Nang is well-connected via its international airport and train station.</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Da Nang Airport (DAD):</strong> 10 min to downtown by taxi (100,000 VND/$4).</li>
                                 <li><strong>Train:</strong> Scenic routes from Hanoi or Ho Chi Minh City; book via Vietnam Railways.</li>
                                 <li><strong>Bus:</strong> Affordable from Hoi An or Hue; 50,000–100,000 VND ($2–4).</li>
                             </ul>
-                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                            <div class="bg-yellow-900 border-l-4 border-yellow-500 p-4 mb-4">
                                 <p class="text-gray-600"><strong>Tip:</strong> Book flights early for deals; Vietjet and Bamboo Airways offer budget options.</p>
                             </div>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map-marked-alt mr-2 text-blue-500"></i> What to Do in Da Nang</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map-marked-alt mr-2 text-yellow-500"></i> What to Do in Da Nang</h2>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">🏖️ My Khe Beach</h3>
                             <p class="text-gray-600 mb-4">Laze on golden sands, swim, or try water sports. Perfect for sunrise or sunset strolls.</p>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">🪨 Marble Mountains</h3>
@@ -297,7 +297,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-glass-cheers mr-2 text-blue-500"></i> Da Nang Vibes & Nightlife</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-glass-cheers mr-2 text-yellow-500"></i> Da Nang Vibes & Nightlife</h2>
                             <p class="text-gray-600 mb-4">Da Nang’s nightlife is relaxed yet fun:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>My Khe Beach:</strong> Beachfront bars with live music.</li>
@@ -308,12 +308,12 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-heart mr-2 text-blue-500"></i> Reflections from a Traveller</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-heart mr-2 text-yellow-500"></i> Reflections from a Traveller</h2>
                             <p class="text-gray-600 mb-4">Da Nang feels like a hidden gem—affordable, beautiful, and less crowded than other Vietnamese cities. The Marble Mountains awed me, and Ba Na Hills was a bizarre but fun adventure. This city’s beaches and warm locals left me wanting to return.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-info-circle mr-2 text-blue-500"></i> Travel Essentials</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-info-circle mr-2 text-yellow-500"></i> Travel Essentials</h2>
                             <table class="w-full text-gray-600 mb-4 border-collapse">
                                 <tbody>
                                     <tr class="border-b">
@@ -370,10 +370,10 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-flag-checkered mr-2 text-blue-500"></i> Final Thoughts</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-flag-checkered mr-2 text-yellow-500"></i> Final Thoughts</h2>
                             <p class="text-gray-600 mb-4">Da Nang is a budget traveler’s dream—stunning beaches, rich culture, and quirky attractions like Ba Na Hills. Don’t miss Marble Mountains or a day trip to Hoi An. Stay a few days, eat phở, and soak up the coastal charm.</p>
-                            <p class="text-gray-600 mb-4">Share your Da Nang stories in the comments on <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a> or via <a href="index.html#contact" class="text-blue-500 hover:text-blue-600">my contact form</a>!</p>
-                            <p class="text-gray-600 mb-4">Craving more budget adventures? Check out my <a href="hanoiguide.html" class="text-blue-500 hover:text-blue-600">Hanoi travel guide</a>!</p>
+                            <p class="text-gray-600 mb-4">Share your Da Nang stories in the comments on <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a> or via <a href="index.html#contact" class="text-yellow-500 hover:text-yellow-500">my contact form</a>!</p>
+                            <p class="text-gray-600 mb-4">Craving more budget adventures? Check out my <a href="hanoiguide.html" class="text-yellow-500 hover:text-yellow-500">Hanoi travel guide</a>!</p>
                         </div>
                     </div>
                 </div>
@@ -383,24 +383,24 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Da Nang at a Glance</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-wallet mr-2 text-blue-500"></i> Daily Budget: 500,000–1,000,000 VND ($20–40)</li>
-                            <li><i class="fas fa-landmark mr-2 text-blue-500"></i> Must-Do: Marble Mountains</li>
-                            <li><i class="fas fa-bridge mr-2 text-blue-500"></i> Highlight: Golden Bridge</li>
-                            <li><i class="fas fa-beer mr-2 text-blue-500"></i> Beer: 20,000–50,000 VND ($0.80–2)</li>
-                            <li><i class="fas fa-calendar mr-2 text-blue-500"></i> Best Time: Feb–May, Sep–Nov</li>
+                            <li><i class="fas fa-wallet mr-2 text-yellow-500"></i> Daily Budget: 500,000–1,000,000 VND ($20–40)</li>
+                            <li><i class="fas fa-landmark mr-2 text-yellow-500"></i> Must-Do: Marble Mountains</li>
+                            <li><i class="fas fa-bridge mr-2 text-yellow-500"></i> Highlight: Golden Bridge</li>
+                            <li><i class="fas fa-beer mr-2 text-yellow-500"></i> Beer: 20,000–50,000 VND ($0.80–2)</li>
+                            <li><i class="fas fa-calendar mr-2 text-yellow-500"></i> Best Time: Feb–May, Sep–Nov</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get travel guides, tips, and stories straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -408,7 +408,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="hanoiguide.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="hanoiguide.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             More Budget Adventures <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -418,19 +418,19 @@
     </section>
 
     <!-- Newsletter Call-to-Action -->
-    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Subscribe to Carl Travels for travel guides, tips, and stories delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Subscribe <i class="fas fa-paper-plane ml-1"></i>
                 </button>
             </form>
@@ -444,7 +444,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -505,12 +505,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -531,7 +531,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

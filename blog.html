@@ -35,28 +35,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .blog-card {
@@ -116,20 +116,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -140,13 +140,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -165,10 +165,10 @@
                 <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                     Travel Insights & Stories <br>With <span class="text-yellow-300">Carl Travels</span>
                 </h1>
-                <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+                <p class="text-lg text-yellow-300 mb-8 max-w-2xl mx-auto">
                     Discover practical travel tips, personal stories, and digital nomad advice to inspire your next adventure.
                 </p>
-                <a href="#blog-posts" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                <a href="#blog-posts" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                     Explore Posts
                 </a>
             </div>
@@ -179,9 +179,9 @@
     <section id="blog-posts" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL BLOG</span>
+                <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL BLOG</span>
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Stories & Tips for Nomads</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -194,11 +194,11 @@
                             <h3 class="text-xl font-bold">Why Do Pop-Up Tents Pop Up… But Never Pop Down?</h3>
                             <p class="text-sm">Camping Hack</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Guide</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Guide</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-tent mr-1 text-blue-500"></i> Camping</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-tent mr-1 text-yellow-500"></i> Camping</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.8</span>
@@ -207,7 +207,7 @@
                         <p class="text-gray-600 mb-4">
                             Master the art of folding a pop-up tent with the 60-second Circle-Fold method for stress-free camping.
                         </p>
-                        <a href="howtofoldapopuptent.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="howtofoldapopuptent.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -222,11 +222,11 @@
                             <h3 class="text-xl font-bold">Thinking of Going to Bali? Read This Before You Go – It Might Change Your Mind</h3>
                             <p class="text-sm">Travel Guide</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Guide</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Guide</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-globe mr-1 text-blue-500"></i> Destinations</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-globe mr-1 text-yellow-500"></i> Destinations</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.8</span>
@@ -235,7 +235,7 @@
                         <p class="text-gray-600 mb-4">
                             A brutally honest guide to Bali’s highs and lows, from serene Sanur to chaotic Canggu, with tips to navigate the hype.
                         </p>
-                        <a href="balitravelguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="balitravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -250,11 +250,11 @@
                             <h3 class="text-xl font-bold">My Essential Travel Filmmaking Kit (2025)</h3>
                             <p class="text-sm">Travel Gear</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Guide</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Guide</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-video mr-1 text-blue-500"></i> Filmmaking</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-video mr-1 text-yellow-500"></i> Filmmaking</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.8</span>
@@ -263,7 +263,7 @@
                         <p class="text-gray-600 mb-4">
                             Unpack my 2025 travel filmmaking kit, from the Sony A7C II to the DJI Osmo Pocket 3, and see how it all fits in one backpack.
                         </p>
-                        <a href="travel-gear-2025.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="travel-gear-2025.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -278,11 +278,11 @@
                             <h3 class="text-xl font-bold">Using the Wise Card to Save on Travel</h3>
                             <p class="text-sm">Smart Money Management</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Travel Tip</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Travel Tip</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-credit-card mr-1 text-blue-500"></i> Finance</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-credit-card mr-1 text-yellow-500"></i> Finance</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.8</span>
@@ -291,7 +291,7 @@
                         <p class="text-gray-600 mb-4">
                             Discover how the Wise card saves you money on transaction fees and currency exchanges for affordable travel.
                         </p>
-                        <a href="getyourwisecard.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="getyourwisecard.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -306,11 +306,11 @@
                             <h3 class="text-xl font-bold">Why I Left Australia</h3>
                             <p class="text-sm">A Personal Story</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Story</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Story</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-video mr-1 text-blue-500"></i> Personal Story</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-video mr-1 text-yellow-500"></i> Personal Story</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.9</span>
@@ -319,7 +319,7 @@
                         <p class="text-gray-600 mb-4">
                             My reasons for leaving Australia, from economic challenges to embracing nomadic life.
                         </p>
-                        <a href="whyileftaustralia.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="whyileftaustralia.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -334,11 +334,11 @@
                             <h3 class="text-xl font-bold">My Top 10 Secrets to Endless Travel</h3>
                             <p class="text-sm">Digital Nomad Guide</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Guide</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Guide</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-laptop mr-1 text-blue-500"></i> Lifestyle</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-laptop mr-1 text-yellow-500"></i> Lifestyle</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.7</span>
@@ -347,7 +347,7 @@
                         <p class="text-gray-600 mb-4">
                             Learn my top 10 secrets to becoming a digital nomad and traveling endlessly.
                         </p>
-                        <a href="mytop10travelhacks.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="mytop10travelhacks.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -362,11 +362,11 @@
                             <h3 class="text-xl font-bold">How I Got My Croatian Citizenship</h3>
                             <p class="text-sm">Personal Journey</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Story</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Story</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-passport mr-1 text-blue-500"></i> Citizenship</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-passport mr-1 text-yellow-500"></i> Citizenship</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.8</span>
@@ -375,7 +375,7 @@
                         <p class="text-gray-600 mb-4">
                             My journey to obtaining Croatian citizenship and how it opened new travel opportunities.
                         </p>
-                        <a href="how-to-get-croatian-citizenship-by-descent.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="how-to-get-croatian-citizenship-by-descent.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -390,11 +390,11 @@
                             <h3 class="text-xl font-bold">The Three Cheapest Countries to Be a Digital Nomad</h3>
                             <p class="text-sm">Travel Guide</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Guide</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Guide</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-globe mr-1 text-blue-500"></i> Destinations</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-globe mr-1 text-yellow-500"></i> Destinations</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.9</span>
@@ -403,7 +403,7 @@
                         <p class="text-gray-600 mb-4">
                             Discover the three most affordable countries for digital nomads to live and work.
                         </p>
-                        <a href="becomingadigitalnomad.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="becomingadigitalnomad.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -418,11 +418,11 @@
                             <h3 class="text-xl font-bold">My Ultimate Guide to Busking</h3>
                             <p class="text-sm">Travel & Income</p>
                         </div>
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Guide</span>
+                        <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">Guide</span>
                     </div>
                     <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-music mr-1 text-blue-500"></i> Lifestyle</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-music mr-1 text-yellow-500"></i> Lifestyle</span>
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <span class="font-medium">4.7</span>
@@ -431,7 +431,7 @@
                         <p class="text-gray-600 mb-4">
                             Learn how to earn money while traveling through busking with my ultimate guide.
                         </p>
-                        <a href="buskingguide.html" class="text-blue-500 font-medium hover:text-blue-600 inline-flex items-center">
+                        <a href="buskingguide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
                             Click here to find out more <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -442,7 +442,7 @@
                 <p class="text-gray-600 mb-4">
                     Love these stories and tips? Support my journey to create more content!
                 </p>
-                <a href="donate.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <a href="donate.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Support Carl Travels <i class="fas fa-heart ml-2"></i>
                 </a>
             </div>
@@ -455,7 +455,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -514,12 +514,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -540,7 +540,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

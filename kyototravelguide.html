@@ -25,28 +25,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .navbar {
@@ -97,20 +97,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -121,13 +121,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-blue-600 bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-yellow-500 bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -147,10 +147,10 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Kyoto, Japan: A Cultural Treasure
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Timeless tradition meets modern charm in this historic city.
                     </p>
-                    <a href="#guide" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="#guide" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                         Explore Kyoto
                     </a>
                 </div>
@@ -158,10 +158,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/kyotologo.jpg" alt="Kyoto’s Fushimi Inari Shrine" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Discover Kyoto’s Charm</h3>
                                 <p class="text-sm opacity-90">Carl Travels</p>
@@ -180,9 +180,9 @@
                 <!-- Main Guide Content -->
                 <div class="lg:col-span-2">
                     <div class="text-center mb-16">
-                        <span class="text-blue-500 font-medium mb-2 inline-block">TRAVEL GUIDE</span>
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL GUIDE</span>
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">🇯🇵 Kyoto: Timeless, Cultural, Serene</h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
                     
                     <div class="prose max-w-none">
@@ -191,53 +191,53 @@
                         </p>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-home mr-2 text-blue-500"></i> Welcome to Kyoto</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-home mr-2 text-yellow-500"></i> Welcome to Kyoto</h2>
                             <p class="text-gray-600 mb-4">A solo day trip from Osaka led me to Kyoto, a city with over 1,000 years of history as Japan’s former capital. With its UNESCO-listed temples, vibrant geisha culture, and budget-friendly options, Kyoto is a must-visit. Whether you’re here for a day or a week, Kyoto’s charm will leave you enchanted.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-blue-500"></i> Where to Stay — and What It Cost</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-yellow-500"></i> Where to Stay — and What It Cost</h2>
                             <p class="text-gray-600 mb-4">For my day trip, I stayed in Osaka, but if you’re planning to base yourself in Kyoto, I recommend <strong>Piece Hostel Kyoto</strong>, a modern hostel near Kyoto Station.</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Cost:</strong> ¥3,000–5,000 (~€18–30) per night for a dorm bed</li>
                                 <li><strong>Private rooms:</strong> ¥8,000–12,000 (~€48–72) per night</li>
                                 <li><strong>Long-term:</strong> Guesthouses or Airbnb rentals start at ¥50,000/month in quieter areas.</li>
                             </ul>
-                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                            <div class="bg-yellow-900 border-l-4 border-yellow-500 p-4 mb-4">
                                 <p class="text-gray-600"><strong>Tip:</strong> Book hostels or budget hotels near Kyoto Station for easy access to trains and buses.</p>
                             </div>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-walking mr-2 text-blue-500"></i> Getting Around</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-walking mr-2 text-yellow-500"></i> Getting Around</h2>
                             <p class="text-gray-600 mb-4">Kyoto’s compact size and excellent public transport make it easy to explore. I used buses and trains to hop between temples and shrines.</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Buses:</strong> ¥230 per ride; ¥500 for a one-day bus pass.</li>
                                 <li><strong>Trains:</strong> JR Lines or private railways like Hankyu cost ¥200–500 depending on distance.</li>
                                 <li><strong>Bicycles:</strong> Rentals are ¥1,000–2,000/day, perfect for flat areas like Arashiyama.</li>
                             </ul>
-                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                            <div class="bg-yellow-900 border-l-4 border-yellow-500 p-4 mb-4">
                                 <p class="text-gray-600"><strong>Tip:</strong> Get a Kyoto City Bus One-Day Pass for unlimited bus travel to save money.</p>
                             </div>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bus mr-2 text-blue-500"></i> Getting to Kyoto</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bus mr-2 text-yellow-500"></i> Getting to Kyoto</h2>
                             <p class="text-gray-600 mb-4">I took a train from Osaka, a quick and scenic 30-minute ride. Kyoto is well-connected:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>By Train:</strong> 15 minutes from Osaka (Shinkansen, ¥1,420); 2.5 hours from Tokyo (Shinkansen, ¥13,000).</li>
                                 <li><strong>By Air:</strong> Kansai International Airport (75 km, 90-minute train ride) serves international flights.</li>
                             </ul>
-                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                            <div class="bg-yellow-900 border-l-4 border-yellow-500 p-4 mb-4">
                                 <p class="text-gray-600"><strong>Tip:</strong> Use a JR Pass for savings if traveling across Japan.</p>
                             </div>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map-marked-alt mr-2 text-blue-500"></i> What to Do in Kyoto</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map-marked-alt mr-2 text-yellow-500"></i> What to Do in Kyoto</h2>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">⛩️ Visit Fushimi Inari Shrine</h3>
                             <p class="text-gray-600 mb-4">Kyoto’s <strong>Fushimi Inari Shrine</strong>, with its iconic red torii gates, is a must-see. I hiked the trails, soaking in the spiritual atmosphere and stunning views.</p>
-                            <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-600 mb-4">
+                            <blockquote class="border-l-4 border-yellow-500 pl-4 italic text-gray-600 mb-4">
                                 “Walking through Fushimi Inari’s gates feels like stepping into another world.”
                             </blockquote>
                             <h3 class="text-xl font-bold text-gray-800 mb-2">🌸 Stroll Through Arashiyama Bamboo Grove</h3>
@@ -247,7 +247,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-glass-cheers mr-2 text-blue-500"></i> Kyoto Vibes & Culture</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-glass-cheers mr-2 text-yellow-500"></i> Kyoto Vibes & Culture</h2>
                             <p class="text-gray-600 mb-4">Kyoto’s vibe is a unique blend:</p>
                             <ul class="list-disc pl-6 mb-4 text-gray-600">
                                 <li><strong>Fashion:</strong> Traditional kimonos mix with modern streetwear.</li>
@@ -259,7 +259,7 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-video mr-2 text-blue-500"></i> My Kyoto Vlog</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-video mr-2 text-yellow-500"></i> My Kyoto Vlog</h2>
                             <p class="text-gray-600 mb-4">I captured Kyoto’s magic in this vlog from my day trip—take a look!</p>
                             <div class="relative w-full aspect-video mb-6">
                                 <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/e-DpOd-QmTk" title="Kyoto, Japan - A Day Trip from Osaka by Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -268,13 +268,13 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-heart mr-2 text-blue-500"></i> Reflections from a Traveller</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-heart mr-2 text-yellow-500"></i> Reflections from a Traveller</h2>
                             <p class="text-gray-600 mb-4">As an Australian, I’m used to vast landscapes, but Kyoto’s intimate beauty—its temples, gardens, and quiet streets—felt like a revelation. Walking through 1,000-year-old shrines stirred a sense of timelessness I’ve rarely felt. Kyoto made me want to slow down and savor every moment.</p>
                             <p class="text-gray-600 mb-4">This city is more than a destination; it’s a feeling.</p>
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-info-circle mr-2 text-blue-500"></i> Travel Essentials</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-info-circle mr-2 text-yellow-500"></i> Travel Essentials</h2>
                             <table class="w-full text-gray-600 mb-4 border-collapse">
                                 <tbody>
                                     <tr class="border-b">
@@ -331,10 +331,10 @@
                         </div>
                         
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-flag-checkered mr-2 text-blue-500"></i> Final Thoughts</h2>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-flag-checkered mr-2 text-yellow-500"></i> Final Thoughts</h2>
                             <p class="text-gray-600 mb-4">Kyoto surprised me—historic, serene, and surprisingly affordable for Japan. Don’t miss it on your Japan itinerary. Stay a few days, wander the shrines, sip matcha, and soak in the culture.</p>
-                            <p class="text-gray-600 mb-4">You might come for the temples but leave with a deeper connection. Share your Kyoto stories in the comments on <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a> or via <a href="index.html#contact" class="text-blue-500 hover:text-blue-600">my contact form</a>!</p>
-                            <p class="text-gray-600 mb-4">Craving more budget adventures? Check out my <a href="osakatravelguide.html" class="text-blue-500 hover:text-blue-600">Osaka travel guide</a>!</p>
+                            <p class="text-gray-600 mb-4">You might come for the temples but leave with a deeper connection. Share your Kyoto stories in the comments on <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a> or via <a href="index.html#contact" class="text-yellow-500 hover:text-yellow-500">my contact form</a>!</p>
+                            <p class="text-gray-600 mb-4">Craving more budget adventures? Check out my <a href="osakatravelguide.html" class="text-yellow-500 hover:text-yellow-500">Osaka travel guide</a>!</p>
                         </div>
                     </div>
                 </div>
@@ -344,24 +344,24 @@
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Kyoto at a Glance</h3>
                         <ul class="space-y-2 text-gray-600 text-sm">
-                            <li><i class="fas fa-wallet mr-2 text-blue-500"></i> Daily Budget: ¥5,000–10,000</li>
-                            <li><i class="fas fa-landmark mr-2 text-blue-500"></i> Must-Do: Fushimi Inari</li>
-                            <li><i class="fas fa-tree mr-2 text-blue-500"></i> Nature: Arashiyama Bamboo</li>
-                            <li><i class="fas fa-beer mr-2 text-blue-500"></i> Beer: ¥500</li>
-                            <li><i class="fas fa-calendar mr-2 text-blue-500"></i> Best Time: Mar–Apr, Oct–Nov</li>
+                            <li><i class="fas fa-wallet mr-2 text-yellow-500"></i> Daily Budget: ¥5,000–10,000</li>
+                            <li><i class="fas fa-landmark mr-2 text-yellow-500"></i> Must-Do: Fushimi Inari</li>
+                            <li><i class="fas fa-tree mr-2 text-yellow-500"></i> Nature: Arashiyama Bamboo</li>
+                            <li><i class="fas fa-beer mr-2 text-yellow-500"></i> Beer: ¥500</li>
+                            <li><i class="fas fa-calendar mr-2 text-yellow-500"></i> Best Time: Mar–Apr, Oct–Nov</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg mb-8">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get travel guides, tips, and stories straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                                 Subscribe <i class="fas fa-paper-plane ml-1"></i>
                             </button>
                         </form>
@@ -369,7 +369,7 @@
                     </div>
                     
                     <div class="text-center">
-                        <a href="osakatravelguide.html" class="inline-flex items-center px-6 py-3 border border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50 transition-all">
+                        <a href="osakatravelguide.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             More Budget Adventures <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -379,19 +379,19 @@
     </section>
 
     <!-- Newsletter Call-to-Action -->
-    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Subscribe to Carl Travels for travel guides, tips, and stories delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Subscribe <i class="fas fa-paper-plane ml-1"></i>
                 </button>
             </form>
@@ -405,7 +405,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -465,12 +465,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -491,7 +491,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

@@ -25,28 +25,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .navbar {
@@ -97,20 +97,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -121,13 +121,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -147,10 +147,10 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         The Ultimate Guide to Busking
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         From Berlin to Budapest, learn how to survive, thrive, and make memories as a street performer with Carl Travels’ expert tips from years on the road.
                     </p>
-                    <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                         Read the Guide
                     </a>
                 </div>
@@ -158,10 +158,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/buskinghorse.jpg" alt="Street Performer Busking" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">From a Busker Who Lived It</h3>
                                 <p class="text-sm opacity-90">Carl Travels</p>
@@ -177,9 +177,9 @@
     <section id="article" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">BUSKING GUIDE</span>
+                <span class="text-yellow-500 font-medium mb-2 inline-block">BUSKING GUIDE</span>
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Everything You Need to Survive, Thrive, and Make Memories on the Street</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
             
             <div class="prose max-w-4xl mx-auto">
@@ -188,7 +188,7 @@
                 </p>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-guitar mr-2 text-blue-500"></i> 🎭 What is Busking?</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-guitar mr-2 text-yellow-500"></i> 🎭 What is Busking?</h2>
                     <p class="text-gray-600 mb-4">Busking (street performance) can take countless forms:</p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
                         <li>Musicians (guitarists, singers, drummers, violinists)</li>
@@ -201,11 +201,11 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe mr-2 text-blue-500"></i> 🌍 Busking Rules Around the World</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe mr-2 text-yellow-500"></i> 🌍 Busking Rules Around the World</h2>
                     <p class="text-gray-600 mb-4">Every city, country, and even district can have its own rules. Sometimes you need a permit. Sometimes you don’t. Sometimes nobody cares. Here’s a snapshot from places I’ve personally busked:</p>
                     <table class="table-auto w-full border-collapse mb-4">
                         <thead>
-                            <tr class="bg-blue-50">
+                            <tr class="bg-yellow-900">
                                 <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">City</th>
                                 <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Rules</th>
                             </tr>
@@ -237,11 +237,11 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">🛑 Golden Rule of Busking Europe:</span> "Ask for forgiveness, not permission." (But always stay respectful.)</p>
+                    <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">🛑 Golden Rule of Busking Europe:</span> "Ask for forgiveness, not permission." (But always stay respectful.)</p>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-id-card mr-2 text-blue-500"></i> 🚨 How to Handle Permits</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-id-card mr-2 text-yellow-500"></i> 🚨 How to Handle Permits</h2>
                     <p class="text-gray-600 mb-4">If you’re only passing through for a few days:</p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
                         <li>Just play.</li>
@@ -252,7 +252,7 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-blue-500"></i> 🎤 Essential Performance Tips (Focused on Musicians)</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-yellow-500"></i> 🎤 Essential Performance Tips (Focused on Musicians)</h2>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">1. Amplification Is Everything</h3>
                     <p class="text-gray-600 mb-4">Switching to an amp changed my entire busking career. My earnings doubled or tripled overnight.</p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
@@ -285,20 +285,20 @@
                         <li>I was often the first busker they saw</li>
                         <li>Safer, calmer, less chaos</li>
                     </ul>
-                    <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">Psychology tip:</span> People often give to the first busker they see—they feel like they’ve done their good deed for the day.</p>
+                    <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">Psychology tip:</span> People often give to the first busker they see—they feel like they’ve done their good deed for the day.</p>
                     
                     <h3 class="text-xl font-bold text-gray-800 mb-2">4. Smart Placement of Your Tip Container</h3>
                     <p class="text-gray-600 mb-4">Not too close = awkward. Not too far = disconnected.</p>
                     <p class="text-gray-600 mb-4"><strong>Ideal:</strong> About one metre from you—easy to approach, non-threatening.</p>
-                    <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">🛠️ Always seed the case with a few coins and a small note first thing.</span> Empty cases = no social proof.</p>
+                    <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">🛠️ Always seed the case with a few coins and a small note first thing.</span> Empty cases = no social proof.</p>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-money-bill-wave mr-2 text-blue-500"></i> 💰 How Much Can You Actually Make?</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-money-bill-wave mr-2 text-yellow-500"></i> 💰 How Much Can You Actually Make?</h2>
                     <p class="text-gray-600 mb-4">Let’s talk real numbers:</p>
                     <table class="table-auto w-full border-collapse mb-4">
                         <thead>
-                            <tr class="bg-blue-50">
+                            <tr class="bg-yellow-900">
                                 <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Type of Day</th>
                                 <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Personal Earnings</th>
                             </tr>
@@ -322,12 +322,12 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">⚖️ But, The Bigger Picture:</span> Most buskers worldwide? Average around $15 USD an hour. Only a small handful ever hit $1000 in an hour—and those few are now successful musicians touring the world.</p>
-                    <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">🎵 Busking Reality:</span> Most days are a grind. Some days are gold. If you have talent and the right spot—it can launch you.</p>
+                    <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">⚖️ But, The Bigger Picture:</span> Most buskers worldwide? Average around $15 USD an hour. Only a small handful ever hit $1000 in an hour—and those few are now successful musicians touring the world.</p>
+                    <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">🎵 Busking Reality:</span> Most days are a grind. Some days are gold. If you have talent and the right spot—it can launch you.</p>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> 📍 My Favourite Busking Spots (and Why)</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> 📍 My Favourite Busking Spots (and Why)</h2>
                     <p class="text-gray-600 mb-4">After years on the road, here are my absolute favourite places:</p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
                         <li><strong>🌟 East Side Gallery, Berlin:</strong> Best money spot. Huge tourist foot traffic. Open spaces, lively crowd, supportive vibe.</li>
@@ -335,7 +335,7 @@
                         <li><strong>🌟 Margaret Island Bridge, Budapest:</strong> Relaxed local and tourist mix. Peaceful vibe. Great tipping culture.</li>
                         <li><strong>🌟 El Médano, Tenerife (Spain):</strong> Laid-back beach town. Tourists were generous. Warm weather and beautiful sunsets while playing.</li>
                     </ul>
-                    <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">🚫 My Worst Busking Experience: Swanston Street, Melbourne</span></p>
+                    <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">🚫 My Worst Busking Experience: Swanston Street, Melbourne</span></p>
                     <p class="text-gray-600 mb-4">Swanston Street was rough:</p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
                         <li>Needed a permit.</li>
@@ -347,14 +347,14 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-horse mr-2 text-blue-500"></i> 🐎 Personal Story: Becoming "Neigh Kid Horse"</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-horse mr-2 text-yellow-500"></i> 🐎 Personal Story: Becoming "Neigh Kid Horse"</h2>
                     <p class="text-gray-600 mb-4">In Berlin, I needed something different to stand out. So I put on a horse mask, stripped to my underwear, slung my guitar over my shoulder, and started neighing between songs.</p>
                     <p class="text-gray-600 mb-4">It was ridiculous. It was hilarious. And it worked.</p>
                     <p class="text-gray-600 mb-4">Crowds gathered. Phones came out. Kids laughed. Tips flowed. Some days I made €200–€300 in just a few hours. Just by leaning into something stupid, fun, and memorable.</p>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe-europe mr-2 text-blue-500"></i> 🌎 Where Busking Works Best</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-globe-europe mr-2 text-yellow-500"></i> 🌎 Where Busking Works Best</h2>
                     <p class="text-gray-600 mb-4">Cash cultures = better busking.</p>
                     <p class="text-gray-600 mb-4"><strong>Best Countries I've Played In:</strong></p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
@@ -371,7 +371,7 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-tools mr-2 text-blue-500"></i> 🛠️ Final Tips for New Buskers</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-tools mr-2 text-yellow-500"></i> 🛠️ Final Tips for New Buskers</h2>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
                         <li>Always have old coins in your case when starting.</li>
                         <li>Invest in a solid battery amp (Roland, Bose, etc.).</li>
@@ -383,7 +383,7 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-star mr-2 text-blue-500"></i> 🎤 Final Thoughts</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-star mr-2 text-yellow-500"></i> 🎤 Final Thoughts</h2>
                     <p class="text-gray-600 mb-4">Busking isn’t just about the money. It’s about connection, resilience, and performance under pressure. You’ll:</p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
                         <li>Meet people from all over the world</li>
@@ -402,26 +402,26 @@
                         <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/S8L4Hmwkgiw" title="Busk Life: Berlin Busking Documentary Sequel by Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <p class="text-gray-600 mb-4">Filmed 10 years later, this sequel revisits Berlin’s vibrant busking scene.</p>
-                    <p class="text-gray-600 mb-4">Check out more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600">my YouTube channel</a>!</p>
+                    <p class="text-gray-600 mb-4">Check out more on <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a>!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Newsletter Call-to-Action -->
-    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Subscribe to Carl Travels for exclusive travel tips, destination guides, and special offers delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Subscribe <i class="fas fa-paper-plane ml-1"></i>
                 </button>
             </form>
@@ -435,7 +435,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -494,12 +494,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -520,7 +520,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

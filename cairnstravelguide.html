@@ -56,26 +56,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <style>
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         .navbar {
             backdrop-filter: blur(10px);
@@ -119,19 +119,19 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
@@ -140,13 +140,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -174,14 +174,14 @@
             <div class="md:col-span-2 space-y-12">
                 <!-- Introduction -->
                 <section>
-                    <h2 class="heading-font text-2xl font-semibold mb-4 text-blue-600">Welcome to Cairns: Where Reef Meets Rainforest</h2>
+                    <h2 class="heading-font text-2xl font-semibold mb-4 text-yellow-500">Welcome to Cairns: Where Reef Meets Rainforest</h2>
                     <p class="mb-4">Cairns is Australia’s tropical fever dream—a city cradled by the Great Barrier Reef and Daintree Rainforest, where adventure is the currency and nature runs the show. I lived here for two years, driving Uber, chasing waterfalls, and discovering the haunts locals keep to themselves. This isn’t just a holiday spot; it’s a wild, wet, living jungle with a laid-back heart. From snorkeling coral reefs to sliding down natural rock pools, Cairns rewrote my definition of “alive.”</p>
                     <p class="mb-4">This 7-day guide, built from my time calling Cairns home, blends must-dos with hidden gems. Whether you’re here for adrenaline, serenity, or a cold drink by the marina, let’s dive into Far North Queensland’s untamed soul.</p>
                 </section>
 
                 <!-- Where to Stay -->
                 <section>
-                    <h2 class="heading-font text-2xl font-semibold mb-4 text-blue-600">Where to Stay: Tropical and Central</h2>
+                    <h2 class="heading-font text-2xl font-semibold mb-4 text-yellow-500">Where to Stay: Tropical and Central</h2>
                     <p class="mb-4">Stick to the <strong>Cairns CBD</strong> for the best vibe. It’s compact, walkable, and puts you steps from the Esplanade, lagoon, night markets, and marina. I lived near the CBD and loved strolling to the waterfront for sunrise swims. <strong>Edge Hill</strong>, a nice suburb 10 minutes away, offers leafy streets and local cafes. For resort vibes, <strong>Palm Cove</strong> (30 mins north) or <strong>Trinity Beach</strong> (20 mins) have beachfront luxury, but they’re a drive from the action.</p>
                     <ul class="list-disc list-inside space-y-2 mb-4">
                         <li><strong>Crystalbrook Riley</strong>: Luxury in the CBD with a rooftop bar and lagoon views. Rooms from A$200–A$350/night, ideal for couples or splurgers.</li>
@@ -193,7 +193,7 @@
 
                 <!-- 7-Day Itinerary -->
                 <section>
-                    <h2 class="heading-font text-2xl font-semibold mb-4 text-blue-600">Your 7-Day Cairns Itinerary</h2>
+                    <h2 class="heading-font text-2xl font-semibold mb-4 text-yellow-500">Your 7-Day Cairns Itinerary</h2>
                     <div class="space-y-6">
                         <!-- Day 1 -->
                         <div>
@@ -266,7 +266,7 @@
 
                 <!-- Common Tourist Mistakes -->
                 <section>
-                    <h2 class="heading-font text-2xl font-semibold mb-4 text-blue-600">Common Tourist Mistakes to Avoid</h2>
+                    <h2 class="heading-font text-2xl font-semibold mb-4 text-yellow-500">Common Tourist Mistakes to Avoid</h2>
                     <p class="mb-4">Cairns is chill, but a few missteps can trip you up:</p>
                     <ul class="list-disc list-inside space-y-2 mb-4">
                         <li><strong>Ignoring Stinger Season</strong>: Oct–May brings jellyfish. Swim in netted areas or wear a stinger suit (A$10 rental). Locals don’t mess around.</li>
@@ -280,7 +280,7 @@
 
                 <!-- Bonus Tips -->
                 <section>
-                    <h2 class="heading-font text-2xl font-semibold mb-4 text-blue-600">Bonus Tips for Your Cairns Adventure</h2>
+                    <h2 class="heading-font text-2xl font-semibold mb-4 text-yellow-500">Bonus Tips for Your Cairns Adventure</h2>
                     <ul class="list-disc list-inside space-y-2 mb-4">
                         <li><strong>Transport</strong>: Uber/taxis are safest (A$10–A$20); public buses (TransLink Go Card, A$3–A$5/trip) attract some local riff raff. Rent a car for day trips.</li>
                         <li><strong>Adrenaline</strong>: Try the <strong>AJ Hackett Bungy Jump</strong> (A$150–A$200) or minigolf with a jungle vibe (A$20). I chickened out on bungy but loved the vibe.</li>
@@ -337,7 +337,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -391,12 +391,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -416,7 +416,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

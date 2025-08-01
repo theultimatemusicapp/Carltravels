@@ -25,28 +25,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         
         .navbar {
@@ -97,20 +97,20 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -121,13 +121,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -147,10 +147,10 @@
                     <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Why Do Pop-Up Tents Pop Up… But Never Pop Down?
                     </h1>
-                    <p class="text-lg text-blue-100 mb-8 max-w-lg">
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
                         Master the art of folding a pop-up tent with Carl Travels’ 60-second Circle-Fold method. Say goodbye to campsite chaos and hello to stress-free packing.
                     </p>
-                    <a href="#article" class="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
                         Read the Guide
                     </a>
                 </div>
@@ -158,10 +158,10 @@
                 <div class="lg:w-1/2 relative">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
                             <img src="/popup-tent.jpg" alt="Pop-Up Tent Folding" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">From a Traveler Who’s Been There</h3>
                                 <p class="text-sm opacity-90">Carl Travels</p>
@@ -177,9 +177,9 @@
     <section id="article" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-blue-500 font-medium mb-2 inline-block">CAMPING HACK</span>
+                <span class="text-yellow-500 font-medium mb-2 inline-block">CAMPING HACK</span>
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Master the Art of Folding Your Pop-Up Tent</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
             
             <div class="prose max-w-4xl mx-auto">
@@ -188,7 +188,7 @@
                 </p>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-tent mr-2 text-blue-500"></i> 🏕️ The 60-Second Circle-Fold Method</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-tent mr-2 text-yellow-500"></i> 🏕️ The 60-Second Circle-Fold Method</h2>
                     <p class="text-gray-600 mb-4">What you’ll need: just your tent, its carry bag, and a smidge of confidence.</p>
                     <ol class="list-decimal pl-6 mb-4 text-gray-600">
                         <li><strong>Eviction Notice:</strong> Shake out any sand, bugs, or lost snacks. Unpeg the tent and zip all doors/windows so fabric doesn’t billow.</li>
@@ -197,7 +197,7 @@
                         <li><strong>Stack the Circles:</strong> Fold one loop of the 8 over the other so you’re left with three neatly stacked rings (about bag-size).</li>
                         <li><strong>Strap & Bag:</strong> Use the built-in elastic bands (or a spare scrunchie—no judgment) to keep the rings stacked. Slide the bundle into its carry bag, starting with the edge, not the middle.</li>
                     </ol>
-                    <p class="text-gray-600 mb-4"><span class="text-blue-500 font-medium">💡 Pro Tip:</span> Practice twice at home. Muscle memory > campsite panic.</p>
+                    <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro Tip:</span> Practice twice at home. Muscle memory > campsite panic.</p>
                     <h3 class="text-xl font-bold text-gray-800 mb-4">Watch the Circle-Fold in Action</h3>
                     <div class="relative w-full aspect-video mb-6">
                         <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/q2CQUkF87h8" title="How to Fold a Pop-Up Tent by Carl Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -206,10 +206,10 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-tools mr-2 text-blue-500"></i> 🔧 Troubleshooting Corner</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-tools mr-2 text-yellow-500"></i> 🔧 Troubleshooting Corner</h2>
                     <table class="table-auto w-full border-collapse mb-4">
                         <thead>
-                            <tr class="bg-blue-50">
+                            <tr class="bg-yellow-900">
                                 <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Problem</th>
                                 <th class="px-4 py-2 text-left text-gray-800 font-medium border-b">Quick Fix</th>
                             </tr>
@@ -232,7 +232,7 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-box mr-2 text-blue-500"></i> 📦 After-Care & Storage Tips</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-box mr-2 text-yellow-500"></i> 📦 After-Care & Storage Tips</h2>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
                         <li>Dry before bagging to prevent mildew (pop it open at home if it rained).</li>
                         <li>Keep it out of direct sunlight in long-term storage—UV kills tent coatings.</li>
@@ -241,24 +241,24 @@
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-shopping-bag mr-2 text-blue-500"></i> 🛍️ Gear We Love (Affiliate Links)</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-shopping-bag mr-2 text-yellow-500"></i> 🛍️ Gear We Love (Affiliate Links)</h2>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
-                        <li><a href="https://amzn.to/4lUSyUd" target="_blank" class="text-blue-500 hover:text-blue-600">Pop-Up Tent</a> similar to the one in the video.</li>
-                        <li><a href="https://amzn.to/44ZnzR8" target="_blank" class="text-blue-500 hover:text-blue-600">Ultra-Portable Lightweight Raincoat</a> (perfect for unexpected showers).</li>
-                        <li><a href="https://amzn.to/4kGH71w" target="_blank" class="text-blue-500 hover:text-blue-600">Compact Microfiber Towels</a> (wipe down & pack away fast).</li>
+                        <li><a href="https://amzn.to/4lUSyUd" target="_blank" class="text-yellow-500 hover:text-yellow-500">Pop-Up Tent</a> similar to the one in the video.</li>
+                        <li><a href="https://amzn.to/44ZnzR8" target="_blank" class="text-yellow-500 hover:text-yellow-500">Ultra-Portable Lightweight Raincoat</a> (perfect for unexpected showers).</li>
+                        <li><a href="https://amzn.to/4kGH71w" target="_blank" class="text-yellow-500 hover:text-yellow-500">Compact Microfiber Towels</a> (wipe down & pack away fast).</li>
                     </ul>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map mr-2 text-blue-500"></i> 🗺️ Keep the Adventure Rolling</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-map mr-2 text-yellow-500"></i> 🗺️ Keep the Adventure Rolling</h2>
                     <p class="text-gray-600 mb-4">Loved this bite-sized hack? Check out these other Carl Travels posts:</p>
                     <ul class="list-disc pl-6 mb-4 text-gray-600">
-                        <li><a href="carry-on-packing.html" class="text-blue-500 hover:text-blue-600">How to Pack a 7 kg Carry-On Like a Tetris Master</a></li>
-                        <li><a href="travel-knots.html" class="text-blue-500 hover:text-blue-600">The Only Two Knots Every Traveller Actually Needs</a></li>
-                        <li><a href="bali-budget.html" class="text-blue-500 hover:text-blue-600">Bali on a Bogan Budget – Yes, It’s Possible</a></li>
+                        <li><a href="carry-on-packing.html" class="text-yellow-500 hover:text-yellow-500">How to Pack a 7 kg Carry-On Like a Tetris Master</a></li>
+                        <li><a href="travel-knots.html" class="text-yellow-500 hover:text-yellow-500">The Only Two Knots Every Traveller Actually Needs</a></li>
+                        <li><a href="bali-budget.html" class="text-yellow-500 hover:text-yellow-500">Bali on a Bogan Budget – Yes, It’s Possible</a></li>
                     </ul>
                     <p class="text-gray-600 mb-4">
-                        And, of course, subscribe to <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-blue-500 hover:text-blue-600">Globe Travel Adventures on YouTube</a> for more no-fluff travel tips.
+                        And, of course, subscribe to <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-yellow-500 hover:text-yellow-500">Globe Travel Adventures on YouTube</a> for more no-fluff travel tips.
                     </p>
                 </div>
             </div>
@@ -266,19 +266,19 @@
     </section>
 
     <!-- Newsletter Call-to-Action -->
-    <section class="bg-gradient-to-r from-blue-50 to-cyan-50 py-16">
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Subscribe to Carl Travels for exclusive travel tips, destination guides, and special offers delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Subscribe <i class="fas fa-paper-plane ml-1"></i>
                 </button>
             </form>
@@ -292,7 +292,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -351,12 +351,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -377,7 +377,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 

@@ -47,26 +47,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <style>
         :root {
-            --primary: #3b82f6;
-            --secondary: #06b6d4;
-            --dark: #1e293b;
-            --light: #f8fafc;
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
         }
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
             scroll-behavior: smooth;
         }
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(6, 182, 212, 0.9));
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         .heading-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Bebas Neue', sans-serif;
         }
         .navbar {
             backdrop-filter: blur(10px);
@@ -123,19 +123,19 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
-                    <span class="heading-font bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Carl Travels</span>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-blue-600 font-medium transition-colors">Blog</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
@@ -144,13 +144,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Destinations</a>
-                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600 font-medium">Blog</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@carltravels" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Blog</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -186,69 +186,69 @@
                     <p>Travel filmmaking is my passion, but let’s be real—it’s a hustle. You’re dodging crowds in Hanoi’s Old Quarter, chasing sunsets in Budva, or setting up an interview in a cramped Melbourne café. Your gear needs to keep up, stay compact, and deliver pro-level results. After years of tweaking (and a few gear fails), I’ve nailed my 2025 kit. Here’s what I carry, why I love it, and how it all fits in one backpack.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">📷 Main Camera: Sony A7C II + Tamron 24-200mm Lens</h3>
-                    <p>The <a href="https://amzn.to/4c41Mde" target="_blank" class="text-blue-500 hover:text-blue-600">Sony A7C II</a> is my workhorse. This full-frame mirrorless camera is a beast in a tiny body—perfect for travel. Its dynamic range captures vibrant Osaka street scenes, and the autofocus locks onto subjects even in Berlin’s dim nightlife. Paired with the <a href="https://amzn.to/4hy5EUQ" target="_blank" class="text-blue-500 hover:text-blue-600">Tamron 24-200mm lens</a>, I can shoot wide landscapes in Cairns or tight portraits in Prague without swapping lenses.</p>
-                    <p><strong>Story Time</strong>: In Hanoi, I filmed a street food vlog at dusk. The A7C II’s low-light performance turned chaotic market stalls into cinematic gold. For client work, I rig it with a <a href="https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN" target="_blank" class="text-blue-500 hover:text-blue-600">Neewer 99W V-Mount Battery</a> and <a href="https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z" target="_blank" class="text-blue-500 hover:text-blue-600">Feelworld 5.5” Touchscreen Monitor</a>. For run-and-gun, I strip it down and go handheld. Versatile? You bet.</p>
+                    <p>The <a href="https://amzn.to/4c41Mde" target="_blank" class="text-yellow-500 hover:text-yellow-500">Sony A7C II</a> is my workhorse. This full-frame mirrorless camera is a beast in a tiny body—perfect for travel. Its dynamic range captures vibrant Osaka street scenes, and the autofocus locks onto subjects even in Berlin’s dim nightlife. Paired with the <a href="https://amzn.to/4hy5EUQ" target="_blank" class="text-yellow-500 hover:text-yellow-500">Tamron 24-200mm lens</a>, I can shoot wide landscapes in Cairns or tight portraits in Prague without swapping lenses.</p>
+                    <p><strong>Story Time</strong>: In Hanoi, I filmed a street food vlog at dusk. The A7C II’s low-light performance turned chaotic market stalls into cinematic gold. For client work, I rig it with a <a href="https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN" target="_blank" class="text-yellow-500 hover:text-yellow-500">Neewer 99W V-Mount Battery</a> and <a href="https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z" target="_blank" class="text-yellow-500 hover:text-yellow-500">Feelworld 5.5” Touchscreen Monitor</a>. For run-and-gun, I strip it down and go handheld. Versatile? You bet.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">🎤 Audio: Rode Wireless PRO</h3>
-                    <p>Bad audio kills a vlog faster than shaky footage. The <a href="https://www.amazon.com/Rode-Wireless-PRO-Microphone-System/dp/B0C2T3V9G3" target="_blank" class="text-blue-500 hover:text-blue-600">Rode Wireless PRO</a> is my go-to for crisp sound. With 32-bit float recording, timecode sync, and onboard backup, it’s perfect for interviews in Phuket or vlogging in Korčula’s windy streets.</p>
+                    <p>Bad audio kills a vlog faster than shaky footage. The <a href="https://www.amazon.com/Rode-Wireless-PRO-Microphone-System/dp/B0C2T3V9G3" target="_blank" class="text-yellow-500 hover:text-yellow-500">Rode Wireless PRO</a> is my go-to for crisp sound. With 32-bit float recording, timecode sync, and onboard backup, it’s perfect for interviews in Phuket or vlogging in Korčula’s windy streets.</p>
                     <p><strong>Story Time</strong>: In Osaka’s Dotonbori, I recorded a lively street interview with a chef. The Wireless PRO cut through the crowd noise like a champ, and the backup saved me when my recorder glitched. It’s a massive upgrade from my old Rode GO II.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">💡 Lighting: Aputure MC Pro + MT Pro</h3>
-                    <p>Lighting can make or break a shot. The <a href="https://amzn.to/421eJjs" target="_blank" class="text-blue-500 hover:text-blue-600">Aputure MC Pro and MT Pro</a> are pocket-sized RGB lights that pack a punch. They’re USB-C rechargeable, have magnetic mounts, and let me add colorful backlights or soft key lights anywhere.</p>
+                    <p>Lighting can make or break a shot. The <a href="https://amzn.to/421eJjs" target="_blank" class="text-yellow-500 hover:text-yellow-500">Aputure MC Pro and MT Pro</a> are pocket-sized RGB lights that pack a punch. They’re USB-C rechargeable, have magnetic mounts, and let me add colorful backlights or soft key lights anywhere.</p>
                     <p><strong>Story Time</strong>: In Melbourne, I used the MC Pro to light a nighttime café interview. Its RGB mode added a warm glow that made the shot pop. In Budva, I stuck the MT Pro to a metal railing for a sunset beach vlog—compact and clutch.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">🎬 B-Cam & Gimbal Cam: DJI Osmo Pocket 3 Creator Combo</h3>
-                    <p>The <a href="https://amzn.to/4hFqguz" target="_blank" class="text-blue-500 hover:text-blue-600">DJI Osmo Pocket 3 Creator Combo</a> is my secret weapon for quick, stabilized shots. It’s pocket-sized, has a flip screen, built-in gimbal, and comes with a wireless mic. Perfect for walk-and-talks or casual vlogs when I don’t want to lug the Sony.</p>
+                    <p>The <a href="https://amzn.to/4hFqguz" target="_blank" class="text-yellow-500 hover:text-yellow-500">DJI Osmo Pocket 3 Creator Combo</a> is my secret weapon for quick, stabilized shots. It’s pocket-sized, has a flip screen, built-in gimbal, and comes with a wireless mic. Perfect for walk-and-talks or casual vlogs when I don’t want to lug the Sony.</p>
                     <p><strong>Story Time</strong>: In Japan, I filmed a cherry blossom vlog with the Pocket 3. Its stabilization smoothed out my shaky hands, and the mic captured clear audio despite the crowd. Check out the cinematic footage I shot:</p>
                     <div class="video-container my-6">
                         <iframe src="https://www.youtube.com/embed/PpLbQctQLmY" title="DJI Osmo Pocket 3 Japan Footage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">👓 POV Cam: Ray-Ban Meta Smart Glasses</h3>
-                    <p>For hands-free POV shots, I wear the <a href="https://amzn.to/4kTchUG" target="_blank" class="text-blue-500 hover:text-blue-600">Ray-Ban Meta Smart Glasses</a>. They’re discreet, lightweight, and great for behind-the-scenes or immersive travel vlogs. No need to hold a camera—just walk and shoot.</p>
+                    <p>For hands-free POV shots, I wear the <a href="https://amzn.to/4kTchUG" target="_blank" class="text-yellow-500 hover:text-yellow-500">Ray-Ban Meta Smart Glasses</a>. They’re discreet, lightweight, and great for behind-the-scenes or immersive travel vlogs. No need to hold a camera—just walk and shoot.</p>
                     <p><strong>Story Time</strong>: In Budva, I wore the Meta Glasses while strolling the Old Town. The footage felt like my viewers were right there with me, exploring Montenegro’s cobblestone streets. Want to see them in action? Here’s my review:</p>
                     <div class="video-container my-6">
                         <iframe src="https://www.youtube.com/embed/LUy8Wri5DrE" title="Ray-Ban Meta Smart Glasses Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">📱 Light Day Kit: iPhone + Pocket 3 + Meta Glasses</h3>
-                    <p>Some days, I travel light with just my <a href="https://www.apple.com/iphone-16-pro/" target="_blank" class="text-blue-500 hover:text-blue-600">iPhone 16 Pro Max</a>, Osmo Pocket 3, and Ray-Ban Meta Glasses. This trio covers wide cinematic shots, stabilized vlogs, and POV content without weighing me down.</p>
+                    <p>Some days, I travel light with just my <a href="https://www.apple.com/iphone-16-pro/" target="_blank" class="text-yellow-500 hover:text-yellow-500">iPhone 16 Pro Max</a>, Osmo Pocket 3, and Ray-Ban Meta Glasses. This trio covers wide cinematic shots, stabilized vlogs, and POV content without weighing me down.</p>
                     <p><strong>Story Time</strong>: In Phuket, I explored Patong Beach with this kit. The iPhone’s ProRes video handled vibrant market scenes, the Pocket 3 nailed smooth walk-and-talks, and the Meta Glasses captured candid moments. Perfect for spontaneous adventures.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">📷 Tripod: Manfrotto Travel Tripod</h3>
-                    <p>A steady shot is non-negotiable for interviews or time-lapses. My <a href="https://amzn.to/4bVozrA" target="_blank" class="text-blue-500 hover:text-blue-600">Manfrotto Travel Tripod</a> is lightweight, compact, and sturdy enough for my Sony rig.</p>
+                    <p>A steady shot is non-negotiable for interviews or time-lapses. My <a href="https://amzn.to/4bVozrA" target="_blank" class="text-yellow-500 hover:text-yellow-500">Manfrotto Travel Tripod</a> is lightweight, compact, and sturdy enough for my Sony rig.</p>
                     <p><strong>Story Time</strong>: In Prague, I set up a time-lapse of Charles Bridge at sunrise. The Manfrotto kept my A7C II rock-solid despite the morning breeze. It folds small enough to fit in my backpack, too.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">🖥️ Editing Setup: MacBook + iPad</h3>
-                    <p>Editing on the road needs power and portability. My <a href="https://www.apple.com/macbook-pro/" target="_blank" class="text-blue-500 hover:text-blue-600">MacBook Pro M4 Max (64GB RAM)</a> chews through 4K timelines like nothing. The <a href="https://www.apple.com/ipad-pro/" target="_blank" class="text-blue-500 hover:text-blue-600">iPad Pro M4 (13”, 16GB RAM)</a> is my sidekick for scripts, thumbnails, and quick color grading.</p>
+                    <p>Editing on the road needs power and portability. My <a href="https://www.apple.com/macbook-pro/" target="_blank" class="text-yellow-500 hover:text-yellow-500">MacBook Pro M4 Max (64GB RAM)</a> chews through 4K timelines like nothing. The <a href="https://www.apple.com/ipad-pro/" target="_blank" class="text-yellow-500 hover:text-yellow-500">iPad Pro M4 (13”, 16GB RAM)</a> is my sidekick for scripts, thumbnails, and quick color grading.</p>
                     <p><strong>Story Time</strong>: In Cairns, I edited a Great Barrier Reef vlog on my MacBook while sipping coffee. The iPad doubled as a second screen for color tweaks, saving me hours. This duo keeps my workflow smooth, no matter where I am.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">🔋 Power & Monitoring</h3>
-                    <p>Long shoots need reliable power. The <a href="https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN" target="_blank" class="text-blue-500 hover:text-blue-600">Neewer 99W V-Mount Battery</a> keeps my Sony rig running for hours. The <a href="https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z" target="_blank" class="text-blue-500 hover:text-blue-600">Feelworld 5.5” Touchscreen Monitor</a> ensures precise framing for interviews or tricky shots.</p>
+                    <p>Long shoots need reliable power. The <a href="https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN" target="_blank" class="text-yellow-500 hover:text-yellow-500">Neewer 99W V-Mount Battery</a> keeps my Sony rig running for hours. The <a href="https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z" target="_blank" class="text-yellow-500 hover:text-yellow-500">Feelworld 5.5” Touchscreen Monitor</a> ensures precise framing for interviews or tricky shots.</p>
                     <p><strong>Story Time</strong>: In Korčula, I filmed a sunset interview on a beach. The V-Mount Battery powered my camera and monitor all evening, and the Feelworld’s touchscreen made framing a breeze.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">🎒 My Camera Bag: ThinkTank Airport Commuter</h3>
-                    <p>All this gear lives in my <a href="https://amzn.to/4c0rCPk" target="_blank" class="text-blue-500 hover:text-blue-600">ThinkTank Airport Commuter Backpack</a>. It’s carry-on compliant, padded, and discreet—no flashy logos to scream “steal me.” I can switch from a full doc setup to a light vlog kit in minutes.</p>
+                    <p>All this gear lives in my <a href="https://amzn.to/4c0rCPk" target="_blank" class="text-yellow-500 hover:text-yellow-500">ThinkTank Airport Commuter Backpack</a>. It’s carry-on compliant, padded, and discreet—no flashy logos to scream “steal me.” I can switch from a full doc setup to a light vlog kit in minutes.</p>
                     <p><strong>Story Time</strong>: In Berlin, I dashed through Mitte with this backpack, filming b-roll and an interview in one day. Everything stayed secure, and it fit under my plane seat on the way to Melbourne. Trust me, this bag is a game-changer.</p>
 
                     <h3 class="heading-font text-2xl font-semibold mt-8 mb-4">🧠 Final Thoughts</h3>
                     <p>This kit is my travel filmmaking lifeline. It’s flexible enough for polished documentaries or quick YouTube vlogs, letting me capture the chaos of Hanoi’s streets or the serenity of Budva’s coast. Whether you’re starting your travel vlog journey or leveling up, I hope my setup inspires you.</p>
                     <p>Want to grab some of my gear? Here’s a quick rundown with links:</p>
                     <ul class="list-disc pl-6 mb-6">
-                        <li><a href="https://amzn.to/4c41Mde" target="_blank" class="text-blue-500 hover:text-blue-600">Sony A7C II</a> – Main camera</li>
-                        <li><a href="https://amzn.to/4hy5EUQ" target="_blank" class="text-blue-500 hover:text-blue-600">Tamron 24-200mm Lens</a> – Versatile zoom</li>
-                        <li><a href="https://www.amazon.com/Rode-Wireless-PRO-Microphone-System/dp/B0C2T3V9G3" target="_blank" class="text-blue-500 hover:text-blue-600">Rode Wireless PRO</a> – Crystal-clear audio</li>
-                        <li><a href="https://amzn.to/421eJjs" target="_blank" class="text-blue-500 hover:text-blue-600">Aputure MC Pro + MT Pro</a> – Compact lighting</li>
-                        <li><a href="https://amzn.to/4bVozrA" target="_blank" class="text-blue-500 hover:text-blue-600">Manfrotto Travel Tripod</a> – Steady shots</li>
-                        <li><a href="https://amzn.to/4hFqguz" target="_blank" class="text-blue-500 hover:text-blue-600">DJI Osmo Pocket 3 Creator Combo</a> – Pocket vlogging</li>
-                        <li><a href="https://amzn.to/4kTchUG" target="_blank" class="text-blue-500 hover:text-blue-600">Ray-Ban Meta Smart Glasses</a> – POV magic</li>
-                        <li><a href="https://www.apple.com/iphone-16-pro/" target="_blank" class="text-blue-500 hover:text-blue-600">iPhone 16 Pro Max</a> – Cinematic phone</li>
-                        <li><a href="https://www.apple.com/macbook-pro/" target="_blank" class="text-blue-500 hover:text-blue-600">MacBook Pro M4 Max</a> & <a href="https://www.apple.com/ipad-pro/" target="_blank" class="text-blue-500 hover:text-blue-600">iPad Pro M4</a> – Editing power</li>
-                        <li><a href="https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN" target="_blank" class="text-blue-500 hover:text-blue-600">Neewer 99W V-Mount Battery</a> – Long-lasting power</li>
-                        <li><a href="https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z" target="_blank" class="text-blue-500 hover:text-blue-600">Feelworld 5.5” Monitor</a> – Precise framing</li>
-                        <li><a href="https://amzn.to/4c0rCPk" target="_blank" class="text-blue-500 hover:text-blue-600">ThinkTank Airport Commuter</a> – My trusty backpack</li>
+                        <li><a href="https://amzn.to/4c41Mde" target="_blank" class="text-yellow-500 hover:text-yellow-500">Sony A7C II</a> – Main camera</li>
+                        <li><a href="https://amzn.to/4hy5EUQ" target="_blank" class="text-yellow-500 hover:text-yellow-500">Tamron 24-200mm Lens</a> – Versatile zoom</li>
+                        <li><a href="https://www.amazon.com/Rode-Wireless-PRO-Microphone-System/dp/B0C2T3V9G3" target="_blank" class="text-yellow-500 hover:text-yellow-500">Rode Wireless PRO</a> – Crystal-clear audio</li>
+                        <li><a href="https://amzn.to/421eJjs" target="_blank" class="text-yellow-500 hover:text-yellow-500">Aputure MC Pro + MT Pro</a> – Compact lighting</li>
+                        <li><a href="https://amzn.to/4bVozrA" target="_blank" class="text-yellow-500 hover:text-yellow-500">Manfrotto Travel Tripod</a> – Steady shots</li>
+                        <li><a href="https://amzn.to/4hFqguz" target="_blank" class="text-yellow-500 hover:text-yellow-500">DJI Osmo Pocket 3 Creator Combo</a> – Pocket vlogging</li>
+                        <li><a href="https://amzn.to/4kTchUG" target="_blank" class="text-yellow-500 hover:text-yellow-500">Ray-Ban Meta Smart Glasses</a> – POV magic</li>
+                        <li><a href="https://www.apple.com/iphone-16-pro/" target="_blank" class="text-yellow-500 hover:text-yellow-500">iPhone 16 Pro Max</a> – Cinematic phone</li>
+                        <li><a href="https://www.apple.com/macbook-pro/" target="_blank" class="text-yellow-500 hover:text-yellow-500">MacBook Pro M4 Max</a> & <a href="https://www.apple.com/ipad-pro/" target="_blank" class="text-yellow-500 hover:text-yellow-500">iPad Pro M4</a> – Editing power</li>
+                        <li><a href="https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN" target="_blank" class="text-yellow-500 hover:text-yellow-500">Neewer 99W V-Mount Battery</a> – Long-lasting power</li>
+                        <li><a href="https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z" target="_blank" class="text-yellow-500 hover:text-yellow-500">Feelworld 5.5” Monitor</a> – Precise framing</li>
+                        <li><a href="https://amzn.to/4c0rCPk" target="_blank" class="text-yellow-500 hover:text-yellow-500">ThinkTank Airport Commuter</a> – My trusty backpack</li>
                     </ul>
-                    <p>Check out my <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-blue-500 hover:text-blue-600">YouTube channel (@carltravels)</a> for more travel vlogs and gear tips. Got questions about my setup? Drop a comment on my videos or <a href="index.html#contact" class="text-blue-500 hover:text-blue-600">reach out</a>!</p>
+                    <p>Check out my <a href="https://www.youtube.com/@carltravels" target="_blank" class="text-yellow-500 hover:text-yellow-500">YouTube channel (@carltravels)</a> for more travel vlogs and gear tips. Got questions about my setup? Drop a comment on my videos or <a href="index.html#contact" class="text-yellow-500 hover:text-yellow-500">reach out</a>!</p>
                 </div>
             </div>
         </div>
@@ -260,7 +260,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                         </div>
                         <span class="heading-font">Carl Travels</span>
@@ -317,12 +317,12 @@
                         Subscribe to get travel tips and exclusive content directly in your inbox.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-blue-500 w-full" required>
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
                         <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
@@ -342,7 +342,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 
