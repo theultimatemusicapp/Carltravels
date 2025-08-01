@@ -131,10 +131,10 @@
         .responsive-video {
             position: relative;
             overflow: hidden;
-            padding-top: 41.67%; /* Adjusted for 1920x800 aspect ratio */
+            padding-top: 25%; /* Reduced from 41.67% to 60% of original height */
             width: 100%;
             background-color: var(--dark);
-            margin-bottom: 1rem; /* Reduced spacing below video */
+            margin-bottom: 1rem;
         }
 
         .responsive-video iframe {
@@ -144,6 +144,10 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        .about-image {
+            max-height: 70%; /* Reduced image height by 30% */
         }
     </style>
 </head>
@@ -349,7 +353,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/placeholder1" title="Wedding Film" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/PORbiT3WuGU?autoplay=1&mute=1" title="Wedding Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="hover-overlay">
                         <a href="portfolio.html#wedding1" class="text-white font-bold text-lg">View Wedding Film</a>
                     </div>
@@ -357,7 +361,7 @@
                 
                 <!-- Portfolio Item 2 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/placeholder2" title="Commercial" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/ydFr5B6rqUk?autoplay=1&mute=1" title="Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="hover-overlay">
                         <a href="portfolio.html#commercial1" class="text-white font-bold text-lg">View Commercial</a>
                     </div>
@@ -365,7 +369,7 @@
                 
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/placeholder3" title="Travel Film" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/Ef3u83dqN1Y?autoplay=1&mute=1" title="Travel Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="hover-overlay">
                         <a href="portfolio.html#travel1" class="text-white font-bold text-lg">View Travel Film</a>
                     </div>
@@ -388,10 +392,10 @@
                     <span class="text-yellow-500 font-medium mb-2 inline-block">MY STORY</span>
                     <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">Carl Tomich</h2>
                     <p class="text-gray-300 mb-6">
-                        I’m a filmmaker and traveler who traded the 9-to-5 for a life behind the lens. From wedding films to tech reviews, I craft stories that capture the beauty of the world.
+                        I’m Carl Tomich — a filmmaker, former DJ, street performer, and long-time creative nomad. I’ve spent the past 14 years behind the camera, starting out filming live music gigs before moving into weddings, commercials, and eventually turning my life into the story itself. These days, I work full-time as a content creator, combining my skills in cinematography, editing, sound engineering, and web development to document both the beautiful and the brutally honest sides of travel and creativity.
                     </p>
                     <p class="text-gray-300 mb-8">
-                        With a Sony A7S III in hand, I explore destinations, test gear, and share cinematic journeys to inspire your own adventures.
+                        Carl Travels is where all of that comes together — a home for real-world travel tips, filmmaking and editing hacks, gear guides, and the kind of life knowledge you only pick up on the road. I shoot mainly on the Sony A7CII, fly a variety of drones depending on the job, and edit between Adobe Premiere Pro and DaVinci Resolve (depending on how much punishment I’m willing to take). If you’re looking for polished storytelling with a raw edge — or just curious how someone survives making a living out of pixels and passport stamps — welcome to the ride.
                     </p>
                     <a href="#contact" class="px-6 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all">
                         Get In Touch <i class="fas fa-paper-plane ml-2"></i>
@@ -400,7 +404,7 @@
                 
                 <div class="lg:w-1/2 relative fade-in">
                     <div class="relative max-w-md mx-auto">
-                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-yellow-500">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-yellow-500 about-image">
                             <img src="/carl.png" alt="Carl Tomich" class="w-full h-auto">
                         </div>
                     </div>
