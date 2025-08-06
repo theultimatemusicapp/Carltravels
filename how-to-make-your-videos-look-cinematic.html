@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Use Dehancer to Make My Videos Look Cinematic (And How You Can Too) – Carl Travels</title>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+    <!-- Meta Tags -->
+    <meta name="description" content="Discover how Carl uses Dehancer to give digital footage a cinematic, film-like look with grain, halation, and more."/>
+    <meta name="keywords" content="Dehancer, cinematic video, film emulation, color grading, Carl Travels"/>
+    <meta name="author" content="Carl Ostomich"/>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Why I Use Dehancer to Make My Videos Look Cinematic (And How You Can Too)"/>
+    <meta property="og:description" content="Learn how Dehancer helps turn clean digital video into rich, filmic footage with a unique visual identity."/>
+    <meta property="og:image" content="https://www.carltravels.com/carlcamera.jpg"/>
+    <meta property="og:url" content="https://www.carltravels.com/how-to-make-your-videos-look-cinematic.html"/>
+    <meta property="og:type" content="article"/>
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Why I Use Dehancer to Make My Videos Look Cinematic (And How You Can Too)"/>
+    <meta name="twitter:description" content="Discover how Carl uses Dehancer to give digital footage a cinematic, film-like look."/>
+    <meta name="twitter:image" content="https://www.carltravels.com/carlcamera.jpg"/>
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+
+        :root {
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
+        }
+
+        .heading-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center">
+                    <img src="/carlcircle.png" alt="Carl Travels Logo" class="w-10 h-10 mr-2">
+                    Carl Travels
+                </a>
+                <div class="hidden md:flex space-x-6 font-medium">
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 transition-colors">Destinations</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 transition-colors">Blog</a>
+                    <a href="portfolio.html" class="text-gray-700 hover:text-yellow-500 transition-colors">Portfolio</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-yellow-500 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <ul class="px-2 pt-2 pb-4 space-y-1 font-medium">
+                    <li><a href="destinations.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Destinations</a></li>
+                    <li><a href="blog.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
+                    <li><a href="portfolio.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Portfolio</a></li>
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[50vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto px-6 py-16 relative z-10">
+            <div class="text-center bg-black bg-opacity-40 rounded-lg py-6 px-4">
+                <h1 class="heading-font text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                    Why I Use Dehancer to Make My Videos Look Cinematic
+                </h1>
+                <p class="text-lg text-white font-medium mb-8 max-w-2xl mx-auto">
+                    Give your travel videos rich, film-like character using this powerful plugin.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-sm text-gray-500 mb-4">Published on January 27, 2025 by Carl</p>
+                <div class="prose prose-lg text-gray-800">
+                    <p>I’ve been making videos for over a decade—starting with music gigs and underground street performances, and now filming everything from rice fields in Vietnam to chaotic tuk tuk rides in Thailand. And through it all, one thing has never changed: I’ve always chased that filmic, cinematic look.</p>
+                    <p>Let’s be honest, a lot of digital footage just looks… digital. Too clean. Too clinical. Especially when you're shooting on mirrorless cameras or phones—it can feel like something's missing. That’s where Dehancer comes in.</p>
+                    <div class="video-container my-6">
+                        <iframe src="https://www.youtube.com/embed/qUPzm-Qcz5A" title="Why I Use Dehancer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h2 class="heading-font text-3xl font-bold mt-10 mb-4">📽 What Is Dehancer?</h2>
+                    <p>Dehancer is a film emulation plugin that recreates the look and feel of real analog film stocks. It works inside apps like DaVinci Resolve, Premiere Pro, and Final Cut Pro, and they’ve recently added support for Photoshop and Lightroom too.</p>
+                    <p>But it’s more than just a LUT or a filter—it simulates all the little imperfections that make film beautiful: the grain, halation, bloom, color cast, even the film compression and print characteristics. You can push it hard for a dreamy 16mm vibe, or dial it back for subtle Kodak Portra tones.</p>
+                    <h2 class="heading-font text-3xl font-bold mt-10 mb-4">🎬 My Setup</h2>
+                    <p>Right now I shoot with a Sony A7CII, filming in S-Log3 for maximum flexibility in post. I grade my videos in DaVinci Resolve, and Dehancer has become a permanent part of my workflow. It's helped me unify my look across all the different travel projects I shoot—whether I'm filming a foggy morning in Hanoi or golden hour in Bali (yes, even Bali has good lighting if you get up early enough).</p>
+                    <h2 class="heading-font text-3xl font-bold mt-10 mb-4">💡 Why It Matters</h2>
+                    <p>If you're making travel videos, short films, or even just cinematic vlogs—having a strong visual identity matters. Your color grade is part of your voice. Anyone can shoot in 4K now, but very few take the time to give their footage that emotional depth and texture that film provides.</p>
+                    <p>Dehancer does that. It’s the closest I’ve come to making digital feel analog—without hauling around a Super 8 camera or spending hours tweaking nodes.</p>
+                    <h2 class="heading-font text-3xl font-bold mt-10 mb-4">💸 Get 10% Off with My Code</h2>
+                    <p>If you’re curious to try it, Dehancer has given me a 10% discount code you can use:</p>
+                    <p><strong>Use code: CARLTRAVELS at checkout</strong></p>
+                    <p><a href="https://www.dehancer.com" target="_blank" class="text-yellow-500 hover:text-yellow-500">Get Dehancer here</a></p>
+                    <p>I’m not pushing gear I don’t use—this is literally in every one of my edits now. And yes, I do earn a small commission if you sign up through my link. It helps support the channel, the late-night edits, and maybe even my next noodle soup.</p>
+                    <h2 class="heading-font text-3xl font-bold mt-10 mb-4">🧪 Still Not Sure?</h2>
+                    <p>Try the free trial first. No watermark. No risk. Just open up your footage and see what happens when you drop a little Kodak Gold or Cinestill 800T on it. You’ll know pretty quickly if it’s for you.</p>
+                    <h2 class="heading-font text-3xl font-bold mt-10 mb-4">🔧 Final Tips</h2>
+                    <ul>
+                        <li>If you’re using DaVinci Resolve, make sure your color management is set correctly—Dehancer plays really well with S-Log, Canon Log, and Blackmagic Film.</li>
+                        <li>Don’t go overboard with the grain or halation—start subtle, build from there.</li>
+                        <li>Use the print film emulations at the end of your grade—they add the final magic.</li>
+                    </ul>
+                    <p>Got questions? DM me on Instagram or leave a comment on YouTube. Always happy to share my workflow.</p>
+                    <p>Stay cinematic,<br>– Carl</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Explore</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="hanoitravelguide.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
+                        <li><a href="balitravelguide.html" class="text-gray-400 hover:text-white transition-colors">Bali</a></li>
+                        <li><a href="osakatravelguide.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                        <li><a href="kyototravelguide.html" class="text-gray-400 hover:text-white transition-colors">Kyoto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                    </p>
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
+                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Carl Travels. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript with Error Handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Mobile Menu Toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', function() {
+                        mobileMenu.classList.toggle('open');
+                        this.querySelector('i').classList.toggle('fa-bars');
+                        this.querySelector('i').classList.toggle('fa-times');
+                    });
+                }
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const id = this.getAttribute('href');
+                        if (id !== '#') {
+                            const el = document.querySelector(id);
+                            if (el) {
+                                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                                    mobileMenu.classList.remove('open');
+                                    if (mobileMenuButton) {
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+                                    }
+                                }
+                                window.scrollTo({
+                                    top: el.offsetTop - 80,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+
+                // Navbar scroll effect
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 50) {
+                            navbar.classList.add('scrolled');
+                        } else {
+                            navbar.classList.remove('scrolled');
+                        }
+                    });
+                }
+
+                // Back to top button
+                const backToTopButton = document.getElementById('back-to-top');
+                if (backToTopButton) {
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 300) {
+                            backToTopButton.classList.remove('opacity-0', 'invisible');
+                            backToTopButton.classList.add('opacity-100', 'visible');
+                        } else {
+                            backToTopButton.classList.remove('opacity-100', 'visible');
+                            backToTopButton.classList.add('opacity-0', 'invisible');
+                        }
+                    });
+                    backToTopButton.addEventListener('click', function() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            } catch (error) {
+                console.error('JavaScript Error in how-to-make-your-videos-look-cinematic.html:', error);
+            }
+        });
+    </script>
+</body>
+</html>
