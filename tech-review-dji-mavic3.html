@@ -4,32 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DJI Mavic 3 Review - Carl Travels Tech</title>
-    <meta name="description" content="Carl's take on the DJI Mavic 3 drone for capturing cinematic travel footage. Learn the highlights and drawbacks."/>
-    <meta name="keywords" content="DJI Mavic 3 review, travel drone, aerial filmmaking, Carl Travels"/>
-    <meta name="author" content="Carl Ostomich"/>
-    <meta property="og:title" content="DJI Mavic 3 Review - Carl Travels Tech"/>
-    <meta property="og:description" content="Hands-on review of DJI's flagship travel drone."/>
-    <meta property="og:image" content="https://www.carltravels.com/images/dji-mavic3.jpg"/>
-    <meta property="og:url" content="https://www.carltravels.com/tech-review-dji-mavic3.html"/>
-    <meta property="og:type" content="article"/>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
+    <meta name="description" content="Carl's take on the DJI Mavic 3 drone for capturing cinematic travel footage. Learn the highlights and drawbacks.">
+    <meta name="keywords" content="DJI Mavic 3 review, travel drone, aerial filmmaking, Carl Travels">
+    <meta name="author" content="Carl Tomich">
+    <meta property="og:title" content="DJI Mavic 3 Review - Carl Travels Tech">
+    <meta property="og:description" content="Hands-on review of DJI's flagship travel drone.">
+    <meta property="og:image" content="https://www.carltravels.com/dji-mavic3.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/tech-review-dji-mavic3.html">
+    <meta property="og:type" content="article">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+
         :root { --primary:#f5c518; --secondary:#2a2a2a; --dark:#1a1a1a; --light:#d4d4d4; }
+
         body { font-family:'Montserrat',sans-serif; background-color:var(--dark); color:var(--light); scroll-behavior:smooth; }
-        .hero-gradient{background:linear-gradient(135deg,rgba(42,42,42,.9),rgba(26,26,26,.9));}
+
+        .hero-gradient{background:linear-gradient(135deg,rgba(42,42,42,0.9),rgba(26,26,26,0.9));}
         .heading-font{font-family:'Bebas Neue',sans-serif;}
         .navbar{backdrop-filter:blur(10px);background-color:rgba(255,255,255,.9);transition:.3s;}
         .navbar.scrolled{background-color:rgba(255,255,255,.98);box-shadow:0 4px 6px -1px rgba(0,0,0,.1);}
-        .mobile-menu{max-height:0;overflow:hidden;transition:max-height .5s ease-out;}
-        .mobile-menu.open{max-height:500px;}
         .wave-shape{position:absolute;bottom:0;left:0;width:100%;overflow:hidden;line-height:0;}
         .wave-shape svg{position:relative;display:block;width:calc(100% + 1.3px);height:150px;}
-        .wave-shape .shape-fill{fill:#fff;}
+        .wave-shape .shape-fill{fill:#FFFFFF;}
+        .mobile-menu{max-height:0;overflow:hidden;transition:max-height .5s ease-out;}
+        .mobile-menu.open{max-height:500px;}
     </style>
 </head>
 <body class="text-gray-800">
+    <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
@@ -42,168 +56,123 @@
                     <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
                     <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
                     <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
-                    <a href="gear.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Gear</a>
+                    <a href="gear.html" class="text-yellow-500 font-medium transition-colors">Gear</a>
                     <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
                     <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
-                    <a href="#review" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Read Review</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
             </div>
+            <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
                     <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
                     <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
                     <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
                     <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
-                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Gear</a>
+                    <a href="gear.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Gear</a>
                     <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
                     <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
-                    <a href="#review" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Read Review</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center pt-20">
-        <div class="wave-shape"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path></svg></div>
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[60vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
         <div class="container mx-auto px-6 py-20 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
-                    <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">DJI Mavic 3 Review</h1>
-                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">Pro-level aerials in a backpack-friendly package.</p>
-                    <a href="#review" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">Jump to Review</a>
+            <div class="text-center">
+                <h1 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">DJI Mavic 3 Review</h1>
+                <p class="text-lg text-yellow-300 mb-8">Flagship travel drone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="prose max-w-none text-gray-800">
+                        <p>The Mavic 3 packs a dual-camera system and long battery life, giving you stunning 5.1K video without lugging around a bulky rig.</p>
+                        <h2>Highlights</h2>
+                        <ul>
+                            <li>4/3 CMOS Hasselblad sensor with 5.1K video</li>
+                            <li>46-minute flight time and omnidirectional obstacle sensing</li>
+                            <li>Compact folding design for travel</li>
+                        </ul>
+                        <h2>Things to Consider</h2>
+                        <p>The price is high and you’ll need to register it in many countries. In windy conditions it struggles more than heavier drones.</p>
+                        <h2>Bottom Line</h2>
+                        <p>If aerial cinematography is a priority, the Mavic 3 delivers outstanding results in a travel-friendly body.</p>
+                        <p><a href="https://amzn.to/3-example" target="_blank" class="text-yellow-500 hover:underline">Check Price</a></p>
+                    </div>
                 </div>
-                <div class="lg:w-1/2 relative">
-                    <div class="relative max-w-md mx-auto">
-                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
-                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
-                            <img src="/dji-mavic3.jpg" alt="DJI Mavic 3" class="w-full h-auto">
-                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
-                            <div class="absolute bottom-0 left-0 p-6 text-white">
-                                <h3 class="text-xl font-bold">DJI Mavic 3</h3>
-                                <p class="text-sm opacity-90">Flagship Travel Drone</p>
-                            </div>
-                        </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
+                        <p class="text-gray-600 mb-4">Get travel guides, gear reviews, and tips straight to your inbox.</p>
+                        <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
+                            <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                            <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_gotcha" style="display:none">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">Subscribe <i class="fas fa-paper-plane ml-1"></i></button>
+                        </form>
+                        <p class="text-gray-500 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="gear.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">More Gear Reviews <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="review" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">FILMMAKING GEAR</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Flying With the Mavic 3</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
-            </div>
-            <div class="prose max-w-none">
-                <p class="text-gray-600 mb-6">The Mavic 3 packs a dual-camera system and long battery life, giving you stunning 5.1K video without lugging around a bulky rig.</p>
-                <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Highlights</h3>
-                <ul class="list-disc pl-6 text-gray-600 mb-6">
-                    <li>4/3 CMOS Hasselblad sensor with 5.1K video</li>
-                    <li>46-minute flight time and omnidirectional obstacle sensing</li>
-                    <li>Compact folding design for travel</li>
-                </ul>
-                <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Things to Consider</h3>
-                <p class="text-gray-600 mb-6">The price is high and you’ll need to register it in many countries. In windy conditions it struggles more than heavier drones.</p>
-                <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Bottom Line</h3>
-                <p class="text-gray-600 mb-6">If aerial cinematography is a priority, the Mavic 3 delivers outstanding results in a travel-friendly body.</p>
-                <a href="https://amzn.to/3-example" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">Check Price <i class="fas fa-external-link-alt ml-2"></i></a>
-            </div>
-        </div>
-    </section>
-
+    <!-- Newsletter Call-to-Action -->
     <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel & Tech Community</h2>
-            <p class="text-gray-700 mb-8 max-w-2xl mx-auto">Subscribe for more drone tips and filmmaking gear guides.</p>
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Subscribe to Carl Travels for travel guides, gear reviews, and stories delivered straight to your inbox.</p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
                 <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="px-6 py-3 bg-dark text-white rounded-full font-medium hover:shadow-lg transition-all">Subscribe</button>
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">Subscribe <i class="fas fa-paper-plane ml-1"></i></button>
             </form>
-            <p class="text-gray-800 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div>
-                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2"><i class="fas fa-plane text-white text-lg transform -rotate-45"></i></div>
-                        <span class="heading-font">Carl Travels</span>
-                    </a>
-                    <p class="text-gray-400 mb-4">Inspiring meaningful travel through authentic storytelling and helpful tech insights.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
-                    <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
-                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                        <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
-                        <li><a href="#review" class="text-gray-400 hover:text-white transition-colors">Tech Reviews</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
-                    <ul class="space-y-3">
-                        <li><a href="Berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
-                        <li><a href="melbournetravelguide.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
-                        <li><a href="cairnstravelguide.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
-                        <li><a href="phuketravelguide.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
-                    <p class="text-gray-400 mb-4">Subscribe for travel guides and tech tips straight to your inbox.</p>
-                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
-                        <input type="hidden" name="_subject" value="Newsletter Subscription">
-                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Carl Travels. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Carl Tomich. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="hover:text-yellow-500"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/carltravels/" target="_blank" class="hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible"><i class="fas fa-arrow-up"></i></button>
-
     <script>
-        document.addEventListener('DOMContentLoaded',()=>{
-            try{
-                const mobileBtn=document.getElementById('mobile-menu-button');
-                const mobileMenu=document.getElementById('mobile-menu');
-                if(mobileBtn&&mobileMenu){mobileBtn.addEventListener('click',()=>{mobileMenu.classList.toggle('open');mobileBtn.querySelector('i').classList.toggle('fa-bars');mobileBtn.querySelector('i').classList.toggle('fa-times');});}
-                document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',e=>{e.preventDefault();const id=anchor.getAttribute('href');if(id!=='#'){const el=document.querySelector(id);if(el){if(mobileMenu.classList.contains('open')){mobileMenu.classList.remove('open');mobileBtn.querySelector('i').classList.toggle('fa-bars');mobileBtn.querySelector('i').classList.toggle('fa-times');}window.scrollTo({top:el.offsetTop-80,behavior:'smooth'});}}});});
-                const navbar=document.getElementById('navbar');
-                if(navbar){window.addEventListener('scroll',()=>{if(window.scrollY>50){navbar.classList.add('scrolled');}else{navbar.classList.remove('scrolled');}});}
-                const backBtn=document.getElementById('back-to-top');
-                if(backBtn){window.addEventListener('scroll',()=>{if(window.scrollY>300){backBtn.classList.remove('opacity-0','invisible');backBtn.classList.add('opacity-100','visible');}else{backBtn.classList.remove('opacity-100','visible');backBtn.classList.add('opacity-0','invisible');}});backBtn.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'});});}
-            }catch(e){console.error('JavaScript Error in tech-review-dji-mavic3.html:',e);}
+        document.getElementById('mobile-menu-button').addEventListener('click', function(){
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+        window.addEventListener('scroll', function(){
+            const nav=document.getElementById('navbar');
+            if(window.scrollY>10){nav.classList.add('scrolled');}else{nav.classList.remove('scrolled');}
         });
     </script>
 </body>
