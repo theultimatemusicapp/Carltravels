@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bose S1 Pro Plus vs Everse 8 - Portable PA Speaker Review</title>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
     <meta name="description" content="Side-by-side review of the Bose S1 Pro Plus and Electro-Voice Everse 8 portable PA systems.">
     <meta name="keywords" content="Bose S1 Pro Plus, Everse 8, portable PA, speaker review, Carl Tomich">
     <meta name="author" content="Carl Tomich">
     <meta property="og:title" content="Bose S1 Pro Plus vs Everse 8 - Portable PA Speaker Review">
     <meta property="og:description" content="Which portable PA should you buy? Carl compares Bose and Electro-Voice speakers.">
+    <meta property="og:image" content="https://www.carltravels.com/busking.jpg">
     <meta property="og:url" content="https://www.carltravels.com/bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html">
     <meta property="og:type" content="article">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
-        :root { --primary:#f5c518; --secondary:#2a2a2a; --dark:#1a1a1a; --light:#d4d4d4; }
-        body { font-family:'Montserrat',sans-serif; background-color:var(--dark); color:var(--light); }
+
+        :root {
+            --primary:#f5c518;
+            --secondary:#2a2a2a;
+            --dark:#1a1a1a;
+            --light:#d4d4d4;
+        }
+
+        body {
+            font-family:'Montserrat',sans-serif;
+            background-color:var(--dark);
+            color:var(--light);
+            scroll-behavior:smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(42,42,42,0.9), rgba(26,26,26,0.9));
+        }
+
         .heading-font{font-family:'Bebas Neue',sans-serif;}
+
         .navbar{backdrop-filter:blur(10px);background-color:rgba(255,255,255,.9);transition:.3s;}
         .navbar.scrolled{background-color:rgba(255,255,255,.98);box-shadow:0 4px 6px -1px rgba(0,0,0,.1);}
+
+        .wave-shape{position:absolute;bottom:0;left:0;width:100%;overflow:hidden;line-height:0;}
+        .wave-shape svg{position:relative;display:block;width:calc(100% + 1.3px);height:150px;}
+        .wave-shape .shape-fill{fill:#FFFFFF;}
+
         .mobile-menu{max-height:0;overflow:hidden;transition:max-height .5s ease-out;}
         .mobile-menu.open{max-height:500px;}
     </style>
 </head>
 <body class="text-gray-800">
+    <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
@@ -44,6 +79,7 @@
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
             </div>
+            <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
                     <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
@@ -59,7 +95,13 @@
         </div>
     </nav>
 
-    <section class="hero-gradient relative overflow-hidden min-h-[50vh] flex items-center pt-20">
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[60vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
         <div class="container mx-auto px-6 py-20 relative z-10">
             <div class="text-center">
                 <h1 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">Bose S1 Pro Plus vs Everse 8</h1>
@@ -68,59 +110,98 @@
         </div>
     </section>
 
-    <section id="review" class="py-16 bg-white">
+    <!-- Review Section -->
+    <section id="review" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <div class="prose prose-lg text-gray-800">
-                <p>Welcome back to Carl Tomich Tech Reviews! Today we’re veering slightly off the path of video gear and diving into something just as crucial — audio. Because let’s face it: great visuals mean nothing if your sound sucks.</p>
-                <p>We’re putting two top contenders head-to-head: the Bose S1 Pro Plus and the Electro-Voice Everse 8. Both are compact, battery-powered PA speakers — perfect for busking, solo gigs, small events, or even just jamming in the park.</p>
-                <h2>Speaker Size: Does Bigger Mean Better?</h2>
-                <ul>
-                    <li>Everse 8: Packs an 8-inch woofer</li>
-                    <li>Bose S1 Pro Plus: Slightly smaller at 6.5 inches</li>
-                </ul>
-                <p>Now, bigger drivers usually mean deeper bass and more volume. But it’s not just about size — we’re also looking at clarity, warmth, and how each speaker fills a space. You’ll hear it in the video — but spoiler alert: the difference might surprise you.</p>
-                <h2>Inputs &amp; Features: Aux Wars</h2>
-                <p>Both speakers offer dual combo XLR/TRS inputs, but here’s a key difference:</p>
-                <ul>
-                    <li>Bose S1 Pro Plus: Features a 3.5mm aux input</li>
-                    <li>Everse 8: Uses a 1/4&quot; (6.35mm) aux jack</li>
-                </ul>
-                <p>It’s a small detail, but depending on your gear — phone, tablet, mixer — it can save you from scrambling for adapters at the worst time.</p>
-                <h2>Battery Life &amp; Portability</h2>
-                <p>Both units are battery-powered, with enough juice to get you through a few solid sets.</p>
-                <p>The Bose S1 Pro Plus has a sleek, ultra-portable design and wireless transmitter support. The Everse 8 is slightly bulkier, but offers that beefier low-end thanks to the larger driver.</p>
-                <h2>Wireless Wins?</h2>
-                <p>The Bose comes bundled with wireless transmitters that slot right into the speaker — great for performers who hate cable clutter. It’s a premium feature, and yeah, it bumps the price, but if wireless is your vibe, this might be a game-changer.</p>
-                <h2>Price: Where’s the Value?</h2>
-                <ul>
-                    <li>Bose S1 Pro Plus: ~$1300 AUD</li>
-                    <li>Everse 8: ~$900–$1000 AUD</li>
-                </ul>
-                <p>You're paying a premium for Bose’s wireless features and sleek form factor. The Everse 8 gives you a solid punch at a more affordable price.</p>
-                <h2>🎧 Sound Test: Guitar, Vocals, Bass</h2>
-                <p>In the video below, we A/B test both speakers using guitar and bass tracks. Everything’s recorded under the same conditions and volume, so you can hear the difference for yourself — not just take my word for it.</p>
-                <div class="aspect-w-16 aspect-h-9 mb-6">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7BCbr5dNLk8" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="prose max-w-none text-gray-800">
+                        <p>Welcome back to Carl Tomich Tech Reviews! Today we’re veering slightly off the path of video gear and diving into something just as crucial — audio. Because let’s face it: great visuals mean nothing if your sound sucks.</p>
+                        <p>We’re putting two top contenders head-to-head: the Bose S1 Pro Plus and the Electro-Voice Everse 8. Both are compact, battery-powered PA speakers — perfect for busking, solo gigs, small events, or even just jamming in the park.</p>
+                        <h2>Speaker Size: Does Bigger Mean Better?</h2>
+                        <ul>
+                            <li>Everse 8: Packs an 8-inch woofer</li>
+                            <li>Bose S1 Pro Plus: Slightly smaller at 6.5 inches</li>
+                        </ul>
+                        <p>Now, bigger drivers usually mean deeper bass and more volume. But it’s not just about size — we’re also looking at clarity, warmth, and how each speaker fills a space. You’ll hear it in the video — but spoiler alert: the difference might surprise you.</p>
+                        <h2>Inputs &amp; Features: Aux Wars</h2>
+                        <p>Both speakers offer dual combo XLR/TRS inputs, but here’s a key difference:</p>
+                        <ul>
+                            <li>Bose S1 Pro Plus: Features a 3.5mm aux input</li>
+                            <li>Everse 8: Uses a 1/4&quot; (6.35mm) aux jack</li>
+                        </ul>
+                        <p>It’s a small detail, but depending on your gear — phone, tablet, mixer — it can save you from scrambling for adapters at the worst time.</p>
+                        <h2>Battery Life &amp; Portability</h2>
+                        <p>Both units are battery-powered, with enough juice to get you through a few solid sets.</p>
+                        <p>The Bose S1 Pro Plus has a sleek, ultra-portable design and wireless transmitter support. The Everse 8 is slightly bulkier, but offers that beefier low-end thanks to the larger driver.</p>
+                        <h2>Wireless Wins?</h2>
+                        <p>The Bose comes bundled with wireless transmitters that slot right into the speaker — great for performers who hate cable clutter. It’s a premium feature, and yeah, it bumps the price, but if wireless is your vibe, this might be a game-changer.</p>
+                        <h2>Price: Where’s the Value?</h2>
+                        <ul>
+                            <li>Bose S1 Pro Plus: ~$1300 AUD</li>
+                            <li>Everse 8: ~$900–$1000 AUD</li>
+                        </ul>
+                        <p>You're paying a premium for Bose’s wireless features and sleek form factor. The Everse 8 gives you a solid punch at a more affordable price.</p>
+                        <h2>🎧 Sound Test: Guitar, Vocals, Bass</h2>
+                        <p>In the video below, we A/B test both speakers using guitar and bass tracks. Everything’s recorded under the same conditions and volume, so you can hear the difference for yourself — not just take my word for it.</p>
+                        <div class="relative w-full aspect-video mb-6">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/7BCbr5dNLk8" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p>To my ears? The Everse 8 wins on depth, while the Bose has better midrange clarity — but it’ll depend on your use case. Gigging solo acoustic? Go Bose. Pumping backing tracks or DJing? Maybe the Everse is your pick.</p>
+                        <h2>My Final Thoughts</h2>
+                        <p>Both of these speakers are excellent choices. It really comes down to what you value more:</p>
+                        <ul>
+                            <li>Portability and wireless convenience? → Bose S1 Pro Plus</li>
+                            <li>Bigger sound at a better price? → Everse 8</li>
+                        </ul>
+                        <p>If this review helped you out, consider using the affiliate links below to grab your gear. It won’t cost you anything extra — but it helps me keep creating honest, in-the-field reviews like this one.</p>
+                        <p><a href="https://amzn.to/3EcRLNM" class="text-yellow-500 hover:underline">Buy the Bose S1 Pro Plus</a></p>
+                        <h2>🎥 Gear I Use</h2>
+                        <ul>
+                            <li><a href="https://amzn.to/4c41Mde" class="text-yellow-500 hover:underline">Main Camera (Sony A7CII)</a></li>
+                            <li><a href="https://amzn.to/4hFqguz" class="text-yellow-500 hover:underline">DJI Pocket 3</a></li>
+                            <li><a href="https://amzn.to/4c0rCPk" class="text-yellow-500 hover:underline">My Camera Backpack</a></li>
+                        </ul>
+                        <p class="text-sm mt-4">Disclosure: I may earn a commission from purchases made through these links — at no extra cost to you.</p>
+                    </div>
                 </div>
-                <p>To my ears? The Everse 8 wins on depth, while the Bose has better midrange clarity — but it’ll depend on your use case. Gigging solo acoustic? Go Bose. Pumping backing tracks or DJing? Maybe the Everse is your pick.</p>
-                <h2>My Final Thoughts</h2>
-                <p>Both of these speakers are excellent choices. It really comes down to what you value more:</p>
-                <ul>
-                    <li>Portability and wireless convenience? → Bose S1 Pro Plus</li>
-                    <li>Bigger sound at a better price? → Everse 8</li>
-                </ul>
-                <p>If this review helped you out, consider using the affiliate links below to grab your gear. It won’t cost you anything extra — but it helps me keep creating honest, in-the-field reviews like this one.</p>
-                <p><a href="https://amzn.to/3EcRLNM" class="text-yellow-500 hover:underline">Buy the Bose S1 Pro Plus</a></p>
-                <h2>🎥 Gear I Use</h2>
-                <ul>
-                    <li><a href="https://amzn.to/4c41Mde" class="text-yellow-500 hover:underline">Main Camera (Sony A7CII)</a></li>
-                    <li><a href="https://amzn.to/4hFqguz" class="text-yellow-500 hover:underline">DJI Pocket 3</a></li>
-                    <li><a href="https://amzn.to/4c0rCPk" class="text-yellow-500 hover:underline">My Camera Backpack</a></li>
-                </ul>
-                <p class="text-sm mt-4">Disclosure: I may earn a commission from purchases made through these links — at no extra cost to you.</p>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
+                        <p class="text-gray-600 mb-4">Get travel guides, gear reviews, and tips straight to your inbox.</p>
+                        <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
+                            <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                            <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_gotcha" style="display:none">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">Subscribe <i class="fas fa-paper-plane ml-1"></i></button>
+                        </form>
+                        <p class="text-gray-500 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="gear.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">More Gear Reviews <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Call-to-Action -->
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Subscribe to Carl Travels for travel guides, gear reviews, and stories delivered straight to your inbox.</p>
+            <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
+                <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">Subscribe <i class="fas fa-paper-plane ml-1"></i></button>
+            </form>
         </div>
     </section>
 

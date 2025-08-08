@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DJI Mini 3 Pro Review: More Than Just a Drone</title>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGFPJ2VMTY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LGFPJ2VMTY');
+    </script>
     <meta name="description" content="Hands-on review of the DJI Mini 3 Pro and why it's more than just a flying camera.">
     <meta name="keywords" content="DJI Mini 3 Pro, drone review, handheld camera, Carl Tomich">
     <meta name="author" content="Carl Tomich">
     <meta property="og:title" content="DJI Mini 3 Pro Review: More Than Just a Drone">
     <meta property="og:description" content="Carl explains how the Mini 3 Pro doubles as a handheld gimbal camera and a capable drone.">
+    <meta property="og:image" content="https://www.carltravels.com/djimavic3.jpg">
     <meta property="og:url" content="https://www.carltravels.com/dji-mini-3-pro-review.html">
     <meta property="og:type" content="article">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
-        :root { --primary:#f5c518; --secondary:#2a2a2a; --dark:#1a1a1a; --light:#d4d4d4; }
-        body { font-family:'Montserrat',sans-serif; background-color:var(--dark); color:var(--light); }
+
+        :root {
+            --primary:#f5c518;
+            --secondary:#2a2a2a;
+            --dark:#1a1a1a;
+            --light:#d4d4d4;
+        }
+
+        body {
+            font-family:'Montserrat',sans-serif;
+            background-color:var(--dark);
+            color:var(--light);
+            scroll-behavior:smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(42,42,42,0.9), rgba(26,26,26,0.9));
+        }
+
         .heading-font{font-family:'Bebas Neue',sans-serif;}
+
         .navbar{backdrop-filter:blur(10px);background-color:rgba(255,255,255,.9);transition:.3s;}
         .navbar.scrolled{background-color:rgba(255,255,255,.98);box-shadow:0 4px 6px -1px rgba(0,0,0,.1);}
+
+        .wave-shape{position:absolute;bottom:0;left:0;width:100%;overflow:hidden;line-height:0;}
+        .wave-shape svg{position:relative;display:block;width:calc(100% + 1.3px);height:150px;}
+        .wave-shape .shape-fill{fill:#FFFFFF;}
+
         .mobile-menu{max-height:0;overflow:hidden;transition:max-height .5s ease-out;}
         .mobile-menu.open{max-height:500px;}
     </style>
 </head>
 <body class="text-gray-800">
+    <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
@@ -44,6 +79,7 @@
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
             </div>
+            <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
                     <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
@@ -59,7 +95,13 @@
         </div>
     </nav>
 
-    <section class="hero-gradient relative overflow-hidden min-h-[50vh] flex items-center pt-20">
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[60vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
         <div class="container mx-auto px-6 py-20 relative z-10">
             <div class="text-center">
                 <h1 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">DJI Mini 3 Pro Review</h1>
@@ -68,55 +110,94 @@
         </div>
     </section>
 
-    <section id="review" class="py-16 bg-white">
+    <!-- Review Section -->
+    <section id="review" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <div class="prose prose-lg text-gray-800">
-                <p>Welcome back to Carl Tomich Tech Reviews! Today we’re looking at a drone I’ve come to love — and not just for flying. The DJI Mini 3 Pro is one of the most versatile tools in my kit, and I want to show you why it’s not just for aerial footage.</p>
-                <h2>🎥 The Drone That Doubles as a Camera</h2>
-                <p>Yep, you read that right. I’ve been using the Mini 3 Pro as a handheld camera — and with its built-in gimbal and stabilized footage, it holds up surprisingly well.</p>
-                <p>You can literally hold the drone by hand, walk with it, tilt and pan — and it gives you buttery smooth footage. It’s like having a pocket-sized Steadicam. This is a great hack if you're traveling light or don’t want to carry an extra gimbal.</p>
-                <div class="aspect-w-16 aspect-h-9 mb-6">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WnhqiFGQTfc" title="DJI Mini 3 Pro Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="prose max-w-none text-gray-800">
+                        <p>Welcome back to Carl Tomich Tech Reviews! Today we’re looking at a drone I’ve come to love — and not just for flying. The DJI Mini 3 Pro is one of the most versatile tools in my kit, and I want to show you why it’s not just for aerial footage.</p>
+                        <h2>🎥 The Drone That Doubles as a Camera</h2>
+                        <p>Yep, you read that right. I’ve been using the Mini 3 Pro as a handheld camera — and with its built-in gimbal and stabilized footage, it holds up surprisingly well.</p>
+                        <p>You can literally hold the drone by hand, walk with it, tilt and pan — and it gives you buttery smooth footage. It’s like having a pocket-sized Steadicam. This is a great hack if you're traveling light or don’t want to carry an extra gimbal.</p>
+                        <div class="relative w-full aspect-video mb-6">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/WnhqiFGQTfc" title="DJI Mini 3 Pro Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h2>🧊 The Cooling Quirk: Mini 2 vs Mini 3 Pro</h2>
+                        <p>There’s one thing DJI changed that’s worth knowing — especially if you’re using the drone as a handheld cam or keeping it powered on while stationary:</p>
+                        <ul>
+                            <li>DJI Mini 2 had a built-in cooling fan, so it could sit powered on for over an hour, even without flying.</li>
+                            <li>DJI Mini 3 Pro removed that fan to make room for more sensors.</li>
+                        </ul>
+                        <p>The result? The Mini 3 Pro overheats and auto-shuts down if it’s just sitting idle for too long — usually around 5 to 10 minutes depending on the weather.</p>
+                        <p><strong>Pro Tip:</strong> If you’re planning to use it as a static or handheld camera, just put a small fan on it to keep it cool. Yep, it’s janky — but it works.</p>
+                        <h2>✈️ Still a Great Drone for Flying Too</h2>
+                        <p>Let’s not forget — this is still a fantastic drone in the air:</p>
+                        <ul>
+                            <li>4K video at up to 60fps</li>
+                            <li>Vertical shooting mode (perfect for reels and shorts)</li>
+                            <li>Obstacle sensors on three sides</li>
+                            <li>Lightweight enough to fly without registration in many countries</li>
+                        </ul>
+                        <p>It’s small, powerful, and incredibly versatile — especially for travel creators, vloggers, and content pros.</p>
+                        <h2>🎬 Sample Footage: See It in Action</h2>
+                        <p>In the videos below, I show you handheld gimbal-style shots, static shots, and how far this little drone can fly.</p>
+                        <div class="relative w-full aspect-video mb-6">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Nqrmfkp73ds" title="DJI Mini 3 Pro Range Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h2>💸 Affiliate Links – Support the Channel</h2>
+                        <p>If this helped you out or inspired you to try using your drone in new ways, you can grab any of my gear below. These affiliate links help support the channel — and they cost you nothing extra.</p>
+                        <p><a href="https://amzn.to/3EcRLNM" class="text-yellow-500 hover:underline">DJI Mini 3 Pro (or newer models)</a></p>
+                        <h2>🎥 My Current Setup</h2>
+                        <ul>
+                            <li><a href="https://amzn.to/4c41Mde" class="text-yellow-500 hover:underline">Main Camera (Sony A7CII)</a></li>
+                            <li><a href="https://amzn.to/4hFqguz" class="text-yellow-500 hover:underline">DJI Pocket 3</a></li>
+                            <li><a href="https://amzn.to/4c0rCPk" class="text-yellow-500 hover:underline">My Camera Backpack</a></li>
+                            <li><a href="https://amzn.to/4kTchUG" class="text-yellow-500 hover:underline">Ray-Ban Meta Smart Glasses</a></li>
+                            <li><a href="https://amzn.to/4hy5EUQ" class="text-yellow-500 hover:underline">Tamron 24–200mm Lens</a></li>
+                            <li><a href="https://amzn.to/4bVozrA" class="text-yellow-500 hover:underline">Tripod I Use</a></li>
+                            <li><a href="https://amzn.to/421eJjs" class="text-yellow-500 hover:underline">Lighting Setup</a></li>
+                        </ul>
+                        <p class="text-sm mt-4">Disclosure: I may earn a small commission if you buy through these links — at no additional cost to you. Thanks for your support.</p>
+                    </div>
                 </div>
-                <h2>🧊 The Cooling Quirk: Mini 2 vs Mini 3 Pro</h2>
-                <p>There’s one thing DJI changed that’s worth knowing — especially if you’re using the drone as a handheld cam or keeping it powered on while stationary:</p>
-                <ul>
-                    <li>DJI Mini 2 had a built-in cooling fan, so it could sit powered on for over an hour, even without flying.</li>
-                    <li>DJI Mini 3 Pro removed that fan to make room for more sensors.</li>
-                </ul>
-                <p>The result? The Mini 3 Pro overheats and auto-shuts down if it’s just sitting idle for too long — usually around 5 to 10 minutes depending on the weather.</p>
-                <p><strong>Pro Tip:</strong> If you’re planning to use it as a static or handheld camera, just put a small fan on it to keep it cool. Yep, it’s janky — but it works.</p>
-                <h2>✈️ Still a Great Drone for Flying Too</h2>
-                <p>Let’s not forget — this is still a fantastic drone in the air:</p>
-                <ul>
-                    <li>4K video at up to 60fps</li>
-                    <li>Vertical shooting mode (perfect for reels and shorts)</li>
-                    <li>Obstacle sensors on three sides</li>
-                    <li>Lightweight enough to fly without registration in many countries</li>
-                </ul>
-                <p>It’s small, powerful, and incredibly versatile — especially for travel creators, vloggers, and content pros.</p>
-                <h2>🎬 Sample Footage: See It in Action</h2>
-                <p>In the videos below, I show you handheld gimbal-style shots, static shots, and how far this little drone can fly.</p>
-                <div class="aspect-w-16 aspect-h-9 mb-6">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Nqrmfkp73ds" title="DJI Mini 3 Pro Range Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <h2>💸 Affiliate Links – Support the Channel</h2>
-                <p>If this helped you out or inspired you to try using your drone in new ways, you can grab any of my gear below. These affiliate links help support the channel — and they cost you nothing extra.</p>
-                <p><a href="https://amzn.to/3EcRLNM" class="text-yellow-500 hover:underline">DJI Mini 3 Pro (or newer models)</a></p>
-                <h2>🎥 My Current Setup</h2>
-                <ul>
-                    <li><a href="https://amzn.to/4c41Mde" class="text-yellow-500 hover:underline">Main Camera (Sony A7CII)</a></li>
-                    <li><a href="https://amzn.to/4hFqguz" class="text-yellow-500 hover:underline">DJI Pocket 3</a></li>
-                    <li><a href="https://amzn.to/4c0rCPk" class="text-yellow-500 hover:underline">My Camera Backpack</a></li>
-                    <li><a href="https://amzn.to/4kTchUG" class="text-yellow-500 hover:underline">Ray-Ban Meta Smart Glasses</a></li>
-                    <li><a href="https://amzn.to/4hy5EUQ" class="text-yellow-500 hover:underline">Tamron 24–200mm Lens</a></li>
-                    <li><a href="https://amzn.to/4bVozrA" class="text-yellow-500 hover:underline">Tripod I Use</a></li>
-                    <li><a href="https://amzn.to/421eJjs" class="text-yellow-500 hover:underline">Lighting Setup</a></li>
-                </ul>
-                <p class="text-sm mt-4">Disclosure: I may earn a small commission if you buy through these links — at no additional cost to you. Thanks for your support.</p>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
+                        <p class="text-gray-600 mb-4">Get travel guides, gear reviews, and tips straight to your inbox.</p>
+                        <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
+                            <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                            <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_gotcha" style="display:none">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">Subscribe <i class="fas fa-paper-plane ml-1"></i></button>
+                        </form>
+                        <p class="text-gray-500 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="gear.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">More Gear Reviews <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Call-to-Action -->
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Subscribe to Carl Travels for travel guides, gear reviews, and stories delivered straight to your inbox.</p>
+            <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
+                <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">Subscribe <i class="fas fa-paper-plane ml-1"></i></button>
+            </form>
         </div>
     </section>
 
