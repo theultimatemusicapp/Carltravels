@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial 2 | Carl Travels Watch Page</title>
+    <meta name="description" content="High-energy launch video for a wearable fitness device mixing macro product shots with athlete testimonials.">
+    <link rel="canonical" href="https://www.carltravels.com/videos/commercial-2.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #020617;
+            color: #e2e8f0;
+        }
+        .heading-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .navbar {
+            backdrop-filter: blur(12px);
+            background-color: rgba(2, 6, 23, 0.85);
+        }
+        .hero {
+            background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 60%), radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.2), transparent 55%), linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 0.85));
+        }
+        .responsive-video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(2, 132, 199, 0.5);
+        }
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .transcript-card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        .meta-chip {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            background: rgba(148, 163, 184, 0.15);
+            color: #bae6fd;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+        }
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-primary {
+            background: linear-gradient(135deg, #facc15, #f97316);
+            color: #111827;
+        }
+        .cta-secondary {
+            border: 1px solid rgba(148, 163, 184, 0.4);
+            color: #e2e8f0;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.4);
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .mobile-menu.open {
+            max-height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-camera text-black text-lg"></i>
+                    </div>
+                    <span class="heading-font text-white tracking-wide">Carl Tomich</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Home</a>
+                    <a href="../destinations.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Destinations</a>
+                    <a href="../portfolio.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Portfolio</a>
+                    <a href="index.html" class="text-yellow-400 font-medium transition-colors">Watch</a>
+                    <a href="../blog.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Blog</a>
+                    <a href="../gear.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Gear</a>
+                    <a href="../index.html#about" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">About</a>
+                    <a href="../index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="../index.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Home</a>
+                    <a href="../destinations.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Destinations</a>
+                    <a href="../portfolio.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Portfolio</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md bg-slate-700 text-yellow-300">Watch</a>
+                    <a href="../blog.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Blog</a>
+                    <a href="../gear.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Gear</a>
+                    <a href="../index.html#about" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">About</a>
+                    <a href="../index.html#contact" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="grid gap-12 lg:grid-cols-2 items-start">
+                <div class="space-y-8">
+                    <div class="responsive-video">
+                        <iframe src="https://www.youtube.com/embed/oHjvJAfbW-w" title="Commercial 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="transcript-card rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+                        <img src="https://img.youtube.com/vi/oHjvJAfbW-w/hqdefault.jpg" alt="Athlete wearing a fitness tracker while running" class="w-full md:w-40 md:h-28 object-cover rounded-xl shadow-lg">
+                        <div class="space-y-4">
+                            <h2 class="heading-font text-2xl text-white">Transcript Highlights</h2>
+                            <p>We begin with macro lenses revealing the device's texture before slamming into an upbeat montage of athletes warming up.</p><p>I describe the lighting setup inside the studio and how we sync motion graphics to accent heart rate metrics in post.</p><p>Customer sound bites close the piece while the narrator invites viewers to join the training challenge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <span class="meta-chip">Portfolio Showcase</span>
+                    <h1 class="heading-font text-4xl md:text-5xl text-white leading-tight">Commercial 2</h1>
+                    <p class="text-lg text-gray-200 leading-relaxed">High-energy launch video for a wearable fitness device mixing macro product shots with athlete testimonials.</p>
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <p><strong class="text-gray-100">Runtime:</strong> 4–6 minutes of on-location storytelling.</p>
+                        <p><strong class="text-gray-100">Accessibility:</strong> Full transcript and descriptive thumbnail for screen readers.</p>
+                        <p><strong class="text-gray-100">Filming Notes:</strong> Captured on Sony mirrorless bodies with natural sound beds.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="../portfolio.html#commercials" class="cta-button cta-secondary"><i class="fas fa-arrow-left"></i>Back to Portfolio</a>
+                        <a href="index.html" class="cta-button cta-primary"><i class="fas fa-play"></i>Browse Watch Library</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-10 grid gap-8 md:grid-cols-3 text-sm text-gray-400">
+            <div>
+                <h3 class="heading-font text-xl text-white mb-3">More From Carl</h3>
+                <ul class="space-y-2">
+                    <li><a href="../blog.html" class="hover:text-yellow-300 transition-colors">Latest Blog Posts</a></li>
+                    <li><a href="../gear.html" class="hover:text-yellow-300 transition-colors">Gear List</a></li>
+                    <li><a href="../contact.html" class="hover:text-yellow-300 transition-colors">Hire Carl</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="heading-font text-xl text-white mb-3">Share This Film</h3>
+                <p>Link friends directly to <span class="text-white">https://www.carltravels.com/videos/commercial-2.html</span> to revisit the story anytime.</p>
+            </div>
+            <div>
+                <h3 class="heading-font text-xl text-white mb-3">Stay Inspired</h3>
+                <p>Subscribe on <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-yellow-300 hover:text-yellow-200">YouTube</a> for weekly travel films, BTS breakdowns, and editing tips.</p>
+            </div>
+        </div>
+        <div class="border-t border-slate-800 py-4 text-center text-xs text-gray-500">
+            © <script>document.write(new Date().getFullYear());</script> Carl Travels. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const mobileButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('bg-slate-900');
+            } else {
+                navbar.classList.remove('bg-slate-900');
+            }
+        });
+    </script>
+</body>
+</html>
