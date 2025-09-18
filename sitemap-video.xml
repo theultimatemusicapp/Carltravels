@@ -49,6 +49,18 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.carltravels.com/videos/ha-giang-loop-easy-rider.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/8Z5RWNxpQM4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Hà Giang Loop (3D2N) — Easy Rider Motorbike Tour</video:title>
+      <video:description>Ride pillion with Carl for terrace valleys, canyon passes, and homestay nights on Northern Vietnam&apos;s Hà Giang Loop with Bông Hostel&apos;s Easy Rider crew.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/8Z5RWNxpQM4</video:player_loc>
+      <video:content_loc>https://www.youtube.com/watch?v=8Z5RWNxpQM4</video:content_loc>
+      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.carltravels.com/videos/hanoi-learn-vietnamese-testimonial.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/ay5fwK0OVaM/maxresdefault.jpg</video:thumbnail_loc>
