@@ -61,6 +61,18 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.carltravels.com/videos/tran-quoc-pagoda-watch.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/vd5s-1nkjxI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Trấn Quốc Pagoda Guided Tour</video:title>
+      <video:description>Walk West Lake at sunrise with Nhi for a mindful tour of Hanoi&apos;s oldest Buddhist temple, including the Bodhi tree, 11-story stupa, and travel etiquette tips.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/vd5s-1nkjxI</video:player_loc>
+      <video:content_loc>https://www.youtube.com/watch?v=vd5s-1nkjxI</video:content_loc>
+      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.carltravels.com/videos/beginners-guide-davinci-resolve-2025.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg</video:thumbnail_loc>
