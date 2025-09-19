@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner’s Guide to DaVinci Resolve 2025 — Step-by-Step Tutorial | Carl Travels Watch Page</title>
+    <meta name="description" content="Follow Carl Tomich’s DaVinci Resolve 2025 beginner tutorial. Watch the full workflow covering project setup, editing tools, color grading, audio mixing, and exports." />
+    <link rel="canonical" href="https://www.carltravels.com/videos/beginners-guide-davinci-resolve-2025.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #020617;
+            color: #e2e8f0;
+        }
+        .heading-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .navbar {
+            backdrop-filter: blur(12px);
+            background-color: rgba(2, 6, 23, 0.85);
+        }
+        .hero {
+            background: radial-gradient(circle at top left, rgba(250, 204, 21, 0.2), transparent 60%),
+                        radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.18), transparent 55%),
+                        linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 0.85));
+        }
+        .responsive-video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(56, 189, 248, 0.45);
+        }
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .transcript-card {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        .meta-chip {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            background: rgba(148, 163, 184, 0.15);
+            color: #fde68a;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+        }
+        .info-card {
+            background: rgba(15, 23, 42, 0.75);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 1.25rem;
+            padding: 1.5rem;
+        }
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-primary {
+            background: linear-gradient(135deg, #facc15, #f97316);
+            color: #111827;
+        }
+        .cta-secondary {
+            border: 1px solid rgba(148, 163, 184, 0.4);
+            color: #e2e8f0;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.4);
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .mobile-menu.open {
+            max-height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-clapperboard text-black text-lg"></i>
+                    </div>
+                    <span class="heading-font text-white tracking-wide">Carl Tomich</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Home</a>
+                    <a href="../destinations.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Destinations</a>
+                    <a href="../portfolio.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Portfolio</a>
+                    <a href="index.html" class="text-yellow-400 font-medium transition-colors">Watch</a>
+                    <a href="../blog.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Blog</a>
+                    <a href="../gear.html" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">Gear</a>
+                    <a href="../index.html#about" class="text-gray-200 hover:text-yellow-400 font-medium transition-colors">About</a>
+                    <a href="../index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="../index.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Home</a>
+                    <a href="../destinations.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Destinations</a>
+                    <a href="../portfolio.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Portfolio</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md bg-slate-700 text-yellow-300">Watch</a>
+                    <a href="../blog.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Blog</a>
+                    <a href="../gear.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Gear</a>
+                    <a href="../index.html#about" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">About</a>
+                    <a href="../index.html#contact" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-slate-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="grid gap-12 lg:grid-cols-2 items-start">
+                <div class="space-y-8">
+                    <div class="responsive-video">
+                        <iframe src="https://www.youtube.com/embed/wUYUV_F4WQo" title="Beginner’s Guide to DaVinci Resolve 2025 tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="transcript-card rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+                        <img src="https://img.youtube.com/vi/wUYUV_F4WQo/hqdefault.jpg" alt="Timeline screenshot from DaVinci Resolve 2025" class="w-full md:w-40 md:h-28 object-cover rounded-xl shadow-lg">
+                        <div class="space-y-4 text-sm">
+                            <h2 class="heading-font text-2xl text-white">Transcript Highlights</h2>
+                            <p>We begin on the Project Manager showing how to set a custom frame rate and why it matters for sync. After importing sample footage, I demo color coding bins so you always know where assets live.</p>
+                            <p>On the Edit page, I work through marking in/out points, using trim edits for J-cuts, and enabling snapping for faster alignment. The Color chapter focuses on balancing S-Log3 footage with lift/gamma/gain and layering a creative LUT on a second node.</p>
+                            <p>Finally we hop into Fairlight to set dialogue at -5 dB, duck the score using automation, and export with the YouTube 1080p preset. The bonus chapter covers when to upgrade to Resolve Studio for tools like noise reduction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <span class="meta-chip">Editing Tutorial</span>
+                    <h1 class="heading-font text-4xl md:text-5xl text-white leading-tight">Beginner’s Guide to DaVinci Resolve 2025</h1>
+                    <p class="text-lg text-gray-200 leading-relaxed">Build a complete timeline using the newest version of DaVinci Resolve. This watch page pairs the full video with quick reference notes so you can pause, practice, and resume with confidence.</p>
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <p><strong class="text-gray-100">Runtime:</strong> 18 minutes covering download, timeline setup, editing fundamentals, color, audio, and export.</p>
+                        <p><strong class="text-gray-100">Tools Used:</strong> Sony A7C II, DJI Pocket 3, RØDE Wireless PRO, Tamron 28–200mm.</p>
+                        <p><strong class="text-gray-100">Resources:</strong> Includes chapter markers, transcript highlights, and affiliate links to Carl’s gear.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener" class="cta-button cta-primary">
+                            <i class="fas fa-download"></i>
+                            Download Resolve Free
+                        </a>
+                        <a href="../beginners-guide-davinci-resolve-2025.html" class="cta-button cta-secondary">
+                            <i class="fas fa-book-open"></i>
+                            Read Full Guide
+                        </a>
+                    </div>
+                    <div class="info-card space-y-3 text-sm text-gray-300">
+                        <h2 class="text-lg font-semibold text-white">Chapters</h2>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>00:00 – Why Resolve beats pricey subscriptions</li>
+                            <li>02:20 – Project setup & frame rates</li>
+                            <li>05:10 – Importing and bin organization</li>
+                            <li>08:05 – Timeline editing tools you need first</li>
+                            <li>12:45 – Intro to color grading and LUTs</li>
+                            <li>15:30 – Audio leveling in Fairlight</li>
+                            <li>17:10 – Export settings for YouTube & Reels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6 grid lg:grid-cols-3 gap-10">
+            <div class="info-card col-span-2 space-y-4">
+                <h2 class="heading-font text-3xl text-white">Key Takeaways</h2>
+                <p>Resolve’s Cut and Edit pages are friendlier than ever thanks to automatic proxy generation and AI-based audio cleanup. You don’t need expensive plugins to achieve a cinematic grade—just learn how Lift, Gamma, Gain, and Offset interplay.</p>
+                <p>For consistency, save PowerGrade presets once you build a look you love. And remember: locking your frame rate at the beginning saves you from painful re-renders later.</p>
+            </div>
+            <div class="info-card space-y-3">
+                <h3 class="heading-font text-2xl text-white">Recommended Gear</h3>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="https://amzn.to/4mHhQ8H" target="_blank" rel="nofollow noopener" class="underline decoration-dotted">Sony A7C II</a> for hybrid shooting.</li>
+                    <li><a href="https://amzn.to/4miS3UJ" target="_blank" rel="nofollow noopener" class="underline decoration-dotted">DJI Pocket 3</a> as a b-roll powerhouse.</li>
+                    <li><a href="https://amzn.to/4oHMXTy" target="_blank" rel="nofollow noopener" class="underline decoration-dotted">RØDE Wireless PRO</a> for clean dialogue.</li>
+                    <li><a href="https://amzn.to/467fEAU" target="_blank" rel="nofollow noopener" class="underline decoration-dotted">Thinktank Travel Commuter</a> to haul everything.</li>
+                </ul>
+                <p class="text-xs text-gray-400">Affiliate disclosure: Purchases made through these links may earn me a small commission.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-slate-950/70">
+        <div class="container mx-auto px-6">
+            <div class="info-card flex flex-col md:flex-row items-center md:items-start gap-8">
+                <img src="../carlcamera.jpg" alt="Carl filming a tutorial setup" class="w-full md:w-64 rounded-2xl shadow-xl object-cover">
+                <div class="space-y-4">
+                    <h2 class="heading-font text-3xl text-white">Keep Learning with Carl</h2>
+                    <p class="text-gray-200">Have a Resolve question? Drop it in the comments on YouTube and I’ll add it to a future tutorial. Next up: Fusion titles, audio mastering, and grading Sony S-Log footage without the noise.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://youtu.be/wUYUV_F4WQo" target="_blank" rel="noopener" class="cta-button cta-primary">
+                            <i class="fab fa-youtube"></i>
+                            Comment on YouTube
+                        </a>
+                        <a href="../contact.html" class="cta-button cta-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Book a Coaching Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10">
+        <div class="container mx-auto px-6 text-center text-sm text-slate-500">
+            <p>&copy; <span id="year"></span> Carl Travels. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="../privacy-policy.html" class="hover:text-yellow-400">Privacy Policy</a>
+                <span class="text-slate-700">|</span>
+                <a href="../terms-and-conditions.html" class="hover:text-yellow-400">Terms</a>
+                <span class="text-slate-700">|</span>
+                <a href="../donate.html" class="hover:text-yellow-400">Support the Channel</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const yearSpan = document.getElementById('year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+        const navbar = document.getElementById('navbar');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
