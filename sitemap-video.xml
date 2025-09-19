@@ -61,6 +61,18 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.carltravels.com/videos/beginners-guide-davinci-resolve-2025.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Beginner’s Guide to DaVinci Resolve 2025</video:title>
+      <video:description>Learn DaVinci Resolve 2025 step-by-step with Carl Tomich covering setup, timeline editing, color grading, audio mixing, and export settings.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/wUYUV_F4WQo</video:player_loc>
+      <video:content_loc>https://www.youtube.com/watch?v=wUYUV_F4WQo</video:content_loc>
+      <video:publication_date>2025-01-10T08:00:00+07:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.carltravels.com/videos/hanoi-learn-vietnamese-testimonial.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/ay5fwK0OVaM/maxresdefault.jpg</video:thumbnail_loc>
