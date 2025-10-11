@@ -48,63 +48,31 @@
     <!-- Custom Styles -->
     <style>
         :root {
-            --primary: #f5c518; /* Muted gold for accents */
-            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
-            --dark: #1a1a1a; /* Near-black for text/body */
-            --light: #d4d4d4; /* Light gray for secondary text */
+            --primary: #f5c518;
+            --secondary: #2a2a2a;
+            --dark: #0f0f0f;
+            --darker: #070707;
+            --muted: #cfd0d3;
         }
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: var(--dark);
-            color: var(--light);
+            background-color: var(--darker);
+            color: var(--muted);
             scroll-behavior: smooth;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
         .heading-font {
             font-family: 'Bebas Neue', sans-serif;
-        }
-        .itinerary-card {
-            transition: all 0.3s ease;
-            perspective: 1000px;
-        }
-        .itinerary-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-        .parallax {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            letter-spacing: 2px;
         }
         .navbar {
-            backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(14px);
+            background-color: rgba(7, 7, 7, 0.88);
             transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
         }
         .navbar.scrolled {
-            background-color: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        .wave-shape {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-        .wave-shape svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 150px;
-        }
-        .wave-shape .shape-fill {
-            fill: var(--dark);
-            opacity: 0.8;
+            background-color: rgba(7, 7, 7, 0.95);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
         }
         .mobile-menu {
             max-height: 0;
@@ -114,9 +82,83 @@
         .mobile-menu.open {
             max-height: 500px;
         }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(7, 7, 7, 0.35) 0%, rgba(7, 7, 7, 0.8) 70%, rgba(7, 7, 7, 0.95) 100%);
+        }
+        .glass-card {
+            background: rgba(20, 20, 20, 0.78);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -18px rgba(0, 0, 0, 0.5);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 32px 55px -24px rgba(0, 0, 0, 0.65);
+        }
+        .highlight-card {
+            background: rgba(15, 15, 15, 0.72);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 24px;
+            box-shadow: 0 20px 45px -22px rgba(0, 0, 0, 0.55);
+        }
+        .section-title {
+            text-transform: uppercase;
+            letter-spacing: 0.35em;
+            color: rgba(245, 197, 24, 0.85);
+        }
+        .divider {
+            width: 4rem;
+            height: 3px;
+            border-radius: 9999px;
+            background: linear-gradient(90deg, rgba(245, 197, 24, 1) 0%, rgba(255, 181, 36, 1) 100%);
+            margin: 1.25rem auto;
+        }
+        .pill {
+            background: rgba(245, 197, 24, 0.1);
+            border: 1px solid rgba(245, 197, 24, 0.24);
+            color: #f5c518;
+            border-radius: 999px;
+            padding: 0.35rem 1rem;
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.75rem;
+            letter-spacing: 0.18em;
+        }
+        .bg-dark {
+            background-color: var(--dark);
+        }
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+        .text-gray-800 {
+            color: #f7f7f7 !important;
+        }
+        .text-gray-700 {
+            color: #e8e8ea !important;
+        }
+        .text-gray-600 {
+            color: rgba(220, 220, 224, 0.9) !important;
+        }
+        .text-gray-500 {
+            color: rgba(180, 181, 188, 0.85) !important;
+        }
+        .bg-gray-100 {
+            background-color: rgba(18, 18, 18, 0.9) !important;
+        }
+        .bg-white {
+            background-color: rgba(18, 18, 18, 0.92) !important;
+        }
+        .bg-yellow-900 {
+            background-color: rgba(245, 197, 24, 0.14) !important;
+            color: #f5c518 !important;
+        }
+        a {
+            transition: color 0.3s ease;
+        }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-300">
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
@@ -128,69 +170,60 @@
                     <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="index.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Home</a>
                     <a href="destinations.html" class="text-yellow-500 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
-                    <a href="gear.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Gear</a>
-                    <a href="#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
-                    <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="gear.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Gear</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Home</a>
                     <a href="destinations.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
-                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Gear</a>
-                    <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
-                    <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Blog</a>
+                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Gear</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">About</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center pt-20" style="background-image: url('/phuket-hero.jpg'); background-size: cover;">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="wave-shape">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="container mx-auto px-6 py-20 relative z-10">
-            <div class="text-center">
-                <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 text-shadow-lg">
-                    7 Days in Phuket <br>With <span class="text-yellow-300">Carl Travels</span>
-                </h1>
-                <p class="text-lg text-yellow-300 mb-8 max-w-2xl mx-auto text-shadow-md">
-                    From Kata Beach’s golden sands to Bangla Road’s neon nights, explore Phuket’s best with our curated 7-day itinerary.
-                </p>
-                <a href="#itinerary" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
-                    Start Your Journey
-                </a>
+    <section class="relative min-h-[65vh] flex items-end pt-24" style="background-image: url('https://www.carltravels.com/images/phuket-hero.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="container mx-auto px-6 py-24 relative z-10">
+            <div class="max-w-3xl">
+                <span class="pill mb-6">THAILAND ISLAND ENERGY</span>
+                <h1 class="heading-font text-4xl md:text-6xl text-white leading-tight mb-6">7 Days in Phuket with Carl Travels</h1>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">From Kata sunsets and Big Buddha mornings to Bangla Road neon and island-hopping adventures, this Phuket plan balances beaches, nightlife, and day trips.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#itinerary" class="px-6 py-3 bg-yellow-500 text-black rounded-full font-semibold hover:bg-yellow-400 transition">See the Itinerary</a>
+                    <a href="#phuket-watch" class="px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-semibold hover:bg-yellow-500 hover:text-black transition">Watch Phuket Moments</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Itinerary Section -->
-    <section id="itinerary" class="py-20 bg-white">
+    <section id="itinerary" class="py-20 bg-dark">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">7-DAY PHUKET ITINERARY</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Explore Phuket’s Beaches & Beyond</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
+                <span class="section-title text-sm tracking-[0.35em]">7-DAY PHUKET ITINERARY</span>
+                <h2 class="heading-font text-3xl md:text-5xl text-white mt-4">Explore Phuket’s Beaches &amp; Beyond</h2>
+                <div class="divider"></div>
             </div>
             <div class="space-y-8">
                 <!-- Day 1 -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Day 1 – Settle In & Explore Your Beach Zone</h3>
                         <p class="text-gray-600 mb-4">After a long flight, check into your hotel (I recommend the Kata/Karon area) and just relax. Grab a Thai iced tea, walk the beach, and find a local place for your first plate of pad kra pao or green curry.</p>
@@ -198,7 +231,7 @@
                     </div>
                 </div>
                 <!-- Day 2 -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Day 2 – Kata & Karon Beach Crawl</h3>
                         <p class="text-gray-600 mb-4">Spend your second day hopping between Kata, Karon, and maybe Kata Noi. Rent a scooter or just walk if you’re staying nearby. Stop for lunch at a local beachside shack, grab a coconut, and relax.</p>
@@ -206,7 +239,7 @@
                     </div>
                 </div>
                 <!-- Day 3 -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Day 3 – Big Buddha & Elephant Encounters</h3>
                         <p class="text-gray-600 mb-4">Time for one of Phuket’s main icons: the Big Buddha. It sits high on a hill and offers an incredible panoramic view over the island.</p>
@@ -215,7 +248,7 @@
                     </div>
                 </div>
                 <!-- Day 4 -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Day 4 – Island-Hopping Tour</h3>
                         <p class="text-gray-600 mb-4">Book a day tour to the Phi Phi Islands or James Bond Island (depending on what you’re into). These are full-day boat trips with lunch, snorkelling, and incredible photo ops.</p>
@@ -223,14 +256,14 @@
                     </div>
                 </div>
                 <!-- Day 5 -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Day 5 – Relax, Spa, and Street Food</h3>
                         <p class="text-gray-600 mb-4">Keep it chill with a Thai massage (or two). Many spas offer packages including massage, body scrubs, and facials for less than $30. In the evening, hit a local night market—grab mango sticky rice, grilled meats, and all the spicy things you can handle.</p>
                     </div>
                 </div>
                 <!-- Day 6 -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Day 6 – Patong Party Night</h3>
                         <p class="text-gray-600 mb-4">Tonight’s the wild card. Head to Patong Beach for the full Phuket nightlife experience. Bangla Road is the centre of the madness—clubs, DJs, neon lights, ping pong shows (yes, they’re real), and everything in between.</p>
@@ -238,7 +271,7 @@
                     </div>
                 </div>
                 <!-- Day 7 -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Day 7 – Recovery or Beach Day (You’ll Need It)</h3>
                         <p class="text-gray-600 mb-4">After a big night out, spend your last day recovering on a quieter beach like Nai Harn or head back to Kata Noi for one last swim.</p>
@@ -246,7 +279,7 @@
                     </div>
                 </div>
                 <!-- Tips, Scams & Street Smarts -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Tips, Scams & Street Smarts</h3>
                         <ul class="text-gray-600 space-y-2">
@@ -258,7 +291,7 @@
                     </div>
                 </div>
                 <!-- Final Thoughts -->
-                <div class="itinerary-card rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="glass-card">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Final Thoughts</h3>
                         <p class="text-gray-600 mb-4">Phuket is whatever you want it to be. Want to disappear on a quiet beach with a cocktail? Easy. Want to dive into a full-blown neon nightlife rabbit hole? It's here. Yoga retreat? Sure. Elephant selfies? Absolutely.</p>
@@ -270,88 +303,88 @@
     </section>
 
     <!-- Video Section -->
-    <section class="py-20 bg-gray-100">
+    <section id="phuket-watch" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">WATCH PHUKET COME ALIVE</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Phuket Travel Videos</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
+                <span class="section-title text-sm tracking-[0.35em]">WATCH PHUKET COME ALIVE</span>
+                <h2 class="heading-font text-3xl md:text-5xl text-white mt-4">Phuket Travel Videos</h2>
+                <div class="divider"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <!-- Video 1: Naiton to Kata Beach -->
-                <div>
+                <div class="glass-card p-6">
                     <div class="relative" style="padding-bottom: 56.25%;">
                         <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/vIVgU02j37A" title="From Phuket’s Hidden Gem (Naiton Beach) to Kata’s Surprises: Food, Nightlife & New Friends!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mt-4">Naiton to Kata Beach</h3>
-                    <p class="text-gray-600 mt-2">Explore Phuket’s hidden gem, Naiton Beach, and dive into Kata’s vibrant food, nightlife, and new friendships.</p>
+                    <h3 class="text-xl font-bold text-white mt-6">Naiton to Kata Beach</h3>
+                    <p class="text-gray-500 mt-2">Explore Phuket’s hidden gem, Naiton Beach, and dive into Kata’s vibrant food, nightlife, and new friendships.</p>
                 </div>
                 <!-- Video 2: Big Buddha and Kata Beach -->
-                <div>
+                <div class="glass-card p-6">
                     <div class="relative" style="padding-bottom: 56.25%;">
                         <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/DUPzL5YJqj4" title="The Big Buddha: Phuket’s Most Underrated Attraction + The REAL Kata Beach" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mt-4">Big Buddha & Kata Beach</h3>
-                    <p class="text-gray-600 mt-2">Discover the majestic Big Buddha and experience the authentic vibe of Kata Beach in Phuket.</p>
+                    <h3 class="text-xl font-bold text-white mt-6">Big Buddha & Kata Beach</h3>
+                    <p class="text-gray-500 mt-2">Discover the majestic Big Buddha and experience the authentic vibe of Kata Beach in Phuket.</p>
                 </div>
             </div>
-            <p class="text-gray-600 mt-8 text-center">Check out more adventures on <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-yellow-500 hover:text-yellow-500">Carl Travels YouTube</a>.</p>
+            <p class="text-gray-500 mt-8 text-center">Check out more adventures on <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-yellow-500 hover:text-yellow-400">Carl Travels YouTube</a>.</p>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-secondary">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Explore More Destinations</h2>
-            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">From Osaka’s vibrant streets to Cairns’ coral reefs, discover more travel guides with Carl Travels.</p>
-            <a href="destinations.html" class="px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
+            <h2 class="heading-font text-3xl md:text-5xl text-white mb-4">Explore More Destinations</h2>
+            <p class="text-gray-500 mb-8 max-w-2xl mx-auto">From Osaka’s vibrant streets to Cairns’ coral reefs, discover more travel guides with Carl Travels.</p>
+            <a href="destinations.html" class="px-8 py-3 bg-yellow-500 text-black rounded-full font-semibold hover:bg-yellow-400 transition-all">
                 Browse All Destinations
             </a>
         </div>
     </section>
 
     <!-- Travel Essentials & Creator Gear -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-16 bg-dark">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Travel Essentials &amp; Creator Gear</h2>
-                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+                <h2 class="heading-font text-3xl md:text-5xl text-white mb-4">Travel Essentials &amp; Creator Gear</h2>
+                <div class="divider"></div>
             </div>
             <div class="max-w-3xl mx-auto space-y-10">
                 <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">🌍 TRAVEL ESSENTIALS</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <h3 class="text-xl font-bold text-gray-200 mb-4">🌍 TRAVEL ESSENTIALS</h3>
+                    <ul class="list-disc list-inside text-gray-500 space-y-2">
                         <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5 off (I receive $5 credit)</li>
-                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-600">Sign up here</a></li>
+                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-400">Sign up here</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">🎬 CREATOR TOOLS</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
-                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/subscribe" class="text-yellow-500 hover:text-yellow-600">dehancer.com/subscribe</a></li>
-                        <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance" class="text-yellow-500 hover:text-yellow-600">podcast.adobe.com/en/enhance</a></li>
+                    <h3 class="text-xl font-bold text-gray-200 mb-4">🎬 CREATOR TOOLS</h3>
+                    <ul class="list-disc list-inside text-gray-500 space-y-2">
+                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/subscribe" class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a></li>
+                        <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance" class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">🧰 MY GEAR — US LINKS</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
-                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-600">DJI Flip</a></li>
-                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-600">Sony A7C II</a></li>
-                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-600">DJI Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-600">Tamron 28–200</a></li>
-                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-600">RØDE Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-600">Think Tank Backpack</a></li>
+                    <h3 class="text-xl font-bold text-gray-200 mb-4">🧰 MY GEAR — US LINKS</h3>
+                    <ul class="list-disc list-inside text-gray-500 space-y-2">
+                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400">DJI Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400">Tamron 28–200</a></li>
+                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-gray-800 mb-4">🧰 MY GEAR — AU LINKS</h3>
                     <ul class="list-disc list-inside text-gray-600 space-y-2">
-                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-600">DJI Flip</a></li>
-                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-600">Sony A7C II</a></li>
-                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-600">DJI Osmo Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-600">Tamron 24–200</a></li>
-                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-600">RØDE Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-600">Think Tank Backpack</a></li>
+                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400">DJI Osmo Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400">Tamron 24–200</a></li>
+                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
                     </ul>
                 </div>
             </div>
