@@ -94,6 +94,48 @@
             box-shadow: 0 25px 40px -18px rgba(0, 0, 0, 0.45);
         }
 
+        .photo-grid {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 768px) {
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.03);
+        }
+
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+            color: #f3f4f6;
+            font-weight: 600;
+        }
+
         .badge {
             display: inline-flex;
             align-items: center;
@@ -208,6 +250,9 @@
                     <p class="lead">
                         That led me to Vietnam’s fast-growing beauty tourism scene and a consultation at <strong>Oceania Spa & Clinic</strong>. The experience changed how I view cosmetic treatment entirely.
                     </p>
+                    <p class="lead">
+                        I didn’t go in as a spokesperson; I went in as a guy who spends too much time under studio lights and wanted to see if HIFU could soften the angles the camera sometimes exaggerates. Here’s what it actually looked like.
+                    </p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
@@ -249,6 +294,32 @@
                     <p class="lead">
                         Around me, clients were getting non-surgical facelifts, dark circle correction, jawline shaping, Botox, and laser facials. The setup looked like modern clinics I’ve used in Australia—except for the price.
                     </p>
+                    <p class="lead">
+                        Between shots, the staff offered water, double-checked comfort levels, and never rushed the process. Sharing jokes with the technician while the machine hummed away made the whole thing feel more like self-care than a sales pitch.
+                    </p>
+                </div>
+
+                <div class="content-card space-y-6">
+                    <h3 class="text-xl font-semibold text-white">What the Day Looked Like</h3>
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="carldesk.jpg" alt="Standing at the clinic reception desk and smiling" loading="lazy">
+                            <div class="photo-caption">Checking in and asking every newbie question I had.</div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="doctorhifu.jpg" alt="Doctor performing HIFU treatment" loading="lazy">
+                            <div class="photo-caption">My friend went first—watching a full session reassured me.</div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="hifuroom.jpg" alt="Empty treatment room with the HIFU machine ready" loading="lazy">
+                            <div class="photo-caption">The treatment room felt more like a boutique studio than a hospital.</div>
+                        </div>
+                        <div class="photo-card">
+                            <img src="carlhifu.jpg" alt="Receiving my own HIFU treatment" loading="lazy">
+                            <div class="photo-caption">My turn—numbing cream on, headphones in, and trying not to overthink it.</div>
+                        </div>
+                    </div>
+                    <p class="lead">The photos mirror the day: a casual walk-in, a cautious look at the tech, and me realising halfway through that I was relaxed enough to plan dinner. No hard sell, no upsells—just people doing their job while I tried something new.</p>
                 </div>
 
                 <div class="content-card space-y-4">
