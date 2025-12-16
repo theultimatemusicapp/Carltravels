@@ -62,7 +62,7 @@
         :root {
             --primary: #f5c518; /* Muted gold for accents */
             --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
-            --dark: #1a1a1a; /* Near-black for text/body */
+            --dark: #0a0a0a; /* Deepened dark to match index */
             --light: #d4d4d4; /* Light gray for secondary text */
         }
         body {
@@ -72,10 +72,11 @@
             scroll-behavior: smooth;
         }
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(5, 5, 5, 0.9));
         }
         .heading-font {
             font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.08em;
         }
         .destination-card {
             transition: all 0.3s ease;
@@ -83,7 +84,7 @@
         }
         .destination-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
         }
         .destination-card-inner {
             transition: transform 0.6s;
@@ -100,12 +101,19 @@
         }
         .navbar {
             backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(26, 26, 26, 0.9);
             transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
         .navbar.scrolled {
-            background-color: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+        }
+        .navbar a {
+            color: #e5e7eb;
+        }
+        .navbar a:hover {
+            color: var(--primary);
         }
         .floating {
             animation: floating 6s ease-in-out infinite;
@@ -130,12 +138,14 @@
             height: 150px;
         }
         .wave-shape .shape-fill {
-            fill: #FFFFFF;
+            fill: #0b0b0b;
         }
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-out;
+            background: rgba(12, 12, 12, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
         .mobile-menu.open {
             max-height: 500px;
@@ -144,26 +154,50 @@
             height: 500px;
             width: 100%;
             border-radius: 1.25rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
         }
         .map-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 248, 248, 0.95));
-            border: 1px solid rgba(226, 232, 240, 0.8);
+            background: linear-gradient(145deg, rgba(18, 18, 18, 0.92), rgba(8, 8, 8, 0.9));
+            border: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: 1.25rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
         }
         .map-destination-item {
-            border: 1px solid transparent;
+            border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 0.2s ease;
+            background: rgba(16, 16, 16, 0.85);
+            color: #e5e7eb;
         }
         .map-destination-item:hover {
             border-color: rgba(245, 197, 24, 0.5);
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+            background: rgba(245, 197, 24, 0.08);
         }
         .map-destination-item.active {
             border-color: rgba(245, 197, 24, 0.8);
-            background: rgba(245, 197, 24, 0.08);
+            background: rgba(245, 197, 24, 0.12);
+        }
+        .destination-card .bg-white {
+            background-color: #0d0d0d !important;
+        }
+        .text-gray-800, .text-gray-700 {
+            color: #e5e5e5 !important;
+        }
+        .text-gray-600 {
+            color: #c8c8c8 !important;
+        }
+        .text-gray-500 {
+            color: #a5a5a5 !important;
+        }
+        .bg-gray-50 {
+            background-color: #0b0b0b !important;
+        }
+        .bg-white {
+            background-color: #0b0b0b !important;
+        }
+        .shadow-lg {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35) !important;
         }
         @media (max-width: 768px) {
             #destination-map {
@@ -172,42 +206,42 @@
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-300">
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold flex items-center">
+                    <a href="index.html" class="text-2xl font-bold flex items-center">
                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                         <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
                     </div>
                     <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="index.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Home</a>
                     <a href="#" class="text-yellow-500 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
-                    <a href="gear.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Gear</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="gear.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Gear</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-yellow-900">Home</a>
                     <a href="#" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
-                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Gear</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-yellow-900">Blog</a>
+                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-yellow-900">Gear</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-200 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -228,7 +262,7 @@
                 <p class="text-lg text-yellow-300 mb-8 max-w-2xl mx-auto">
                     Discover breathtaking cities and hidden gems across the globe. From vibrant urban hubs to serene coastal escapes, start your journey here.
                 </p>
-                <a href="#destinations" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                <a href="#destinations" class="px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-500 text-black rounded-full font-medium hover:shadow-xl transition-all shadow-lg">
                     Browse Destinations
                 </a>
             </div>
@@ -236,26 +270,26 @@
     </section>
 
     <!-- Explore on the Map -->
-    <section id="map-explore" class="py-16 bg-gray-50">
+    <section id="map-explore" class="py-16 bg-[#060606]">
         <div class="container mx-auto px-6">
             <div class="grid lg:grid-cols-5 gap-10 items-start">
                 <div class="lg:col-span-3 map-card p-6 md:p-8">
                     <div class="flex items-center justify-between mb-4">
                         <div>
-                            <p class="text-sm uppercase tracking-wide text-yellow-600 font-semibold">Explore on the Map</p>
-                            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-900">Watch &amp; Wander</h2>
+                            <p class="text-sm uppercase tracking-wide text-yellow-400 font-semibold">Explore on the Map</p>
+                            <h2 class="heading-font text-3xl md:text-4xl font-bold text-white">Watch &amp; Wander</h2>
                         </div>
-                        <span class="hidden md:inline-flex items-center px-3 py-2 bg-yellow-100 text-yellow-700 text-xs font-semibold rounded-full">
+                        <span class="hidden md:inline-flex items-center px-3 py-2 bg-yellow-900 text-yellow-300 text-xs font-semibold rounded-full">
                             New Interactive Map
                         </span>
                     </div>
-                    <p class="text-gray-700 mb-6">Preview our favorite guides right from the map. Tap a pin to watch the video, then jump into the full city page.</p>
+                    <p class="text-gray-200 mb-6">Preview our favorite guides right from the map. Tap a pin to watch the video, then jump into the full city page.</p>
                     <div id="destination-map" class="overflow-hidden"></div>
                 </div>
                 <div class="lg:col-span-2 space-y-4">
                     <div class="map-card p-6 md:p-8">
-                        <h3 class="heading-font text-2xl font-bold text-gray-900 mb-3">Destinations</h3>
-                        <p class="text-gray-700 mb-5">Browse highlights and jump directly to the spot you want to explore.</p>
+                        <h3 class="heading-font text-2xl font-bold text-white mb-3">Destinations</h3>
+                        <p class="text-gray-200 mb-5">Browse highlights and jump directly to the spot you want to explore.</p>
                         <div class="grid sm:grid-cols-2 gap-3" id="map-destination-list">
                             <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="bali">
                                 <div class="flex items-center justify-between">
@@ -359,8 +393,8 @@
                         </div>
                     </div>
                     <div class="map-card p-6 md:p-8">
-                        <h3 class="heading-font text-2xl font-bold text-gray-900 mb-3">Pro Tip</h3>
-                        <p class="text-gray-700">Click a card below to center the map on that spot and open the video popup. Perfect for planning your next stop.</p>
+                        <h3 class="heading-font text-2xl font-bold text-white mb-3">Pro Tip</h3>
+                        <p class="text-gray-200">Click a card below to center the map on that spot and open the video popup. Perfect for planning your next stop.</p>
                     </div>
                 </div>
             </div>
@@ -368,11 +402,11 @@
     </section>
 
     <!-- Destinations Section -->
-    <section id="destinations" class="py-20 bg-white">
+    <section id="destinations" class="py-20 bg-[#050505]">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <span class="text-yellow-500 font-medium mb-2 inline-block">OUR DESTINATIONS</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Explore the World</h2>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Explore the World</h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
