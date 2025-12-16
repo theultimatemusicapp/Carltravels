@@ -82,6 +82,15 @@
             transition: all 0.3s ease;
             perspective: 1000px;
         }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.68);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 20px 45px -20px rgba(0, 0, 0, 0.5);
+        }
+        .destination-overlay {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.88) 100%);
+        }
         .destination-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
@@ -415,7 +424,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/balilogo.jpg" alt="Bali" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Bali</h3>
                                 <p class="text-sm">Sanur & Canggu</p>
@@ -442,7 +451,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/berlinlogo.jpg" alt="Berlin" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Berlin</h3>
                                 <p class="text-sm">Mitte & Kreuzberg</p>
@@ -469,7 +478,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/melbounelogo.jpg" alt="Melbourne" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Melbourne</h3>
                                 <p class="text-sm">Yarra River & St Kilda</p>
@@ -495,7 +504,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/cairnslogo.jpg" alt="Cairns" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Cairns</h3>
                                 <p class="text-sm">Great Barrier Reef</p>
@@ -522,7 +531,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/phuketlogo.jpg" alt="Phuket" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Phuket</h3>
                                 <p class="text-sm">Patong Beach</p>
@@ -548,7 +557,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/hanoilogo.jpg" alt="Hanoi" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Hanoi</h3>
                                 <p class="text-sm">Old Quarter</p>
@@ -574,7 +583,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/southeastasia.jpg" alt="Ho Chi Minh City skyline" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Ho Chi Minh City</h3>
                                 <p class="text-sm">District 1</p>
@@ -601,7 +610,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/Hict_8lPMvw/maxresdefault.jpg" alt="Ninh Bình limestone peaks" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Ninh Bình</h3>
                                 <p class="text-sm">Tràng An • Tam Cốc</p>
@@ -628,7 +637,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/8Z5RWNxpQM4/hqdefault.jpg" alt="Hà Giang Loop terraces" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Hà Giang Loop</h3>
                                 <p class="text-sm">Karst Plateau Geopark</p>
@@ -654,7 +663,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/vd5s-1nkjxI/hqdefault.jpg" alt="Trấn Quốc Pagoda at sunset" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Trấn Quốc Pagoda</h3>
                                 <p class="text-sm">West Lake, Hanoi</p>
@@ -680,7 +689,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/bieCD2htND0/maxresdefault.jpg" alt="Lotte World Aquarium Hanoi" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Lotte World Aquarium</h3>
                                 <p class="text-sm">Lotte Mall Westlake</p>
@@ -707,7 +716,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/lTRbrZT3r9A/maxresdefault.jpg" alt="Top 10 Things to Do in Hanoi" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Top 10 Hanoi Experiences</h3>
                                 <p class="text-sm">City Highlights 2025</p>
@@ -734,7 +743,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/xw-pTAyolro/hqdefault.jpg" alt="Hon Chong Rocks at sunset in Nha Trang" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Hon Chong Rocks</h3>
                                 <p class="text-sm">Nha Trang Coastline</p>
@@ -760,7 +769,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/NOroDecOCGE/maxresdefault.jpg" alt="VinWonders Nha Trang theme park at sunset" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">VinWonders Nha Trang</h3>
                                 <p class="text-sm">Hon Tre Island</p>
@@ -787,7 +796,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/osakalogo.jpg" alt="Osaka" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Osaka</h3>
                                 <p class="text-sm">Dotonbori</p>
@@ -813,7 +822,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/korculalogo.jpg" alt="Korcula" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Korcula</h3>
                                 <p class="text-sm">Korcula Town</p>
@@ -839,7 +848,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/budvalogo.jpg" alt="Budva Old Town and Adriatic Coast" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Budva</h3>
                                 <p class="text-sm">Old Town & Beaches</p>
@@ -866,7 +875,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/dananglogo.jpg" alt="Da Nang" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Da Nang</h3>
                                 <p class="text-sm">My Khe Beach</p>
@@ -893,7 +902,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/tokyologo.jpg" alt="Tokyo" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Tokyo</h3>
                                 <p class="text-sm">Shibuya & Shinjuku</p>
@@ -920,7 +929,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/kyotologo.jpg" alt="Kyoto" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Kyoto</h3>
                                 <p class="text-sm">Fushimi Inari</p>
@@ -946,7 +955,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="https://img.youtube.com/vi/M3B07rdRGVs/maxresdefault.jpg" alt="Hiroshima Peace Memorial Park" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                            <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Hiroshima</h3>
                                 <p class="text-sm">Peace Memorial Park</p>
@@ -973,6 +982,55 @@
                 <a href="#" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                     More Destinations Coming Soon <i class="fas fa-arrow-right ml-2"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Essentials & Creator Gear -->
+    <section class="py-16 bg-[#0b0b0b]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">CREATOR CORNER</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Travel Essentials &amp; Creator Gear</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">Keep your adventures powered and your footage sharp. These are the exact tools and services I rely on while filming every guide featured above.</p>
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">Travel Essentials</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5 off (I receive $5 credit)</li>
+                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-400">Sign up here</a></li>
+                    </ul>
+                </div>
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">Creator Tools</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/subscribe" class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a></li>
+                        <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance" class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
+                    </ul>
+                </div>
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">My Gear – US Links</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400">DJI Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400">Tamron 28–200</a></li>
+                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
+                    </ul>
+                </div>
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">My Gear – AU Links</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400">DJI Osmo Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400">Tamron 24–200</a></li>
+                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

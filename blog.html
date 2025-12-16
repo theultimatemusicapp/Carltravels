@@ -61,6 +61,17 @@
         
         .blog-card {
             transition: all 0.3s ease;
+            background: linear-gradient(145deg, rgba(18, 18, 18, 0.96), rgba(10, 10, 10, 0.92));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .card-overlay {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9) 100%);
+        }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.68);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 20px 45px -20px rgba(0, 0, 0, 0.5);
         }
         
         .blog-card:hover {
@@ -70,13 +81,13 @@
         
         .navbar {
             backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(26, 26, 26, 0.9);
             transition: all 0.3s ease;
         }
         
         .navbar.scrolled {
-            background-color: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         }
         
         .wave-shape {
@@ -96,21 +107,38 @@
         }
         
         .wave-shape .shape-fill {
-            fill: #FFFFFF;
+            fill: #0b0b0b;
         }
         
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-out;
+            background: rgba(12, 12, 12, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
         
         .mobile-menu.open {
             max-height: 500px;
         }
+        .blog-card .bg-white {
+            background-color: #0f0f0f !important;
+        }
+        .blog-card .text-gray-500,
+        .blog-card .text-gray-600,
+        .blog-card .text-gray-700,
+        .blog-card .text-gray-800 {
+            color: #d1d5db !important;
+        }
+        .blog-card .text-gray-900 {
+            color: #f3f4f6 !important;
+        }
+        .blog-card .bg-gray-900 {
+            background-color: #0f0f0f !important;
+        }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-300">
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
@@ -123,17 +151,17 @@
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="index.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Videos</a>
                     <a href="blog.html" class="text-yellow-500 font-medium transition-colors">Blog</a>
-                    <a href="gear.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Gear</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
-                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="gear.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Gear</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
-                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -141,14 +169,14 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Videos</a>
                     <a href="blog.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Blog</a>
-                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Gear</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
-                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
+                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Gear</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -170,7 +198,7 @@
                 <p class="text-lg text-yellow-300 mb-8 max-w-2xl mx-auto">
                     Discover practical travel tips, personal stories, and digital nomad advice to inspire your next adventure.
                 </p>
-                <a href="#blog-posts" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                <a href="#blog-posts" class="px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full font-medium hover:shadow-lg transition-all">
                     Explore Posts
                 </a>
             </div>
@@ -178,11 +206,11 @@
     </section>
 
     <!-- Blog Posts Section -->
-    <section id="blog-posts" class="py-20 bg-white">
+    <section id="blog-posts" class="py-20 bg-[#050505]">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL BLOG</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Stories & Tips for Nomads</h2>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Stories & Tips for Nomads</h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
 
@@ -191,7 +219,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://img.youtube.com/vi/IUZE9UIDvc4/maxresdefault.jpg" alt="Cost of living in Hanoi" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Cost of Living in Hanoi (2025)</h3>
                             <p class="text-sm">Budget Breakdown</p>
@@ -219,7 +247,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://img.youtube.com/vi/_aqTDDEvgXM/maxresdefault.jpg" alt="HIFU in Hanoi" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Why I Tried HIFU in Vietnam at 40</h3>
                             <p class="text-sm">Beauty Tourism</p>
@@ -247,7 +275,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://img.youtube.com/vi/WA06gan4Xy8/maxresdefault.jpg" alt="How to make money online while traveling" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Make Money Online While Traveling</h3>
                             <p class="text-sm">Income Breakdown</p>
@@ -275,7 +303,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/yesim.webp" alt="YESIM eSIM" class="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500 bg-gray-900 p-8">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Stay Seamlessly Connected with YESIM eSIM</h3>
                             <p class="text-sm">Affiliate Guide</p>
@@ -303,7 +331,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/carlcamera2.jpg" alt="Selling stock footage while traveling" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">How to Earn Money on Adobe Stock &amp; Shutterstock</h3>
                             <p class="text-sm">Stock Footage Income</p>
@@ -331,7 +359,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/carlcamera.jpg" alt="Dehancer Cinematic Video" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Why I Use Dehancer to Make My Videos Look Cinematic</h3>
                             <p class="text-sm">Filmmaking Guide</p>
@@ -359,7 +387,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/popup-tent.jpg" alt="Folding Pop-Up Tent" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Why Do Pop-Up Tents Pop Up… But Never Pop Down?</h3>
                             <p class="text-sm">Camping Hack</p>
@@ -387,7 +415,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/balilogo.jpg" alt="Bali Travel Guide" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Thinking of Going to Bali? Read This Before You Go – It Might Change Your Mind</h3>
                             <p class="text-sm">Travel Guide</p>
@@ -415,7 +443,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/travel-gear.jpg" alt="Travel Filmmaking Kit" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">My Essential Travel Filmmaking Kit (2025)</h3>
                             <p class="text-sm">Travel Gear</p>
@@ -443,7 +471,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/wise.jpg" alt="Wise Card" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Using the Wise Card to Save on Travel</h3>
                             <p class="text-sm">Smart Money Management</p>
@@ -471,7 +499,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/whyileftaustralia.jpg" alt="Why I Left Australia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Why I Left Australia</h3>
                             <p class="text-sm">A Personal Story</p>
@@ -499,7 +527,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/budgetravel.jpg" alt="Digital Nomad Secrets" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">My Top 10 Secrets to Endless Travel</h3>
                             <p class="text-sm">Digital Nomad Guide</p>
@@ -527,7 +555,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/croatiacitizenship.jpg" alt="Croatian Citizenship" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">How I Got My Croatian Citizenship</h3>
                             <p class="text-sm">Personal Journey</p>
@@ -555,7 +583,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/digitalnomadcountries.jpg" alt="Digital Nomad Countries" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">The Three Cheapest Countries to Be a Digital Nomad</h3>
                             <p class="text-sm">Travel Guide</p>
@@ -583,7 +611,7 @@
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/busking.jpg" alt="Busking Guide" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">My Ultimate Guide to Busking</h3>
                             <p class="text-sm">Travel & Income</p>
@@ -609,12 +637,61 @@
             </div>
             
             <div class="text-center mt-12">
-                <p class="text-gray-600 mb-4">
+                <p class="text-gray-300 mb-4">
                     Love these stories and tips? Support my journey to create more content!
                 </p>
                 <a href="donate.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
                     Support Carl Travels <i class="fas fa-heart ml-2"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Essentials & Creator Gear -->
+    <section class="py-16 bg-[#0b0b0b]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">CREATOR CORNER</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Travel Essentials &amp; Creator Gear</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">The same kit I recommend on the Destinations page—perfect for keeping you connected and your content crisp while you explore.</p>
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">Travel Essentials</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5 off (I receive $5 credit)</li>
+                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-400">Sign up here</a></li>
+                    </ul>
+                </div>
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">Creator Tools</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/subscribe" class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a></li>
+                        <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance" class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
+                    </ul>
+                </div>
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">My Gear – US Links</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400">DJI Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400">Tamron 28–200</a></li>
+                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
+                    </ul>
+                </div>
+                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
+                    <h3 class="heading-font text-2xl text-white">My Gear – AU Links</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400">DJI Osmo Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400">Tamron 24–200</a></li>
+                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
