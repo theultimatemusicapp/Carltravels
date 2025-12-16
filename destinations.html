@@ -45,6 +45,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Leaflet Maps -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    >
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""
+    ></script>
     <!-- Custom Styles -->
     <style>
         :root {
@@ -128,6 +140,36 @@
         .mobile-menu.open {
             max-height: 500px;
         }
+        #destination-map {
+            height: 500px;
+            width: 100%;
+            border-radius: 1.25rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        .map-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 248, 248, 0.95));
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            border-radius: 1.25rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+        .map-destination-item {
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .map-destination-item:hover {
+            border-color: rgba(245, 197, 24, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+        }
+        .map-destination-item.active {
+            border-color: rgba(245, 197, 24, 0.8);
+            background: rgba(245, 197, 24, 0.08);
+        }
+        @media (max-width: 768px) {
+            #destination-map {
+                height: 360px;
+            }
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -193,6 +235,111 @@
         </div>
     </section>
 
+    <!-- Explore on the Map -->
+    <section id="map-explore" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-5 gap-10 items-start">
+                <div class="lg:col-span-3 map-card p-6 md:p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-sm uppercase tracking-wide text-yellow-600 font-semibold">Explore on the Map</p>
+                            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-900">Watch &amp; Wander</h2>
+                        </div>
+                        <span class="hidden md:inline-flex items-center px-3 py-2 bg-yellow-100 text-yellow-700 text-xs font-semibold rounded-full">
+                            New Interactive Map
+                        </span>
+                    </div>
+                    <p class="text-gray-700 mb-6">Preview our favorite guides right from the map. Tap a pin to watch the video, then jump into the full city page.</p>
+                    <div id="destination-map" class="overflow-hidden"></div>
+                </div>
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="map-card p-6 md:p-8">
+                        <h3 class="heading-font text-2xl font-bold text-gray-900 mb-3">Destinations</h3>
+                        <p class="text-gray-700 mb-5">Browse highlights and jump directly to the spot you want to explore.</p>
+                        <div class="grid sm:grid-cols-2 gap-3" id="map-destination-list">
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="bali">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Indonesia</p>
+                                        <p class="font-semibold text-gray-900">Bali</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="berlin">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Germany</p>
+                                        <p class="font-semibold text-gray-900">Berlin</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="melbourne">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Australia</p>
+                                        <p class="font-semibold text-gray-900">Melbourne</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="phuket">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Thailand</p>
+                                        <p class="font-semibold text-gray-900">Phuket</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="hanoi">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Vietnam</p>
+                                        <p class="font-semibold text-gray-900">Hanoi</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="danang">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Vietnam</p>
+                                        <p class="font-semibold text-gray-900">Da Nang</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="tokyo">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Japan</p>
+                                        <p class="font-semibold text-gray-900">Tokyo</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                            <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="kyoto">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm text-gray-500">Japan</p>
+                                        <p class="font-semibold text-gray-900">Kyoto</p>
+                                    </div>
+                                    <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="map-card p-6 md:p-8">
+                        <h3 class="heading-font text-2xl font-bold text-gray-900 mb-3">Pro Tip</h3>
+                        <p class="text-gray-700">Click a card below to center the map on that spot and open the video popup. Perfect for planning your next stop.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Destinations Section -->
     <section id="destinations" class="py-20 bg-white">
         <div class="container mx-auto px-6">
@@ -203,7 +350,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Destination 1: Bali -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="bali">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/balilogo.jpg" alt="Bali" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -230,7 +377,7 @@
                     </div>
                 </div>
                 <!-- Destination 2: Berlin -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="berlin">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/berlinlogo.jpg" alt="Berlin" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -257,7 +404,7 @@
                     </div>
                 </div>
                 <!-- Destination 3: Melbourne -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="melbourne">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/melbounelogo.jpg" alt="Melbourne" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -310,7 +457,7 @@
                     </div>
                 </div>
                 <!-- Destination 5: Phuket -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="phuket">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/phuketlogo.jpg" alt="Phuket" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -336,7 +483,7 @@
                     </div>
                 </div>
                 <!-- Destination 6: Hanoi -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="hanoi">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/hanoilogo.jpg" alt="Hanoi" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -627,7 +774,7 @@
                     </div>
                 </div>
                 <!-- Destination 11: Da Nang -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="danang">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/dananglogo.jpg" alt="Da Nang" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -654,7 +801,7 @@
                     </div>
                 </div>
                 <!-- Destination 12: Tokyo -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="tokyo">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/tokyologo.jpg" alt="Tokyo" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -681,7 +828,7 @@
                     </div>
                 </div>
                 <!-- Destination 13: Kyoto -->
-                <div class="destination-card rounded-xl overflow-hidden shadow-lg">
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="kyoto">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img src="/kyotologo.jpg" alt="Kyoto" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
@@ -907,6 +1054,131 @@
                             behavior: 'smooth'
                         });
                     });
+                }
+
+                // Interactive Leaflet map
+                const mapElement = document.getElementById('destination-map');
+                if (mapElement && typeof L !== 'undefined') {
+                    const destinations = [
+                        {
+                            id: 'bali',
+                            name: 'Bali, Indonesia',
+                            coords: [-8.65, 115.13],
+                            url: 'balitravelguide.html',
+                            video: 'https://www.youtube.com/embed/eZEbXh2vjwA'
+                        },
+                        {
+                            id: 'berlin',
+                            name: 'Berlin, Germany',
+                            coords: [52.52, 13.405],
+                            url: 'Berlin.html',
+                            video: 'https://www.youtube.com/embed/qT4uDZ4MyZk'
+                        },
+                        {
+                            id: 'melbourne',
+                            name: 'Melbourne, Australia',
+                            coords: [-37.8136, 144.9631],
+                            url: 'melbournetravelguide.html',
+                            video: 'https://www.youtube.com/embed/OSg4iVuL2Hs'
+                        },
+                        {
+                            id: 'phuket',
+                            name: 'Phuket, Thailand',
+                            coords: [7.8804, 98.3923],
+                            url: 'phuketravelguide.html',
+                            video: 'https://www.youtube.com/embed/vIVgU02j37A'
+                        },
+                        {
+                            id: 'hanoi',
+                            name: 'Hanoi, Vietnam',
+                            coords: [21.0278, 105.8342],
+                            url: 'top-10-things-to-do-in-hanoi.html',
+                            video: 'https://www.youtube.com/embed/lTRbrZT3r9A'
+                        },
+                        {
+                            id: 'danang',
+                            name: 'Da Nang, Vietnam',
+                            coords: [16.0544, 108.2022],
+                            url: 'danangtravelguide.html',
+                            video: 'https://www.youtube.com/embed/VIhF9IOX2Rw'
+                        },
+                        {
+                            id: 'tokyo',
+                            name: 'Tokyo, Japan',
+                            coords: [35.6762, 139.6503],
+                            url: 'tokyotravelguide.html',
+                            video: 'https://www.youtube.com/embed/7dBfJleeZGM'
+                        },
+                        {
+                            id: 'kyoto',
+                            name: 'Kyoto, Japan',
+                            coords: [35.0116, 135.7681],
+                            url: 'kyototravelguide.html',
+                            video: 'https://www.youtube.com/embed/e-DpOd-QmTk'
+                        }
+                    ];
+
+                    const map = L.map(mapElement, { scrollWheelZoom: true }).setView([20, 20], 2.5);
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+
+                    const markers = {};
+                    const destinationButtons = Array.from(document.querySelectorAll('[data-map-destination]'));
+
+                    const highlightDestination = (id) => {
+                        destinationButtons.forEach(button => {
+                            const isActive = button.dataset.mapDestination === id;
+                            button.classList.toggle('active', isActive);
+                        });
+                    };
+
+                    const focusOnDestination = (id) => {
+                        const destination = destinations.find(dest => dest.id === id);
+                        if (!destination) return;
+                        const zoomLevel = window.innerWidth < 768 ? 6 : 7;
+                        map.flyTo(destination.coords, zoomLevel, { duration: 0.75 });
+                        highlightDestination(id);
+                        if (markers[id]) {
+                            markers[id].openPopup();
+                        }
+                        mapElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    };
+
+                    destinations.forEach(destination => {
+                        const popupContent = `
+                            <div class="space-y-3">
+                                <div class="aspect-video rounded-lg overflow-hidden">
+                                    <iframe src="${destination.video}" title="${destination.name} video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;"></iframe>
+                                </div>
+                                <a href="${destination.url}" class="inline-flex items-center px-4 py-2 rounded-lg bg-yellow-500 text-white font-semibold shadow hover:bg-yellow-600 transition-colors">View details <i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        `;
+                        const marker = L.marker(destination.coords).addTo(map);
+                        marker.bindPopup(popupContent, { maxWidth: 360 });
+                        marker.on('click', () => highlightDestination(destination.id));
+                        markers[destination.id] = marker;
+                    });
+
+                    destinationButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            focusOnDestination(button.dataset.mapDestination);
+                        });
+                    });
+
+                    document.querySelectorAll('.destination-card[data-destination-id]').forEach(card => {
+                        card.addEventListener('click', (event) => {
+                            if (event.target.closest('a')) return;
+                            const destinationId = card.dataset.destinationId;
+                            focusOnDestination(destinationId);
+                        });
+                    });
+
+                    if (destinations.length) {
+                        const initialDestination = destinations[0].id;
+                        highlightDestination(initialDestination);
+                        markers[initialDestination]?.openPopup();
+                    }
                 }
             } catch (error) {
                 console.error('JavaScript Error in destinations.html:', error);
