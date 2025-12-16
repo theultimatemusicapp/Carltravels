@@ -168,6 +168,77 @@
         a {
             transition: color 0.3s ease;
         }
+    
+        /* Berlin-inspired dark refresh */
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(26, 26, 26, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+        }
+
+        .navbar a {
+            color: #e5e7eb;
+        }
+
+        .navbar a:hover {
+            color: var(--primary);
+        }
+
+        .heading-font {
+            letter-spacing: 0.08em;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(10, 10, 10, 0.9));
+        }
+
+        .bg-white {
+            background-color: #0b0b0b !important;
+        }
+
+        .bg-gray-50 {
+            background-color: #111111 !important;
+        }
+
+        .shadow-lg, .shadow-xl, .shadow-2xl {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35) !important;
+        }
+
+        .text-gray-800, .text-gray-700 {
+            color: #e5e5e5 !important;
+        }
+
+        .text-gray-600 {
+            color: #c8c8c8 !important;
+        }
+
+        .text-gray-500 {
+            color: #a5a5a5 !important;
+        }
+
+        .mobile-menu {
+            background-color: rgba(12, 12, 12, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .mobile-menu a {
+            color: #e5e7eb;
+        }
+
+        .mobile-menu a:hover {
+            background-color: rgba(245, 197, 24, 0.14);
+        }
+
     </style>
 </head>
 <body class="text-gray-300">
