@@ -331,7 +331,34 @@
                         </div>
                     </div>
                 </div>
-                <!-- Destination 2: Berlin -->
+                <!-- Destination 2: Nusa Lembongan -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="nusalembongan">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="/balilogo.jpg" alt="Nusa Lembongan" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 destination-overlay"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Nusa Lembongan</h3>
+                                <p class="text-sm">Island Escape</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-yellow-9000 text-white text-xs px-3 py-1 rounded-full">New</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Indonesia</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.7</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">A calmer Bali alternative with clear water, snorkeling, and relaxed island days.</p>
+                            <a href="nusa-lembongan-travel-guide/" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 3: Berlin -->
                 <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="berlin">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
@@ -919,6 +946,15 @@
                                         <span class="text-yellow-500"><i class="fas fa-play"></i></span>
                                     </div>
                                 </button>
+                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="nusalembongan">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm text-gray-500">Indonesia</p>
+                                            <p class="font-semibold text-gray-900">Nusa Lembongan</p>
+                                        </div>
+                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                    </div>
+                                </button>
                                 <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="berlin">
                                     <div class="flex items-center justify-between">
                                         <div>
@@ -1343,6 +1379,13 @@
                             coords: [-8.65, 115.13],
                             url: 'balitravelguide.html',
                             video: 'https://www.youtube.com/embed/eZEbXh2vjwA'
+                        },
+                        {
+                            id: 'nusalembongan',
+                            name: 'Nusa Lembongan, Indonesia',
+                            coords: [-8.679, 115.444],
+                            url: 'nusa-lembongan-travel-guide/',
+                            video: 'https://www.youtube.com/embed/Ao2fuEKXWKk'
                         },
                         {
                             id: 'berlin',
