@@ -71,8 +71,9 @@
     <style>
         :root {
             --primary: #facc15;
-            --secondary: #1f2937;
-            --dark: #0b1120;
+            --secondary: #0f172a;
+            --accent: #38bdf8;
+            --dark: #020617;
             --light: #e2e8f0;
         }
         body {
@@ -81,38 +82,62 @@
             color: var(--light);
             scroll-behavior: smooth;
         }
-        .hero {
-            background: linear-gradient(135deg, rgba(250, 204, 21, 0.18), rgba(59, 130, 246, 0.08)),
-                        radial-gradient(circle at top, rgba(15, 23, 42, 0.92), rgba(11, 17, 32, 0.96));
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.15), transparent 55%);
-            pointer-events: none;
+        .hero,
+        .hero-gradient {
+            background: radial-gradient(circle at top left, rgba(250, 204, 21, 0.18), transparent 60%),
+                        radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.18), transparent 55%),
+                        linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.75));
         }
         .heading-font {
             font-family: 'Bebas Neue', sans-serif;
         }
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
         .info-card {
-            background: rgba(15, 23, 42, 0.88);
-            border: 1px solid rgba(148, 163, 184, 0.18);
+            background: rgba(15, 23, 42, 0.82);
+            border: 1px solid rgba(148, 163, 184, 0.2);
             border-radius: 1.25rem;
             padding: 1.75rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .info-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 30px 45px -20px rgba(56, 189, 248, 0.35);
+            transform: translateY(-4px);
+            box-shadow: 0 25px 45px -15px rgba(56, 189, 248, 0.35);
+        }
+        .responsive-video {
+            position: relative;
+            width: 100%%;
+            padding-bottom: 56.25%%;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 35px 65px -25px rgba(59, 130, 246, 0.45);
+        }
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%%;
+            height: 100%%;
+            border: none;
+            z-index: 0;
+        }
+        .responsive-video.video-overlay::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: var(--video-thumb);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.35;
+            z-index: 1;
+            pointer-events: none;
         }
         .badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(248, 250, 252, 0.08);
+            background: rgba(248, 250, 252, 0.1);
             border: 1px solid rgba(148, 163, 184, 0.25);
             padding: 0.45rem 1rem;
             border-radius: 9999px;
@@ -126,7 +151,7 @@
             transition: all 0.3s ease;
         }
         .navbar.scrolled {
-            background-color: rgba(15, 23, 42, 0.95);
+            background-color: rgba(2, 6, 23, 0.95);
             box-shadow: 0 10px 30px -20px rgba(0, 0, 0, 0.6);
         }
         .mobile-menu {
@@ -137,60 +162,25 @@
         .mobile-menu.open {
             max-height: 500px;
         }
-        .responsive-video {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            border-radius: 1.25rem;
-            overflow: hidden;
-            box-shadow: 0 25px 45px -25px rgba(15, 23, 42, 0.8);
-        }
-        .responsive-video iframe {
-            width: 100%;
-            height: 100%;
-        }
-        .comparison-grid {
-            background: rgba(15, 23, 42, 0.85);
-            border: 1px solid rgba(148, 163, 184, 0.15);
-            border-radius: 1.5rem;
-            overflow: hidden;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 0.85rem 1rem;
-            border-bottom: 1px solid rgba(148, 163, 184, 0.18);
-            text-align: left;
-        }
-        th {
-            color: var(--primary);
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.08em;
-        }
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, #facc15, #f97316);
-            color: #0b1120;
-            padding: 0.85rem 1.75rem;
-            border-radius: 9999px;
-            font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px -15px rgba(250, 204, 21, 0.65);
+        .wave-shape .shape-fill {
+            fill: #020617;
         }
         a {
             color: inherit;
         }
         a:hover {
             color: var(--primary);
+        }
+        .bg-white,
+        .bg-gray-50 {
+            background-color: rgba(15, 23, 42, 0.9) !important;
+        }
+        .text-gray-900,
+        .text-gray-800,
+        .text-gray-700,
+        .text-gray-600,
+        .text-gray-500 {
+            color: var(--light) !important;
         }
     </style>
 </head>
@@ -229,10 +219,36 @@
     </nav>
 
     <!-- Hero Section -->
-    
+    <header class="hero pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="badge"><i class="fas fa-robot text-yellow-400"></i> AI Video Review</span>
+                    <h1 class="heading-font text-4xl md:text-5xl text-white leading-tight">AIARTY Video Enhancer Review</h1>
+                    <p class="text-lg text-slate-200 leading-relaxed">After testing AIARTY across travel footage, archival clips, and low-light scenes, this review breaks down the real-world gains in sharpness, motion, and upscaling. Here’s what actually improved, what took longer, and what matters if you’re comparing it to Topaz Video AI.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#video-review" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-semibold rounded-full shadow-lg hover:shadow-xl transition-transform">
+                            <i class="fas fa-play"></i>
+                            Watch the video review
+                        </a>
+                        <a href="#highlights" class="inline-flex items-center gap-2 px-6 py-3 border border-slate-500 text-slate-200 rounded-full hover:border-yellow-400 hover:text-yellow-400 transition-colors">
+                            <i class="fas fa-sparkles"></i>
+                            See the highlights
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="info-card">
+                        <img src="carlcamera2.jpg" alt="Carl testing AIARTY Video Enhancer" class="rounded-xl w-full h-auto">
+                        <p class="text-slate-300 text-sm mt-4">Testing AIARTY on travel footage, 4K drone clips, and archive transfers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- Feature Highlights -->
-    <section class="py-20 bg-secondary">
+    <section id="highlights" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
             <div class="text-center mb-14">
                 <span class="badge mb-4"><i class="fas fa-magic text-yellow-400"></i> WHAT'S INSIDE</span>
@@ -265,6 +281,23 @@
                 <div class="info-card">
                     <h3 class="text-xl font-semibold text-white mb-3">Lifetime Updates</h3>
                     <p class="text-gray-300">Unlike subscription-heavy rivals, your $165 USD license includes future model packs and UI upgrades. AIARTY pushed two updates during my testing window, adding faster GPU acceleration for NVIDIA RTX cards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-review" class="py-16 bg-secondary">
+        <div class="container mx-auto px-6">
+            <div class="info-card">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
+                    <div>
+                        <span class="badge"><i class="fas fa-video text-yellow-400"></i> Video walkthrough</span>
+                        <h2 class="heading-font text-3xl text-white mt-4">Watch the AIARTY footage tests</h2>
+                    </div>
+                    <p class="text-slate-200 max-w-2xl">This video covers the same clips mentioned in the article, including the MoDetail model, denoise settings, and export speed comparisons against Topaz Video AI.</p>
+                </div>
+                <div class="responsive-video video-overlay" style="--video-thumb: url('https://img.youtube.com/vi/fsYA84tjrTE/maxresdefault.jpg');">
+                    <iframe src="https://www.youtube.com/embed/fsYA84tjrTE" title="AIARTY Video Enhancer Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
