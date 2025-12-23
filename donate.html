@@ -60,13 +60,13 @@
         
         .navbar {
             backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(26, 26, 26, 0.9);
             transition: all 0.3s ease;
         }
         
         .navbar.scrolled {
-            background-color: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         }
         
         .wave-shape {
@@ -100,7 +100,7 @@
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-200">
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
@@ -113,17 +113,17 @@
                 </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
-                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Videos</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
-                    <a href="gear.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Gear</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="index.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Videos</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="gear.html" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">Gear</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-yellow-500 font-medium transition-colors">About</a>
                     <a href="donate.html" class="text-yellow-500 font-medium transition-colors">Donate</a>
-                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
                 
-                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -131,14 +131,14 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
-                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Videos</a>
-                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
-                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Gear</a>
-                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Destinations</a>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Videos</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Blog</a>
+                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Gear</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">About</a>
                     <a href="donate.html" class="block px-3 py-2 rounded-md bg-yellow-900 text-yellow-500 font-medium">Donate</a>
-                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-yellow-900">Contact</a>
                 </div>
             </div>
         </div>
@@ -155,12 +155,12 @@
         <div class="container mx-auto px-6 py-20 relative z-10">
             <div class="text-center">
                 <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                    Support My Journey <br>With <span class="text-yellow-300">Carl Travels</span>
+                    Support My Journey <br>With <span class="text-yellow-500">Carl Travels</span>
                 </h1>
-                <p class="text-lg text-yellow-300 mb-8 max-w-2xl mx-auto">
+                <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
                     Your donations help me create inspiring travel documentaries and share captivating stories from around the world. Every contribution makes a difference!
                 </p>
-                <a href="#donate" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                <a href="#donate" class="px-8 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all shadow-lg">
                     Donate Now
                 </a>
             </div>
@@ -168,12 +168,12 @@
     </section>
 
     <!-- Donation Content Section -->
-    <section id="donate" class="py-20 bg-white">
+    <section id="donate" class="py-20 bg-[#111827]">
         <div class="container mx-auto px-6">
             <!-- Motivational Story -->
-            <div class="donation-card bg-white rounded-xl shadow-lg p-8 mb-12">
-                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-6 text-center">Why Your Support Matters</h2>
-                <div class="text-gray-600 leading-relaxed space-y-4">
+            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12">
+                <h2 class="heading-font text-3xl font-bold text-white mb-6 text-center">Why Your Support Matters</h2>
+                <div class="text-gray-300 leading-relaxed space-y-4">
                     <p>Hi there! I'm passionate about capturing the world through my lens, telling stories that resonate and inspire. Over the years, I've been fortunate to travel to over 40 countries and explore more than 300 cities, immersing myself in diverse cultures and experiences. Living in four different countries has broadened my perspective and fueled my desire to share these incredible moments with you.</p>
                     <p>Creating content isn't just a hobby—it's my way of connecting with people, preserving memories, and showcasing the beauty and complexity of our world. However, producing high-quality travel videos and documentaries requires resources, from travel expenses and equipment upgrades to time and dedication. This is where your support makes a significant difference.</p>
                     <p>Every donation, no matter how small, helps me continue my mission to create meaningful content. Whether it's funding a new camera, covering travel costs to a remote destination, or simply allowing me to dedicate more time to storytelling, your generosity empowers me to bring more authentic and impactful stories to life.</p>
@@ -183,8 +183,8 @@
             </div>
 
             <!-- Donation Button -->
-            <div class="donation-card bg-white rounded-xl shadow-lg p-8 mb-12 text-center">
-                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-6">Make a Donation</h2>
+            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12 text-center">
+                <h2 class="heading-font text-3xl font-bold text-white mb-6">Make a Donation</h2>
                 <form action="https://www.paypal.com/donate" method="post" target="_top" class="inline-block">
                     <input type="hidden" name="hosted_button_id" value="48D6VPE8NSCWU" />
                     <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
@@ -193,9 +193,9 @@
             </div>
 
             <!-- How Donations Help -->
-            <div class="donation-card bg-white rounded-xl shadow-lg p-8 mb-12">
-                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-6 text-center">How Your Donations Help</h2>
-                <ul class="space-y-4 text-gray-600">
+            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12">
+                <h2 class="heading-font text-3xl font-bold text-white mb-6 text-center">How Your Donations Help</h2>
+                <ul class="space-y-4 text-gray-300">
                     <li class="flex items-start">
                         <i class="fas fa-plane text-yellow-500 mr-3 mt-1"></i>
                         <div>
@@ -224,25 +224,25 @@
             </div>
 
             <!-- Additional Support Options -->
-            <div class="donation-card bg-white rounded-xl shadow-lg p-8 mb-12">
-                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-6 text-center">Other Ways to Support</h2>
+            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12">
+                <h2 class="heading-font text-3xl font-bold text-white mb-6 text-center">Other Ways to Support</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-4 py-3 bg-yellow-9000 text-white rounded-lg text-center hover:bg-yellow-600 transition-all">
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-4 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-lg text-center hover:bg-yellow-600 transition-all">
                         <i class="fab fa-youtube mr-2"></i> Subscribe on YouTube
                     </a>
-                    <a href="https://www.instagram.com/carlostomich" target="_blank" class="block px-4 py-3 bg-yellow-9000 text-white rounded-lg text-center hover:bg-yellow-600 transition-all">
+                    <a href="https://www.instagram.com/carlostomich" target="_blank" class="block px-4 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-lg text-center hover:bg-yellow-600 transition-all">
                         <i class="fab fa-instagram mr-2"></i> Follow on Instagram
                     </a>
-                    <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="block px-4 py-3 bg-yellow-9000 text-white rounded-lg text-center hover:bg-yellow-600 transition-all">
+                    <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="block px-4 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-lg text-center hover:bg-yellow-600 transition-all">
                         <i class="fab fa-facebook-f mr-2"></i> Like on Facebook
                     </a>
                 </div>
             </div>
 
             <!-- Thank You Note -->
-            <div class="donation-card bg-yellow-900 rounded-xl p-8 text-center">
-                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-4">Thank You!</h2>
-                <p class="text-gray-600">
+            <div class="donation-card bg-[#1f2937] rounded-xl p-8 text-center">
+                <h2 class="heading-font text-3xl font-bold text-white mb-4">Thank You!</h2>
+                <p class="text-gray-300">
                     Thank you for your support! Your contributions help me turn dreams into reality and continue sharing incredible stories from around the globe.
                 </p>
             </div>
