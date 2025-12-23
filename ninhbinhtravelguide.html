@@ -193,25 +193,49 @@
         }
 
     </style>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body class="text-gray-100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar fixed w-full z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center">
-                    <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="/index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-camera text-black text-lg"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Tomich</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="nav-link font-medium transition-colors">Home</a>
+                    <a href="/destinations.html" class="nav-link font-medium transition-colors">Destinations</a>
+                    <a href="/portfolio.html" class="nav-link font-medium transition-colors">Portfolio</a>
+                    <a href="/videos/index.html" class="nav-link font-medium transition-colors">Watch</a>
+                    <a href="/blog.html" class="nav-link font-medium transition-colors">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium transition-colors">Gear</a>
+                    <a href="/index.html#about" class="nav-link font-medium transition-colors">About</a>
+                    <a href="/donate.html" class="nav-link font-medium transition-colors">Donate</a>
+                    <a href="/index.html#contact" class="contact-button px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-full hover:shadow-lg transition-all">Contact</a>
                 </div>
-                <span class="heading-font text-2xl">Carl Travels</span>
-            </a>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <a href="index.html" class="hover:text-yellow-400">Home</a>
-                <a href="destinations.html" class="text-yellow-400">Destinations</a>
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="hover:text-yellow-400">Videos</a>
-                <a href="blog.html" class="hover:text-yellow-400">Blog</a>
-                <a href="gear.html" class="hover:text-yellow-400">Gear</a>
-                <a href="index.html#about" class="hover:text-yellow-400">About</a>
-                <a href="donate.html" class="hover:text-yellow-400">Donate</a>
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/index.html" class="mobile-link block px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="/destinations.html" class="mobile-link block px-3 py-2 rounded-md">Destinations</a>
+                    <a href="/portfolio.html" class="mobile-link block px-3 py-2 rounded-md">Portfolio</a>
+                    <a href="/videos/index.html" class="mobile-link block px-3 py-2 rounded-md">Watch</a>
+                    <a href="/blog.html" class="mobile-link block px-3 py-2 rounded-md">Blog</a>
+                    <a href="/gear.html" class="mobile-link block px-3 py-2 rounded-md">Gear</a>
+                    <a href="/index.html#about" class="mobile-link block px-3 py-2 rounded-md">About</a>
+                    <a href="/donate.html" class="mobile-link block px-3 py-2 rounded-md">Donate</a>
+                    <a href="/index.html#contact" class="mobile-link block px-3 py-2 rounded-md">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -408,85 +432,88 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-dark text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
+                    <a href="/index.html" class="text-2xl font-bold flex items-center mb-6">
                         <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
-                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                            <i class="fas fa-camera text-black text-lg"></i>
                         </div>
-                        <span class="heading-font">Carl Travels</span>
+                        <span class="heading-font">Carl Tomich</span>
                     </a>
                     <p class="text-gray-400 mb-4">
-                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                        Crafting cinematic stories through travel, tech, and filmmaking.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
                 </div>
+
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
-                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
-                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                        <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors">Donate</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="/index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Home</a></li>
+                        <li><a href="/destinations.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Destinations</a></li>
+                        <li><a href="/portfolio.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Portfolio</a></li>
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">Videos</a></li>
+                        <li><a href="/blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Blog</a></li>
+                        <li><a href="/index.html#about" class="text-gray-400 hover:text-yellow-500 transition-colors">About</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Destinations</h3>
                     <ul class="space-y-3">
-                        <li><a href="Berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
-                        <li><a href="melbournetravelguide.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
-                        <li><a href="cairnstravelguide.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
-                        <li><a href="phuketravelguide.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
-                        <li><a href="hanoitravelguide.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
-                        <li><a href="osakatravelguide.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                        <li><a href="/Berlin.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Berlin</a></li>
+                        <li><a href="/melbournetravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Melbourne</a></li>
+                        <li><a href="/cairnstravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Cairns</a></li>
+                        <li><a href="/phuketravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Phuket</a></li>
+                        <li><a href="/hanoitravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hanoi</a></li>
+                        <li><a href="/osakatravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Osaka</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
                     <p class="text-gray-400 mb-4">
-                        Subscribe to get travel tips and exclusive content directly in your inbox.
+                        Subscribe for exclusive filmmaking and travel insights.
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
                         <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
-                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
                         <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all">
+                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-black rounded-r-lg hover:bg-yellow-600 transition-all">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
             </div>
+
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2025 Carl Travels. All rights reserved.
+                    © 2025 Carl Tomich. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                    <a href="/privacy-policy.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Cookies</a>
                 </div>
             </div>
         </div>
@@ -502,5 +529,6 @@
             }
         });
     </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

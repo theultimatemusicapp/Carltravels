@@ -183,39 +183,49 @@
             color: var(--light) !important;
         }
     </style>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body class="min-h-screen">
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center gap-3">
-                    <img src="carlcircle.png" alt="Carl Travels" class="w-10 h-10 rounded-full border border-yellow-400">
-                    <span class="heading-font text-2xl tracking-widest text-white">CARL TRAVELS</span>
+                <a href="/index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-camera text-black text-lg"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Tomich</span>
                 </a>
-                <button id="menuToggle" class="md:hidden text-yellow-400 text-2xl focus:outline-none">
-                    <i class="fas fa-bars"></i>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="nav-link font-medium transition-colors">Home</a>
+                    <a href="/destinations.html" class="nav-link font-medium transition-colors">Destinations</a>
+                    <a href="/portfolio.html" class="nav-link font-medium transition-colors">Portfolio</a>
+                    <a href="/videos/index.html" class="nav-link font-medium transition-colors">Watch</a>
+                    <a href="/blog.html" class="nav-link font-medium transition-colors">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium transition-colors">Gear</a>
+                    <a href="/index.html#about" class="nav-link font-medium transition-colors">About</a>
+                    <a href="/donate.html" class="nav-link font-medium transition-colors">Donate</a>
+                    <a href="/index.html#contact" class="contact-button px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
-                <ul class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wide text-gray-300">
-                    <li><a href="index.html#about" class="hover:text-yellow-400 transition">About</a></li>
-                    <li><a href="index.html#destinations" class="hover:text-yellow-400 transition">Destinations</a></li>
-                    <li><a href="index.html#tech" class="hover:text-yellow-400 transition">Tech Reviews</a></li>
-                    <li><a href="index.html#portfolio" class="hover:text-yellow-400 transition">Portfolio</a></li>
-                    <li><a href="blog.html" class="hover:text-yellow-400 transition">Blog</a></li>
-                    <li><a href="donate.html" class="hover:text-yellow-400 transition">Donate</a></li>
-                    <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
-                </ul>
             </div>
-            <div id="mobileMenu" class="mobile-menu md:hidden overflow-hidden">
-                <ul class="flex flex-col gap-4 mt-4 text-gray-300 uppercase tracking-wide">
-                    <li><a href="index.html#about" class="block hover:text-yellow-400 transition">About</a></li>
-                    <li><a href="index.html#destinations" class="block hover:text-yellow-400 transition">Destinations</a></li>
-                    <li><a href="index.html#tech" class="block hover:text-yellow-400 transition">Tech Reviews</a></li>
-                    <li><a href="index.html#portfolio" class="block hover:text-yellow-400 transition">Portfolio</a></li>
-                    <li><a href="blog.html" class="block hover:text-yellow-400 transition">Blog</a></li>
-                    <li><a href="donate.html" class="block hover:text-yellow-400 transition">Donate</a></li>
-                    <li><a href="contact.html" class="block hover:text-yellow-400 transition">Contact</a></li>
-                </ul>
+
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/index.html" class="mobile-link block px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="/destinations.html" class="mobile-link block px-3 py-2 rounded-md">Destinations</a>
+                    <a href="/portfolio.html" class="mobile-link block px-3 py-2 rounded-md">Portfolio</a>
+                    <a href="/videos/index.html" class="mobile-link block px-3 py-2 rounded-md">Watch</a>
+                    <a href="/blog.html" class="mobile-link block px-3 py-2 rounded-md">Blog</a>
+                    <a href="/gear.html" class="mobile-link block px-3 py-2 rounded-md">Gear</a>
+                    <a href="/index.html#about" class="mobile-link block px-3 py-2 rounded-md">About</a>
+                    <a href="/donate.html" class="mobile-link block px-3 py-2 rounded-md">Donate</a>
+                    <a href="/index.html#contact" class="mobile-link block px-3 py-2 rounded-md">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -424,9 +434,90 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-10 bg-secondary">
-        <div class="container mx-auto px-6 text-center text-gray-400 text-sm">
-            <p>© <span id="year"></span> Carl Tomich. All rights reserved.</p>
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="/index.html" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                            <i class="fas fa-camera text-black text-lg"></i>
+                        </div>
+                        <span class="heading-font">Carl Tomich</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Crafting cinematic stories through travel, tech, and filmmaking.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Home</a></li>
+                        <li><a href="/destinations.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Destinations</a></li>
+                        <li><a href="/portfolio.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Portfolio</a></li>
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">Videos</a></li>
+                        <li><a href="/blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Blog</a></li>
+                        <li><a href="/index.html#about" class="text-gray-400 hover:text-yellow-500 transition-colors">About</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/Berlin.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Berlin</a></li>
+                        <li><a href="/melbournetravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Melbourne</a></li>
+                        <li><a href="/cairnstravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Cairns</a></li>
+                        <li><a href="/phuketravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Phuket</a></li>
+                        <li><a href="/hanoitravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hanoi</a></li>
+                        <li><a href="/osakatravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Osaka</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe for exclusive filmmaking and travel insights.
+                    </p>
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
+                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
+                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-black rounded-r-lg hover:bg-yellow-600 transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Carl Tomich. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="/privacy-policy.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -451,5 +542,6 @@
 
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
