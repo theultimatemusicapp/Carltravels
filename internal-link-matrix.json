@@ -1,0 +1,47 @@
+{
+  "pros-and-cons-and-cost-of-living-in-hanoi.html": [
+    "hanoi-by-night.html",
+    "top-10-things-to-do-in-hanoi.html",
+    "hanoitravelguide.html"
+  ],
+  "hanoi-by-night.html": [
+    "top-10-things-to-do-in-hanoi.html",
+    "finedininginhanoi.html",
+    "hanoitravelguide.html"
+  ],
+  "top-10-things-to-do-in-hanoi.html": [
+    "lotte-world-aquarium-hanoi.html",
+    "thebesttemplesinhanoi.html",
+    "hanoitravelguide.html"
+  ],
+  "thebesttemplesinhanoi.html": [
+    "top-10-things-to-do-in-hanoi.html",
+    "hanoitravelguide.html",
+    "hanoi-by-night.html"
+  ],
+  "lotte-world-aquarium-hanoi.html": [
+    "top-10-things-to-do-in-hanoi.html",
+    "hanoitravelguide.html",
+    "finedininginhanoi.html"
+  ],
+  "finedininginhanoi.html": [
+    "hanoi-by-night.html",
+    "top-10-things-to-do-in-hanoi.html",
+    "hanoitravelguide.html"
+  ],
+  "hanoitravelguide.html": [
+    "pros-and-cons-and-cost-of-living-in-hanoi.html",
+    "top-10-things-to-do-in-hanoi.html",
+    "hanoi-by-night.html"
+  ],
+  "sony-a7cii-review.html": [
+    "tech-review-sony-a7siii.html",
+    "tech-review-dji-mavic3.html",
+    "travel-gear-2025.html"
+  ],
+  "tech-review-sony-a7siii.html": [
+    "sony-a7cii-review.html",
+    "tech-review-zhiyun-weebill2.html",
+    "travel-gear-2025.html"
+  ]
+}
