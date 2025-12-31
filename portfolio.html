@@ -1,110 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Portfolio - Carl Travels</title>
     <!-- Cookiebot for GDPR Compliance -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece"
-        type="text/javascript" async></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
     <!-- Meta Tags -->
     <meta name="description" content="A collection of Carlos Tomich's music videos, wedding films and commercial work.">
     <meta name="keywords" content="video portfolio, music videos, wedding films, commercial videography">
     <meta name="author" content="Carlos Tomich">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Video Portfolio - Carl Travels">
-    <meta property="og:description"
-        content="Watch a selection of music videos, weddings and commercials filmed by Carlos Tomich.">
+    <meta property="og:description" content="Watch a selection of music videos, weddings and commercials filmed by Carlos Tomich.">
     <meta property="og:image" content="https://www.carltravels.com/images/carl.png">
     <meta property="og:url" content="https://www.carltravels.com/portfolio.html">
     <meta property="og:type" content="website">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Video Portfolio - Carl Travels">
-    <meta name="twitter:description"
-        content="Watch a selection of music videos, weddings and commercials filmed by Carlos Tomich.">
+    <meta name="twitter:description" content="Watch a selection of music videos, weddings and commercials filmed by Carlos Tomich.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/carl.png">
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #f5c518;
-            --secondary: #2a2a2a;
-            --dark: #1a1a1a;
-            --light: #d4d4d4;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--dark);
-            color: var(--light);
-            scroll-behavior: smooth;
-        }
-
-        .heading-font {
-            font-family: 'Bebas Neue', sans-serif;
-        }
-
-        .navbar {
-            backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, .9);
-            transition: .3s;
-        }
-
-        .navbar.scrolled {
-            background-color: rgba(255, 255, 255, .98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1);
-        }
-
-        .mobile-menu {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height .5s ease-out;
-        }
-
-        .mobile-menu.open {
-            max-height: 500px;
-        }
-
-        .wave-shape {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        .wave-shape svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 150px;
-        }
-
-        .wave-shape .shape-fill {
-            fill: #FFFFFF;
-        }
+        :root { --primary:#f5c518; --secondary:#2a2a2a; --dark:#1a1a1a; --light:#d4d4d4; }
+        body { font-family:'Montserrat',sans-serif; background-color:var(--dark); color:var(--light); scroll-behavior:smooth; }
+        .heading-font{font-family:'Bebas Neue',sans-serif;}
+        .navbar{backdrop-filter:blur(10px);background-color:rgba(255,255,255,.9);transition:.3s;}
+        .navbar.scrolled{background-color:rgba(255,255,255,.98);box-shadow:0 4px 6px -1px rgba(0,0,0,.1);}
+        .mobile-menu{max-height:0;overflow:hidden;transition:max-height .5s ease-out;}
+        .mobile-menu.open{max-height:500px;}
+        .wave-shape{position:absolute;bottom:0;left:0;width:100%;overflow:hidden;line-height:0;}
+        .wave-shape svg{position:relative;display:block;width:calc(100% + 1.3px);height:150px;}
+        .wave-shape .shape-fill{fill:#FFFFFF;}
     </style>
 </head>
-
 <body class="text-gray-800">
     <!-- Navigation -->
-    <div id="global-header"></div>
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Travels</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Home</a>
+                    <a href="destinations.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Destinations</a>
+                    <a href="videos/index.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Watch</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Blog</a>
+                    <a href="gear.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Gear</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">About</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-yellow-500 font-medium transition-colors">Donate</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Home</a>
+                    <a href="destinations.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Destinations</a>
+                    <a href="videos/index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Watch</a>
+                    <a href="blog.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Blog</a>
+                    <a href="gear.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Gear</a>
+                    <a href="index.html#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">About</a>
+                    <a href="donate.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Donate</a>
+                    <a href="index.html#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-yellow-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero-gradient relative overflow-hidden min-h-[50vh] flex items-center pt-20">
         <div class="wave-shape">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
         </div>
         <div class="container mx-auto px-6 py-20 relative z-10 text-center">
@@ -120,43 +98,28 @@
             <div>
                 <h2 class="heading-font text-3xl font-bold text-gray-800 mb-8 text-center" id="music">Music Videos</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/g7bFA8Rrwik/hqdefault.jpg"
-                            alt="Singer performing under blue stage lights" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/g7bFA8Rrwik/hqdefault.jpg" alt="Singer performing under blue stage lights" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Music Video 1</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Moody warehouse performance drenched in blue
-                                gels, steadicam movement, and synth-pop storytelling.</p>
-                            <a href="videos/music-video-1.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Moody warehouse performance drenched in blue gels, steadicam movement, and synth-pop storytelling.</p>
+                            <a href="videos/music-video-1.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/Iubiv9CKUvk/hqdefault.jpg"
-                            alt="Friends dancing on a rooftop at sunset" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/Iubiv9CKUvk/hqdefault.jpg" alt="Friends dancing on a rooftop at sunset" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Music Video 2</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Sunset rooftop energy with choreography timed
-                                to skyline light trails and handheld motion.</p>
-                            <a href="videos/music-video-2.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Sunset rooftop energy with choreography timed to skyline light trails and handheld motion.</p>
+                            <a href="videos/music-video-2.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/vnDDcKRQZI8/hqdefault.jpg"
-                            alt="Musician playing guitar in a sunlit field" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/vnDDcKRQZI8/hqdefault.jpg" alt="Musician playing guitar in a sunlit field" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Music Video 3</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Golden hour ballad visuals pairing countryside
-                                vistas with intimate close-ups.</p>
-                            <a href="videos/music-video-3.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Golden hour ballad visuals pairing countryside vistas with intimate close-ups.</p>
+                            <a href="videos/music-video-3.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
                 </div>
@@ -165,116 +128,74 @@
             <div>
                 <h2 class="heading-font text-3xl font-bold text-gray-800 mb-8 text-center" id="weddings">Weddings</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/BkqojyevuTA/hqdefault.jpg"
-                            alt="Bride and groom embracing on a coastal cliff" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/BkqojyevuTA/hqdefault.jpg" alt="Bride and groom embracing on a coastal cliff" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Wedding Film 1</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Sun-drenched coastal vows with heartfelt
-                                letters, cinematic audio, and sparkler send-offs.</p>
-                            <a href="videos/wedding-film-1.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Sun-drenched coastal vows with heartfelt letters, cinematic audio, and sparkler send-offs.</p>
+                            <a href="videos/wedding-film-1.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/XYXxJ7t0YwE/hqdefault.jpg"
-                            alt="Couple dancing inside a rustic barn" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/XYXxJ7t0YwE/hqdefault.jpg" alt="Couple dancing inside a rustic barn" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Wedding Film 2</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Rustic barn romance captured with dual-camera
-                                coverage and emotional speeches.</p>
-                            <a href="videos/wedding-film-2.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Rustic barn romance captured with dual-camera coverage and emotional speeches.</p>
+                            <a href="videos/wedding-film-2.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/NwT73rCVnMY/hqdefault.jpg"
-                            alt="Couple holding hands in a misty forest" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/NwT73rCVnMY/hqdefault.jpg" alt="Couple holding hands in a misty forest" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Wedding Film 3</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">An intimate forest elopement with rain-kissed
-                                greenery and cozy cabin celebrations.</p>
-                            <a href="videos/wedding-film-3.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">An intimate forest elopement with rain-kissed greenery and cozy cabin celebrations.</p>
+                            <a href="videos/wedding-film-3.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Commercials -->
             <div>
-                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-8 text-center" id="commercials">Commercials
-                </h2>
+                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-8 text-center" id="commercials">Commercials</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/V2iZFD5yW_k/hqdefault.jpg"
-                            alt="Luxury hotel lobby with warm lighting" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/V2iZFD5yW_k/hqdefault.jpg" alt="Luxury hotel lobby with warm lighting" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Commercial 1</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Boutique hotel storytelling blending
-                                architectural details, guest moments, and sunrise drones.</p>
-                            <a href="videos/commercial-1.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Boutique hotel storytelling blending architectural details, guest moments, and sunrise drones.</p>
+                            <a href="videos/commercial-1.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/oHjvJAfbW-w/hqdefault.jpg"
-                            alt="Athlete wearing a fitness tracker" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/oHjvJAfbW-w/hqdefault.jpg" alt="Athlete wearing a fitness tracker" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Commercial 2</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">High-energy launch piece for a wearable fitness
-                                device with macro product shots and athlete testimonials.</p>
-                            <a href="videos/commercial-2.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">High-energy launch piece for a wearable fitness device with macro product shots and athlete testimonials.</p>
+                            <a href="videos/commercial-2.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/EssKbtalMwc/hqdefault.jpg"
-                            alt="Barista pouring coffee from a carafe" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/EssKbtalMwc/hqdefault.jpg" alt="Barista pouring coffee from a carafe" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Commercial 3</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Lifestyle campaign celebrating artisan coffee
-                                rituals with natural light cinematography.</p>
-                            <a href="videos/commercial-3.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Lifestyle campaign celebrating artisan coffee rituals with natural light cinematography.</p>
+                            <a href="videos/commercial-3.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/zpkT0md0rBs/hqdefault.jpg"
-                            alt="Fresh pastries on display at 100 Grams Hanoi bakery" class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/zpkT0md0rBs/hqdefault.jpg" alt="Fresh pastries on display at 100 Grams Hanoi bakery" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">100 Grams Hanoi Bakery</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Discover 100 Grams Hanoi, a cozy bakery in the
-                                heart of the city serving fresh pastries, artisan breads, and signature desserts.</p>
-                            <a href="https://youtu.be/zpkT0md0rBs" target="_blank" rel="noopener"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                on YouTube</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Discover 100 Grams Hanoi, a cozy bakery in the heart of the city serving fresh pastries, artisan breads, and signature desserts.</p>
+                            <a href="https://youtu.be/zpkT0md0rBs" target="_blank" rel="noopener" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch on YouTube</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/XFST-VOi5hY/hqdefault.jpg"
-                            alt="Chef plating a modern Vietnamese fine dining dish at Khuê Restaurant"
-                            class="w-full h-44 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/XFST-VOi5hY/hqdefault.jpg" alt="Chef plating a modern Vietnamese fine dining dish at Khuê Restaurant" class="w-full h-44 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-xl font-semibold text-white">Khuê Restaurant Hanoi</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">Step inside Hanoi’s most exciting fine dining
-                                space, where emotion, memory, and modern Vietnamese flavours shape every plate.</p>
-                            <a href="finedininginhanoi.html"
-                                class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">Step inside Hanoi’s most exciting fine dining space, where emotion, memory, and modern Vietnamese flavours shape every plate.</p>
+                            <a href="finedininginhanoi.html" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the film</a>
                         </div>
                     </div>
                 </div>
@@ -282,35 +203,22 @@
 
             <!-- Cinematic Shorts -->
             <div>
-                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-8 text-center" id="cinematic-shorts">
-                    Cinematic Shorts</h2>
+                <h2 class="heading-font text-3xl font-bold text-gray-800 mb-8 text-center" id="cinematic-shorts">Cinematic Shorts</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg"
-                            alt="Nighttime streets of Hanoi with glowing neon signage" class="w-full h-52 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg" alt="Nighttime streets of Hanoi with glowing neon signage" class="w-full h-52 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-2xl font-semibold text-white">Hanoi by Night</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">A cinematic exploration of Hanoi's Old Quarter
-                                after dark, blending neon reflections, street food energy, and moody sound design.</p>
-                            <a href="hanoi-by-night.html"
-                                class="mt-6 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                the short film</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">A cinematic exploration of Hanoi's Old Quarter after dark, blending neon reflections, street food energy, and moody sound design.</p>
+                            <a href="hanoi-by-night.html" class="mt-6 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch the short film</a>
                         </div>
                     </div>
-                    <div
-                        class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <img src="https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg"
-                            alt="Fight club inspired cinematic short filmed in Koh Samui"
-                            class="w-full h-52 object-cover">
+                    <div class="bg-gray-900/80 border border-yellow-400/30 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg" alt="Fight club inspired cinematic short filmed in Koh Samui" class="w-full h-52 object-cover">
                         <div class="p-6 flex-1 flex flex-col">
                             <h3 class="text-2xl font-semibold text-white">Fight Club: Koh Samui</h3>
-                            <p class="text-gray-300 text-sm mt-3 flex-1">An acted sequence shot for fun on the Sony
-                                A7CII with the Sirui 40mm anamorphic lens, showcasing gritty lighting and stylised
-                                handheld choreography.</p>
-                            <a href="https://youtu.be/m5VQfk9BnO8" target="_blank" rel="noopener"
-                                class="mt-6 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch
-                                on YouTube</a>
+                            <p class="text-gray-300 text-sm mt-3 flex-1">An acted sequence shot for fun on the Sony A7CII with the Sirui 40mm anamorphic lens, showcasing gritty lighting and stylised handheld choreography.</p>
+                            <a href="https://youtu.be/m5VQfk9BnO8" target="_blank" rel="noopener" class="mt-6 inline-flex items-center justify-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold hover:shadow-lg transition-all">Watch on YouTube</a>
                         </div>
                     </div>
                 </div>
@@ -318,30 +226,90 @@
         </div>
     </section>
 
-    <div id="global-footer"></div>
-    <script src="/assets/js/site.js" defer></script>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                            <i class="fas fa-plane text-white text-lg transform -rotate-45"></i>
+                        </div>
+                        <span class="heading-font">Carl Travels</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Inspiring meaningful travel through authentic storytelling and breathtaking photography.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="Berlin.html" class="text-gray-400 hover:text-white transition-colors">Berlin</a></li>
+                        <li><a href="melbournetravelguide.html" class="text-gray-400 hover:text-white transition-colors">Melbourne</a></li>
+                        <li><a href="cairnstravelguide.html" class="text-gray-400 hover:text-white transition-colors">Cairns</a></li>
+                        <li><a href="phuketravelguide.html" class="text-gray-400 hover:text-white transition-colors">Phuket</a></li>
+                        <li><a href="hanoitravelguide.html" class="text-gray-400 hover:text-white transition-colors">Hanoi</a></li>
+                        <li><a href="osakatravelguide.html" class="text-gray-400 hover:text-white transition-colors">Osaka</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to get travel tips and exclusive content directly in your inbox.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Carl Travels. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top"
-        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- JavaScript with Error Handling -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             try {
                 const mobileMenuButton = document.getElementById('mobile-menu-button');
                 const mobileMenu = document.getElementById('mobile-menu');
                 if (mobileMenuButton && mobileMenu) {
-                    mobileMenuButton.addEventListener('click', function () {
+                    mobileMenuButton.addEventListener('click', function() {
                         mobileMenu.classList.toggle('open');
                         this.querySelector('i').classList.toggle('fa-bars');
                         this.querySelector('i').classList.toggle('fa-times');
                     });
                 }
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
+                    anchor.addEventListener('click', function(e) {
                         e.preventDefault();
                         const id = this.getAttribute('href');
                         if (id !== '#') {
@@ -361,7 +329,7 @@
                 });
                 const navbar = document.getElementById('navbar');
                 if (navbar) {
-                    window.addEventListener('scroll', function () {
+                    window.addEventListener('scroll', function() {
                         if (window.scrollY > 50) {
                             navbar.classList.add('scrolled');
                         } else {
@@ -371,7 +339,7 @@
                 }
                 const backToTopButton = document.getElementById('back-to-top');
                 if (backToTopButton) {
-                    window.addEventListener('scroll', function () {
+                    window.addEventListener('scroll', function() {
                         if (window.scrollY > 300) {
                             backToTopButton.classList.remove('opacity-0', 'invisible');
                             backToTopButton.classList.add('opacity-100', 'visible');
@@ -380,7 +348,7 @@
                             backToTopButton.classList.add('opacity-0', 'invisible');
                         }
                     });
-                    backToTopButton.addEventListener('click', function () {
+                    backToTopButton.addEventListener('click', function() {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                     });
                 }
@@ -390,5 +358,4 @@
         });
     </script>
 </body>
-
 </html>

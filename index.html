@@ -1,52 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Cookiebot for GDPR Compliance -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece"
-        type="text/javascript" async></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carl Tomich - Cinematic Journeys</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-G72KT5ZW2J');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G72KT5ZW2J');
     </script>
 
     <!-- Meta Tags -->
-    <meta name="description"
-        content="Join Carl Tomich on a cinematic journey blending travel, tech, and filmmaking. Explore stunning films, travel stories, and gear reviews.">
-    <meta name="keywords"
-        content="Carl Tomich, Travel Filmmaker, Cinematic Travel, Tech Reviews, Film Portfolio, Adventure Stories">
+    <meta name="description" content="Join Carl Tomich on a cinematic journey blending travel, tech, and filmmaking. Explore stunning films, travel stories, and gear reviews.">
+    <meta name="keywords" content="Carl Tomich, Travel Filmmaker, Cinematic Travel, Tech Reviews, Film Portfolio, Adventure Stories">
     <meta name="author" content="Carl Tomich">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Carl Tomich - Cinematic Journeys">
-    <meta property="og:description"
-        content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
+    <meta property="og:description" content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
     <meta property="og:image" content="https://www.carltravels.com/images/cinematic-og-image.jpg">
     <meta property="og:url" content="https://www.carltravels.com/index.html">
     <meta property="og:type" content="website">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Carl Tomich - Cinematic Journeys">
-    <meta name="twitter:description"
-        content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
+    <meta name="twitter:description" content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
     <meta name="twitter:image" content="https://www.carltravels.com/images/cinematic-twitter-image.jpg">
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
-        crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+
+        :root {
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            scroll-behavior: smooth;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .heading-font {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .portfolio-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .portfolio-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(26, 26, 26, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hover-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio-card:hover .hover-overlay {
+            opacity: 1;
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+
+        .responsive-video {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9; /* Maintains 16:9 aspect ratio */
+            overflow: hidden;
+            background-color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 640px) {
+            .responsive-video {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .about-image {
+            max-height: 70%; /* Reduced image height by 30% */
+        }
     </style>
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-
 <body class="text-gray-300">
-    <div id="global-header"></div>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="/index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-camera text-black text-lg"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Tomich</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="nav-link font-medium transition-colors">Home</a>
+                    <a href="/destinations.html" class="nav-link font-medium transition-colors">Destinations</a>
+                    <a href="/portfolio.html" class="nav-link font-medium transition-colors">Portfolio</a>
+                    <a href="/videos/index.html" class="nav-link font-medium transition-colors">Watch</a>
+                    <a href="/blog.html" class="nav-link font-medium transition-colors">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium transition-colors">Gear</a>
+                    <a href="/index.html#about" class="nav-link font-medium transition-colors">About</a>
+                    <a href="/donate.html" class="nav-link font-medium transition-colors">Donate</a>
+                    <a href="/index.html#contact" class="contact-button px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/index.html" class="mobile-link block px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="/destinations.html" class="mobile-link block px-3 py-2 rounded-md">Destinations</a>
+                    <a href="/portfolio.html" class="mobile-link block px-3 py-2 rounded-md">Portfolio</a>
+                    <a href="/videos/index.html" class="mobile-link block px-3 py-2 rounded-md">Watch</a>
+                    <a href="/blog.html" class="mobile-link block px-3 py-2 rounded-md">Blog</a>
+                    <a href="/gear.html" class="mobile-link block px-3 py-2 rounded-md">Gear</a>
+                    <a href="/index.html#about" class="mobile-link block px-3 py-2 rounded-md">About</a>
+                    <a href="/donate.html" class="mobile-link block px-3 py-2 rounded-md">Donate</a>
+                    <a href="/index.html#contact" class="mobile-link block px-3 py-2 rounded-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="relative overflow-hidden min-h-screen flex items-center justify-center pt-16 md:pt-20">
@@ -55,21 +214,20 @@
         </video>
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto px-6 relative z-10 text-center fade-in">
-            <!-- Banner Video (Full Screen Background) -->
+            <div class="responsive-video">
+                <iframe src="https://www.youtube.com/embed/sryhpGGE640?autoplay=1&mute=1&modestbranding=1&controls=0&showinfo=0&loop=1&playlist=sryhpGGE640" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <h1 class="heading-font text-5xl md:text-7xl font-bold text-white mb-4 mt-4">
                 Cinematic Journeys <br>With <span class="text-yellow-500">Carl Tomich</span>
             </h1>
             <p class="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
-                Filmmaker, traveler, and tech enthusiast. Join me on a visual odyssey through breathtaking destinations
-                and cutting-edge gear.
+                Filmmaker, traveler, and tech enthusiast. Join me on a visual odyssey through breathtaking destinations and cutting-edge gear.
             </p>
             <div class="flex justify-center gap-4">
-                <a href="portfolio.html"
-                    class="px-8 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all shadow-lg">
+                <a href="portfolio.html" class="px-8 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all shadow-lg">
                     View Portfolio
                 </a>
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank"
-                    class="px-8 py-3 border-2 border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
+                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="px-8 py-3 border-2 border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
                     Watch Videos <i class="fas fa-play ml-2"></i>
                 </a>
             </div>
@@ -84,39 +242,31 @@
                 <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Cinematic Destinations</h2>
                 <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
-
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Destination 1 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
-                        <img src="fnqwaterfall.jpg" alt="Australia"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <img src="fnqwaterfall.jpg" alt="Australia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Australia</h3>
                             <p class="text-sm">Far North Queensland</p>
                         </div>
                     </div>
                     <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Captured the Great Barrier Reef and Daintree Rainforest with my
-                            Sony A7S III.</p>
-                        <a href="far-north-queensland-travel-guide/"
-                            class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                        <p class="text-gray-300 mb-4">Captured the Great Barrier Reef and Daintree Rainforest with my Sony A7S III.</p>
+                        <a href="farnorthqueenslandtravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
                             Explore Story <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
-
+                
                 <!-- Destination 2 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
-                        <img src="/japanfront.jpg" alt="Japan"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <img src="/japanfront.jpg" alt="Japan" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Japan</h3>
                             <p class="text-sm">Kyoto & Tokyo</p>
@@ -124,21 +274,17 @@
                     </div>
                     <div class="p-6 bg-secondary">
                         <p class="text-gray-300 mb-4">Filmed Tokyo’s neon nights using drone shots and gimbal work.</p>
-                        <a href="destinations.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                        <a href="destinations.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
                             Explore Story <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
-
+                
                 <!-- Destination 3 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
-                        <img src="/amalficoastlogo.jpg" alt="Italy"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <img src="/amalficoastlogo.jpg" alt="Italy" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Italy</h3>
                             <p class="text-sm">Amalfi Coast</p>
@@ -146,8 +292,7 @@
                     </div>
                     <div class="p-6 bg-secondary">
                         <p class="text-gray-300 mb-4">Shot coastal vistas with my Canon C70 for a wedding film.</p>
-                        <a href="destinations.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                        <a href="destinations.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
                             Explore Story <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -156,21 +301,16 @@
                 <!-- Destination 4 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
-                        <img src="/hanoilogo.jpg" alt="Vietnam"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <img src="/hanoilogo.jpg" alt="Vietnam" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Vietnam</h3>
                             <p class="text-sm">Hanoi</p>
                         </div>
                     </div>
                     <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Wandered Hanoi's Old Quarter and tranquil lakes with my Sony A7C.
-                        </p>
-                        <a href="hanoi-travel-guide/"
-                            class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                        <p class="text-gray-300 mb-4">Wandered Hanoi's Old Quarter and tranquil lakes with my Sony A7C.</p>
+                        <a href="hanoitravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
                             Explore Story <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -179,21 +319,16 @@
                 <!-- Destination 5 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
-                        <img src="/berlinlogo.jpg" alt="Germany"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <img src="/berlinlogo.jpg" alt="Germany" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Germany</h3>
                             <p class="text-sm">Berlin</p>
                         </div>
                     </div>
                     <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Captured Berlin's blend of history and modern culture from sunrise
-                            to sunset.</p>
-                        <a href="berlin-travel-guide/"
-                            class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                        <p class="text-gray-300 mb-4">Captured Berlin's blend of history and modern culture from sunrise to sunset.</p>
+                        <a href="Berlin.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
                             Explore Story <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -202,79 +337,39 @@
                 <!-- Destination 6 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
-                        <img src="/korculalogo.jpg" alt="Croatia"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <img src="/korculalogo.jpg" alt="Croatia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">Croatia</h3>
                             <p class="text-sm">Korčula</p>
                         </div>
                     </div>
                     <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Explored Korčula's medieval streets and Adriatic blues with a
-                            drone's eye view.</p>
-                        <a href="korcula-travel-guide/"
-                            class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
+                        <p class="text-gray-300 mb-4">Explored Korčula's medieval streets and Adriatic blues with a drone's eye view.</p>
+                        <a href="korcula.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
                             Explore Story <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Featured Films Section -->
-    <section id="featured-films" class="py-20 bg-black">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">DIRECTOR'S CUT</span>
-                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Featured Films</h2>
-                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Film 1: Hanoi by Night -->
-                <a href="hanoi-by-night.html"
-                    class="block group relative overflow-hidden rounded-2xl shadow-2xl h-[400px]">
-                    <img src="https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg" alt="Hanoi by Night"
-                        class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90">
+        <div class="mt-16">
+            <a href="hanoi-by-night.html" class="block group">
+                <div class="relative w-full min-h-[320px] md:min-h-[380px] lg:min-h-[420px] overflow-hidden shadow-2xl">
+                    <img src="https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg" alt="Hanoi by Night cinematic short film" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/40"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-center px-6 py-12 md:px-16">
+                        <span class="text-yellow-400 uppercase tracking-[0.35em] text-xs md:text-sm">Special Feature</span>
+                        <h3 class="heading-font text-3xl md:text-5xl text-white mt-4 mb-4">Hanoi by Night</h3>
+                        <p class="text-gray-300 max-w-2xl text-base md:text-lg">Step into Hanoi's midnight energy with a brand-new cinematic short film exploring the Old Quarter, Hoàn Kiếm Lake, and Beer Street after dark.</p>
+                        <div class="mt-6">
+                            <span class="inline-flex items-center px-5 py-3 bg-yellow-500 text-black rounded-full font-semibold transition-all duration-300 group-hover:bg-yellow-400">
+                                Watch the Feature <i class="fas fa-arrow-right ml-3"></i>
+                            </span>
+                        </div>
                     </div>
-                    <div class="absolute bottom-0 left-0 p-8">
-                        <span class="text-yellow-400 uppercase tracking-widest text-xs font-bold mb-2 block">Special
-                            Feature</span>
-                        <h3 class="heading-font text-3xl text-white mb-2">Hanoi by Night</h3>
-                        <p class="text-gray-300 text-sm mb-4 line-clamp-2">Step into Hanoi's midnight energy. Old
-                            Quarter, Hoàn Kiếm Lake, and Beer Street after dark.</p>
-                        <span
-                            class="inline-flex items-center text-yellow-500 font-medium group-hover:text-white transition-colors">
-                            Watch Film <i class="fas fa-play-circle ml-2 text-xl"></i>
-                        </span>
-                    </div>
-                </a>
-
-                <!-- Film 2: Fight Club -->
-                <a href="portfolio.html#cinematic-shorts"
-                    class="block group relative overflow-hidden rounded-2xl shadow-2xl h-[400px]">
-                    <img src="https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg" alt="Fight Club Koh Samui"
-                        class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90">
-                    </div>
-                    <div class="absolute bottom-0 left-0 p-8">
-                        <span class="text-yellow-400 uppercase tracking-widest text-xs font-bold mb-2 block">New
-                            Narrative Short</span>
-                        <h3 class="heading-font text-3xl text-white mb-2">Fight Club: Koh Samui</h3>
-                        <p class="text-gray-300 text-sm mb-4 line-clamp-2">A gritty, self-produced scene capturing the
-                            humid streets of Koh Samui. Shot on Sony A7CII.</p>
-                        <span
-                            class="inline-flex items-center text-yellow-500 font-medium group-hover:text-white transition-colors">
-                            Watch Film <i class="fas fa-play-circle ml-2 text-xl"></i>
-                        </span>
-                    </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -286,7 +381,7 @@
                 <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Tech Reviews</h2>
                 <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
-
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Tech Review: Sony A7CII -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
@@ -304,17 +399,14 @@
                 <!-- Tech Review: AIARTY Video Enhancer -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-48">
-                        <img src="https://img.youtube.com/vi/fsYA84tjrTE/maxresdefault.jpg"
-                            alt="AIARTY Video Enhancer Review thumbnail" class="w-full h-full object-cover">
+                        <img src="https://img.youtube.com/vi/fsYA84tjrTE/maxresdefault.jpg" alt="AIARTY Video Enhancer Review thumbnail" class="w-full h-full object-cover">
                         <div class="hover-overlay">
-                            <a href="aiarty-video-enhancer-review.html" class="text-white font-bold text-lg">Read
-                                Review</a>
+                            <a href="aiarty-video-enhancer-review.html" class="text-white font-bold text-lg">Read Review</a>
                         </div>
                     </div>
                     <div class="p-6 bg-dark">
                         <h3 class="text-lg font-bold text-white mb-2">AIARTY Video Enhancer</h3>
-                        <p class="text-gray-300 text-sm mb-4">Lifetime AI upscaling, denoise, and slow motion on a
-                            budget.</p>
+                        <p class="text-gray-300 text-sm mb-4">Lifetime AI upscaling, denoise, and slow motion on a budget.</p>
                     </div>
                 </div>
                 <!-- Tech Review 1 -->
@@ -322,29 +414,12 @@
                     <div class="relative overflow-hidden h-48">
                         <img src="bose.jpeg" alt="Bose S1 Pro Plus vs Everse 8" class="w-full h-full object-cover">
                         <div class="hover-overlay">
-                            <a href="https://www.carltravels.com/bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html"
-                                class="text-white font-bold text-lg">Read Review</a>
+                            <a href="https://www.carltravels.com/bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html" class="text-white font-bold text-lg">Read Review</a>
                         </div>
                     </div>
                     <div class="p-6 bg-dark">
                         <h3 class="text-lg font-bold text-white mb-2">Bose S1 Pro Plus vs Everse 8</h3>
-                        <p class="text-gray-300 text-sm mb-4">Comparing portable PA speakers for busking, gigs, and
-                            travel.</p>
-                    </div>
-                </div>
-
-                <!-- Tech Review: Sony A7S III -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="/images/sony-a7siii.jpg" alt="Sony A7S III" class="w-full h-full object-cover">
-                        <div class="hover-overlay">
-                            <a href="/reviews/sony-a7siii/" class="text-white font-bold text-lg">Read Review</a>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">Sony A7S III</h3>
-                        <p class="text-gray-300 text-sm mb-4">The ultimate low-light camera for cinematic travel films.
-                        </p>
+                        <p class="text-gray-300 text-sm mb-4">Comparing portable PA speakers for busking, gigs, and travel.</p>
                     </div>
                 </div>
 
@@ -365,55 +440,33 @@
                 <!-- Tech Review 3 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-48">
-                        <img src="https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg"
-                            alt="Beginner's Guide to DaVinci Resolve 2025" class="w-full h-full object-cover">
+                        <img src="https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg" alt="Beginner's Guide to DaVinci Resolve 2025" class="w-full h-full object-cover">
                         <div class="hover-overlay">
-                            <a href="/blog.html#resolve-guide" class="text-white font-bold text-lg">Read Guide</a>
+                            <a href="beginners-guide-davinci-resolve-2025.html" class="text-white font-bold text-lg">Read Guide</a>
                         </div>
                     </div>
                     <div class="p-6 bg-dark">
                         <h3 class="text-lg font-bold text-white mb-2">Beginner's Guide to DaVinci Resolve 2025</h3>
-                        <p class="text-gray-300 text-sm mb-4">Step-by-step tutorial to edit, grade, and export cinematic
-                            videos.</p>
+                        <p class="text-gray-300 text-sm mb-4">Step-by-step tutorial to edit, grade, and export cinematic videos.</p>
                     </div>
                 </div>
-
-                <!-- Tech Review: Zhiyun Weebill 2 -->
+                <!-- Tech Review 4 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-48">
-                        <img src="/images/weebill2.jpg" alt="Zhiyun Weebill 2" class="w-full h-full object-cover">
+                        <img src="https://img.youtube.com/vi/2RN8XC9I_fc/maxresdefault.jpg" alt="DJI Flip drone" class="w-full h-full object-cover">
                         <div class="hover-overlay">
-                            <a href="/reviews/zhiyun-weebill-2/" class="text-white font-bold text-lg">Read Review</a>
+                            <a href="DJI-Flip-review.html" class="text-white font-bold text-lg">Read Review</a>
                         </div>
                     </div>
                     <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">Zhiyun Weebill 2</h3>
-                        <p class="text-gray-300 text-sm mb-4">Cinematic stabilization for small crews.</p>
+                        <h3 class="text-lg font-bold text-white mb-2">DJI Flip</h3>
+                        <p class="text-gray-300 text-sm mb-4">Is DJI's budget drone a toy or a travel essential?</p>
                     </div>
                 </div>
-                <div class="p-6 bg-dark">
-                    <h3 class="text-lg font-bold text-white mb-2">Beginner's Guide to DaVinci Resolve 2025</h3>
-                    <p class="text-gray-300 text-sm mb-4">Step-by-step tutorial to edit, grade, and export cinematic
-                        videos.</p>
-                </div>
             </div>
-            <!-- Tech Review 4 -->
-            <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                <div class="relative overflow-hidden h-48">
-                    <img src="https://img.youtube.com/vi/2RN8XC9I_fc/maxresdefault.jpg" alt="DJI Flip drone"
-                        class="w-full h-full object-cover">
-                    <div class="hover-overlay">
-                        <a href="DJI-Flip-review.html" class="text-white font-bold text-lg">Read Review</a>
-                    </div>
-                </div>
-                <div class="p-6 bg-dark">
-                    <h3 class="text-lg font-bold text-white mb-2">DJI Flip</h3>
-                    <p class="text-gray-300 text-sm mb-4">Is DJI's budget drone a toy or a travel essential?</p>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
@@ -422,47 +475,54 @@
                 <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Film Portfolio</h2>
                 <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
             </div>
-
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/PORbiT3WuGU?autoplay=1&mute=1"
-                        title="Wedding Film" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/PORbiT3WuGU?autoplay=1&mute=1" title="Wedding Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="hover-overlay">
                         <a href="portfolio.html#wedding1" class="text-white font-bold text-lg">View Wedding Film</a>
                     </div>
                 </div>
-
+                
                 <!-- Portfolio Item 2 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/ydFr5B6rqUk?autoplay=1&mute=1"
-                        title="Commercial" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/ydFr5B6rqUk?autoplay=1&mute=1" title="Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="hover-overlay">
                         <a href="portfolio.html#commercial1" class="text-white font-bold text-lg">View Commercial</a>
                     </div>
                 </div>
-
+                
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/Ef3u83dqN1Y?autoplay=1&mute=1"
-                        title="Travel Film" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/Ef3u83dqN1Y?autoplay=1&mute=1" title="Travel Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="hover-overlay">
                         <a href="portfolio.html#travel1" class="text-white font-bold text-lg">View Travel Film</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Moved Fight Club to Featured Films section -->
+            
+            <div class="mt-12">
+                <a href="portfolio.html#cinematic-shorts" class="block group">
+                    <div class="relative w-full min-h-[260px] md:min-h-[320px] lg:min-h-[360px] overflow-hidden rounded-2xl shadow-2xl">
+                        <img src="https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg" alt="Fight Club inspired cinematic short filmed in Koh Samui" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/40"></div>
+                        <div class="relative z-10 h-full flex flex-col justify-center px-6 py-12 md:px-16">
+                            <span class="text-yellow-400 uppercase tracking-[0.35em] text-xs md:text-sm">New Narrative Short</span>
+                            <h3 class="heading-font text-3xl md:text-5xl text-white mt-4 mb-4">Fight Club: Koh Samui</h3>
+                            <p class="text-gray-300 max-w-2xl text-base md:text-lg">A gritty, self-produced scene capturing the humid streets of Koh Samui. Shot on the Sony A7CII with the Sirui 40mm anamorphic lens to highlight cinematic framing and lighting.</p>
+                            <div class="mt-6">
+                                <span class="inline-flex items-center px-5 py-3 bg-yellow-500 text-black rounded-full font-semibold transition-all duration-300 group-hover:bg-yellow-400">
+                                    Watch the Scene <i class="fas fa-arrow-right ml-3"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
             <div class="text-center mt-12">
-                <a href="portfolio.html"
-                    class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
+                <a href="portfolio.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
                     View Full Portfolio <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -477,63 +537,46 @@
                     <span class="text-yellow-500 font-medium mb-2 inline-block">MY STORY</span>
                     <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">Carl Tomich</h2>
                     <p class="text-gray-300 mb-6">
-                        I’m Carl Tomich — a filmmaker, former DJ, street performer, and long-time creative nomad. I’ve
-                        spent the past 14 years behind the camera, starting out filming live music gigs before moving
-                        into weddings, commercials, and eventually turning my life into the story itself. These days, I
-                        work full-time as a content creator, combining my skills in cinematography, editing, sound
-                        engineering, and web development to document both the beautiful and the brutally honest sides of
-                        travel and creativity.
+                        I’m Carl Tomich — a filmmaker, former DJ, street performer, and long-time creative nomad. I’ve spent the past 14 years behind the camera, starting out filming live music gigs before moving into weddings, commercials, and eventually turning my life into the story itself. These days, I work full-time as a content creator, combining my skills in cinematography, editing, sound engineering, and web development to document both the beautiful and the brutally honest sides of travel and creativity.
                     </p>
                     <p class="text-gray-300 mb-8">
-                        Carl Travels is where all of that comes together — a home for real-world travel tips, filmmaking
-                        and editing hacks, gear guides, and the kind of life knowledge you only pick up on the road. I
-                        shoot mainly on the Sony A7CII, fly a variety of drones depending on the job, and edit between
-                        Adobe Premiere Pro and DaVinci Resolve (depending on how much punishment I’m willing to take).
-                        If you’re looking for polished storytelling with a raw edge — or just curious how someone
-                        survives making a living out of pixels and passport stamps — welcome to the ride.
+                        Carl Travels is where all of that comes together — a home for real-world travel tips, filmmaking and editing hacks, gear guides, and the kind of life knowledge you only pick up on the road. I shoot mainly on the Sony A7CII, fly a variety of drones depending on the job, and edit between Adobe Premiere Pro and DaVinci Resolve (depending on how much punishment I’m willing to take). If you’re looking for polished storytelling with a raw edge — or just curious how someone survives making a living out of pixels and passport stamps — welcome to the ride.
                     </p>
                     <div class="mt-10">
                         <h3 class="text-white text-2xl font-semibold mb-4 flex items-center gap-2">
                             <i class="fas fa-award text-yellow-500"></i> Feature Documentaries
                         </h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <a href="https://www.imdb.com/title/tt4148728/" target="_blank" rel="noopener noreferrer"
-                                class="group bg-black/40 rounded-2xl border border-yellow-500/30 p-5 flex flex-col sm:flex-row gap-4 hover:border-yellow-500 transition-colors">
-                                <img src="/busking.jpg" alt="Busking for Berlin documentary poster"
-                                    class="w-full sm:w-28 h-40 object-cover rounded-xl shadow-lg group-hover:shadow-yellow-500/40 transition-shadow">
+                            <a href="https://www.imdb.com/title/tt4148728/" target="_blank" rel="noopener noreferrer" class="group bg-black/40 rounded-2xl border border-yellow-500/30 p-5 flex flex-col sm:flex-row gap-4 hover:border-yellow-500 transition-colors">
+                                <img src="/busking.jpg" alt="Busking for Berlin documentary poster" class="w-full sm:w-28 h-40 object-cover rounded-xl shadow-lg group-hover:shadow-yellow-500/40 transition-shadow">
                                 <div>
-                                    <span class="uppercase tracking-wide text-yellow-500 text-sm font-medium">Busking
-                                        for Berlin</span>
+                                    <span class="uppercase tracking-wide text-yellow-500 text-sm font-medium">Busking for Berlin</span>
                                     <h4 class="text-white text-xl font-semibold mt-1">Feature Documentary · 2014</h4>
                                     <p class="text-gray-300 text-sm mt-3 leading-relaxed">
-                                        Filmmaker Carl Tomich steps into the shoes of a street performer, relying solely
-                                        on the coins he earns busking across Berlin for an entire year.
+                                        Filmmaker Carl Tomich steps into the shoes of a street performer, relying solely on the coins he earns busking across Berlin for an entire year.
                                     </p>
                                 </div>
                             </a>
-                            <a href="https://www.imdb.com/title/tt35471599/" target="_blank" rel="noopener noreferrer"
-                                class="group bg-black/40 rounded-2xl border border-yellow-500/30 p-5 flex flex-col sm:flex-row gap-4 hover:border-yellow-500 transition-colors">
-                                <img src="/busklifeposter.jpg" alt="Busk Life documentary poster"
-                                    class="w-full sm:w-28 h-40 object-cover rounded-xl shadow-lg group-hover:shadow-yellow-500/40 transition-shadow">
+                            <a href="https://www.imdb.com/title/tt35471599/" target="_blank" rel="noopener noreferrer" class="group bg-black/40 rounded-2xl border border-yellow-500/30 p-5 flex flex-col sm:flex-row gap-4 hover:border-yellow-500 transition-colors">
+                                <img src="/busklifeposter.jpg" alt="Busk Life documentary poster" class="w-full sm:w-28 h-40 object-cover rounded-xl shadow-lg group-hover:shadow-yellow-500/40 transition-shadow">
                                 <div>
-                                    <span class="uppercase tracking-wide text-yellow-500 text-sm font-medium">Busk
-                                        Life</span>
+                                    <span class="uppercase tracking-wide text-yellow-500 text-sm font-medium">Busk Life</span>
                                     <h4 class="text-white text-xl font-semibold mt-1">Feature Documentary · 2024</h4>
                                     <p class="text-gray-300 text-sm mt-3 leading-relaxed">
-                                        A decade later, Carl returns to Berlin’s streets to reconnect with "Neigh Kid
-                                        Horse" and spotlight the city’s evolving busking scene alongside a new wave of
-                                        performers.
+                                        A decade later, Carl returns to Berlin’s streets to reconnect with "Neigh Kid Horse" and spotlight the city’s evolving busking scene alongside a new wave of performers.
                                     </p>
                                 </div>
                             </a>
                         </div>
                     </div>
+                    <a href="#contact" class="px-6 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all">
+                        Get In Touch <i class="fas fa-paper-plane ml-2"></i>
+                    </a>
                 </div>
-
+                
                 <div class="lg:w-1/2 relative fade-in">
                     <div class="relative max-w-md mx-auto">
-                        <div
-                            class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-yellow-500 about-image">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-yellow-500 about-image">
                             <img src="/carl.png" alt="Carl Tomich" class="w-full h-auto">
                         </div>
                     </div>
@@ -547,230 +590,127 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-12 fade-in">
                 <span class="text-yellow-500 font-medium mb-2 inline-block">CREATOR CORNER</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Travel Essentials &amp; Creator
-                    Gear</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">The same kit I recommend on the Destinations page—perfect for
-                    keeping you connected and your content crisp while you explore.</p>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Travel Essentials &amp; Creator Gear</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">The same kit I recommend on the Destinations page—perfect for keeping you connected and your content crisp while you explore.</p>
             </div>
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
                     <h3 class="heading-font text-2xl text-white">Travel Essentials</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5
-                            off (I receive $5 credit)</li>
-                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62"
-                                class="text-yellow-500 hover:text-yellow-400">Sign up here</a></li>
+                        <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5 off (I receive $5 credit)</li>
+                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-400">Sign up here</a></li>
                     </ul>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
                     <h3 class="heading-font text-2xl text-white">Creator Tools</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off →
-                            <a href="https://www.dehancer.com/subscribe"
-                                class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a>
-                        </li>
-                        <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance"
-                                class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
+                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/subscribe" class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a></li>
+                        <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance" class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
                     </ul>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
                     <h3 class="heading-font text-2xl text-white">My Gear – US Links</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a>
-                        </li>
-                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400">Sony A7C
-                                II</a></li>
-                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400">DJI Pocket
-                                3</a></li>
-                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400">Tamron
-                                28–200</a></li>
-                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400">RØDE
-                                Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400">Think Tank
-                                Backpack</a></li>
+                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400">DJI Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400">Tamron 28–200</a></li>
+                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
                     </ul>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
                     <h3 class="heading-font text-2xl text-white">My Gear – AU Links</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a>
-                        </li>
-                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400">Sony A7C
-                                II</a></li>
-                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400">DJI Osmo
-                                Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400">Tamron
-                                24–200</a></li>
-                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400">RØDE
-                                Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400">Think Tank
-                                Backpack</a></li>
+                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400">DJI Osmo Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400">Tamron 24–200</a></li>
+                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section Removed -->
-
-    <!-- Social Feed Section -->
-    <section class="py-20 bg-dark">
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-secondary">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">FOLLOW THE ADVENTURE</span>
-                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Latest From Instagram</h2>
+                <span class="text-yellow-500 font-medium mb-2 inline-block">LET’S COLLABORATE</span>
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2>
                 <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
-                <p class="text-gray-400 mt-4"><a href="https://instagram.com/carlostomich"
-                        class="text-white hover:text-yellow-500 transition-colors">@carlostomich</a></p>
             </div>
-
-            <!-- Dynamic Widget Container -->
-            <div id="instagram-widget-container"
-                class="w-full text-center p-8 border-2 border-dashed border-gray-700 rounded-xl bg-gray-900/50">
-                <i class="fas fa-sync-alt text-yellow-500 text-4xl mb-4"></i>
-                <h3 class="text-xl font-bold text-white mb-2">Live Feed Setup</h3>
-                <p class="text-gray-400 mb-6 max-w-lg mx-auto">
-                    To show your live Instagram posts, this section needs to be connected to a widget service.
-                    This keeps your site fast and secure while automatically updating with your new content.
-                </p>
-
-                <div class="bg-black/50 p-6 rounded-lg max-w-2xl mx-auto text-left">
-                    <p class="text-yellow-500 font-bold mb-2 text-sm uppercase tracking-wider">Instructions:</p>
-                    <ol class="list-decimal list-inside text-gray-300 space-y-2 text-sm">
-                        <li>Visit <a href="https://snapwidget.com" target="_blank"
-                                class="text-white underline hover:text-yellow-500">SnapWidget.com</a> (Free) and create
-                            a "Grid" widget.</li>
-                        <li>Link your Instagram account when prompted.</li>
-                        <li>Copy the code snippet they generate (it starts with <code>&lt;iframe...</code>).</li>
-                        <li>Open this file (<code>index.html</code>) and replace <strong>this entire yellow box</strong>
-                            with that code.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Shop Section -->
-    <section id="shop" class="py-20 bg-[#0b0b0b]">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">THE STORE</span>
-                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Shop Digital Assets & Prints
-                </h2>
-                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
-                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Bring the cinematic look to your own work or your walls.
-                    High-quality LUTs, presets, and limited edition prints.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Shop Item 1: LUTs -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-[#1a1a1a]">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="https://images.unsplash.com/photo-1574313063855-4786d1174beb?q=80&w=2940&auto=format&fit=crop"
-                            alt="Cinematic LUTs Pack"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute top-4 right-4 bg-yellow-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-                            $29</div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-dark rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-white mb-6">Send Me a Message</h3>
+                        <form action="https://formspree.io/f/mnnnoogg" method="POST">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-300 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-300 font-medium mb-2">Your Email</label>
+                                <input type="email" id="email" name="_replyto" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-300 font-medium mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
+                            </div>
+                            <input type="text" name="_gotcha" style="display:none">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission from Carl Tomich">
+                            <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <button type="submit" class="w-full px-6 py-3 bg-yellow-500 text-black rounded-lg font-medium hover:bg-yellow-600 transition-all">
+                                Send Message <i class="fas fa-paper-plane ml-1"></i>
+                            </button>
+                        </form>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Cinematic Travel LUTs</h3>
-                        <p class="text-gray-400 text-sm mb-4">The exact color grading presets I use for my YouTube
-                            travel films. Compatible with Premiere, DaVinci, and FCPX.</p>
-                        <div class="space-y-3">
-                            <!-- TODO: Paste your Stripe Payment Link in the href below -->
-                            <a href="#" target="_blank"
-                                class="block w-full py-3 bg-white text-black font-bold text-center rounded-lg hover:bg-gray-200 transition-all">Buy
-                                Now</a>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-dark rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold text-white mb-6">Contact Information</h3>
+                        <p class="text-gray-300 mb-8">Want to collaborate on a film, discuss travel, or talk tech? Reach out anytime.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-yellow-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-yellow-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-white mb-1">Email</h4>
+                                    <a href="mailto:watchcarltravel@gmail.com" class="text-yellow-500 hover:text-yellow-600">watchcarltravel@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h4 class="font-medium text-white mb-4">Follow My Work</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://www.instagram.com/carlostomich" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Shop Item 2: Print -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-[#1a1a1a]">
-                    <div class="relative overflow-hidden h-64">
-                        <!-- Placeholder for Hanoi by Night Print -->
-                        <img src="https://images.unsplash.com/photo-1555921015-5532091f6026?q=80&w=2070&auto=format&fit=crop"
-                            alt="Hanoi By Night Print"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute top-4 right-4 bg-yellow-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-                            From $49</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">'Hanoi by Night' Print</h3>
-                        <p class="text-gray-400 text-sm mb-4">Limited edition fine art print. Captured in the heart of
-                            Hanoi's Old Quarter during a rainy evening.</p>
-                        <!-- TODO: Paste your Stripe Payment Link in the href below. If you have multiple sizes, you might need multiple links or buttons. -->
-                        <a href="#" target="_blank"
-                            class="block w-full py-3 bg-white text-black font-bold text-center rounded-lg hover:bg-gray-200 transition-all">Buy
-                            Now</a>
-                    </div>
-                </div>
-
-                <!-- Shop Item 3: Lightroom Presets -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-[#1a1a1a]">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="https://images.unsplash.com/photo-1452587925148-ce544ee7702f?q=80&w=2874&auto=format&fit=crop"
-                            alt="Lightroom Presets"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute top-4 right-4 bg-yellow-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-                            $19</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Moody Urban Presets</h3>
-                        <p class="text-gray-400 text-sm mb-4">Transform your street photography with rich tones and deep
-                            shadows. Pack of 10 Lightroom presets.</p>
-                        <!-- TODO: Paste your Stripe Payment Link in the href below -->
-                        <a href="#" target="_blank"
-                            class="block w-full py-3 bg-white text-black font-bold text-center rounded-lg hover:bg-gray-200 transition-all">Buy
-                            Now</a>
-                    </div>
-                </div>
             </div>
-
-            <div class="text-center mt-12">
-                <a href="#"
-                    class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
-                    Visit Full Store <i class="fas fa-shopping-bag ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Banner Section -->
-    <section class="relative py-24 flex items-center justify-center overflow-hidden">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2621&auto=format&fit=crop"
-                alt="Travel Background" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60"></div>
-        </div>
-
-        <div class="container mx-auto px-6 relative z-10 text-center max-w-4xl">
-            <span class="text-yellow-500 font-bold tracking-widest uppercase mb-4 block">Join the Community</span>
-            <h2 class="heading-font text-4xl md:text-6xl text-white mb-6">Never Miss a Journey</h2>
-            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
-                Get exclusive behind-the-scenes content, filmmaking tips, and early access to new travel guides
-                delivered straight to your inbox. No spam, just adventure.
-            </p>
-
-            <form action="https://formspree.io/f/mnnnoogg" method="POST"
-                class="flex flex-col md:flex-row gap-4 justify-center max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Enter your email address..."
-                    class="flex-grow px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 backdrop-blur-sm"
-                    required>
-                <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich Banner">
-                <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_gotcha" style="display:none">
-                <button type="submit"
-                    class="px-8 py-4 bg-yellow-500 text-black font-bold rounded-full hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg">
-                    Subscribe Now
-                </button>
-            </form>
-            <p class="text-gray-500 text-xs mt-4">Safe & secure. Unsubscribe anytime.</p>
         </div>
     </section>
 
@@ -780,8 +720,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <a href="/index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div
-                            class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
                             <i class="fas fa-camera text-black text-lg"></i>
                         </div>
                         <span class="heading-font">Carl Tomich</span>
@@ -790,67 +729,159 @@
                         Crafting cinematic stories through travel, tech, and filmmaking.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank"
-                            class="text-gray-400 hover:text-yellow-500 transition-colors">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.youtube.com/@carltomichtech" target="_blank"
-                            class="text-gray-400 hover:text-yellow-500 transition-colors">
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <div id="global-footer"></div>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
 
-                        <!-- Back to Top Button -->
-                        <button id="back-to-top"
-                            class="fixed bottom-8 right-8 w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
-                            <i class="fas fa-arrow-up"></i>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Home</a></li>
+                        <li><a href="/destinations.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Destinations</a></li>
+                        <li><a href="/portfolio.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Portfolio</a></li>
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">Videos</a></li>
+                        <li><a href="/blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Blog</a></li>
+                        <li><a href="/index.html#about" class="text-gray-400 hover:text-yellow-500 transition-colors">About</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/Berlin.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Berlin</a></li>
+                        <li><a href="/melbournetravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Melbourne</a></li>
+                        <li><a href="/cairnstravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Cairns</a></li>
+                        <li><a href="/phuketravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Phuket</a></li>
+                        <li><a href="/hanoitravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hanoi</a></li>
+                        <li><a href="/osakatravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Osaka</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe for exclusive filmmaking and travel insights.
+                    </p>
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
+                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
+                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-black rounded-r-lg hover:bg-yellow-600 transition-all">
+                            <i class="fas fa-paper-plane"></i>
                         </button>
+                    </form>
+                </div>
+            </div>
 
-                        <!-- JavaScript -->
-                        behavior: 'smooth'
-                        });
-                        }
-                        }
-                        });
-                        });
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Carl Tomich. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="/privacy-policy.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                        // Navbar scroll effect
-                        const navbar = document.getElementById('navbar');
-                        if (navbar) {
-                        window.addEventListener('scroll', function () {
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Mobile Menu Toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', function() {
+                        mobileMenu.classList.toggle('open');
+                        this.querySelector('i').classList.toggle('fa-bars');
+                        this.querySelector('i').classList.toggle('fa-times');
+                    });
+                }
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const id = this.getAttribute('href');
+                        if (id !== '#') {
+                            const el = document.querySelector(id);
+                            if (el) {
+                                if (mobileMenu && mobileMenu.classList.contains('open')) {
+                                    mobileMenu.classList.remove('open');
+                                    if (mobileMenuButton) {
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
+                                        mobileMenuButton.querySelector('i').classList.toggle('fa-times');
+                                    }
+                                }
+                                window.scrollTo({
+                                    top: el.offsetTop - 80,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }
+                    });
+                });
+
+                // Navbar scroll effect
+                const navbar = document.getElementById('navbar');
+                if (navbar) {
+                    window.addEventListener('scroll', function() {
                         if (window.scrollY > 50) {
-                        navbar.classList.add('scrolled');
+                            navbar.classList.add('scrolled');
                         } else {
-                        navbar.classList.remove('scrolled');
+                            navbar.classList.remove('scrolled');
                         }
-                        });
-                        }
+                    });
+                }
 
-                        // Back to top button
-                        const backToTopButton = document.getElementById('back-to-top');
-                        if (backToTopButton) {
-                        window.addEventListener('scroll', function () {
+                // Back to top button
+                const backToTopButton = document.getElementById('back-to-top');
+                if (backToTopButton) {
+                    window.addEventListener('scroll', function() {
                         if (window.scrollY > 300) {
-                        backToTopButton.classList.remove('opacity-0', 'invisible');
-                        backToTopButton.classList.add('opacity-100', 'visible');
+                            backToTopButton.classList.remove('opacity-0', 'invisible');
+                            backToTopButton.classList.add('opacity-100', 'visible');
                         } else {
-                        backToTopButton.classList.remove('opacity-100', 'visible');
-                        backToTopButton.classList.add('opacity-0', 'invisible');
+                            backToTopButton.classList.remove('opacity-100', 'visible');
+                            backToTopButton.classList.add('opacity-0', 'invisible');
                         }
-                        });
-                        backToTopButton.addEventListener('click', function () {
+                    });
+                    backToTopButton.addEventListener('click', function() {
                         window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
+                            top: 0,
+                            behavior: 'smooth'
                         });
-                        });
-                        }
-                        } catch (error) {
-                        console.error('JavaScript Error in index.html:', error);
-                        }
-                        });
-                        </script>
-                        <script src="/assets/js/site.js" defer></script>
+                    });
+                }
+            } catch (error) {
+                console.error('JavaScript Error in index.html:', error);
+            }
+        });
+    </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
-
 </html>
