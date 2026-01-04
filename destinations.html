@@ -187,6 +187,22 @@
             border-color: rgba(245, 197, 24, 0.8);
             background: rgba(245, 197, 24, 0.12);
         }
+        .country-toggle {
+            background: rgba(20, 20, 20, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #e5e7eb;
+            transition: all 0.2s ease;
+        }
+        .country-toggle:hover {
+            border-color: rgba(245, 197, 24, 0.5);
+            background: rgba(245, 197, 24, 0.08);
+        }
+        .country-toggle .fa-chevron-down {
+            transition: transform 0.2s ease;
+        }
+        .country-toggle.open .fa-chevron-down {
+            transform: rotate(180deg);
+        }
         .map-video-popup {
             width: min(260px, 90vw);
         }
@@ -603,6 +619,33 @@
                         </div>
                     </div>
                 </div>
+                <!-- Destination 6aa: Sapa -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="sapa" id="sapa-card">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://img.youtube.com/vi/E4SJfs6AtF4/maxresdefault.jpg" alt="Sapa mountain views" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 destination-overlay"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Sapa</h3>
+                                <p class="text-sm">Fansipan & Terraces</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-yellow-500 text-black text-xs px-3 py-1 rounded-full">New</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Vietnam</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.8</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">Ride the Fansipan cable car, chase cloud inversions, and wander rice terraces in Vietnam’s northern highlands.</p>
+                            <a href="sapa-travel-guide.html" class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Destination 6b: Hà Giang Loop -->
                 <div class="destination-card rounded-xl overflow-hidden shadow-lg">
                     <div class="destination-card-inner">
@@ -968,214 +1011,215 @@
                         <div class="map-card p-6 md:p-8">
                             <h3 class="heading-font text-2xl font-bold text-white mb-3">Destinations</h3>
                             <p class="text-gray-200 mb-5">Browse highlights and jump directly to the spot you want to explore.</p>
-                            <div class="grid sm:grid-cols-2 gap-3" id="map-destination-list">
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="bali">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Indonesia</p>
-                                            <p class="font-semibold text-gray-900">Bali</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                            <div class="space-y-3" id="map-destination-list">
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Indonesia">
+                                        <span class="font-semibold">Indonesia</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Indonesia">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Indonesia" data-map-destination="bali">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Bali</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Indonesia" data-map-destination="nusalembongan">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Nusa Lembongan</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="nusalembongan">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Indonesia</p>
-                                            <p class="font-semibold text-gray-900">Nusa Lembongan</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Germany">
+                                        <span class="font-semibold">Germany</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Germany">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Germany" data-map-destination="berlin">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Berlin</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="berlin">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Germany</p>
-                                            <p class="font-semibold text-gray-900">Berlin</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Australia">
+                                        <span class="font-semibold">Australia</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Australia">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Australia" data-map-destination="melbourne">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Melbourne</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Australia" data-map-destination="cairns">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Cairns</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Australia" data-map-destination="portdouglas">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Port Douglas</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="melbourne">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Australia</p>
-                                            <p class="font-semibold text-gray-900">Melbourne</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Thailand">
+                                        <span class="font-semibold">Thailand</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Thailand">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Thailand" data-map-destination="phuket">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Phuket</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="cairns">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Australia</p>
-                                            <p class="font-semibold text-gray-900">Cairns</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Vietnam">
+                                        <span class="font-semibold">Vietnam</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Vietnam">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="hanoi">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Hanoi</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="halongbay">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Ha Long Bay</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="hcmc">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Ho Chi Minh City</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="ninhbinh">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Ninh Bình</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="sapa">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Sapa</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="hagiang">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Hà Giang Loop</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="tranquoc">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Trấn Quốc Pagoda</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="lotte-aquarium">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Lotte World Aquarium</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="honchong">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Hon Chong Rocks</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="vinwonders">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">VinWonders Nha Trang</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Vietnam" data-map-destination="danang">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Da Nang</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="portdouglas">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Australia</p>
-                                            <p class="font-semibold text-gray-900">Port Douglas</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Japan">
+                                        <span class="font-semibold">Japan</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Japan">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Japan" data-map-destination="tokyo">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Tokyo</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Japan" data-map-destination="kyoto">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Kyoto</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Japan" data-map-destination="osaka">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Osaka</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Japan" data-map-destination="hiroshima">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Hiroshima</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="phuket">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Thailand</p>
-                                            <p class="font-semibold text-gray-900">Phuket</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Montenegro">
+                                        <span class="font-semibold">Montenegro</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Montenegro">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Montenegro" data-map-destination="budva">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Budva</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="hanoi">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Hanoi</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Croatia">
+                                        <span class="font-semibold">Croatia</span>
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </button>
+                                    <div class="space-y-2 hidden" data-country-list="Croatia">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Croatia" data-map-destination="korcula">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Korčula</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="halongbay">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Ha Long Bay</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="hcmc">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Ho Chi Minh City</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="ninhbinh">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Ninh Bình</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="hagiang">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Hà Giang Loop</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="tranquoc">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Trấn Quốc Pagoda</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="lotte-aquarium">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Lotte World Aquarium</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="honchong">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Hon Chong Rocks</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="vinwonders">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">VinWonders Nha Trang</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="danang">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Vietnam</p>
-                                            <p class="font-semibold text-gray-900">Da Nang</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="tokyo">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Japan</p>
-                                            <p class="font-semibold text-gray-900">Tokyo</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="kyoto">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Japan</p>
-                                            <p class="font-semibold text-gray-900">Kyoto</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="osaka">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Japan</p>
-                                            <p class="font-semibold text-gray-900">Osaka</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="hiroshima">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Japan</p>
-                                            <p class="font-semibold text-gray-900">Hiroshima</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="budva">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Montenegro</p>
-                                            <p class="font-semibold text-gray-900">Budva</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
-                                <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-map-destination="korcula">
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm text-gray-500">Croatia</p>
-                                            <p class="font-semibold text-gray-900">Korčula</p>
-                                        </div>
-                                        <span class="text-yellow-500"><i class="fas fa-play"></i></span>
-                                    </div>
-                                </button>
+                                </div>
                             </div>
                         </div>
                         <div class="map-card p-6 md:p-8">
@@ -1488,6 +1532,13 @@
                             video: 'https://www.youtube.com/embed/Hict_8lPMvw'
                         },
                         {
+                            id: 'sapa',
+                            name: 'Sapa, Vietnam',
+                            coords: [22.335, 103.8438],
+                            url: 'sapa-travel-guide.html',
+                            video: 'https://www.youtube.com/embed/E4SJfs6AtF4'
+                        },
+                        {
                             id: 'hagiang',
                             name: 'Hà Giang Loop, Vietnam',
                             coords: [22.8233, 104.9836],
@@ -1580,11 +1631,33 @@
 
                     const markers = {};
                     const destinationButtons = Array.from(document.querySelectorAll('[data-map-destination]'));
+                    const countryToggles = Array.from(document.querySelectorAll('[data-country-toggle]'));
+
+                    const setCountryOpen = (country, open) => {
+                        const list = document.querySelector(`[data-country-list="${country}"]`);
+                        const toggle = document.querySelector(`[data-country-toggle="${country}"]`);
+                        if (list && toggle) {
+                            list.classList.toggle('hidden', !open);
+                            toggle.classList.toggle('open', open);
+                        }
+                    };
+
+                    countryToggles.forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const country = toggle.dataset.countryToggle;
+                            const list = document.querySelector(`[data-country-list="${country}"]`);
+                            const shouldOpen = list ? list.classList.contains('hidden') : false;
+                            setCountryOpen(country, shouldOpen);
+                        });
+                    });
 
                     const highlightDestination = (id) => {
                         destinationButtons.forEach(button => {
                             const isActive = button.dataset.mapDestination === id;
                             button.classList.toggle('active', isActive);
+                            if (isActive && button.dataset.country) {
+                                setCountryOpen(button.dataset.country, true);
+                            }
                         });
                     };
 
@@ -1596,6 +1669,10 @@
                         highlightDestination(id);
                         if (markers[id]) {
                             markers[id].openPopup();
+                        }
+                        const sectionTarget = document.getElementById(id) || document.getElementById(`${id}-card`) || document.querySelector(`[data-destination-id="${id}"]`);
+                        if (sectionTarget) {
+                            sectionTarget.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         }
                         mapElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     };
