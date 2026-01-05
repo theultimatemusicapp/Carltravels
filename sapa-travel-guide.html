@@ -49,6 +49,8 @@
     <!-- Tailwind & Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Map Library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2myLtga7rjOfp3N9yuqQpM5Cw4s46Xk9Bs8bE0s=" crossorigin="" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
@@ -103,6 +105,7 @@
             transform: translateY(-6px);
             box-shadow: 0 20px 45px -20px rgba(0, 0, 0, 0.45);
         }
+        #sapa-map { height: 420px; }
     </style>
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
@@ -255,7 +258,7 @@
                 <h2 class="heading-font text-3xl md:text-4xl text-white">Sapa Highlights</h2>
                 <p class="text-gray-300">Use this single map to keep Sapa town, the Fansipan cable car station, the summit, and Mường Hoa Valley’s terraces in one view.</p>
                 <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95128.83077962915!2d103.738!3d22.334!2m3!1f0!2f0!3f0!3m3!1m2!1s0x31494f8b94e6c02f%3A0xd427e1a6fc7f49d4!2sSa%20Pa%2C%20Lao%20Cai!3m3!1m2!1s0x31494f9d7bb1c8f5%3A0x3f2e9a50e54f9b89!2sFansipan%20Cable%20Car%20Station!3m3!1m2!1s0x314951f6d7475e09%3A0x8db36805b97d2518!2sFansipan!3m3!1m2!1s0x31494fb4d54365bf%3A0x5ae1d0dc012b2195!2sTavan%2C%20Lao%20Cai!5e0!3m2!1sen!2s!4v1736960000000!5m2!1sen!2s" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="sapa-map" aria-label="Interactive map of Sapa highlights"></div>
                 </div>
                 <p class="text-gray-400 text-sm">Pins include Sapa town, the Fansipan cable car station, the summit, and a Mường Hoa Valley rice-terrace village.</p>
             </div>
@@ -276,6 +279,7 @@
         <p>© 2025 Carl Travels. All rights reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j7kGEXGkI1VdRfveCq4C6xY0Jp1gXv+QtbYvC5s=" crossorigin=""></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const navbar = document.getElementById('navbar');
@@ -290,6 +294,26 @@
                 mobileMenu.classList.toggle('open');
                 mobileMenu.style.maxHeight = mobileMenu.classList.contains('open') ? `${mobileMenu.scrollHeight}px` : '0';
             });
+
+            const map = L.map('sapa-map').setView([22.3345, 103.841], 12.5);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            const spots = [
+                { coords: [22.335, 103.843], title: 'Sapa Town', detail: 'Hotels, cafés, and the central square.' },
+                { coords: [22.3168, 103.8586], title: 'Fansipan Cable Car Station', detail: 'Base station for the cable car.' },
+                { coords: [22.30499, 103.80207], title: 'Fansipan Summit', detail: 'The Roof of Indochina at 3,143 m.' },
+                { coords: [22.3119, 103.8846], title: 'Lao Chải & Tả Van', detail: 'Rice terraces and homestays in Mường Hoa Valley.' }
+            ];
+
+            const markers = spots.map(({ coords, title, detail }) => {
+                return L.marker(coords).addTo(map).bindPopup(`<strong>${title}</strong><br>${detail}`);
+            });
+
+            const group = L.featureGroup(markers);
+            map.fitBounds(group.getBounds(), { padding: [20, 20] });
         });
     </script>
     <script src="/assets/js/site.js" defer></script>
