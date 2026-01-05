@@ -1,0 +1,263 @@
+{
+  "counts": {
+    "total": 4938
+  },
+  "broken_internal": [
+    {
+      "file": "./best-cafes-in-tay-ho-for-digital-nomads.html",
+      "link": "/tay-ho-hanoi-guide/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./best-cafes-in-tay-ho-for-digital-nomads.html",
+      "link": "/tag/hanoi/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./best-cafes-in-tay-ho-for-digital-nomads.html",
+      "link": "/tag/vietnam/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./best-cafes-in-tay-ho-for-digital-nomads.html",
+      "link": "/tag/hanoi/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./best-cafes-in-tay-ho-for-digital-nomads.html",
+      "link": "/tay-ho-hanoi-guide/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./best-cafes-in-tay-ho-for-digital-nomads.html",
+      "link": "/tag/vietnam/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./terms-and-conditions.html",
+      "link": "/terms.jpg",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./index.html",
+      "link": "/cinematic-reel.mp4",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./privacy-policy.html",
+      "link": "/privacy.jpg",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./dji-mini-3-pro-review.html",
+      "link": "images/mini3pro.jpg",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./vietnam-e-visa-2026-guide.html",
+      "link": "/tag/vietnam/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./vietnam-e-visa-2026-guide.html",
+      "link": "/tag/hanoi/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./vietnam-e-visa-2026-guide.html",
+      "link": "/tay-ho-hanoi-guide/",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "destinations.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "blog.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "donate.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "Berlin.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "melbournetravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "cairnstravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "phuketravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "hanoitravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "osakatravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "privacy-policy.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "terms-and-conditions.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "destinations.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "blog.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "donate.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "Berlin.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "melbournetravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "cairnstravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "phuketravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "hanoitravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "osakatravelguide.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "privacy-policy.html",
+      "suggestion": "check path/extension"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "terms-and-conditions.html",
+      "suggestion": "check path/extension"
+    }
+  ],
+  "broken_anchors": [
+    {
+      "file": "./farnorthqueenslandtravelguide.html",
+      "link": "#contact",
+      "anchor": "contact",
+      "target": "/workspace/Carltravels/farnorthqueenslandtravelguide.html"
+    },
+    {
+      "file": "./farnorthqueenslandtravelguide.html",
+      "link": "#contact",
+      "anchor": "contact",
+      "target": "/workspace/Carltravels/farnorthqueenslandtravelguide.html"
+    },
+    {
+      "file": "./farnorthqueenslandtravelguide.html",
+      "link": "#contact",
+      "anchor": "contact",
+      "target": "/workspace/Carltravels/farnorthqueenslandtravelguide.html"
+    },
+    {
+      "file": "./index.html",
+      "link": "portfolio.html#wedding1",
+      "anchor": "wedding1",
+      "target": "/workspace/Carltravels/portfolio.html"
+    },
+    {
+      "file": "./index.html",
+      "link": "portfolio.html#commercial1",
+      "anchor": "commercial1",
+      "target": "/workspace/Carltravels/portfolio.html"
+    },
+    {
+      "file": "./index.html",
+      "link": "portfolio.html#travel1",
+      "anchor": "travel1",
+      "target": "/workspace/Carltravels/portfolio.html"
+    },
+    {
+      "file": "./videos/osaka-kobe-beef-experience.html",
+      "link": "../osakatravelguide.html#osaka-watch",
+      "anchor": "osaka-watch",
+      "target": "/workspace/Carltravels/osakatravelguide.html"
+    },
+    {
+      "file": "./videos/osaka-expo-70-park-journey.html",
+      "link": "../osakatravelguide.html#osaka-watch",
+      "anchor": "osaka-watch",
+      "target": "/workspace/Carltravels/osakatravelguide.html"
+    },
+    {
+      "file": "./videos/osaka-dotonbori-at-night.html",
+      "link": "../osakatravelguide.html#osaka-watch",
+      "anchor": "osaka-watch",
+      "target": "/workspace/Carltravels/osakatravelguide.html"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "#about",
+      "anchor": "about",
+      "target": "/workspace/Carltravels/port-douglas-travel-guide/index.html"
+    },
+    {
+      "file": "./port-douglas-travel-guide/index.html",
+      "link": "#contact",
+      "anchor": "contact",
+      "target": "/workspace/Carltravels/port-douglas-travel-guide/index.html"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "#about",
+      "anchor": "about",
+      "target": "/workspace/Carltravels/ha-long-bay-travel-guide/index.html"
+    },
+    {
+      "file": "./ha-long-bay-travel-guide/index.html",
+      "link": "#contact",
+      "anchor": "contact",
+      "target": "/workspace/Carltravels/ha-long-bay-travel-guide/index.html"
+    }
+  ],
+  "suspicious_external": []
+}
