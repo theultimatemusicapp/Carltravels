@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Things That Hit Me When I Came Back to Australia - Carl Travels</title>
+    <!-- Cookiebot for GDPR Compliance -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <!-- Meta Tags -->
+    <meta name="description" content="A personal reflection on returning to Australia, the cultural shifts that stood out after living abroad, and why I chose to leave again." />
+    <meta name="keywords" content="returning to Australia, why I left again, living overseas perspective, Berlin travel, Vietnam life, Australia travel blog">
+    <meta name="author" content="Carl Ostomich">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="The Things That Hit Me When I Came Back to Australia - Carl Travels">
+    <meta property="og:description" content="What stood out after returning to Australia from Europe and Asia, and why I left again." />
+    <meta property="og:image" content="https://www.carltravels.com/images/australialeave.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/what-i-learned-after-returning-to-australia-and-why-i-LEFT-again.html">
+    <meta property="og:type" content="article">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Things That Hit Me When I Came Back to Australia - Carl Travels">
+    <meta name="twitter:description" content="What stood out after returning to Australia from Europe and Asia, and why I left again." />
+    <meta name="twitter:image" content="https://www.carltravels.com/images/australialeave.jpg">
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+        
+        :root {
+            --primary: #f5c518; /* Muted gold for accents */
+            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
+            --dark: #1a1a1a; /* Near-black for text/body */
+            --light: #d4d4d4; /* Light gray for secondary text */
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
+        }
+        
+        .heading-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+        
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="/index.html" class="text-2xl font-bold flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                        <i class="fas fa-camera text-black text-lg"></i>
+                    </div>
+                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Tomich</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="nav-link font-medium transition-colors">Home</a>
+                    <a href="/destinations.html" class="nav-link font-medium transition-colors">Destinations</a>
+                    <a href="/portfolio.html" class="nav-link font-medium transition-colors">Portfolio</a>
+                    <a href="/videos/index.html" class="nav-link font-medium transition-colors">Watch</a>
+                    <a href="/blog.html" class="nav-link font-medium transition-colors">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium transition-colors">Gear</a>
+                    <a href="/index.html#about" class="nav-link font-medium transition-colors">About</a>
+                    <a href="/donate.html" class="nav-link font-medium transition-colors">Donate</a>
+                    <a href="/index.html#contact" class="contact-button px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-full hover:shadow-lg transition-all">Contact</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/index.html" class="mobile-link block px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="/destinations.html" class="mobile-link block px-3 py-2 rounded-md">Destinations</a>
+                    <a href="/portfolio.html" class="mobile-link block px-3 py-2 rounded-md">Portfolio</a>
+                    <a href="/videos/index.html" class="mobile-link block px-3 py-2 rounded-md">Watch</a>
+                    <a href="/blog.html" class="mobile-link block px-3 py-2 rounded-md">Blog</a>
+                    <a href="/gear.html" class="mobile-link block px-3 py-2 rounded-md">Gear</a>
+                    <a href="/index.html#about" class="mobile-link block px-3 py-2 rounded-md">About</a>
+                    <a href="/donate.html" class="mobile-link block px-3 py-2 rounded-md">Donate</a>
+                    <a href="/index.html#contact" class="mobile-link block px-3 py-2 rounded-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden min-h-[60vh] flex items-center pt-20">
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        The Things That Hit Me When I Came Back to Australia
+                    </h1>
+                    <p class="text-lg text-yellow-300 mb-8 max-w-lg">
+                        And why it never really felt like home again.
+                    </p>
+                    <a href="#article" class="px-8 py-3 bg-white text-yellow-500 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg">
+                        Read the Full Story
+                    </a>
+                </div>
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
+                            <img src="/australialeave.jpg" alt="Australia coastline at dusk" class="w-full h-auto">
+                            <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Coming Back, Seeing Differently</h3>
+                                <p class="text-sm opacity-90">Carl Travels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section id="article" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Article Content -->
+                <div class="lg:col-span-2">
+                    <div class="text-center mb-16">
+                        <span class="text-yellow-500 font-medium mb-2 inline-block">PERSONAL JOURNEY</span>
+                        <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">🇦🇺 Coming Back With Different Eyes</h2>
+                        <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
+                    </div>
+                    
+                    <div class="prose max-w-none">
+                        <p class="text-gray-600 mb-8">
+                            I came back to Australia expecting a familiar comfort, but everything felt louder than I remembered. The distance, the cost, the rules, and the pace of life all hit differently once I had lived in places like Berlin, Vietnam, and Japan. Here are the moments that stood out, and why I ended up leaving again.
+                        </p>
+
+                        <p class="text-gray-600 italic mb-8">If this saved you time or money, there’s a coffee link below.</p>
+                        
+                        <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">1. Australia Feels Heavily Regulated Once You Have Lived Elsewhere</h3>
+                            <p class="text-gray-600 mb-6">Coming back, I immediately noticed how controlled everyday life felt. There are rules layered over almost everything. Where you can drink. Where you can park. Where you can sit. Even how you relax feels monitored. Growing up, this felt normal. After living overseas, it felt constant. That low-level sense of supervision never quite disappears, and it subtly changes how free a place feels.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">2. Being Able to Drink Almost Anywhere in Berlin Changes Your Perspective</h3>
+                            <p class="text-gray-600 mb-6">In Berlin, grabbing a beer from a Späti and sitting on the street is completely normal. People gather casually, talk, people-watch, then move on. No one interferes. No one cares. The city feels alive because people are trusted to exist in public space. Coming back to Australia made public drinking laws feel less about safety and more about control.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">3. Cheap Beer in Germany Ruins Australian Beer Prices Forever</h3>
+                            <p class="text-gray-600 mb-6">Beer in Germany is cheap, accessible, and treated like a normal part of life. You buy it at supermarkets, corner stores, even train stations. It is not wrapped in heavy taxation or moral judgement. Back in Australia, paying premium prices for average beer felt absurd. Not because of affordability, but because of what it said about how tightly everyday pleasures are regulated.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">4. Vietnam Resets Your Expectations of What Food and Drinks Should Cost</h3>
+                            <p class="text-gray-600 mb-6">Living in Vietnam quietly changes you. Eating out is normal. Coffee is cheap. Drinks are affordable. You do not constantly calculate whether something is worth it. Returning to Australia made daily life feel heavier. Meals, drinks, even casual outings started to feel planned and priced instead of spontaneous. That mental load returned faster than I expected.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">5. Getting Around Europe Makes Australian Cities Feel Inefficient</h3>
+                            <p class="text-gray-600 mb-6">Europe rewires how you understand movement. Trains are fast, frequent, and intuitive. Cities are dense and connected. Berlin has around four million people, yet you can cross it in about thirty minutes by train. Melbourne has five million and it can take two to three hours to get from one side to the other. That difference shapes your entire relationship with a city.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">6. Australia Feels Isolated After You Have Experienced Europe</h3>
+                            <p class="text-gray-600 mb-6">This is not just about geography. It is about access. In Europe, visiting another country feels casual. A train ride, a cheap flight, a weekend decision. Borders exist, but they rarely dominate your thinking. Back in Australia, distance feels heavier again. Travel becomes something you plan carefully rather than something that fits naturally into life.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">7. Japan Felt Like Australia, But With Better Systems</h3>
+                            <p class="text-gray-600 mb-6">Japan was the closest place I experienced to Australia in terms of cleanliness, safety, and structure. Streets are spotless. Cities feel safe. Systems work. The difference is transport and trust. Public transport is fast, cheap, and constant, more like Berlin or Europe. Convenience stores like 7-Eleven sell alcohol at all hours, yet people drink quietly and respectfully. It raised a genuine question for me. Can Australians simply not handle alcohol without strict restrictions? Japan showed that order does not require suffocation. There is structure, but also controlled chaos, and it works.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">8. Public Space Feels More Alive Overseas</h3>
+                            <p class="text-gray-600 mb-6">In Berlin, parks and streets feel like shared living rooms. People sit, drink, talk, read, play music, or do nothing at all. Cities feel lived in. In Vietnam, street life spills into everything and gives places energy. Australian cities felt quieter and more curated by comparison. Public space often felt like something you pass through rather than truly inhabit.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">9. Conversations at Home Felt Narrower Than I Remembered</h3>
+                            <p class="text-gray-600 mb-6">People were friendly and welcoming, but conversations looped quickly. Work, property, schedules, weekends structured around recovery from work. Overseas, conversations more often drifted toward place, movement, food, culture, and the unexpected moments of daily life. That difference was subtle, but it added up.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">10. I Realised I Had Changed More Than Australia Had</h3>
+                            <p class="text-gray-600 mb-6">Australia did not feel wrong. It just did not feel aligned anymore. Living overseas changed how I valued time, movement, simplicity, and access to the wider world. Coming back showed me that I could stay and be comfortable, but comfort was no longer enough. The life I wanted had shifted elsewhere.</p>
+
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Why I Left Again</h3>
+                            <p class="text-gray-600 mb-4">Leaving was not about rejecting Australia. It was about recognising that the way I now live did not fit the structure Australia quietly demands. Home is not just where you are from. It is where the way you live actually makes sense.</p>
+
+                            <p class="text-gray-600 italic mb-4">I don’t sell courses or hype. If this helped, you know where the button is.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8 sticky top-24">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Quick Takeaways</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li><i class="fas fa-location-dot mr-2 text-yellow-500"></i> Perspective shifts fast</li>
+                            <li><i class="fas fa-mug-hot mr-2 text-yellow-500"></i> Daily costs add weight</li>
+                            <li><i class="fas fa-train mr-2 text-yellow-500"></i> Movement shapes freedom</li>
+                            <li><i class="fas fa-wine-glass mr-2 text-yellow-500"></i> Trust changes public space</li>
+                            <li><i class="fas fa-heart mr-2 text-yellow-500"></i> Home is where life fits</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
+                        <p class="text-gray-600 mb-4">Get raw stories, travel tips, and inspiration straight to your inbox.</p>
+                        <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
+                            <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                            <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_gotcha" style="display:none">
+                            <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                                Subscribe <i class="fas fa-paper-plane ml-1"></i>
+                            </button>
+                        </form>
+                        <p class="text-gray-500 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="whyileftaustralia.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
+                            Read: Why I Left Australia <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Call-to-Action -->
+    <section class="bg-gradient-to-r from-yellow-500 to-amber-600 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                Subscribe to Carl Travels for raw stories, travel tips, and inspiration delivered straight to your inbox.
+            </p>
+            <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
+                <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
+                <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                    Subscribe <i class="fas fa-paper-plane ml-1"></i>
+                </button>
+            </form>
+            <p class="text-gray-500 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <a href="/index.html" class="text-2xl font-bold flex items-center mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
+                            <i class="fas fa-camera text-black text-lg"></i>
+                        </div>
+                        <span class="heading-font">Carl Tomich</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Crafting cinematic stories through travel, tech, and filmmaking.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Home</a></li>
+                        <li><a href="/destinations.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Destinations</a></li>
+                        <li><a href="/portfolio.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Portfolio</a></li>
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">Videos</a></li>
+                        <li><a href="/blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Blog</a></li>
+                        <li><a href="/index.html#about" class="text-gray-400 hover:text-yellow-500 transition-colors">About</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/Berlin.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Berlin</a></li>
+                        <li><a href="/melbournetravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Melbourne</a></li>
+                        <li><a href="/cairnstravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Cairns</a></li>
+                        <li><a href="/phuketravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Phuket</a></li>
+                        <li><a href="/hanoitravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hanoi</a></li>
+                        <li><a href="/osakatravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Osaka</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe for exclusive filmmaking and travel insights.
+                    </p>
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
+                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
+                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
+                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-black rounded-r-lg hover:bg-yellow-600 transition-all">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Carl Tomich. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="/privacy-policy.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Terms & Conditions</a>
+                    <a href="/contact.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
