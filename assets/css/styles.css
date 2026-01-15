@@ -120,6 +120,74 @@ a:hover {
     color: var(--primary);
 }
 
+.affiliate-cta {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.75rem;
+    margin: 2.5rem auto;
+    max-width: 980px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.affiliate-cta__media img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xl);
+}
+
+.affiliate-cta__eyebrow {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(245, 197, 24, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.affiliate-cta__headline {
+    font-size: 1.75rem;
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.affiliate-cta__copy {
+    color: #d1d5db;
+    margin-bottom: 1.25rem;
+}
+
+.affiliate-cta__list {
+    margin: 0 0 1rem 1.25rem;
+    color: #d1d5db;
+    list-style: disc;
+}
+
+.affiliate-cta__alt {
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+}
+
+.affiliate-cta__disclosure {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+.affiliate-disclosure-line {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 1rem 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .affiliate-cta {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    }
+}
+
 .toc {
     background: rgba(15, 15, 15, 0.85);
     border: 1px solid var(--card-border);
