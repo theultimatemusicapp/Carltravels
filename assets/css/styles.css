@@ -93,6 +93,29 @@ a:hover {
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.96), rgba(10, 10, 10, 0.92));
 }
 
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.9s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .section-title {
     text-transform: uppercase;
     letter-spacing: 0.3em;
@@ -180,6 +203,84 @@ a:hover {
     font-size: 0.85rem;
     color: var(--muted);
     margin: 1rem 0 1.5rem;
+}
+
+.button-primary,
+.button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.button-primary {
+    background: linear-gradient(120deg, #f5c518, #f59e0b);
+    color: #111827;
+}
+
+.button-primary:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+}
+
+.button-secondary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.button-secondary:hover {
+    background: rgba(245, 197, 24, 0.12);
+}
+
+.section-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+    color: rgba(245, 197, 24, 0.8);
+}
+
+.grid-card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.resource-card {
+    background: rgba(15, 15, 15, 0.85);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.package-card {
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.trusted-links {
+    background: rgba(10, 10, 10, 0.75);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.site-footer-links a {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.site-footer-links a:hover {
+    color: var(--primary);
 }
 
 @media (min-width: 768px) {
