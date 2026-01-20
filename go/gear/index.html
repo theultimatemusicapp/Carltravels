@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://www.carltravels.com/go/gear">
+    <title>Redirecting...</title>
+    <script>
+        const GA_MEASUREMENT_ID = "G-G72KT5ZW2J";
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);} 
+        gtag('js', new Date());
+        gtag('config', GA_MEASUREMENT_ID, { anonymize_ip: true, allow_google_signals: false });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
+    <script src="/assets/js/affiliate-links.js" defer></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const slug = "gear";
+            const link = window.resolveAffiliateLink ? window.resolveAffiliateLink(slug) : null;
+            const destination = link?.url || "/index.html";
+            if (typeof window.gtag === "function") {
+                window.gtag("event", "affiliate_click", {
+                    page_path: window.location.pathname,
+                    intent_type: "redirect",
+                    placement: "redirect",
+                    cta_variant: "redirect",
+                    link_domain: destination,
+                    link_label: slug,
+                });
+            }
+            window.location.replace(destination);
+        });
+    </script>
+</head>
+<body style="font-family: Arial, sans-serif; background:#111; color:#f5f5f5; text-align:center; padding:3rem;">
+    <p>Sending you to the recommended link...</p>
+    <p><a href="/" style="color:#f5c518;">Return to CarlTravels</a></p>
+</body>
+</html>

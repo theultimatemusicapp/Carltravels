@@ -1,7 +1,54 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const GA_MEASUREMENT_ID = "G-G72KT5ZW2J";
     const navbar = document.getElementById("navbar");
     const mobileMenuButton = document.getElementById("mobile-menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
+
+    const loadScript = (src, attrs = {}) =>
+        new Promise((resolve, reject) => {
+            const existing = document.querySelector(`script[src="${src}"]`);
+            if (existing) {
+                resolve();
+                return;
+            }
+            const script = document.createElement("script");
+            script.src = src;
+            script.async = true;
+            Object.entries(attrs).forEach(([key, value]) => {
+                script.setAttribute(key, value);
+            });
+            script.onload = () => resolve();
+            script.onerror = () => reject(new Error(`Failed to load ${src}`));
+            document.head.appendChild(script);
+        });
+
+    const initAnalytics = () => {
+        if (typeof window.gtag === "function") return;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function gtag() {
+            window.dataLayer.push(arguments);
+        };
+        window.gtag("js", new Date());
+        window.gtag("config", GA_MEASUREMENT_ID, {
+            anonymize_ip: true,
+            allow_google_signals: false,
+        });
+        loadScript(`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`).catch(
+            () => {}
+        );
+    };
+
+    if (window.Cookiebot) {
+        window.addEventListener("CookiebotOnConsentReady", () => {
+            if (window.Cookiebot?.consent?.statistics) {
+                initAnalytics();
+            }
+        });
+    } else {
+        initAnalytics();
+    }
+
+    loadScript("/assets/js/affiliate-links.js").catch(() => {});
 
     const getAffiliateIntent = () => {
         const manualIntent = document.querySelector('meta[name="affiliateIntent"]')?.content;
@@ -90,6 +137,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mainElement && !mainElement.classList.contains("article-content")) {
         mainElement.classList.add("article-content");
     }
+
+    const disclosureTargets = document.querySelectorAll("[data-affiliate-section]");
+    disclosureTargets.forEach((section) => {
+        if (section.querySelector(".affiliate-disclosure-line")) return;
+        const disclosure = document.createElement("p");
+        disclosure.className = "affiliate-disclosure-line";
+        disclosure.textContent = "Disclosure: some links are affiliate links. If you buy, I may earn a small commission at no extra cost to you.";
+        section.appendChild(disclosure);
+    });
 
     const articleSection = document.querySelector("[data-article], #article, .article-content, main");
     if (articleSection) {
@@ -295,6 +351,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "wise.com",
         "dehancer.com",
         "yesim.app",
+        "safetywing.com",
+        "getyourguide.com",
+        "hostelworld.com",
         "saily",
         "getyourwisecard",
     ];
@@ -304,6 +363,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!anchor) return;
         const href = anchor.getAttribute("href");
         if (!href || href.startsWith("#")) return;
+        if (href.startsWith("mailto:")) {
+            sendEvent("email_click", {
+                page_path: window.location.pathname,
+                email: href.replace("mailto:", ""),
+            });
+            return;
+        }
+
+        if (href.includes("work.html") || anchor.dataset.workCta === "true") {
+            sendEvent("work_with_me_click", {
+                page_path: window.location.pathname,
+                label: anchor.textContent.trim() || "work-with-me",
+            });
+        }
+
         const isAffiliateLink =
             anchor.classList.contains("affiliate-link") ||
             affiliateDomains.some((domain) => href.includes(domain));
@@ -333,6 +407,29 @@ document.addEventListener("DOMContentLoaded", () => {
             cta_variant: ctaVariant,
             link_domain: linkDomain,
             link_label: linkLabel,
+        });
+    });
+
+    document.addEventListener("click", (event) => {
+        const anchor = event.target.closest("a");
+        if (!anchor) return;
+        const href = anchor.getAttribute("href");
+        if (!href || href.startsWith("#") || href.startsWith("mailto:")) return;
+        const isAffiliateLink =
+            anchor.classList.contains("affiliate-link") ||
+            affiliateDomains.some((domain) => href.includes(domain));
+        if (isAffiliateLink) return;
+        let url;
+        try {
+            url = new URL(href, window.location.origin);
+        } catch (error) {
+            return;
+        }
+        if (url.hostname === window.location.hostname) return;
+        sendEvent("outbound_click", {
+            page_path: window.location.pathname,
+            link_domain: url.hostname,
+            link_path: url.pathname,
         });
     });
 
@@ -378,5 +475,60 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("scroll", toggleBackToTop);
         toggleBackToTop();
         backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    }
+
+    const addJsonLd = (data) => {
+        const script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.textContent = JSON.stringify(data);
+        document.head.appendChild(script);
+    };
+
+    const canonical = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+    const description = document.querySelector('meta[name="description"]')?.content || "";
+    const ogImage = document.querySelector('meta[property="og:image"]')?.content || "";
+    addJsonLd({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Carl Travels",
+        url: "https://www.carltravels.com/",
+        logo: "https://www.carltravels.com/carlcircle.png",
+        sameAs: [
+            "https://www.youtube.com/@thecarltomich",
+            "https://www.youtube.com/@carltomichtech",
+            "https://www.youtube.com/@globetraveladventures",
+            "https://www.instagram.com/carlostomich",
+            "https://www.facebook.com/thecarlostomich/",
+        ],
+    });
+
+    const pageName = (document.title || "").toLowerCase();
+    const articleExclusions = [
+        "home",
+        "about",
+        "contact",
+        "privacy",
+        "terms",
+        "work with me",
+        "start here",
+        "gear",
+        "destinations",
+        "blog",
+    ];
+    if (!articleExclusions.some((word) => pageName.includes(word))) {
+        addJsonLd({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: document.title.replace(" - Carl Travels", "").replace(" - Carl Tomich", ""),
+            description,
+            image: ogImage ? [ogImage] : undefined,
+            author: { "@type": "Person", name: "Carl Tomich" },
+            publisher: {
+                "@type": "Organization",
+                name: "Carl Travels",
+                logo: { "@type": "ImageObject", url: "https://www.carltravels.com/carlcircle.png" },
+            },
+            mainEntityOfPage: canonical,
+        });
     }
 });
