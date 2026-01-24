@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Carl Travels</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-                <!-- Navigation -->
+#!/usr/bin/env python3
+"""
+Batch update navigation across all CarlTravels pages.
+Replaces old navigation with new filmmaker-focused navigation from index.html.
+Preserves ALL content, monetization, and SEO.
+"""
+
+import os
+import re
+from pathlib import Path
+
+# New navigation HTML (from index.html)
+NEW_NAV = '''    <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
@@ -46,35 +43,10 @@
                 </div>
             </div>
         </div>
-    </nav>
-            <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
-                </a>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Main Content -->
-    <main>
-        <section class="thank-you-page">
-            <div class="container">
-                <h1>Thank You!</h1>
-                <p>Your message has been successfully sent. I will get back to you as soon as possible.</p>
-                <p>Meanwhile, feel free to explore more of my work and adventures!</p>
-                <a href="index.html" class="button">Return to Home</a>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer Section -->
-        <!-- Footer -->
+    </nav>'''
+
+# New footer HTML (from index.html)
+NEW_FOOTER = '''    <!-- Footer -->
     <footer class="py-12" style="background: var(--dark); border-top: 1px solid var(--dark-3);">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -129,6 +101,79 @@
                 </div>
             </div>
         </div>
-    </footer>
-</body>
-</html>
+    </footer>'''
+
+def update_navigation(file_path):
+    """Update navigation and footer in a single HTML file."""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Skip if already updated (check for new nav signature)
+        if 'CARL TOMICH' in content and 'Films</a>' in content and 'Current Project</a>' in content:
+            print(f"✓ Already updated: {file_path}")
+            return False
+        
+        # Find and replace navigation
+        # Pattern: from <nav to </nav>
+        nav_pattern = r'<nav[^>]*>.*?</nav>'
+        if re.search(nav_pattern, content, re.DOTALL):
+            content = re.sub(nav_pattern, NEW_NAV, content, count=1, flags=re.DOTALL)
+        
+        # Find and replace footer
+        # Pattern: from <footer to </footer>
+        footer_pattern = r'<footer[^>]*>.*?</footer>'
+        if re.search(footer_pattern, content, re.DOTALL):
+            content = re.sub(footer_pattern, NEW_FOOTER, content, count=1, flags=re.DOTALL)
+        
+        # Write updated content
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        
+        print(f"✓ Updated: {file_path}")
+        return True
+        
+    except Exception as e:
+        print(f"✗ Error updating {file_path}: {e}")
+        return False
+
+def main():
+    """Update all HTML files in the Carltravels directory."""
+    base_dir = Path('/Users/carltomich/Desktop/Carltravels')
+    
+    # Find all HTML files
+    html_files = []
+    
+    # Root directory HTML files
+    html_files.extend(base_dir.glob('*.html'))
+    
+    # Subdirectory HTML files
+    for subdir in ['videos', 'ha-long-bay-travel-guide', 'nusa-lembongan-travel-guide', 'port-douglas-travel-guide', 'blog', 'docs']:
+        subdir_path = base_dir / subdir
+        if subdir_path.exists():
+            html_files.extend(subdir_path.glob('*.html'))
+            html_files.extend(subdir_path.glob('**/*.html'))
+    
+    # Exclude index.html (already updated)
+    html_files = [f for f in html_files if f.name != 'index.html']
+    
+    print(f"Found {len(html_files)} HTML files to update\n")
+    
+    updated_count = 0
+    skipped_count = 0
+    
+    for html_file in sorted(html_files):
+        if update_navigation(html_file):
+            updated_count += 1
+        else:
+            skipped_count += 1
+    
+    print(f"\n{'='*60}")
+    print(f"SUMMARY:")
+    print(f"  Updated: {updated_count} files")
+    print(f"  Skipped: {skipped_count} files (already updated)")
+    print(f"  Total:   {len(html_files)} files")
+    print(f"{'='*60}")
+
+if __name__ == '__main__':
+    main()
