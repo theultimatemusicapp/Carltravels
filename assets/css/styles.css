@@ -1,16 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap");
 
 :root {
-    --primary: #f5c518;
-    --secondary: #2a2a2a;
+    /* New Brand Colors - Darker, More Cinematic */
+    --primary: #8b7355;
+    /* Muted bronze instead of yellow */
+    --primary-dark: #6b5840;
+    /* Darker bronze for hover states */
+    --energy: #a64d4d;
+    /* Muted red for accents */
+
+    /* Dark Foundation */
+    --black: #0a0a0a;
+    /* Deeper black */
     --dark: #1a1a1a;
+    /* Primary dark background */
+    --secondary: #2a2a2a;
+    /* Secondary dark background */
     --darker: #0f0f0f;
-    --light: #d4d4d4;
-    --muted: #a1a1aa;
-    --card: rgba(26, 26, 26, 0.85);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --radius-lg: 1.25rem;
-    --radius-md: 0.75rem;
+    /* Alternative dark */
+
+    /* Text Colors */
+    --light: #e5e5e5;
+    /* Softer white for primary text */
+    --muted: #999999;
+    /* Muted gray for secondary text */
+    --tertiary: #666666;
+    /* Darker gray for tertiary text */
+
+    /* Card & UI Elements */
+    --card: rgba(42, 42, 42, 0.85);
+    --card-border: rgba(58, 58, 58, 0.5);
+    --radius-lg: 0;
+    /* Sharp edges, no rounded corners */
+    --radius-md: 0;
     --shadow-lg: 0 20px 45px -20px rgba(0, 0, 0, 0.6);
     --shadow-xl: 0 30px 60px -25px rgba(0, 0, 0, 0.7);
 }
@@ -21,14 +43,16 @@
 
 body {
     font-family: "Montserrat", sans-serif !important;
-    background-color: var(--dark) !important;
+    background-color: var(--black) !important;
     color: var(--light) !important;
-    line-height: 1.7;
+    line-height: 1.8;
+    /* Increased for better readability */
     scroll-behavior: smooth;
 }
 
 img {
-    border-radius: var(--radius-md);
+    border-radius: 0;
+    /* Sharp edges for documentary aesthetic */
 }
 
 a {
@@ -229,14 +253,23 @@ a:hover {
 
 .button-primary,
 .btn-primary {
-    background: linear-gradient(90deg, #f5c518, #f59e0b);
-    color: #0a0a0a;
-    border-radius: 9999px;
+    background: var(--primary);
+    color: var(--black);
+    border-radius: 0;
+    /* Sharp edges */
     padding: 0.75rem 1.75rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover,
+.btn-primary:hover {
+    background: var(--primary-dark);
 }
 
 .button-secondary,

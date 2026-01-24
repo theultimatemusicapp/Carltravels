@@ -1,125 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Cookiebot for GDPR Compliance -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece"
+        type="text/javascript" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carl Tomich - Cinematic Journeys</title>
+    <title>Carl Tomich — Documentary Filmmaker & Digital Nomad</title>
     <link rel="canonical" href="https://www.carltravels.com/">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-G72KT5ZW2J');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G72KT5ZW2J');
     </script>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Join Carl Tomich on a cinematic journey blending travel, tech, and filmmaking. Explore stunning films, travel stories, and gear reviews.">
+    <meta name="description"
+        content="Australian filmmaker documenting a real transformation across countries through Muay Thai, creative work, and honest storytelling. No courses. No bullshit. Just the documentary.">
     <meta name="affiliateIntent" content="B">
-    <meta name="keywords" content="Carl Tomich, Travel Filmmaker, Cinematic Travel, Tech Reviews, Film Portfolio, Adventure Stories">
+    <meta name="keywords"
+        content="Carl Tomich, Documentary Filmmaker, Digital Nomad, Muay Thai, Filmmaking, Honest Storytelling">
     <meta name="author" content="Carl Tomich">
+
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Carl Tomich - Cinematic Journeys">
-    <meta property="og:description" content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
-    <meta property="og:image" content="https://www.carltravels.com/images/cinematic-og-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/index.html">
+    <meta property="og:title" content="Carl Tomich — Documentary Filmmaker & Digital Nomad">
+    <meta property="og:description"
+        content="Australian filmmaker documenting a real transformation across countries through Muay Thai, creative work, and honest storytelling.">
+    <meta property="og:image" content="https://www.carltravels.com/carlaboutme.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/">
     <meta property="og:type" content="website">
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Carl Tomich - Cinematic Journeys">
-    <meta name="twitter:description" content="Experience the world through Carl Tomich's lens with cinematic travel films, tech insights, and storytelling.">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/cinematic-twitter-image.jpg">
+    <meta name="twitter:title" content="Carl Tomich — Documentary Filmmaker & Digital Nomad">
+    <meta name="twitter:description"
+        content="Australian filmmaker documenting a real transformation across countries through Muay Thai, creative work, and honest storytelling.">
+    <meta name="twitter:image" content="https://www.carltravels.com/carlaboutme.jpg">
+
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
+        crossorigin="anonymous"></script>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&family=Merriweather:ital,wght@0,400;1,400&display=swap');
 
         :root {
-            --primary: #f5c518; /* Muted gold for accents */
-            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
-            --dark: #1a1a1a; /* Near-black for text/body */
-            --light: #d4d4d4; /* Light gray for secondary text */
+            /* Dark Foundation */
+            --color-black: #0a0a0a;
+            --color-dark-1: #1a1a1a;
+            --color-dark-2: #2a2a2a;
+            --color-dark-3: #3a3a3a;
+
+            /* Text Colors */
+            --color-text-primary: #e5e5e5;
+            --color-text-secondary: #999999;
+            --color-text-tertiary: #666666;
+
+            /* Accent Colors */
+            --color-accent: #8b7355;
+            --color-accent-dark: #6b5840;
+            --color-energy: #a64d4d;
+
+            /* Spacing */
+            --space-3: 1rem;
+            --space-4: 1.5rem;
+            --space-6: 2rem;
+            --space-8: 3rem;
+            --space-12: 4rem;
+            --space-16: 6rem;
+            --space-24: 10rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: var(--dark);
-            color: var(--light);
+            background-color: var(--color-black);
+            color: var(--color-text-primary);
+            line-height: 1.8;
             scroll-behavior: smooth;
-        }
-
-        .hero-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            opacity: 0.7;
         }
 
         .heading-font {
             font-family: 'Bebas Neue', sans-serif;
-            letter-spacing: 2px;
+            letter-spacing: 0.05em;
+            line-height: 0.95;
         }
 
-        .portfolio-card {
-            transition: all 0.3s ease;
-            overflow: hidden;
+        .serif-font {
+            font-family: 'Merriweather', serif;
         }
 
-        .portfolio-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .parallax {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
+        /* Navigation */
         .navbar {
             backdrop-filter: blur(10px);
-            background-color: rgba(26, 26, 26, 0.9);
+            background-color: rgba(10, 10, 10, 0.9);
             transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
         }
 
         .navbar.scrolled {
-            background-color: rgba(26, 26, 26, 0.98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            background-color: rgba(10, 10, 10, 0.98);
+            border-bottom-color: var(--color-dark-3);
         }
 
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 1s ease forwards;
+        .nav-link {
+            color: var(--color-text-secondary);
+            transition: color 0.3s ease;
         }
 
-        @keyframes fadeIn {
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hover-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .portfolio-card:hover .hover-overlay {
-            opacity: 1;
+        .nav-link:hover {
+            color: var(--color-accent);
         }
 
         .mobile-menu {
@@ -129,753 +131,622 @@
         }
 
         .mobile-menu.open {
-            max-height: 500px;
+            max-height: 600px;
         }
 
-        .responsive-video {
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
             position: relative;
-            width: 100%;
-            aspect-ratio: 16 / 9; /* Maintains 16:9 aspect ratio */
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
-            background-color: var(--dark);
-            margin-bottom: 1rem;
         }
 
-        .responsive-video iframe {
+        .hero-image {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            object-fit: cover;
+            opacity: 0.3;
+            filter: grayscale(30%) contrast(1.2);
         }
 
-        @media (max-width: 640px) {
-            .responsive-video {
-                width: 100%;
-                margin-left: 0;
-                margin-right: 0;
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: var(--space-6);
+        }
+
+        .hero-headline {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            margin-bottom: var(--space-6);
+        }
+
+        .hero-subheadline {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            color: var(--color-accent);
+            margin-bottom: var(--space-8);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: var(--space-16) var(--space-6);
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            display: block;
+            margin-bottom: var(--space-3);
+        }
+
+        .section-heading {
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin-bottom: var(--space-6);
+        }
+
+        .section-divider {
+            width: 4rem;
+            height: 2px;
+            background: var(--color-accent);
+            margin-bottom: var(--space-8);
+        }
+
+        /* Arc Cards */
+        .arc-card {
+            background: var(--color-dark-2);
+            border: 1px solid var(--color-dark-3);
+            padding: var(--space-8);
+            transition: all 0.4s ease;
+            margin-bottom: var(--space-6);
+        }
+
+        .arc-card:hover {
+            border-color: var(--color-accent);
+            transform: translateY(-4px);
+        }
+
+        .arc-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: var(--space-6);
+            filter: grayscale(20%) contrast(1.15) brightness(0.95);
+        }
+
+        /* Current Chapter */
+        .current-chapter {
+            background: var(--color-dark-1);
+            border-left: 4px solid var(--color-accent);
+            padding: var(--space-8);
+        }
+
+        /* Reality Check */
+        .reality-check {
+            background: var(--color-dark-2);
+            border: 2px solid var(--color-energy);
+            padding: var(--space-12);
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-8);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            color: var(--color-accent);
+            margin-bottom: var(--space-3);
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: var(--color-accent);
+            color: var(--color-black);
+            padding: var(--space-4) var(--space-8);
+            border: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-accent-dark);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+            padding: var(--space-4) var(--space-8);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-ghost:hover {
+            background: var(--color-accent);
+            color: var(--color-black);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
 
-        .about-image {
-            max-height: 70%; /* Reduced image height by 30% */
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section {
+                padding: var(--space-12) var(--space-4);
+            }
+
+            .arc-card {
+                padding: var(--space-6);
+            }
         }
     </style>
-    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body class="text-gray-300">
+
+<body>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar fixed w-full z-50 shadow-sm transition-all duration-300">
-        <div class="container mx-auto px-6 py-3">
+    <nav id="navbar" class="navbar fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <a href="/index.html" class="text-2xl font-bold flex items-center">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
-                        <i class="fas fa-camera text-black text-lg"></i>
-                    </div>
-                    <span class="heading-font bg-gradient-to-r from-yellow-500 to-amber-600 bg-clip-text text-transparent">Carl Tomich</span>
+                    <span class="heading-font" style="color: var(--color-accent);">CARL TOMICH</span>
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/index.html" class="nav-link font-medium transition-colors">Home</a>
-                    <a href="/destinations.html" class="nav-link font-medium transition-colors">Destinations</a>
-                    <a href="/portfolio.html" class="nav-link font-medium transition-colors">Portfolio</a>
-                    <a href="/videos/index.html" class="nav-link font-medium transition-colors">Watch</a>
-                    <a href="/blog.html" class="nav-link font-medium transition-colors">Blog</a>
-                    <a href="/gear.html" class="nav-link font-medium transition-colors">Gear</a>
-                    <a href="/about.html" class="nav-link font-medium transition-colors">About</a>
-                    <a href="/donate.html" class="nav-link font-medium transition-colors">Donate</a>
-                    <a href="/index.html#contact" class="contact-button px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-full hover:shadow-lg transition-all">Contact</a>
+                    <a href="/index.html" class="nav-link font-medium">Home</a>
+                    <a href="/about.html" class="nav-link font-medium">About</a>
+                    <a href="/destinations.html" class="nav-link font-medium">Places</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Archive</a>
+                    <a href="/blog.html" class="nav-link font-medium">Essays</a>
+                    <a href="/gear.html" class="nav-link font-medium">Gear</a>
+                    <a href="/donate.html" class="nav-link font-medium">Support</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none"
+                    style="color: var(--color-text-secondary);">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
 
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="/index.html" class="mobile-link block px-3 py-2 rounded-md font-medium">Home</a>
-                    <a href="/destinations.html" class="mobile-link block px-3 py-2 rounded-md">Destinations</a>
-                    <a href="/portfolio.html" class="mobile-link block px-3 py-2 rounded-md">Portfolio</a>
-                    <a href="/videos/index.html" class="mobile-link block px-3 py-2 rounded-md">Watch</a>
-                    <a href="/blog.html" class="mobile-link block px-3 py-2 rounded-md">Blog</a>
-                    <a href="/gear.html" class="mobile-link block px-3 py-2 rounded-md">Gear</a>
-                    <a href="/about.html" class="mobile-link block px-3 py-2 rounded-md">About</a>
-                    <a href="/donate.html" class="mobile-link block px-3 py-2 rounded-md">Donate</a>
-                    <a href="/index.html#contact" class="mobile-link block px-3 py-2 rounded-md">Contact</a>
+                    <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Home</a>
+                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
+                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Places</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Archive</a>
+                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Essays</a>
+                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
+                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link">Support</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden min-h-screen flex items-center justify-center pt-16 md:pt-20">
-        <img class="hero-video" src="/topbanner.png" alt="Cinematic reel background">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto px-6 relative z-10 text-center fade-in">
-            <div class="responsive-video">
-                <iframe src="https://www.youtube.com/embed/sryhpGGE640?autoplay=1&mute=1&modestbranding=1&controls=0&showinfo=0&loop=1&playlist=sryhpGGE640" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h1 class="heading-font text-5xl md:text-7xl font-bold text-white mb-4 mt-4">
-                Cinematic Journeys <br>With <span class="text-yellow-500">Carl Tomich</span>
+    <section class="hero">
+        <img class="hero-image" src="/carlworking.jpg" alt="Carl Tomich filming">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1 class="heading-font hero-headline" style="color: var(--color-text-primary);">
+                I left Australia at 40<br>to rebuild my life from scratch.
             </h1>
-            <p class="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
-                Filmmaker, traveler, and tech enthusiast. Join me on a visual odyssey through breathtaking destinations and cutting-edge gear.
+            <p class="heading-font hero-subheadline">
+                This is the documentary.
             </p>
-            <div class="flex justify-center gap-4">
-                <a href="portfolio.html" class="px-8 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all shadow-lg">
-                    View Portfolio
-                </a>
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="px-8 py-3 border-2 border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
-                    Watch Videos <i class="fas fa-play ml-2"></i>
-                </a>
-            </div>
+            <p class="text-lg max-w-2xl mx-auto mb-8" style="color: var(--color-text-secondary);">
+                No course to sell. No blueprint to follow. Just a filmmaker, a camera, and the discipline to keep moving
+                forward when everything else falls apart.
+            </p>
+            <a href="#journey" class="btn-primary">Watch the journey</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="py-16 bg-dark">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-gray-300 leading-relaxed space-y-6">
-                <p>
-                    Carl Travels is a travel and filmmaking platform built around real-world experience, long-term living abroad, and the creative process behind documenting it. This is not short trip content or surface-level travel advice. It is slow travel, digital nomad life, and cinematic storytelling shaped by living and working across Europe and Asia. I focus on what happens after the excitement fades: building routines in new cities, managing money, health, work, and creativity while constantly on the move. My goal is to go beyond showing destinations and instead explore what it actually feels like to live inside them.
-                </p>
-                <p>
-                    On this site you will find in-depth destination guides, personal travel stories, cinematic travel films, and practical gear reviews based on equipment I use daily as a filmmaker and content creator. From cost of living and visas to cameras, drones, backpacks, and editing workflows, everything here is based on lived experience, not theory. My aim is to stay true to my core values. I am not here to sell you a course, a dream, or a fantasy. I am here to show you the reality of the world, whether that is through travel, personal experience, or the products I actually use.
+    <!-- The Three Arcs -->
+    <section id="journey" class="section" style="background: var(--color-dark-1);">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 fade-in">
+                <p class="text-lg mb-8"
+                    style="color: var(--color-text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
+                    This isn't a travel blog. It's a living archive of one man's attempt to rebuild his identity through
+                    movement, training, and creative work across multiple countries.
                 </p>
             </div>
+
+            <!-- Arc 1: The Journey -->
+            <div class="arc-card fade-in">
+                <img src="/whyileftaustralia.jpg" alt="Empty airport terminal" class="arc-image">
+                <span class="section-label">THE JOURNEY</span>
+                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Leaving Everything
+                    Behind</h2>
+                <div class="section-divider"></div>
+                <p class="mb-6" style="color: var(--color-text-secondary);">
+                    I turned 40 in a country that no longer felt like home. The bars closed. The rules multiplied. The
+                    life I was living started to feel smaller every year. So I left.
+                </p>
+                <p class="mb-6" style="color: var(--color-text-secondary);">
+                    Not because I thought moving would fix everything. But because staying felt like giving up.
+                </p>
+                <p style="color: var(--color-text-secondary);">
+                    This is the story of what happens when you walk away from the safe option and try to build something
+                    real.
+                </p>
+            </div>
+
+            <!-- Arc 2: Training & Discipline -->
+            <div class="arc-card fade-in">
+                <img src="/carlcamera.jpg" alt="Empty gym training" class="arc-image">
+                <span class="section-label">TRAINING & DISCIPLINE</span>
+                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">The Physical Rebuild
+                </h2>
+                <div class="section-divider"></div>
+                <p class="mb-6" style="color: var(--color-text-secondary);">
+                    Empty gyms at 6am. Muay Thai pads in cheap apartments. Sleep struggles. Mental lows. The slow,
+                    unglamorous work of rebuilding a body and mind that spent too long sitting still.
+                </p>
+                <p style="color: var(--color-text-secondary);">
+                    Training isn't about transformation photos. It's about showing up when you don't want to. It's the
+                    only thing that makes sense when everything else is chaos.
+                </p>
+            </div>
+
+            <!-- Arc 3: The Work -->
+            <div class="arc-card fade-in">
+                <img src="/carldesk.jpg" alt="Editing workspace" class="arc-image">
+                <span class="section-label">THE WORK</span>
+                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Building Something
+                    Real</h2>
+                <div class="section-divider"></div>
+                <p class="mb-6" style="color: var(--color-text-secondary);">
+                    Fourteen years behind a camera. Editing in cafes. Filming empty streets at 3am. Uploading stock
+                    footage and hoping it sells. Building YouTube channels that might pay rent next month.
+                </p>
+                <p style="color: var(--color-text-secondary);">
+                    This is what creative work actually looks like when you strip away the Instagram version. Late
+                    nights. Tight budgets. Obsessive attention to detail. And the quiet satisfaction of making something
+                    that matters.
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- Featured Destinations -->
-    <section id="destinations" class="py-20 bg-dark">
-        <div class="container mx-auto px-6">
+    <!-- Current Chapter -->
+    <section class="section" style="background: var(--color-black);">
+        <div class="container mx-auto max-w-4xl">
+            <div class="current-chapter fade-in">
+                <span class="section-label">CURRENT CHAPTER</span>
+                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Where I Am Now</h2>
+                <div class="section-divider"></div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <h3 class="font-bold mb-2" style="color: var(--color-accent);">Location</h3>
+                        <p style="color: var(--color-text-secondary);">Hanoi, Vietnam → Albania (March 2026)</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2" style="color: var(--color-accent);">Training</h3>
+                        <p style="color: var(--color-text-secondary);">Muay Thai 4x/week. Morning runs. Discipline over
+                            motivation.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2" style="color: var(--color-accent);">Current Project</h3>
+                        <p style="color: var(--color-text-secondary);">Documenting the transition from Asia to Europe.
+                            New cities. New gyms. Same discipline.</p>
+                    </div>
+                </div>
+
+                <a href="/blog.html" class="btn-ghost">Follow the current chapter →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Work -->
+    <section class="section" style="background: var(--color-dark-1);">
+        <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">TRAVEL STORIES</span>
-                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Cinematic Destinations</h2>
-                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Destination 1 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="fnqwaterfall.jpg" alt="Australia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Australia</h3>
-                            <p class="text-sm">Far North Queensland</p>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Captured the Great Barrier Reef and Daintree Rainforest with my Sony A7S III.</p>
-                        <a href="farnorthqueenslandtravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
-                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Destination 2 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="/japanfront.jpg" alt="Japan" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Japan</h3>
-                            <p class="text-sm">Kyoto & Tokyo</p>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Filmed Tokyo’s neon nights using drone shots and gimbal work.</p>
-                        <a href="destinations.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
-                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Destination 3 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="/amalficoastlogo.jpg" alt="Italy" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Italy</h3>
-                            <p class="text-sm">Amalfi Coast</p>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Shot coastal vistas with my Canon C70 for a wedding film.</p>
-                        <a href="destinations.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
-                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Destination 4 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="/hanoilogo.jpg" alt="Vietnam" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Vietnam</h3>
-                            <p class="text-sm">Hanoi</p>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Wandered Hanoi's Old Quarter and tranquil lakes with my Sony A7C.</p>
-                        <a href="hanoitravelguide.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
-                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Destination 5 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="/berlinlogo.jpg" alt="Germany" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Germany</h3>
-                            <p class="text-sm">Berlin</p>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Captured Berlin's blend of history and modern culture from sunrise to sunset.</p>
-                        <a href="Berlin.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
-                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Destination 6 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="/korculalogo.jpg" alt="Croatia" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Croatia</h3>
-                            <p class="text-sm">Korčula</p>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-secondary">
-                        <p class="text-gray-300 mb-4">Explored Korčula's medieval streets and Adriatic blues with a drone's eye view.</p>
-                        <a href="korcula.html" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">
-                            Explore Story <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mt-16">
-            <a href="hanoi-by-night.html" class="block group">
-                <div class="relative w-full min-h-[320px] md:min-h-[380px] lg:min-h-[420px] overflow-hidden shadow-2xl">
-                    <img src="https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg" alt="Hanoi by Night cinematic short film" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/40"></div>
-                    <div class="relative z-10 h-full flex flex-col justify-center px-6 py-12 md:px-16">
-                        <span class="text-yellow-400 uppercase tracking-[0.35em] text-xs md:text-sm">Special Feature</span>
-                        <h3 class="heading-font text-3xl md:text-5xl text-white mt-4 mb-4">Hanoi by Night</h3>
-                        <p class="text-gray-300 max-w-2xl text-base md:text-lg">Step into Hanoi's midnight energy with a brand-new cinematic short film exploring the Old Quarter, Hoàn Kiếm Lake, and Beer Street after dark.</p>
-                        <div class="mt-6">
-                            <span class="inline-flex items-center px-5 py-3 bg-yellow-500 text-black rounded-full font-semibold transition-all duration-300 group-hover:bg-yellow-400">
-                                Watch the Feature <i class="fas fa-arrow-right ml-3"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Tech Reviews Section -->
-    <section id="tech" class="py-20 bg-secondary">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">GEAR INSIGHTS</span>
-                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Tech Reviews</h2>
-                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tech Review: Sony A7CII -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="a7cii.jpg" alt="Sony A7CII" class="w-full h-full object-cover">
-                        <div class="hover-overlay">
-                            <a href="sony-a7cii-review.html" class="text-white font-bold text-lg">Read Review</a>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">Sony A7CII</h3>
-                        <p class="text-gray-300 text-sm mb-4">The compact full-frame rig I trust for hybrid shoots.</p>
-                    </div>
-                </div>
-                <!-- Tech Review: AIARTY Video Enhancer -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="https://img.youtube.com/vi/fsYA84tjrTE/maxresdefault.jpg" alt="AIARTY Video Enhancer Review thumbnail" class="w-full h-full object-cover">
-                        <div class="hover-overlay">
-                            <a href="aiarty-video-enhancer-review.html" class="text-white font-bold text-lg">Read Review</a>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">AIARTY Video Enhancer</h3>
-                        <p class="text-gray-300 text-sm mb-4">Lifetime AI upscaling, denoise, and slow motion on a budget.</p>
-                    </div>
-                </div>
-                <!-- Tech Review 1 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="bose.jpeg" alt="Bose S1 Pro Plus vs Everse 8" class="w-full h-full object-cover">
-                        <div class="hover-overlay">
-                            <a href="https://www.carltravels.com/bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html" class="text-white font-bold text-lg">Read Review</a>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">Bose S1 Pro Plus vs Everse 8</h3>
-                        <p class="text-gray-300 text-sm mb-4">Comparing portable PA speakers for busking, gigs, and travel.</p>
-                    </div>
-                </div>
-
-                <!-- Tech Review 2 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="djimavic3.jpg" alt="DJI Mavic 3" class="w-full h-full object-cover">
-                        <div class="hover-overlay">
-                            <a href="tech-review-dji-mavic3.html" class="text-white font-bold text-lg">Read Review</a>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">DJI Mavic 3</h3>
-                        <p class="text-gray-300 text-sm mb-4">Aerial shots that elevate your travel storytelling.</p>
-                    </div>
-                </div>
-
-                <!-- Tech Review 3 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg" alt="Beginner's Guide to DaVinci Resolve 2025" class="w-full h-full object-cover">
-                        <div class="hover-overlay">
-                            <a href="beginners-guide-davinci-resolve-2025.html" class="text-white font-bold text-lg">Read Guide</a>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">Beginner's Guide to DaVinci Resolve 2025</h3>
-                        <p class="text-gray-300 text-sm mb-4">Step-by-step tutorial to edit, grade, and export cinematic videos.</p>
-                    </div>
-                </div>
-                <!-- Tech Review 4 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="https://img.youtube.com/vi/2RN8XC9I_fc/maxresdefault.jpg" alt="DJI Flip drone" class="w-full h-full object-cover">
-                        <div class="hover-overlay">
-                            <a href="DJI-Flip-review.html" class="text-white font-bold text-lg">Read Review</a>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-dark">
-                        <h3 class="text-lg font-bold text-white mb-2">DJI Flip</h3>
-                        <p class="text-gray-300 text-sm mb-4">Is DJI's budget drone a toy or a travel essential?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-secondary">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">MY FILMMAKING</span>
-                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Film Portfolio</h2>
-                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/PORbiT3WuGU?autoplay=1&mute=1" title="Wedding Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="hover-overlay">
-                        <a href="portfolio.html#wedding1" class="text-white font-bold text-lg">View Wedding Film</a>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/ydFr5B6rqUk?autoplay=1&mute=1" title="Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="hover-overlay">
-                        <a href="portfolio.html#commercial1" class="text-white font-bold text-lg">View Commercial</a>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-card rounded-xl overflow-hidden shadow-lg relative">
-                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/Ef3u83dqN1Y?autoplay=1&mute=1" title="Travel Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="hover-overlay">
-                        <a href="portfolio.html#travel1" class="text-white font-bold text-lg">View Travel Film</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12">
-                <a href="portfolio.html#cinematic-shorts" class="block group">
-                    <div class="relative w-full min-h-[260px] md:min-h-[320px] lg:min-h-[360px] overflow-hidden rounded-2xl shadow-2xl">
-                        <img src="https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg" alt="Fight Club inspired cinematic short filmed in Koh Samui" class="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/40"></div>
-                        <div class="relative z-10 h-full flex flex-col justify-center px-6 py-12 md:px-16">
-                            <span class="text-yellow-400 uppercase tracking-[0.35em] text-xs md:text-sm">New Narrative Short</span>
-                            <h3 class="heading-font text-3xl md:text-5xl text-white mt-4 mb-4">Fight Club: Koh Samui</h3>
-                            <p class="text-gray-300 max-w-2xl text-base md:text-lg">A gritty, self-produced scene capturing the humid streets of Koh Samui. Shot on the Sony A7CII with the Sirui 40mm anamorphic lens to highlight cinematic framing and lighting.</p>
-                            <div class="mt-6">
-                                <span class="inline-flex items-center px-5 py-3 bg-yellow-500 text-black rounded-full font-semibold transition-all duration-300 group-hover:bg-yellow-400">
-                                    Watch the Scene <i class="fas fa-arrow-right ml-3"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                <span class="section-label">DOCUMENTARY PROJECTS</span>
+                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Latest Work</h2>
+                <div class="section-divider mx-auto"></div>
             </div>
 
-            <div class="text-center mt-12">
-                <a href="portfolio.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
-                    View Full Portfolio <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-dark">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 fade-in">
-                    <span class="text-yellow-500 font-medium mb-2 inline-block">ABOUT</span>
-                    <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">Carl Tomich</h2>
-                    <p class="text-gray-300 mb-6">
-                        Filmmaker, editor, and full-time content creator with 14 years behind the camera. Carl’s work spans travel, documentary, and online media, with a focus on honest storytelling and projects that have practical depth.
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="fade-in">
+                    <img src="/busking.jpg" alt="Busk Life documentary" class="arc-image">
+                    <h3 class="heading-font text-3xl mb-4" style="color: var(--color-text-primary);">Busk Life (2024)
+                    </h3>
+                    <p class="mb-6" style="color: var(--color-text-secondary);">
+                        Ten years after "Busking for Berlin," I returned to the streets to see what changed. The
+                        artists. The city. The hustle. This is the follow-up documentary.
                     </p>
-                    <p class="text-gray-300 mb-8">
-                        The full story, current workflow, and ways to collaborate now live on the dedicated About page.
+                    <a href="/portfolio.html" class="btn-ghost">Watch the film →</a>
+                </div>
+
+                <div class="fade-in">
+                    <img src="/hanoilogo.jpg" alt="Hanoi by Night" class="arc-image">
+                    <h3 class="heading-font text-3xl mb-4" style="color: var(--color-text-primary);">Hanoi by Night</h3>
+                    <p class="mb-6" style="color: var(--color-text-secondary);">
+                        A cinematic short film exploring the Old Quarter, Hoàn Kiếm Lake, and Beer Street after dark.
+                        The energy. The chaos. The beauty.
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="/about.html" class="px-6 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all">
-                            Read the About Page <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        <a href="#contact" class="px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition-all">
-                            Get In Touch <i class="fas fa-paper-plane ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="lg:w-1/2 relative fade-in">
-                    <div class="relative max-w-md mx-auto">
-                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-yellow-500 about-image">
-                            <img src="/carl.png" alt="Carl Tomich" class="w-full h-auto">
-                        </div>
-                    </div>
+                    <a href="/hanoi-by-night.html" class="btn-ghost">Watch now →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Travel Essentials & Creator Gear -->
-    <section id="essentials" class="py-16 bg-[#0b0b0b]">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">CREATOR CORNER</span>
-                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Travel Essentials &amp; Creator Gear</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">The same kit I recommend on the Destinations page—perfect for keeping you connected and your content crisp while you explore.</p>
-                <p class="affiliate-disclosure-line max-w-3xl mx-auto">Disclosure: Some links below are affiliate links. If you buy through them, I may earn a commission at no extra cost to you.</p>
-            </div>
-            <div class="affiliate-cta" data-placement="homepage-hero" data-link="https://yesim.app" data-label="Yesim eSIM" data-title="Stay connected on day one" data-benefit="Skip airport SIM lines with an eSIM you can install before you land." data-who="Perfect for short trips and multi-country routes." data-thumbnail="/esim.jpg"></div>
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl" data-affiliate-placement="essentials-list">
-                    <h3 class="heading-font text-2xl text-white">Travel Essentials</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5 off (I receive $5 credit)</li>
-                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-400">Sign up here</a></li>
-                    </ul>
-                </div>
-                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl" data-affiliate-placement="creator-tools">
-                    <h3 class="heading-font text-2xl text-white">Creator Tools</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/subscribe" class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a></li>
-                        <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance" class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
-                    </ul>
-                </div>
-                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl" data-affiliate-placement="gear-us">
-                    <h3 class="heading-font text-2xl text-white">My Gear – US Links</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
-                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
-                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400">DJI Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400">Tamron 28–200</a></li>
-                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
-                    </ul>
-                </div>
-                <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl" data-affiliate-placement="gear-au">
-                    <h3 class="heading-font text-2xl text-white">My Gear – AU Links</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400">DJI Flip</a></li>
-                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400">Sony A7C II</a></li>
-                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400">DJI Osmo Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400">Tamron 24–200</a></li>
-                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400">RØDE Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400">Think Tank Backpack</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-secondary">
-        <div class="container mx-auto px-6">
+    <!-- Recent Essays -->
+    <section class="section" style="background: var(--color-black);">
+        <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16 fade-in">
-                <span class="text-yellow-500 font-medium mb-2 inline-block">LET’S COLLABORATE</span>
-                <h2 class="heading-font text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2>
-                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+                <span class="section-label">FROM THE ARCHIVE</span>
+                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Recent Essays</h2>
+                <div class="section-divider mx-auto"></div>
             </div>
-            
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-1/2">
-                    <div class="bg-dark rounded-xl shadow-lg p-8 h-full">
-                        <h3 class="text-xl font-bold text-white mb-6">Send Me a Message</h3>
-                        <form action="https://formspree.io/f/mnnnoogg" method="POST">
-                            <div class="mb-6">
-                                <label for="name" class="block text-gray-300 font-medium mb-2">Your Name</label>
-                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
-                            </div>
-                            <div class="mb-6">
-                                <label for="email" class="block text-gray-300 font-medium mb-2">Your Email</label>
-                                <input type="email" id="email" name="_replyto" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block text-gray-300 font-medium mb-2">Your Message</label>
-                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-secondary text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
-                            </div>
-                            <input type="text" name="_gotcha" style="display:none">
-                            <input type="hidden" name="_subject" value="New Contact Form Submission from Carl Tomich">
-                            <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
-                            <input type="hidden" name="_captcha" value="false">
-                            <button type="submit" class="w-full px-6 py-3 bg-yellow-500 text-black rounded-lg font-medium hover:bg-yellow-600 transition-all">
-                                Send Message <i class="fas fa-paper-plane ml-1"></i>
-                            </button>
-                        </form>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="arc-card fade-in">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--color-text-primary);">The Reality of Being a
+                        Digital Nomad</h3>
+                    <p class="mb-4" style="color: var(--color-text-secondary);">
+                        Loneliness. Money anxiety. Discipline problems. The unglamorous truth about trying to build a
+                        life with no fixed address.
+                    </p>
+                    <a href="/becomingadigitalnomad.html" style="color: var(--color-accent);">Read more →</a>
+                </div>
+
+                <div class="arc-card fade-in">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--color-text-primary);">Why I Left Australia
+                    </h3>
+                    <p class="mb-4" style="color: var(--color-text-secondary);">
+                        The slow realization that the place you grew up in isn't the place you belong anymore.
+                    </p>
+                    <a href="/whyileftaustralia.html" style="color: var(--color-accent);">Read more →</a>
+                </div>
+
+                <div class="arc-card fade-in">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--color-text-primary);">The Reality of Living
+                        Overseas</h3>
+                    <p class="mb-4" style="color: var(--color-text-secondary);">
+                        Starting over. Identity crisis. The strange freedom of having nothing to lose.
+                    </p>
+                    <a href="/the-reality-of-living-overseas.html" style="color: var(--color-accent);">Read more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reality Check -->
+    <section class="section" style="background: var(--color-dark-1);">
+        <div class="container mx-auto max-w-4xl">
+            <div class="reality-check fade-in">
+                <h2 class="heading-font section-heading text-center" style="color: var(--color-text-primary);">No
+                    Bullshit. No Guru. No Course.</h2>
+                <div class="section-divider mx-auto"></div>
+
+                <p class="mb-6 text-center text-lg" style="color: var(--color-text-secondary);">
+                    I'm not here to sell you freedom. I'm not financially free. I'm not living my best life. I'm not
+                    going to teach you how to quit your job and travel the world.
+                </p>
+
+                <p class="mb-6 text-center text-lg" style="color: var(--color-text-secondary);">
+                    I'm just a filmmaker trying to build something honest while moving between countries. Some months I
+                    make decent money. Some months I don't. I train because it keeps me sane. I film because it's the
+                    only thing I know how to do.
+                </p>
+
+                <p class="mb-8 text-center text-lg" style="color: var(--color-text-secondary);">
+                    If you're looking for a blueprint, you won't find it here. If you're looking for someone who's still
+                    figuring it out and willing to document the messy parts, then stick around.
+                </p>
+
+                <div class="stat-grid">
+                    <div class="stat">
+                        <div class="heading-font stat-number">14</div>
+                        <div style="color: var(--color-text-secondary);">Years Filmmaking</div>
+                    </div>
+                    <div class="stat">
+                        <div class="heading-font stat-number">12</div>
+                        <div style="color: var(--color-text-secondary);">Countries Lived In</div>
+                    </div>
+                    <div class="stat">
+                        <div class="heading-font stat-number">3</div>
+                        <div style="color: var(--color-text-secondary);">YouTube Channels</div>
+                    </div>
+                    <div class="stat">
+                        <div class="heading-font stat-number">0</div>
+                        <div style="color: var(--color-text-secondary);">Courses Sold</div>
                     </div>
                 </div>
-                
-                <div class="lg:w-1/2">
-                    <div class="bg-dark rounded-xl shadow-lg p-8 h-full">
-                        <h3 class="text-xl font-bold text-white mb-6">Contact Information</h3>
-                        <p class="text-gray-300 mb-8">Want to collaborate on a film, discuss travel, or talk tech? Reach out anytime.</p>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="bg-yellow-900 p-3 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-yellow-500"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-white mb-1">Email</h4>
-                                    <a href="mailto:watchcarltravel@gmail.com" class="text-yellow-500 hover:text-yellow-600">watchcarltravel@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-12">
-                            <h4 class="font-medium text-white mb-4">Follow My Work</h4>
-                            <div class="flex space-x-4">
-                                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                                <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                                <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                                <a href="https://www.instagram.com/carlostomich" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="w-10 h-10 rounded-full bg-yellow-900 flex items-center justify-center text-yellow-500 hover:bg-yellow-800 transition-colors">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section class="section" style="background: var(--color-black);">
+        <div class="container mx-auto max-w-2xl text-center">
+            <div class="fade-in">
+                <span class="section-label">JOIN THE JOURNEY</span>
+                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Real Updates. No
+                    Hype.</h2>
+                <div class="section-divider mx-auto"></div>
+
+                <p class="mb-8" style="color: var(--color-text-secondary);">
+                    I send occasional emails when something worth sharing happens. New city. New project. Honest
+                    reflections from the road. No spam. No sales pitches. Just real updates from someone still in the
+                    middle of figuring it out.
+                </p>
+
+                <form action="https://formspree.io/f/mnnnoogg" method="POST"
+                    class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" name="_replyto" placeholder="Your email"
+                        class="flex-1 px-6 py-4 rounded-none border-2 border-gray-700 bg-transparent text-white focus:outline-none focus:border-gray-500"
+                        required
+                        style="background: var(--color-dark-2); border-color: var(--color-dark-3); color: var(--color-text-primary);">
+                    <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
+                    <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit" class="btn-primary">Keep me posted</button>
+                </form>
+
+                <p class="mt-4 text-sm" style="color: var(--color-text-tertiary);">
+                    I respect your inbox. Unsubscribe anytime. I'll probably forget to email you for months anyway.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-12">
+    <footer class="py-12" style="background: var(--color-dark-2); border-top: 1px solid var(--color-dark-3);">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <a href="/index.html" class="text-2xl font-bold flex items-center mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 flex items-center justify-center mr-2">
-                            <i class="fas fa-camera text-black text-lg"></i>
-                        </div>
-                        <span class="heading-font">Carl Tomich</span>
-                    </a>
-                    <p class="text-gray-400 mb-4">
-                        Crafting cinematic stories through travel, tech, and filmmaking.
+                    <h3 class="heading-font text-2xl mb-4" style="color: var(--color-accent);">CARL TOMICH</h3>
+                    <p class="mb-4" style="color: var(--color-text-secondary);">
+                        Rebuilding through movement, discipline, and film.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@carltomichtech" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@globetraveladventures" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <p class="text-sm" style="color: var(--color-text-tertiary);">
+                        Australian filmmaker. Digital nomad. Documentary storyteller. Currently somewhere between Hanoi
+                        and the Balkans, trying to build a life that feels honest.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--color-text-primary);">Explore</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="nav-link">About</a></li>
+                        <li><a href="/destinations.html" class="nav-link">Places</a></li>
+                        <li><a href="/portfolio.html" class="nav-link">Archive</a></li>
+                        <li><a href="/blog.html" class="nav-link">Essays</a></li>
+                        <li><a href="/gear.html" class="nav-link">Gear</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--color-text-primary);">YouTube Channels</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link">Carl
+                                Tomich</a></li>
+                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank"
+                                class="nav-link">Globe Travel Adventures</a></li>
+                        <li><a href="https://www.youtube.com/@carltomichtech" target="_blank" class="nav-link">Carl
+                                Tomich Tech</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--color-text-primary);">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-facebook-f"></i></a>
                     </div>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
-                    <ul class="space-y-3">
-                        <li><a href="/index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Home</a></li>
-                        <li><a href="/destinations.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Destinations</a></li>
-                        <li><a href="/portfolio.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Portfolio</a></li>
-                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="text-gray-400 hover:text-yellow-500 transition-colors">Videos</a></li>
-                        <li><a href="/blog.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Blog</a></li>
-                        <li><a href="/about.html" class="text-gray-400 hover:text-yellow-500 transition-colors">About</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Destinations</h3>
-                    <ul class="space-y-3">
-                        <li><a href="/Berlin.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Berlin</a></li>
-                        <li><a href="/melbournetravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Melbourne</a></li>
-                        <li><a href="/cairnstravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Cairns</a></li>
-                        <li><a href="/phuketravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Phuket</a></li>
-                        <li><a href="/hanoitravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hanoi</a></li>
-                        <li><a href="/osakatravelguide.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Osaka</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
-                    <p class="text-gray-400 mb-4">
-                        Subscribe for exclusive filmmaking and travel insights.
-                    </p>
-                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex">
-                        <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
-                        <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
-                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_gotcha" style="display:none">
-                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-black rounded-r-lg hover:bg-yellow-600 transition-all">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                    <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+                style="border-color: var(--color-dark-3);">
+                <p class="text-sm mb-4 md:mb-0" style="color: var(--color-text-tertiary);">
                     © 2025 Carl Tomich. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="/privacy-policy.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>
-                    <a href="/terms-and-conditions.html" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Cookies</a>
+                    <a href="/privacy-policy.html" class="text-sm nav-link">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html" class="text-sm nav-link">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-yellow-500 text-black rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
     <!-- JavaScript -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            try {
-                // Mobile Menu Toggle
-                const mobileMenuButton = document.getElementById('mobile-menu-button');
-                const mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenuButton && mobileMenu) {
-                    mobileMenuButton.addEventListener('click', function() {
-                        mobileMenu.classList.toggle('open');
-                        this.querySelector('i').classList.toggle('fa-bars');
-                        this.querySelector('i').classList.toggle('fa-times');
-                    });
-                }
-
-                // Smooth scrolling for anchor links
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const id = this.getAttribute('href');
-                        if (id !== '#') {
-                            const el = document.querySelector(id);
-                            if (el) {
-                                if (mobileMenu && mobileMenu.classList.contains('open')) {
-                                    mobileMenu.classList.remove('open');
-                                    if (mobileMenuButton) {
-                                        mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
-                                        mobileMenuButton.querySelector('i').classList.toggle('fa-times');
-                                    }
-                                }
-                                window.scrollTo({
-                                    top: el.offsetTop - 80,
-                                    behavior: 'smooth'
-                                });
-                            }
-                        }
-                    });
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('open');
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
                 });
-
-                // Navbar scroll effect
-                const navbar = document.getElementById('navbar');
-                if (navbar) {
-                    window.addEventListener('scroll', function() {
-                        if (window.scrollY > 50) {
-                            navbar.classList.add('scrolled');
-                        } else {
-                            navbar.classList.remove('scrolled');
-                        }
-                    });
-                }
-
-                // Back to top button
-                const backToTopButton = document.getElementById('back-to-top');
-                if (backToTopButton) {
-                    window.addEventListener('scroll', function() {
-                        if (window.scrollY > 300) {
-                            backToTopButton.classList.remove('opacity-0', 'invisible');
-                            backToTopButton.classList.add('opacity-100', 'visible');
-                        } else {
-                            backToTopButton.classList.remove('opacity-100', 'visible');
-                            backToTopButton.classList.add('opacity-0', 'invisible');
-                        }
-                    });
-                    backToTopButton.addEventListener('click', function() {
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
-                    });
-                }
-            } catch (error) {
-                console.error('JavaScript Error in index.html:', error);
             }
+
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            if (navbar) {
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const id = this.getAttribute('href');
+                    if (id !== '#') {
+                        const el = document.querySelector(id);
+                        if (el) {
+                            window.scrollTo({
+                                top: el.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
         });
     </script>
     <script src="/assets/js/site.js" defer></script>
 </body>
+
 </html>
