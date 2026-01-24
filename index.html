@@ -7,7 +7,7 @@
         type="text/javascript" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carl Tomich — Documentary Filmmaker & Digital Nomad</title>
+    <title>Carl Tomich — Documentary Filmmaker</title>
     <link rel="canonical" href="https://www.carltravels.com/">
 
     <!-- Google tag (gtag.js) -->
@@ -21,25 +21,25 @@
 
     <!-- Meta Tags -->
     <meta name="description"
-        content="Australian filmmaker documenting a real transformation across countries through Muay Thai, creative work, and honest storytelling. No courses. No bullshit. Just the documentary.">
+        content="Australian documentary filmmaker who engineers extreme life projects and turns them into films. Busking for Berlin (2014), A Sail Untold (2022), Busk Life (2024), and current Martial Arts Documentary in production.">
     <meta name="affiliateIntent" content="B">
     <meta name="keywords"
-        content="Carl Tomich, Documentary Filmmaker, Digital Nomad, Muay Thai, Filmmaking, Honest Storytelling">
+        content="Carl Tomich, Documentary Filmmaker, Busking for Berlin, A Sail Untold, Busk Life, Independent Filmmaker">
     <meta name="author" content="Carl Tomich">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Carl Tomich — Documentary Filmmaker & Digital Nomad">
+    <meta property="og:title" content="Carl Tomich — Documentary Filmmaker">
     <meta property="og:description"
-        content="Australian filmmaker documenting a real transformation across countries through Muay Thai, creative work, and honest storytelling.">
+        content="Australian documentary filmmaker who engineers extreme life projects and turns them into films.">
     <meta property="og:image" content="https://www.carltravels.com/carlaboutme.jpg">
     <meta property="og:url" content="https://www.carltravels.com/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Carl Tomich — Documentary Filmmaker & Digital Nomad">
+    <meta name="twitter:title" content="Carl Tomich — Documentary Filmmaker">
     <meta name="twitter:description"
-        content="Australian filmmaker documenting a real transformation across countries through Muay Thai, creative work, and honest storytelling.">
+        content="Australian documentary filmmaker who engineers extreme life projects and turns them into films.">
     <meta name="twitter:image" content="https://www.carltravels.com/carlaboutme.jpg">
 
     <!-- External Resources -->
@@ -48,48 +48,16 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
         crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&family=Merriweather:ital,wght@0,400;1,400&display=swap');
-
-        :root {
-            /* Dark Foundation */
-            --color-black: #0a0a0a;
-            --color-dark-1: #1a1a1a;
-            --color-dark-2: #2a2a2a;
-            --color-dark-3: #3a3a3a;
-
-            /* Text Colors */
-            --color-text-primary: #e5e5e5;
-            --color-text-secondary: #999999;
-            --color-text-tertiary: #666666;
-
-            /* Accent Colors */
-            --color-accent: #8b7355;
-            --color-accent-dark: #6b5840;
-            --color-energy: #a64d4d;
-
-            /* Spacing */
-            --space-3: 1rem;
-            --space-4: 1.5rem;
-            --space-6: 2rem;
-            --space-8: 3rem;
-            --space-12: 4rem;
-            --space-16: 6rem;
-            --space-24: 10rem;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: var(--color-black);
-            color: var(--color-text-primary);
+            background-color: var(--black);
+            color: var(--light);
             line-height: 1.8;
-            scroll-behavior: smooth;
         }
 
         .heading-font {
@@ -98,43 +66,7 @@
             line-height: 0.95;
         }
 
-        .serif-font {
-            font-family: 'Merriweather', serif;
-        }
-
-        /* Navigation */
-        .navbar {
-            backdrop-filter: blur(10px);
-            background-color: rgba(10, 10, 10, 0.9);
-            transition: all 0.3s ease;
-            border-bottom: 1px solid transparent;
-        }
-
-        .navbar.scrolled {
-            background-color: rgba(10, 10, 10, 0.98);
-            border-bottom-color: var(--color-dark-3);
-        }
-
-        .nav-link {
-            color: var(--color-text-secondary);
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--color-accent);
-        }
-
-        .mobile-menu {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out;
-        }
-
-        .mobile-menu.open {
-            max-height: 600px;
-        }
-
-        /* Hero Section */
+        /* Hero */
         .hero {
             min-height: 100vh;
             position: relative;
@@ -151,8 +83,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.3;
-            filter: grayscale(30%) contrast(1.2);
+            opacity: 0.25;
+            filter: grayscale(40%) contrast(1.3);
         }
 
         .hero-overlay {
@@ -161,164 +93,72 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9));
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.95));
         }
 
-        .hero-content {
+        /* Film Cards */
+        .film-card {
+            background: var(--dark);
+            border: 1px solid var(--dark-3);
+            transition: all 0.4s ease;
             position: relative;
-            z-index: 10;
-            text-align: center;
-            padding: var(--space-6);
+            overflow: hidden;
         }
 
-        .hero-headline {
-            font-size: clamp(2.5rem, 8vw, 6rem);
-            margin-bottom: var(--space-6);
+        .film-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-8px);
         }
 
-        .hero-subheadline {
-            font-size: clamp(1.5rem, 4vw, 3rem);
-            color: var(--color-accent);
-            margin-bottom: var(--space-8);
+        .film-poster {
+            width: 100%;
+            aspect-ratio: 2/3;
+            object-fit: cover;
+            filter: grayscale(20%) contrast(1.15);
+        }
+
+        .film-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--primary);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
         }
 
         /* Section Styles */
         .section {
-            padding: var(--space-16) var(--space-6);
+            padding: 6rem 1.5rem;
         }
 
         .section-label {
             font-size: 0.75rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: var(--color-accent);
+            color: var(--primary);
             display: block;
-            margin-bottom: var(--space-3);
+            margin-bottom: 1rem;
         }
 
         .section-heading {
-            font-size: clamp(2rem, 5vw, 4rem);
-            margin-bottom: var(--space-6);
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            margin-bottom: 2rem;
         }
 
         .section-divider {
             width: 4rem;
-            height: 2px;
-            background: var(--color-accent);
-            margin-bottom: var(--space-8);
+            height: 3px;
+            background: var(--primary);
+            margin-bottom: 3rem;
         }
 
-        /* Arc Cards */
-        .arc-card {
-            background: var(--color-dark-2);
-            border: 1px solid var(--color-dark-3);
-            padding: var(--space-8);
-            transition: all 0.4s ease;
-            margin-bottom: var(--space-6);
-        }
-
-        .arc-card:hover {
-            border-color: var(--color-accent);
-            transform: translateY(-4px);
-        }
-
-        .arc-image {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            margin-bottom: var(--space-6);
-            filter: grayscale(20%) contrast(1.15) brightness(0.95);
-        }
-
-        /* Current Chapter */
-        .current-chapter {
-            background: var(--color-dark-1);
-            border-left: 4px solid var(--color-accent);
-            padding: var(--space-8);
-        }
-
-        /* Reality Check */
-        .reality-check {
-            background: var(--color-dark-2);
-            border: 2px solid var(--color-energy);
-            padding: var(--space-12);
-        }
-
-        .stat-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: var(--space-6);
-            margin-top: var(--space-8);
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            color: var(--color-accent);
-            margin-bottom: var(--space-3);
-        }
-
-        /* Buttons */
-        .btn-primary {
-            background: var(--color-accent);
-            color: var(--color-black);
-            padding: var(--space-4) var(--space-8);
-            border: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-decoration: none;
-        }
-
-        .btn-primary:hover {
-            background: var(--color-accent-dark);
-        }
-
-        .btn-ghost {
-            background: transparent;
-            color: var(--color-accent);
-            border: 2px solid var(--color-accent);
-            padding: var(--space-4) var(--space-8);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-decoration: none;
-        }
-
-        .btn-ghost:hover {
-            background: var(--color-accent);
-            color: var(--color-black);
-        }
-
-        /* Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeIn 1.2s ease forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
             .section {
-                padding: var(--space-12) var(--space-4);
-            }
-
-            .arc-card {
-                padding: var(--space-6);
+                padding: 4rem 1rem;
             }
         }
     </style>
@@ -329,35 +169,32 @@
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="/index.html" class="text-2xl font-bold flex items-center">
-                    <span class="heading-font" style="color: var(--color-accent);">CARL TOMICH</span>
+                <a href="/index.html" class="text-2xl font-bold">
+                    <span class="heading-font" style="color: var(--primary);">CARL TOMICH</span>
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/index.html" class="nav-link font-medium">Home</a>
-                    <a href="/about.html" class="nav-link font-medium">About</a>
-                    <a href="/destinations.html" class="nav-link font-medium">Places</a>
-                    <a href="/portfolio.html" class="nav-link font-medium">Archive</a>
+                    <a href="/index.html" class="nav-link font-medium">Films</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Current Project</a>
                     <a href="/blog.html" class="nav-link font-medium">Essays</a>
                     <a href="/gear.html" class="nav-link font-medium">Gear</a>
-                    <a href="/donate.html" class="nav-link font-medium">Support</a>
+                    <a href="/destinations.html" class="nav-link font-medium">Travel</a>
+                    <a href="/about.html" class="nav-link font-medium">About</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none"
-                    style="color: var(--color-text-secondary);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
 
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Home</a>
-                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
-                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Places</a>
-                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Archive</a>
+                    <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Films</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Current Project</a>
                     <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Essays</a>
                     <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
-                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link">Support</a>
+                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Travel</a>
+                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
                 </div>
             </div>
         </div>
@@ -365,332 +202,341 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <img class="hero-image" src="/carlworking.jpg" alt="Carl Tomich filming">
+        <img class="hero-image" src="/carlcamera.jpg" alt="Carl Tomich filming">
         <div class="hero-overlay"></div>
-        <div class="hero-content fade-in">
-            <h1 class="heading-font hero-headline" style="color: var(--color-text-primary);">
-                I left Australia at 40<br>to rebuild my life from scratch.
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <h1 class="heading-font text-white mb-6" style="font-size: clamp(2.5rem, 8vw, 7rem);">
+                I engineer extreme life projects<br>and turn them into films.
             </h1>
-            <p class="heading-font hero-subheadline">
-                This is the documentary.
+            <p class="text-2xl mb-4" style="color: var(--primary);">Carl Tomich — Documentary Filmmaker</p>
+            <p class="text-lg mb-8 max-w-3xl mx-auto" style="color: var(--light);">
+                I've moved to Berlin with no money to document street musicians. I've attempted to sail around the world
+                and failed. I've returned to the streets a decade later. Now I'm documenting exile and discipline at 40.
             </p>
-            <p class="text-lg max-w-2xl mx-auto mb-8" style="color: var(--color-text-secondary);">
-                No course to sell. No blueprint to follow. Just a filmmaker, a camera, and the discipline to keep moving
-                forward when everything else falls apart.
+            <p class="text-lg mb-12 max-w-3xl mx-auto font-semibold" style="color: var(--light);">
+                This is not a lifestyle brand. This is a documentary career.
             </p>
-            <a href="#journey" class="btn-primary">Watch the journey</a>
+            <a href="#filmography" class="btn-primary">View Filmography</a>
         </div>
     </section>
 
-    <!-- The Three Arcs -->
-    <section id="journey" class="section" style="background: var(--color-dark-1);">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16 fade-in">
-                <p class="text-lg mb-8"
-                    style="color: var(--color-text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                    This isn't a travel blog. It's a living archive of one man's attempt to rebuild his identity through
-                    movement, training, and creative work across multiple countries.
-                </p>
-            </div>
-
-            <!-- Arc 1: The Journey -->
-            <div class="arc-card fade-in">
-                <img src="/whyileftaustralia.jpg" alt="Empty airport terminal" class="arc-image">
-                <span class="section-label">THE JOURNEY</span>
-                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Leaving Everything
-                    Behind</h2>
-                <div class="section-divider"></div>
-                <p class="mb-6" style="color: var(--color-text-secondary);">
-                    I turned 40 in a country that no longer felt like home. The bars closed. The rules multiplied. The
-                    life I was living started to feel smaller every year. So I left.
-                </p>
-                <p class="mb-6" style="color: var(--color-text-secondary);">
-                    Not because I thought moving would fix everything. But because staying felt like giving up.
-                </p>
-                <p style="color: var(--color-text-secondary);">
-                    This is the story of what happens when you walk away from the safe option and try to build something
-                    real.
-                </p>
-            </div>
-
-            <!-- Arc 2: Training & Discipline -->
-            <div class="arc-card fade-in">
-                <img src="/carlcamera.jpg" alt="Empty gym training" class="arc-image">
-                <span class="section-label">TRAINING & DISCIPLINE</span>
-                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">The Physical Rebuild
-                </h2>
-                <div class="section-divider"></div>
-                <p class="mb-6" style="color: var(--color-text-secondary);">
-                    Empty gyms at 6am. Muay Thai pads in cheap apartments. Sleep struggles. Mental lows. The slow,
-                    unglamorous work of rebuilding a body and mind that spent too long sitting still.
-                </p>
-                <p style="color: var(--color-text-secondary);">
-                    Training isn't about transformation photos. It's about showing up when you don't want to. It's the
-                    only thing that makes sense when everything else is chaos.
-                </p>
-            </div>
-
-            <!-- Arc 3: The Work -->
-            <div class="arc-card fade-in">
-                <img src="/carldesk.jpg" alt="Editing workspace" class="arc-image">
-                <span class="section-label">THE WORK</span>
-                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Building Something
-                    Real</h2>
-                <div class="section-divider"></div>
-                <p class="mb-6" style="color: var(--color-text-secondary);">
-                    Fourteen years behind a camera. Editing in cafes. Filming empty streets at 3am. Uploading stock
-                    footage and hoping it sells. Building YouTube channels that might pay rent next month.
-                </p>
-                <p style="color: var(--color-text-secondary);">
-                    This is what creative work actually looks like when you strip away the Instagram version. Late
-                    nights. Tight budgets. Obsessive attention to detail. And the quiet satisfaction of making something
-                    that matters.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Chapter -->
-    <section class="section" style="background: var(--color-black);">
-        <div class="container mx-auto max-w-4xl">
-            <div class="current-chapter fade-in">
-                <span class="section-label">CURRENT CHAPTER</span>
-                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Where I Am Now</h2>
-                <div class="section-divider"></div>
-
-                <div class="grid md:grid-cols-3 gap-8 mb-8">
-                    <div>
-                        <h3 class="font-bold mb-2" style="color: var(--color-accent);">Location</h3>
-                        <p style="color: var(--color-text-secondary);">Hanoi, Vietnam → Albania (March 2026)</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold mb-2" style="color: var(--color-accent);">Training</h3>
-                        <p style="color: var(--color-text-secondary);">Muay Thai 4x/week. Morning runs. Discipline over
-                            motivation.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold mb-2" style="color: var(--color-accent);">Current Project</h3>
-                        <p style="color: var(--color-text-secondary);">Documenting the transition from Asia to Europe.
-                            New cities. New gyms. Same discipline.</p>
-                    </div>
-                </div>
-
-                <a href="/blog.html" class="btn-ghost">Follow the current chapter →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Work -->
-    <section class="section" style="background: var(--color-dark-1);">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16 fade-in">
-                <span class="section-label">DOCUMENTARY PROJECTS</span>
-                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Latest Work</h2>
+    <!-- Filmography Section -->
+    <section id="filmography" class="section" style="background: var(--dark);">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <span class="section-label">FILMOGRAPHY</span>
+                <h2 class="heading-font section-heading" style="color: var(--light);">Films</h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="fade-in">
-                    <img src="/busking.jpg" alt="Busk Life documentary" class="arc-image">
-                    <h3 class="heading-font text-3xl mb-4" style="color: var(--color-text-primary);">Busk Life (2024)
-                    </h3>
-                    <p class="mb-6" style="color: var(--color-text-secondary);">
-                        Ten years after "Busking for Berlin," I returned to the streets to see what changed. The
-                        artists. The city. The hustle. This is the follow-up documentary.
-                    </p>
-                    <a href="/portfolio.html" class="btn-ghost">Watch the film →</a>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Film 1: Busking for Berlin -->
+                <div class="film-card">
+                    <img src="/busking.jpg" alt="Busking for Berlin poster" class="film-poster">
+                    <div class="p-6">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Busking for Berlin</h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2014</p>
+                        <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
+                            Moved to Berlin with no money and a guitar. Challenged myself to live only on busking income
+                            for a year while documenting the street music scene.
+                        </p>
+                        <a href="https://www.imdb.com/title/tt3488376/" target="_blank" class="text-sm font-semibold"
+                            style="color: var(--primary);">
+                            Watch on IMDb →
+                        </a>
+                    </div>
                 </div>
 
-                <div class="fade-in">
-                    <img src="/hanoilogo.jpg" alt="Hanoi by Night" class="arc-image">
-                    <h3 class="heading-font text-3xl mb-4" style="color: var(--color-text-primary);">Hanoi by Night</h3>
-                    <p class="mb-6" style="color: var(--color-text-secondary);">
-                        A cinematic short film exploring the Old Quarter, Hoàn Kiếm Lake, and Beer Street after dark.
-                        The energy. The chaos. The beauty.
-                    </p>
-                    <a href="/hanoi-by-night.html" class="btn-ghost">Watch now →</a>
+                <!-- Film 2: A Sail Untold -->
+                <div class="film-card">
+                    <img src="/carlworking.jpg" alt="A Sail Untold" class="film-poster">
+                    <div class="p-6">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">A Sail Untold</h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2022</p>
+                        <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
+                            Attempted to sail around the world. COVID restrictions and an unorganized crew turned it
+                            into a documentary about failure.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank"
+                            class="text-sm font-semibold" style="color: var(--primary);">
+                            Watch on YouTube →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Film 3: Busk Life -->
+                <div class="film-card">
+                    <img src="/busklifeposter.jpg" alt="Busk Life poster" class="film-poster">
+                    <div class="p-6">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Busk Life</h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2024</p>
+                        <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
+                            Returned to Berlin's streets a decade later. A sequel exploring how the busking scene
+                            evolved and what happened to the artists.
+                        </p>
+                        <a href="/portfolio.html" class="text-sm font-semibold" style="color: var(--primary);">
+                            Watch Film →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Film 4: Martial Arts Documentary -->
+                <div class="film-card">
+                    <div class="film-badge">IN PRODUCTION</div>
+                    <img src="/carlcamera2.jpg" alt="Martial Arts Documentary" class="film-poster">
+                    <div class="p-6">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Martial Arts Documentary
+                        </h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2025-26</p>
+                        <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
+                            Documenting exile, discipline, and starting over at 40. Using Muay Thai training as a
+                            narrative constraint across Vietnam, Albania, Montenegro, and Croatia.
+                        </p>
+                        <a href="#current-project" class="text-sm font-semibold" style="color: var(--primary);">
+                            Follow Production →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Recent Essays -->
-    <section class="section" style="background: var(--color-black);">
+    <!-- Current Project Section -->
+    <section id="current-project" class="section" style="background: var(--black);">
+        <div class="container mx-auto max-w-4xl">
+            <div class="mb-12">
+                <span class="section-label">IN PRODUCTION</span>
+                <h2 class="heading-font section-heading" style="color: var(--light);">Martial Arts Documentary (2025-26)
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="mb-12">
+                <p class="text-lg mb-6" style="color: var(--light);">
+                    Currently filming a documentary about exile, discipline, and starting over at 40.
+                </p>
+                <p class="text-lg mb-6" style="color: var(--light);">
+                    I'm using Muay Thai training as a narrative constraint—a way to structure the story and create
+                    discipline in an otherwise chaotic life project. This is not a fitness journey. This is a film about
+                    uncertainty, creative survival, and what happens when you intentionally burn down your life and walk
+                    into something you're not qualified for.
+                </p>
+                <p class="text-lg" style="color: var(--light);">
+                    Filming across Vietnam, Albania, Montenegro, and Croatia. Release date unknown.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12"
+                style="background: var(--dark); padding: 2rem; border-left: 4px solid var(--primary);">
+                <div>
+                    <h3 class="font-bold mb-2" style="color: var(--primary);">Current Location</h3>
+                    <p style="color: var(--light);">Hanoi, Vietnam → Albania (March 2026)</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2" style="color: var(--primary);">Status</h3>
+                    <p style="color: var(--light);">Principal photography ongoing</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2" style="color: var(--primary);">Narrative Focus</h3>
+                    <p style="color: var(--light);">Exile, identity, creative survival</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2" style="color: var(--primary);">Constraint</h3>
+                    <p style="color: var(--light);">Muay Thai training as story structure</p>
+                </div>
+            </div>
+
+            <a href="/portfolio.html" class="btn-ghost">Follow Production Diary →</a>
+        </div>
+    </section>
+
+    <!-- The Method Section -->
+    <section class="section" style="background: var(--dark);">
+        <div class="container mx-auto max-w-4xl text-center">
+            <span class="section-label">METHODOLOGY</span>
+            <h2 class="heading-font section-heading" style="color: var(--light);">How I Work</h2>
+            <div class="section-divider mx-auto"></div>
+
+            <p class="text-lg mb-6" style="color: var(--light);">
+                I intentionally burn down my life every few years and walk into something I'm not qualified for. Then I
+                document what happens.
+            </p>
+            <p class="text-lg mb-6" style="color: var(--light);">
+                I've lived on the streets of Berlin with a guitar. I've joined a sailing expedition that fell apart.
+                I've moved to countries where I don't speak the language. I've started training in a martial art I knew
+                nothing about.
+            </p>
+            <p class="text-lg mb-6" style="color: var(--light);">
+                These aren't lifestyle choices. They're documentary projects.
+            </p>
+            <p class="text-xl font-semibold" style="color: var(--primary);">
+                Risk. Uncertainty. Failure. Obsession. Rebuilding. Turning chaos into films.
+            </p>
+        </div>
+    </section>
+
+    <!-- Latest Essays -->
+    <section class="section" style="background: var(--black);">
         <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16 fade-in">
-                <span class="section-label">FROM THE ARCHIVE</span>
-                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Recent Essays</h2>
+            <div class="text-center mb-16">
+                <span class="section-label">WRITING</span>
+                <h2 class="heading-font section-heading" style="color: var(--light);">Essays</h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="arc-card fade-in">
-                    <h3 class="font-bold text-xl mb-4" style="color: var(--color-text-primary);">The Reality of Being a
-                        Digital Nomad</h3>
-                    <p class="mb-4" style="color: var(--color-text-secondary);">
-                        Loneliness. Money anxiety. Discipline problems. The unglamorous truth about trying to build a
-                        life with no fixed address.
+                <div class="film-card p-6">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--light);">Why I Left Australia</h3>
+                    <p class="mb-6" style="color: var(--muted);">
+                        The slow realization that the place you grew up in isn't the place you belong anymore. And what
+                        happens when you walk away.
                     </p>
-                    <a href="/becomingadigitalnomad.html" style="color: var(--color-accent);">Read more →</a>
+                    <a href="/whyileftaustralia.html" class="text-sm font-semibold" style="color: var(--primary);">Read
+                        →</a>
                 </div>
 
-                <div class="arc-card fade-in">
-                    <h3 class="font-bold text-xl mb-4" style="color: var(--color-text-primary);">Why I Left Australia
-                    </h3>
-                    <p class="mb-4" style="color: var(--color-text-secondary);">
-                        The slow realization that the place you grew up in isn't the place you belong anymore.
-                    </p>
-                    <a href="/whyileftaustralia.html" style="color: var(--color-accent);">Read more →</a>
-                </div>
-
-                <div class="arc-card fade-in">
-                    <h3 class="font-bold text-xl mb-4" style="color: var(--color-text-primary);">The Reality of Living
-                        Overseas</h3>
-                    <p class="mb-4" style="color: var(--color-text-secondary);">
+                <div class="film-card p-6">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--light);">The Reality of Living Overseas</h3>
+                    <p class="mb-6" style="color: var(--muted);">
                         Starting over. Identity crisis. The strange freedom of having nothing to lose.
                     </p>
-                    <a href="/the-reality-of-living-overseas.html" style="color: var(--color-accent);">Read more →</a>
+                    <a href="/the-reality-of-living-overseas.html" class="text-sm font-semibold"
+                        style="color: var(--primary);">Read →</a>
                 </div>
+
+                <div class="film-card p-6">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--light);">How I Make Money as a Filmmaker</h3>
+                    <p class="mb-6" style="color: var(--muted);">
+                        Stock footage. YouTube ad revenue. Affiliate links. The unglamorous reality of funding
+                        independent documentary work.
+                    </p>
+                    <a href="/howtomakemoneyonlinesellingstockfootage.html" class="text-sm font-semibold"
+                        style="color: var(--primary);">Read →</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="/blog.html" class="btn-ghost">View All Essays →</a>
             </div>
         </div>
     </section>
 
-    <!-- Reality Check -->
-    <section class="section" style="background: var(--color-dark-1);">
-        <div class="container mx-auto max-w-4xl">
-            <div class="reality-check fade-in">
-                <h2 class="heading-font section-heading text-center" style="color: var(--color-text-primary);">No
-                    Bullshit. No Guru. No Course.</h2>
-                <div class="section-divider mx-auto"></div>
+    <!-- Gear & Travel -->
+    <section class="section" style="background: var(--dark);">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Gear -->
+                <div>
+                    <span class="section-label">EQUIPMENT</span>
+                    <h2 class="heading-font text-4xl mb-6" style="color: var(--light);">Gear & Filmmaking Tools</h2>
+                    <div class="section-divider"></div>
+                    <p class="mb-8" style="color: var(--light);">
+                        Professional equipment I use to make documentaries. Cameras, audio gear, editing software, and
+                        travel filming setups. Every review is based on real documentary production.
+                    </p>
+                    <a href="/gear.html" class="btn-ghost">View All Gear →</a>
+                </div>
 
-                <p class="mb-6 text-center text-lg" style="color: var(--color-text-secondary);">
-                    I'm not here to sell you freedom. I'm not financially free. I'm not living my best life. I'm not
-                    going to teach you how to quit your job and travel the world.
-                </p>
-
-                <p class="mb-6 text-center text-lg" style="color: var(--color-text-secondary);">
-                    I'm just a filmmaker trying to build something honest while moving between countries. Some months I
-                    make decent money. Some months I don't. I train because it keeps me sane. I film because it's the
-                    only thing I know how to do.
-                </p>
-
-                <p class="mb-8 text-center text-lg" style="color: var(--color-text-secondary);">
-                    If you're looking for a blueprint, you won't find it here. If you're looking for someone who's still
-                    figuring it out and willing to document the messy parts, then stick around.
-                </p>
-
-                <div class="stat-grid">
-                    <div class="stat">
-                        <div class="heading-font stat-number">14</div>
-                        <div style="color: var(--color-text-secondary);">Years Filmmaking</div>
-                    </div>
-                    <div class="stat">
-                        <div class="heading-font stat-number">12</div>
-                        <div style="color: var(--color-text-secondary);">Countries Lived In</div>
-                    </div>
-                    <div class="stat">
-                        <div class="heading-font stat-number">3</div>
-                        <div style="color: var(--color-text-secondary);">YouTube Channels</div>
-                    </div>
-                    <div class="stat">
-                        <div class="heading-font stat-number">0</div>
-                        <div style="color: var(--color-text-secondary);">Courses Sold</div>
-                    </div>
+                <!-- Travel -->
+                <div>
+                    <span class="section-label">LOCATIONS</span>
+                    <h2 class="heading-font text-4xl mb-6" style="color: var(--light);">Filmmaker's Location Guides</h2>
+                    <div class="section-divider"></div>
+                    <p class="mb-8" style="color: var(--light);">
+                        Destination guides from years of documentary work. Cost of living, visa logistics, filming
+                        locations, and the reality of living and working in each place. Not travel tips. Filmmaker's
+                        intel.
+                    </p>
+                    <a href="/destinations.html" class="btn-ghost">View All Locations →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Email Signup -->
-    <section class="section" style="background: var(--color-black);">
+    <section class="section" style="background: var(--black);">
         <div class="container mx-auto max-w-2xl text-center">
-            <div class="fade-in">
-                <span class="section-label">JOIN THE JOURNEY</span>
-                <h2 class="heading-font section-heading" style="color: var(--color-text-primary);">Real Updates. No
-                    Hype.</h2>
-                <div class="section-divider mx-auto"></div>
+            <span class="section-label">STAY UPDATED</span>
+            <h2 class="heading-font section-heading" style="color: var(--light);">Production Updates</h2>
+            <div class="section-divider mx-auto"></div>
 
-                <p class="mb-8" style="color: var(--color-text-secondary);">
-                    I send occasional emails when something worth sharing happens. New city. New project. Honest
-                    reflections from the road. No spam. No sales pitches. Just real updates from someone still in the
-                    middle of figuring it out.
-                </p>
+            <p class="mb-8 text-lg" style="color: var(--light);">
+                Occasional emails when I finish a film, start a new project, or have something worth saying. No spam. No
+                motivational bullshit. Just updates from someone making documentaries the hard way.
+            </p>
 
-                <form action="https://formspree.io/f/mnnnoogg" method="POST"
-                    class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                    <input type="email" name="_replyto" placeholder="Your email"
-                        class="flex-1 px-6 py-4 rounded-none border-2 border-gray-700 bg-transparent text-white focus:outline-none focus:border-gray-500"
-                        required
-                        style="background: var(--color-dark-2); border-color: var(--color-dark-3); color: var(--color-text-primary);">
-                    <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
-                    <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_gotcha" style="display:none">
-                    <button type="submit" class="btn-primary">Keep me posted</button>
-                </form>
+            <form action="https://formspree.io/f/mnnnoogg" method="POST"
+                class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-6">
+                <input type="email" name="_replyto" placeholder="Your email"
+                    class="flex-1 px-6 py-4 bg-transparent border-2 text-white focus:outline-none" required
+                    style="background: var(--dark); border-color: var(--dark-3); color: var(--light);">
+                <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
+                <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="btn-primary">Get Updates</button>
+            </form>
 
-                <p class="mt-4 text-sm" style="color: var(--color-text-tertiary);">
-                    I respect your inbox. Unsubscribe anytime. I'll probably forget to email you for months anyway.
-                </p>
-            </div>
+            <p class="text-sm" style="color: var(--muted);">
+                I send emails when I have something real to share. Could be weekly. Could be monthly. Could be never.
+                Unsubscribe anytime.
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12" style="background: var(--color-dark-2); border-top: 1px solid var(--color-dark-3);">
+    <footer class="py-12" style="background: var(--dark); border-top: 1px solid var(--dark-3);">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="heading-font text-2xl mb-4" style="color: var(--color-accent);">CARL TOMICH</h3>
-                    <p class="mb-4" style="color: var(--color-text-secondary);">
-                        Rebuilding through movement, discipline, and film.
+                    <h3 class="heading-font text-2xl mb-4" style="color: var(--primary);">CARL TOMICH</h3>
+                    <p class="mb-4 text-sm" style="color: var(--light);">
+                        Documentary Filmmaker
                     </p>
-                    <p class="text-sm" style="color: var(--color-text-tertiary);">
-                        Australian filmmaker. Digital nomad. Documentary storyteller. Currently somewhere between Hanoi
-                        and the Balkans, trying to build a life that feels honest.
+                    <p class="text-sm" style="color: var(--muted);">
+                        Engineering extreme life projects and turning them into films since 2014.
                     </p>
                 </div>
 
                 <div>
-                    <h3 class="font-semibold mb-4" style="color: var(--color-text-primary);">Explore</h3>
-                    <ul class="space-y-2">
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Films</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.imdb.com/title/tt3488376/" target="_blank" class="nav-link">Busking for
+                                Berlin (2014)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A
+                                Sail Untold (2022)</a></li>
+                        <li><a href="/portfolio.html" class="nav-link">Busk Life (2024)</a></li>
+                        <li><a href="#current-project" class="nav-link">Martial Arts Doc (In Production)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Explore</h3>
+                    <ul class="space-y-2 text-sm">
                         <li><a href="/about.html" class="nav-link">About</a></li>
-                        <li><a href="/destinations.html" class="nav-link">Places</a></li>
-                        <li><a href="/portfolio.html" class="nav-link">Archive</a></li>
                         <li><a href="/blog.html" class="nav-link">Essays</a></li>
                         <li><a href="/gear.html" class="nav-link">Gear</a></li>
+                        <li><a href="/destinations.html" class="nav-link">Travel Guides</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-semibold mb-4" style="color: var(--color-text-primary);">YouTube Channels</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link">Carl
-                                Tomich</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank"
-                                class="nav-link">Globe Travel Adventures</a></li>
-                        <li><a href="https://www.youtube.com/@carltomichtech" target="_blank" class="nav-link">Carl
-                                Tomich Tech</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold mb-4" style="color: var(--color-text-primary);">Connect</h3>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
                         <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i
                                 class="fab fa-youtube"></i></a>
                         <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="nav-link text-2xl"><i
-                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
             </div>
 
             <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
-                style="border-color: var(--color-dark-3);">
-                <p class="text-sm mb-4 md:mb-0" style="color: var(--color-text-tertiary);">
+                style="border-color: var(--dark-3);">
+                <p class="text-sm mb-4 md:mb-0" style="color: var(--muted);">
                     © 2025 Carl Tomich. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
@@ -728,7 +574,7 @@
                 });
             }
 
-            // Smooth scrolling for anchor links
+            // Smooth scrolling
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
