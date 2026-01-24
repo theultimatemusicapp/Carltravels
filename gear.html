@@ -15,6 +15,7 @@
     <meta property="og:url" content="https://www.carltravels.com/gear.html">
     <meta property="og:type" content="website">
 
+    <!-- Styles from Blog/Essays Page for consistency -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
 
@@ -29,33 +30,88 @@
             font-family: 'Montserrat', sans-serif;
             background-color: var(--dark);
             color: var(--light);
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
 
         .heading-font {
             font-family: 'Bebas Neue', sans-serif;
         }
 
+        .blog-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, rgba(18, 18, 18, 0.96), rgba(10, 10, 10, 0.92));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .card-overlay {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9) 100%);
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 26, 0.68);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 20px 45px -20px rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
         .navbar {
             backdrop-filter: blur(10px);
-            background-color: rgba(26, 26, 26, .9);
-            transition: .3s;
+            background-color: rgba(26, 26, 26, 0.9);
+            transition: all 0.3s ease;
         }
 
         .navbar.scrolled {
-            background-color: rgba(26, 26, 26, .98);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1);
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .wave-shape {
+            display: none;
         }
 
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
-            transition: max-height .5s ease-out;
+            transition: max-height 0.5s ease-out;
+            background: rgba(12, 12, 12, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .mobile-menu.open {
             max-height: 500px;
         }
+
+        /* Force dark theme override for card internals */
+        .blog-card .bg-white {
+            background-color: #0f0f0f !important;
+        }
+
+        .blog-card .text-gray-500,
+        .blog-card .text-gray-600,
+        .blog-card .text-gray-700,
+        .blog-card .text-gray-800 {
+            color: #d1d5db !important;
+        }
+
+        .blog-card .text-gray-900 {
+            color: #f3f4f6 !important;
+        }
+
+        .blog-card .bg-gray-900 {
+            background-color: #0f0f0f !important;
+        }
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
@@ -97,264 +153,316 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero-gradient relative overflow-hidden min-h-[50vh] flex items-center pt-20"
         style="background-image: url('flatlaytech.jpg'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-black/70"></div>
         <div class="container mx-auto px-6 py-20 relative z-10">
             <div class="text-center">
-                <h1 class="heading-font text-4xl md:text-5xl font-bold text-white mb-6">Filmmaker Tools &amp; Gear</h1>
-                <p class="text-lg text-yellow-300 mb-8">Field-tested equipment for creators on the move.</p>
+                <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Filmmaker Tools & Stories <br>With <span class="text-yellow-300">Carl Travels</span>
+                </h1>
+                <p class="text-lg text-yellow-300 mb-8 max-w-2xl mx-auto">
+                    Field-tested reviews of cinema cameras, lenses, drones, and post-production tools. No spec sheet
+                    reading, just real-world use.
+                </p>
+                <a href="#gear-posts"
+                    class="px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full font-medium hover:shadow-lg transition-all">
+                    Explore Reviews
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="gear-posts" class="py-20" style="background: var(--dark);">
+    <!-- Gear Posts Section -->
+    <section id="gear-posts" class="py-20 bg-[#050505]">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <span class="text-yellow-500 font-medium mb-2 inline-block">GEAR BLOG</span>
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Latest Reviews</h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
             </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1: Tolifo light -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://img.youtube.com/vi/HJg9pZXU3mQ/maxresdefault.jpg"
-                            alt="Tolifo 100W RGB COB light review thumbnail"
+                            alt="Tolifo 100W RGB COB light review"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Tolifo 100W RGB COB Light Review</h3>
-                            <p class="text-sm">Portable RGB light after 5 months</p>
+                            <h3 class="text-xl font-bold">Tolifo 100W RGB COB Light</h3>
+                            <p class="text-sm">Portable Lighting Review</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
                             <span class="text-gray-500 text-sm"><i class="fas fa-lightbulb mr-1 text-yellow-500"></i>
-                                Lighting Gear</span>
+                                Lighting</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.8</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Real-world brightness, battery life, and travel use cases for
-                            Tolifo’s all-in-one RGB COB light.</p>
+                        <p class="text-gray-600 mb-4">
+                            Real-world brightness, battery life, and travel use cases for Tolifo’s all-in-one RGB COB
+                            light after 5 months of use.
+                        </p>
                         <a href="tolifo-100w-rgb-light-review.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 2: AIARTY -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://img.youtube.com/vi/fsYA84tjrTE/maxresdefault.jpg"
-                            alt="AIARTY Video Enhancer Review thumbnail"
+                            alt="AIARTY Video Enhancer Review"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">AIARTY Video Enhancer Review</h3>
-                            <p class="text-sm">Budget Topaz Video AI alternative</p>
+                            <h3 class="text-xl font-bold">AIARTY Video Enhancer</h3>
+                            <p class="text-sm">Budget Topaz Alternative</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
                             <span class="text-gray-500 text-sm"><i class="fas fa-robot mr-1 text-yellow-500"></i> AI
                                 Tools</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.5</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Hands-on testing of AIARTY's models, export performance, and
-                            workflow tips.</p>
+                        <p class="text-gray-600 mb-4">
+                            Hands-on testing of AIARTY's models, export performance, and workflow tips for upscaling
+                            footage.
+                        </p>
                         <a href="aiarty-video-enhancer-review.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 3: DaVinci Resolve -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg"
                             alt="DaVinci Resolve tutorial workspace"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Beginner’s Guide to DaVinci Resolve 2025</h3>
-                            <p class="text-sm">Step-by-step editing workflow</p>
+                            <h3 class="text-xl font-bold">Beginner’s Guide to DaVinci Resolve</h3>
+                            <p class="text-sm">2025 Workflow Tutorial</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
                             <span class="text-gray-500 text-sm"><i class="fas fa-video mr-1 text-yellow-500"></i>
-                                Editing Tutorial</span>
+                                Editing</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">5.0</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Download Resolve, organize media, edit, color, mix audio, and
-                            export alongside Carl.</p>
+                        <p class="text-gray-600 mb-4">
+                            Download Resolve, organize media, edit, color, mix audio, and export alongside this
+                            step-by-step guide.
+                        </p>
                         <a href="beginners-guide-davinci-resolve-2025.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Guide <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Guide <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 4: DJI Flip -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/djimavic3.jpg" alt="DJI Flip drone"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-xl font-bold">DJI Flip Review</h3>
-                            <p class="text-sm">Budget drone or toy?</p>
+                            <p class="text-sm">Budget Drone or Toy?</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-drone mr-1 text-yellow-500"></i> Camera
-                                Gear</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-drone mr-1 text-yellow-500"></i>
+                                Drones</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.7</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Is DJI's budget drone a toy or a travel essential?</p>
+                        <p class="text-gray-600 mb-4">
+                            Is DJI's budget drone a toy or a travel essential? Testing flight modes and image quality.
+                        </p>
                         <a href="DJI-Flip-review.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 5: Bose vs Everse -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/busking.jpg" alt="Bose vs Everse"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Bose S1 Pro Plus vs Everse 8</h3>
-                            <p class="text-sm">Portable PA showdown</p>
+                            <h3 class="text-xl font-bold">Bose S1 Pro+ vs Everse 8</h3>
+                            <p class="text-sm">Portable PA Showdown</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
                             <span class="text-gray-500 text-sm"><i class="fas fa-volume-up mr-1 text-yellow-500"></i>
-                                Audio Gear</span>
+                                Audio</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.8</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Which battery-powered PA delivers the best mix of power and
-                            portability?</p>
+                        <p class="text-gray-600 mb-4">
+                            Which battery-powered PA system delivers the best mix of power, portability, and busking
+                            features?
+                        </p>
                         <a href="bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 6: DJI Mini 3 Pro -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/mini3pro.jpg" alt="DJI Mini 3 Pro"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">DJI Mini 3 Pro Review</h3>
-                            <p class="text-sm">More than a flying camera</p>
+                            <h3 class="text-xl font-bold">DJI Mini 3 Pro</h3>
+                            <p class="text-sm">The Traveller's Drone</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-drone mr-1 text-yellow-500"></i> Camera
-                                Gear</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-drone mr-1 text-yellow-500"></i>
+                                Drones</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.9</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Why this palm-sized drone doubles as a handheld gimbal.</p>
+                        <p class="text-gray-600 mb-4">
+                            Why this palm-sized drone doubles as a handheld gimbal and remains my go-to for travel
+                            b-roll.
+                        </p>
                         <a href="dji-mini-3-pro-review.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 7: Sony A7C II -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/a7cii.jpg" alt="Sony A7CII rig"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Sony A7CII Review</h3>
-                            <p class="text-sm">Custom full-frame rig build</p>
+                            <h3 class="text-xl font-bold">Sony A7C II Review</h3>
+                            <p class="text-sm">Compact Full-Frame Rig</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
                             <span class="text-gray-500 text-sm"><i class="fas fa-camera mr-1 text-yellow-500"></i>
-                                Camera Gear</span>
+                                Cameras</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.9</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Why this tiny full-frame beats the FX30 when rigged for
-                            run-and-gun shoots.</p>
+                        <p class="text-gray-600 mb-4">
+                            Why this tiny body beats the FX30 when rigged for run-and-gun documentary shoots.
+                        </p>
                         <a href="sony-a7cii-review.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 8: Sony A7III -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/sonya7siii.jpg" alt="Sony A7III workhorse"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Sony A7III Review (2025)</h3>
-                            <p class="text-sm">The full-frame workhorse</p>
+                            <h3 class="text-xl font-bold">Sony A7III Long Term</h3>
+                            <p class="text-sm">Still Worth It in 2025?</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
                             <span class="text-gray-500 text-sm"><i class="fas fa-camera mr-1 text-yellow-500"></i>
-                                Camera Gear</span>
+                                Cameras</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.7</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Why this proven body still delivers unmatched value for hybrid
-                            creators in 2025.</p>
+                        <p class="text-gray-600 mb-4">
+                            Why this proven workhorse body still delivers unmatched value for hybrid creators.
+                        </p>
                         <a href="tech-review-sony-a7siii.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="blog-card rounded-xl overflow-hidden shadow-lg">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="/djimavic3.jpg" alt="DJI Mavic 3"
-                            class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">DJI Mavic 3 Review</h3>
-                            <p class="text-sm">Flagship travel drone</p>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
-                        <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-drone mr-1 text-yellow-500"></i> Camera
-                                Gear</span>
-                        </div>
-                        <p class="text-gray-400 mb-4">Aerial shots that elevate your travel storytelling.</p>
-                        <a href="tech-review-dji-mavic3.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
-                    </div>
-                </div>
+
+                <!-- Card 9: Zhiyun Weebill 2 -->
                 <div class="blog-card rounded-xl overflow-hidden shadow-lg">
                     <div class="relative overflow-hidden h-64">
                         <img src="/weebill2.jpg" alt="Zhiyun Weebill 2"
                             class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
-                        </div>
+                        <div class="absolute inset-0 card-overlay"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold">Zhiyun Weebill 2 Review</h3>
-                            <p class="text-sm">Compact travel gimbal</p>
+                            <h3 class="text-xl font-bold">Zhiyun Weebill 2</h3>
+                            <p class="text-sm">Compact Travel Gimbal</p>
                         </div>
                     </div>
-                    <div class="p-6 bg-gray-900 border border-gray-800">
+                    <div class="p-6 bg-white">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="text-gray-500 text-sm"><i class="fas fa-camera mr-1 text-yellow-500"></i>
-                                Filmmaking Gear</span>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-video mr-1 text-yellow-500"></i>
+                                Stabilizers</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">4.6</span>
+                            </div>
                         </div>
-                        <p class="text-gray-400 mb-4">Smooth gimbal for dynamic filmmaking on the go.</p>
+                        <p class="text-gray-600 mb-4">
+                            A smooth, heavy-duty gimbal for dynamic filmmaking that actually fits in a backpack.
+                        </p>
                         <a href="tech-review-zhiyun-weebill2.html"
-                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">Read
-                            Review <i class="fas fa-arrow-right ml-2"></i></a>
+                            class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                            Read Review <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -384,8 +492,7 @@
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off →
                             <a href="https://www.dehancer.com/subscribe"
-                                class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a>
-                        </li>
+                                class="text-yellow-500 hover:text-yellow-400">dehancer.com/subscribe</a></li>
                         <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance"
                                 class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
                     </ul>
