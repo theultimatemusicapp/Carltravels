@@ -112,7 +112,7 @@
 
         .film-poster {
             width: 100%;
-            aspect-ratio: 2/3;
+            aspect-ratio: 16/9;
             object-fit: cover;
             filter: grayscale(20%) contrast(1.15);
         }
@@ -128,6 +128,39 @@
             font-weight: 700;
             letter-spacing: 0.1em;
             text-transform: uppercase;
+        }
+
+        /* Featured Short Film */
+        .featured-short {
+            position: relative;
+            width: 100%;
+            min-height: 500px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .featured-short:hover .featured-short-overlay {
+            background: rgba(10, 10, 10, 0.7);
+        }
+
+        .featured-short-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(30%) contrast(1.2);
+        }
+
+        .featured-short-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 10, 0.6);
+            transition: all 0.4s ease;
         }
 
         /* Section Styles */
@@ -159,6 +192,10 @@
         @media (max-width: 768px) {
             .section {
                 padding: 4rem 1rem;
+            }
+
+            .featured-short {
+                min-height: 350px;
             }
         }
     </style>
@@ -211,7 +248,8 @@
             <p class="text-2xl mb-4" style="color: var(--primary);">Carl Tomich — Documentary Filmmaker</p>
             <p class="text-lg mb-8 max-w-3xl mx-auto" style="color: var(--light);">
                 I've moved to Berlin with no money to document street musicians. I've attempted to sail around the world
-                and failed. I've returned to the streets a decade later. Now I'm documenting exile and discipline at 40.
+                and failed. I've returned to the streets a decade later. Now I'm documenting my immersion into multiple
+                martial arts systems across Asia.
             </p>
             <p class="text-lg mb-12 max-w-3xl mx-auto font-semibold" style="color: var(--light);">
                 This is not a lifestyle brand. This is a documentary career.
@@ -230,52 +268,62 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Film 1: Busking for Berlin -->
+                <!-- Film 1: Busking for Berlin (Remastered) -->
                 <div class="film-card">
-                    <img src="/busking.jpg" alt="Busking for Berlin poster" class="film-poster">
+                    <img src="https://img.youtube.com/vi/WjtMEQx34NE/maxresdefault.jpg"
+                        alt="Busking for Berlin Remastered" class="film-poster">
                     <div class="p-6">
                         <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Busking for Berlin</h3>
-                        <p class="text-sm mb-4" style="color: var(--muted);">2014</p>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2014 — Remastered Edition</p>
                         <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
                             Moved to Berlin with no money and a guitar. Challenged myself to live only on busking income
                             for a year while documenting the street music scene.
                         </p>
-                        <a href="https://www.imdb.com/title/tt3488376/" target="_blank" class="text-sm font-semibold"
-                            style="color: var(--primary);">
-                            Watch on IMDb →
-                        </a>
+                        <div class="flex gap-3">
+                            <a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank"
+                                class="text-sm font-semibold" style="color: var(--primary);">
+                                <i class="fab fa-youtube"></i> Watch Film →
+                            </a>
+                            <a href="https://www.imdb.com/title/tt3488376/" target="_blank"
+                                class="text-sm font-semibold" style="color: var(--primary);">
+                                <i class="fab fa-imdb"></i> IMDb →
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Film 2: A Sail Untold -->
                 <div class="film-card">
-                    <img src="/carlworking.jpg" alt="A Sail Untold" class="film-poster">
+                    <img src="https://img.youtube.com/vi/6iDgajITe6Q/maxresdefault.jpg" alt="A Sail Untold"
+                        class="film-poster">
                     <div class="p-6">
                         <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">A Sail Untold</h3>
-                        <p class="text-sm mb-4" style="color: var(--muted);">2022</p>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2022 — YouTube Only</p>
                         <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
                             Attempted to sail around the world. COVID restrictions and an unorganized crew turned it
-                            into a documentary about failure.
+                            into a documentary about failure. No IMDb page.
                         </p>
                         <a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank"
                             class="text-sm font-semibold" style="color: var(--primary);">
-                            Watch on YouTube →
+                            <i class="fab fa-youtube"></i> Watch on YouTube →
                         </a>
                     </div>
                 </div>
 
                 <!-- Film 3: Busk Life -->
                 <div class="film-card">
-                    <img src="/busklifeposter.jpg" alt="Busk Life poster" class="film-poster">
+                    <img src="https://img.youtube.com/vi/S8L4Hmwkgiw/maxresdefault.jpg" alt="Busk Life"
+                        class="film-poster">
                     <div class="p-6">
                         <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Busk Life</h3>
-                        <p class="text-sm mb-4" style="color: var(--muted);">2024</p>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2024 — Sequel to Busking for Berlin</p>
                         <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
                             Returned to Berlin's streets a decade later. A sequel exploring how the busking scene
                             evolved and what happened to the artists.
                         </p>
-                        <a href="/portfolio.html" class="text-sm font-semibold" style="color: var(--primary);">
-                            Watch Film →
+                        <a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank"
+                            class="text-sm font-semibold" style="color: var(--primary);">
+                            <i class="fab fa-youtube"></i> Watch Film →
                         </a>
                     </div>
                 </div>
@@ -287,10 +335,10 @@
                     <div class="p-6">
                         <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Martial Arts Documentary
                         </h3>
-                        <p class="text-sm mb-4" style="color: var(--muted);">2025-26</p>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2025-26 — Title TBD</p>
                         <p class="mb-6" style="color: var(--light); font-size: 0.9rem;">
-                            Documenting exile, discipline, and starting over at 40. Using Muay Thai training as a
-                            narrative constraint across Vietnam, Albania, Montenegro, and Croatia.
+                            Documenting my immersion into multiple martial arts systems across Asia—Karate, Boxing, Muay
+                            Thai, Vovinam. Filming in Vietnam, Thailand, and other Asian countries.
                         </p>
                         <a href="#current-project" class="text-sm font-semibold" style="color: var(--primary);">
                             Follow Production →
@@ -313,24 +361,24 @@
 
             <div class="mb-12">
                 <p class="text-lg mb-6" style="color: var(--light);">
-                    Currently filming a documentary about exile, discipline, and starting over at 40.
+                    This documentary follows my immersion into multiple martial arts systems across Asia as a narrative
+                    constraint for a long-form film about uncertainty, aging, obsession, and creative survival.
                 </p>
                 <p class="text-lg mb-6" style="color: var(--light);">
-                    I'm using Muay Thai training as a narrative constraint—a way to structure the story and create
-                    discipline in an otherwise chaotic life project. This is not a fitness journey. This is a film about
-                    uncertainty, creative survival, and what happens when you intentionally burn down your life and walk
-                    into something you're not qualified for.
+                    I'm training in Karate, Boxing, Muay Thai, Vovinam, and other regional martial arts. This is not a
+                    sports film. This is not a fitness journey. This is not a discipline brand.
                 </p>
                 <p class="text-lg" style="color: var(--light);">
-                    Filming across Vietnam, Albania, Montenegro, and Croatia. Release date unknown.
+                    Martial arts exist here as a story engine—a way to impose structure, risk, and physical stakes
+                    inside a life that has no fixed base.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 mb-12"
                 style="background: var(--dark); padding: 2rem; border-left: 4px solid var(--primary);">
                 <div>
-                    <h3 class="font-bold mb-2" style="color: var(--primary);">Current Location</h3>
-                    <p style="color: var(--light);">Hanoi, Vietnam → Albania (March 2026)</p>
+                    <h3 class="font-bold mb-2" style="color: var(--primary);">Filming Locations</h3>
+                    <p style="color: var(--light);">Vietnam, Thailand, and other Asian countries</p>
                 </div>
                 <div>
                     <h3 class="font-bold mb-2" style="color: var(--primary);">Status</h3>
@@ -338,11 +386,11 @@
                 </div>
                 <div>
                     <h3 class="font-bold mb-2" style="color: var(--primary);">Narrative Focus</h3>
-                    <p style="color: var(--light);">Exile, identity, creative survival</p>
+                    <p style="color: var(--light);">Uncertainty, aging, obsession, creative survival</p>
                 </div>
                 <div>
                     <h3 class="font-bold mb-2" style="color: var(--primary);">Constraint</h3>
-                    <p style="color: var(--light);">Muay Thai training as story structure</p>
+                    <p style="color: var(--light);">Multiple martial arts as story structure</p>
                 </div>
             </div>
 
@@ -350,8 +398,31 @@
         </div>
     </section>
 
+    <!-- Featured Short Film: Hanoi by Night -->
+    <section class="section" style="background: var(--dark); padding: 0;">
+        <a href="https://youtu.be/FfJgWi3aETs" target="_blank" class="featured-short block">
+            <img src="https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg" alt="Hanoi by Night"
+                class="featured-short-image">
+            <div class="featured-short-overlay"></div>
+            <div class="relative z-10 h-full flex flex-col justify-center px-8 md:px-16 py-16">
+                <span class="section-label">FEATURED SHORT FILM</span>
+                <h2 class="heading-font text-white mb-6" style="font-size: clamp(2.5rem, 6vw, 5rem);">Hanoi by Night
+                </h2>
+                <p class="text-lg mb-8 max-w-2xl" style="color: var(--light);">
+                    A short cinematic film shot in Hanoi, exploring isolation, night streets, and quiet movement through
+                    the city.
+                </p>
+                <div>
+                    <span class="btn-primary inline-block">
+                        <i class="fas fa-play mr-2"></i> Watch the Short Film
+                    </span>
+                </div>
+            </div>
+        </a>
+    </section>
+
     <!-- The Method Section -->
-    <section class="section" style="background: var(--dark);">
+    <section class="section" style="background: var(--black);">
         <div class="container mx-auto max-w-4xl text-center">
             <span class="section-label">METHODOLOGY</span>
             <h2 class="heading-font section-heading" style="color: var(--light);">How I Work</h2>
@@ -363,7 +434,7 @@
             </p>
             <p class="text-lg mb-6" style="color: var(--light);">
                 I've lived on the streets of Berlin with a guitar. I've joined a sailing expedition that fell apart.
-                I've moved to countries where I don't speak the language. I've started training in a martial art I knew
+                I've moved to countries where I don't speak the language. I've started training in martial arts I knew
                 nothing about.
             </p>
             <p class="text-lg mb-6" style="color: var(--light);">
@@ -376,7 +447,7 @@
     </section>
 
     <!-- Latest Essays -->
-    <section class="section" style="background: var(--black);">
+    <section class="section" style="background: var(--dark);">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16">
                 <span class="section-label">WRITING</span>
@@ -422,7 +493,7 @@
     </section>
 
     <!-- Gear & Travel -->
-    <section class="section" style="background: var(--dark);">
+    <section class="section" style="background: var(--black);">
         <div class="container mx-auto max-w-6xl">
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Gear -->
@@ -454,7 +525,7 @@
     </section>
 
     <!-- Email Signup -->
-    <section class="section" style="background: var(--black);">
+    <section class="section" style="background: var(--dark);">
         <div class="container mx-auto max-w-2xl text-center">
             <span class="section-label">STAY UPDATED</span>
             <h2 class="heading-font section-heading" style="color: var(--light);">Production Updates</h2>
@@ -485,7 +556,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-12" style="background: var(--dark); border-top: 1px solid var(--dark-3);">
+    <footer class="py-12" style="background: var(--black); border-top: 1px solid var(--dark-3);">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
@@ -501,11 +572,12 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Films</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://www.imdb.com/title/tt3488376/" target="_blank" class="nav-link">Busking for
-                                Berlin (2014)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank"
+                                class="nav-link">Busking for Berlin (2014)</a></li>
                         <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A
                                 Sail Untold (2022)</a></li>
-                        <li><a href="/portfolio.html" class="nav-link">Busk Life (2024)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk
+                                Life (2024)</a></li>
                         <li><a href="#current-project" class="nav-link">Martial Arts Doc (In Production)</a></li>
                     </ul>
                 </div>
