@@ -1,109 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate - Carl Travels</title>
+    <title>Support & Donate - Carl Travels</title>
     <!-- Cookiebot for GDPR Compliance -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece" type="text/javascript" async></script>
-    <!-- Meta Tags -->
-    <meta name="description" content="Support Carl Travels to help create inspiring travel documentaries and share captivating stories from around the world. Every donation, no matter how small, makes a difference!">
-    <meta name="keywords" content="Donate, Support, Carl Travels, Travel Documentaries, Filmmaking, Storytelling">
-    <meta name="author" content="Carl Ostomich">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Donate - Carl Travels">
-    <meta property="og:description" content="Help Carl Travels continue to create inspiring travel content. Your support makes a difference!">
-    <meta property="og:image" content="https://www.carltravels.com/images/donate-og-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/donate.html">
-    <meta property="og:type" content="website">
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Donate - Carl Travels">
-    <meta name="twitter:description" content="Help Carl Travels continue to create inspiring travel content. Your support makes a difference!">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/donate-twitter-image.jpg">
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece"
+        type="text/javascript" async></script>
+    <meta name="description"
+        content="Support independent filmmaking. Become a member for exclusive content, or use my affiliate links for Saily, Wise, and Dehancer to help keep the channel running.">
+
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
-        
+
         :root {
-            --primary: #f5c518; /* Muted gold for accents */
-            --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
-            --dark: #1a1a1a; /* Near-black for text/body */
-            --light: #d4d4d4; /* Light gray for secondary text */
+            --primary: #f5c518;
+            --secondary: #2a2a2a;
+            --dark: #1a1a1a;
+            --light: #d4d4d4;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--dark);
             color: var(--light);
             scroll-behavior: smooth;
         }
-        
+
         .hero-gradient {
             background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
-        
+
         .heading-font {
             font-family: 'Bebas Neue', sans-serif;
         }
-        
-        .donation-card {
+
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
             transition: all 0.3s ease;
         }
-        
-        .donation-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245, 197, 24, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
         }
-        
+
         .navbar {
             backdrop-filter: blur(10px);
             background-color: rgba(26, 26, 26, 0.9);
             transition: all 0.3s ease;
         }
-        
+
         .navbar.scrolled {
             background-color: rgba(26, 26, 26, 0.98);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         }
-        
-        .wave-shape {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-        
-        .wave-shape svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 150px;
-        }
-        
-        .wave-shape .shape-fill {
-            fill: #FFFFFF;
-        }
-        
+
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-out;
+            background: rgba(12, 12, 12, 0.95);
         }
-        
+
         .mobile-menu.open {
             max-height: 500px;
         }
     </style>
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
+
 <body class="text-gray-200">
     <!-- Navigation -->
-        <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
@@ -112,12 +87,13 @@
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/index.html" class="nav-link font-medium">Films</a>
-                    <a href="/portfolio.html" class="nav-link font-medium">Current Project</a>
-                    <a href="/blog.html" class="nav-link font-medium">Essays</a>
-                    <a href="/gear.html" class="nav-link font-medium">Gear</a>
-                    <a href="/destinations.html" class="nav-link font-medium">Travel</a>
-                    <a href="/about.html" class="nav-link font-medium">About</a>
+                    <a href="/index.html" class="nav-link font-medium" style="color: var(--light);">Films</a>
+                    <a href="/films/martial-arts-documentary.html" class="nav-link font-medium"
+                        style="color: var(--light);">Current Project</a>
+                    <a href="/blog.html" class="nav-link font-medium" style="color: var(--light);">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium" style="color: var(--light);">Gear</a>
+                    <a href="/destinations.html" class="nav-link font-medium" style="color: var(--primary);">Travel</a>
+                    <a href="/about.html" class="nav-link font-medium" style="color: var(--light);">About</a>
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
@@ -129,124 +105,168 @@
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
                     <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Films</a>
-                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Current Project</a>
-                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Essays</a>
+                    <a href="/films/martial-arts-documentary.html" class="block px-3 py-2 rounded-md nav-link">Current
+                        Project</a>
+                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
                     <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
                     <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Travel</a>
                     <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
-                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link" style="color: var(--primary);">Donate</a>
+                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link"
+                        style="color: var(--primary);">Donate</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center pt-20">
-        <div class="wave-shape">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        
-        <div class="container mx-auto px-6 py-20 relative z-10">
-            <div class="text-center">
-                <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                    Support My Journey <br>With <span class="text-yellow-500">Carl Travels</span>
-                </h1>
-                <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Your donations help me create inspiring travel documentaries and share captivating stories from around the world. Every contribution makes a difference!
-                </p>
-                <a href="#donate" class="px-8 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-600 transition-all shadow-lg">
-                    Donate Now
-                </a>
+    <section class="hero-gradient relative pt-32 pb-20 min-h-[50vh] flex items-center">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="heading-font text-5xl md:text-7xl font-bold text-white mb-6">Support The Journey</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                Independent filmmaking takes time, gear, and coffee. If you find value in my films or guides, here are
+                the best ways to keep the channel running.
+            </p>
+
+            <!-- Membership CTA (Primary) -->
+            <div
+                class="max-w-4xl mx-auto bg-gradient-to-br from-yellow-600/20 to-amber-900/20 border border-yellow-500/50 rounded-2xl p-8 md:p-10 mb-12 backdrop-blur-sm relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">
+                    RECOMMENDED</div>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1 text-left">
+                        <h2 class="heading-font text-3xl md:text-4xl text-white mb-3">Become a Member</h2>
+                        <p class="text-gray-300 mb-6">
+                            Join the inner circle. Get access to unfiltered updates, behind-the-scenes content that
+                            doesn't make YouTube, and direct Q&A access.
+                        </p>
+                        <a href="https://www.youtube.com/@thecarltomich/join" target="_blank"
+                            class="inline-flex items-center px-8 py-3 bg-yellow-500 text-black font-bold rounded-full hover:bg-yellow-400 transition-all transform hover:scale-105">
+                            Join on YouTube <i class="fas fa-crown ml-2"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Donation Content Section -->
-    <section id="donate" class="py-20 bg-[#111827]">
+    <!-- Affiliate Support Section -->
+    <section class="py-20 bg-black">
         <div class="container mx-auto px-6">
-            <!-- Motivational Story -->
-            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12">
-                <h2 class="heading-font text-3xl font-bold text-white mb-6 text-center">Why Your Support Matters</h2>
-                <div class="text-gray-300 leading-relaxed space-y-4">
-                    <p>Hi there! I'm passionate about capturing the world through my lens, telling stories that resonate and inspire. Over the years, I've been fortunate to travel to over 40 countries and explore more than 300 cities, immersing myself in diverse cultures and experiences. Living in four different countries has broadened my perspective and fueled my desire to share these incredible moments with you.</p>
-                    <p>Creating content isn't just a hobby—it's my way of connecting with people, preserving memories, and showcasing the beauty and complexity of our world. However, producing high-quality travel videos and documentaries requires resources, from travel expenses and equipment upgrades to time and dedication. This is where your support makes a significant difference.</p>
-                    <p>Every donation, no matter how small, helps me continue my mission to create meaningful content. Whether it's funding a new camera, covering travel costs to a remote destination, or simply allowing me to dedicate more time to storytelling, your generosity empowers me to bring more authentic and impactful stories to life.</p>
-                    <p>Even a contribution of $1 can make a world of difference. It symbolizes your belief in my work and your desire to see more stories that inspire, educate, and entertain. Together, we can explore the unknown, celebrate diversity, and capture the essence of humanity.</p>
-                    <p>Your support means the world to me, and I am deeply grateful for every gesture of kindness. Let's embark on this journey together and continue to discover the wonders of our planet!</p>
-                </div>
-            </div>
-
-            <!-- Donation Button -->
-            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12 text-center">
-                <h2 class="heading-font text-3xl font-bold text-white mb-6">Make a Donation</h2>
-                <form action="https://www.paypal.com/donate" method="post" target="_top" class="inline-block">
-                    <input type="hidden" name="hosted_button_id" value="48D6VPE8NSCWU" />
-                    <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-            </div>
-
-            <!-- How Donations Help -->
-            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12">
-                <h2 class="heading-font text-3xl font-bold text-white mb-6 text-center">How Your Donations Help</h2>
-                <ul class="space-y-4 text-gray-300">
-                    <li class="flex items-start">
-                        <i class="fas fa-plane text-yellow-500 mr-3 mt-1"></i>
-                        <div>
-                            <strong>Travel Expenses:</strong> Covering flights, accommodations, and local transportation to bring you more authentic travel experiences.
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-camera text-yellow-500 mr-3 mt-1"></i>
-                        <div>
-                            <strong>Equipment Upgrades:</strong> Investing in better cameras, microphones, and editing software to enhance the quality of my content.
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-video text-yellow-500 mr-3 mt-1"></i>
-                        <div>
-                            <strong>Production Costs:</strong> Funding filming permits, crew assistance, and other production-related expenses.
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-lightbulb text-yellow-500 mr-3 mt-1"></i>
-                        <div>
-                            <strong>Creative Projects:</strong> Enabling ambitious projects like documentaries that require extensive research and resources.
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Additional Support Options -->
-            <div class="donation-card bg-[#1f2937] rounded-xl shadow-lg p-8 mb-12">
-                <h2 class="heading-font text-3xl font-bold text-white mb-6 text-center">Other Ways to Support</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="block px-4 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-lg text-center hover:bg-yellow-600 transition-all">
-                        <i class="fab fa-youtube mr-2"></i> Subscribe on YouTube
-                    </a>
-                    <a href="https://www.instagram.com/carlostomich" target="_blank" class="block px-4 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-lg text-center hover:bg-yellow-600 transition-all">
-                        <i class="fab fa-instagram mr-2"></i> Follow on Instagram
-                    </a>
-                    <a href="https://www.facebook.com/thecarlostomich/" target="_blank" class="block px-4 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-lg text-center hover:bg-yellow-600 transition-all">
-                        <i class="fab fa-facebook-f mr-2"></i> Like on Facebook
-                    </a>
-                </div>
-            </div>
-
-            <!-- Thank You Note -->
-            <div class="donation-card bg-[#1f2937] rounded-xl p-8 text-center">
-                <h2 class="heading-font text-3xl font-bold text-white mb-4">Thank You!</h2>
-                <p class="text-gray-300">
-                    Thank you for your support! Your contributions help me turn dreams into reality and continue sharing incredible stories from around the globe.
+            <div class="text-center mb-16">
+                <span class="text-yellow-500 font-medium mb-2 inline-block">USE THE TOOLS I USE</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-white">Affiliate Links</h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Use these links when you buy gear or services. I get a small kickback at no extra cost to you. It's
+                    a win-win way to support.
                 </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+                <!-- Saily eSIM -->
+                <a href="https://saily.com" class="group glass-card rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-wifi text-2xl text-gray-400 group-hover:text-yellow-500 transition-colors"></i>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Travel Data</span>
+                    </div>
+                    <h3 class="heading-font text-xl text-white mb-2">Saily eSIM</h3>
+                    <p class="text-sm text-gray-400 mb-4">Instant data worldwide. Use code <strong
+                            class="text-yellow-500">CARLRI5370</strong> for $5 off.</p>
+                </a>
+
+                <!-- YESIM -->
+                <a href="https://yesim.app/" class="group glass-card rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i
+                            class="fas fa-mobile-alt text-2xl text-gray-400 group-hover:text-yellow-500 transition-colors"></i>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Travel Data</span>
+                    </div>
+                    <h3 class="heading-font text-xl text-white mb-2">YESIM</h3>
+                    <p class="text-sm text-gray-400 mb-4">Flexible data plans for international travel. Reliable
+                        coverage globally.</p>
+                </a>
+
+                <!-- Wise -->
+                <a href="https://wise.com/invite/irhc/carlt62" class="group glass-card rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i
+                            class="fas fa-credit-card text-2xl text-gray-400 group-hover:text-yellow-500 transition-colors"></i>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Money</span>
+                    </div>
+                    <h3 class="heading-font text-xl text-white mb-2">Wise Card</h3>
+                    <p class="text-sm text-gray-400 mb-4">The best way to spend money abroad with real exchange rates.
+                    </p>
+                </a>
+
+                <!-- Dehancer -->
+                <a href="https://www.dehancer.com/subscribe" class="group glass-card rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-film text-2xl text-gray-400 group-hover:text-yellow-500 transition-colors"></i>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Editing</span>
+                    </div>
+                    <h3 class="heading-font text-xl text-white mb-2">Dehancer</h3>
+                    <p class="text-sm text-gray-400 mb-4">Film emulation plugin. Code <strong
+                            class="text-yellow-500">CARLTRAVELS</strong> for 10% off.</p>
+                </a>
+
+                <!-- My Equip -->
+                <a href="/gear.html"
+                    class="group glass-card rounded-xl p-6 md:col-span-2 lg:col-span-2 bg-gradient-to-r from-gray-900 to-gray-800 border-yellow-500/20">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fas fa-camera-retro text-2xl text-yellow-500"></i>
+                        <span
+                            class="text-xs bg-yellow-900/30 text-yellow-500 px-2 py-1 rounded border border-yellow-500/30">My
+                            Kit</span>
+                    </div>
+                    <h3 class="heading-font text-xl text-white mb-2">My Filmmaking Equipment</h3>
+                    <p class="text-sm text-gray-400 mb-0">
+                        Check out the full list of cameras, lenses, and drones I use to create my documentaries. Buying
+                        through these Amazon links supports the channel.
+                    </p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Donation Section -->
+    <section class="py-20 bg-[#111827]">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- One-Time Donation -->
+                <div class="bg-gray-800 rounded-xl p-8 border border-gray-700 text-center">
+                    <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-coffee text-yellow-500 text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-2xl text-white mb-4">Buy Me a Coffee</h3>
+                    <p class="text-gray-400 mb-6">
+                        A simple contribution to help cover gear or travel costs.
+                    </p>
+                    <a href="https://paypal.me/carltomich" target="_blank"
+                        class="text-yellow-500 font-semibold hover:text-white transition-colors">
+                        Donate via PayPal <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Free Support -->
+                <div class="bg-gray-800 rounded-xl p-8 border border-gray-700 text-center">
+                    <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-thumbs-up text-yellow-500 text-xl"></i>
+                    </div>
+                    <h3 class="heading-font text-2xl text-white mb-4">Support for Free</h3>
+                    <p class="text-gray-400 mb-6">
+                        Watching, liking, and sharing helps the algorithm more than you know.
+                    </p>
+                    <a href="https://www.youtube.com/@thecarltomich" target="_blank"
+                        class="text-yellow-500 font-semibold hover:text-white transition-colors">
+                        Watch on YouTube <i class="fas fa-play ml-1"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-        <!-- Footer -->
     <footer class="py-12" style="background: var(--dark); border-top: 1px solid var(--dark-3);">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -263,10 +283,14 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Films</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank" class="nav-link">Busking for Berlin (2014)</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A Sail Untold (2022)</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2024)</a></li>
-                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link">YouTube Channel</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank"
+                                class="nav-link">Busking for Berlin (2014)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A
+                                Sail Untold (2022)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk
+                                Life (2024)</a></li>
+                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link">YouTube
+                                Channel</a></li>
                         <li><a href="#current-project" class="nav-link">Martial Arts Doc (In Production)</a></li>
                     </ul>
                 </div>
@@ -275,25 +299,30 @@
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Explore</h3>
                     <ul class="space-y-2 text-sm">
                         <li><a href="/about.html" class="nav-link">About</a></li>
-                        <li><a href="/blog.html" class="nav-link">Essays</a></li>
+                        <li><a href="/blog.html" class="nav-link">Blog</a></li>
                         <li><a href="/gear.html" class="nav-link">Gear</a></li>
                         <li><a href="/destinations.html" class="nav-link">Travel Guides</a></li>
-                        <li><a href="/donate.html" class="nav-link" style="color: var(--primary);">Donate <a href="/destinations.html" class="nav-link">Travel Guides</a> Support</a></li>
+                        <li><a href="/donate.html" class="nav-link" style="color: var(--primary);">Donate <a
+                                    href="/destinations.html" class="nav-link">Travel Guides</a> Support</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
             </div>
 
-            <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center" style="border-color: var(--dark-3);">
+            <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+                style="border-color: var(--dark-3);">
                 <p class="text-sm mb-4 md:mb-0" style="color: var(--muted);">
                     © 2025 Carl Tomich. All rights reserved.
                 </p>
@@ -305,86 +334,16 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- JavaScript with Error Handling -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            try {
-                // Mobile Menu Toggle
-                const mobileMenuButton = document.getElementById('mobile-menu-button');
-                const mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenuButton && mobileMenu) {
-                    mobileMenuButton.addEventListener('click', function() {
-                        mobileMenu.classList.toggle('open');
-                        this.querySelector('i').classList.toggle('fa-bars');
-                        this.querySelector('i').classList.toggle('fa-times');
-                    });
-                }
-
-                // Smooth scrolling for anchor links
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const id = this.getAttribute('href');
-                        if (id !== '#') {
-                            const el = document.querySelector(id);
-                            if (el) {
-                                if (mobileMenu && mobileMenu.classList.contains('open')) {
-                                    mobileMenu.classList.remove('open');
-                                    if (mobileMenuButton) {
-                                        mobileMenuButton.querySelector('i').classList.toggle('fa-bars');
-                                        mobileMenuButton.querySelector('i').classList.toggle('fa-times');
-                                    }
-                                }
-                                window.scrollTo({
-                                    top: el.offsetTop - 80,
-                                    behavior: 'smooth'
-                                });
-                            }
-                        }
-                    });
-                });
-
-                // Navbar scroll effect
-                const navbar = document.getElementById('navbar');
-                if (navbar) {
-                    window.addEventListener('scroll', function() {
-                        if (window.scrollY > 50) {
-                            navbar.classList.add('scrolled');
-                        } else {
-                            navbar.classList.remove('scrolled');
-                        }
-                    });
-                }
-
-                // Back to top button
-                const backToTopButton = document.getElementById('back-to-top');
-                if (backToTopButton) {
-                    window.addEventListener('scroll', function() {
-                        if (window.scrollY > 300) {
-                            backToTopButton.classList.remove('opacity-0', 'invisible');
-                            backToTopButton.classList.add('opacity-100', 'visible');
-                        } else {
-                            backToTopButton.classList.remove('opacity-100', 'visible');
-                            backToTopButton.classList.add('opacity-0', 'invisible');
-                        }
-                    });
-                    backToTopButton.addEventListener('click', function() {
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
-                    });
-                }
-            } catch (error) {
-                console.error('JavaScript Error in donate.html:', error);
-            }
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+        window.addEventListener('scroll', function () {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) { nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
         });
     </script>
     <script src="/assets/js/site.js" defer></script>
 </body>
+
 </html>
