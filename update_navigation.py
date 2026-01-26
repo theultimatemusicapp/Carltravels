@@ -20,11 +20,13 @@ NEW_NAV = '''    <!-- Navigation -->
 
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/index.html" class="nav-link font-medium">Films</a>
-                    <a href="/portfolio.html" class="nav-link font-medium">Current Project</a>
-                    <a href="/blog.html" class="nav-link font-medium">Essays</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Portfolio</a>
+                    <a href="/films/martial-arts-documentary.html" class="nav-link font-medium">Current Project</a>
+                    <a href="/blog.html" class="nav-link font-medium">Blog</a>
                     <a href="/gear.html" class="nav-link font-medium">Gear</a>
                     <a href="/destinations.html" class="nav-link font-medium">Travel</a>
                     <a href="/about.html" class="nav-link font-medium">About</a>
+                    <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
                 <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
@@ -35,11 +37,13 @@ NEW_NAV = '''    <!-- Navigation -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
                     <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Films</a>
-                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Current Project</a>
-                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Essays</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Portfolio</a>
+                    <a href="/films/martial-arts-documentary.html" class="block px-3 py-2 rounded-md nav-link">Current Project</a>
+                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
                     <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
                     <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Travel</a>
                     <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
+                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link" style="color: var(--primary);">Donate</a>
                 </div>
             </div>
         </div>
@@ -109,8 +113,8 @@ def update_navigation(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        # Skip if already updated (check for new nav signature)
-        if 'CARL TOMICH' in content and 'Films</a>' in content and 'Current Project</a>' in content:
+        # Skip if already updated (check for new nav signature including Portfolio)
+        if 'CARL TOMICH' in content and 'Films</a>' in content and 'Portfolio</a>' in content:
             print(f"✓ Already updated: {file_path}")
             return False
         
