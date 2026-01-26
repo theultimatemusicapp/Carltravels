@@ -152,14 +152,11 @@ def main():
     html_files.extend(base_dir.glob('*.html'))
     
     # Subdirectory HTML files
-    for subdir in ['videos', 'ha-long-bay-travel-guide', 'nusa-lembongan-travel-guide', 'port-douglas-travel-guide', 'blog', 'docs']:
+    for subdir in ['videos', 'films', 'ha-long-bay-travel-guide', 'nusa-lembongan-travel-guide', 'port-douglas-travel-guide', 'blog', 'docs']:
         subdir_path = base_dir / subdir
         if subdir_path.exists():
             html_files.extend(subdir_path.glob('*.html'))
             html_files.extend(subdir_path.glob('**/*.html'))
-    
-    # Exclude index.html (already updated)
-    html_files = [f for f in html_files if f.name != 'index.html']
     
     print(f"Found {len(html_files)} HTML files to update\n")
     
