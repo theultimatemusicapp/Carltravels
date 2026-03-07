@@ -3,157 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIARTY Image Enhancer Review & Walkthrough | Carl Travels</title>
-    <meta name="description" content="Hands-on demo of AIARTY Image Enhancer with upscaling tests, face restoration, noise reduction, and pricing notes." />
-    <meta name="keywords" content="AIARTY Image Enhancer review, AI image upscaler, AI photo restoration, Topaz alternative" />
-    <meta property="og:title" content="AIARTY Image Enhancer Review & Walkthrough" />
-    <meta property="og:description" content="Watch the full interface tour plus real-world upscaling tests on portraits, landscapes, and artwork." />
-    <meta property="og:image" content="https://img.youtube.com/vi/WUUNVGd0vc8/maxresdefault.jpg" />
-    <meta property="og:url" content="https://www.carltravels.com/aiarty-image-enhancer-review.html" />
-    <meta property="og:type" content="article" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AIARTY Image Enhancer Review & Walkthrough" />
-    <meta name="twitter:description" content="Deep dive into AIARTY's image upscaling, deblurring, face restoration, and export workflows." />
-    <meta name="twitter:image" content="https://img.youtube.com/vi/WUUNVGd0vc8/maxresdefault.jpg" />
+    <title>Aiarty AI Image Enhancer: Features, Pricing, and Why It Stands Out | Carl Travels</title>
+    <meta name="description" content="Aiarty AI Image Enhancer review covering features, pricing, 16K/32K upscaling, batch processing, and why it stands out for creators.">
+    <meta property="og:title" content="Aiarty AI Image Enhancer: Features, Pricing, and Why It Stands Out">
+    <meta property="og:description" content="Learn what Aiarty Image Enhancer does best: upscaling, denoise, deblur, face restoration, and fast batch workflows.">
+    <meta property="og:image" content="https://img.youtube.com/vi/WUUNVGd0vc8/maxresdefault.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/aiarty-image-enhancer-review.html">
+    <meta property="og:type" content="article">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <style>
-        body { background: #020617; color: #e2e8f0; font-family: 'Montserrat', system-ui, -apple-system, sans-serif; }
-        .responsive-video { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 30px 60px -25px rgba(56,189,248,0.4); }
+        :root {
+            --primary: #facc15;
+            --dark: #020617;
+            --light: #e2e8f0;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+        }
+        .heading-font { font-family: 'Bebas Neue', sans-serif; }
+        .navbar {
+            backdrop-filter: blur(12px);
+            background-color: rgba(15, 23, 42, 0.82);
+        }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .mobile-menu.open { max-height: 500px; }
+        .hero {
+            background: radial-gradient(circle at top left, rgba(250, 204, 21, 0.18), transparent 60%),
+                        radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.18), transparent 55%),
+                        linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.75));
+        }
+        .card {
+            background: rgba(15, 23, 42, 0.82);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 1.25rem;
+        }
+        .responsive-video { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 1rem; overflow: hidden; }
         .responsive-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-        .info-card { background: rgba(15, 23, 42, 0.88); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 1rem; padding: 1.5rem; }
-        a { color: inherit; }
-        a:hover { color: #facc15; }
     </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-G72KT5ZW2J');
-    </script>
 </head>
-<body class="min-h-screen">
-    <header class="py-12 px-6 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-            <div>
-                <p class="uppercase text-sm tracking-wide text-yellow-400 mb-3">New video review</p>
-                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">AIARTY Image Enhancer: Full Interface Tour & Real-World Tests</h1>
-                <p class="text-slate-300 mt-4">I run AIARTY's Image Enhancer through portraits, landscapes, and artwork to see how well it upscales to 8K, restores faces, removes noise, and preps files for print.</p>
-                <div class="flex flex-wrap gap-3 mt-6">
-                    <a class="px-4 py-2 rounded-full bg-yellow-400 text-black font-semibold" href="https://tinyurl.com/4p9hrxyc" target="_blank" rel="noopener">Try AIARTY Image Enhancer Free</a>
-                    <a class="px-4 py-2 rounded-full border border-yellow-400 text-yellow-200 font-semibold" href="https://tinyurl.com/k6zfjtu6" target="_blank" rel="noopener">Holiday: 49% OFF Lifetime</a>
+<body>
+    <nav id="navbar" class="navbar fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/index.html" class="text-2xl font-bold"><span class="heading-font text-yellow-400">CARL TOMICH</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/blog.html" class="nav-link font-medium">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium">Gear</a>
+                    <a href="/about.html" class="nav-link font-medium">About</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
+                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
+                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
                 </div>
             </div>
-            <div class="info-card">
-                <img src="https://img.youtube.com/vi/WUUNVGd0vc8/maxresdefault.jpg" alt="AIARTY Image Enhancer YouTube thumbnail" class="rounded-lg w-full h-auto mb-4">
-                <p class="text-sm text-slate-300">Includes UI tour, model selection, CPU vs GPU tests, and a print-ready upscale of a low-res artwork.</p>
+        </div>
+    </nav>
+
+    <header class="hero pt-32 pb-16">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+                <span class="inline-flex items-center gap-2 bg-slate-800 text-yellow-300 px-4 py-2 rounded-full text-sm"><i class="fas fa-image"></i> AI Image Enhancement</span>
+                <h1 class="heading-font text-4xl md:text-5xl mt-5 text-white">Aiarty AI Image Enhancer: Features, Pricing, and Why It Stands Out</h1>
+                <p class="text-slate-200 mt-5 text-lg">Aiarty AI Image Enhancer is an AI-powered tool that improves image quality automatically by restoring detail, reducing blur and noise, and increasing resolution for print, web, and content workflows.</p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="#features" class="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full">See features</a>
+                    <a href="https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1" target="_blank" rel="noopener" class="px-6 py-3 border border-slate-300 rounded-full hover:border-yellow-400 hover:text-yellow-300">Buy Aiarty Image Enhancer</a>
+                </div>
+            </div>
+            <div class="card p-5">
+                <div class="responsive-video">
+                    <iframe src="https://www.youtube.com/embed/WUUNVGd0vc8" title="Aiarty AI Image Enhancer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="text-slate-300 text-sm mt-3">Watch the full walkthrough and quality tests.</p>
             </div>
         </div>
     </header>
 
-    <main class="py-12 px-6">
-        <div class="max-w-5xl mx-auto space-y-12">
-            <section class="info-card">
-                <h2 class="text-2xl font-semibold text-white mb-4">Watch the walkthrough</h2>
-                <div class="responsive-video">
-                    <iframe src="https://www.youtube.com/embed/WUUNVGd0vc8" title="AIARTY Image Enhancer Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-
-            <section class="info-card">
-                <h3 class="text-xl font-semibold text-white mb-3">My testing setup</h3>
-                <ul class="list-disc list-inside space-y-2 text-slate-200">
-                    <li>Machine: Ryzen 7 5800H, RTX 3060 laptop GPU, 32 GB RAM</li>
-                    <li>Files: a 640x480 Facebook memory, a 12MP landscape, and a 6MP scanned artwork</li>
-                    <li>Target outputs: 4K and 8K TIFFs for print, plus quick 2x JPEGs for social</li>
-                    <li>Time taken: 4K portrait upscale in 54 seconds on GPU, 2 minutes on CPU</li>
-                    <li>Energy cost: ran on battery first (drained fast), then plugged in to finish the batch</li>
-                </ul>
-                <p class="text-slate-200 mt-3">I keep the “FacePro” model for portraits, “UltraSharp” for landscapes, and disable noise reduction unless the source is ISO 3200 or worse.</p>
-            </section>
-
-            <section class="grid md:grid-cols-2 gap-6">
-                <div class="info-card">
-                    <h3 class="text-xl font-semibold text-white mb-3">What I cover</h3>
-                    <ul class="list-disc list-inside space-y-2 text-slate-200">
-                        <li>AI image upscaling up to 8K</li>
-                        <li>Noise reduction, deblurring, and face restoration</li>
-                        <li>Texture/detail enhancement plus color correction tools</li>
-                        <li>Batch vs single exports, CPU vs GPU acceleration</li>
-                        <li>Pricing compared to Topaz and why the lifetime license matters</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h3 class="text-xl font-semibold text-white mb-3">Why it matters</h3>
-                    <p class="text-slate-200 mb-3">AIARTY's Image Enhancer is built for rescuing old photos, prepping artwork for print, and polishing low-resolution social shots without a subscription. In the video I show real examples,from Facebook memories to landscape frames,to see where the models shine and where they struggle.</p>
-                    <p class="text-slate-200">If you need high-quality enlargements for gifts, client deliveries, or documentary stills, this walkthrough will give you a realistic look at the results.</p>
-                </div>
-            </section>
-
-            <section class="info-card">
-                <h3 class="text-xl font-semibold text-white mb-3">Quick links</h3>
-                <ul class="space-y-2 text-slate-200">
-                    <li><a href="https://tinyurl.com/4p9hrxyc" target="_blank" rel="noopener" class="underline underline-offset-4">Download AIARTY Image Enhancer (free trial)</a></li>
-                    <li><a href="https://tinyurl.com/k6zfjtu6" target="_blank" rel="noopener" class="underline underline-offset-4">Holiday offer: 49% off lifetime for 3 computers</a></li>
-                    <li><a href="/aiarty-video-enhancer-review.html" class="underline underline-offset-4">Previously: AIARTY Video Enhancer review</a></li>
+    <main class="py-16 bg-slate-950">
+        <article class="container mx-auto px-6 max-w-4xl space-y-12">
+            <section id="features" class="card p-8">
+                <h2 class="heading-font text-3xl text-white mb-4">Core Features</h2>
+                <ul class="space-y-4 list-disc list-inside text-slate-200">
+                    <li><strong>AI Upscaling & Super Resolution:</strong> upscale images up to 16K or 32K with detail reconstruction instead of basic pixel stretch.</li>
+                    <li><strong>Noise Reduction:</strong> clean low-light grain while preserving edges and texture.</li>
+                    <li><strong>Deblurring & Detail Restoration:</strong> sharpen soft images and recover detail in architecture, portraits, and landscapes.</li>
+                    <li><strong>Face Restoration:</strong> improve facial detail for blurred or pixelated portrait shots.</li>
+                    <li><strong>Artifact Removal:</strong> reduce blocky compression artifacts from web or messaging app images.</li>
+                    <li><strong>Batch Processing:</strong> process large image sets in one run for production workflows.</li>
+                    <li><strong>GPU Acceleration:</strong> supports NVIDIA, AMD, and Intel hardware for faster renders.</li>
                 </ul>
             </section>
 
-            <section class="info-card">
-                <h3 class="text-xl font-semibold text-white mb-3">Real-world results</h3>
-                <ul class="list-disc list-inside space-y-2 text-slate-200">
-                    <li><strong>Portrait (640x480 → 4K):</strong> Eyes stay sharp, skin looks natural after dialing noise reduction to 10%. Hair strands still get a bit waxy,Topaz Photo AI kept them crisper.</li>
-                    <li><strong>Landscape (12MP → 8K):</strong> Clouds and leaves avoid the watercolor effect if you keep “Clarity” under 30%. Over that, you’ll see halos around tree lines.</li>
-                    <li><strong>Scanned artwork (6MP → 8K):</strong> The “ArtGuard” model keeps brush texture better than Topaz. My print on matte A3 looked like the original sketch.</li>
+            <section class="card p-8">
+                <h2 class="heading-font text-3xl text-white mb-4">Pricing</h2>
+                <ul class="space-y-3 list-disc list-inside text-slate-200">
+                    <li><strong>Standard License:</strong> about $85/year.</li>
+                    <li><strong>Lifetime License:</strong> around $99–$155 one-time (promo dependent).</li>
+                    <li><strong>Free Trial:</strong> available with limited features.</li>
+                    <li><strong>Support:</strong> includes a 30-day money-back guarantee.</li>
                 </ul>
-                <p class="text-slate-200 mt-3">Batch exports default to JPEG 90%. I switch to TIFF when I need to color grade later, otherwise JPEG is fine for social delivery.</p>
+                <p class="mt-4 text-slate-300">The lifetime option can be more cost-effective for creators who enhance images regularly.</p>
             </section>
 
-            <section class="info-card">
-                <h3 class="text-xl font-semibold text-white mb-3">Pricing and best use cases</h3>
-                <p class="text-slate-200">The lifetime license was $79 on sale (normally $159) and activates on three machines. No recurring fee is the big win over Topaz. The only hidden cost is GPU time,on my RTX 3060, an hour-long batch roughly equals 12–15% battery on the Asus Zephyrus.</p>
-                <p class="text-slate-200 mt-2">Who it fits:</p>
-                <ul class="list-disc list-inside space-y-2 text-slate-200">
-                    <li>Photographers restoring family archives or printing small gallery runs</li>
-                    <li>Video shooters pulling frame grabs for thumbnails without jumping into Photoshop</li>
-                    <li>Artists upscaling sketches for Redbubble or Etsy prints without subscription overhead</li>
-                </ul>
-                <p class="text-slate-200 mt-3">Who should wait: if you already own Topaz Photo AI and need the very best hair detail on portraits, Topaz still wins,but AIARTY is faster on mid-range GPUs and simpler to use.</p>
+            <section class="card p-8">
+                <h2 class="heading-font text-3xl text-white mb-4">Why It Stands Out</h2>
+                <ol class="space-y-3 list-decimal list-inside text-slate-200">
+                    <li>One-time purchase option compared with subscription-heavy alternatives.</li>
+                    <li>Very high upscaling limits for print and large-format digital use.</li>
+                    <li>Natural detail output with limited artifacting in many real-world cases.</li>
+                    <li>Strong batch workflow support for teams and large image libraries.</li>
+                    <li>Hardware optimization for faster local processing.</li>
+                    <li>Simple workflow that does not require deep manual tuning.</li>
+                </ol>
             </section>
 
-            <section class="info-card">
-                <h3 class="text-xl font-semibold text-white mb-3">Things people don't tell you</h3>
-                <ul class="list-disc list-inside space-y-2 text-slate-200">
-                    <li>Turn off “Auto Denoise” for clean daylight shots or you’ll get a plastic look.</li>
-                    <li>Face restoration is aggressive,keep strength at 40–50% if you’re handling older family photos.</li>
-                    <li>GPU acceleration only kicks in after you toggle it in settings; it defaulted to CPU on my first install.</li>
-                    <li>Exports inherit your input color profile. Convert to sRGB first if you’re sending to print-on-demand sites.</li>
-                </ul>
+            <section class="card p-8">
+                <h2 class="heading-font text-3xl text-white mb-4">Limitations</h2>
+                <p class="text-slate-200">Some users report occasional color shifts, and the app is focused on enhancement rather than full manual image editing (cropping, layered retouching, and deep adjustments).</p>
             </section>
 
-            <section class="info-card">
-                <h3 class="text-xl font-semibold text-white mb-3">FAQ</h3>
-                <div class="space-y-3 text-slate-200">
-                    <p><strong>Can it handle noisy ISO 6400 concert shots?</strong> Yes, but keep noise reduction below 40% or you’ll flatten the stage lights. I sometimes run a light pass in Lightroom first.</p>
-                    <p><strong>Does it replace Photoshop?</strong> No. It’s a finishing tool,great for enlarging and cleaning, not for compositing.</p>
-                    <p><strong>How big are the files?</strong> A 4K TIFF lands around 80–120 MB. Make sure you have disk space before running a 20-photo batch.</p>
-                    <p><strong>Will it run on integrated graphics?</strong> It works, but my Intel iGPU took 5–6 minutes per 4K upscale. A mid-tier GPU saves hours.</p>
-                </div>
+            <section class="card p-8">
+                <h2 class="heading-font text-3xl text-white mb-4">Conclusion</h2>
+                <p class="text-slate-200">Aiarty AI Image Enhancer is a practical choice for photographers, designers, and creators who need fast quality improvements on low-resolution or imperfect images. The combination of strong enhancement models, batch processing, and lifetime pricing makes it a compelling alternative in the AI upscaling category.</p>
+                <a href="https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1" target="_blank" rel="noopener" class="inline-flex mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full">Get Aiarty Image Enhancer</a>
             </section>
-        </div>
+        </article>
     </main>
 
-    <!-- Saily Affiliate -->
-    <section class="max-w-4xl mx-auto px-6 py-10">
-        <div class="affiliate-card" style="background: rgba(15, 15, 15, 0.78); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 24px; box-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.7);">
-            <p style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; color: #f5c518; font-weight: 600; margin-bottom: 8px;">Travel Essential</p>
-            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Saily - Travel stress-free with data in 100+ countries!</h2>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">Skip the SIM cards ✈️ , grab a Saily eSIM before your next trip and stay online from day one.</p>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">🎟 Use code CARL10 for a discount</p>
-            <a href="https://go.saily.site/aff_c?offer_id=101&aff_id=12234" target="_blank" rel="noopener" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">👉 Activate your eSIM now</a>
-        </div>
-    </section>
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+        }
+    </script>
 </body>
 </html>
