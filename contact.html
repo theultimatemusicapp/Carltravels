@@ -2,15 +2,52 @@
 <html lang="en">
 
 <head>
-
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece"
         type="text/javascript" async></script>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-6483721386563068">
-    <title>Contact - Carl Travels</title>
+    <title>Contact Carl Tomich - Carl Travels</title>
     <link rel="canonical" href="https://www.carltravels.com/contact.html">
+    <meta name="description"
+        content="Contact Carl Tomich for collaboration, business enquiries, or YouTube-related opportunities. Send a message directly through the Carl Travels contact form.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Carl Tomich - Carl Travels">
+    <meta property="og:description"
+        content="Reach out for collaborations, business enquiries, and YouTube opportunities.">
+    <meta property="og:image" content="https://www.carltravels.com/carl-tomich-director.jpg">
+    <meta property="og:url" content="https://www.carltravels.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Carl Tomich - Carl Travels">
+    <meta name="twitter:description"
+        content="Reach out for collaborations, business enquiries, and YouTube opportunities.">
+    <meta name="twitter:image" content="https://www.carltravels.com/carl-tomich-director.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Carl Tomich",
+      "url": "https://www.carltravels.com/contact.html",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Carl Tomich",
+        "jobTitle": "Director & Filmmaker",
+        "url": "https://www.carltravels.com/about.html",
+        "sameAs": [
+          "https://www.instagram.com/carlostomich",
+          "https://www.youtube.com/@thecarltomich",
+          "https://www.youtube.com/@globetraveladventures",
+          "https://www.youtube.com/@carltomichtech"
+        ]
+      }
+    }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
@@ -18,211 +55,236 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-G72KT5ZW2J');
     </script>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap"
-        rel="stylesheet">
-    <meta name="description"
-        content="Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!">
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--black);
+            color: var(--light);
+        }
+
+        .heading-font {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.05em;
+            line-height: 0.95;
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(10, 10, 10, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(10, 10, 10, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .mobile-menu.open {
+            max-height: 400px;
+        }
+
+        .contact-panel {
+            background: var(--dark);
+            border: 1px solid var(--dark-3);
+        }
+
+        .contact-input {
+            width: 100%;
+            background: #111;
+            border: 1px solid var(--dark-3);
+            color: var(--light);
+            border-radius: 0.5rem;
+            padding: 0.85rem 1rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(245, 197, 24, 0.15);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--black);
+            font-weight: 700;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.85rem 1.2rem;
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.03);
+            transform: translateY(-1px);
+        }
+
+        .link-tile {
+            border: 1px solid var(--dark-3);
+            background: #101010;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .link-tile:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+    </style>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068"
         crossorigin="anonymous"></script>
-
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Contact - Carl Travels">
-    <meta property="og:description"
-        content="Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!">
-    <meta property="og:image" content="https://www.carltravels.com/images/contact-featured-image.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/contact.html">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact - Carl Travels">
-    <meta name="twitter:description"
-        content="Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!">
-    <meta name="twitter:image" content="https://www.carltravels.com/images/contact-featured-image.jpg">
-
-    <!-- Structured Data (JSON-LD) for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact - Carl Travels",
-      "description": "Get in touch with Carl Travels to collaborate, ask questions about films or travels, or share your thoughts. Let's connect and create something amazing together!",
-      "url": "https://www.carltravels.com/contact.html",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Carl Travels",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.carltravels.com/images/logo.png"
-        }
-      },
-      "mainEntity": {
-        "@type": "Person",
-        "name": "Carl Tomich",
-        "jobTitle": "Director & Filmmaker",
-        "url": "https://www.carltravels.com/about.html",
-        "sameAs": [
-          "https://www.youtube.com/@thecarltomich",
-          "https://www.youtube.com/@growyourniche",
-          "https://www.instagram.com/carlostomich",
-          "https://www.imdb.com/name/nm10668045/",
-          "https://growyourniche.com"
-        ]
-      }
-    }
-    </script>
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
-            <!-- Navigation -->
-            <!-- Navigation -->
-            <nav id="navbar" class="navbar fixed w-full z-50">
-                <div class="container mx-auto px-6 py-4">
-                    <div class="flex justify-between items-center">
-                        <a href="/index.html" class="text-2xl font-bold">
-                            <span class="heading-font" style="color: var(--primary);">CARL TOMICH</span>
-                        </a>
+    <nav id="navbar" class="navbar fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/index.html" class="text-2xl font-bold">
+                    <span class="heading-font" style="color: var(--primary);">CARL TOMICH</span>
+                </a>
 
-                        <div class="hidden md:flex items-center space-x-8">
-                            <a href="/index.html" class="nav-link font-medium">Films</a>
-                            <a href="/portfolio.html" class="nav-link font-medium">Portfolio</a>
-                            <a href="/films/martial-arts-documentary.html" class="nav-link font-medium">Current
-                                Project</a>
-                            <a href="/blog.html" class="nav-link font-medium">Blog</a>
-                            <a href="/gear.html" class="nav-link font-medium">Gear</a>
-                            <a href="/destinations.html" class="nav-link font-medium">Travel</a>
-                            <a href="/about.html" class="nav-link font-medium">About</a>
-                            <a href="/donate.html" class="nav-link font-medium"
-                                style="color: var(--primary);">Donate</a>
-                        </div>
-
-                        <button id="mobile-menu-button" class="md:hidden focus:outline-none"
-                            style="color: var(--light);">
-                            <i class="fas fa-bars text-2xl"></i>
-                        </button>
-                    </div>
-
-                    <div id="mobile-menu" class="mobile-menu md:hidden">
-                        <div class="pt-4 pb-2 space-y-2">
-                            <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Films</a>
-                            <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Portfolio</a>
-                            <a href="/films/martial-arts-documentary.html"
-                                class="block px-3 py-2 rounded-md nav-link">Current Project</a>
-                            <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
-                            <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
-                            <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Travel</a>
-                            <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
-                            <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link"
-                                style="color: var(--primary);">Donate</a>
-                        </div>
-                    </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="nav-link font-medium">Films</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Portfolio</a>
+                    <a href="/films/martial-arts-documentary.html" class="nav-link font-medium">Current Project</a>
+                    <a href="/blog.html" class="nav-link font-medium">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium">Gear</a>
+                    <a href="/destinations.html" class="nav-link font-medium">Travel</a>
+                    <a href="/about.html" class="nav-link font-medium">About</a>
+                    <a href="/contact.html" class="nav-link font-medium" style="color: var(--primary);">Contact</a>
                 </div>
-            </nav>
-            <div class="social-media">
-                <a href="https://www.facebook.com/thecarlostomich" target="_blank" aria-label="Facebook">
-                    <img src="facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank" aria-label="Instagram">
-                    <img src="instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank" aria-label="YouTube">
-                    <img src="youtube.png" alt="YouTube">
-                </a>
+
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
+
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Films</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Portfolio</a>
+                    <a href="/films/martial-arts-documentary.html" class="block px-3 py-2 rounded-md nav-link">Current Project</a>
+                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
+                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
+                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Travel</a>
+                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
+                    <a href="/contact.html" class="block px-3 py-2 rounded-md nav-link" style="color: var(--primary);">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-14 bg-gradient-to-br from-[#0f0f0f] via-[#141414] to-[#1b1b1b] border-b"
+        style="border-color: var(--dark-3);">
+        <div class="container mx-auto px-6">
+            <span class="text-yellow-500 font-medium mb-4 inline-block tracking-[0.2em] text-xs">CONTACT</span>
+            <h1 class="heading-font text-5xl md:text-6xl text-white mb-6">Let's Work Together</h1>
+            <p class="text-gray-300 text-lg max-w-3xl">
+                If you have a project, collaboration, or media opportunity, send a message below. For direct enquiries,
+                use the business and YouTube emails listed on this page.
+            </p>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="contact-page">
-            <div class="container">
-                <h1>Contact Me</h1>
-                <p>I'd love to hear from you! Whether you're looking to collaborate, have questions about my films or
-                    travels, or simply want to share your thoughts, feel free to reach out. Let's connect and create
-                    something amazing together!</p>
+    <main class="py-16 md:py-20">
+        <div class="container mx-auto px-6 grid lg:grid-cols-[1.2fr_0.8fr] gap-10">
+            <section class="contact-panel rounded-xl p-6 md:p-8">
+                <h2 class="heading-font text-3xl text-white mb-2">Email Form</h2>
+                <p class="text-gray-300 mb-8">Send your message directly through the form.</p>
 
-                <!-- Contact Form -->
-                <section class="contact-form">
-                    <h2>Get in Touch</h2>
-                    <form action="https://formspree.io/f/mnnnoogg" method="POST">
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" required>
+                <form action="https://formspree.io/f/mnnnoogg" method="POST" class="space-y-5">
+                    <div>
+                        <label for="name" class="block text-sm mb-2 text-gray-300">Your Name</label>
+                        <input class="contact-input" type="text" id="name" name="name" required>
+                    </div>
 
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="_replyto" required>
+                    <div>
+                        <label for="email" class="block text-sm mb-2 text-gray-300">Your Email</label>
+                        <input class="contact-input" type="email" id="email" name="_replyto" required>
+                    </div>
 
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                    <div>
+                        <label for="message" class="block text-sm mb-2 text-gray-300">Your Message</label>
+                        <textarea class="contact-input" id="message" name="message" rows="6" required></textarea>
+                    </div>
 
-                        <!-- Honeypot Field (Optional for Spam Protection) -->
-                        <input type="text" name="_gotcha" style="display:none">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission from Carl Travels">
+                    <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                    <input type="hidden" name="_captcha" value="false">
 
-                        <!-- Formspree Specific Hidden Fields (Optional) -->
-                        <input type="hidden" name="_subject" value="New Contact Form Submission from Carl Travels">
-                        <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
-                        <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </section>
 
-                        <button type="submit">Send Message</button>
-                    </form>
+            <aside class="space-y-6">
+                <section class="contact-panel rounded-xl p-6 md:p-8">
+                    <h2 class="heading-font text-3xl text-white mb-5">Direct Enquiries</h2>
+                    <div class="space-y-4 text-gray-300">
+                        <p>
+                            <span class="text-white font-semibold">Business email:</span><br>
+                            <a class="nav-link" href="mailto:carl@music-records.com.au">carl@music-records.com.au</a>
+                        </p>
+                        <p>
+                            <span class="text-white font-semibold">YouTube enquiries:</span><br>
+                            <a class="nav-link" href="mailto:watchcarltravel@gmail.com">watchcarltravel@gmail.com</a>
+                        </p>
+                    </div>
                 </section>
 
-                <!-- Follow Me -->
-                <section class="follow-me">
-                    <h2>Follow Me</h2>
-                    <p>Stay connected through my social media channels:</p>
-                    <ul>
-                        <li><a href="https://www.youtube.com/@thecarltomich" target="_blank">Carl Travels on YouTube</a>
-                        </li>
-                        <!-- Rebranded from @sonymoviemasters to @carltomichtech -->
-                        <li><a href="https://www.youtube.com/@carltomichtech" target="_blank">Carl Tomich Tech on
-                                YouTube</a></li>
-                        <li><a href="https://www.youtube.com/@globetraveladventures" target="_blank">Globe Travel
-                                Adventures on YouTube</a></li>
-                        <li><a href="https://www.instagram.com/carlostomich" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/thecarlostomich/" target="_blank">Facebook</a></li>
-                    </ul>
+                <section class="contact-panel rounded-xl p-6 md:p-8">
+                    <h2 class="heading-font text-3xl text-white mb-5">Follow & Watch</h2>
+                    <div class="space-y-3 text-sm">
+                        <a class="link-tile nav-link rounded-lg p-4 block" href="https://www.instagram.com/carlostomich" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram mr-2"></i> Instagram (@carlostomich)
+                        </a>
+                        <a class="link-tile nav-link rounded-lg p-4 block" href="https://www.youtube.com/@thecarltomich" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube mr-2"></i> YouTube (@thecarltomich)
+                        </a>
+                        <a class="link-tile nav-link rounded-lg p-4 block" href="https://www.youtube.com/@globetraveladventures" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube mr-2"></i> YouTube (@globetraveladventures)
+                        </a>
+                        <a class="link-tile nav-link rounded-lg p-4 block" href="https://www.youtube.com/@carltomichtech" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube mr-2"></i> YouTube (@carltomichtech)
+                        </a>
+                    </div>
                 </section>
-            </div>
-        </section>
+            </aside>
+        </div>
     </main>
 
-    <!-- Updated Footer Section -->
-    <!-- Footer -->
-    <!-- Footer -->
     <footer class="py-12" style="background: var(--dark); border-top: 1px solid var(--dark-3);">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <h3 class="heading-font text-2xl mb-4" style="color: var(--primary);">CARL TOMICH</h3>
-                    <p class="mb-4 text-sm" style="color: var(--light);">
-                        Documentary Filmmaker
-                    </p>
-                    <p class="text-sm" style="color: var(--muted);">
-                        Engineering extreme life projects and turning them into films since 2014.
-                    </p>
+                    <p class="mb-4 text-sm" style="color: var(--light);">Documentary Filmmaker</p>
+                    <p class="text-sm" style="color: var(--muted);">Engineering extreme life projects and turning them into films since 2014.</p>
                 </div>
 
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Films</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank"
-                                class="nav-link">Busking for Berlin (2014)</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A
-                                Sail Untold (2022)</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk
-                                Life (2024)</a></li>
-                        <li><a href="#current-project" class="nav-link">Martial Arts Doc (In Production)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank" class="nav-link">Busking for Berlin (2014)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A Sail Untold (2022)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2024)</a></li>
+                        <li><a href="/films/martial-arts-documentary.html" class="nav-link">Martial Arts Doc (In Production)</a></li>
                     </ul>
                 </div>
 
@@ -239,22 +301,16 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i
-                                class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i
-                                class="fab fa-imdb"></i></a>
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
                     </div>
-                    <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
+                    <a href="mailto:carl@music-records.com.au" class="nav-link text-sm block">carl@music-records.com.au</a>
+                    <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm block mt-1">watchcarltravel@gmail.com</a>
                 </div>
             </div>
 
-            <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
-                style="border-color: var(--dark-3);">
-                <p class="text-sm mb-4 md:mb-0" style="color: var(--muted);">
-                    © 2025 Carl Tomich. All rights reserved.
-                </p>
+            <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center" style="border-color: var(--dark-3);">
+                <p class="text-sm mb-4 md:mb-0" style="color: var(--muted);">© 2026 Carl Tomich. All rights reserved.</p>
                 <div class="flex space-x-6">
                     <a href="/privacy-policy.html" class="text-sm nav-link">Privacy Policy</a>
                     <a href="/terms-and-conditions.html" class="text-sm nav-link">Terms of Service</a>
@@ -262,6 +318,32 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('open');
+                    this.querySelector('i').classList.toggle('fa-bars');
+                    this.querySelector('i').classList.toggle('fa-times');
+                });
+            }
+
+            const navbar = document.getElementById('navbar');
+            if (navbar) {
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
