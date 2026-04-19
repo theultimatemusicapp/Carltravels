@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - Carl Travels</title>
+    <meta name="description" content="Thanks for contacting Carl Travels. Your message has been received and Carl will reply soon.">
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="https://www.carltravels.com/thankyou.html">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
@@ -20,7 +26,7 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            <p class="logo"><a href="index.html">Carl Travels</a></p>
                 <!-- Navigation -->
         <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50">
@@ -81,7 +87,11 @@
                 <h1>Thank You!</h1>
                 <p>Your message has been successfully sent. I will get back to you as soon as possible.</p>
                 <p>Meanwhile, feel free to explore more of my work and adventures!</p>
-                <a href="index.html" class="button">Return to Home</a>
+                <div class="flex flex-wrap gap-3 mt-5 justify-center">
+                    <a href="index.html" class="button">Return to Home</a>
+                    <a href="blog.html" class="button">Read the Blog</a>
+                    <a href="destinations.html" class="button">Open Travel Guides</a>
+                </div>
             </div>
         </section>
     </main>
@@ -108,7 +118,7 @@
                         <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank" class="nav-link">Busking for Berlin (2014)</a></li>
                         <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A Sail Untold (2022)</a></li>
                         <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2024)</a></li>
-                        <li><a href="#current-project" class="nav-link">Martial Arts Doc (In Production)</a></li>
+                        <li><a href="/films/martial-arts-documentary.html" class="nav-link">Martial Arts Doc (In Production)</a></li>
                     </ul>
                 </div>
 
@@ -144,5 +154,26 @@
             </div>
         </div>
     </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('open');
+            });
+        }
+
+        if (navbar) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
