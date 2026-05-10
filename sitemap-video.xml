@@ -13,30 +13,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.carltravels.com/videos/commercial-2.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/oHjvJAfbW-w/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Commercial 2</video:title>
-      <video:description>High-energy launch video for a wearable fitness device mixing macro product shots with athlete testimonials.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/oHjvJAfbW-w</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=oHjvJAfbW-w</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.carltravels.com/videos/commercial-3.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/EssKbtalMwc/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Commercial 3</video:title>
-      <video:description>Lifestyle campaign celebrating everyday ritual for an artisan coffee brand, filmed entirely in natural light.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/EssKbtalMwc</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=EssKbtalMwc</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.carltravels.com/videos/hanoi-ha-long-bay-adventure.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/gWw7ygXH_Eo/maxresdefault.jpg</video:thumbnail_loc>
@@ -121,42 +97,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.carltravels.com/videos/music-video-1.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/g7bFA8Rrwik/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Music Video 1</video:title>
-      <video:description>A moody warehouse performance drenched in blue gels and practical smoke, cut to a synth-pop anthem about second chances.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/g7bFA8Rrwik</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=g7bFA8Rrwik</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.carltravels.com/videos/music-video-2.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/Iubiv9CKUvk/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Music Video 2</video:title>
-      <video:description>Sunset rooftops and frenetic dance breaks drive this indie-pop video that celebrates found family in the city.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/Iubiv9CKUvk</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=Iubiv9CKUvk</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.carltravels.com/videos/music-video-3.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/vnDDcKRQZI8/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Music Video 3</video:title>
-      <video:description>Golden hour ballad visuals pair countryside vistas with intimate close-ups for a heartfelt acoustic release.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/vnDDcKRQZI8</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=vnDDcKRQZI8</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.carltravels.com/videos/osaka-dotonbori-at-night.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/5qCfcpFk38I/maxresdefault.jpg</video:thumbnail_loc>
@@ -188,42 +128,6 @@
       <video:description>Join Carl on the quick hop to Kobe for a sizzling teppan lunch that demystifies grades of wagyu and the ritual of Kobe beef service.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/GuSrgoggQCI</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=GuSrgoggQCI</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.carltravels.com/videos/wedding-film-1.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/BkqojyevuTA/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Wedding Film 1</video:title>
-      <video:description>From sun-drenched vows on the coast to sparkler exits, this wedding highlight film leans into timeless romance.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/BkqojyevuTA</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=BkqojyevuTA</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.carltravels.com/videos/wedding-film-2.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/XYXxJ7t0YwE/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Wedding Film 2</video:title>
-      <video:description>Rustic barn textures, tearful speeches, and a choreographed first dance anchor this heartfelt countryside celebration.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/XYXxJ7t0YwE</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=XYXxJ7t0YwE</video:content_loc>
-      <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.carltravels.com/videos/wedding-film-3.html</loc>
-    <video:video>
-      <video:thumbnail_loc>https://img.youtube.com/vi/NwT73rCVnMY/maxresdefault.jpg</video:thumbnail_loc>
-      <video:title>Wedding Film 3</video:title>
-      <video:description>An intimate forest elopement with rain-kissed greenery, handwritten vows, and cozy cabin celebrations.</video:description>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/NwT73rCVnMY</video:player_loc>
-      <video:content_loc>https://www.youtube.com/watch?v=NwT73rCVnMY</video:content_loc>
       <video:publication_date>2025-09-17T23:04:40+07:00</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
