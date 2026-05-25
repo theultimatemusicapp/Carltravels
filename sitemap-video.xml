@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://www.carltravels.com/da-nang-to-hanoi-bus-guide/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/2DW_DLOKPl0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Da Nang to Hanoi by Sleeper Bus</video:title>
+      <video:description>Carl Tomich takes a sleeper bus from Da Nang to Hanoi and shows the real booking, boarding, stops, delays, and cabin experience.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/2DW_DLOKPl0</video:player_loc>
+      <video:content_loc>https://www.youtube.com/watch?v=2DW_DLOKPl0</video:content_loc>
+      <video:publication_date>2026-05-25T00:00:00+07:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.carltravels.com/videos/commercial-1.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/V2iZFD5yW_k/maxresdefault.jpg</video:thumbnail_loc>
