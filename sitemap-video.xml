@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://www.carltravels.com/hanoi-heatwave-best-pools-tay-ho-quang-an/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/SNGVf2oH4Mk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>How I Survived Hanoi's 40°C Heatwave</video:title>
+      <video:description>Carl Tomich checks out affordable pools around Tay Ho and Quang An during a brutal Hanoi heatwave.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/SNGVf2oH4Mk</video:player_loc>
+      <video:content_loc>https://www.youtube.com/watch?v=SNGVf2oH4Mk</video:content_loc>
+      <video:publication_date>2026-05-26T00:00:00+07:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.carltravels.com/da-nang-to-hanoi-bus-guide/</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/2DW_DLOKPl0/maxresdefault.jpg</video:thumbnail_loc>
