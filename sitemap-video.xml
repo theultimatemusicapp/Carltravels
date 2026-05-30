@@ -5,7 +5,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/qT4uDZ4MyZk/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Berlin – Carl Travels: Your Ultimate Week in History, Art, and Hedonism</video:title>
-      <video:description>Discover Berlin with Carl Travels</video:description>
+      <video:description>Discover Berlin with Carl Travels&#x27; ultimate 7-day guide. Explore history, art, nightlife, and hidden gems in Germany’s vibrant capital, with insider tips from a decade of living here.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/qT4uDZ4MyZk</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=qT4uDZ4MyZk</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -100,6 +100,17 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.carltravels.com/becomingadigitalnomad.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/IUZE9UIDvc4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Affordable Digital Nomad Bases I Would Actually Consider in 2026</video:title>
+      <video:description>A practical, firsthand guide to affordable digital nomad bases in Vietnam, Bali, Albania and Montenegro, with costs, transport, work setup and visa-planning cautions.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/IUZE9UIDvc4</video:player_loc>
+      <video:content_loc>https://www.youtube.com/watch?v=IUZE9UIDvc4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.carltravels.com/beginners-guide-davinci-resolve-2025.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg</video:thumbnail_loc>
@@ -126,7 +137,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/-SQdMh_km0Y/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Where to Train Karate in Okinawa (Starting From Zero)</video:title>
-      <video:description>A beginner</video:description>
+      <video:description>A beginner&#x27;s story of training Shorin-ryu karate in Okinawa, including dojo details in Naha, transport costs, and why Ageshio Japan made it accessible.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/-SQdMh_km0Y</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=-SQdMh_km0Y</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -181,7 +192,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/BbJnIqomlmI/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Cairns Travel Guide – Carl Travels: Your Ultimate Week in Reef, Rainforest, and Adventure</video:title>
-      <video:description>Discover Cairns with Carl Travels</video:description>
+      <video:description>Discover Cairns with Carl Travels&#x27; ultimate 7-day guide. Explore the Great Barrier Reef, Daintree Rainforest, waterfalls, and tropical vibes from a local’s perspective.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/BbJnIqomlmI</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=BbJnIqomlmI</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -192,7 +203,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/UlAkgnd0QTw/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Cairns Travel Guide – Carl Travels: Your Ultimate Week in Reef, Rainforest, and Adventure</video:title>
-      <video:description>Discover Cairns with Carl Travels</video:description>
+      <video:description>Discover Cairns with Carl Travels&#x27; ultimate 7-day guide. Explore the Great Barrier Reef, Daintree Rainforest, waterfalls, and tropical vibes from a local’s perspective.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/UlAkgnd0QTw</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=UlAkgnd0QTw</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -203,7 +214,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/_2ROw0H4N18/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Cairns Travel Guide – Carl Travels: Your Ultimate Week in Reef, Rainforest, and Adventure</video:title>
-      <video:description>Discover Cairns with Carl Travels</video:description>
+      <video:description>Discover Cairns with Carl Travels&#x27; ultimate 7-day guide. Explore the Great Barrier Reef, Daintree Rainforest, waterfalls, and tropical vibes from a local’s perspective.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/_2ROw0H4N18</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=_2ROw0H4N18</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -225,7 +236,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/2DW_DLOKPl0/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Da Nang to Hanoi by Sleeper Bus: What to Expect Before You Book</video:title>
-      <video:description>Taking the bus from Da Nang to Hanoi? Here</video:description>
+      <video:description>Taking the bus from Da Nang to Hanoi? Here&#x27;s what to expect on a long-distance sleeper bus in Vietnam, how to book with Vexere, what type of bus to choose, what to bring, and common mistakes to avoid.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/2DW_DLOKPl0</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=2DW_DLOKPl0</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -258,7 +269,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/HlHWvo1Yw14/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Dating in Vietnam: An Honest Guide for Expats &amp; Nomads</video:title>
-      <video:description>A deep dive into the dating scene in Vietnam. From apps like Tinder to cultural nuances in Hanoi and HCMC, learn what it</video:description>
+      <video:description>A deep dive into the dating scene in Vietnam. From apps like Tinder to cultural nuances in Hanoi and HCMC, learn what it&#x27;s really like to date in Vietnam.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/HlHWvo1Yw14</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=HlHWvo1Yw14</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -368,7 +379,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Hanoi by Night – Cinematic Short Film</video:title>
-      <video:description>Experience Hanoi after dark through Carl Tomich</video:description>
+      <video:description>Experience Hanoi after dark through Carl Tomich&#x27;s cinematic short film featuring the Old Quarter, Hoàn Kiếm Lake, and Beer Street.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/FfJgWi3aETs</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=FfJgWi3aETs</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -401,7 +412,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/xw-pTAyolro/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Hon Chong Rocks – Nha Trang Coastal Escape</video:title>
-      <video:description>Explore Hon Chong Rocks in Nha Trang with Globe Travel Adventures. Discover the legend of Husband Rock, sweeping bay views, cultural performances, and travel tips for Vietnam</video:description>
+      <video:description>Explore Hon Chong Rocks in Nha Trang with Globe Travel Adventures. Discover the legend of Husband Rock, sweeping bay views, cultural performances, and travel tips for Vietnam&#x27;s iconic coastline.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/xw-pTAyolro</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=xw-pTAyolro</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -500,7 +511,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/NPpCfDRM2PY/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Your Ultimate Guide to Visiting Korčula, Croatia</video:title>
-      <video:description>Explore Korčula, Croatia, with Carl Travels</video:description>
+      <video:description>Explore Korčula, Croatia, with Carl Travels&#x27; ultimate guide. Watch a video tour, see stunning images, and discover ferries, accommodation, beaches, Old Town, and wineries.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/NPpCfDRM2PY</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=NPpCfDRM2PY</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -544,7 +555,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/bieCD2htND0/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Lotte World Aquarium Hanoi Review – Globe Travel Adventures</video:title>
-      <video:description>Dive into the Lotte World Aquarium inside Hanoi</video:description>
+      <video:description>Dive into the Lotte World Aquarium inside Hanoi&#x27;s Lotte Mall Westlake. Explore immersive tunnels, 30,000 sea creatures, and plan your visit with Globe Travel Adventures.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/bieCD2htND0</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=bieCD2htND0</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -577,7 +588,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/OSg4iVuL2Hs/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Melbourne Travel Guide – Carl Travels: Your Ultimate Week in Laneways, Culture, and Coffee</video:title>
-      <video:description>Discover Melbourne with Carl Travels</video:description>
+      <video:description>Discover Melbourne with Carl Travels&#x27; ultimate 7-day guide. Explore laneways, Fitzroy’s creative soul, live music, and day trips to Sorrento’s beaches.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/OSg4iVuL2Hs</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=OSg4iVuL2Hs</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -632,7 +643,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/ULOM2GJDvak/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>One Day in Ho Chi Minh City (Saigon) – Markets, Skylines &amp; Chaos</video:title>
-      <video:description>A realistic one-day guide to Ho Chi Minh City (Saigon): Ben Thanh Market, Bitexco Skydeck, District 1 cafes, and Bui Vien</video:description>
+      <video:description>A realistic one-day guide to Ho Chi Minh City (Saigon): Ben Thanh Market, Bitexco Skydeck, District 1 cafes, and Bui Vien&#x27;s neon chaos.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/ULOM2GJDvak</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=ULOM2GJDvak</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -643,7 +654,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/d9sYNf3EzdI/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>One Day in Ho Chi Minh City (Saigon) – Markets, Skylines &amp; Chaos</video:title>
-      <video:description>A realistic one-day guide to Ho Chi Minh City (Saigon): Ben Thanh Market, Bitexco Skydeck, District 1 cafes, and Bui Vien</video:description>
+      <video:description>A realistic one-day guide to Ho Chi Minh City (Saigon): Ben Thanh Market, Bitexco Skydeck, District 1 cafes, and Bui Vien&#x27;s neon chaos.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/d9sYNf3EzdI</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=d9sYNf3EzdI</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -654,7 +665,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/UoV_VVndccs/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>One Day in Ho Chi Minh City (Saigon) – Markets, Skylines &amp; Chaos</video:title>
-      <video:description>A realistic one-day guide to Ho Chi Minh City (Saigon): Ben Thanh Market, Bitexco Skydeck, District 1 cafes, and Bui Vien</video:description>
+      <video:description>A realistic one-day guide to Ho Chi Minh City (Saigon): Ben Thanh Market, Bitexco Skydeck, District 1 cafes, and Bui Vien&#x27;s neon chaos.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/UoV_VVndccs</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=UoV_VVndccs</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -852,7 +863,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/example-mavic3/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>DJI Mavic 3 Review: Ultimate Travel Drone?</video:title>
-      <video:description>Carl</video:description>
+      <video:description>Carl&#x27;s in-depth review of the DJI Mavic 3 drone for cinematic travel footage. Explore its features, pros, cons, and why it’s a top pick for creators.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/example-mavic3</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=example-mavic3</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -984,7 +995,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/UY24ZiMbyFQ/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Your Guide to Moving to Da Nang (2026): Reality, Costs, and Areas</video:title>
-      <video:description>Thinking about moving to Da Nang in 2026? Here</video:description>
+      <video:description>Thinking about moving to Da Nang in 2026? Here&#x27;s the no-fluff reality on rent, costs, best areas, visas, and what life is actually like on the ground.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/UY24ZiMbyFQ</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=UY24ZiMbyFQ</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -995,7 +1006,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/VRMiPZzS23o/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Your Guide to Moving to Da Nang (2026): Reality, Costs, and Areas</video:title>
-      <video:description>Thinking about moving to Da Nang in 2026? Here</video:description>
+      <video:description>Thinking about moving to Da Nang in 2026? Here&#x27;s the no-fluff reality on rent, costs, best areas, visas, and what life is actually like on the ground.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/VRMiPZzS23o</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=VRMiPZzS23o</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -1006,7 +1017,7 @@
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/hgicZivA2s8/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Your Guide to Moving to Da Nang (2026): Reality, Costs, and Areas</video:title>
-      <video:description>Thinking about moving to Da Nang in 2026? Here</video:description>
+      <video:description>Thinking about moving to Da Nang in 2026? Here&#x27;s the no-fluff reality on rent, costs, best areas, visas, and what life is actually like on the ground.</video:description>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/hgicZivA2s8</video:player_loc>
       <video:content_loc>https://www.youtube.com/watch?v=hgicZivA2s8</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>

@@ -2,6 +2,7 @@
 import html
 import json
 import re
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -42,7 +43,6 @@ NOINDEX_PATHS = {
     "saily-e-simguide.html",
     "sony-a7iii-review-2025.html",
     "guide-to-sarande.html",
-    "becomingadigitalnomad.html",
 }
 
 NON_ARTICLES = {
@@ -96,8 +96,21 @@ def title_from(content: str, fallback: str) -> str:
 
 
 def desc_from(content: str) -> str:
-    m = re.search(r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']', content, re.I | re.S)
-    return html.unescape(m.group(1)).strip() if m else ""
+    class DescriptionParser(HTMLParser):
+        def __init__(self) -> None:
+            super().__init__()
+            self.description = ""
+
+        def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+            if tag.lower() != "meta" or self.description:
+                return
+            data = {k.lower(): v or "" for k, v in attrs}
+            if data.get("name", "").lower() == "description":
+                self.description = data.get("content", "").strip()
+
+    parser = DescriptionParser()
+    parser.feed(content)
+    return html.unescape(parser.description).strip()
 
 
 def canonical_for(path: Path) -> str:
