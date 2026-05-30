@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /avangate-verification.html
+Disallow: /thankyou.html
 Sitemap: https://www.carltravels.com/sitemap.xml
 Sitemap: https://www.carltravels.com/sitemap-video.xml
-Disallow: /avangate-verification.html
