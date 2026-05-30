@@ -42,6 +42,7 @@ NOINDEX_PATHS = {
     "saily-e-simguide.html",
     "sony-a7iii-review-2025.html",
     "guide-to-sarande.html",
+    "becomingadigitalnomad.html",
 }
 
 NON_ARTICLES = {
