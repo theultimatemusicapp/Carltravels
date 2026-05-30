@@ -1,0 +1,5569 @@
+{
+  "summary": {
+    "external_unique": 352,
+    "ok": 327,
+    "failed_or_blocked": 25,
+    "status_counts": {
+      "200": 313,
+      "error": 11,
+      "405": 2,
+      "403": 4,
+      "206": 9,
+      "302": 1,
+      "503": 6,
+      "202": 4,
+      "400": 2
+    }
+  },
+  "results": [
+    {
+      "url": "https://www.facebook.com/thecarlostomich",
+      "status": 400,
+      "final_url": "https://www.facebook.com/thecarlostomich",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 400: Bad Request",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "source_count": 3,
+      "sources": [
+        "portdouglas.html",
+        "thankyou.html",
+        "work.html"
+      ]
+    },
+    {
+      "url": "https://www.facebook.com/thecarlostomich/",
+      "status": 400,
+      "final_url": "https://www.facebook.com/thecarlostomich/",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 400: Bad Request",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "source_count": 2,
+      "sources": [
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://saily.com",
+      "status": 403,
+      "final_url": "https://saily.com",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "donate.html"
+      ]
+    },
+    {
+      "url": "https://www.parispass.com",
+      "status": 403,
+      "final_url": "https://parispass.com/en-us",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.saily.com/?referral=CARLRI5370",
+      "status": 403,
+      "final_url": "https://saily.com/?referral=CARLRI5370",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g303810-d12423964-Reviews-Pensatore_Kitchen_Wine-Korcula_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+      "status": 403,
+      "final_url": "https://www.tripadvisor.com/Restaurant_Review-g303810-d12423964-Reviews-Pensatore_Kitchen_Wine-Korcula_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html;charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "korcula.html"
+      ]
+    },
+    {
+      "url": "https://formspree.io/f/mnnnoogg",
+      "status": 405,
+      "final_url": "https://formspree.io/f/mnnnoogg",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 32,
+      "sources": [
+        "DJI-Flip-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "contact.html",
+        "danangtravelguide.html",
+        "dji-mini-3-pro-review.html",
+        "farnorthqueenslandtravelguide.html",
+        "getyourwisecard.html",
+        "how-to-get-croatian-citizenship-by-descent.html",
+        "how-to-get-croatian-citizenship-through-your-grandparent.html",
+        "howtofoldapopuptent.html",
+        "howtomakemoneyonlinesellingstockfootage.html",
+        "index.html",
+        "japanonabudget.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "mytop10travelhacks.html",
+        "old-quarter-scams-hanoi.html",
+        "privacy-policy.html",
+        "pros-and-cons-and-cost-of-living-in-hanoi.html",
+        "sony-a7cii-review.html",
+        "tech-review-dji-mavic3.html",
+        "tech-review-sony-a7siii.html",
+        "tech-review-zhiyun-weebill2.html",
+        "terms-and-conditions.html",
+        "the-reality-of-living-overseas.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/Rode-Wireless-PRO-Microphone-System/dp/B0C2T3V9G3",
+      "status": 405,
+      "final_url": "https://www.amazon.com/Rode-Wireless-PRO-Microphone-System/dp/B0C2T3V9G3",
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=DJI+Mavic+3",
+      "status": 503,
+      "final_url": "https://www.amazon.com/s?k=DJI+Mavic+3",
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "tech-review-dji-mavic3.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=DJI+Mavic+3+ND+filters",
+      "status": 503,
+      "final_url": "https://www.amazon.com/s?k=DJI+Mavic+3+ND+filters",
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "tech-review-dji-mavic3.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=Rode+Wireless+Pro",
+      "status": 503,
+      "final_url": "https://www.amazon.com/s?k=Rode+Wireless+Pro",
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "sony-a7cii-review.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=Sony+15mm+f1.4+G",
+      "status": 503,
+      "final_url": "https://www.amazon.com/s?k=Sony+15mm+f1.4+G",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 503: Service Unavailable",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "sony-fx30-setup-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=Zhiyun+Weebill+2",
+      "status": 503,
+      "final_url": "https://www.amazon.com/s?k=Zhiyun+Weebill+2",
+      "ok": false,
+      "method": "GET",
+      "error": "HTTP Error 503: Service Unavailable",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "tech-review-zhiyun-weebill2.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=drone+carry+case",
+      "status": 503,
+      "final_url": "https://www.amazon.com/s?k=drone+carry+case",
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "tech-review-dji-mavic3.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/3ZR1DoA",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 1,
+      "sources": [
+        "DJI-Flip-review.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/421eJjs",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 3,
+      "sources": [
+        "dji-mini-3-pro-review.html",
+        "sony-a7cii-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/44ZnzR8",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 1,
+      "sources": [
+        "howtofoldapopuptent.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/467fEAU",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 33,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4c0rCPk",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 4,
+      "sources": [
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "dji-mini-3-pro-review.html",
+        "sony-a7cii-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4hFqguz",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 3,
+      "sources": [
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "dji-mini-3-pro-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://evisa.gov.vn/",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>",
+      "content_type": null,
+      "source_count": 1,
+      "sources": [
+        "vietnam-e-visa-2026-guide.html"
+      ]
+    },
+    {
+      "url": "https://khuerestaurant.vn",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 1,
+      "sources": [
+        "finedininginhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=Sigma+18-50mm+f2.8+Sony+E",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 1,
+      "sources": [
+        "sony-fx30-setup-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.apple.com/iphone-16-pro/",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 1,
+      "sources": [
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.apple.com/macbook-pro/",
+      "status": null,
+      "final_url": null,
+      "ok": false,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "source_count": 2,
+      "sources": [
+        "macbook-pro-m4-max-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://ageshiojapan.com/",
+      "status": 200,
+      "final_url": "https://ageshiojapan.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "blog/where-to-train-karate-in-okinawa.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/3I5mApV",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/Think-Photo-Airport-Commuter-Backpack/dp/B0083GQI5Y?crid=C0BCCANHIF1P&dib=eyJ2IjoiMSJ9.FP6oWa3JfVz8mPQHHtuj2j56z3fDBCwLggHr6aC_VQkOVxUS8E-jSv8mMw2xvwAwKKp3yS3EAZDahiqzg1lUnJ4OI4bd4xC6w4ixKLoGdQQzlllNF5w7ZnNwMLs2cJUeG6JrDAmhFlIOVrQUbQfDbizfr5yKJOBszOQia6SfusuS4weSmOcfJvJKrX1mPtUZWqSiIfvSDzHdKlE3g8kCUmOJ15MWf_Y1bSIbO8NTex-o5CV-I2CF9MLgeMPW8TqjqtcJhcqbNXq4StxmCGriYFO89wZjALKw2reJs6HtCIw.qhwKjNiiihdX328DrvLyHXcJLf0AWPHeRP_c-KJrh90&dib_tag=se&keywords=thinktank%2Btravel%2Bcommuter&qid=1757035351&sprefix=thinktank%2Btravel%2Bcommuter,aps,269&sr=8-4&th=1&psc=1&linkCode=sl1&tag=carltomich-22&linkId=500149597f5ad39a813be7771a3c54f0&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/3RRXpZC",
+      "status": 200,
+      "final_url": "https://www.amazon.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "sony-a7cii-review.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/41Urhtp",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/DJI-Controller-Takeoff-Intelligent-Batteries/dp/B0DJ1FKDGP?crid=3AJRZ45DCTNHK&dib=eyJ2IjoiMSJ9.EldKWZImzllN2RIfgzbnG41e-3NH9p-6mn1ZIhyOBEItmgvXk8-qm_ZoLwtNyuOZhdazbNPInFA8-u_tf81VsflUePkHrlsm-O9BsWVjCTksOhSVmfqmfFvZZqUvOTNypxXklLfQqiThEX0uRx_FzcrO_xGhHCfhbawmwuvNZlDSU6fblMFWqQiSkE98HuBO5j7CIJEPMUNb65RqFoqlaf1HqnvNa_iPtaErjxRTyASn_9apx5Tf5CxJ5aaVXxPMVorgTWeYUceY6Rf0BYRoLyvhv_hGu8jcey7PoBvo2VY.2TC6F8lWPjI6JsQLd30nsyDAvgt6ol9izHmvD4gc1L8&dib_tag=se&keywords=Dji%2BFlip&qid=1755765809&s=electronics&sprefix=dji%2Bflip,electronics,759&sr=1-2&th=1&linkCode=sl1&tag=carltomich-22&linkId=6d071048ba77cbd613779f02a4c9bbf3&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "DJI-Flip-review.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/41zmAVV",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/DJI-Controller-Takeoff-Intelligent-Batteries/dp/B0DJ1FKDGP?crid=27CLM6RRHHRB4&dib=eyJ2IjoiMSJ9.xHJwj2C5oeF6OHTI195Mdn3sPKEY3lQQtbR1Ffinq4nZrf0vJkhLIitjW3VBJOJxwyVeE4yQAuXGFbWTEwFrlWWsax_d6SMbu6MShKn__FMm0mh-GoBsHRxdET8U2ZnqpxXklLfQqiThEX0uRx_FzYCEWuAVyvXSelhqtv3be5YD_EsWRzMIULJGPJlSUrdUmmEa5c91FR8syo0ZeIfK0g6nYhVRBSfryUO8DyP7t9w0yINa3lmqQbKaTVkAljF0zY95g7ligNcgPIUNDRqXXx8IdElfmIcz-LTDbcXZCVY.BHpsQw5p_iwN_R_6cb79XAe-ZNr3mHBd-DXY4w99rs8&dib_tag=se&keywords=dji%2Bflip&qid=1757034937&sprefix=dji%2Bflip,aps,261&sr=8-1&th=1&linkCode=sl1&tag=carltomich-22&linkId=086f0f4dda5311ea4c0fa2a020c7fc62&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/45Qk2Fw",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/Sony-Alpha-System-Camera-28-60mm/dp/B0CGFBMNDH?crid=Y4V8WSCJABT6&dib=eyJ2IjoiMSJ9.ev7c1E-3pbpbmadeh7VdWGGGwBPVPgenkV33RBsEipu2uXVpDOT-4N719LE8z5ZZkuiatxECfZOdzpPy6zsWyTaCC9-YjTsjmmcZSgzVbtIhv6nwiqrhip-8XLyFVM8TJI0S9CtfzEuF20mZcy_wovPC1FlRfSxCGu-1DiuOJ6Z2es25G9g5miw4rVwdl2YcxPhn0n3sJchrolpd3esOjIp0QaLGvz7n3uFMc-O48l4pYSj__YDttER8crkPx69f7mSxS8ujQijijWSjmj4h9XUlNdHSaq2KQBm7l6vTkyg.johmDKkudmYJ6Vp3A83ZS0WmLiuItffyIHcQrNpcTpM&dib_tag=se&keywords=sony%2Ba7cii&qid=1757035042&sprefix=sony%2Ba7cii,aps,242&sr=8-7&th=1&linkCode=sl1&tag=carltomich-22&linkId=e6839e00766785a47c09e7449989c441&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/45iZULT",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/DJI-Controller-Takeoff-Intelligent-Batteries/dp/B0DJ1FKDGP?crid=2R4BEGV4GCOVO&dib=eyJ2IjoiMSJ9.B3ZGiV_NB4CWvaKZC46HHhqNPIONGEffr9hyQ7doXp3AXko2J8XgtkAXDGsuiEAotNNI2PbCB1AYBnn8BEqRKQmDgWoDst39DJE8gasnXCLc-jUhcRDkTU-kNRFzDwVNjg3G3I5emTMygueqNFSxWtlrc8daGW3mi4t632aghZDCMYSRFrI9w-WsipGgN-AlFd9MHv5fvM5SOZdJ3ZRc3S6dP5ZdvaJbD8dpLuwD9xBibVGNVEA8sqdNPUGc1-QA6emRyHoQcDY9W1wK8g5M_GK-2rSHwY-u6nRI0GtXeD4.0l6QuT-oAkSZ2X00AMSTCdok07QQfjyAKzBb_DdWawE&dib_tag=se&keywords=dji%2Bflip&qid=1755253304&sprefix=dji%2B,aps,500&sr=8-1&th=1&linkCode=sl1&tag=sonymoviemast-22&linkId=3f5281eb31b07e511b695e37c70531d8&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/46kv8CG",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/R%C3%98DE-Microphone-Recording-Microphones-Filmmaking/dp/B0CB2HGR9Q?crid=2CDBT69BZHLYA&dib=eyJ2IjoiMSJ9.Fwy-kxiSUMPxfuFncUDsU_A5ghupefIniz-REQnE6cTWsXHx1AB2Ujp56lEEJfYAXcz8f7ItdheKMJJEt3fbcDMaXA9z2vvl2SUhzXgbV4Ukq3M5KEeOMdSPoj2cooPZeZPhHMSlekWnOVWq4c0QaOzHxx6P7Hyvkb1eAIDVxOLyj1OA_3uyhvfsRMAssRUi_DZnq7KAobBNLtcDs2i8qN-URdgmgdbkNRbQvdaF9rucUW2oiHlnh0JMDv_DLbLkroYoa-fywaWO7QG159ijgMSHpfo0uXgaCvS9UJEj_s0.c_FuiqtAbfwdPKd4F4lJZzRIPwBnxfR6xx2cadHO14I&dib_tag=se&keywords=rode%2Bwireless%2Bpro&qid=1757035251&sprefix=rode%2Bw,aps,347&sr=8-5&th=1&linkCode=sl1&tag=carltomich-22&linkId=5c5361991d8e56b532939c61e269e8be&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4bVozrA",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Manfrotto-Aluminum-Closure-Mirrorless-Accessories/dp/B077J11CCW?crid=2QFRN3UGJABXJ&dib=eyJ2IjoiMSJ9.RQ3EnBc0YumsDtnhw7w9tEQJF2N5mu0qTpVxo4CSNQUBAhopptlfIsrNOPvnDSZgsJ8ccj7EyAKDc4p5bepPEuXYJGxnSZxIDKgXsdPyCtnh1HaPKPHbEui-6mrn_t1Ezn7EYA4xJG7DtgEFzJVHo3kH-2VA3bnLQhvcOB4WjxeyO85SOWUgZqE9Km3tb1wbQujFys7OpuCFJ2ESn4IxVpI5-KqCjDQ5mimede7uzvg.EU31U_IfvfLhjXMiStIZMF_ciBuoTo6XOnpzGCk7Fyg&dib_tag=se&keywords=manfrotto%2Btripod%2Btravel%2Bbe%2Bfree&qid=1742790581&sprefix=manfrotto%2Btripod%2Btravel%2Bbe%2Bfr,aps,253&sr=8-3&th=1&linkCode=sl1&tag=carltomichtec-20&linkId=a5763536c7bd62dd0f09d33260be0a9c&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 2,
+      "sources": [
+        "dji-mini-3-pro-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4c41Mde",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Sony-Alpha-Full-Frame-Interchangeable-Camera/dp/B0CGTWZGWB?crid=3DUG7SYRD189G&dib=eyJ2IjoiMSJ9.ev7c1E-3pbpbmadeh7VdWIIAsLsepdNz-6K9_6D2DSeTW11NZLtBvIeGzEtgdeSbSIU-yFEfg--hVoQ0gJdmur2uvTLiE4wv5o-g_pdJWYOSE2L5jH1T4eCL5Fv9L3oRdh8DZ3BQNA5MatuZlATG0NHDeaUWPKuYS44eTiJPmcx_JwpRWUePkfVLm-eozbikzOevCUORBpIL11bZP_81R0V5xVWCog5IWaweyun-jF0.w_GvGnaQfZCLFu3gPhqFueFEAC4YHi7VRTEN8lBWi64&dib_tag=se&keywords=sony%2Ba7cii&qid=1742790115&sprefix=sony%2Ba7cii,aps,278&sr=8-1&th=1&linkCode=sl1&tag=carltomichtec-20&linkId=3d786ab6fb1b568679469bd7f57a3f9a&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 4,
+      "sources": [
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "dji-mini-3-pro-review.html",
+        "sony-a7cii-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4gaYLJZ",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/DJI-Stabilization-Rotatable-Touchscreen-Photography/dp/B0CG19QXWD?crid=3SHCFANSRK2GV&dib=eyJ2IjoiMSJ9.hn-IKcsoi27x5Xtepf1O0xSEJ-Xc0yIsZ5hiLNsRo0_pnL0HwMARDMaGpGot5vRUIoisskZuJLNO1vrHcsMAQPRIRCdFRvFwlfyVPydN5FfkKgbYw0s29BMkgJiljvn0_ugxYU6JZ9cLZJ8Oj30vFVBWWAWBuepYqTkzRyVqmr2ii2X5OCrM6ae484zpYvqQCRiXcJMt0dgPItUfZ0RL6z-y7KTTesad4agjzTRTAcf1lSsm2yEzEH72afh7B2OEGD2c87RWuC02g7fgtlSVS8E50gbD3A0TmSTnzJ8VLKQ.Bx4cRITeVOMwGs0D0DKW1fgGx14CLCMyLTVRjMuItUs&dib_tag=se&keywords=dji%2Bosmo%2Bpocket%2B3&qid=1757035105&sprefix=DJI,aps,491&sr=8-5&th=1&linkCode=sl1&tag=carltomich-22&linkId=6c45d0909c1797b83d49c364f2b311b2&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4hy5EUQ",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Tamron-28-200-2-8-5-6-Mirrorless-Mount/dp/B08B34HWKV?crid=2GX8MUI8KKWMQ&dib=eyJ2IjoiMSJ9.-TVtaZpdcou7J5BiRywWV2vlcLYEkD1iNn_TTPuUetTLqCIrCiUv4uHwmmvVkbHWk1Jd62tVr_SZkTpwZgT9fJLLofGJpVZ6uGHJ3ZpY0jPO63qcyOQh4d9arPehqaq-oIse6ePGPqigYfCgLDeuoKflqLlXKhgppC9j42ewf4_FhZjvRrhHOoO9Xf158MviEIGmlttJQgvdY6vqKaGZeUUaZElKyFKWyRpaMK0p3bA.NpodXnpHgvdSd8c2XIKRZhhbdXyXUAuqsqAGHXcfypw&dib_tag=se&keywords=tamron+24-200+f2.8+sony+e+mount&qid=1742790454&sprefix=tamron+24-200,aps,266&sr=8-1&linkCode=sl1&tag=carltomichtec-20&linkId=870b5db590d77bad5523f1c854f6c6cc&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 3,
+      "sources": [
+        "dji-mini-3-pro-review.html",
+        "sony-a7cii-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4kGH71w",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Rainleaf-Microfiber-Perfect-Travel-Sports/dp/B07L86M4JD?crid=39MP1NQ5T7D87&dib=eyJ2IjoiMSJ9.oAMgutrN3usg6PizaaW5wTKNOqOfLUg0uSSw-3CzexnixWoF3FpqCyyGTV1-LtPOq8FqlwgDOTT1sfzhoiqXzacIi4fLuXiCkRaT9jwjZwYS9MYewIFP7TGZwM0_0d3wFMnn3M7nQiir8BBsF-9UDu7nv6os59zeSSdwmfF58n5mFeWTARVOEfUw2hEtA4q3kXZCV_87M04c4r-BL8EDxFh55Zbvc5efP5SAAga8yD_LClZDY9jcFlH6Av5RP0KuLs5D1tUoVW84oCJAl5kdJ_Ac0_F2DSN2ds7J5RgdMMc.KLFQJ-p2TrxGqvrbPy2nv_8MFKFibnWt0yqEP_xHRaA&dib_tag=se&keywords=microfibre%2Bbeach%2Btowel&qid=1752448515&sprefix=microfibre%2Bbeach%2Btow,aps,399&sr=8-5-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=sl1&tag=carltomichtec-20&linkId=ca35ed9ae16a5a84caedfe6d2dc2f05e&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "howtofoldapopuptent.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4lUSyUd",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Abco-2-Person-Pop-Tent-Water-Resistant/dp/B072PQDJP4?crid=2G6SD9DYBH583&dib=eyJ2IjoiMSJ9.Akx-3oLAQOL7vQ57_zZe2ObGTFUsXpi3q7C3RVzMR94pFk48UrM0Fxg7KJdpx5gICXRrJ8vHyvcd0NM1nso_0wmmb0HWm4Zrgfumt6TJvscfHjBwflsvayL1lCto-Pur4VDn3dkckY8DLzIx9vOgJfAXxx520lM8yjbN6AIVsY8ceTBYhgb91PK8CJz1SKc5_YMIUKHMpfSsPP24DXEwk2nb3ubC5sWt7W3CG9AVH3Y.BnR8Sj-RpYbExtcKLFXbw2zhlNOzboVF7bMa6dXbF08&dib_tag=se&keywords=pop+up+tent&qid=1752448327&sprefix=pop+up+t,aps,336&sr=8-11&linkCode=sl1&tag=carltomichtec-20&linkId=2004dc06f6d5cf13ea11bd11d3c98e1b&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "howtofoldapopuptent.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4lvd1hI",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/Tamron-28-200-2-8-5-6-Mirrorless-Mount/dp/B08B34HWKV?crid=1QEN08AGHDA5P&dib=eyJ2IjoiMSJ9.F-1xObnXZ1qvBYq3zqlPY-NONJhLnpZLBqOzJ3HO5tTaMoqBS6y-yCzp9X2gf74AvY9AfeP0NaxoH7DZ9-baBGYipuEDZdeZDPhnjFQLAPKtme5_4_FG3s6XXvOiBciFRCc2uuwqEeNlASTcgcCCZMSMFQeah9VIUe8nfvKw3waCva02_S3xX9d-JyGDBuG_e3MirkHsz23lqve2L2QVLMa5j0OVts-mmsfQ8VCk2Mk21ZgO9UeZSpWiqPf46ib3p97ybHMdj-mSwAvwDGZsUplC0W8j79hDLbEyt4rRRsc.RD-ZusuknzzNJEQwUdBnNUgT4NbgXfMrZD-cLbs7Izg&dib_tag=se&keywords=tamron%2B24-150mm%2Bsony&qid=1755253413&sprefix=tamron%2B24-150mm%2Bson,aps,332&sr=8-8&th=1&linkCode=sl1&tag=carltomich-22&linkId=369f0dc13ba29944c2261e58637d5916&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4mHhQ8H",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/Alpha-Full-Frame-Interchangeable-Lens-Camera/dp/B0CGTTVYGM?crid=3UFGY3ITUFRIG&dib=eyJ2IjoiMSJ9.ev7c1E-3pbpbmadeh7VdWFcGksbpaD0LcfMpyGiafmIkmo2jGBt5M2E9J5fx_zQvYoa9cwkYx9Ms4314aD_KvlRP7kN7v44y5OVvwCe0hrwu3EmNb_ynMVmokWAEqEhATekuA2inkDK21iarXslKa-cwhVZmzX5YQxtcRmGKFeR772jpYj3HTrPbeI3ZQ4U9pdrLR2LEwE7JqN1U8Zd-BBT_0SJG6AhX8DL4MXBQZGSJ8ZS-_aLCTtitWZHc2pdFMTaRj76KAi4xLj1fzwW26k4n3Tyl4DcnDLsPS0O6csE.M7nmeQ9rGw5lWrk0OStz3sFcXb6hUUBIYxuSm25RGtM&dib_tag=se&keywords=Sony%2BA7CII&qid=1755253330&sprefix=sony%2Ba7ci,aps,339&sr=8-2&th=1&linkCode=sl1&tag=carltomich-22&linkId=e268d46ab451781fa56ff54460f43b36&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 34,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4miS3UJ",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/DJI-Vlogging-Stabilization-Tracking-Photography/dp/B0CG19FGQ5?crid=1G6X1VC3KQ5EX&dib=eyJ2IjoiMSJ9.OLzTlYtdM2w0TP6xjlSDCa_ccSbGz-LuIU4RgcQOCNGa_FFl2x1iOz2JX6S15ZXETql3rFDOM9ga-vhK36LgBaVMgdsL9DjJ1rGI703o8l2CU7qjqJgJrjk4bbf-Ae7lDW2VKJCOIhx3uSDXuParcMtR2mX2C58Se55j-iXTxZtUyCT_KpmGnxAiC29MDSrLM27fcIM9hNcLt9qfKC4X0H4XYBQK9QDfGIOYCCdiD5lduJ45hKRSb_vcDqRsfUclWisMqQvRUilvFcJNunY7PQEwXIkjphgmLW2BdwCZLnw.kXFrNmjSvoqF8aSCDLEiVO6jy41xldw8QKHmK03PQpg&dib_tag=se&keywords=DJI%2Bpocket%2B3&qid=1755253366&sprefix=dji%2Bpocket%2B34,aps,341&sr=8-5&th=1&linkCode=sl1&tag=carltomich-22&linkId=f574fc6c948e413d7828caf3917f88c7&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 36,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "living-in-bangkok.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4n73D5P",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/Tamron-28-200-2-8-5-6-Mirrorless-Mount/dp/B08B34HWKV?crid=2KXUS0I4U82EM&dib=eyJ2IjoiMSJ9.CirVtLEYR7BE9okHzn54invQLY0R2IpCxFbXtvO1NnS3N7bkvewO8f1Yq8HoRp8by7g8fCAGFxwZReQZiHGIleWQhBiyxX6NqLuWc2JcY0SatfWtItHN56up3Chh0D8MWnZx1sZMHuhw7JMF1wW-t-_JV04YdmuFHxRHCAkZE68WtA-D3L-Dzu4PGUjAvPjTp5SldK7-BzyvSBMXmLxJIRehuwg0-GotkfHE9WlIC_4H_U3a4PyQdb9pUPOs3wgOSlpAZtRp5xUnt9EVdnDOoa8N5AFkcblsba8g9gFHmgg.ywMyfDborErcaHwGfqjwuU9BKivzUuvVcowT6gYYSgc&dib_tag=se&keywords=Tamron%2B28%E2%80%93200mm%2B(Full-Frame)&qid=1757035157&sprefix=tamron%2B28%2B200mm%2Bfull-frame%2B,aps,322&sr=8-1&th=1&linkCode=sl1&tag=carltomich-22&linkId=48c5cc0e9d510609bb5d001f6a9afffc&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 32,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4oHMXTy",
+      "status": 200,
+      "final_url": "https://www.amazon.com.au/R%C3%98DE-Microphone-Recording-Microphones-Filmmaking/dp/B0CB2HGR9Q?crid=EGFFU6UZWCLT&dib=eyJ2IjoiMSJ9.DGm925iQklRK-0FmBcE9db-XNNBHUbEQUmSpGwxYevTWsXHx1AB2Ujp56lEEJfYAXcz8f7ItdheKMJJEt3fbcFJwLM0qbJZFbyXmeGeum-sa0VEabMsoDLY8CTncKG_wcQknrVxzofZHSnY2hjgptBqrzbKBtON6CpGKjvZLWJbF12me_IIzxbcIdQ8xyAiv4MZEEmpSth_cBUSNn31q0t3k7bBm6YhlZLAdCOz86vQKfMf3dxTZHnqFsWMWlUF7v0fy7dJRty-80-hdaPlVDfUAYTPOMRmPYrwuoDhkGHE.Jyv_XTXDBOYqJ4Rg5nZ0RKMDurBNR5Nag68iZPXdLmc&dib_tag=se&keywords=rode%2Bwireless%2Bpro&qid=1755253496&sprefix=Rode%2Bwirle,aps,388&sr=8-3&th=1&linkCode=sl1&tag=carltomich-22&linkId=c45e7c55dd1516f0f8708eea1e3df28d&language=en_AU&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 405: Method Not Allowed",
+      "content_type": "text/html;charset=UTF-8",
+      "source_count": 33,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://bit.ly/3IxsIaX",
+      "status": 200,
+      "final_url": "https://yesim.app/?utm_source=youtube_mrudy304&utm_medium=cpp&utm_campaign=mrudy304_1",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "top-10-things-to-do-in-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "status": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/javascript",
+      "source_count": 124,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "affiliate-disclosure.html",
+        "aiarty-image-enhancer-review.html",
+        "aiarty-video-enhancer-review.html",
+        "aiarty-vs-topaz-video-ai.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "blog/horse-riding-near-hanoi-countryside-experience.html",
+        "blog/where-to-train-karate-in-okinawa.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "electro-voice-everse-8-review.html"
+      ]
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+      "status": 200,
+      "final_url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/css; charset=utf-8",
+      "source_count": 116,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-image-enhancer-review.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "blog/horse-riding-near-hanoi-countryside-experience.html",
+        "blog/where-to-train-karate-in-okinawa.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html"
+      ]
+    },
+    {
+      "url": "https://consent.cookiebot.com/uc.js",
+      "status": 200,
+      "final_url": "https://consent.cookiebot.com/uc.js",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "application/javascript",
+      "source_count": 91,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "blog/horse-riding-near-hanoi-countryside-experience.html",
+        "blog/where-to-train-karate-in-okinawa.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html",
+        "films/busking-for-berlin.html",
+        "films/martial-arts-documentary.html"
+      ]
+    },
+    {
+      "url": "https://croatianbydescent.com/",
+      "status": 200,
+      "final_url": "https://croatianbydescent.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 2,
+      "sources": [
+        "how-to-get-croatian-citizenship-by-descent.html",
+        "how-to-get-croatian-citizenship-through-your-grandparent.html"
+      ]
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap",
+      "status": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/css; charset=utf-8",
+      "source_count": 53,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "aiarty-image-enhancer-review.html",
+        "aiarty-video-enhancer-review.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "cairnstravelguide.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "destinations.html",
+        "finedininginhanoi.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "lotte-world-aquarium-hanoi.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "phuquoctravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "sapa-travel-guide.html",
+        "sarande-ksamil-butrint-travel-guide/index.html",
+        "scoot-plus-review.html",
+        "soundmarket.html",
+        "tech-review-sony-a7siii.html",
+        "thebesttemplesinhanoi.html",
+        "tolifo-100w-rgb-light-review.html"
+      ]
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap",
+      "status": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&display=swap",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/css; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "thankyou.html"
+      ]
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Montserrat:wght@600&display=swap",
+      "status": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script&family=Montserrat:wght@600&display=swap",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/css; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "portdouglas.html",
+        "work.html"
+      ]
+    },
+    {
+      "url": "https://go.fitnexa.com/s0moIS",
+      "status": 200,
+      "final_url": "https://www.fitnexa.com/product/fitnexa-somnipods-3?utm_source=kol&utm_medium=youtube&utm_campaign=CarlTomichTech",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "somnipods-3-review.html"
+      ]
+    },
+    {
+      "url": "https://go.saily.site/aff_c?offer_id=101&aff_id=12234",
+      "status": 200,
+      "final_url": "https://go.saily.site/aff_c?offer_id=101&aff_id=12234",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/plain",
+      "source_count": 75,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "aiarty-video-enhancer-review.html",
+        "aiarty-vs-topaz-video-ai.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog/horse-riding-near-hanoi-countryside-experience.html",
+        "blog/where-to-train-karate-in-okinawa.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "dji-mini-3-pro-review.html",
+        "electro-voice-everse-8-review.html",
+        "farnorthqueenslandtravelguide.html",
+        "finedininginhanoi.html",
+        "grand-world-hanoi-guide.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html"
+      ]
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "status": 200,
+      "final_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/-SQdMh_km0Y/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/-SQdMh_km0Y/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "blog.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/-jWYZg-gJ6U/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/-jWYZg-gJ6U/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "scoot-plus-review.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/2DW_DLOKPl0/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/2DW_DLOKPl0/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "da-nang-to-hanoi-bus-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/2ZaWPVIi8o0/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/2ZaWPVIi8o0/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "blog.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/31idWwYdPIc/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/31idWwYdPIc/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "hanoitravelguide.html",
+        "videos/hanoi-train-street-thrills.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/5qCfcpFk38I/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/5qCfcpFk38I/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "osakatravelguide.html",
+        "videos/index.html",
+        "videos/osaka-dotonbori-at-night.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/6I8DYrGi37g/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/6I8DYrGi37g/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "hanoitravelguide.html",
+        "videos/hanoi-old-quarter-vibes.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/6iDgajITe6Q/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/6iDgajITe6Q/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "films/a-sail-untold.html",
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/7AYuPAYa3XQ/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/7AYuPAYa3XQ/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "blog.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/8Z5RWNxpQM4/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/8Z5RWNxpQM4/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "destinations.html",
+        "videos/ha-giang-loop-easy-rider.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/8Z5RWNxpQM4/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/8Z5RWNxpQM4/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "Hagiangloop.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/8eWZmmillt8/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/8eWZmmillt8/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "gear.html",
+        "soundmarket.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/Ao2fuEKXWKk/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/Ao2fuEKXWKk/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "nusa-lembongan-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/BkqojyevuTA/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/BkqojyevuTA/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/index.html",
+        "videos/wedding-film-1.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/E4SJfs6AtF4/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/E4SJfs6AtF4/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "sapa-travel-guide.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/EssKbtalMwc/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/EssKbtalMwc/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/commercial-3.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/F3CVHZBmYps/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/F3CVHZBmYps/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "muay-thai-thailand-koh-samui-guide.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/FfJgWi3aETs/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "hanoi-by-night.html",
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/GuSrgoggQCI/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/GuSrgoggQCI/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "osakatravelguide.html",
+        "videos/index.html",
+        "videos/osaka-kobe-beef-experience.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/HJg9pZXU3mQ/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/HJg9pZXU3mQ/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "gear.html",
+        "tolifo-100w-rgb-light-review.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/Hict_8lPMvw/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/Hict_8lPMvw/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "ninhbinhtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/HlHWvo1Yw14/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/HlHWvo1Yw14/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "dating-in-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/IUZE9UIDvc4/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/IUZE9UIDvc4/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "blog.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/Iubiv9CKUvk/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/Iubiv9CKUvk/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/index.html",
+        "videos/music-video-2.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/IybWdSE35_0/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/IybWdSE35_0/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "old-quarter-scams-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/M3B07rdRGVs/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/M3B07rdRGVs/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "hiroshima-travel-guide.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/NOroDecOCGE/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/NOroDecOCGE/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "vinwonders-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/NwT73rCVnMY/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/NwT73rCVnMY/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/index.html",
+        "videos/wedding-film-3.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/Plen_Co5MPs/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/Plen_Co5MPs/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "phuquoctravelguide.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/S8L4Hmwkgiw/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/S8L4Hmwkgiw/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "films/busk-life.html",
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/SNGVf2oH4Mk/0.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/SNGVf2oH4Mk/0.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/SNGVf2oH4Mk/1.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/SNGVf2oH4Mk/1.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/SNGVf2oH4Mk/2.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/SNGVf2oH4Mk/2.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/SNGVf2oH4Mk/3.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/SNGVf2oH4Mk/3.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/SNGVf2oH4Mk/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/SNGVf2oH4Mk/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/SNGVf2oH4Mk/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/SNGVf2oH4Mk/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/SNGVf2oH4Mk/mqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/SNGVf2oH4Mk/mqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/U41rV5x6p-Y/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/U41rV5x6p-Y/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "living-in-bangkok.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/UY24ZiMbyFQ/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/UY24ZiMbyFQ/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "your-guide-to-moving-to-da-nang-2026.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/V2iZFD5yW_k/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/V2iZFD5yW_k/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/commercial-1.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/WA06gan4Xy8/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/WA06gan4Xy8/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "make-money-online-while-traveling.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/WFJQeeZ6QFc/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/WFJQeeZ6QFc/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "the-reality-of-living-overseas.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/WUUNVGd0vc8/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/WUUNVGd0vc8/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "aiarty-image-enhancer-review.html",
+        "gear.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/WjtMEQx34NE/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/WjtMEQx34NE/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "films/busking-for-berlin.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/XFST-VOi5hY/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/XFST-VOi5hY/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "finedininginhanoi.html",
+        "portfolio.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/XYXxJ7t0YwE/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/XYXxJ7t0YwE/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/index.html",
+        "videos/wedding-film-2.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/ZGVHbIA7eCA/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/ZGVHbIA7eCA/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "learning-vietnamese-after-living-in-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/_aqTDDEvgXM/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/_aqTDDEvgXM/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "Hifuinhanoi.html",
+        "blog.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/aWhkZBogql8/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/aWhkZBogql8/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "gear.html",
+        "macbook-pro-m4-max-review.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/ay5fwK0OVaM/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/ay5fwK0OVaM/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "hanoitravelguide.html",
+        "videos/hanoi-learn-vietnamese-testimonial.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/b8LRRCgTn00/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/b8LRRCgTn00/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "destinations.html",
+        "guide-to-sarande.html",
+        "sarande-ksamil-butrint-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/bieCD2htND0/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/bieCD2htND0/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "lotte-world-aquarium-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/fsYA84tjrTE/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/fsYA84tjrTE/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "aiarty-video-enhancer-review.html",
+        "aiarty-vs-topaz-video-ai.html",
+        "gear.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/g7bFA8Rrwik/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/g7bFA8Rrwik/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/index.html",
+        "videos/music-video-1.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/gWw7ygXH_Eo/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/gWw7ygXH_Eo/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "hanoitravelguide.html",
+        "videos/hanoi-ha-long-bay-adventure.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/gWw7ygXH_Eo/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/gWw7ygXH_Eo/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "ha-long-bay-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/jlHPcAebOWU/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/jlHPcAebOWU/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "port-douglas-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/kNs-mxT_3eE/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/kNs-mxT_3eE/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "gear.html",
+        "sony-fx30-setup-guide.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/lTRbrZT3r9A/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/lTRbrZT3r9A/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "top-10-things-to-do-in-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "films/martial-arts-documentary.html",
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/mZF3X5DSxIM/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/mZF3X5DSxIM/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "osakatravelguide.html",
+        "videos/index.html",
+        "videos/osaka-expo-70-park-journey.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/oHjvJAfbW-w/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/oHjvJAfbW-w/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/commercial-2.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/rCviY7kpxvk/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/rCviY7kpxvk/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "things-to-know-before-moving-to-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/ttrBqi-LO2g/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/ttrBqi-LO2g/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "blog.html",
+        "starting-over-at-40.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/vd5s-1nkjxI/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/vd5s-1nkjxI/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "destinations.html",
+        "videos/index.html",
+        "videos/tran-quoc-pagoda-watch.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/vd5s-1nkjxI/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/vd5s-1nkjxI/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "thebesttemplesinhanoi.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/vnDDcKRQZI8/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/vnDDcKRQZI8/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 3,
+      "sources": [
+        "portfolio.html",
+        "videos/index.html",
+        "videos/music-video-3.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/wUYUV_F4WQo/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/wUYUV_F4WQo/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "videos/beginners-guide-davinci-resolve-2025.html",
+        "videos/index.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 2,
+      "sources": [
+        "beginners-guide-davinci-resolve-2025.html",
+        "gear.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/xw-pTAyolro/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/xw-pTAyolro/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "destinations.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/xw-pTAyolro/maxresdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/xw-pTAyolro/maxresdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "hon-chong-rocks-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/y9evTdEucQU/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/y9evTdEucQU/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "portfolio.html"
+      ]
+    },
+    {
+      "url": "https://img.youtube.com/vi/zpkT0md0rBs/hqdefault.jpg",
+      "status": 200,
+      "final_url": "https://img.youtube.com/vi/zpkT0md0rBs/hqdefault.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "portfolio.html"
+      ]
+    },
+    {
+      "url": "https://ispeakvietlingo.com",
+      "status": 200,
+      "final_url": "https://ispeakvietlingo.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "hanoitravelguide.html"
+      ]
+    },
+    {
+      "url": "https://ispeakvietlingo.com/",
+      "status": 200,
+      "final_url": "https://ispeakvietlingo.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "learning-vietnamese-after-living-in-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://m.uber.com/",
+      "status": 200,
+      "final_url": "https://m.uber.com/go/home",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://maps.google.com/?q=Annam+Cafe+Tay+Ho",
+      "status": 200,
+      "final_url": "https://maps.google.com/maps?q=Annam+Cafe+Tay+Ho",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://maps.google.com/?q=Hanoi+Cider+House+Tay+Ho",
+      "status": 200,
+      "final_url": "https://maps.google.com/maps?q=Hanoi+Cider+House+Tay+Ho",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://maps.google.com/?q=Maison+de+Tet+Decor",
+      "status": 200,
+      "final_url": "https://maps.google.com/maps?q=Maison+de+Tet+Decor",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://maps.google.com/?q=Savage+Coffee+Tay+Ho",
+      "status": 200,
+      "final_url": "https://maps.google.com/maps?q=Savage+Coffee+Tay+Ho",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://maps.google.com/?q=The+Coffee+House+Xuan+Dieu",
+      "status": 200,
+      "final_url": "https://maps.google.com/maps?q=The+Coffee+House+Xuan+Dieu",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://maps.google.com/?q=Tranquil+Books+%26+Coffee+Tay+Ho",
+      "status": 200,
+      "final_url": "https://maps.google.com/maps?q=Tranquil+Books+%26+Coffee+Tay+Ho",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://oceaniaspa.vn/",
+      "status": 200,
+      "final_url": "https://oceaniaspa.vn/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "Hifuinhanoi.html"
+      ]
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068",
+      "status": 200,
+      "final_url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/javascript; charset=UTF-8",
+      "source_count": 34,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "aiarty-video-enhancer-review.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "blog.html",
+        "cairnstravelguide.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "destinations.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoi-by-night.html",
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "index.html",
+        "lotte-world-aquarium-hanoi.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "phuquoctravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "portfolio.html",
+        "sapa-travel-guide.html",
+        "sarande-ksamil-butrint-travel-guide/index.html",
+        "scoot-plus-review.html",
+        "tech-review-sony-a7siii.html",
+        "thebesttemplesinhanoi.html"
+      ]
+    },
+    {
+      "url": "https://paypal.me/carltomich",
+      "status": 200,
+      "final_url": "https://www.paypal.com/paypalme/carltomich",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "donate.html"
+      ]
+    },
+    {
+      "url": "https://podcast.adobe.com/en/enhance",
+      "status": 200,
+      "final_url": "https://podcast.adobe.com/en/enhance",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 27,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html",
+        "top-10-things-to-do-in-hanoi.html",
+        "vinwonders-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://randomuser.me/api/portraits/men/32.jpg",
+      "status": 200,
+      "final_url": "https://randomuser.me/api/portraits/men/32.jpg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 4,
+      "sources": [
+        "farnorthqueenslandtravelguide.html",
+        "getyourwisecard.html",
+        "korcula.html",
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1",
+      "status": 200,
+      "final_url": "https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "aiarty-image-enhancer-review.html"
+      ]
+    },
+    {
+      "url": "https://secure.2checkout.com/order/checkout.php?PRODS=50334856&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer_video&CART=1",
+      "status": 200,
+      "final_url": "https://secure.2checkout.com/order/checkout.php?PRODS=50334856&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer_video&CART=1",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "aiarty-video-enhancer-review.html"
+      ]
+    },
+    {
+      "url": "https://share.google/UrqLoo2DyjXvtTkOu",
+      "status": 200,
+      "final_url": "https://www.google.com/share.google?q=UrqLoo2DyjXvtTkOu",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "learning-vietnamese-after-living-in-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://soundmarket.io/?ref=CarlTravels",
+      "status": 200,
+      "final_url": "https://soundmarket.io/?ref=CarlTravels",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "soundmarket.html"
+      ]
+    },
+    {
+      "url": "https://th.bing.com/th/id/OIP.9m5KjXKnuWt3d6wZRbtJXgHaHa?w=600&h=600&c=7&r=0&o=5&pid=1.7",
+      "status": 200,
+      "final_url": "https://th.bing.com/th/id/OIP.9m5KjXKnuWt3d6wZRbtJXgHaHa?w=600&h=600&c=7&r=0&o=5&pid=1.7",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://th.bing.com/th/id/OIP.GAx4MaLU5bxFynWqh2j6dQHaNL?w=600&h=940&c=7&r=0&o=5&pid=1.7",
+      "status": 200,
+      "final_url": "https://th.bing.com/th/id/OIP.GAx4MaLU5bxFynWqh2j6dQHaNL?w=600&h=940&c=7&r=0&o=5&pid=1.7",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://th.bing.com/th/id/OIP.KDaE2rOFQ6tkZVegF7yl4gHaFj?w=600&h=450&c=7&r=0&o=5&pid=1.7",
+      "status": 200,
+      "final_url": "https://th.bing.com/th/id/OIP.KDaE2rOFQ6tkZVegF7yl4gHaFj?w=600&h=450&c=7&r=0&o=5&pid=1.7",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+      "status": 200,
+      "final_url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/css",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "sapa-travel-guide.html"
+      ]
+    },
+    {
+      "url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+      "status": 200,
+      "final_url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/javascript; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "destinations.html",
+        "sapa-travel-guide.html"
+      ]
+    },
+    {
+      "url": "https://vexere.com/",
+      "status": 200,
+      "final_url": "https://vexere.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "da-nang-to-hanoi-bus-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://vizualtravel.com",
+      "status": 200,
+      "final_url": "https://www.vizualtravel.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "top-10-things-to-do-in-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://wise.com/",
+      "status": 200,
+      "final_url": "https://wise.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.aiarty.com/",
+      "status": 200,
+      "final_url": "https://www.aiarty.com/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "aiarty-video-enhancer-review.html"
+      ]
+    },
+    {
+      "url": "https://www.airbnb.com",
+      "status": 200,
+      "final_url": "https://www.airbnb.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html;charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z",
+      "status": 200,
+      "final_url": "https://www.amazon.com/FEELWORLD-FW568-Field-Monitor-Camera/dp/B07V3K4Z4Z",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.apple.com/ipad-pro/",
+      "status": 200,
+      "final_url": "https://www.apple.com/ipad-pro/",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "status": 200,
+      "final_url": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "beginners-guide-davinci-resolve-2025.html",
+        "videos/beginners-guide-davinci-resolve-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.bongbackpackerhostel.com/ha-giang-loop-group-tour-1",
+      "status": 200,
+      "final_url": "https://bongbackpackerhostel.com/tours/motorbike-group-tour/ha-giang-3d2n",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "Hagiangloop.html",
+        "videos/ha-giang-loop-easy-rider.html"
+      ]
+    },
+    {
+      "url": "https://www.couchsurfing.com",
+      "status": 200,
+      "final_url": "https://www.couchsurfing.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.dehancer.com",
+      "status": 200,
+      "final_url": "https://www.dehancer.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "how-to-make-your-videos-look-cinematic.html"
+      ]
+    },
+    {
+      "url": "https://www.dehancer.com/pricing/monthly",
+      "status": 200,
+      "final_url": "https://www.dehancer.com/pricing/monthly",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 28,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "donate.html",
+        "gear.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html",
+        "top-10-things-to-do-in-hanoi.html",
+        "vinwonders-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://www.gojek.com",
+      "status": 200,
+      "final_url": "https://www.gojek.com/en-id",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps/dir/The+Coffee+House+Xuan+Dieu/Hanoi+Cider+House/",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/dir/The+Coffee+House+Xuan+Dieu/Hanoi+Cider+House/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps/dir/Tranquil+Books+%26+Coffee/Annam+Cafe+Tay+Ho/Maison+de+Tet+Decor/Savage+Coffee+Tay+Ho/",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/dir/Tranquil+Books+%26+Coffee/Annam+Cafe+Tay+Ho/Maison+de+Tet+Decor/Savage+Coffee+Tay+Ho/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8633858814507!2d105.8341598!3d21.0381327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2sHanoi%2C%20Vietnam!5e0!3m2!1sen!2sus!4v1697051234567!5m2!1sen!2sus",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8633858814507!2d105.8341598!3d21.0381327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2sHanoi%2C%20Vietnam!5e0!3m2!1sen!2sus!4v1697051234567!5m2!1sen!2sus",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "hanoitravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=%CE%98%CE%B5%CE%BF%CE%B4.%20%CE%94%CE%B7%CE%BB%CE%B9%CE%B3%CE%B9%CE%AC%CE%BD%CE%BD%CE%B7%2021%2C%20Athens&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1zzpjOtc6_zrQuIM6UzrfOu865zrPOuc6szr3Ovc63IDIxLCBBdGhlbnM",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "how-to-get-to-sarande-from-athens-by-bus.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Annam%20Cafe%20Tay%20Ho&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sAnnam+Cafe+Tay+Ho",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Butrint+National+Park&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sButrint+National+Park",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "sarande-ksamil-butrint-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Casablanca%20Pool%20Tay%20Ho%20Hanoi&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sCasablanca+Pool+Tay+Ho+Hanoi",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Hanoi%20Cider%20House%20Tay%20Ho&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sHanoi+Cider+House+Tay+Ho",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Ksamil+Albania&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sKsamil+Albania",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "sarande-ksamil-butrint-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Maison%20de%20Tet%20Decor&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sMaison+de+Tet+Decor",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Mizumi%20Rooftop%20Pool%20Hanoi&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sMizumi+Rooftop+Pool+Hanoi",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Oceania%20Spa%20%26%20Clinic%20Hanoi&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sOceania+Spa+%26+Clinic+Hanoi",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "Hifuinhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Sala%20Pool%20%26%20Garden%20Hanoi&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sSala+Pool+%26+Garden+Hanoi",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Sarande%2C%20Albania&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sSarande,+Albania",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "how-to-get-to-sarande-from-athens-by-bus.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Sarande+Albania&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sSarande+Albania",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "sarande-ksamil-butrint-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Savage%20Coffee%20Tay%20Ho&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sSavage+Coffee+Tay+Ho",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Thang%20Loi%20Swimming%20Pool%20Hanoi&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sThang+Loi+Swimming+Pool+Hanoi",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=The%20Coffee%20House%20Xuan%20Dieu&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sThe+Coffee+House+Xuan+Dieu",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.google.com/maps?q=Tranquil%20Books%20%26%20Coffee%20Tay%20Ho&output=embed",
+      "status": 200,
+      "final_url": "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sTranquil+Books+%26+Coffee+Tay+Ho",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J",
+      "status": 200,
+      "final_url": "https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "application/javascript; charset=UTF-8",
+      "source_count": 116,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "aiarty-vs-topaz-video-ai.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "blog/horse-riding-near-hanoi-countryside-experience.html",
+        "blog/where-to-train-karate-in-okinawa.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "electro-voice-everse-8-review.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html"
+      ]
+    },
+    {
+      "url": "https://www.grab.com",
+      "status": 200,
+      "final_url": "https://www.grab.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.guruwalk.com",
+      "status": 200,
+      "final_url": "https://www.guruwalk.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/Carlostomich",
+      "status": 200,
+      "final_url": "https://www.instagram.com/Carlostomich",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=\"utf-8\"",
+      "source_count": 1,
+      "sources": [
+        "vinwonders-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/carlostomich",
+      "status": 200,
+      "final_url": "https://www.instagram.com/carlostomich",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=\"utf-8\"",
+      "source_count": 109,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html",
+        "films/busking-for-berlin.html",
+        "films/martial-arts-documentary.html",
+        "finedininginhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/globetraveladventures",
+      "status": 200,
+      "final_url": "https://www.instagram.com/globetraveladventures",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=\"utf-8\"",
+      "source_count": 1,
+      "sources": [
+        "top-10-things-to-do-in-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/nhynhythenoob",
+      "status": 200,
+      "final_url": "https://www.instagram.com/nhynhythenoob",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=\"utf-8\"",
+      "source_count": 5,
+      "sources": [
+        "finedininginhanoi.html",
+        "hanoi-by-night.html",
+        "hon-chong-rocks-nha-trang.html",
+        "lotte-world-aquarium-hanoi.html",
+        "vinwonders-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://www.krilo.hr/en/",
+      "status": 200,
+      "final_url": "https://krilo.hr/en",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "korcula.html"
+      ]
+    },
+    {
+      "url": "https://www.lisboncard.com",
+      "status": 200,
+      "final_url": "https://www.lisboncard.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.skyscanner.com",
+      "status": 200,
+      "final_url": "https://www.skyscanner.com/sttc/px/captcha-v2/index.html?url=Lz8=&uuid=453e45fc-5bdc-11f1-b860-60ef62a728dd&vid=",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.workaway.info",
+      "status": 200,
+      "final_url": "https://www.workaway.info",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.wwoof.net",
+      "status": 200,
+      "final_url": "https://wwoof.net/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@carltomichtech",
+      "status": 200,
+      "final_url": "https://www.youtube.com/@carltomichtech",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "about.html",
+        "contact.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@globetraveladventures",
+      "status": 200,
+      "final_url": "https://www.youtube.com/@globetraveladventures",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 4,
+      "sources": [
+        "about.html",
+        "contact.html",
+        "howtofoldapopuptent.html",
+        "lotte-world-aquarium-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@growyourniche",
+      "status": 200,
+      "final_url": "https://www.youtube.com/@growyourniche",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@thecarltomich",
+      "status": 200,
+      "final_url": "https://www.youtube.com/@thecarltomich",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 109,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html",
+        "films/busking-for-berlin.html",
+        "films/martial-arts-documentary.html",
+        "finedininginhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@thecarltomich/join",
+      "status": 200,
+      "final_url": "https://www.youtube.com/@thecarltomich/join",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "donate.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/-SQdMh_km0Y",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/-SQdMh_km0Y",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "blog/where-to-train-karate-in-okinawa.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/-jWYZg-gJ6U",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/-jWYZg-gJ6U",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "scoot-plus-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/0TZEJ80_iO0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/0TZEJ80_iO0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "guide-to-sarande.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/0efs6f9hGkk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/0efs6f9hGkk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "cheap-accommodation-while-traveling.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/2DW_DLOKPl0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/2DW_DLOKPl0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "da-nang-to-hanoi-bus-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/2RN8XC9I_fc",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/2RN8XC9I_fc",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "DJI-Flip-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/2ZaWPVIi8o0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/2ZaWPVIi8o0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "grand-world-hanoi-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/2sqMujqTYxM",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/2sqMujqTYxM",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "yesim-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/31idWwYdPIc",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/31idWwYdPIc",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/hanoi-train-street-thrills.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/3Qha5Pg9xJM",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/3Qha5Pg9xJM",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "danangtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/5ezwJAVN9r4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/5ezwJAVN9r4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/5qCfcpFk38I",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/5qCfcpFk38I",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/osaka-dotonbori-at-night.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/6I8DYrGi37g",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/6I8DYrGi37g",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/hanoi-old-quarter-vibes.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/6iDgajITe6Q",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/6iDgajITe6Q",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "films/a-sail-untold.html",
+        "work.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/7AYuPAYa3XQ",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/7AYuPAYa3XQ",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "blog/horse-riding-near-hanoi-countryside-experience.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/7BCbr5dNLk8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/7BCbr5dNLk8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/7C6eLNHJUc4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/7C6eLNHJUc4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "portdouglas.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/7O8Jsqz9tR8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/7O8Jsqz9tR8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "balitravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/7dBfJleeZGM",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/7dBfJleeZGM",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/8SEavFWRERE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/8SEavFWRERE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "portdouglas.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/8Z5RWNxpQM4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/8Z5RWNxpQM4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "Hagiangloop.html",
+        "videos/ha-giang-loop-easy-rider.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/8eWZmmillt8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/8eWZmmillt8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "soundmarket.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/Ao2fuEKXWKk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/Ao2fuEKXWKk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "nusa-lembongan-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/BbJnIqomlmI",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/BbJnIqomlmI",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "cairnstravelguide.html",
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/BkqojyevuTA",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/BkqojyevuTA",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/wedding-film-1.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/CCDmJ-Dn1Sk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/CCDmJ-Dn1Sk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "your-guide-to-moving-to-da-nang-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/DUPzL5YJqj4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/DUPzL5YJqj4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "phuketravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/E4SJfs6AtF4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/E4SJfs6AtF4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "sapa-travel-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/EWJ5FgJeVGw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/EWJ5FgJeVGw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "Hifuinhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/EssKbtalMwc",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/EssKbtalMwc",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/commercial-3.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/F3CVHZBmYps",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/F3CVHZBmYps",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "muay-thai-thailand-koh-samui-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/FfJgWi3aETs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/FfJgWi3aETs",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "hanoi-by-night.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/GuSrgoggQCI",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/GuSrgoggQCI",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/osaka-kobe-beef-experience.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/H0scQqpIUS0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/H0scQqpIUS0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "phuquoctravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/HJg9pZXU3mQ",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/HJg9pZXU3mQ",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "tolifo-100w-rgb-light-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/Hict_8lPMvw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/Hict_8lPMvw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "ninhbinhtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/HlHWvo1Yw14",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/HlHWvo1Yw14",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "dating-in-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/IUZE9UIDvc4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/IUZE9UIDvc4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "becomingadigitalnomad.html",
+        "pros-and-cons-and-cost-of-living-in-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/Iubiv9CKUvk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/Iubiv9CKUvk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/music-video-2.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/IybWdSE35_0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/IybWdSE35_0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "old-quarter-scams-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/Izha3ONStb4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/Izha3ONStb4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "whyileftaustralia.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/KUWQhb-E3Cw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/KUWQhb-E3Cw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "pros-and-cons-and-cost-of-living-in-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/LUy8Wri5DrE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/LUy8Wri5DrE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/L_wTrfTvztk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/L_wTrfTvztk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "howtomakemoneyonlinesellingstockfootage.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/M3B07rdRGVs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/M3B07rdRGVs",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "hiroshima-travel-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/NOroDecOCGE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/NOroDecOCGE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "vinwonders-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/NPpCfDRM2PY",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/NPpCfDRM2PY",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "how-to-get-croatian-citizenship-through-your-grandparent.html",
+        "korcula.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/Nqrmfkp73ds",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/Nqrmfkp73ds",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "dji-mini-3-pro-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/NwT73rCVnMY",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/NwT73rCVnMY",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/wedding-film-3.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/OSg4iVuL2Hs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/OSg4iVuL2Hs",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "melbournetravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/Plen_Co5MPs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/Plen_Co5MPs",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "phuquoctravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/PpLbQctQLmY",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/PpLbQctQLmY",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/QYuoiKPTHf0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/QYuoiKPTHf0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "cairnstravelguide.html",
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/Re8xO-VQUog",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/Re8xO-VQUog",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "guide-to-sarande.html",
+        "sarande-ksamil-butrint-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/S8L4Hmwkgiw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/S8L4Hmwkgiw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 3,
+      "sources": [
+        "buskingguide.html",
+        "films/busk-life.html",
+        "work.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/SNGVf2oH4Mk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/SNGVf2oH4Mk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/U41rV5x6p-Y",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/U41rV5x6p-Y",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "living-in-bangkok.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/ULOM2GJDvak",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/ULOM2GJDvak",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "one-day-in-hcmc-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/UY24ZiMbyFQ",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/UY24ZiMbyFQ",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "your-guide-to-moving-to-da-nang-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/UkOiU0FCZww",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/UkOiU0FCZww",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/UlAkgnd0QTw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/UlAkgnd0QTw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "cairnstravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/UoV_VVndccs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/UoV_VVndccs",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "one-day-in-hcmc-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/V2iZFD5yW_k",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/V2iZFD5yW_k",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/commercial-1.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/VIhF9IOX2Rw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/VIhF9IOX2Rw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "danangtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/VRMiPZzS23o",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/VRMiPZzS23o",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "your-guide-to-moving-to-da-nang-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/WA06gan4Xy8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/WA06gan4Xy8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "make-money-online-while-traveling.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/WUUNVGd0vc8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/WUUNVGd0vc8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "aiarty-image-enhancer-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/WjtMEQx34NE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/WjtMEQx34NE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 3,
+      "sources": [
+        "buskingguide.html",
+        "films/busking-for-berlin.html",
+        "work.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/WnhqiFGQTfc",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/WnhqiFGQTfc",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "dji-mini-3-pro-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/XFST-VOi5hY",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/XFST-VOi5hY",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "finedininginhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/XYXxJ7t0YwE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/XYXxJ7t0YwE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/wedding-film-2.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/YNO8wWjcyqU",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/YNO8wWjcyqU",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "guide-to-sarande.html",
+        "sarande-ksamil-butrint-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/ZGVHbIA7eCA",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/ZGVHbIA7eCA",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "learning-vietnamese-after-living-in-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/_2ROw0H4N18",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/_2ROw0H4N18",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "cairnstravelguide.html",
+        "portdouglas.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/_aqTDDEvgXM",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/_aqTDDEvgXM",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "Hifuinhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/aWhkZBogql8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/aWhkZBogql8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "macbook-pro-m4-max-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/ay5fwK0OVaM",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/ay5fwK0OVaM",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/hanoi-learn-vietnamese-testimonial.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/b8LRRCgTn00",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/b8LRRCgTn00",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "guide-to-sarande.html",
+        "sarande-ksamil-butrint-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/bieCD2htND0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/bieCD2htND0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "lotte-world-aquarium-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/cgk0uBOk8KY",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/cgk0uBOk8KY",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "balitravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/d9sYNf3EzdI",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/d9sYNf3EzdI",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "one-day-in-hcmc-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/e-DpOd-QmTk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/e-DpOd-QmTk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "kyototravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/eZEbXh2vjwA",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/eZEbXh2vjwA",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "balitravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/example-mavic3",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/example-mavic3",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "tech-review-dji-mavic3.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/fJvUjP3YQyE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/fJvUjP3YQyE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "sony-a7cii-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/feBJCpoA_LA",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/feBJCpoA_LA",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "how-to-get-croatian-citizenship-by-descent.html",
+        "how-to-get-croatian-citizenship-through-your-grandparent.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/fsYA84tjrTE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/fsYA84tjrTE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "aiarty-video-enhancer-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/g7bFA8Rrwik",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/g7bFA8Rrwik",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/music-video-1.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/gWw7ygXH_Eo",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/gWw7ygXH_Eo",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "ha-long-bay-travel-guide/index.html",
+        "videos/hanoi-ha-long-bay-adventure.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/hgicZivA2s8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/hgicZivA2s8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "your-guide-to-moving-to-da-nang-2026.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/ipXULKhIAT8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/ipXULKhIAT8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "portdouglas.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/jlHPcAebOWU",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/jlHPcAebOWU",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 3,
+      "sources": [
+        "farnorthqueenslandtravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "portdouglas.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/kNs-mxT_3eE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/kNs-mxT_3eE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "sony-fx30-setup-guide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/lTRbrZT3r9A",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/lTRbrZT3r9A",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "top-10-things-to-do-in-hanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/mZF3X5DSxIM",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/mZF3X5DSxIM",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/osaka-expo-70-park-journey.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/n1pWE7QaCds",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/n1pWE7QaCds",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "budvatravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/oHjvJAfbW-w",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/oHjvJAfbW-w",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/commercial-2.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/pS4B4IbXLjs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/pS4B4IbXLjs",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "how-to-get-croatian-citizenship-by-descent.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/q2CQUkF87h8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/q2CQUkF87h8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "howtofoldapopuptent.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/qT4uDZ4MyZk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/qT4uDZ4MyZk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "Berlin.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/qUPzm-Qcz5A",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/qUPzm-Qcz5A",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "how-to-make-your-videos-look-cinematic.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/rCviY7kpxvk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/rCviY7kpxvk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "things-to-know-before-moving-to-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/s5wknDLdGbg",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/s5wknDLdGbg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/sgrF92ZTGv8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/sgrF92ZTGv8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "somnipods-3-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/sryhpGGE640?autoplay=1&mute=1&playlist=sryhpGGE640&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/sryhpGGE640?autoplay=1&mute=1&playlist=sryhpGGE640&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "destinations.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/ttrBqi-LO2g",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/ttrBqi-LO2g",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "starting-over-at-40.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/uU8ZnALVtlA",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/uU8ZnALVtlA",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "tokyotravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/vIVgU02j37A",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/vIVgU02j37A",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "phuketravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/vd5s-1nkjxI",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/vd5s-1nkjxI",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "thebesttemplesinhanoi.html",
+        "videos/tran-quoc-pagoda-watch.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/vnDDcKRQZI8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/vnDDcKRQZI8",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "videos/music-video-3.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/wUYUV_F4WQo",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/wUYUV_F4WQo",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "beginners-guide-davinci-resolve-2025.html",
+        "videos/beginners-guide-davinci-resolve-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/xw-pTAyolro",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/xw-pTAyolro",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "hon-chong-rocks-nha-trang.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/embed/xxxx",
+      "status": 200,
+      "final_url": "https://www.youtube.com/embed/xxxx",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "japanonabudget.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5ezwJAVN9r4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=5ezwJAVN9r4",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6iDgajITe6Q",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=6iDgajITe6Q",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 108,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html",
+        "films/busking-for-berlin.html",
+        "films/martial-arts-documentary.html",
+        "finedininginhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ao2fuEKXWKk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=Ao2fuEKXWKk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "nusa-lembongan-travel-guide/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BbJnIqomlmI",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=BbJnIqomlmI",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HJg9pZXU3mQ",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=HJg9pZXU3mQ",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "tolifo-100w-rgb-light-review.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Hict_8lPMvw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=Hict_8lPMvw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "ninhbinhtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QYuoiKPTHf0",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=QYuoiKPTHf0",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=S8L4Hmwkgiw",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=S8L4Hmwkgiw",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 108,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html",
+        "films/busking-for-berlin.html",
+        "films/martial-arts-documentary.html",
+        "finedininginhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SNGVf2oH4Mk",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=SNGVf2oH4Mk",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "hanoi-heatwave-best-pools-tay-ho-quang-an/index.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UkOiU0FCZww",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=UkOiU0FCZww",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WjtMEQx34NE",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=WjtMEQx34NE",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 108,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "contact.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "dating-in-vietnam.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html",
+        "films/busking-for-berlin.html",
+        "films/martial-arts-documentary.html",
+        "finedininginhanoi.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jlHPcAebOWU",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=jlHPcAebOWU",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=s5wknDLdGbg",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=s5wknDLdGbg",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "farnorthqueenslandtravelguide.html"
+      ]
+    },
+    {
+      "url": "https://yesim.app",
+      "status": 200,
+      "final_url": "https://yesim.app",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 3,
+      "sources": [
+        "cairnstravelguide.html",
+        "tokyotravelguide.html",
+        "yesim-guide.html"
+      ]
+    },
+    {
+      "url": "https://yesim.app/",
+      "status": 200,
+      "final_url": "https://yesim.app/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "donate.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/8Z5RWNxpQM4",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=8Z5RWNxpQM4&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "Hagiangloop.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/F3CVHZBmYps",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=F3CVHZBmYps&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "muay-thai-thailand-koh-samui-guide.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/FfJgWi3aETs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=FfJgWi3aETs&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/HlHWvo1Yw14",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=HlHWvo1Yw14&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "dating-in-vietnam.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/WA06gan4Xy8",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=WA06gan4Xy8&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "make-money-online-while-traveling.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/WFJQeeZ6QFc",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=WFJQeeZ6QFc&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "the-reality-of-living-overseas.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/vd5s-1nkjxI",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=vd5s-1nkjxI&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "thebesttemplesinhanoi.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/wUYUV_F4WQo",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=wUYUV_F4WQo&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 2,
+      "sources": [
+        "beginners-guide-davinci-resolve-2025.html",
+        "videos/beginners-guide-davinci-resolve-2025.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/y9evTdEucQU",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=y9evTdEucQU&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "portfolio.html"
+      ]
+    },
+    {
+      "url": "https://youtu.be/zpkT0md0rBs",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=zpkT0md0rBs&feature=youtu.be",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 1,
+      "sources": [
+        "portfolio.html"
+      ]
+    },
+    {
+      "url": "https://www.booking.com",
+      "status": 202,
+      "final_url": "https://www.booking.com",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html",
+      "source_count": 2,
+      "sources": [
+        "korcula.html",
+        "mytop10travelhacks.html"
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/name/nm6869150/",
+      "status": 202,
+      "final_url": "https://www.imdb.com/name/nm6869150/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 101,
+      "sources": [
+        "Berlin.html",
+        "DJI-Flip-review.html",
+        "Hagiangloop.html",
+        "Hifuinhanoi.html",
+        "about.html",
+        "aiarty-video-enhancer-review.html",
+        "balitravelguide.html",
+        "becomingadigitalnomad.html",
+        "beginners-guide-davinci-resolve-2025.html",
+        "best-cafes-in-tay-ho-for-digital-nomads.html",
+        "blog.html",
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "budvatravelguide.html",
+        "buskingguide.html",
+        "cairnstravelguide.html",
+        "cheap-accommodation-while-traveling.html",
+        "da-nang-to-hanoi-bus-guide/index.html",
+        "daily-essential-travel-gear.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "dji-mini-3-pro-review.html",
+        "donate.html",
+        "farnorthqueenslandtravelguide.html",
+        "films/a-sail-untold.html",
+        "films/busk-life.html",
+        "films/busking-for-berlin.html",
+        "films/martial-arts-documentary.html",
+        "finedininginhanoi.html",
+        "gear.html",
+        "getyourwisecard.html"
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/title/tt3488376/",
+      "status": 202,
+      "final_url": "https://www.imdb.com/title/tt3488376/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 2,
+      "sources": [
+        "films/busking-for-berlin.html",
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/title/tt35471599/",
+      "status": 202,
+      "final_url": "https://www.imdb.com/title/tt35471599/",
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8",
+      "source_count": 1,
+      "sources": [
+        "index.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/3EcRLNM",
+      "status": 206,
+      "final_url": "https://www.amazon.com/Bose-Powered-Portable-Bluetooth-Wireless/dp/B0BZWT5FRR?crid=36K62NE3AOSU3&dib=eyJ2IjoiMSJ9.CWKILr-gz7sqiYEChmxNgXQdmo8t47Jqf7hIv4bYa7TrPXWtLNa8BjfZlKjZv0T7vvWEKl27iXG0ol2e_FXcUlpjchDFawfzgXRRKijp4M2203setBXMcww7P2kcBctnSwb1mMhk8g1c4DCmx9GwL8DKhi6TCEHpUfexs0sWXgZUKTuFiHomyjfuGZGWonlznjxf8nLCbEX3qg1Td9GzhNGv92K-4ub92-SuEqB9DRgY-Lihps4yh_zjR3NbIP4a1mofoSQCW53cwhHvCuXybEkj0tFPqpDlEGXzWhHGYftclPmF2HoTO8k7c0ySt1oc1G--f6_Fj14FeDreiw0tRrxditmiDG38aO86yLjrzbQnd7YryhMm7RztNf3eOhHHKzU-wKpFHn49vGZoNDARRmFxXhCJsqGr7n4fOMpvLPWudpHHZgn8hdgfA4iNq178.LRWT7O7g7W-f-CEtou9-z1rag8GN9hz6HP4O6CqZLbg&dib_tag=se&keywords=bose%2Bs1%2Bpro%2Bplus&qid=1738179955&sprefix=bose%2Bs1%2Bpro%2Bpl,aps,458&sr=8-1&th=1&linkCode=sl1&tag=carltomichtec-20&linkId=7a3a06839e7c8e35382581762bcd6f05&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 2,
+      "sources": [
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+        "dji-mini-3-pro-review.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/3Ktc4tq",
+      "status": 206,
+      "final_url": "https://www.amazon.com/Sony-Full-Frame-Mirrorless-Interchangeable-Lens-ILCE7M3/dp/B07B43WPVK?crid=3QNM77LARF9GH&dib=eyJ2IjoiMSJ9.4NuxoLCbLb-dfaxfQmy0ycwN7dmCCPwm84KyW-bdcuaQ499rUoRvJoWwFywH53j6Vaom-_2JOzGGTgojVUpbxZ5ZiUseMnAaKvwyhPgkgn-mX1rSXfIYAphSv4jbfwmL4ZX6vKqvBDvuLs3oa65jMQj-VjdOQLOU0x52e0S0AqAtJBnHCRatDHq-fTFqhLwuEfrJOSIPgJohoDrgWQmQO51n70NyvLlozm2nM-gRNR8.zFO4j9n50SJ_UXK8wfRkBh5_vtidZzcmymLXnj8getA&dib_tag=se&keywords=sony%2Ba7iii&qid=1758254663&sprefix=sona7iii,aps,334&sr=8-1&th=1&linkCode=sl1&tag=carltomichtec-20&linkId=3820060a66672f78b5d42122129ae2d6&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "tech-review-sony-a7siii.html"
+      ]
+    },
+    {
+      "url": "https://amzn.to/4kTchUG",
+      "status": 206,
+      "final_url": "https://www.amazon.com/Meta-Square-Sunglasses-Graphite-Transitions/dp/B0DDCLXN5H?crid=37WPHK22PHAST&dib=eyJ2IjoiMSJ9.4BTP_Bj_z8F3-NMH6c6trk4BQpoFx7wi7RezuVRybuWoFaWRrFwc0JNkKSDBWd7lRzvMP9FRWnuCBdwng60wrR5dLz9S6j7TzUm91ZEF-hVCeGpCHaDcKfKiQ8q_NWO5zX3pbZmGC23JuLLSY6Gpavz44TyzBU1m-YflemqxwA1W7w_LLDE_2LQQugGZvpo2nElTaD_TV6rCT2Q-Ncb_f9-0VSb1eYWgMyF5VvmvCrY.qapXTTkCBLGEMLGh3Ydn8vyaaX0ZQaTaEqyIVxeijJA&dib_tag=se&keywords=rayban+meta+glasses&qid=1742790378&sprefix=rayban+meta,aps,358&sr=8-1&linkCode=sl1&tag=carltomichtec-20&linkId=6a59a069128081c3547b4ff5c4f1a9d1&language=en_US&ref_=as_li_ss_tl",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 2,
+      "sources": [
+        "dji-mini-3-pro-review.html",
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://th.bing.com/th/id/OIP.HaxeXsFSk4Ck2ygZmn13zgHaFj?w=600&h=569&c=7&r=0&o=5&pid=1.7",
+      "status": 206,
+      "final_url": "https://th.bing.com/th/id/OIP.HaxeXsFSk4Ck2ygZmn13zgHaFj?w=600&h=569&c=7&r=0&o=5&pid=1.7",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://th.bing.com/th/id/OIP.OJrXzUmXpZg5_SJi8GTRAAHaJQ?w=600&h=950&c=7&r=0&o=5&pid=1.7",
+      "status": 206,
+      "final_url": "https://th.bing.com/th/id/OIP.OJrXzUmXpZg5_SJi8GTRAAHaJQ?w=600&h=950&c=7&r=0&o=5&pid=1.7",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://th.bing.com/th/id/OIP.h1eAKCZxC2ZB0a--c51aMgHaNK?w=600&h=950&c=7&r=0&o=5&pid=1.7",
+      "status": 206,
+      "final_url": "https://th.bing.com/th/id/OIP.h1eAKCZxC2ZB0a--c51aMgHaNK?w=600&h=950&c=7&r=0&o=5&pid=1.7",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "image/jpeg",
+      "source_count": 1,
+      "sources": [
+        "best-cafes-in-tay-ho-for-digital-nomads.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN",
+      "status": 206,
+      "final_url": "https://www.amazon.com/Neewer-Battery-Professional-Camcorder-Equipment/dp/B0B4J7Y6QN",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "travel-gear-2025.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=DJI+Mavic+3+battery",
+      "status": 206,
+      "final_url": "https://www.amazon.com/s?k=DJI+Mavic+3+battery",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "tech-review-dji-mavic3.html"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/s?k=Electro-Voice+Everse+8",
+      "status": 206,
+      "final_url": "https://www.amazon.com/s?k=Electro-Voice+Everse+8",
+      "ok": true,
+      "method": "GET",
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "source_count": 1,
+      "sources": [
+        "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html"
+      ]
+    },
+    {
+      "url": "https://wise.com/invite/irhc/carlt62",
+      "status": 302,
+      "final_url": "https://wise.com/invite/irhc/carlt62?utm_source=ios-referral-hub-copylink&utm_medium=invite&referralCode=carlt62",
+      "ok": true,
+      "method": "GET",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound",
+      "content_type": "text/html; charset=utf-8",
+      "source_count": 30,
+      "sources": [
+        "Berlin.html",
+        "Hagiangloop.html",
+        "balitravelguide.html",
+        "blog.html",
+        "budvatravelguide.html",
+        "cairnstravelguide.html",
+        "danangtravelguide.html",
+        "destinations.html",
+        "donate.html",
+        "gear.html",
+        "getyourwisecard.html",
+        "ha-long-bay-travel-guide/index.html",
+        "hanoitravelguide.html",
+        "hiroshima-travel-guide.html",
+        "hon-chong-rocks-nha-trang.html",
+        "korcula.html",
+        "kyototravelguide.html",
+        "lotte-world-aquarium-hanoi.html",
+        "make-money-online-while-traveling.html",
+        "melbournetravelguide.html",
+        "ninhbinhtravelguide.html",
+        "nusa-lembongan-travel-guide/index.html",
+        "one-day-in-hcmc-guide.html",
+        "osakatravelguide.html",
+        "phuketravelguide.html",
+        "port-douglas-travel-guide/index.html",
+        "thebesttemplesinhanoi.html",
+        "tokyotravelguide.html",
+        "top-10-things-to-do-in-hanoi.html",
+        "vinwonders-nha-trang.html"
+      ]
+    }
+  ]
+}
