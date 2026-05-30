@@ -1,0 +1,215 @@
+/*
+  Site-wide dark theme compatibility layer.
+  Older articles were built with light Tailwind utility classes; this file is
+  loaded last so those pages match the newer Carl Travels dark publication style.
+*/
+
+:root {
+    --ct-black: #0a0a0a;
+    --ct-dark: #101010;
+    --ct-card: #161616;
+    --ct-card-soft: #1f1f1f;
+    --ct-border: rgba(255, 255, 255, 0.12);
+    --ct-text: #e8e8e8;
+    --ct-muted: #c9c9c9;
+    --ct-yellow: #f5c518;
+}
+
+html,
+body {
+    background: var(--ct-black) !important;
+    color: var(--ct-text) !important;
+}
+
+main,
+section,
+article,
+aside,
+footer,
+.content,
+.prose,
+.article-content,
+.article-block,
+.content-card {
+    color: var(--ct-text) !important;
+}
+
+.bg-white,
+.bg-gray-50,
+.bg-gray-100,
+.bg-slate-50,
+.bg-slate-100,
+[class*="bg-[#f"],
+[class*="bg-[#F"] {
+    background-color: var(--ct-card) !important;
+    color: var(--ct-text) !important;
+}
+
+.bg-gray-200,
+.bg-slate-200,
+.info-card,
+.glass-card,
+.highlight-card,
+.card,
+.content-card,
+.article-block,
+.author-bio,
+.toc {
+    background-color: var(--ct-card-soft) !important;
+    border-color: var(--ct-border) !important;
+    color: var(--ct-text) !important;
+}
+
+.navbar,
+.navbar.scrolled,
+.mobile-menu {
+    background-color: rgba(10, 10, 10, 0.94) !important;
+    border-bottom: 1px solid var(--ct-border) !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.article-block h3,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.heading-font {
+    color: #ffffff !important;
+}
+
+p,
+li,
+dd,
+dt,
+figcaption,
+blockquote,
+.text-gray-900,
+.text-gray-800,
+.text-gray-700,
+.text-gray-600,
+.text-gray-500,
+.text-slate-900,
+.text-slate-800,
+.text-slate-700,
+.text-slate-600,
+.text-slate-500 {
+    color: var(--ct-text) !important;
+}
+
+.text-gray-400,
+.text-gray-300,
+.text-slate-400,
+.text-slate-300 {
+    color: var(--ct-muted) !important;
+}
+
+.text-blue-900,
+.text-blue-800,
+.text-blue-700,
+.text-blue-600,
+.text-blue-500,
+.text-indigo-900,
+.text-indigo-800,
+.text-indigo-700,
+.text-indigo-600,
+.text-indigo-500,
+a.text-blue-900,
+a.text-blue-800,
+a.text-blue-700,
+a.text-blue-600,
+a.text-blue-500 {
+    color: var(--ct-yellow) !important;
+}
+
+a,
+.nav-link,
+.text-yellow-700,
+.text-yellow-600,
+.text-yellow-500,
+.text-yellow-400,
+.text-amber-700,
+.text-amber-600,
+.text-amber-500,
+.text-amber-400 {
+    color: var(--ct-yellow) !important;
+}
+
+a:hover,
+.nav-link:hover {
+    color: #ffe27a !important;
+}
+
+.border-gray-100,
+.border-gray-200,
+.border-gray-300,
+.border-slate-100,
+.border-slate-200,
+.border-slate-300 {
+    border-color: var(--ct-border) !important;
+}
+
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+    background-color: transparent !important;
+    color: var(--ct-text) !important;
+    border-color: var(--ct-border) !important;
+}
+
+thead tr,
+.bg-yellow-900,
+.bg-yellow-100,
+.bg-amber-100 {
+    background-color: rgba(245, 197, 24, 0.12) !important;
+}
+
+input,
+textarea,
+select {
+    background-color: #111111 !important;
+    border-color: var(--ct-border) !important;
+    color: #ffffff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b8b8b8 !important;
+}
+
+button,
+.btn,
+.button-primary,
+.btn-primary,
+a[class*="bg-white"],
+a[class*="bg-yellow"],
+button[class*="bg-white"],
+button[class*="bg-yellow"] {
+    border-color: var(--ct-yellow) !important;
+}
+
+.shadow-lg,
+.shadow-xl,
+.shadow-2xl,
+.shadow-md {
+    box-shadow: 0 20px 45px -24px rgba(0, 0, 0, 0.85) !important;
+}
+
+.wave-shape .shape-fill {
+    fill: var(--ct-black) !important;
+}
