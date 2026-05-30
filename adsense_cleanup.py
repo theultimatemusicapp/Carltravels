@@ -41,6 +41,7 @@ NOINDEX_PATHS = {
     "electro-voice-everse-8-review.html",
     "saily-e-simguide.html",
     "sony-a7iii-review-2025.html",
+    "guide-to-sarande.html",
 }
 
 NON_ARTICLES = {
@@ -103,7 +104,7 @@ def canonical_for(path: Path) -> str:
     if r == "index.html":
         return f"{SITE}/"
     if r.endswith("/index.html"):
-        return f"{SITE}/{r[:-10]}/"
+        return f"{SITE}/{r[:-11]}/"
     return f"{SITE}/{r}"
 
 
@@ -190,6 +191,66 @@ def ensure_article_schema(content: str, path: Path) -> str:
     return content.replace("</head>", schema + "</head>", 1)
 
 
+def ensure_collection_schema(content: str, path: Path) -> str:
+    r = rel(path)
+    if r not in {"blog.html", "gear.html", "destinations.html"} or '"@type": "CollectionPage"' in content:
+        return content
+    title = title_from(content, path.stem)
+    desc = desc_from(content)
+    data = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": title,
+        "description": desc,
+        "url": canonical_for(path),
+        "publisher": {"@type": "Person", "name": "Carl Tomich", "url": SITE},
+    }
+    schema = '    <script type="application/ld+json">\n' + json.dumps(data, ensure_ascii=False, indent=2) + "\n    </script>\n"
+    return content.replace("</head>", schema + "</head>", 1)
+
+
+SIMPLE_NAV = """
+    <nav class="site-shell-nav" style="background:#0f0f0f;border-bottom:1px solid rgba(255,255,255,.1);padding:14px 20px;position:relative;z-index:20;">
+        <div style="max-width:1100px;margin:0 auto;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+            <a href="/index.html" style="color:#f5c518;font-weight:800;text-decoration:none;letter-spacing:.08em;">CARL TOMICH</a>
+            <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem;">
+                <a href="/destinations.html" style="color:#e5e7eb;text-decoration:none;">Travel Guides</a>
+                <a href="/blog.html" style="color:#e5e7eb;text-decoration:none;">Blog</a>
+                <a href="/gear.html" style="color:#e5e7eb;text-decoration:none;">Gear</a>
+                <a href="/about.html" style="color:#e5e7eb;text-decoration:none;">About</a>
+                <a href="/contact.html" style="color:#e5e7eb;text-decoration:none;">Contact</a>
+            </div>
+        </div>
+    </nav>
+"""
+
+SIMPLE_FOOTER = """
+    <footer class="site-shell-footer" style="background:#0f0f0f;border-top:1px solid rgba(255,255,255,.1);padding:32px 20px;margin-top:48px;color:#9ca3af;">
+        <div style="max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+            <p style="margin:0;">© 2026 Carl Tomich. Practical travel guides, creator gear, and life abroad notes.</p>
+            <div style="display:flex;gap:14px;flex-wrap:wrap;">
+                <a href="/about.html" style="color:#e5e7eb;">About</a>
+                <a href="/contact.html" style="color:#e5e7eb;">Contact</a>
+                <a href="/privacy-policy.html" style="color:#e5e7eb;">Privacy</a>
+                <a href="/terms-and-conditions.html" style="color:#e5e7eb;">Terms</a>
+                <a href="/affiliate-disclosure.html" style="color:#e5e7eb;">Affiliate Disclosure</a>
+            </div>
+        </div>
+    </footer>
+"""
+
+
+def ensure_basic_shell(content: str, path: Path) -> str:
+    if has_noindex(content):
+        return content
+    if "<nav" not in content:
+        content = content.replace("<body>", "<body>\n" + SIMPLE_NAV, 1)
+        content = re.sub(r"<body([^>]*)>", r"<body\1>\n" + SIMPLE_NAV, content, count=1) if SIMPLE_NAV not in content else content
+    if "<footer" not in content:
+        content = content.replace("</body>", SIMPLE_FOOTER + "\n</body>", 1)
+    return content
+
+
 def add_lazy_loading(content: str) -> str:
     content = re.sub(r"<img(?![^>]*\bloading=)", "<img loading=\"lazy\"", content)
     content = re.sub(r"<iframe(?![^>]*\bloading=)", "<iframe loading=\"lazy\"", content)
@@ -215,6 +276,8 @@ def update_html_files() -> None:
         content = ensure_footer_disclosure_link(content)
         content = ensure_author_box(content, path)
         content = ensure_article_schema(content, path)
+        content = ensure_collection_schema(content, path)
+        content = ensure_basic_shell(content, path)
         content = add_lazy_loading(content)
 
         if content != original:
