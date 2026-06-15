@@ -152,6 +152,20 @@ a:hover,
     color: #ffe27a !important;
 }
 
+a[href*="saily.com"][class*="bg-yellow"],
+a[href*="saily.com"][class*="bg-amber"],
+a[href*="saily.com"][style*="background"],
+.affiliate-card a[href*="saily.com"] {
+    color: #0f0f0f !important;
+}
+
+a[href*="saily.com"][class*="bg-yellow"]:hover,
+a[href*="saily.com"][class*="bg-amber"]:hover,
+a[href*="saily.com"][style*="background"]:hover,
+.affiliate-card a[href*="saily.com"]:hover {
+    color: #0f0f0f !important;
+}
+
 .border-gray-100,
 .border-gray-200,
 .border-gray-300,
