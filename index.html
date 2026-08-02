@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-    <!-- Cookiebot for GDPR Compliance -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e44b7cd2-126b-4f49-8aee-22495afe3ece"
-        type="text/javascript" async></script>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carl Tomich — Documentary Filmmaker, Travel Creator & Life Abroad Blog</title>
-    <link rel="canonical" href="https://www.carltravels.com/">
+    <link rel="canonical" href="https://carltravels.com/">
+    <script>
+        if (window.location.pathname === "/index.html") {
+            window.location.replace("/" + window.location.hash);
+        }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
@@ -31,8 +33,8 @@
     <meta property="og:title" content="Carl Tomich — Documentary Filmmaker, Travel Creator & Life Abroad Blog">
     <meta property="og:description"
         content="Documentary filmmaker Carl Tomich explores travel, filmmaking, creator gear, YouTube strategy, and the realities of building a life abroad.">
-    <meta property="og:image" content="https://www.carltravels.com/carl-tomich-director.jpg">
-    <meta property="og:url" content="https://www.carltravels.com/">
+    <meta property="og:image" content="https://carltravels.com/carl-tomich-director.jpg">
+    <meta property="og:url" content="https://carltravels.com/">
     <meta property="og:type" content="website">
     <script type="application/ld+json">
     {
@@ -40,7 +42,7 @@
       "@type": "Person",
       "name": "Carl Tomich",
       "jobTitle": "Documentary Filmmaker",
-      "url": "https://www.carltravels.com/",
+      "url": "https://carltravels.com/",
       "sameAs": [
         "https://www.youtube.com/@thecarltomich",
         "https://www.youtube.com/@growyourniche",
@@ -57,7 +59,7 @@
     <meta name="twitter:title" content="Carl Tomich — Documentary Filmmaker, Travel Creator & Life Abroad Blog">
     <meta name="twitter:description"
         content="Documentary filmmaker Carl Tomich explores travel, filmmaking, creator gear, YouTube strategy, and the realities of building a life abroad.">
-    <meta name="twitter:image" content="https://www.carltravels.com/carl-tomich-director.jpg">
+    <meta name="twitter:image" content="https://carltravels.com/carl-tomich-director.jpg">
 
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -255,12 +257,12 @@
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="/index.html" class="text-2xl font-bold">
+                <a href="/" class="text-2xl font-bold">
                     <span class="heading-font" style="color: var(--primary);">CARL TOMICH</span>
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/index.html" class="nav-link font-medium">Films</a>
+                    <a href="/" class="nav-link font-medium">Films</a>
                     <a href="/portfolio.html" class="nav-link font-medium">Work</a>
                     <a href="/films/martial-arts-documentary.html" class="nav-link font-medium">Current Doc</a>
                     <a href="/blog.html" class="nav-link font-medium">Blog</a>
@@ -277,7 +279,7 @@
 
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Films</a>
+                    <a href="/" class="block px-3 py-2 rounded-md nav-link">Films</a>
                     <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Work</a>
                     <a href="/films/martial-arts-documentary.html" class="block px-3 py-2 rounded-md nav-link">Current
                         Doc</a>
@@ -719,7 +721,7 @@
                     class="flex-1 px-6 py-4 bg-transparent border-2 text-white focus:outline-none" required
                     style="background: var(--dark); border-color: var(--dark-3); color: var(--light);">
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
-                <input type="hidden" name="_next" value="https://www.carltravels.com/thankyou.html">
+                <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_gotcha" style="display:none">
                 <button type="submit" class="btn-primary">Get Updates</button>
@@ -794,6 +796,7 @@
                     <a href="/contact.html" class="text-sm nav-link">Contact</a>
                     <a href="/privacy-policy.html" class="text-sm nav-link">Privacy Policy</a>
                     <a href="/affiliate-disclosure.html" class="text-sm nav-link">Affiliate Disclosure</a>
+                    <a href="/editorial-policy.html" class="text-sm nav-link">Editorial Policy</a>
                     <a href="/terms-and-conditions.html" class="text-sm nav-link">Terms of Service</a>
                 </div>
             </div>

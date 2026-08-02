@@ -1,0 +1,21 @@
+# Carl Travels
+
+Carl Travels is the personal travel, filmmaking, creator gear, and life-abroad website of Carl Tomich.
+
+Useful pages:
+
+- Home: https://carltravels.com/
+- About: https://carltravels.com/about.html
+- Contact: https://carltravels.com/contact.html
+- Blog: https://carltravels.com/blog.html
+- Destination guides: https://carltravels.com/destinations.html
+- Creator gear: https://carltravels.com/gear.html
+- Editorial policy: https://carltravels.com/editorial-policy.html
+- Affiliate disclosure: https://carltravels.com/affiliate-disclosure.html
+- Privacy policy: https://carltravels.com/privacy-policy.html
+
+Content notes:
+
+- Travel guides should be treated as practical, personal travel publishing, not professional legal, medical, tax, immigration, or financial advice.
+- Prices, opening hours, transport routes, visa rules, and product details can change and should be verified against current official sources before travel or purchase.
+- Some pages may contain affiliate links or sponsored links, disclosed on relevant pages and in the affiliate disclosure.
