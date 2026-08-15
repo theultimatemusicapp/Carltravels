@@ -19,12 +19,11 @@ NEW_NAV = '''    <!-- Navigation -->
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/index.html" class="nav-link font-medium">Films</a>
-                    <a href="/portfolio.html" class="nav-link font-medium">Portfolio</a>
-                    <a href="/films/martial-arts-documentary.html" class="nav-link font-medium">Current Project</a>
+                    <a href="/index.html" class="nav-link font-medium">Home</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Films & Work</a>
                     <a href="/blog.html" class="nav-link font-medium">Blog</a>
-                    <a href="/gear.html" class="nav-link font-medium">Gear</a>
-                    <a href="/destinations.html" class="nav-link font-medium">Travel</a>
+                    <a href="/gear.html" class="nav-link font-medium">Creator Gear</a>
+                    <a href="/destinations.html" class="nav-link font-medium">Honest Guides</a>
                     <a href="/about.html" class="nav-link font-medium">About</a>
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
@@ -36,12 +35,11 @@ NEW_NAV = '''    <!-- Navigation -->
 
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Films</a>
-                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Portfolio</a>
-                    <a href="/films/martial-arts-documentary.html" class="block px-3 py-2 rounded-md nav-link">Current Project</a>
+                    <a href="/index.html" class="block px-3 py-2 rounded-md nav-link">Home</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Films & Work</a>
                     <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
-                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Gear</a>
-                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Travel</a>
+                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Creator Gear</a>
+                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Honest Guides</a>
                     <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
                     <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link" style="color: var(--primary);">Donate</a>
                 </div>
@@ -78,9 +76,9 @@ NEW_FOOTER = '''    <!-- Footer -->
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Explore</h3>
                     <ul class="space-y-2 text-sm">
                         <li><a href="/about.html" class="nav-link">About</a></li>
-                        <li><a href="/blog.html" class="nav-link">Essays</a></li>
-                        <li><a href="/gear.html" class="nav-link">Gear</a></li>
-                        <li><a href="/destinations.html" class="nav-link">Travel Guides</a></li>
+                        <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="/gear.html" class="nav-link">Creator Gear</a></li>
+                        <li><a href="/destinations.html" class="nav-link">Honest Guides</a></li>
                     </ul>
                 </div>
 

@@ -230,7 +230,7 @@ SIMPLE_NAV = """
             <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem;">
                 <a href="/destinations.html" style="color:#e5e7eb;text-decoration:none;">Travel Guides</a>
                 <a href="/blog.html" style="color:#e5e7eb;text-decoration:none;">Blog</a>
-                <a href="/gear.html" style="color:#e5e7eb;text-decoration:none;">Gear</a>
+                <a href="/gear.html" style="color:#e5e7eb;text-decoration:none;">Creator Gear</a>
                 <a href="/about.html" style="color:#e5e7eb;text-decoration:none;">About</a>
                 <a href="/contact.html" style="color:#e5e7eb;text-decoration:none;">Contact</a>
             </div>

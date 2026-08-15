@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Portfolio - Carl Travels</title>
+    <title>Films & Work - Carl Travels</title>
     <link rel="canonical" href="https://carltravels.com/portfolio.html">
 
     <!-- Google tag (gtag.js) -->
@@ -17,23 +17,23 @@
     </script>
 
     <!-- Meta Tags -->
-    <meta name="description" content="A collection of Carlos Tomich's music videos, wedding films and commercial work.">
-    <meta name="keywords" content="video portfolio, music videos, wedding films, commercial videography">
-    <meta name="author" content="Carlos Tomich">
+    <meta name="description" content="Films and video work by Carl Tomich, including documentaries, commercial projects, music videos, weddings, and travel creator campaigns. Available for hire worldwide.">
+    <meta name="keywords" content="Carl Travels, Carl Tomich, films and work, documentary filmmaker, travel content creator, video production, music videos, wedding films, commercial videography">
+    <meta name="author" content="Carl Tomich">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Video Portfolio - Carl Travels">
+    <meta property="og:title" content="Films & Work - Carl Travels">
     <meta property="og:description"
-        content="Watch a selection of music videos, weddings and commercials filmed by Carlos Tomich.">
+        content="Documentary films, commercial projects, music videos, weddings, and travel creator campaigns by Carl Tomich.">
     <meta property="og:image" content="https://carltravels.com/carlaboutme.jpg">
     <meta property="og:url" content="https://carltravels.com/portfolio.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Video Portfolio - Carl Travels">
+    <meta name="twitter:title" content="Films & Work - Carl Travels">
     <meta name="twitter:description"
-        content="Watch a selection of music videos, weddings and commercials filmed by Carlos Tomich.">
+        content="Documentary films, commercial projects, music videos, weddings, and travel creator campaigns by Carl Tomich.">
     <meta name="twitter:image" content="https://carltravels.com/carlaboutme.jpg">
 
     <!-- External Resources -->
@@ -62,7 +62,8 @@
 
         /* Hero */
         .hero {
-            min-height: 60vh;
+            min-height: 78vh;
+            min-height: 78svh;
             position: relative;
             display: flex;
             align-items: center;
@@ -71,15 +72,61 @@
             background: var(--dark);
         }
 
-        .hero-pattern {
+        .hero-image {
             position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
-            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-            background-size: 30px 30px;
-            opacity: 0.1;
+            inset: 0;
+            object-fit: cover;
+            object-position: center 35%;
+            filter: contrast(1.08) saturate(0.9) brightness(0.82);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(10, 10, 10, 0.82), rgba(10, 10, 10, 0.52) 48%, rgba(10, 10, 10, 0.22));
+        }
+
+        .quiet-list {
+            border-top: 1px solid var(--dark-3);
+            border-bottom: 1px solid var(--dark-3);
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .hero-button {
+            min-width: 9.5rem;
+            min-height: 3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.85rem 1.25rem;
+            border: 1px solid var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .hero-button-primary {
+            background: var(--primary);
+            color: var(--black);
+        }
+
+        .hero-button-secondary {
+            background: rgba(10, 10, 10, 0.35);
+            color: var(--primary);
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
         }
 
 
@@ -155,9 +202,8 @@
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/" class="nav-link font-medium">Films</a>
-                    <a href="/portfolio.html" class="nav-link font-medium">Work</a>
-                    <a href="/films/martial-arts-documentary.html" class="nav-link font-medium">Current Doc</a>
+                    <a href="/" class="nav-link font-medium">Home</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Films & Work</a>
                     <a href="/blog.html" class="nav-link font-medium">Blog</a>
                     <a href="/gear.html" class="nav-link font-medium">Creator Gear</a>
                     <a href="/destinations.html" class="nav-link font-medium">Honest Guides</a>
@@ -172,9 +218,8 @@
 
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
-                    <a href="/" class="block px-3 py-2 rounded-md nav-link">Films</a>
-                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Work</a>
-                    <a href="/films/martial-arts-documentary.html" class="block px-3 py-2 rounded-md nav-link">Current Doc</a>
+                    <a href="/" class="block px-3 py-2 rounded-md nav-link">Home</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Films & Work</a>
                     <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
                     <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Creator Gear</a>
                     <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Honest Guides</a>
@@ -187,26 +232,177 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-pattern"></div>
-        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
-            <span class="section-label">SELECTED WORKS</span>
+        <img class="hero-image" src="/carl-tomich-director.jpg" alt="Carl Tomich filming on location" fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <div class="relative z-10 px-6 max-w-6xl mx-auto w-full">
+            <div class="max-w-3xl">
+            <span class="section-label">FILMS & WORK</span>
             <h1 class="heading-font text-white mb-6" style="font-size: clamp(3rem, 8vw, 6rem);">
-                Video Portfolio
+                Films, Client Work & Content
             </h1>
-                <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
-            <p class="text-xl mb-8 max-w-3xl mx-auto" style="color: var(--muted);">
-                Music Videos. Weddings. Commercials.
+            <p class="text-2xl mb-5" style="color: var(--primary);">
+                Filmmaker, editor, and travel content creator.
             </p>
-            <div class="flex justify-center gap-4 flex-wrap">
-                <a href="#music" class="btn-primary-outline text-sm">Music Videos</a>
-                <a href="#weddings" class="btn-primary-outline text-sm">Weddings</a>
-                <a href="#commercials" class="btn-primary-outline text-sm">Commercials</a>
+            <p class="text-xl mb-8 max-w-2xl" style="color: var(--light);">
+                Documentary-led films, travel stories, commercial videos, and creator work with a real-world edge. Based in Asia, available worldwide.
+            </p>
+            <div class="hero-actions">
+                <a href="/contact.html" class="hero-button hero-button-primary">Hire Me</a>
+                <a href="#documentaries" class="hero-button hero-button-secondary">View Work</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiet-list py-8" style="background: var(--black);" hidden>
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="grid md:grid-cols-4 gap-6 text-sm uppercase tracking-wider" style="color: var(--muted);">
+                <div><span style="color: var(--primary);">01</span> Documentary films</div>
+                <div><span style="color: var(--primary);">02</span> Brand & commercial video</div>
+                <div><span style="color: var(--primary);">03</span> Travel creator campaigns</div>
+                <div><span style="color: var(--primary);">04</span> Editing & story support</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="selected-work" class="section" style="background: var(--dark);" hidden>
+        <div class="container mx-auto max-w-6xl">
+            <div class="mb-12">
+                <span class="section-label">SELECTED WORK</span>
+                <h2 class="heading-font section-heading" style="color: var(--light);">A Few Things I Make</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="/films/busking-for-berlin.html" class="film-card block">
+                    <img loading="lazy" src="/busking-for-berlin-poster.jpg" alt="Busking for Berlin documentary poster" class="film-poster">
+                    <div class="film-content">
+                        <span class="section-label">Documentary</span>
+                        <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Films</h3>
+                        <p style="color: var(--muted);">Busking for Berlin, A Sail Untold, Busk Life, and the martial arts documentary in production.</p>
+                    </div>
+                </a>
+                <a href="/videos/commercial-1.html" class="film-card block">
+                    <img loading="lazy" src="https://img.youtube.com/vi/V2iZFD5yW_k/hqdefault.jpg" alt="Commercial video work" class="film-poster">
+                    <div class="film-content">
+                        <span class="section-label">Client Work</span>
+                        <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Commercials</h3>
+                        <p style="color: var(--muted);">Small-business videos, restaurants, workwear, events, and brand stories shot with a practical crew mindset.</p>
+                    </div>
+                </a>
+                <a href="/videos/music-video-1.html" class="film-card block">
+                    <img loading="lazy" src="https://img.youtube.com/vi/g7bFA8Rrwik/hqdefault.jpg" alt="Music video work" class="film-poster">
+                    <div class="film-content">
+                        <span class="section-label">Creative</span>
+                        <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Music & Events</h3>
+                        <p style="color: var(--muted);">Music videos, live sessions, weddings, and event films with documentary-style energy.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="mt-12">
+                <a href="/contact.html" class="btn-primary">Talk About A Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section" style="background: var(--dark);">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <span class="section-label">AVAILABLE FOR HIRE</span>
+                <h2 class="heading-font section-heading" style="color: var(--light);">Video Work With A Travel Brain</h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="max-w-3xl mx-auto" style="color: var(--muted);">
+                    I work best on projects that need real locations, human stories, small crews, fast decisions, and someone who can shoot, direct, edit, and make sense of the chaos afterwards.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="film-card p-6">
+                    <span class="section-label">01</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Documentary & Brand Films</h3>
+                    <p style="color: var(--muted);">Short documentaries, interviews, founder stories, destination films, and human-led brand pieces.</p>
+                </div>
+                <div class="film-card p-6">
+                    <span class="section-label">02</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Travel Creator Campaigns</h3>
+                    <p style="color: var(--muted);">Hotel, tourism, product, and travel-tool content built around actual field use, not generic ad reads.</p>
+                </div>
+                <div class="film-card p-6">
+                    <span class="section-label">03</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Music, Weddings & Events</h3>
+                    <p style="color: var(--muted);">Music videos, live sessions, wedding films, and event coverage with a documentary eye.</p>
+                </div>
+                <div class="film-card p-6">
+                    <span class="section-label">04</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Editing & Creator Support</h3>
+                    <p style="color: var(--muted);">Editing, colour, story structure, YouTube packaging, and practical creator workflow help.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="/contact.html" class="btn-primary">Start A Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentaries -->
+    <section id="documentaries" class="section" style="background: var(--black);">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <span class="section-label">DOCUMENTARY WORK</span>
+                <h2 class="heading-font section-heading" style="color: var(--light);">Films</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="film-card">
+                    <img loading="lazy" src="/busking-for-berlin-poster.jpg" alt="Busking for Berlin poster" class="film-poster">
+                    <div class="film-content">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Busking for Berlin</h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2014 | Feature Documentary</p>
+                        <p class="mb-6 flex-grow" style="color: var(--light); font-size: 0.9rem;">A year living from street performance income while documenting Berlin's busking scene.</p>
+                        <a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank" rel="noopener" class="text-sm font-semibold mt-auto" style="color: var(--primary);">
+                            <i class="fab fa-youtube mr-2"></i> Watch Film →
+                        </a>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <img loading="lazy" src="https://img.youtube.com/vi/6iDgajITe6Q/maxresdefault.jpg" alt="A Sail Untold documentary" class="film-poster">
+                    <div class="film-content">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">A Sail Untold</h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2022 | YouTube Documentary</p>
+                        <p class="mb-6 flex-grow" style="color: var(--light); font-size: 0.9rem;">A failed sailing escape from Australia during COVID became a film about risk, trust, and collapse.</p>
+                        <a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" rel="noopener" class="text-sm font-semibold mt-auto" style="color: var(--primary);">
+                            <i class="fab fa-youtube mr-2"></i> Watch Film →
+                        </a>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <img loading="lazy" src="https://img.youtube.com/vi/S8L4Hmwkgiw/maxresdefault.jpg" alt="Busk Life documentary" class="film-poster">
+                    <div class="film-content">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Busk Life</h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2024 | Documentary Sequel</p>
+                        <p class="mb-6 flex-grow" style="color: var(--light); font-size: 0.9rem;">A return to Berlin's street performers a decade later, following what changed and what survived.</p>
+                        <a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" rel="noopener" class="text-sm font-semibold mt-auto" style="color: var(--primary);">
+                            <i class="fab fa-youtube mr-2"></i> Watch Film →
+                        </a>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <div class="film-badge">IN PRODUCTION</div>
+                    <img loading="lazy" src="https://img.youtube.com/vi/m5VQfk9BnO8/maxresdefault.jpg" alt="Martial arts documentary in production" class="film-poster">
+                    <div class="film-content">
+                        <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Martial Arts Documentary</h3>
+                        <p class="text-sm mb-4" style="color: var(--muted);">2025-26 | In Production</p>
+                        <p class="mb-6 flex-grow" style="color: var(--light); font-size: 0.9rem;">Training across Asia while exploring uncertainty, aging, obsession, and creative survival.</p>
+                        <a href="/films/martial-arts-documentary.html" class="text-sm font-semibold mt-auto" style="color: var(--primary);">
+                            Follow Production →
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Music Videos -->
-    <section id="music" class="section" style="background: var(--black);">
+    <section id="music" class="section" style="background: var(--dark);">
         <div class="container mx-auto max-w-7xl">
             <div class="text-center mb-16">
                 <span class="section-label">VISUAL STYLE</span>
