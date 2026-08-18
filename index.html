@@ -234,6 +234,43 @@
             margin-bottom: 3rem;
         }
 
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .hero-cta {
+            width: 16rem;
+            max-width: 100%;
+            min-height: 3.25rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.85rem 1.5rem;
+            border: 2px solid var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .hero-cta-primary {
+            background: var(--primary);
+            color: var(--black);
+        }
+
+        .hero-cta-secondary {
+            background: rgba(10, 10, 10, 0.35);
+            color: var(--primary);
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 768px) {
             .hero-image {
                 object-position: 52% center;
@@ -313,9 +350,9 @@
             <p class="text-lg mb-12 max-w-3xl mx-auto" style="color: var(--light);">
                 Documentary-style video work, honest travel guides, creator gear, and field notes from building a life abroad.
             </p>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <a href="/portfolio.html" class="btn-primary">Films & Work</a>
-                <a href="#start-here" class="btn-ghost">Explore Carl Travels</a>
+            <div class="hero-actions">
+                <a href="/portfolio.html" class="hero-cta hero-cta-primary">Films & Work</a>
+                <a href="#start-here" class="hero-cta hero-cta-secondary">Explore Carl Travels</a>
             </div>
         </div>
     </section>
