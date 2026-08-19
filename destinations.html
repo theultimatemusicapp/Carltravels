@@ -10,7 +10,7 @@
     <meta name="description"
         content="Scouted locations, filming logistics, and honest visual guides for Vietnam, Australia, Bali, and beyond. Written by a filmmaker, for creators.">
     <meta name="keywords"
-        content="Travel, Destinations, Berlin, Osaka, Melbourne, Cairns, Phuket, Hanoi, Ho Chi Minh City, Saigon, Da Nang, Tokyo, Kyoto, Prague, Korcula, Budva, Bali, Carl Travels, Adventure, Itineraries">
+        content="Travel, Destinations, Berlin, Osaka, Melbourne, Cairns, Phuket, Hua Hin, Hanoi, Ho Chi Minh City, Saigon, Da Nang, Tokyo, Kyoto, Prague, Korcula, Budva, Bali, Carl Travels, Adventure, Itineraries">
     <!-- Open Graph -->
     <meta property="og:title" content="Filmmaker's Location Guides , Carl Tomich">
     <meta property="og:description"
@@ -603,7 +603,40 @@
                         </div>
                     </div>
                 </div>
-                <!-- Destination 6: Hanoi -->
+                <!-- Destination 6: Hua Hin -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="huahin">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img loading="lazy" src="https://img.youtube.com/vi/RdUA0pl2e04/maxresdefault.jpg"
+                                onerror="this.onerror=null;this.src='https://img.youtube.com/vi/RdUA0pl2e04/hqdefault.jpg';"
+                                alt="Hua Hin Thailand"
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 destination-overlay"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Hua Hin</h3>
+                                <p class="text-sm">Malls, beaches, and Bangkok escape</p>
+                            </div>
+                            <span class="absolute top-4 right-4 bg-yellow-900 text-white text-xs px-3 py-1 rounded-full">New</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i
+                                        class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                    <span class="font-medium">4.5</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">A practical seaside base near Bangkok with beaches, night markets,
+                                Market Village, Bluport, and easy long-stay routines.</p>
+                            <a href="hua-hin-travel-guide.html"
+                                class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 7: Hanoi -->
                 <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="hanoi">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
@@ -1360,6 +1393,14 @@
                                                 <span class="text-yellow-500"><i class="fas fa-play"></i></span>
                                             </div>
                                         </button>
+                                        <button
+                                            class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white"
+                                            data-country="Thailand" data-map-destination="huahin">
+                                            <div class="flex items-center justify-between">
+                                                <p class="font-semibold text-gray-900">Hua Hin</p>
+                                                <span class="text-yellow-500"><i class="fas fa-play"></i></span>
+                                            </div>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="space-y-2">
@@ -1826,6 +1867,13 @@
                             coords: [7.8804, 98.3923],
                             url: 'phuketravelguide.html',
                             video: 'https://www.youtube.com/embed/vIVgU02j37A'
+                        },
+                        {
+                            id: 'huahin',
+                            name: 'Hua Hin, Thailand',
+                            coords: [12.5684, 99.9577],
+                            url: 'hua-hin-travel-guide.html',
+                            video: 'https://www.youtube.com/embed/RdUA0pl2e04'
                         },
                         {
                             id: 'hanoi',
