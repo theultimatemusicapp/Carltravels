@@ -16,15 +16,15 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
     <meta name="author" content="Carl Tomich">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Pros and Cons of Living in Hanoi (Honest, Lived-In Perspective)" />
-    <meta property="og:description" content="The real cost of living in Hanoi, plus visas, pollution, community, and why the city works (or doesn’t) long-term." />
-    <meta property="og:image" content="https://carltravels.com/hanoilogo.jpg" />
+    <meta property="og:description" content="The real cost of living in Hanoi, plus visas, pollution, community, and why the city works or does not work long-term." />
+    <meta property="og:image" content="https://img.youtube.com/vi/rCviY7kpxvk/maxresdefault.jpg" />
     <meta property="og:url" content="https://carltravels.com/pros-and-cons-and-cost-of-living-in-hanoi.html" />
     <meta property="og:type" content="article" />
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pros and Cons of Living in Hanoi (Honest, Lived-In Perspective)">
     <meta name="twitter:description" content="Costs, visas, routines, and trade-offs: the lived-in guide to Hanoi that goes beyond cheap rent." >
-    <meta name="twitter:image" content="https://carltravels.com/hanoilogo.jpg">
+    <meta name="twitter:image" content="https://img.youtube.com/vi/rCviY7kpxvk/maxresdefault.jpg">
     <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -65,43 +65,52 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        .wave-shape {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        .wave-shape svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 150px;
-        }
-
-        .wave-shape .shape-fill {
-            fill: #FFFFFF;
-        }
-
         .content-card {
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(18, 18, 18, 0.78);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 1.25rem;
-            padding: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+            padding: clamp(1.25rem, 3vw, 2rem);
         }
 
-        .content-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 25px 40px -18px rgba(0, 0, 0, 0.45);
+        .article-panel {
+            background: rgba(255, 255, 255, 0.035);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .soft-divider {
+            height: 1px;
+            background: linear-gradient(90deg, rgba(245,197,24,0), rgba(245,197,24,0.45), rgba(245,197,24,0));
+        }
+
+        .budget-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.8fr) minmax(0, 1.3fr);
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .budget-row > * {
+            min-width: 0;
+            overflow-wrap: anywhere;
+        }
+
+        .budget-row:last-child {
+            border-bottom: 0;
+        }
+
+        @media (max-width: 720px) {
+            .budget-row {
+                grid-template-columns: 1fr;
+                gap: 0.35rem;
+            }
         }
 
         .photo-card {
             position: relative;
             overflow: hidden;
-            border-radius: 1rem;
+            border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.06);
             background: rgba(255, 255, 255, 0.04);
         }
@@ -122,8 +131,10 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
             position: relative;
             width: 100%;
             padding-top: 56.25%;
-            border-radius: 1rem;
+            border-radius: 8px;
             overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 24px 50px -26px rgba(0, 0, 0, 0.8);
         }
 
         .video-container iframe {
@@ -189,7 +200,7 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
 ]
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
-    <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <meta property="article:modified_time" content="2026-08-21T00:00:00+07:00">
 </head>
 <body class="text-gray-200">
     <!-- Navigation -->
@@ -233,299 +244,296 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
 
     <!-- Hero Section -->
     <section class="hero-gradient relative overflow-hidden min-h-[70vh] flex items-center pt-20">
-        <div class="wave-shape">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-
         <div class="container mx-auto px-6 py-20 relative z-10">
             <div class="max-w-3xl text-left">
                 <span class="text-yellow-300 uppercase tracking-[0.35em] text-xs">Hanoi • Pros &amp; Cons • Cost of Living</span>
                 <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                     Pros and Cons of Living in Hanoi (An Honest, Lived-In Perspective)
                 </h1>
-                <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
+                <p class="text-sm text-gray-300 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a></p>
                 <p class="text-lg text-yellow-100 mb-8 max-w-2xl">
                     Cheap rent is real, but it is not the whole story. This is what living in Hanoi actually feels like once the honeymoon phase fades.
                 </p>
                 <div class="flex flex-wrap items-center gap-4">
                     <span class="text-sm text-gray-200 flex items-center gap-2"><i class="fas fa-location-dot text-yellow-400"></i> Published from Hanoi</span>
-                    <span class="text-sm text-gray-200 flex items-center gap-2"><i class="fas fa-clock text-yellow-400"></i> Updated 2025</span>
+                    <span class="text-sm text-gray-200 flex items-center gap-2"><i class="fas fa-clock text-yellow-400"></i> Updated 2026</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Article Content -->
-    <main class="bg-white text-gray-900">
-        <div class="container mx-auto px-6 py-16 max-w-5xl">
-            <div class="grid md:grid-cols-3 gap-12 mb-12">
-                <div class="md:col-span-2 space-y-10">
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h2 class="heading-font text-3xl text-yellow-400 mb-4">Most People Start With Money</h2>
-                        <p class="text-lg text-gray-200 leading-relaxed">
-                            Most Hanoi articles start and end with how cheap everything is. That matters, but after a few months the real questions are quieter:
-                            can you stay long term, will the city ground you or wear you down, and can you build routines here instead of just memories?
+    <main class="bg-[#080808] text-gray-100">
+        <section class="py-14">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid lg:grid-cols-[1.5fr_0.9fr] gap-10 items-start">
+                    <article class="space-y-6">
+                        <p class="text-xl md:text-2xl leading-relaxed text-gray-200">
+                            Hanoi can be cheap, social, creatively useful, and strangely grounding. It can also be polluted, noisy, legally uncertain, and exhausting if you arrive without a plan. The mistake is treating the low cost of living as the whole story.
                         </p>
-                        <p class="text-lg text-gray-200 leading-relaxed mt-4">
-                            If you’re wondering what the city feels like after dark, the <a href="hanoi-by-night.html" class="text-yellow-400 hover:text-yellow-300 underline">Hanoi by night</a> story captures the mood when the crowds thin out.
+                        <p class="text-lg leading-relaxed text-gray-300">
+                            This page is for people asking the practical question: could I actually live here for a few months or a year, not just pass through for bun cha and train street photos?
                         </p>
-                        <p class="text-lg text-gray-200 leading-relaxed mt-4">
-                            This is for anyone past the honeymoon phase (or heading toward it with open eyes).
-                        </p>
-                    </div>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h2 class="heading-font text-3xl text-yellow-400 mb-4">The Cost of Living (Yes, It’s Cheap, But That’s Not the Point)</h2>
+                    </article>
+                    <aside class="content-card">
+                        <h2 class="heading-font text-3xl text-yellow-400 mb-4">Quick Answer</h2>
                         <ul class="space-y-3 text-gray-200">
-                            <li class="flex items-start gap-3"><i class="fas fa-house text-yellow-400 mt-1"></i>Studio apartment in Tay Ho with kitchenette, desk, and partial lake view: <strong>$320 USD/month</strong>.</li>
-                            <li class="flex items-start gap-3"><i class="fas fa-building text-yellow-400 mt-1"></i>Local leases start around <strong>$150–250 USD</strong> for furnished apartments.</li>
-                            <li class="flex items-start gap-3"><i class="fas fa-bowl-rice text-yellow-400 mt-1"></i>Phở around <strong>$1.50</strong>, bánh mì around <strong>$1</strong>, coffee everywhere.</li>
-                            <li class="flex items-start gap-3"><i class="fas fa-wallet text-yellow-400 mt-1"></i>Daily spend on food, drinks, coffee, transport: <strong>$10–20 AUD</strong>.</li>
-                            <li class="flex items-start gap-3"><i class="fas fa-motorcycle text-yellow-400 mt-1"></i>Grab bike rides across town: <strong>~$1 USD</strong>. Sleeper buses and trains are cheap and comfortable.</li>
-                            <li class="flex items-start gap-3"><i class="fas fa-dumbbell text-yellow-400 mt-1"></i>Gyms from <strong>$38 AUD/month</strong>, with Muay Thai, boxing, and jiu-jitsu gyms everywhere.</li>
+                            <li class="flex gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i><span><strong>Best fit:</strong> remote workers, creators, English teachers, and people who can handle chaos.</span></li>
+                            <li class="flex gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i><span><strong>Hardest parts:</strong> visas, air quality, traffic, noise, deposits, and routine drift.</span></li>
+                            <li class="flex gap-3"><i class="fas fa-wallet text-yellow-400 mt-1"></i><span><strong>Realistic single-person range:</strong> roughly $700-$1,500 USD/month depending on rent and lifestyle.</span></li>
                         </ul>
-                        <p class="text-gray-200 leading-relaxed mt-4">
-                            All of this is real. But cheap living alone will not make you stay.
-                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="article-panel py-16">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="mb-8">
+                    <span class="text-yellow-400 uppercase tracking-[0.28em] text-xs font-semibold">Featured Video</span>
+                    <h2 class="heading-font text-4xl md:text-5xl text-white mt-3">I Wish I Knew Before Moving to Vietnam</h2>
+                    <p class="text-gray-300 mt-4 max-w-3xl">Start here if you want the lived-in version before getting lost in costs. The money matters, but the visa, routine, health, and expectation stuff matters more.</p>
+                </div>
+                <div class="video-container">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/rCviY7kpxvk" title="I wish I knew before moving to Vietnam" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="costs" class="py-16">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid lg:grid-cols-[0.75fr_1.25fr] gap-10 items-start">
+                    <div>
+                        <span class="text-yellow-400 uppercase tracking-[0.28em] text-xs font-semibold">Cost of Living</span>
+                        <h2 class="heading-font text-4xl md:text-5xl text-white mt-3 mb-5">What Hanoi Actually Costs</h2>
+                        <p class="text-gray-300 leading-relaxed">The honest answer is a range. You can live very cheaply if you accept local housing and local routines. Most foreigners spend more because they want an apartment with a desk, decent light, reliable Wi-Fi, air conditioning, and a neighbourhood where daily life is easy.</p>
                     </div>
-
-                    <p class="text-gray-600 italic">If this saved you time or money, there’s a coffee link below.</p>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Video: Cost of Living in Hanoi</h3>
-                            <div class="video-container shadow-lg">
-                                <iframe loading="lazy" src="https://www.youtube.com/embed/IUZE9UIDvc4" title="Cost of living in Hanoi" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <p class="text-gray-200 leading-relaxed mt-4">
-                                A real-world breakdown of what it costs to live in Hanoi day to day.
-                            </p>
+                    <div class="content-card">
+                        <div class="budget-row text-sm uppercase tracking-[0.2em] text-yellow-400 font-semibold">
+                            <span>Item</span>
+                            <span>Useful Range</span>
+                            <span>Reality Check</span>
                         </div>
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Video: Independence Day in Hanoi</h3>
-                            <div class="video-container shadow-lg">
-                                <iframe loading="lazy" src="https://www.youtube.com/embed/KUWQhb-E3Cw" title="Independence Day in Hanoi" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <p class="text-gray-200 leading-relaxed mt-4">
-                                A look at the atmosphere and celebrations around Independence Day in the city.
-                            </p>
+                        <div class="budget-row">
+                            <span class="text-white font-semibold">Rent</span>
+                            <span>$300-$900/month</span>
+                            <span class="text-gray-300">Tay Ho and serviced apartments cost more. Local leases can be cheaper, but may need Vietnamese help and a longer commitment.</span>
                         </div>
-                    </div>
-
-                    <div class="space-y-6">
-                        <h2 class="heading-font text-3xl text-gray-900">Why Hanoi Works for Me Right Now</h2>
-                        <p class="text-lg text-gray-700 leading-relaxed">
-                            I came back to Hanoi after spending time in Japan. Japan was incredible but intense, structured, and expensive in subtle ways.
-                            Vietnam feels looser and more forgiving. Hanoi feels lived in rather than curated.
-                        </p>
-                        <p class="text-lg text-gray-700 leading-relaxed">
-                            Tay Ho gives me enough international energy to collaborate, while still feeling local enough that I am not stuck in an expat theme park.
-                            I can walk the lake, train, film, and sit in cafés without being rushed. Routines matter more than novelty once you stop treating travel like a highlight reel.
-                        </p>
-                        <div class="photo-card shadow-lg">
-                            <img src="hanoilogo.jpg" alt="Evening light over Hanoi" loading="lazy">
+                        <div class="budget-row">
+                            <span class="text-white font-semibold">Utilities and internet</span>
+                            <span>$40-$120/month</span>
+                            <span class="text-gray-300">Air conditioning drives the bill. Ask what electricity rate the landlord charges before signing.</span>
                         </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Visas: The Reality That Shapes Everything</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Vietnam is not set up for indefinite casual residency. Most people live on 30 or 90-day tourist e-visas, and the rules change often.
-                                Extensions are unreliable, visa agents are not a sure thing, and border runs are no longer a plan you can build your life around.
-                            </p>
+                        <div class="budget-row">
+                            <span class="text-white font-semibold">Food and coffee</span>
+                            <span>$250-$600/month</span>
+                            <span class="text-gray-300">Street food is cheap. Western cafes, delivery, imported food, and craft beer change the math quickly.</span>
                         </div>
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Flights &amp; Why Hanoi Is a Serious Base</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Hanoi connects you to Southeast Asia, Japan, South Korea, Taiwan, China, and Australia with frequent, affordable flights.
-                                It is a base that makes living globally feel practical, not just aspirational.
-                            </p>
+                        <div class="budget-row">
+                            <span class="text-white font-semibold">Transport</span>
+                            <span>$40-$150/month</span>
+                            <span class="text-gray-300">Grab bikes make the city usable. Driving yourself adds rental, maintenance, parking, and risk.</span>
                         </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Getting Around Day to Day</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Hanoi is not a walking city. Sidewalks are broken, blocked, or parked on. Motorbikes make the city functional, and Grab makes them
-                                accessible even if you never drive. Traffic looks chaotic, but it has an internal logic you learn over time.
-                            </p>
+                        <div class="budget-row">
+                            <span class="text-white font-semibold">Gym, SIM, extras</span>
+                            <span>$50-$250/month</span>
+                            <span class="text-gray-300">Gyms, martial arts, coworking, dates, camera repairs, and visa runs are where budgets quietly expand.</span>
                         </div>
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">The Motorbike Ban Question</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Hanoi plans to restrict or phase out petrol motorbikes in central areas by 2026. Details are still unclear, and the rollout will be gradual.
-                                Electric bikes and public transport will replace petrol bikes over time. It will change the city, but not overnight.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">Pollution, Noise, and the Physical Reality</h3>
-                        <p class="text-gray-200 leading-relaxed mb-3">
-                            Air quality can be bad, especially in winter. Some days are fine. Some days are not. You feel it in your throat and see it in the sky.
-                            Noise is constant. Construction never really ends. Honking is communication, not aggression.
-                        </p>
-                        <p class="text-gray-200 leading-relaxed">
-                            Long-term residents adapt with masks, air purifiers, and lower expectations. If you need pristine air and silence, Hanoi will drain you.
-                            If you can accept background chaos as the price of entry, it becomes manageable.
-                        </p>
-                    </div>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">Scams, Friction, and Daily Annoyances</h3>
-                        <p class="text-gray-200 leading-relaxed">
-                            Hanoi is not dangerous, but it is opportunistic. Taxi scams exist if you avoid Grab. Some landlords disappear with deposits. Some services quote one
-                            price and charge another. Most scams rely on confusion, not sophistication. Calm skepticism is the best defense.
-                        </p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <h2 class="heading-font text-3xl text-gray-900">Who Actually Lives in Hanoi (And Why)</h2>
-                        <p class="text-lg text-gray-700 leading-relaxed">
-                            After a few weeks, patterns become obvious. The expat population is not as diverse as blogs suggest. Most foreigners fall into a few groups:
-                        </p>
-                    </div>
-
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-xl text-yellow-400 mb-3">English Teachers</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                The largest group by far. Teaching provides a legal visa pathway, predictable income, a routine, and a social circle. Some stay a year, others a decade.
-                            </p>
-                        </div>
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-xl text-yellow-400 mb-3">Digital Nomads</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Freelancers, remote employees, creators, and online business owners who want something more grounded than Bali and less party-driven than parts of Thailand.
-                            </p>
-                        </div>
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-xl text-yellow-400 mb-3">Families &amp; Relationships</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Foreigners married to Vietnamese partners or raising families here. They have the most stable legal pathways and a more neighborhood-focused version of Hanoi.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">What You Don’t See Much Of</h3>
-                        <p class="text-gray-200 leading-relaxed">
-                            You do not see many foreigners in standard corporate roles. Vietnam invests heavily in its own workforce. If you are not bringing your job with you,
-                            teaching English or working online are realistically the two main paths.
-                        </p>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Community &amp; Social Life</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Meeting people is easy. Staying connected is harder. Hanoi has a revolving population, so the people who last build routines, not just novelty.
-                                Facebook groups, coworking spaces, and gyms are where real friendships form.
-                            </p>
-                        </div>
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Work, Money, and Mental Health</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Hanoi is forgiving if you earn online or have savings. It is less forgiving if money anxiety is constant. The city will not structure your life for you.
-                                If you lack routine, Hanoi amplifies that. If you have routine, Hanoi supports it.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Pros</h3>
-                            <ul class="space-y-3 text-gray-200">
-                                <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i>Low daily costs without sacrificing comfort.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i>One of the best food cultures in the world.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i>Easy social entry and a constant flow of new people.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i>Excellent regional travel base.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i>A city that does not demand perfection.</li>
-                            </ul>
-                        </div>
-                        <div class="content-card bg-neutral-900 text-gray-100">
-                            <h3 class="heading-font text-2xl text-yellow-400 mb-3">Cons</h3>
-                            <ul class="space-y-3 text-gray-200">
-                                <li class="flex items-start gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i>Visa instability and constant calendar pressure.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i>Pollution and noise are unavoidable.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i>Infrastructure fatigue from sidewalks and traffic.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i>Long-term uncertainty unless you secure a legal pathway.</li>
-                                <li class="flex items-start gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i>A tendency to drift without strong routines.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">Why I’m Still Here</h3>
-                        <p class="text-gray-200 leading-relaxed mb-3">
-                            Hanoi works for me because I am honest about what it is. It is not paradise, not a forever plan, and not a productivity hack.
-                            It is a place where my money stretches, my routines hold, and my life feels grounded enough to keep building.
-                        </p>
-                        <p class="text-gray-200 leading-relaxed">
-                            If you are thinking about moving here, the real question is not whether Hanoi is good or bad. It is whether its trade-offs match the season of life you are in.
-                        </p>
-                    </div>
-
-                    <p class="text-gray-600 italic">I don’t sell courses or hype. If this helped, you know where the button is.</p>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">Comments &amp; Questions</h3>
-                        <p class="text-gray-200 leading-relaxed mb-6">
-                            If you have questions about Hanoi or want to share your own experience, leave a comment below. I read every message and reply when I can.
-                        </p>
-                        <form action="https://formspree.io/f/mnnnoogg" method="POST" class="space-y-4">
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <input type="text" name="name" placeholder="Your name" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
-                                <input type="email" name="email" placeholder="Your email" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
-                            </div>
-                            <textarea name="message" rows="5" placeholder="Your comment" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
-                            <input type="hidden" name="_subject" value="New Hanoi Blog Comment">
-                            <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="text" name="_gotcha" style="display:none">
-                            <button type="submit" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
-                                <i class="fas fa-paper-plane mr-2"></i> Post Comment
-                            </button>
-                        </form>
                     </div>
                 </div>
-
-                <aside class="space-y-6">
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-2">Quick Snapshot</h3>
-                        <ul class="space-y-2 text-gray-200">
-                            <li><strong>Rent:</strong> $320 USD (Tay Ho studio).</li>
-                            <li><strong>Local leases:</strong> $150–250 USD.</li>
-                            <li><strong>Daily spend:</strong> $10–20 AUD.</li>
-                            <li><strong>Grab rides:</strong> ~$1 USD.</li>
-                            <li><strong>Gym:</strong> $38 AUD/month.</li>
-                        </ul>
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="content-card">
+                        <h3 class="text-xl font-semibold text-white mb-2">Lean but Comfortable</h3>
+                        <p class="text-3xl heading-font text-yellow-400 mb-3">$700-$950</p>
+                        <p class="text-gray-300">Local apartment or simple studio, mostly Vietnamese food, Grab bikes, limited nightlife.</p>
                     </div>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">Visa Reality Check</h3>
-                        <ul class="space-y-2 text-gray-200 list-disc list-inside">
-                            <li>Most residents rely on 30 or 90-day e-visas.</li>
-                            <li>Rules change often and consistency is not guaranteed.</li>
-                            <li>Teaching or sponsored work is the most stable route.</li>
-                        </ul>
+                    <div class="content-card">
+                        <h3 class="text-xl font-semibold text-white mb-2">Typical Foreigner Life</h3>
+                        <p class="text-3xl heading-font text-yellow-400 mb-3">$1,000-$1,500</p>
+                        <p class="text-gray-300">Better apartment, cafes, gym, delivery, social life, short trips, and fewer daily compromises.</p>
                     </div>
-
-                    <div class="content-card bg-neutral-900 text-gray-100">
-                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">The Trade-Offs</h3>
-                        <ul class="space-y-2 text-gray-200 list-disc list-inside">
-                            <li>Incredible food and affordability.</li>
-                            <li>Noise, pollution, and infrastructure fatigue.</li>
-                            <li>Easy social entry, harder long-term stability.</li>
-                        </ul>
+                    <div class="content-card">
+                        <h3 class="text-xl font-semibold text-white mb-2">Easy Mode</h3>
+                        <p class="text-3xl heading-font text-yellow-400 mb-3">$1,600+</p>
+                        <p class="text-gray-300">High-end Tay Ho living, coworking, private healthcare, regular flights, nicer restaurants, and comfort buffers.</p>
                     </div>
-                </aside>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="article-panel py-16">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div>
+                        <span class="text-yellow-400 uppercase tracking-[0.28em] text-xs font-semibold">The Good</span>
+                        <h2 class="heading-font text-4xl md:text-5xl text-white mt-3 mb-6">Why Hanoi Works</h2>
+                        <div class="space-y-5">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">Your money stretches without life feeling empty</h3>
+                                <p class="text-gray-300 leading-relaxed">You can eat well, train, work from cafes, take short trips, and still keep your base costs low compared with Australia, the US, or Western Europe.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">There is creative friction in a good way</h3>
+                                <p class="text-gray-300 leading-relaxed">Hanoi is visually dense: lakes, alleys, markets, cafes, traffic, weather, old buildings, new money, street food, and constant movement. It is a strong place for filming and thinking.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">Community is easy to enter</h3>
+                                <p class="text-gray-300 leading-relaxed">Tay Ho, gyms, language exchanges, open mics, coworking spaces, and expat groups make it easy to meet people quickly. You still need routines to keep those connections real.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-yellow-400 uppercase tracking-[0.28em] text-xs font-semibold">The Hard Parts</span>
+                        <h2 class="heading-font text-4xl md:text-5xl text-white mt-3 mb-6">Why Hanoi Wears People Down</h2>
+                        <div class="space-y-5">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">Air quality and noise are not side issues</h3>
+                                <p class="text-gray-300 leading-relaxed">Some seasons are rough. If you are sensitive to pollution, construction noise, or constant honking, Hanoi can affect your sleep, training, and mood.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">Visa uncertainty shapes your life</h3>
+                                <p class="text-gray-300 leading-relaxed">Vietnam e-visas can be valid up to 90 days, but that is not the same as a stable residence pathway. Long-term plans need work sponsorship, business structure, family ties, or regular exits.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">The city can let you drift</h3>
+                                <p class="text-gray-300 leading-relaxed">Cheap living removes pressure, which is wonderful until it becomes avoidance. Hanoi rewards people who build routines and quietly punishes people who wait for the city to organise them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="where-to-live" class="py-16">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="mb-10">
+                    <span class="text-yellow-400 uppercase tracking-[0.28em] text-xs font-semibold">Neighbourhoods</span>
+                    <h2 class="heading-font text-4xl md:text-5xl text-white mt-3">Where I Would Look First</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="content-card">
+                        <h3 class="text-xl font-semibold text-white mb-3">Tay Ho</h3>
+                        <p class="text-gray-300">Most convenient for foreigners: lake walks, cafes, gyms, food options, social life, and easier apartment hunting. It is also more expensive and less local.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-xl font-semibold text-white mb-3">Ba Dinh</h3>
+                        <p class="text-gray-300">A good middle ground for quieter streets, embassies, parks, and access to both Tay Ho and the Old Quarter.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-xl font-semibold text-white mb-3">Dong Da</h3>
+                        <p class="text-gray-300">More Vietnamese daily life, better value, and less expat bubble. Great if you already understand Hanoi traffic and routines.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-xl font-semibold text-white mb-3">Old Quarter</h3>
+                        <p class="text-gray-300">Fun for a short stay, intense for living. Noise, crowds, traffic, and tourist pricing make it harder long term.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-panel py-16">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-start">
+                    <div>
+                        <span class="text-yellow-400 uppercase tracking-[0.28em] text-xs font-semibold">Before You Move</span>
+                        <h2 class="heading-font text-4xl md:text-5xl text-white mt-3 mb-5">What I Would Sort Before Arriving</h2>
+                        <p class="text-gray-300 leading-relaxed">A cheap city is not the same as an easy city. These are the things that make Hanoi smoother from week one.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div class="content-card">
+                            <h3 class="text-lg font-semibold text-white mb-2">A 30-day test stay</h3>
+                            <p class="text-gray-300">Do not sign a long lease from overseas. Try a serviced apartment first and learn which noise, commute, and neighbourhood trade-offs you can handle.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="text-lg font-semibold text-white mb-2">A visa calendar</h3>
+                            <p class="text-gray-300">Know your entry date, exit date, backup country, and renewal plan. Do not discover visa pressure while your deposit is trapped in an apartment.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="text-lg font-semibold text-white mb-2">Health and air plan</h3>
+                            <p class="text-gray-300">Budget for masks, an air purifier, decent travel insurance, and occasional private clinics. Pollution is not theoretical here.</p>
+                        </div>
+                        <div class="content-card">
+                            <h3 class="text-lg font-semibold text-white mb-2">Money buffers</h3>
+                            <p class="text-gray-300">Keep cash, a backup card, and enough savings for flights, deposit issues, emergency dental/medical visits, and sudden plan changes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="content-card">
+                        <h2 class="heading-font text-3xl text-yellow-400 mb-4">Move Here If</h2>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i><span>You earn online, teach, or have a clear work pathway.</span></li>
+                            <li class="flex gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i><span>You can live with traffic, noise, and imperfect systems.</span></li>
+                            <li class="flex gap-3"><i class="fas fa-check text-yellow-400 mt-1"></i><span>You want a creative, affordable, socially active base.</span></li>
+                        </ul>
+                    </div>
+                    <div class="content-card">
+                        <h2 class="heading-font text-3xl text-yellow-400 mb-4">Think Twice If</h2>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i><span>You need clean air, silence, and predictable infrastructure.</span></li>
+                            <li class="flex gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i><span>You are relying on cheap living to fix money anxiety.</span></li>
+                            <li class="flex gap-3"><i class="fas fa-minus text-yellow-400 mt-1"></i><span>You do not have a visa or income plan beyond the first few months.</span></li>
+                        </ul>
+                    </div>
+                    <div class="content-card">
+                        <h2 class="heading-font text-3xl text-yellow-400 mb-4">My Take</h2>
+                        <p class="text-gray-300 leading-relaxed">Hanoi is not paradise and it is not a forever solution by default. It is a powerful base if your routines are strong, your expectations are honest, and you can accept friction as part of the price.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-panel py-16">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">Video: Cost of Living in Hanoi</h3>
+                        <div class="video-container">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/IUZE9UIDvc4" title="Cost of living in Hanoi" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="heading-font text-2xl text-yellow-400 mb-3">Useful Links</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li><a href="https://evisa.gov.vn/" target="_blank" rel="noopener" class="text-yellow-400 hover:text-yellow-300 underline">Vietnam official e-visa portal</a></li>
+                            <li><a href="https://wise.com/gb/cost-of-living/vietnam/hanoi" target="_blank" rel="noopener" class="text-yellow-400 hover:text-yellow-300 underline">Wise Hanoi cost-of-living index</a></li>
+                            <li><a href="https://www.numbeo.com/cost-of-living/in/Hanoi" target="_blank" rel="noopener" class="text-yellow-400 hover:text-yellow-300 underline">Numbeo Hanoi cost estimates</a></li>
+                            <li><a href="/things-to-know-before-moving-to-vietnam.html" class="text-yellow-400 hover:text-yellow-300 underline">Things to know before moving to Vietnam</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="content-card">
+                    <h3 class="heading-font text-3xl text-yellow-400 mb-3">Comments &amp; Questions</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        If you have questions about Hanoi or want to share your own experience, leave a comment below. I read every message and reply when I can.
+                    </p>
+                    <form action="https://formspree.io/f/mnnnoogg" method="POST" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" name="name" placeholder="Your name" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            <input type="email" name="email" placeholder="Your email" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                        </div>
+                        <textarea name="message" rows="5" placeholder="Your comment" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
+                        <input type="hidden" name="_subject" value="New Hanoi Blog Comment">
+                        <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="inline-flex items-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-full shadow-lg hover:bg-yellow-400 transition-all">
+                            <i class="fas fa-paper-plane mr-2"></i> Post Comment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
