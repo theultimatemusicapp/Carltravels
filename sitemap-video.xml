@@ -610,6 +610,15 @@
     </video:video>
   </url>
   <url>
+    <loc>https://carltravels.com/one-day-in-istanbul-istiklal-street-guide.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/6-mc-9Br7I8/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Istiklal Street Istanbul Walking Tour by Carl Travels</video:title>
+      <video:description>Istiklal Street Istanbul Walking Tour by Carl Travels</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/6-mc-9Br7I8</video:player_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://carltravels.com/phuketravelguide.html</loc>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/vIVgU02j37A/hqdefault.jpg</video:thumbnail_loc>
