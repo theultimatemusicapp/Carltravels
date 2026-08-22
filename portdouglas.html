@@ -91,15 +91,15 @@
             height: 100%;
         }
 
-        /* Style the header h1 (Carl Travels) */
-        header h1 a {
+        /* Style the header logo (Carl Travels) */
+        header .logo a {
             color: #FF6600; /* Vibrant orange color */
             font-family: 'Dancing Script', cursive;
             text-decoration: none; 
             font-size: 2.5em; 
             transition: color 0.3s ease; 
         }
-        header h1 a:hover {
+        header .logo a:hover {
             color: #E55B00; /* Darker shade on hover */
         }
 
@@ -243,7 +243,7 @@
             .main-column {
                 order: 1;
             }
-            header h1 a {
+            header .logo a {
                 font-size: 2em; 
             }
             main h1 {
@@ -295,7 +295,7 @@
     <header>
         <div class="container">
             <!-- Logo -->
-            <h1 class="logo"><a href="index.html">Carl Travels</a></h1>
+            <div class="logo"><a href="index.html">Carl Travels</a></div>
                 <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
 
             <!-- Hamburger Menu Icon for Mobile -->
@@ -613,7 +613,7 @@
 
             <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center" style="border-color: var(--dark-3);">
                 <p class="text-sm mb-4 md:mb-0" style="color: var(--muted);">
-                    © 2025 Carl Tomich. All rights reserved.
+                    © 2026 Carl Tomich. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="/contact.html" class="text-sm nav-link">Contact</a>
