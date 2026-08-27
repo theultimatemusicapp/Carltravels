@@ -1,0 +1,13 @@
+name = "carltravels-route-finder"
+main = "worker.js"
+compatibility_date = "2026-08-27"
+
+[vars]
+ALLOWED_ORIGIN = "https://carltravels.com"
+
+# Add secrets with:
+# wrangler secret put AMADEUS_CLIENT_ID
+# wrangler secret put AMADEUS_CLIENT_SECRET
+# wrangler secret put TRAVELPAYOUTS_TOKEN
+# wrangler secret put NAVITIA_TOKEN
+# wrangler secret put DUFFEL_ACCESS_TOKEN

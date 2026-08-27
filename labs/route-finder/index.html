@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>CarlTravels Route Finder</title>
+    <meta name="description"
+        content="Demo prototype for comparing practical multimodal routes by realistic cost, total time, hassle and connection risk.">
+    <link rel="canonical" href="https://carltravels.com/labs/route-finder/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
+    <link rel="stylesheet" href="/labs/route-finder/route-finder.css">
+</head>
+
+<body class="route-finder-page">
+    <nav id="navbar" class="navbar fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold">
+                    <span class="heading-font" style="color: var(--primary);">CARL TOMICH</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="nav-link font-medium">Home</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Films & Work</a>
+                    <a href="/blog.html" class="nav-link font-medium">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium">Creator Gear</a>
+                    <a href="/destinations.html" class="nav-link font-medium">Honest Guides</a>
+                    <a href="/about.html" class="nav-link font-medium">About</a>
+                    <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);"
+                    aria-label="Open menu" type="button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/" class="block px-3 py-2 rounded-md nav-link">Home</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Films & Work</a>
+                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
+                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Creator Gear</a>
+                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Honest Guides</a>
+                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
+                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link"
+                        style="color: var(--primary);">Donate</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="route-hero">
+            <div class="route-hero__media" aria-hidden="true"></div>
+            <div class="route-shell route-hero__content">
+                <p class="route-kicker">CarlTravels labs / demo prototype</p>
+                <h1 class="heading-font">Find the route you’d actually take</h1>
+                <p class="route-hero__copy">
+                    Start with two real places, then see the cleanest ways the trip could work by air, road and
+                    public transport.
+                </p>
+            </div>
+        </section>
+
+        <section class="route-shell route-layout" aria-label="Route search prototype">
+            <aside class="search-panel" aria-labelledby="search-heading">
+                <div>
+                    <p class="route-kicker">Search</p>
+                    <h2 id="search-heading" class="heading-font">CarlTravels Route Finder</h2>
+                </div>
+
+                <form id="route-search-form" novalidate>
+                    <div class="field-grid">
+                        <label class="field">
+                            <span>Starting city</span>
+                            <input id="origin" name="origin" type="text" value="Berlin" list="originCityOptions"
+                                autocomplete="address-level2" required>
+                            <datalist id="originCityOptions"></datalist>
+                            <small id="originSelected" class="location-selected">Select a city or airport suggestion.</small>
+                            <small class="field-error" data-error-for="origin"></small>
+                        </label>
+
+                        <label class="field">
+                            <span>Destination</span>
+                            <input id="destination" name="destination" type="text" value="Zagreb"
+                                list="destinationCityOptions" autocomplete="address-level2" required>
+                            <datalist id="destinationCityOptions"></datalist>
+                            <small id="destinationSelected" class="location-selected">Select a city or airport suggestion.</small>
+                            <small class="field-error" data-error-for="destination"></small>
+                        </label>
+
+                        <label class="field">
+                            <span>Departure date</span>
+                            <input id="departureDate" name="departureDate" type="date" required>
+                            <small class="field-error" data-error-for="departureDate"></small>
+                        </label>
+
+                        <label class="field">
+                            <span>Trip type</span>
+                            <select id="tripType" name="tripType" disabled>
+                                <option selected>One-way</option>
+                            </select>
+                        </label>
+
+                        <label class="field">
+                            <span>Travellers</span>
+                            <input id="travellers" name="travellers" type="number" min="1" max="8" value="1" required>
+                            <small class="field-error" data-error-for="travellers"></small>
+                        </label>
+
+                        <label class="field">
+                            <span>Max transfers</span>
+                            <select id="maxTransfers" name="maxTransfers">
+                                <option value="0">Direct only</option>
+                                <option value="1">Up to 1</option>
+                                <option value="2">Up to 2</option>
+                                <option value="3" selected>Up to 3</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <details class="advanced-options">
+                        <summary>More route options</summary>
+
+                        <fieldset class="fieldset">
+                            <legend>Travel assumptions</legend>
+                            <label class="toggle-row">
+                                <input id="cabinBag" name="cabinBag" type="checkbox">
+                                <span>Cabin baggage</span>
+                            </label>
+                            <label class="toggle-row">
+                                <input id="checkedBag" name="checkedBag" type="checkbox" checked>
+                                <span>Checked baggage</span>
+                            </label>
+                            <label class="toggle-row">
+                                <input id="nearbyAirports" name="nearbyAirports" type="checkbox" checked>
+                                <span>Nearby airports</span>
+                            </label>
+                            <label class="toggle-row">
+                                <input id="overnightAllowed" name="overnightAllowed" type="checkbox" checked>
+                                <span>Overnight travel allowed</span>
+                            </label>
+                            <label class="toggle-row">
+                                <input id="separateTicketsAllowed" name="separateTicketsAllowed" type="checkbox" checked>
+                                <span>Separate tickets allowed</span>
+                            </label>
+                        </fieldset>
+
+                        <div class="field-grid">
+                            <label class="field">
+                                <span>Flexible dates</span>
+                                <select id="flexibleDates" name="flexibleDates">
+                                    <option value="exact" selected>Exact date</option>
+                                    <option value="plusMinus1">Plus or minus 1 day</option>
+                                    <option value="plusMinus3">Plus or minus 3 days</option>
+                                </select>
+                            </label>
+
+                            <label class="field">
+                                <span>Nearby-airport radius</span>
+                                <select id="airportRadiusKm" name="airportRadiusKm">
+                                    <option value="100">100 km</option>
+                                    <option value="200" selected>200 km</option>
+                                    <option value="300">300 km</option>
+                                </select>
+                            </label>
+
+                            <label class="field field-wide">
+                                <span>Ranking preference</span>
+                                <select id="rankingPreference" name="rankingPreference">
+                                    <option value="practical" selected>Most practical</option>
+                                    <option value="cheapest">Cheapest</option>
+                                    <option value="fastest">Fastest</option>
+                                </select>
+                            </label>
+                        </div>
+                    </details>
+
+                    <button class="route-button route-button--primary" type="submit">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        Search routes
+                    </button>
+                    <p class="city-attribution">Location search uses public Travelpayouts/Aviasales autocomplete plus
+                        Open-Meteo fallback. Route timing uses OpenStreetMap-derived road estimates where available.</p>
+                </form>
+            </aside>
+
+            <section class="results-panel" aria-labelledby="results-heading" aria-live="polite">
+                <div class="results-toolbar">
+                    <div>
+                        <p class="route-kicker">Results</p>
+                        <h2 id="results-heading" class="heading-font">Berlin to Zagreb</h2>
+                        <p id="results-summary">Search to discover route shapes without fabricated fares or schedules.</p>
+                        <p id="fare-status" class="fare-status">Using real place data and open map routing where available.</p>
+                    </div>
+
+                    <label class="sort-control">
+                        <span>Sort by</span>
+                        <select id="sortResults">
+                            <option value="practical" selected>Most practical</option>
+                            <option value="cheapest">Cheapest</option>
+                            <option value="fastest">Fastest</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="filter-panel" aria-label="Filter route candidates">
+                    <label class="chip-check"><input type="checkbox" data-mode-filter="flight" checked> Flights</label>
+                    <label class="chip-check"><input type="checkbox" data-mode-filter="train" checked> Trains</label>
+                    <label class="chip-check"><input type="checkbox" data-mode-filter="bus" checked> Buses</label>
+                    <label class="mini-field disabled-field">
+                        <span>Max price</span>
+                        <input id="maxPrice" type="number" min="0" step="10" placeholder="Unavailable" disabled>
+                    </label>
+                    <label class="mini-field">
+                        <span>Max duration</span>
+                        <input id="maxDuration" type="number" min="1" step="1" placeholder="Any">
+                    </label>
+                    <label class="chip-check"><input id="allowSeparateFilter" type="checkbox" checked> Separate
+                        tickets</label>
+                    <label class="chip-check"><input id="allowOvernightFilter" type="checkbox" checked> Overnight</label>
+                </div>
+
+                <div id="results-list" class="results-list"></div>
+
+                <div id="comparison-panel" class="comparison-panel" hidden>
+                    <div class="comparison-panel__head">
+                        <div>
+                            <p class="route-kicker">Compare</p>
+                            <h3 class="heading-font">Selected searches</h3>
+                        </div>
+                        <button id="clearComparison" class="small-action" type="button">Clear</button>
+                    </div>
+                    <div id="comparison-grid" class="comparison-grid"></div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="py-12" style="background: var(--dark); border-top: 1px solid var(--card-border);">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="heading-font text-2xl mb-4" style="color: var(--primary);">CARL TOMICH</h3>
+                    <p class="mb-4 text-sm" style="color: var(--light);">Documentary Filmmaker</p>
+                    <p class="text-sm" style="color: var(--muted);">
+                        Engineering extreme life projects and turning them into films since 2014.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Films</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank" class="nav-link">Busking for Berlin (2014)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A Sail Untold (2022)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2024)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Explore</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="nav-link">About</a></li>
+                        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="/gear.html" class="nav-link">Creator Gear</a></li>
+                        <li><a href="/destinations.html" class="nav-link">Honest Guides</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                    </div>
+                    <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/site.js" defer></script>
+    <script src="/labs/route-finder/route-finder.config.js" defer></script>
+    <script src="/labs/route-finder/route-finder.js" defer></script>
+</body>
+
+</html>
