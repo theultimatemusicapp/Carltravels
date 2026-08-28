@@ -20,20 +20,31 @@
     <meta name="twitter:image" content="https://img.youtube.com/vi/M3B07rdRGVs/maxresdefault.jpg" />
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "TravelArticle",
-        "headline": "Hiroshima Travel Guide – Shinkansen Journey, Peace Memorial & Miyajima Day Trip",
-        "description": "Plan a respectful visit to Hiroshima: 90-minute bullet train from Osaka, Peace Memorial Park reflections, hibakusha testimonies, and side trips to Miyajima.",
-        "image": "https://img.youtube.com/vi/M3B07rdRGVs/maxresdefault.jpg",
-        "author": { "@type": "Person", "name": "Carl Tomich" },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Carl Travels",
-            "logo": { "@type": "ImageObject", "url": "https://carltravels.com/carlcircle.png" }
-        },
-        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://carltravels.com/hiroshima-travel-guide.html" }
+{
+  "@context": "https://schema.org",
+  "@type": "TravelArticle",
+  "headline": "Hiroshima Travel Guide – Shinkansen Journey, Peace Memorial & Miyajima Day Trip",
+  "description": "Plan a respectful visit to Hiroshima: 90-minute bullet train from Osaka, Peace Memorial Park reflections, hibakusha testimonies, and side trips to Miyajima.",
+  "image": "https://img.youtube.com/vi/M3B07rdRGVs/maxresdefault.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Carl Tomich",
+    "@id": "https://carltravels.com/about.html#carl-tomich",
+    "url": "https://carltravels.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Carl Travels",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://carltravels.com/carlcircle.png"
     }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://carltravels.com/hiroshima-travel-guide.html"
+  }
+}
     </script>
     <!-- Ads & Analytics -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068" crossorigin="anonymous"></script>
@@ -114,12 +125,14 @@
     "author": {
       "@type": "Person",
       "name": "Carl Tomich",
-      "url": "https://carltravels.com/about.html"
+      "url": "https://carltravels.com/about.html",
+      "@id": "https://carltravels.com/about.html#carl-tomich"
     },
     "publisher": {
       "@type": "Person",
       "name": "Carl Tomich",
-      "url": "https://carltravels.com"
+      "url": "https://carltravels.com/about.html",
+      "@id": "https://carltravels.com/about.html#carl-tomich"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -340,7 +353,7 @@
                     <li><i class="fas fa-globe text-yellow-500 mr-3"></i>What responsibilities do modern scientists carry when pioneering new technologies?</li>
                     <li><i class="fas fa-hands-helping text-yellow-500 mr-3"></i>How can travelers support peace education initiatives after leaving Hiroshima?</li>
                 </ul>
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="inline-flex items-center px-5 py-3 bg-yellow-500 text-black rounded-full font-semibold hover:bg-yellow-400 transition"><i class="fab fa-youtube mr-2"></i>Join the Discussion</a>
+                <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="inline-flex items-center px-5 py-3 bg-yellow-500 text-black rounded-full font-semibold hover:bg-yellow-400 transition"><i class="fab fa-youtube mr-2"></i>Join the Discussion</a>
             </div>
         </div>
     </section>
@@ -376,8 +389,8 @@
             <h3 class="heading-font text-3xl md:text-4xl text-white mb-6">Keep Exploring with Carl Travels</h3>
             <p class="text-gray-300 max-w-3xl mx-auto">Thank you for walking through Hiroshima with us. If this story moved you, share it with someone who loves history, and let’s continue advocating for empathy-driven travel.</p>
             <div class="mt-8 flex flex-wrap justify-center gap-6">
-                <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="px-5 py-3 bg-red-600 hover:bg-red-500 text-white rounded-full font-semibold transition"><i class="fab fa-youtube mr-2"></i>Subscribe on YouTube</a>
-                <a href="https://www.instagram.com/carlostomich" target="_blank" class="px-5 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-400 hover:to-pink-400 text-white rounded-full font-semibold transition"><i class="fab fa-instagram mr-2"></i>Follow on Instagram</a>
+                <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="px-5 py-3 bg-red-600 hover:bg-red-500 text-white rounded-full font-semibold transition"><i class="fab fa-youtube mr-2"></i>Subscribe on YouTube</a>
+                <a href="https://www.instagram.com/carlostomich/" target="_blank" class="px-5 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-400 hover:to-pink-400 text-white rounded-full font-semibold transition"><i class="fab fa-instagram mr-2"></i>Follow on Instagram</a>
                 <a href="/contact.html" class="px-5 py-3 border border-yellow-500 text-yellow-500 rounded-full font-semibold hover:bg-yellow-500 hover:text-black transition"><i class="fas fa-envelope mr-2"></i>Share Your Story</a>
             </div>
         </div>
@@ -402,7 +415,7 @@
                 <div class="glass-card rounded-3xl p-8 space-y-4">
                     <h3 class="heading-font text-2xl text-white">Creator Tools</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/pricing/monthly" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">dehancer.com/subscribe</a></li>
+                        <li>Dehancer (film emulation): Code <span class="font-semibold">CARLTRAVELS</span> for 10% off → <a href="https://www.dehancer.com/" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">dehancer.com/subscribe</a></li>
                         <li>Adobe Enhance VO (FREE): <a href="https://podcast.adobe.com/en/enhance" class="text-yellow-500 hover:text-yellow-400">podcast.adobe.com/en/enhance</a></li>
                     </ul>
                 </div>
@@ -509,8 +522,8 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank" class="nav-link">Busking for Berlin (2014)</a></li>
                         <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A Sail Untold (2022)</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2024)</a></li>
-                        <li><a href="#current-project" class="nav-link">Martial Arts Doc (In Production)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2025)</a></li>
+                        <li><a href="/films/martial-arts-documentary.html" class="nav-link">Martial Arts Doc (In Production)</a></li>
                     </ul>
                 </div>
 
@@ -528,8 +541,8 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>

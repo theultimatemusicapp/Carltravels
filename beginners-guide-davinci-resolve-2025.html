@@ -20,39 +20,100 @@
     <meta name="twitter:image" content="https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg"/>
     <!-- Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Beginner’s Guide to DaVinci Resolve 2025",
+  "description": "Install DaVinci Resolve, organize media, edit clips, color grade, mix audio, and export a finished video using Carl Tomich’s beginner workflow.",
+  "image": "https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg",
+  "totalTime": "PT90M",
+  "supply": [
     {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Beginner’s Guide to DaVinci Resolve 2025",
-        "description": "Install DaVinci Resolve, organize media, edit clips, color grade, mix audio, and export a finished video using Carl Tomich’s beginner workflow.",
-        "image": "https://img.youtube.com/vi/wUYUV_F4WQo/maxresdefault.jpg",
-        "totalTime": "PT90M",
-        "supply": [
-            {"@type": "HowToSupply", "name": "Computer with Windows, macOS, or Linux"},
-            {"@type": "HowToSupply", "name": "DaVinci Resolve 2025 (Free version)"},
-            {"@type": "HowToSupply", "name": "Practice footage, music, and graphics"}
-        ],
-        "tool": [
-            {"@type": "HowToTool", "name": "Keyboard and mouse"},
-            {"@type": "HowToTool", "name": "External storage (optional)"}
-        ],
-        "step": [
-            {"@type": "HowToStep", "position": "1", "name": "Download & Install", "text": "Visit Blackmagic Design, download DaVinci Resolve 2025, choose the free version, install, and open the Project Manager."},
-            {"@type": "HowToStep", "position": "2", "name": "Create a New Project", "text": "Click New Project, name it, set your frame rate (24, 30, or 60 fps), then hit Create."},
-            {"@type": "HowToStep", "position": "3", "name": "Import & Organize Media", "text": "Use the Media tab to import clips, music, and graphics. Build bins for A-Roll, B-Roll, Audio, and Graphics."},
-            {"@type": "HowToStep", "position": "4", "name": "Start Editing", "text": "Use in/out points, drag clips to the timeline, use selection, trim, blade, and snapping tools to refine the edit."},
-            {"@type": "HowToStep", "position": "5", "name": "Color Grade", "text": "In the Color tab, adjust lift, gamma, gain, and offset. Apply LUTs sparingly and tweak saturation."},
-            {"@type": "HowToStep", "position": "6", "name": "Mix Audio", "text": "Layer dialogue, music, and effects, adjust levels to -6 dB for vocals and -18 dB for music, and fade clips for smooth transitions."},
-            {"@type": "HowToStep", "position": "7", "name": "Export", "text": "Enter the Deliver tab, pick a preset such as YouTube 1080p, set the codec to H.264, add to the render queue, and render."}
-        ],
-        "author": {"@type": "Person", "name": "Carl Tomich"},
-        "publisher": {
-            "@type": "Organization",
-            "name": "Carl Travels",
-            "logo": {"@type": "ImageObject", "url": "https://carltravels.com/carlcircle.png"}
-        },
-        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://carltravels.com/beginners-guide-davinci-resolve-2025.html"}
+      "@type": "HowToSupply",
+      "name": "Computer with Windows, macOS, or Linux"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "DaVinci Resolve 2025 (Free version)"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Practice footage, music, and graphics"
     }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Keyboard and mouse"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "External storage (optional)"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": "1",
+      "name": "Download & Install",
+      "text": "Visit Blackmagic Design, download DaVinci Resolve 2025, choose the free version, install, and open the Project Manager."
+    },
+    {
+      "@type": "HowToStep",
+      "position": "2",
+      "name": "Create a New Project",
+      "text": "Click New Project, name it, set your frame rate (24, 30, or 60 fps), then hit Create."
+    },
+    {
+      "@type": "HowToStep",
+      "position": "3",
+      "name": "Import & Organize Media",
+      "text": "Use the Media tab to import clips, music, and graphics. Build bins for A-Roll, B-Roll, Audio, and Graphics."
+    },
+    {
+      "@type": "HowToStep",
+      "position": "4",
+      "name": "Start Editing",
+      "text": "Use in/out points, drag clips to the timeline, use selection, trim, blade, and snapping tools to refine the edit."
+    },
+    {
+      "@type": "HowToStep",
+      "position": "5",
+      "name": "Color Grade",
+      "text": "In the Color tab, adjust lift, gamma, gain, and offset. Apply LUTs sparingly and tweak saturation."
+    },
+    {
+      "@type": "HowToStep",
+      "position": "6",
+      "name": "Mix Audio",
+      "text": "Layer dialogue, music, and effects, adjust levels to -6 dB for vocals and -18 dB for music, and fade clips for smooth transitions."
+    },
+    {
+      "@type": "HowToStep",
+      "position": "7",
+      "name": "Export",
+      "text": "Enter the Deliver tab, pick a preset such as YouTube 1080p, set the codec to H.264, add to the render queue, and render."
+    }
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Carl Tomich",
+    "@id": "https://carltravels.com/about.html#carl-tomich",
+    "url": "https://carltravels.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Carl Travels",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://carltravels.com/carlcircle.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://carltravels.com/beginners-guide-davinci-resolve-2025.html"
+  }
+}
     </script>
     <!-- Ads & Analytics -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6483721386563068" crossorigin="anonymous"></script>
@@ -196,12 +257,14 @@
     "author": {
       "@type": "Person",
       "name": "Carl Tomich",
-      "url": "https://carltravels.com/about.html"
+      "url": "https://carltravels.com/about.html",
+      "@id": "https://carltravels.com/about.html#carl-tomich"
     },
     "publisher": {
       "@type": "Person",
       "name": "Carl Tomich",
-      "url": "https://carltravels.com"
+      "url": "https://carltravels.com/about.html",
+      "@id": "https://carltravels.com/about.html#carl-tomich"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -539,8 +602,8 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank" class="nav-link">Busking for Berlin (2014)</a></li>
                         <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A Sail Untold (2022)</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2024)</a></li>
-                        <li><a href="#current-project" class="nav-link">Martial Arts Doc (In Production)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk Life (2025)</a></li>
+                        <li><a href="/films/martial-arts-documentary.html" class="nav-link">Martial Arts Doc (In Production)</a></li>
                     </ul>
                 </div>
 
@@ -558,8 +621,8 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@thecarltomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
