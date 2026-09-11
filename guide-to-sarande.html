@@ -183,9 +183,12 @@
     <meta name="robots" content="noindex,follow">
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 
 <body class="text-gray-200">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
@@ -203,7 +206,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -241,7 +244,7 @@
         </div>
     </section>
 
-    <main class="py-16 bg-[#050505]">
+    <main id="main-content" class="py-16 bg-[#050505]">
         <article class="container mx-auto px-6 max-w-4xl space-y-10 content">
             <div class="glass-card rounded-2xl p-8">
                 <h2 class="heading-font text-3xl text-white mb-4">Why Sarandë Works as a Base</h2>
@@ -363,6 +366,7 @@
 
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
 
 </html>

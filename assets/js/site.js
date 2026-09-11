@@ -27,26 +27,40 @@ document.addEventListener("DOMContentLoaded", () => {
         return "B";
     };
 
-    const resolveCtaVariant = () => {
-        const storageKey = "ctaVariant";
-        const existing = window.localStorage.getItem(storageKey);
-        if (existing && ["1", "2", "3"].includes(existing)) {
-            return Number(existing);
-        }
-        const assigned = Math.floor(Math.random() * 3) + 1;
-        window.localStorage.setItem(storageKey, String(assigned));
-        return assigned;
-    };
-
     if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener("click", () => {
-            mobileMenu.classList.toggle("open");
+        const syncMenu = () => {
+            const open = mobileMenu.classList.contains("open");
+            mobileMenuButton.setAttribute("aria-expanded", String(open));
+            mobileMenuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+            mobileMenuButton.setAttribute("aria-controls", mobileMenu.id);
+            mobileMenu.inert = !open;
             const icon = mobileMenuButton.querySelector("i");
             if (icon) {
-                icon.classList.toggle("fa-bars");
-                icon.classList.toggle("fa-times");
+                icon.classList.toggle("fa-bars", !open);
+                icon.classList.toggle("fa-times", open);
+            }
+        };
+        // Legacy pages also register bubble handlers. Own this interaction once.
+        mobileMenuButton.addEventListener("click", (event) => {
+            event.stopImmediatePropagation();
+            mobileMenu.classList.toggle("open");
+            syncMenu();
+        }, true);
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && mobileMenu.classList.contains("open")) {
+                mobileMenu.classList.remove("open");
+                syncMenu();
+                mobileMenuButton.focus();
             }
         });
+        mobileMenu.addEventListener("click", (event) => {
+            if (event.target.closest("a")) {
+                mobileMenu.classList.remove("open");
+                syncMenu();
+            }
+        });
+        new MutationObserver(syncMenu).observe(mobileMenu, { attributes: true, attributeFilter: ["class"] });
+        syncMenu();
     }
 
     const handleScroll = () => {
@@ -61,12 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
-    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const normalisePath = (path) => path.replace(/\/index\.html$/, "/").replace(/\/$/, "") || "/";
+    const currentPath = normalisePath(window.location.pathname);
     document.querySelectorAll(".nav-link, .mobile-link").forEach((link) => {
-        const href = link.getAttribute("href") || "";
-        const hrefPath = href.replace(/^\/+/, "").split("#")[0];
-        if (hrefPath === currentPath) {
+        const url = new URL(link.getAttribute("href") || "", window.location.href);
+        if (url.origin === window.location.origin && !url.hash && normalisePath(url.pathname) === currentPath) {
             link.classList.add("active");
+            link.setAttribute("aria-current", "page");
         }
     });
 
@@ -75,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mainElement.classList.add("article-content");
     }
 
-    const articleSection = document.querySelector("[data-article], #article, .article-content, main");
+    const articleSection = document.querySelector("[data-article], #article, main[data-editorial-article]");
     if (articleSection) {
         const headings = Array.from(articleSection.querySelectorAll("h2"));
 
@@ -90,11 +105,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     heading.id = heading.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
                 }
                 const item = document.createElement("li");
-                item.innerHTML = `<a href=\"#${heading.id}\" class=\"text-yellow-400 hover:text-yellow-300\">${heading.textContent}</a>`;
+                const link = document.createElement("a");
+                link.href = `#${heading.id}`;
+                link.className = "text-yellow-400 hover:text-yellow-300";
+                link.textContent = heading.textContent;
+                item.appendChild(link);
                 list.appendChild(item);
             });
             toc.appendChild(list);
-            articleSection.prepend(toc);
+            const firstHeading = headings[0];
+            firstHeading.before(toc);
         }
     }
 
@@ -102,69 +122,54 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.dataset.intentType = affiliateIntent;
 
     const ctaBlocks = document.querySelectorAll(".affiliate-cta");
-    if (ctaBlocks.length) {
-        const assignedVariant = resolveCtaVariant();
-
-        const createAffiliateCta = (cta) => {
-            const link = cta.dataset.link || "#";
-            const placement = cta.dataset.placement || "inline";
-            const label = cta.dataset.label || cta.dataset.title || "Affiliate link";
-            const thumbnail = cta.dataset.thumbnail;
-            const benefit = cta.dataset.benefit || "A quick, reliable pick to save you time.";
-            const who = cta.dataset.who || "Ideal for travelers who want a dependable setup.";
-            const reasonOne = cta.dataset.reasonOne || "I use it in my own kit for dependable results.";
-            const reasonTwo = cta.dataset.reasonTwo || "Solid value without overpaying for extras.";
-            const alternative = cta.dataset.alternative || "Alternative: compare with a budget-friendly option.";
-
-            const variants = {
-                1: {
-                    title: "Quick recommendation",
-                    copy: `${benefit} ${who}`,
-                    ctaLabel: cta.dataset.ctaLabel || "Check price",
-                    body: `<p class="affiliate-cta__copy">${benefit} ${who}</p>`,
-                },
-                2: {
-                    title: "Support the channel",
-                    copy: "If you’re buying anyway, this helps keep the guides free.",
-                    ctaLabel: cta.dataset.ctaLabel || "Grab it on Amazon",
-                    body: `<p class="affiliate-cta__copy">If you’re buying anyway, this helps keep the guides free.</p>`,
-                },
-                3: {
-                    title: "My pick (and why)",
-                    copy: "Quick comparison notes.",
-                    ctaLabel: cta.dataset.ctaLabel || "See options",
-                    body: `<ul class="affiliate-cta__list">\n<li>${reasonOne}</li>\n<li>${reasonTwo}</li>\n</ul>\n<p class="affiliate-cta__alt">${alternative}</p>`,
-                },
-            };
-
-            const variant = variants[assignedVariant];
-            const imageMarkup = thumbnail
-                ? `<div class="affiliate-cta__media"><img src="${thumbnail}" alt="${variant.title}"></div>`
-                : "";
-
-            cta.dataset.ctaVariant = String(assignedVariant);
-            cta.dataset.intentType = affiliateIntent;
-            cta.dataset.placement = placement;
-            cta.innerHTML = `
-                ${imageMarkup}
-                <div class="affiliate-cta__content">
-                    <p class="affiliate-cta__eyebrow">${variant.title}</p>
-                    <h3 class="affiliate-cta__headline">${cta.dataset.title || variant.title}</h3>
-                    ${variant.body}
-                    <a class="button-primary affiliate-link" data-affiliate-placement="${placement}" data-affiliate-label="${label}" href="${link}" target="_blank" rel="noopener">
-                        ${variant.ctaLabel}
-                    </a>
-                    <p class="affiliate-cta__disclosure">Affiliate disclosure: I may earn a commission at no extra cost to you.</p>
-                </div>
-            `;
-        };
-
-        ctaBlocks.forEach((cta) => createAffiliateCta(cta));
-    }
+    ctaBlocks.forEach((cta) => {
+        let destination;
+        try { destination = new URL(cta.dataset.link); } catch { return; }
+        if (!["https:", "http:"].includes(destination.protocol)) return;
+        // Product-specific copy must come from the page; never invent ownership or testing.
+        const content = document.createElement("div");
+        content.className = "affiliate-cta__content";
+        const heading = document.createElement("h3");
+        heading.className = "affiliate-cta__headline";
+        heading.textContent = cta.dataset.title || cta.dataset.label || "Compare current options";
+        content.appendChild(heading);
+        if (cta.dataset.benefit) {
+            const copy = document.createElement("p");
+            copy.className = "affiliate-cta__copy";
+            copy.textContent = cta.dataset.benefit;
+            content.appendChild(copy);
+        }
+        const link = document.createElement("a");
+        link.className = "button-primary affiliate-link";
+        link.href = destination.href;
+        link.target = "_blank";
+        link.rel = "noopener sponsored nofollow";
+        link.textContent = cta.dataset.ctaLabel || "Check current price and terms";
+        link.dataset.affiliatePlacement = cta.dataset.placement || "inline";
+        link.dataset.affiliateLabel = cta.dataset.label || heading.textContent;
+        content.appendChild(link);
+        const disclosure = document.createElement("p");
+        disclosure.className = "affiliate-cta__disclosure";
+        disclosure.textContent = "Affiliate link: Carl Travels may receive a commission or referral credit if you buy through this link.";
+        content.appendChild(disclosure);
+        if (cta.dataset.thumbnail) {
+            const media = document.createElement("div");
+            media.className = "affiliate-cta__media";
+            const image = document.createElement("img");
+            image.src = cta.dataset.thumbnail;
+            image.alt = cta.dataset.title || cta.dataset.label || "Recommended product";
+            image.loading = "lazy";
+            media.appendChild(image);
+            cta.replaceChildren(media, content);
+        } else {
+            cta.replaceChildren(content);
+        }
+        cta.dataset.ctaVariant = "editorial";
+    });
 
     const shouldTrack = () => {
         const dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-        return !(dnt === "1" || dnt === "yes");
+        return !(dnt === "1" || dnt === "yes") && window.carlAnalyticsConsent === "granted";
     };
 
     const sendEvent = (eventName, params) => {
@@ -177,24 +182,8 @@ document.addEventListener("DOMContentLoaded", () => {
             window.dataLayer.push({ event: eventName, ...params });
             return;
         }
-        const storageKey = "affiliateEventLog";
-        const existing = JSON.parse(window.localStorage.getItem(storageKey) || "[]");
-        existing.push({ event: eventName, params, ts: Date.now() });
-        window.localStorage.setItem(storageKey, JSON.stringify(existing.slice(-100)));
-        if (["localhost", "127.0.0.1"].includes(window.location.hostname)) {
-            console.info("[affiliate-event]", eventName, params);
-        }
-    };
 
-    const affiliateDomains = [
-        "amzn.to",
-        "amazon.",
-        "wise.com",
-        "dehancer.com",
-        "yesim.app",
-        "saily",
-        "getyourwisecard",
-    ];
+    };
 
     document.addEventListener("click", (event) => {
         const anchor = event.target.closest("a");
@@ -203,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!href || href.startsWith("#")) return;
         const isAffiliateLink =
             anchor.classList.contains("affiliate-link") ||
-            affiliateDomains.some((domain) => href.includes(domain));
+            anchor.relList.contains("sponsored");
         if (!isAffiliateLink) return;
 
         let linkDomain = "";
@@ -218,7 +207,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "inline";
         const ctaVariant =
             anchor.closest(".affiliate-cta")?.dataset.ctaVariant ||
-            window.localStorage.getItem("ctaVariant") ||
             "unknown";
         const intentType = document.body.dataset.intentType || "unknown";
         const linkLabel = anchor.dataset.affiliateLabel || anchor.textContent.trim() || "affiliate link";
@@ -274,6 +262,6 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         window.addEventListener("scroll", toggleBackToTop);
         toggleBackToTop();
-        backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+        backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }));
     }
 });

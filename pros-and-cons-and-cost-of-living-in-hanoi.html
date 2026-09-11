@@ -203,8 +203,11 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta property="article:modified_time" content="2026-08-21T00:00:00+07:00">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body class="text-gray-200">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
         <!-- Navigation -->
         <!-- Navigation -->
@@ -225,7 +228,7 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -252,6 +255,7 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
                 <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                     Pros and Cons of Living in Hanoi (An Honest, Lived-In Perspective)
                 </h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">Pros and Cons of Living in Hanoi (An Honest, Lived-In Perspective)</span></nav>
                 <p class="text-sm text-gray-300 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a></p>
                 <p class="text-lg text-yellow-100 mb-8 max-w-2xl">
                     Cheap rent is real, but it is not the whole story. This is what living in Hanoi actually feels like once the honeymoon phase fades.
@@ -265,7 +269,7 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
     </section>
 
     <!-- Article Content -->
-    <main class="bg-[#080808] text-gray-100">
+    <main id="main-content" class="bg-[#080808] text-gray-100">
         <section class="py-14">
             <div class="container mx-auto px-6 max-w-6xl">
                 <div class="grid lg:grid-cols-[1.5fr_0.9fr] gap-10 items-start">
@@ -521,8 +525,8 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
                     </p>
                     <form action="https://formspree.io/f/mnnnoogg" method="POST" class="space-y-4">
                         <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" name="name" placeholder="Your name" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
-                            <input type="email" name="email" placeholder="Your email" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            <input type="text" name="name" placeholder="Your name" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required aria-label="Your name">
+                            <input type="email" name="email" placeholder="Your email" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required aria-label="Email address">
                         </div>
                         <textarea name="message" rows="5" placeholder="Your comment" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
                         <input type="hidden" name="_subject" value="New Hanoi Blog Comment">
@@ -552,10 +556,10 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
     <section class="max-w-4xl mx-auto px-6 py-10">
         <div class="affiliate-card" style="background: rgba(15, 15, 15, 0.78); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 24px; box-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.7);">
             <p style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; color: #f5c518; font-weight: 600; margin-bottom: 8px;">Travel Essential</p>
-            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Saily - Travel stress-free with data in 100+ countries!</h2>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">Skip the SIM cards ✈️ , grab a Saily eSIM before your next trip and stay online from day one.</p>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">🎟 Use code CARLRI5370 for a discount</p>
-            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="noopener nofollow sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">👉 Activate your eSIM now</a>
+            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Compare mobile data for your trip</h2>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Check your phone’s eSIM compatibility, destination coverage and current plan terms before buying.</p>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Referral disclosure: using code CARLRI5370 for an eligible purchase may give Carl Saily credit. Check any discount at checkout.</p>
+            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="nofollow noopener sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">View Saily plans and terms</a>
         </div>
     </section>
 
@@ -596,9 +600,9 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
@@ -620,7 +624,7 @@ Curiosity-driven: The Hanoi trade-off I didn’t expect at first
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

@@ -94,8 +94,12 @@
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta name="author" content="Carl Tomich">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
@@ -105,7 +109,7 @@
                     <a href="/gear.html" class="nav-link font-medium">Creator Gear</a>
                     <a href="/about.html" class="nav-link font-medium">About</a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i class="fas fa-bars text-2xl"></i></button>
             </div>
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-2">
@@ -122,11 +126,12 @@
             <div>
                 <span class="inline-flex items-center gap-2 bg-slate-800 text-yellow-300 px-4 py-2 rounded-full text-sm"><i class="fas fa-image"></i> AI Image Enhancement</span>
                 <h1 class="heading-font text-4xl md:text-5xl mt-5 text-white">Aiarty AI Image Enhancer: Features, Pricing, and Why It Stands Out</h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">Aiarty AI Image Enhancer: Features, Pricing, and Why It Stands Out</span></nav>
                 <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
                 <p class="text-slate-200 mt-5 text-lg">Aiarty AI Image Enhancer is an AI-powered tool that improves image quality automatically by restoring detail, reducing blur and noise, and increasing resolution for print, web, and content workflows.</p>
                 <div class="flex flex-wrap gap-4 mt-8">
                     <a href="#features" class="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full">See features</a>
-                    <a href="https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1" target="_blank" rel="noopener nofollow sponsored" class="px-6 py-3 border border-slate-300 rounded-full hover:border-yellow-400 hover:text-yellow-300">Buy Aiarty Image Enhancer</a>
+                    <a href="https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1" target="_blank" rel="nofollow noopener sponsored" class="px-6 py-3 border border-slate-300 rounded-full hover:border-yellow-400 hover:text-yellow-300">Buy Aiarty Image Enhancer</a>
                 </div>
             </div>
             <div class="card p-5">
@@ -138,7 +143,7 @@
         </div>
     </header>
 
-    <main class="py-16 bg-slate-950">
+    <main id="main-content" class="py-16 bg-slate-950">
         <article class="container mx-auto px-6 max-w-4xl space-y-12">
             <section id="features" class="card p-8">
                 <h2 class="heading-font text-3xl text-white mb-4">Core Features</h2>
@@ -184,7 +189,7 @@
             <section class="card p-8">
                 <h2 class="heading-font text-3xl text-white mb-4">Conclusion</h2>
                 <p class="text-slate-200">Aiarty AI Image Enhancer is a practical choice for photographers, designers, and creators who need fast quality improvements on low-resolution or imperfect images. The combination of strong enhancement models, batch processing, and lifetime pricing makes it a compelling alternative in the AI upscaling category.</p>
-                <a href="https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1" target="_blank" rel="noopener nofollow sponsored" class="inline-flex mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full">Get Aiarty Image Enhancer</a>
+                <a href="https://secure.2checkout.com/order/checkout.php?PRODS=46192083&QTY=1&AFFILIATE=246587&AFFSRC=image_enhancer&CART=1" target="_blank" rel="nofollow noopener sponsored" class="inline-flex mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full">Get Aiarty Image Enhancer</a>
             </section>
         </article>
     
@@ -203,5 +208,6 @@
             menuButton.addEventListener('click', () => mobileMenu.classList.toggle('open'));
         }
     </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

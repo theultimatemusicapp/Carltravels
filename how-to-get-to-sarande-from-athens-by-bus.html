@@ -186,9 +186,12 @@
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 
 <body class="text-gray-200">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
@@ -206,7 +209,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -233,6 +236,7 @@
             <div class="text-center max-w-4xl mx-auto">
                 <span class="inline-block px-4 py-1 rounded-full bg-yellow-500/20 text-yellow-300 text-sm tracking-wide mb-6">GREECE → ALBANIA</span>
                 <h1 class="heading-font text-4xl md:text-6xl text-white mb-4">How to Get to Sarandë from Athens by Bus</h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">How to Get to Sarandë from Athens by Bus</span></nav>
                 <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
                 <p class="text-lg text-gray-200 max-w-3xl mx-auto">The direct Ahmeti Travel route is low-stress, affordable, and surprisingly scenic.</p>
             </div>
@@ -244,7 +248,7 @@
         </div>
     </section>
 
-    <main class="py-16 bg-[#050505]">
+    <main id="main-content" class="py-16 bg-[#050505]">
         <article class="container mx-auto px-6 max-w-4xl space-y-10 content">
             <div class="glass-card rounded-2xl p-8">
                 <h2 class="heading-font text-3xl text-white mb-4">Ahmeti Travel: Direct Bus to Sarandë</h2>
@@ -253,7 +257,7 @@
                 <p>The ticket cost <strong>€35</strong>. For an international journey of nearly nine hours, that is reasonable.</p>
             </div>
             <figure class="glass-card rounded-2xl p-4">
-                <img loading="lazy" src="/sarandebus.jpg" alt="Bus journey from Athens to Sarande in Albania" class="w-full rounded-xl">
+                <img loading="lazy" src="/sarandebus.jpg" alt="Bus journey from Athens to Sarande in Albania" class="w-full rounded-xl" width="1024" height="654">
                 <figcaption class="text-sm text-gray-300 mt-3 px-2">The direct Athens to Sarandë bus is not glamorous, but it is practical, cheap, and avoids a messy transfer day.</figcaption>
             </figure>
 
@@ -289,12 +293,12 @@
                     <div>
                         <h3 class="text-xl font-semibold text-white mb-3">Athens Pickup Point</h3>
                         <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-                            src="https://maps.google.com/maps?q=%CE%98%CE%B5%CE%BF%CE%B4.%20%CE%94%CE%B7%CE%BB%CE%B9%CE%B3%CE%B9%CE%AC%CE%BD%CE%BD%CE%B7%2021%2C%20Athens&output=embed"></iframe>
+                            src="https://maps.google.com/maps?q=%CE%98%CE%B5%CE%BF%CE%B4.%20%CE%94%CE%B7%CE%BB%CE%B9%CE%B3%CE%B9%CE%AC%CE%BD%CE%BD%CE%B7%2021%2C%20Athens&output=embed" title="Interactive location map"></iframe>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold text-white mb-3">Arrival in Sarandë</h3>
                         <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-                            src="https://maps.google.com/maps?q=Sarande%2C%20Albania&output=embed"></iframe>
+                            src="https://maps.google.com/maps?q=Sarande%2C%20Albania&output=embed" title="Interactive location map"></iframe>
                     </div>
                 </div>
                 <p class="mt-5 text-sm text-gray-300">Tip: Open both maps in Google Maps and save them offline before travel day.</p>
@@ -355,6 +359,7 @@
 
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
 
 </html>

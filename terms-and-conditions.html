@@ -99,6 +99,8 @@
         gtag('config', 'G-G72KT5ZW2J');
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body class="text-gray-800">
     <!-- Navigation -->
@@ -121,7 +123,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -167,7 +169,7 @@
                         <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse"></div>
                         <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-300 rounded-full opacity-20 animate-pulse delay-300"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2">
-                            <img loading="lazy" src="/topbanner.png" alt="Terms and Conditions" class="w-full h-auto">
+                            <img loading="lazy" src="/topbanner.png" alt="Terms and Conditions" class="w-full h-auto" width="1792" height="439">
                             <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 to-transparent opacity-70"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Our Commitment</h3>
@@ -289,7 +291,7 @@
                 Subscribe to Carl Travels for exclusive travel tips, destination guides, and special offers delivered straight to your inbox.
             </p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required aria-label="Email address">
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
@@ -342,9 +344,9 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
@@ -366,7 +368,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

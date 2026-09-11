@@ -194,6 +194,8 @@
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body class="min-h-screen">
     <!-- Navigation -->
@@ -216,7 +218,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -242,6 +244,7 @@
                 <div class="space-y-6">
                     <span class="badge"><i class="fas fa-drone text-yellow-400"></i> Gear Review</span>
                     <h1 class="heading-font text-4xl md:text-5xl text-white leading-tight">DJI Flip Review 2025</h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">DJI Flip Review 2025</span></nav>
                 <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
                     <p class="text-lg text-slate-200 leading-relaxed">The DJI Flip sits between the Mini 3 and Mini 4 Pro with a lower price and fewer sensors. This review covers flight time, video quality, and whether the compromises are worth it.</p>
                     <div class="flex flex-wrap gap-4">
@@ -257,7 +260,7 @@
                 </div>
                 <div class="relative">
                     <div class="info-card">
-                        <img loading="lazy" src="djiflip.jpg" alt="DJI Flip drone in flight" class="rounded-xl w-full h-auto">
+                        <img loading="lazy" src="djiflip.jpg" alt="DJI Flip drone in flight" class="rounded-xl w-full h-auto" width="980" height="728">
                         <p class="text-slate-300 text-sm mt-4">Real-world flights and handheld footage from the DJI Flip in 4K.</p>
                     </div>
                 </div>
@@ -279,8 +282,7 @@
                     <div class="prose max-w-none">
                         <p class="text-gray-600 mb-8">Thinking about buying the DJI Flip drone? Maybe you're stuck choosing between the DJI Mini 3, Mini 4 Pro, or the new Flip model?</p>
                         <p class="text-gray-600 mb-8">In this brutally honest hands-on review, I break down everything you need to know before you hit that Buy Now button.</p>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Mid-Review Check-in</h3>
-                        <p class="text-gray-600 mb-8">Time marker: flight 6 test loop. Money marker: $19 in quick-release props after a scuff. Trade-off/regret: I skipped a practice run and clipped a tree branch.</p>
+
                         <p class="text-gray-600 mb-8">As someone who has flown everything from the DJI Spark to the Pro series, I can tell you exactly who the DJI Flip is for,and who should absolutely avoid it.</p>
                         <p class="text-gray-600 mb-8">Spoiler: it’s basically a stripped-down Mini 3/4 with fewer sensors and a toy-like feel, but there’s still some surprising upside,especially if you're a beginner drone pilot.</p>
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
@@ -311,8 +313,8 @@
                         <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-shopping-cart mr-2 text-yellow-500"></i> Where to Buy</h2>
                             <ul class="list-disc pl-6 text-gray-600">
-                                <li><a href="https://amzn.to/3ZR1DoA" class="text-yellow-500 hover:text-yellow-600" target="_blank" rel="nofollow sponsored noopener">DJI Flip – USA</a></li>
-                                <li><a href="https://amzn.to/41Urhtp" class="text-yellow-500 hover:text-yellow-600" target="_blank" rel="nofollow sponsored noopener">DJI Flip – Australia</a></li>
+                                <li><a href="https://amzn.to/3ZR1DoA" class="text-yellow-500 hover:text-yellow-600" target="_blank" rel="nofollow noopener sponsored">DJI Flip – USA</a></li>
+                                <li><a href="https://amzn.to/41Urhtp" class="text-yellow-500 hover:text-yellow-600" target="_blank" rel="nofollow noopener sponsored">DJI Flip – Australia</a></li>
                             </ul>
                             <p class="text-gray-600 mt-4">If you’re looking for a budget-friendly drone with a good camera but fewer smart features, this might be just enough drone for you. But if you're after reliability, obstacle avoidance, and smoother flying, spend a little more,your future self will thank you.</p>
                         </div>
@@ -346,12 +348,12 @@
             <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Subscribe to get travel tips, gear reviews, and exclusive content delivered directly to your inbox.</p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="max-w-md mx-auto">
                 <div class="flex">
-                    <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required>
+                    <input type="email" name="_replyto" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-white text-gray-800 focus:outline-none focus:ring-1 focus:ring-yellow-500 w-full" required aria-label="Email address">
                     <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                     <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_gotcha" style="display:none">
-                    <button type="submit" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all"><i class="fas fa-paper-plane"></i></button>
+                    <button type="submit" aria-label="Subscribe by email" class="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-r-lg hover:shadow-lg transition-all"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
         </div>
@@ -360,7 +362,7 @@
     <!-- Footer -->
         <!-- Footer -->
         <!-- Footer -->
-    
+
     <aside class="author-bio" style="margin: 48px 0; padding: 24px; border: 1px solid rgba(245,197,24,.35); border-radius: 14px; background: rgba(245,197,24,.08);">
         <h2 style="margin: 0 0 12px; color: inherit;">About the author</h2>
         <p style="margin: 0 0 12px;"><strong>Carl Tomich</strong> is an Australian documentary filmmaker and travel creator who has filmed and lived across Vietnam, Japan, Bali, Thailand, Albania, Montenegro, Croatia, and Australia. His guides come from being on the ground with camera gear, local transport, short-term rentals, visa runs, long travel days, and the practical mistakes that rarely make it into polished tourism content.</p>
@@ -371,10 +373,10 @@
     <section class="max-w-4xl mx-auto px-6 py-10">
         <div class="affiliate-card" style="background: rgba(15, 15, 15, 0.78); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 24px; box-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.7);">
             <p style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; color: #f5c518; font-weight: 600; margin-bottom: 8px;">Travel Essential</p>
-            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Saily - Travel stress-free with data in 100+ countries!</h2>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">Skip the SIM cards ✈️ , grab a Saily eSIM before your next trip and stay online from day one.</p>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">🎟 Use code CARLRI5370 for a discount</p>
-            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="noopener nofollow sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">👉 Activate your eSIM now</a>
+            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Compare mobile data for your trip</h2>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Check your phone’s eSIM compatibility, destination coverage and current plan terms before buying.</p>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Referral disclosure: using code CARLRI5370 for an eligible purchase may give Carl Saily credit. Check any discount at checkout.</p>
+            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="nofollow noopener sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">View Saily plans and terms</a>
         </div>
     </section>
 
@@ -415,9 +417,9 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
@@ -439,7 +441,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

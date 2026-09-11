@@ -1,0 +1,17 @@
+/* Functional accessibility additions; existing visual tokens remain authoritative. */
+:focus-visible { outline: 2px solid #f5c518 !important; outline-offset: 4px; }
+img, video { max-width: 100%; }
+.article-content { overflow-wrap: break-word; }
+.article-content table { display: block; max-width: 100%; overflow-x: auto; }
+.article-content h2, .article-content h3 { scroll-margin-top: 6rem; }
+.skip-link { position: absolute; left: 1rem; top: -6rem; z-index: 10000; padding: .75rem 1rem; background: #f5c518; color: #0f0f0f; }
+.skip-link:focus { position: fixed; top: 1rem; }
+@media (prefers-reduced-motion: reduce) {
+ html { scroll-behavior: auto !important; }
+ *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+/* Some legacy pages have no collapsed-menu CSS. Keep visual and ARIA state aligned. */
+.mobile-menu:not(.open) { display: none !important; }
+@media (max-width: 767px) {
+ .mobile-menu.open { max-height: calc(100dvh - 4rem); overflow-y: auto; }
+}

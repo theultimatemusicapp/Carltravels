@@ -24,86 +24,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
-        
+
         :root {
             --primary: #f5c518; /* Muted gold for accents */
             --secondary: #2a2a2a; /* Deep charcoal for backgrounds */
             --dark: #1a1a1a; /* Near-black for text/body */
             --light: #d4d4d4; /* Light gray for secondary text */
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--dark);
             color: var(--light);
             scroll-behavior: smooth;
         }
-        
+
         .hero-gradient {
             background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
         }
-        
+
         .heading-font {
             font-family: 'Bebas Neue', sans-serif;
         }
-        
+
         .destination-card {
             transition: all 0.3s ease;
             perspective: 1000px;
         }
-        
+
         .destination-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
-        
+
         .destination-card-inner {
             transition: transform 0.6s;
             transform-style: preserve-3d;
         }
-        
+
         .destination-card:hover .destination-card-inner {
             transform: rotateY(10deg);
         }
-        
+
         .video-card:hover .play-icon {
             transform: scale(1.2);
             opacity: 0.9;
         }
-        
+
         .parallax {
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-        
+
         .navbar {
             backdrop-filter: blur(10px);
             background-color: rgba(255, 255, 255, 0.9);
             transition: all 0.3s ease;
         }
-        
+
         .navbar.scrolled {
             background-color: rgba(255, 255, 255, 0.98);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-        
+
         .testimonial-card {
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
             backdrop-filter: blur(5px);
         }
-        
+
         .floating {
             animation: floating 6s ease-in-out infinite;
         }
-        
+
         @keyframes floating {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
-        
+
         .wave-shape {
             position: absolute;
             bottom: 0;
@@ -112,28 +112,28 @@
             overflow: hidden;
             line-height: 0;
         }
-        
+
         .wave-shape svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
             height: 150px;
         }
-        
+
         .wave-shape .shape-fill {
             fill: #FFFFFF;
         }
-        
+
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-out;
         }
-        
+
         .mobile-menu.open {
             max-height: 500px;
         }
-    
+
         /* Berlin-inspired dark refresh */
         body {
             background-color: var(--dark);
@@ -262,6 +262,8 @@
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body class="text-gray-800">
     <!-- Navigation -->
@@ -284,7 +286,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -309,6 +311,7 @@
         <div class="container mx-auto px-6">
             <span class="text-yellow-500 font-medium tracking-widest uppercase text-sm">Carl Travels Guide</span>
             <h1 class="heading-font text-4xl md:text-6xl text-white mt-4 mb-4 leading-tight">Korcula Travel Guide</h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">Korcula Travel Guide</span></nav>
             <p class="text-lg text-gray-300 max-w-3xl leading-relaxed">How to visit Korcula, Croatia, with ferry tips, beaches, old town walks, wine stops, and island logistics.</p>
         </div>
     </section>
@@ -324,18 +327,17 @@
                         <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Your Ultimate Guide to Visiting Korčula, Croatia</h2>
                         <div class="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-600 mx-auto"></div>
                     </div>
-                    
+
                     <div class="prose max-w-none">
                         <p class="text-gray-600 mb-8">Some places you visit once and never forget. For me, Korčula isn’t just another Croatian island,it’s family history, old-world charm, and some of the best wine and beaches you’ll ever find.</p>
                         <p class="text-gray-600 mb-8">I recently spent a few unforgettable days exploring Korčula with friends, tracing family roots, and discovering why this island deserves a spot on your Croatian itinerary.</p>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Mid-Article Check-in</h3>
-                        <p class="text-gray-600 mb-4">Time marker: day 2 in Korčula Town. Money marker: €28 for a waterfront lunch and gelato. Trade-off/regret: I skipped a sunset swim and still think about it.</p>
+
                         <p class="text-gray-600 mb-8">Here’s everything you need to know about getting there, where to stay, what to see, and why 4 nights is the perfect amount of time on this magical island.</p>
-                        
+
                         <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-yellow-500"></i> How to Get to Korčula</h2>
                         <p class="text-gray-600 mb-4">From Dubrovnik, we took a ferry to Korčula Town. The ferry ride takes about 2 hours. Tickets cost around €16–€22 depending on the operator (we used <a href="https://www.krilo.hr/en/" target="_blank" class="text-yellow-500 hover:text-yellow-500">Kapetan Luka (Krilo)</a> fast ferry service). You can easily book your tickets online in advance or buy them at the port.</p>
                         <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Pro tip:</span> Book early in peak season, especially if you're traveling with a group. Ferry prices and availability may vary, so check schedules in advance.</p>
-                        
+
                         <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-bed mr-2 text-yellow-500"></i> Where to Stay on Korčula</h2>
                         <p class="text-gray-600 mb-4">We stayed at <a href="https://www.booking.com" target="_blank" class="text-yellow-500 hover:text-yellow-500" rel="nofollow sponsored noopener">Apartments Filippi</a> in Korčula Town:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
@@ -345,17 +347,17 @@
                             <li>The owner was super friendly and helpful,highly recommend if you're traveling with friends or family.</li>
                         </ul>
                         <p class="text-gray-600 mb-4"><strong>🌟 Bonus:</strong> Having a kitchen and living space made it easy to enjoy a few wines at home after a long day of exploring.</p>
-                        
+
                         <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-wine-glass mr-2 text-yellow-500"></i> First Stop: Lunch and Wine by the Sea</h2>
                         <p class="text-gray-600 mb-4">After checking in, we wandered into the Old Town and had a late lunch at <a href="https://www.tripadvisor.com/Restaurant_Review-g303810-d12423964-Reviews-Pensatore_Kitchen_Wine-Korcula_Island_Dubrovnik_Neretva_County_Dalmatia.html" target="_blank" class="text-yellow-500 hover:text-yellow-500">Pensatore Kitchen & Wine</a>. It’s right on the waterfront with stunning ocean views. The food was absolutely incredible,fresh seafood, hearty local dishes, and of course, Korčula's famous wine. Honestly? One of the best meals I had in Croatia.</p>
-                        
+
                         <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-umbrella-beach mr-2 text-yellow-500"></i> Beaches and Relaxation</h2>
                         <p class="text-gray-600 mb-4">During our stay, we found some great beach spots to unwind:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
                             <li><strong>Luka Korčulanska Beach:</strong> A fantastic place to swim, relax, and enjoy a low-key day close to town.</li>
                             <li><strong>Žitna Beach:</strong> Later during our road trip around the island, we found this hidden gem near the town of Čara. Crystal-clear water and fewer crowds make it a perfect local escape.</li>
                         </ul>
-                        
+
                         <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-landmark mr-2 text-yellow-500"></i> Exploring Korčula Old Town</h2>
                         <p class="text-gray-600 mb-4">Of course, no visit is complete without exploring Korčula Old Town:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
@@ -371,7 +373,7 @@
                             </div>
                             <p class="text-gray-600 text-sm mt-2">Check out more on <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="text-yellow-500 hover:text-yellow-500">my YouTube channel</a>!</p>
                         </div>
-                        
+
                         <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-car mr-2 text-yellow-500"></i> Hiring a Car to Explore More of the Island</h2>
                         <p class="text-gray-600 mb-4">Korčula isn’t huge, but hiring a car is the best way to see beyond the main town. We rented a small car and:</p>
                         <ul class="list-disc pl-6 mb-4 text-gray-600">
@@ -386,13 +388,13 @@
                             <li>Fantastic seafood restaurants.</li>
                         </ul>
                         <p class="text-gray-600 mb-4">Vela Luka feels more local and laid-back compared to Korčula Town,a perfect day trip. <span class="text-yellow-500 font-medium">💡 Tip:</span> Check rental car agencies in Korčula Town for availability and book in advance during peak season.</p>
-                        
+
                         <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-ferry mr-2 text-yellow-500"></i> Getting Off the Island: Ferry to Split</h2>
                         <p class="text-gray-600 mb-4">After four amazing nights on Korčula, we caught a ferry from Vela Luka to Split. Tickets are easy to book the day before or even the day of (depending on the season). Another simple, affordable ferry ride.</p>
                         <p class="text-gray-600 mb-4"><span class="text-yellow-500 font-medium">💡 Tip:</span> If you’re flexible, you can also check for high-speed catamarans for quicker travel.</p>
                     </div>
                 </div>
-                
+
                 <!-- Sidebar -->
                 <div class="lg:col-span-1">
                     <div class="bg-gray-50 rounded-xl p-6 shadow-lg mb-8">
@@ -406,12 +408,12 @@
                             <li><i class="fas fa-ferry mr-2 text-yellow-500"></i> Easy ferries to Dubrovnik & Split</li>
                         </ul>
                     </div>
-                    
+
                     <div class="bg-gradient-to-r from-yellow-500 to-amber-600 rounded-xl p-6 shadow-lg mb-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Join My Travel Community</h3>
                         <p class="text-gray-600 mb-4">Get exclusive travel tips, destination guides, and special offers straight to your inbox.</p>
                         <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col gap-4">
-                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required>
+                            <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" required aria-label="Email address">
                             <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                             <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
                             <input type="hidden" name="_captcha" value="false">
@@ -422,7 +424,7 @@
                         </form>
                         <p class="text-gray-500 text-sm mt-4">No spam, ever. Unsubscribe anytime.</p>
                     </div>
-                    
+
                     <div class="text-center">
                         <a href="destinations.html" class="inline-flex items-center px-6 py-3 border border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-900 transition-all">
                             More Destinations <i class="fas fa-arrow-right ml-2"></i>
@@ -430,7 +432,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Final Thoughts -->
             <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4"><i class="fas fa-microphone mr-2 text-yellow-500"></i> Final Thoughts</h2>
@@ -450,7 +452,7 @@
         </div>
     </section>
 
-    
+
 
 
     <!-- Travel Essentials & Creator Gear -->
@@ -459,14 +461,14 @@
             <div class="text-center mb-12">
                 <span class="section-title text-yellow-400 uppercase text-xs">Creator Corner</span>
                 <h2 class="heading-font text-3xl md:text-4xl text-white mt-4">Travel Essentials &amp; Creator Gear</h2>
-                <p class="text-gray-400 mt-3 max-w-2xl mx-auto">Gear and resources I use on every European city run,from instant connectivity to the camera kit that captures Berlin’s glow.</p>
+                <p class="text-gray-400 mt-3 max-w-2xl mx-auto">Connectivity and filming resources for planning your trip. Check compatibility, current prices and provider terms before buying.</p>
             </div>
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <div class="glass-card rounded-3xl p-8 space-y-4">
                     <h3 class="heading-font text-2xl text-white">Travel Essentials</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5 off (I receive $5 credit)</li>
-                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Sign up here</a></li>
+                        <li>Saily eSIM (check destination coverage): Use code <span class="font-semibold">CARLRI5370</span> for an eligible first-plan discount (I may receive referral credit)</li>
+                        <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Sign up here</a></li>
                     </ul>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4">
@@ -479,23 +481,23 @@
                 <div class="glass-card rounded-3xl p-8 space-y-4">
                     <h3 class="heading-font text-2xl text-white">My Gear – US Links</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Flip</a></li>
-                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Sony A7C II</a></li>
-                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Tamron 28–200</a></li>
-                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">RØDE Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Think Tank Backpack</a></li>
+                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Tamron 28–200</a></li>
+                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Think Tank Backpack</a></li>
                     </ul>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4">
                     <h3 class="heading-font text-2xl text-white">My Gear – AU Links</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Flip</a></li>
-                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Sony A7C II</a></li>
-                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Osmo Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Tamron 24–200</a></li>
-                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">RØDE Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Think Tank Backpack</a></li>
+                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Flip</a></li>
+                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Sony A7C II</a></li>
+                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Osmo Pocket 3</a></li>
+                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Tamron 24–200</a></li>
+                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">RØDE Wireless PRO</a></li>
+                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Think Tank Backpack</a></li>
                     </ul>
                 </div>
             </div>
@@ -505,7 +507,7 @@
     <!-- Footer -->
         <!-- Footer -->
         <!-- Footer -->
-    
+
     <aside class="author-bio" style="margin: 48px 0; padding: 24px; border: 1px solid rgba(245,197,24,.35); border-radius: 14px; background: rgba(245,197,24,.08);">
         <h2 style="margin: 0 0 12px; color: inherit;">About the author</h2>
         <p style="margin: 0 0 12px;"><strong>Carl Tomich</strong> is an Australian documentary filmmaker and travel creator who has filmed and lived across Vietnam, Japan, Bali, Thailand, Albania, Montenegro, Croatia, and Australia. His guides come from being on the ground with camera gear, local transport, short-term rentals, visa runs, long travel days, and the practical mistakes that rarely make it into polished tourism content.</p>
@@ -516,10 +518,10 @@
     <section class="max-w-4xl mx-auto px-6 py-10">
         <div class="affiliate-card" style="background: rgba(15, 15, 15, 0.78); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 24px; box-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.7);">
             <p style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; color: #f5c518; font-weight: 600; margin-bottom: 8px;">Travel Essential</p>
-            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Saily - Travel stress-free with data in 100+ countries!</h2>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">Skip the SIM cards ✈️ , grab a Saily eSIM before your next trip and stay online from day one.</p>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">🎟 Use code CARLRI5370 for a discount</p>
-            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="noopener nofollow sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">👉 Activate your eSIM now</a>
+            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Compare mobile data for your trip</h2>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Check your phone’s eSIM compatibility, destination coverage and current plan terms before buying.</p>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Referral disclosure: using code CARLRI5370 for an eligible purchase may give Carl Saily credit. Check any discount at checkout.</p>
+            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="nofollow noopener sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">View Saily plans and terms</a>
         </div>
     </section>
 
@@ -560,9 +562,9 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
@@ -584,7 +586,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

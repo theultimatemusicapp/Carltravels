@@ -117,8 +117,11 @@
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta name="author" content="Carl Tomich">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body class="text-gray-200">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
@@ -126,7 +129,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/" class="nav-link font-medium">Home</a><a href="/portfolio.html" class="nav-link font-medium">Films & Work</a><a href="/blog.html" class="nav-link font-medium">Blog</a><a href="/gear.html" class="nav-link font-medium">Creator Gear</a><a href="/destinations.html" class="nav-link font-medium">Honest Guides</a><a href="/about.html" class="nav-link font-medium">About</a><a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);"><i class="fas fa-bars text-2xl"></i></button>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i class="fas fa-bars text-2xl"></i></button>
             </div>
             <div id="mobile-menu" class="mobile-menu md:hidden"><div class="pt-4 pb-2 space-y-2"><a href="/" class="block px-3 py-2 rounded-md nav-link">Home</a><a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Films & Work</a><a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a><a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Creator Gear</a><a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Honest Guides</a><a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a><a href="/donate.html" class="block px-3 py-2 rounded-md nav-link" style="color: var(--primary);">Donate</a></div></div>
         </div>
@@ -137,12 +140,13 @@
         <div class="container mx-auto px-6 relative z-10 py-32">
             <span class="inline-block mb-4 px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-xs uppercase tracking-[0.2em]">Southern Albania Guide</span>
             <h1 class="heading-font text-4xl md:text-6xl text-white max-w-4xl">Sarandë, Ksamil and Butrint Travel Guide: How to Visit Southern Albania</h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">Sarandë, Ksamil and Butrint Travel Guide: How to Visit Southern Albania</span></nav>
                 <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
             <p class="mt-6 text-lg text-gray-300 max-w-3xl">A practical, easy-to-follow route for beaches, archaeology, and coastal town life along Albania's Ionian coast.</p>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="py-16 bg-[#171717]">
             <div class="container mx-auto px-6 grid lg:grid-cols-3 gap-8">
                 <div class="glass-card rounded-3xl p-6"><h2 class="heading-font text-2xl text-white mb-3">Why this region works</h2><p>Sarandë gives you transport and nightlife, Ksamil gives you clear shallow water, and Butrint gives you one of the Balkans' most important archaeological sites. All three are close enough to visit in a short stay.</p></div>
@@ -257,5 +261,6 @@
             else navbar.classList.remove('scrolled');
         });
     </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

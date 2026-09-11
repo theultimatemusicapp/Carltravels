@@ -232,6 +232,8 @@
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body class="min-h-screen">
     <!-- Navigation -->
@@ -254,7 +256,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -279,6 +281,7 @@
         <div class="container mx-auto px-6">
             <span class="text-yellow-500 font-medium tracking-widest uppercase text-sm">Carl Travels Guide</span>
             <h1 class="heading-font text-4xl md:text-6xl text-white mt-4 mb-4 leading-tight">Sony A7S III Review</h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">Sony A7S III Review</span></nav>
             <p class="text-lg text-gray-300 max-w-3xl leading-relaxed">A creator-focused review of the Sony A7S III as a video workhorse for travel and client shoots.</p>
         </div>
     </section>
@@ -291,8 +294,7 @@
                     <h2 class="heading-font text-3xl text-white">They Call It the Workhorse</h2>
                     <p class="text-gray-300 leading-relaxed">It started, as legends often do, in a cramped Hanoi café where travel shooters, wedding photographers, and freelance filmmakers traded stories.</p>
                     <p class="text-gray-300 leading-relaxed">New bodies arrived each year like flashy summer flings , glossy, expensive, full of promises , yet the same battered silver-trimmed cameras kept appearing on the table: the Sony A7III.</p>
-                    <h3 class="text-yellow-400 font-semibold uppercase tracking-wide text-xs">Mid-Article Check-in</h3>
-                    <p class="text-gray-300 leading-relaxed">Time marker: year three of daily use. Money marker: $180 in battery replacements over time. Trade-off/regret: I skipped a second body for redundancy and felt it on one paid gig.</p>
+
                     <p class="text-gray-300 leading-relaxed">“Why do you still use that?” a young vlogger asked, pointing at a scarred A7III dangling from Mai’s wrist, while flaunting his brand-new flagship.</p>
                     <p class="text-gray-300 leading-relaxed">Mai smiled and poured another espresso. “Because it stays true,” she said. “It doesn’t ask for headlines. It just gets the shot.”</p>
                     <p class="text-gray-300 leading-relaxed">Released in 2018, yet still , in 2025 , one of the most reliable, balanced, and affordable full-frame mirrorless cameras ever made. It isn’t the flashiest, but it’s the one countless creators rely on because it simply works.</p>
@@ -417,7 +419,7 @@
                         <li class="flex items-start gap-2"><i class="fas fa-tag text-yellow-400 mt-1"></i><span>Sony A7R V Body: ~$3,900 new.</span></li>
                         <li class="flex items-start gap-2"><i class="fas fa-tag text-yellow-400 mt-1"></i><span>Sony A7S III Body: ~$3,500 new.</span></li>
                     </ul>
-                    <a href="https://amzn.to/3Ktc4tq" target="_blank" rel="nofollow sponsored noopener" class="mt-6 inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-semibold hover:shadow-xl transition-all">
+                    <a href="https://amzn.to/3Ktc4tq" target="_blank" rel="nofollow noopener sponsored" class="mt-6 inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-semibold hover:shadow-xl transition-all">
                         <i class="fas fa-shopping-bag mr-2"></i> See Current Deals
                     </a>
                 </div>
@@ -442,7 +444,7 @@
                 <p class="text-gray-300 leading-relaxed">The Sony A7III is that trusted friend: not the flashiest, but always ready. In a market obsessed with what’s new, it quietly keeps delivering , producing professional results for thousands of creators at a fraction of the price of newer bodies.</p>
                 <p class="text-gray-300 leading-relaxed">Need a smaller full-frame option for travel days? The <a href="sony-a7cii-review.html" class="text-yellow-400 hover:text-yellow-300 underline">Sony A7C II review</a> covers the compact alternative.</p>
                 <p class="text-gray-300 leading-relaxed">If you truly need bleeding-edge specs, grab the A7IV or A7S III. But if you want the most balanced full-frame camera in 2025, and a tool that will stay with you for years, the A7III is still one of the smartest buys in photography.</p>
-                <a href="https://amzn.to/3Ktc4tq" target="_blank" rel="nofollow sponsored noopener" class="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-semibold shadow-lg hover:shadow-xl transition-all">
+                <a href="https://amzn.to/3Ktc4tq" target="_blank" rel="nofollow noopener sponsored" class="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-semibold shadow-lg hover:shadow-xl transition-all">
                     <i class="fas fa-shopping-cart mr-2"></i> Buy the Sony A7III on Amazon
                 </a>
             </div>
@@ -455,7 +457,7 @@
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Our Travel Community</h2>
             <p class="text-gray-700 mb-8 max-w-2xl mx-auto">Subscribe for gear reviews, travel guides, and behind-the-scenes stories from the road. No spam, just inspiration.</p>
             <form action="https://formspree.io/f/mnnnoogg" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required>
+                <input type="email" name="_replyto" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent flex-1" required aria-label="Email address">
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Travels">
                 <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
@@ -467,7 +469,7 @@
 
         <!-- Footer -->
         <!-- Footer -->
-    
+
     <aside class="author-bio" style="margin: 48px 0; padding: 24px; border: 1px solid rgba(245,197,24,.35); border-radius: 14px; background: rgba(245,197,24,.08);">
         <h2 style="margin: 0 0 12px; color: inherit;">About the author</h2>
         <p style="margin: 0 0 12px;"><strong>Carl Tomich</strong> is an Australian documentary filmmaker and travel creator who has filmed and lived across Vietnam, Japan, Bali, Thailand, Albania, Montenegro, Croatia, and Australia. His guides come from being on the ground with camera gear, local transport, short-term rentals, visa runs, long travel days, and the practical mistakes that rarely make it into polished tourism content.</p>
@@ -478,10 +480,10 @@
     <section class="max-w-4xl mx-auto px-6 py-10">
         <div class="affiliate-card" style="background: rgba(15, 15, 15, 0.78); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 24px; box-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.7);">
             <p style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; color: #f5c518; font-weight: 600; margin-bottom: 8px;">Travel Essential</p>
-            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Saily - Travel stress-free with data in 100+ countries!</h2>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">Skip the SIM cards ✈️ , grab a Saily eSIM before your next trip and stay online from day one.</p>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">🎟 Use code CARLRI5370 for a discount</p>
-            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="noopener nofollow sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">👉 Activate your eSIM now</a>
+            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Compare mobile data for your trip</h2>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Check your phone’s eSIM compatibility, destination coverage and current plan terms before buying.</p>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Referral disclosure: using code CARLRI5370 for an eligible purchase may give Carl Saily credit. Check any discount at checkout.</p>
+            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="nofollow noopener sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">View Saily plans and terms</a>
         </div>
     </section>
 
@@ -522,9 +524,9 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>

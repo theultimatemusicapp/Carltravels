@@ -297,6 +297,8 @@
         }
     </style>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 
 <body>
@@ -321,7 +323,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -354,7 +356,7 @@
                 sizes="100vw">
             <img class="hero-image" src="/assets/images/hero/carl-okinawa-front-1920.jpg"
                 srcset="/assets/images/hero/carl-okinawa-front-768.jpg 768w, /assets/images/hero/carl-okinawa-front-1280.jpg 1280w, /assets/images/hero/carl-okinawa-front-1920.jpg 1920w"
-                sizes="100vw" alt="" fetchpriority="high" decoding="async">
+                sizes="100vw" alt="" fetchpriority="high" decoding="async" width="1920" height="1080">
         </picture>
         <div class="hero-overlay"></div>
         <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
@@ -495,7 +497,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Film 1: Busking for Berlin (Remastered) -->
                 <div class="film-card">
-                    <img loading="lazy" src="/busking-for-berlin-poster.jpg" alt="Busking for Berlin Remastered" class="film-poster">
+                    <img loading="lazy" src="/busking-for-berlin-poster.jpg" alt="Busking for Berlin Remastered" class="film-poster" width="1024" height="638">
                     <div class="p-6">
                         <h3 class="heading-font text-2xl mb-2" style="color: var(--light);">Busking for Berlin</h3>
                         <p class="text-sm mb-4" style="color: var(--muted);">2014 , Remastered Edition</p>
@@ -653,19 +655,7 @@
     </section>
 
     <!-- The Method Section -->
-    <section class="section" style="background: var(--black); border-top: 1px solid var(--dark-3); border-bottom: 1px solid var(--dark-3);">
-        <div class="container mx-auto max-w-6xl">
-            <div class="grid md:grid-cols-[1fr_auto] gap-8 items-center">
-                <div>
-                    <span class="section-label">MEDIA AND PRESS ENQUIRIES</span>
-                    <h2 class="heading-font section-heading" style="color: var(--light);">Official Media Room</h2>
-                    <div class="section-divider"></div>
-                    <p class="text-lg max-w-3xl" style="color: var(--muted);">Download the Carl Tomich press kit, view selected coverage and request approved photographs.</p>
-                </div>
-                <a href="/media" class="btn-primary">Open Media / Press</a>
-            </div>
-        </div>
-    </section>
+
 
     <section class="section" style="background: var(--black);" hidden>
         <div class="container mx-auto max-w-4xl text-center">
@@ -788,19 +778,7 @@
     </section>
 
     <!-- Gear & Travel -->
-    <section class="section" style="background: var(--black); border-top: 1px solid var(--dark-3); border-bottom: 1px solid var(--dark-3);">
-        <div class="container mx-auto max-w-6xl">
-            <div class="grid md:grid-cols-[1fr_auto] gap-8 items-center">
-                <div>
-                    <span class="section-label">MEDIA AND PRESS ENQUIRIES</span>
-                    <h2 class="heading-font section-heading" style="color: var(--light);">Official Media Room</h2>
-                    <div class="section-divider"></div>
-                    <p class="text-lg max-w-3xl" style="color: var(--muted);">Download the Carl Tomich press kit, view selected coverage and request approved photographs.</p>
-                </div>
-                <a href="/media" class="btn-primary">Open Media / Press</a>
-            </div>
-        </div>
-    </section>
+
 
     <section class="section" style="background: var(--black);" hidden>
         <div class="container mx-auto max-w-6xl">
@@ -846,7 +824,7 @@
                 class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-6">
                 <input type="email" name="_replyto" placeholder="Your email"
                     class="flex-1 px-6 py-4 bg-transparent border-2 text-white focus:outline-none" required
-                    style="background: var(--dark); border-color: var(--dark-3); color: var(--light);">
+                    style="background: var(--dark); border-color: var(--dark-3); color: var(--light);" aria-label="Email address">
                 <input type="hidden" name="_subject" value="Newsletter Subscription from Carl Tomich">
                 <input type="hidden" name="_next" value="https://carltravels.com/thankyou.html">
                 <input type="hidden" name="_captcha" value="false">
@@ -905,11 +883,11 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" rel="noopener noreferrer" class="nav-link text-2xl"><i
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" rel="noopener noreferrer" class="nav-link text-2xl"><i
                                 class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" rel="noopener noreferrer" class="nav-link text-2xl"><i
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" rel="noopener noreferrer" class="nav-link text-2xl"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" rel="noopener noreferrer" class="nav-link text-2xl"><i
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" rel="noopener noreferrer" class="nav-link text-2xl"><i
                                 class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>

@@ -312,6 +312,8 @@
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta name="author" content="Carl Tomich">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 
 <body class="text-gray-300">
@@ -335,7 +337,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -389,7 +391,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/balilogo.jpg" alt="Bali"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1304" height="915">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Bali</h3>
@@ -402,10 +404,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Discover Bali’s serene beaches, vibrant culture, and hidden
                                 challenges in this tropical paradise.</p>
@@ -434,10 +433,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Indonesia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.7</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">A calmer Bali alternative with clear water, snorkeling, and
                                 relaxed island days.</p>
@@ -453,7 +449,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/berlinlogo.jpg" alt="Berlin"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1218" height="763">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Berlin</h3>
@@ -466,10 +462,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Immerse yourself in Berlin's vibrant history, art scene, and
                                 nightlife in this dynamic capital city.</p>
@@ -485,7 +478,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/melbounelogo.jpg" alt="Melbourne"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1167" height="741">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Melbourne</h3>
@@ -496,10 +489,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Oceania</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.7</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Experience Melbourne's cultural richness, coffee culture, and
                                 coastal charm in Australia's vibrant south.</p>
@@ -515,7 +505,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/cairnslogo.jpg" alt="Cairns"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1159" height="736">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Cairns</h3>
@@ -528,10 +518,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Oceania</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.9</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Dive into the wonders of the Great Barrier Reef and explore
                                 the tropical beauty of Cairns.</p>
@@ -560,10 +547,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Oceania</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">A laid-back base for the Great Barrier Reef, Daintree
                                 Rainforest, and Four Mile Beach.</p>
@@ -579,7 +563,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/phuketlogo.jpg" alt="Phuket"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1198" height="751">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Phuket</h3>
@@ -590,10 +574,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.6</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Relax on Phuket's stunning beaches and explore its vibrant
                                 markets and island adventures.</p>
@@ -623,10 +604,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.5</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">A practical seaside base near Bangkok with beaches, night markets,
                                 Market Village, Bluport, and easy long-stay routines.</p>
@@ -642,7 +620,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/hanoilogo.jpg" alt="Hanoi"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1145" height="712">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Hanoi</h3>
@@ -653,10 +631,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.7</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Discover Hanoi's rich history, bustling streets, and authentic
                                 Vietnamese culture.</p>
@@ -686,10 +661,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.9</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Plan the right cruise length, costs, and itinerary for
                                 Vietnam’s most iconic bay.</p>
@@ -705,7 +677,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/southeastasia.jpg" alt="Ho Chi Minh City skyline"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="356" height="356">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Ho Chi Minh City</h3>
@@ -718,10 +690,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.7</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Follow a realistic one-day Saigon loop from Ben Thanh Market
                                 to Bitexco's skydeck and Bui Vien's neon chaos.</p>
@@ -751,10 +720,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Plan Sarandë as your base, beach days in Ksamil, and a half-day exploring Butrint National Park.</p>
                             <a href="sarande-ksamil-butrint-travel-guide/"
@@ -783,10 +749,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">5.0</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Sail Tràng An’s cave rivers, cycle rice fields, and climb the
                                 Múa Cave dragon staircase just two hours from Hanoi.</p>
@@ -816,10 +779,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Vietnam</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Where to stay, best season, Sunset Town at night, and whether the Hon Thom cable car + Sun World pass is actually worth it.</p>
                             <a href="phuquoctravelguide.html"
@@ -849,10 +809,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Vietnam</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Ride the Fansipan cable car, chase cloud inversions, and
                                 wander rice terraces in Vietnam’s northern highlands.</p>
@@ -879,10 +836,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">5.0</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Road-trip Northern Vietnam with Easy Rider drivers, canyon
                                 passes, and homestay nights based out of Bông Hostel.</p>
@@ -910,10 +864,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.9</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Step inside Hanoi’s oldest Buddhist temple with Nhi’s local
                                 insights, sunrise photo tips, and cultural etiquette.</p>
@@ -943,10 +894,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Hanoi</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.9</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Dive into Hanoi’s newest family adventure with sharks, rays,
                                 and interactive exhibits inside Lotte Mall Westlake.</p>
@@ -976,10 +924,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Hanoi</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">5.0</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Build the ultimate Hanoi itinerary with Carl &amp; Nhi , Train
                                 Street thrills, sunrise markets, pagoda sunsets, and modern city surprises.</p>
@@ -1007,10 +952,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Climb Nha Trang’s legendary Husband Rock for sweeping bay
                                 views, Cham culture, and golden-hour photo ops.</p>
@@ -1040,10 +982,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">5.0</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Glide over Nha Trang Bay on the Vinpearl cable car for a full
                                 day of castles, coasters, water slides, and sunset shows.</p>
@@ -1059,7 +998,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/osakalogo.jpg" alt="Osaka"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1200" height="630">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Osaka</h3>
@@ -1070,10 +1009,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Savor Osaka's culinary delights and explore its lively streets
                                 and modern attractions.</p>
@@ -1089,7 +1025,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/korculalogo.jpg" alt="Korcula"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1291" height="761">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Korcula</h3>
@@ -1100,10 +1036,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.6</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Unwind on Korcula's pristine beaches and explore its medieval
                                 charm in Croatia's Adriatic.</p>
@@ -1119,7 +1052,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/budvalogo.jpg" alt="Budva Old Town and Adriatic Coast"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="1024" height="576">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Budva</h3>
@@ -1132,10 +1065,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Discover Budva’s historic Old Town, clear Adriatic beaches,
                                 and budget-friendly charm in Montenegro.</p>
@@ -1150,8 +1080,8 @@
                 <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="danang">
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
-                            <img loading="lazy" src="/dananglogo.jpg" alt="Da Nang"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <img loading="lazy" src="/dananglogo-optimized.webp" alt="Da Nang"
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="870" height="602">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Da Nang</h3>
@@ -1164,10 +1094,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.7</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Enjoy Da Nang's golden beaches, Marble Mountains, and vibrant
                                 coastal culture in Vietnam.</p>
@@ -1183,7 +1110,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/tokyologo.jpg" alt="Tokyo"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="768" height="432">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Tokyo</h3>
@@ -1196,10 +1123,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.9</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Experience Tokyo's vibrant city life, from bustling Shibuya
                                 Crossing to serene temples.</p>
@@ -1215,7 +1139,7 @@
                     <div class="destination-card-inner">
                         <div class="relative overflow-hidden h-64">
                             <img loading="lazy" src="/kyotologo.jpg" alt="Kyoto"
-                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" width="450" height="300">
                             <div class="absolute inset-0 destination-overlay"></div>
                             <div class="absolute bottom-0 left-0 p-6 text-white">
                                 <h3 class="text-xl font-bold">Kyoto</h3>
@@ -1226,10 +1150,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Discover Kyoto's timeless temples, tranquil gardens, and rich
                                 cultural heritage.</p>
@@ -1259,10 +1180,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.7</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">A practical guide to Hong Kong's huge waterfront mall, Canton
                                 Road, Star Ferry, food options, and nearby Tsim Sha Tsui walks.</p>
@@ -1292,10 +1210,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe / Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">4.8</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">A one day Istanbul walking guide from Taksim Square down
                                 Istiklal Street to Galata Tower and Galata Bridge.</p>
@@ -1325,10 +1240,7 @@
                             <div class="flex justify-between items-center mb-3">
                                 <span class="text-gray-500 text-sm"><i
                                         class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Asia</span>
-                                <div class="flex items-center">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                                    <span class="font-medium">5.0</span>
-                                </div>
+
                             </div>
                             <p class="text-gray-600 mb-4">Ride the 90-minute Shinkansen from Osaka to honor hibakusha
                                 stories, explore the Peace Memorial Museum, and sail to Miyajima for coastal serenity.
@@ -1705,10 +1617,10 @@
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
                     <h3 class="heading-font text-2xl text-white">Travel Essentials</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Saily eSIM (200+ countries): Use code <span class="font-semibold">CARLRI5370</span> for $5
+                        <li>Saily eSIM (check destination coverage): Use code <span class="font-semibold">CARLRI5370</span> for $5
                             off (I receive $5 credit)</li>
                         <li>Wise (multi-currency card): <a href="https://wise.com/invite/irhc/carlt62"
-                                class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Sign up here</a></li>
+                                class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Sign up here</a></li>
                     </ul>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
@@ -1725,34 +1637,34 @@
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
                     <h3 class="heading-font text-2xl text-white">My Gear – US Links</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Flip</a>
+                        <li><a href="https://amzn.to/45iZULT" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Flip</a>
                         </li>
-                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Sony A7C
+                        <li><a href="https://amzn.to/4mHhQ8H" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Sony A7C
                                 II</a></li>
-                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Pocket
+                        <li><a href="https://amzn.to/4miS3UJ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Pocket
                                 3</a></li>
-                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Tamron
+                        <li><a href="https://amzn.to/4lvd1hI" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Tamron
                                 28–200</a></li>
-                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">RØDE
+                        <li><a href="https://amzn.to/4oHMXTy" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">RØDE
                                 Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Think Tank
+                        <li><a href="https://amzn.to/467fEAU" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Think Tank
                                 Backpack</a></li>
                     </ul>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4 shadow-xl">
                     <h3 class="heading-font text-2xl text-white">My Gear – AU Links</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Flip</a>
+                        <li><a href="https://amzn.to/41zmAVV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Flip</a>
                         </li>
-                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Sony A7C
+                        <li><a href="https://amzn.to/45Qk2Fw" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Sony A7C
                                 II</a></li>
-                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">DJI Osmo
+                        <li><a href="https://amzn.to/4gaYLJZ" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">DJI Osmo
                                 Pocket 3</a></li>
-                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Tamron
+                        <li><a href="https://amzn.to/4n73D5P" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Tamron
                                 24–200</a></li>
-                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">RØDE
+                        <li><a href="https://amzn.to/46kv8CG" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">RØDE
                                 Wireless PRO</a></li>
-                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow sponsored noopener">Think Tank
+                        <li><a href="https://amzn.to/3I5mApV" class="text-yellow-500 hover:text-yellow-400" target="_blank" rel="nofollow noopener sponsored">Think Tank
                                 Backpack</a></li>
                     </ul>
                 </div>
@@ -1800,9 +1712,9 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
@@ -1825,7 +1737,7 @@
 
     <!-- Back to Top Button -->
     <button id="back-to-top"
-        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

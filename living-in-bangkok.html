@@ -101,9 +101,13 @@
     </script>
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta property="article:modified_time" content="2026-08-02T00:00:00+07:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Navigation -->
     <nav id="navbar" class="navbar fixed w-full z-50">
         <div class="container mx-auto px-6 py-4">
@@ -122,7 +126,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -150,13 +154,14 @@
                 class="bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold uppercase mb-4 inline-block">City
                 Guide</span>
             <h1 class="text-5xl md:text-8xl font-bold heading-font mb-6 tracking-tight">Living in Bangkok</h1>
+<nav aria-label="Breadcrumb" class="text-sm text-gray-400 my-4"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / <span aria-current="page">Living in Bangkok</span></nav>
                 <p class="content-review-note text-sm text-gray-400 mt-3">By <a href="/about.html" class="text-yellow-400 hover:text-yellow-300 underline">Carl Tomich</a> | Last reviewed August 2, 2026 | <a href="/editorial-policy.html" class="text-yellow-400 hover:text-yellow-300 underline">Editorial policy</a></p>
             <p class="text-xl md:text-2xl opacity-90 font-light leading-relaxed">The $1,000 "live like a king" myth vs
                 the numbers I actually saw after ten trips and a fresh look in 2025.</p>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-20 max-w-6xl">
+    <main id="main-content" class="container mx-auto px-6 py-20 max-w-6xl">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
             <!-- Sidebar (Quick Stats) -->
             <aside class="lg:col-span-1 space-y-8">
@@ -193,10 +198,10 @@
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
                             <img loading="lazy" src="/travel-gear.jpg" alt="DJI Pocket 3"
-                                class="w-12 h-12 rounded object-contain bg-gray-50">
+                                class="w-12 h-12 rounded object-contain bg-gray-50" width="1640" height="900">
                             <div>
                                 <p class="text-sm font-bold">DJI Osmo Pocket 3</p>
-                                <a href="https://amzn.to/4miS3UJ" class="text-yellow-600 text-xs hover:underline" target="_blank" rel="nofollow sponsored noopener">View
+                                <a href="https://amzn.to/4miS3UJ" class="text-yellow-600 text-xs hover:underline" target="_blank" rel="nofollow noopener sponsored">View
                                     Gear &rarr;</a>
                             </div>
                         </div>
@@ -296,10 +301,10 @@
     <section class="max-w-4xl mx-auto px-6 py-10">
         <div class="affiliate-card" style="background: rgba(15, 15, 15, 0.78); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 24px; box-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.7);">
             <p style="text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; color: #f5c518; font-weight: 600; margin-bottom: 8px;">Travel Essential</p>
-            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Saily - Travel stress-free with data in 100+ countries!</h2>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">Skip the SIM cards ✈️ , grab a Saily eSIM before your next trip and stay online from day one.</p>
-            <p style="margin-bottom: 16px; color: #cfd0d3;">🎟 Use code CARLRI5370 for a discount</p>
-            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="noopener nofollow sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">👉 Activate your eSIM now</a>
+            <h2 style="font-size: 1.6rem; font-weight: 600; color: #ffffff; margin-bottom: 12px;">Compare mobile data for your trip</h2>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Check your phone’s eSIM compatibility, destination coverage and current plan terms before buying.</p>
+            <p style="margin-bottom: 16px; color: #cfd0d3;">Referral disclosure: using code CARLRI5370 for an eligible purchase may give Carl Saily credit. Check any discount at checkout.</p>
+            <a href="https://www.saily.com/?referral=CARLRI5370" target="_blank" rel="nofollow noopener sponsored" style="display: inline-block; background: #f5c518; color: #0f0f0f; font-weight: 700; padding: 12px 20px; border-radius: 999px; text-decoration: none;">View Saily plans and terms</a>
         </div>
     </section>
 
@@ -337,9 +342,9 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i
                                 class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -361,7 +366,7 @@
 
     <!-- Back to Top Button -->
     <button id="back-to-top"
-        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible">
+        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

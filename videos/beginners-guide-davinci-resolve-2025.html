@@ -104,6 +104,10 @@
     <meta name="robots" content="noindex,follow">
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <meta name="author" content="Carl Tomich">
+    <meta property="og:image" content="https://carltravels.com/assets/images/about/carl-tomich-documentary-filmmaker-1200.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
 </head>
 <body>
         <!-- Navigation -->
@@ -125,7 +129,7 @@
                     <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
                 </div>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -221,7 +225,7 @@
     <section class="py-16 bg-slate-950/70">
         <div class="container mx-auto px-6">
             <div class="info-card flex flex-col md:flex-row items-center md:items-start gap-8">
-                <img loading="lazy" src="../carlcamera.jpg" alt="Carl filming a tutorial setup" class="w-full md:w-64 rounded-2xl shadow-xl object-cover">
+                <img loading="lazy" src="../carlcamera.jpg" alt="Carl filming a tutorial setup" class="w-full md:w-64 rounded-2xl shadow-xl object-cover" width="720" height="479">
                 <div class="space-y-4">
                     <h2 class="heading-font text-3xl text-white">Keep Learning with Carl</h2>
                     <p class="text-gray-200">Have a Resolve question? Drop it in the comments on YouTube and I’ll add it to a future tutorial. Next up: Fusion titles, audio mastering, and grading Sony S-Log footage without the noise.</p>
@@ -279,9 +283,9 @@
                 <div>
                     <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i class="fab fa-imdb"></i></a>
                     </div>
                     <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
                 </div>
@@ -321,5 +325,6 @@
             mobileMenu.classList.toggle('open');
         });
     </script>
+    <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
