@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Children’s Animation Workflow with ATlabs | Carl Travels</title>
+    <link rel="canonical" href="https://carltravels.com/atlabs-ai-childrens-animation-workflow.html">
+    <meta name="description"
+        content="How I turned a Suno counting song into a children’s animation with ATlabs, from visual setup to scene review, lyrics and timing checks.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="My AI Children’s Animation Workflow with ATlabs | Carl Travels">
+    <meta property="og:description" content="How I turned a Suno counting song into a children’s animation with ATlabs, from visual setup to scene review, lyrics and timing checks.">
+    <meta property="og:url" content="https://carltravels.com/atlabs-ai-childrens-animation-workflow.html">
+    <meta property="og:type" content="article">
+
+    <!-- Styles from Blog/Essays Page for consistency -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+
+        :root {
+            --primary: #f5c518;
+            --secondary: #2a2a2a;
+            --dark: #1a1a1a;
+            --light: #d4d4d4;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            scroll-behavior: smooth;
+        }
+
+        #atlabs-workflow { scroll-margin-top: 6rem; }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(42, 42, 42, 0.9), rgba(26, 26, 26, 0.9));
+        }
+
+        .heading-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .blog-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, rgba(18, 18, 18, 0.96), rgba(10, 10, 10, 0.92));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .card-overlay {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9) 100%);
+        }
+
+        .glass-card {
+            background: rgba(26, 26, 26, 0.68);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 20px 45px -20px rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(26, 26, 26, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(26, 26, 26, 0.98);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .wave-shape {
+            display: none;
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            background: rgba(12, 12, 12, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+
+        /* Force dark theme override for card internals */
+        .blog-card .bg-white {
+            background-color: #0f0f0f !important;
+        }
+
+        .blog-card .text-gray-500,
+        .blog-card .text-gray-600,
+        .blog-card .text-gray-700,
+        .blog-card .text-gray-800 {
+            color: #d1d5db !important;
+        }
+
+        .blog-card .text-gray-900 {
+            color: #f3f4f6 !important;
+        }
+
+        .blog-card .bg-gray-900 {
+            background-color: #0f0f0f !important;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G72KT5ZW2J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G72KT5ZW2J');
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "My AI Children’s Animation Workflow with ATlabs | Carl Travels",
+  "description": "How I turned a Suno counting song into a children’s animation with ATlabs, from visual setup to scene review, lyrics and timing checks.",
+  "url": "https://carltravels.com/atlabs-ai-childrens-animation-workflow.html",
+  "author": {
+    "@type": "Person",
+    "name": "Carl Tomich",
+    "url": "https://carltravels.com/about.html"
+  }
+}
+    </script>
+    <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
+    <meta name="author" content="Carl Tomich">
+    <meta property="og:image" content="https://img.youtube.com/vi/S2rd53ow9Ek/maxresdefault.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
+</head>
+
+<body class="text-gray-300">
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold">
+                    <span class="heading-font" style="color: var(--primary);">CARL TOMICH</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="nav-link font-medium">Home</a>
+                    <a href="/portfolio.html" class="nav-link font-medium">Films & Work</a>
+                    <a href="/blog.html" class="nav-link font-medium">Blog</a>
+                    <a href="/gear.html" class="nav-link font-medium">Creator Gear</a>
+                    <a href="/destinations.html" class="nav-link font-medium">Honest Guides</a>
+                    <a href="/about.html" class="nav-link font-medium">About</a>
+                    <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="/" class="block px-3 py-2 rounded-md nav-link">Home</a>
+                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Films & Work</a>
+                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
+                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Creator Gear</a>
+                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Honest Guides</a>
+                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
+                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link"
+                        style="color: var(--primary);">Donate</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <!-- ATlabs workflow: steps and timestamps verified against the companion video description. -->
+    <section id="atlabs-workflow" aria-labelledby="atlabs-workflow-title" class="pt-28 pb-16 bg-[#0b0b0b]">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mb-8">
+                <a href="/gear.html" class="text-yellow-300 hover:text-yellow-200 underline inline-block mb-4">Creator Gear</a>
+                <p class="text-sm text-gray-400 mb-4">By <a href="/about.html" class="underline">Carl Tomich</a> | October 5, 2026</p>
+                <h1 id="atlabs-workflow-title" class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">My AI Children’s Animation Workflow</h1>
+                <p class="text-gray-300 mb-4">For this project, I used Suno and ATlabs to turn a counting song into a 3D cartoon music video about the numbers one to ten. Here’s how I took the song into the Kids Music Video workflow, generated scenes, and reviewed the animation and sing-along lyrics.</p>
+                <p class="text-sm text-gray-400">Disclosure: ATlabs sponsored this video. The workflow and opinions shown are my own.</p>
+            </div>
+
+            <div class="glass-card rounded-3xl overflow-hidden mb-8">
+                <iframe class="w-full h-auto aspect-video border-0" width="1280" height="720"
+                    src="https://www.youtube.com/embed/S2rd53ow9Ek"
+                    title="My ATlabs tutorial: making a children’s counting song into an animated learning video"
+                    loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <p class="text-gray-300">See the process and part of the finished counting video.</p>
+                    <a href="https://youtu.be/S2rd53ow9Ek" class="text-yellow-300 hover:text-yellow-200 underline shrink-0">Watch my walkthrough</a>
+                </div>
+            </div>
+
+            <h2 class="heading-font text-2xl md:text-3xl text-white mb-6">How I put it together</h2>
+            <ol class="grid md:grid-cols-2 gap-6 list-decimal pl-6 mb-8">
+                <li class="glass-card rounded-3xl p-6">
+                    <h3 class="text-white font-semibold text-lg mb-3">Start with the counting song</h3>
+                    <p class="text-gray-300 mb-3">I generated the song with Suno AI. The idea was a children’s learning song covering one to ten, with the music providing the starting point for the animation.</p>
+                    <a href="https://youtu.be/S2rd53ow9Ek?t=66" class="text-yellow-300 hover:text-yellow-200 underline text-sm">01:06 — Song in Suno</a>
+                </li>
+                <li class="glass-card rounded-3xl p-6">
+                    <h3 class="text-white font-semibold text-lg mb-3">Bring the track into ATlabs</h3>
+                    <p class="text-gray-300 mb-3">In the Kids Music Video workflow, I added the song using a Suno link. The walkthrough then covers the track upload and audio analysis before the visual setup.</p>
+                    <a href="https://youtu.be/S2rd53ow9Ek?t=121" class="text-yellow-300 hover:text-yellow-200 underline text-sm">02:01 — Track and audio analysis</a>
+                </li>
+                <li class="glass-card rounded-3xl p-6">
+                    <h3 class="text-white font-semibold text-lg mb-3">Set the look and characters</h3>
+                    <p class="text-gray-300 mb-3">I chose a 3D cartoon style and a landscape 16:9 format, then went through the creative direction concepts and character casting and design.</p>
+                    <a href="https://youtu.be/S2rd53ow9Ek?t=151" class="text-yellow-300 hover:text-yellow-200 underline text-sm">02:31 — Style, concepts and casting</a>
+                </li>
+                <li class="glass-card rounded-3xl p-6">
+                    <h3 class="text-white font-semibold text-lg mb-3">Generate the animated scenes</h3>
+                    <p class="text-gray-300 mb-3">With that setup in place, I generated the full video. This gave me the animated scenes to review in the Story Editor.</p>
+                    <a href="https://youtu.be/S2rd53ow9Ek?t=178" class="text-yellow-300 hover:text-yellow-200 underline text-sm">02:58 — Generate the video</a>
+                </li>
+                <li class="glass-card rounded-3xl p-6">
+                    <h3 class="text-white font-semibold text-lg mb-3">Review and try Polish</h3>
+                    <p class="text-gray-300 mb-3">I reviewed the result scene by scene in the Story Editor, tried the Polish tool, and looked at motion, captions and the animated sing-along lyrics. Generating the scenes was only part of the process.</p>
+                    <a href="https://youtu.be/S2rd53ow9Ek?t=218" class="text-yellow-300 hover:text-yellow-200 underline text-sm">03:38 — Editing and polishing</a>
+                </li>
+                <li class="glass-card rounded-3xl p-6">
+                    <h3 class="text-white font-semibold text-lg mb-3">Compare and watch the result</h3>
+                    <p class="text-gray-300 mb-3">I also tested the standard music video workflow before showing part of the finished video. That comparison is a separate part of the walkthrough, after the Kids Music Video edit.</p>
+                    <a href="https://youtu.be/S2rd53ow9Ek?t=287" class="text-yellow-300 hover:text-yellow-200 underline text-sm">04:47 — Standard workflow comparison</a>
+                    <a href="https://youtu.be/S2rd53ow9Ek?t=363" class="block mt-2 text-yellow-300 hover:text-yellow-200 underline text-sm">06:03 — Finished video excerpt</a>
+                </li>
+            </ol>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="glass-card rounded-3xl p-6 md:p-8">
+                    <h2 class="heading-font text-2xl text-white mb-4">Who I’d point towards this</h2>
+                    <p class="text-gray-300 mb-4">If you’re a creator exploring animated learning songs or sing-along videos for children, this is a practical example to follow. My project starts with a song, so it’s especially relevant if you want to see how music can become the basis for an animated video.</p>
+                    <p class="text-gray-300 mb-6">Watch the edit as well as the finished excerpt to decide whether this process fits what you want to make.</p>
+                    <a href="https://www.atlabs.ai/ai-kids-videos?utm_source=youtube&amp;utm_medium=eduvideo&amp;utm_campaign=Carl+Tomich"
+                        rel="sponsored nofollow" class="inline-block px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-full font-medium hover:shadow-lg transition-all">Explore ATlabs Kids Music Video</a>
+                    <p class="text-sm text-gray-400 mt-3">This is the ATlabs link from my sponsored walkthrough.</p>
+                </div>
+                <div class="glass-card rounded-3xl p-6 md:p-8">
+                    <h2 class="heading-font text-2xl text-white mb-4">What I’d check before publishing</h2>
+                    <ul class="list-disc pl-5 text-gray-300 space-y-3">
+                        <li><strong>Lyrics:</strong> read through the sing-along text and check it against the song, especially the numbers in a counting video.</li>
+                        <li><strong>Timing:</strong> watch with the audio on and check how the lyrics and scenes line up with the track.</li>
+                        <li><strong>Consistency:</strong> compare scenes as you review, rather than judging the result from one good-looking shot.</li>
+                    </ul>
+                    <p class="text-gray-300 mt-5">These are the checks I flag in the walkthrough. I wouldn’t treat a generated video as ready to publish without reviewing it; trying Polish is part of the edit, not a reason to skip that review.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-[#050505]" aria-labelledby="read-next-title">
+        <div class="container mx-auto px-6">
+            <div class="glass-card rounded-3xl p-6 md:p-8">
+                <h2 id="read-next-title" class="heading-font text-3xl text-white mb-4">Read next</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><a href="/gear.html" class="text-yellow-300 hover:text-yellow-200 underline">More creator gear and workflows</a></li>
+                    <li><a href="/beginners-guide-davinci-resolve-2025.html" class="text-yellow-300 hover:text-yellow-200 underline">My beginner’s guide to DaVinci Resolve</a></li>
+                    <li><a href="/soundmarket.html" class="text-yellow-300 hover:text-yellow-200 underline">My SoundMarket review</a></li>
+                </ul>
+                <p class="text-gray-300 mt-6">I’m Carl Tomich, a documentary filmmaker and travel creator. Find more about my work on my <a href="/about.html" class="text-yellow-300 hover:text-yellow-200 underline">about page</a>.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="py-12" style="background: var(--dark); border-top: 1px solid var(--dark-3);">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="heading-font text-2xl mb-4" style="color: var(--primary);">CARL TOMICH</h3>
+                    <p class="mb-4 text-sm" style="color: var(--light);">
+                        Documentary Filmmaker
+                    </p>
+                    <p class="text-sm" style="color: var(--muted);">
+                        Engineering extreme life projects and turning them into films since 2014.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Films</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://www.youtube.com/watch?v=WjtMEQx34NE" target="_blank"
+                                class="nav-link">Busking for Berlin (2014)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6iDgajITe6Q" target="_blank" class="nav-link">A
+                                Sail Untold (2022)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=S8L4Hmwkgiw" target="_blank" class="nav-link">Busk
+                                Life (2024)</a></li>
+                        <li><a href="/films/martial-arts-documentary.html" class="nav-link">Martial Arts Doc (In Production)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Explore</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="nav-link">About</a></li>
+                        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="/gear.html" class="nav-link">Creator Gear</a></li>
+                        <li><a href="/destinations.html" class="nav-link">Honest Guides</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4" style="color: var(--light);">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a aria-label="Carl Tomich on YouTube" href="https://www.youtube.com/@TheCarlTomich" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-youtube"></i></a>
+                        <a aria-label="Carl Tomich on Instagram" href="https://www.instagram.com/carlostomich/" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a aria-label="Carl Tomich on IMDb" href="https://www.imdb.com/name/nm6869150/" target="_blank" class="nav-link text-2xl"><i
+                                class="fab fa-imdb"></i></a>
+                    </div>
+                    <a href="mailto:watchcarltravel@gmail.com" class="nav-link text-sm">watchcarltravel@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+                style="border-color: var(--dark-3);">
+                <p class="text-sm mb-4 md:mb-0" style="color: var(--muted);">
+                    © 2026 Carl Tomich. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="/contact.html" class="text-sm nav-link">Contact</a>
+                    <a href="/privacy-policy.html" class="text-sm nav-link">Privacy Policy</a>
+                    <a href="/affiliate-disclosure.html" class="text-sm nav-link">Affiliate Disclosure</a>
+                    <a href="/editorial-policy.html" class="text-sm nav-link">Editorial Policy</a>
+                    <a href="/terms-and-conditions.html" class="text-sm nav-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+        window.addEventListener('scroll', function () {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) { nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
+        });
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+</body>
+
+</html>
