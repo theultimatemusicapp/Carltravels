@@ -1101,4 +1101,14 @@
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/CCDmJ-Dn1Sk</video:player_loc>
     </video:video>
   </url>
+  <url>
+    <loc>https://carltravels.com/aiarty-video-enhancer-3-8-review.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/qzeQjtWeApg/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Aiarty Video Enhancer 3.8 Review: Can AI Improve 1080p to 4K?</video:title>
+      <video:description>Carl Tomich reviews Aiarty Video Enhancer 3.8 from a filmmaker’s perspective: 1080p to 4K, noisy footage, blur, compression and practical editing checks.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/qzeQjtWeApg</video:player_loc>
+    </video:video>
+  </url>
 </urlset>
+
