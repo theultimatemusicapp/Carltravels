@@ -1,0 +1,76 @@
+{
+  "approved_home_text": [
+    "Independent travel films & field notes",
+    "Good stories",
+    "start",
+    "out there.",
+    "I’m Carl, a filmmaker from Perth. I travel with a camera, follow my curiosity and share the people, places and practical details along the way.",
+    "▶",
+    "Watch the films",
+    "↗",
+    "Explore the places",
+    "→",
+    "Australian filmmaker · Often somewhere else",
+    "FROM THE ROAD",
+    "OKINAWA, JAPAN",
+    "A camera. A little curiosity. See where it goes.",
+    "↗",
+    "For the trip you’re planning.",
+    "And the life you’re curious about.",
+    "01",
+    "Get your bearings",
+    "Places, guides & life abroad",
+    "↗",
+    "02",
+    "Behind the camera",
+    "The kit that comes with me",
+    "↗",
+    "A few places to start",
+    "Follow the curiosity.",
+    "All destinations",
+    "↗",
+    "The person behind the camera",
+    "Some plans work.",
+    "The rest make good films.",
+    "From busking in Berlin to filming martial arts across Asia, my work follows the things I’m curious enough to try. Carl Travels is where the films meet the useful details from being there.",
+    "Carl Tomich",
+    "A little more about me",
+    "↗",
+    "▶",
+    "From the documentary archive",
+    "A guitar, a city",
+    "and a camera.",
+    "Busking for Berlin follows the street music scene that became part of my own life. Start here if you want to see where the filmmaking came from.",
+    "Into the film archive",
+    "↗"
+  ],
+  "cards": [
+    {
+      "path": "/korcula.html",
+      "image": "/korculalogo.jpg",
+      "title": "Korcula Travel Guide",
+      "description": "Explore Korčula, Croatia, with Carl Travels' ultimate guide. Watch a video tour, see stunning images, and discover ferries, accommodation, beaches, Old Town, and wineries."
+    },
+    {
+      "path": "/hanoitravelguide.html",
+      "image": "/hanoilogo.jpg",
+      "title": "Hanoi Travel Guide: Three Days to One Week",
+      "description": "Plan a realistic Hanoi trip: where to stay, a flexible itinerary, food, local transport, accessibility and day trips, with Carl’s original travel films."
+    },
+    {
+      "path": "/japanonabudget.html",
+      "image": "/japanbudget.jpg",
+      "title": "How to Visit Japan on a Budget",
+      "description": "Discover how to travel Japan on a budget in 2025 with Carl Travels’ guide. Learn money-saving tips on accommodation, food, transport, and attractions from firsthand experience."
+    }
+  ],
+  "section_order": [
+    "cinema-home-hero",
+    "cinema-intro-strip",
+    "cinema-destination-stories",
+    "cinema-about-band",
+    "cinema-film-shelf"
+  ],
+  "photograph": "/assets/images/about/carl-tomich-camera-operator-1024.jpg",
+  "film_poster": "/busking-for-berlin-poster.jpg"
+}
