@@ -77,13 +77,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const normalisePath = (path) => path.replace(/\/index\.html$/, "/").replace(/\/$/, "") || "/";
     const currentPath = normalisePath(window.location.pathname);
-    document.querySelectorAll(".nav-link, .mobile-link").forEach((link) => {
+    document.querySelectorAll(".nav-link, .mobile-link, .cinema-nav-link").forEach((link) => {
         const url = new URL(link.getAttribute("href") || "", window.location.href);
         if (url.origin === window.location.origin && !url.hash && normalisePath(url.pathname) === currentPath) {
             link.classList.add("active");
             link.setAttribute("aria-current", "page");
         }
     });
+
+    // Close the shared desktop menu when a visitor leaves it or presses Escape.
+    const moreMenu = document.querySelector(".cinema-more");
+    if (moreMenu) {
+        document.addEventListener("click", (event) => {
+            if (!moreMenu.contains(event.target)) moreMenu.open = false;
+        });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && moreMenu.open) {
+                moreMenu.open = false;
+                moreMenu.querySelector("summary").focus();
+            }
+        });
+    }
 
     const mainElement = document.querySelector("main");
     if (mainElement && !mainElement.classList.contains("article-content")) {

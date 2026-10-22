@@ -8,7 +8,7 @@ Run from the repository root when adding a new page.
 from pathlib import Path
 import re
 
-STYLESHEET = '    <link rel="stylesheet" href="/assets/css/cinema.css?v=20261022">\n'
+STYLESHEET = '    <link rel="stylesheet" href="/assets/css/cinema.css?v=20261022-2">\n'
 
 
 def layout(path):

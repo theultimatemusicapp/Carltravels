@@ -299,53 +299,41 @@
     <link rel="stylesheet" href="/assets/css/dark-theme-overrides.css">
     <link rel="stylesheet" href="/assets/css/accessibility.css">
     <link rel="alternate" type="application/rss+xml" title="Carl Travels RSS" href="/feed.xml">
-    <link rel="stylesheet" href="/assets/css/cinema.css?v=20261022">
+    <link rel="stylesheet" href="/assets/css/cinema.css?v=20261022-2">
 </head>
 
 <body data-cinema-layout="home">
     <!-- Navigation -->
     <!-- Navigation -->
-    <nav id="navbar" class="navbar fixed w-full z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-2xl font-bold">
-                    <span class="heading-font" style="color: var(--primary);">CARL TOMICH</span>
-                </a>
+    <!-- Cinema navigation: shared across the complete site. -->
+<nav id="navbar" class="navbar cinema-header" aria-label="Main navigation">
+ <div class="cinema-nav-shell">
+  <a class="cinema-wordmark" href="/" aria-label="Carl Travels home">CARL TRAVELS<span>FILMS. PEOPLE. PLACES.</span></a>
+  <div class="cinema-desktop-nav"><a class="cinema-nav-link" href="/destinations.html">Destinations</a>
+<a class="cinema-nav-link" href="/portfolio.html">Films</a>
+<a class="cinema-nav-link" href="/gear.html">My kit</a>
+<a class="cinema-nav-link" href="/about.html">About Carl</a>
+   <details class="cinema-more"><summary>More <span aria-hidden="true">+</span></summary><div class="cinema-more-links"><a class="cinema-nav-link" href="/blog.html">Blog &amp; field notes</a>
+<a class="cinema-nav-link" href="/media/">Media / Press</a>
+<a class="cinema-nav-link" href="/donate.html">Support the films</a>
+<a class="cinema-nav-link" href="/">Home</a></div></details>
+   <a class="cinema-work-link" href="/contact.html">Work with me <span aria-hidden="true">↗</span></a>
+  </div>
+  <button id="mobile-menu-button" class="cinema-menu-button" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">Menu <i class="fas fa-bars" aria-hidden="true"></i></button>
+ </div>
+ <div id="mobile-menu" class="mobile-menu cinema-mobile-menu"><div class="cinema-mobile-links"><a class="cinema-nav-link" href="/destinations.html">Destinations</a>
+<a class="cinema-nav-link" href="/portfolio.html">Films</a>
+<a class="cinema-nav-link" href="/gear.html">My kit</a>
+<a class="cinema-nav-link" href="/about.html">About Carl</a>
+<a class="cinema-nav-link" href="/contact.html">Work with me</a>
+<a class="cinema-nav-link" href="/blog.html">Blog &amp; field notes</a>
+<a class="cinema-nav-link" href="/media/">Media / Press</a>
+<a class="cinema-nav-link" href="/donate.html">Support the films</a>
+<a class="cinema-nav-link" href="/">Home</a></div></div>
+</nav>
 
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/" class="nav-link font-medium">Home</a>
-                    <a href="/portfolio.html" class="nav-link font-medium">Films & Work</a>
-                    <a href="/blog.html" class="nav-link font-medium">Blog</a>
-                    <a href="/gear.html" class="nav-link font-medium">Creator Gear</a>
-                    <a href="/destinations.html" class="nav-link font-medium">Honest Guides</a>
-                    <a href="/about.html" class="nav-link font-medium">About</a>
-                    <a href="/media" class="nav-link font-medium">Media / Press</a>
-                    <a href="/donate.html" class="nav-link font-medium" style="color: var(--primary);">Donate</a>
-                </div>
-
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none" style="color: var(--light);" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="mobile-menu md:hidden">
-                <div class="pt-4 pb-2 space-y-2">
-                    <a href="/" class="block px-3 py-2 rounded-md nav-link">Home</a>
-                    <a href="/portfolio.html" class="block px-3 py-2 rounded-md nav-link">Films & Work</a>
-                    <a href="/blog.html" class="block px-3 py-2 rounded-md nav-link">Blog</a>
-                    <a href="/gear.html" class="block px-3 py-2 rounded-md nav-link">Creator Gear</a>
-                    <a href="/destinations.html" class="block px-3 py-2 rounded-md nav-link">Honest Guides</a>
-                    <a href="/about.html" class="block px-3 py-2 rounded-md nav-link">About</a>
-                    <a href="/media" class="block px-3 py-2 rounded-md nav-link">Media / Press</a>
-                    <a href="/donate.html" class="block px-3 py-2 rounded-md nav-link"
-                        style="color: var(--primary);">Donate</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Approved Cinema homepage. The original hero image and responsive sources are retained. -->
+    <section class="hero cinema-home-hero" aria-labelledby="home-title">
         <picture class="hero-picture" aria-hidden="true">
             <source type="image/avif"
                 srcset="/assets/images/hero/carl-okinawa-front-768.avif 768w, /assets/images/hero/carl-okinawa-front-1280.avif 1280w, /assets/images/hero/carl-okinawa-front-1920.avif 1920w"
@@ -358,71 +346,25 @@
                 sizes="100vw" alt="" fetchpriority="high" decoding="async" width="1920" height="1080">
         </picture>
         <div class="hero-overlay"></div>
-        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
-            <h1 class="heading-font text-white mb-6" style="font-size: clamp(2.5rem, 8vw, 7rem);">
-                CARL TOMICH
-            </h1>
-            <p class="text-2xl mb-4" style="color: var(--primary);">Filmmaker. Travel content creator. Available for hire.</p>
-            <p class="text-lg mb-12 max-w-3xl mx-auto" style="color: var(--light);">
-                Documentary-style video work, honest travel guides, creator gear, and field notes from building a life abroad.
-            </p>
-            <div class="hero-actions">
-                <a href="/portfolio.html" class="hero-cta hero-cta-primary">Films & Work</a>
-                <a href="#start-here" class="hero-cta hero-cta-secondary">Explore Carl Travels</a>
+        <div class="cinema-hero-copy">
+            <div class="cinema-eyebrow">Independent travel films &amp; field notes</div>
+            <h1 id="home-title">Good stories<br>start <em>out there.</em></h1>
+            <p>I’m Carl, a filmmaker from Perth. I travel with a camera, follow my curiosity and share the people, places and practical details along the way.</p>
+            <div class="cinema-actions">
+                <a class="cinema-button" href="/portfolio.html"><span aria-hidden="true">▶</span> Watch the films <span aria-hidden="true">↗</span></a>
+                <a class="cinema-text-link" href="/destinations.html">Explore the places <span aria-hidden="true">→</span></a>
             </div>
+            <div class="cinema-hero-footnote"><i aria-hidden="true"></i> Australian filmmaker · Often somewhere else</div>
         </div>
+        <div class="cinema-image-mark" aria-label="Photo location: Okinawa, Japan"><span aria-hidden="true">+</span>FROM THE ROAD<strong>OKINAWA, JAPAN</strong></div>
+        <a class="cinema-image-caption" href="/about.html"><span>A camera. A little curiosity. See where it goes.</span><span aria-hidden="true">↗</span></a>
     </section>
-
-    <section id="start-here" class="section" style="background: var(--dark);">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-12">
-                <span class="section-label">START HERE</span>
-                <h2 class="heading-font section-heading" style="color: var(--light);">Choose A Lane</h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="max-w-3xl mx-auto" style="color: var(--muted);">
-                    The homepage is the front door. The deeper pages are where the films, tools, guides, and personal writing live.
-                </p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <a href="/portfolio.html" class="film-card p-6 block">
-                    <span class="section-label">Hire / Watch</span>
-                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Films & Work</h3>
-                    <p style="color: var(--muted);">Documentaries, commercial work, music videos, weddings, travel campaigns, and video services.</p>
-                </a>
-                <a href="/blog.html" class="film-card p-6 block">
-                    <span class="section-label">Read</span>
-                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Blog</h3>
-                    <p style="color: var(--muted);">Life abroad, moving overseas, YouTube, mistakes, money, and the less polished side of travel.</p>
-                </a>
-                <a href="/gear.html" class="film-card p-6 block">
-                    <span class="section-label">Use</span>
-                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Creator Gear</h3>
-                    <p style="color: var(--muted);">Camera gear, editing tools, eSIMs, daily kit, and creator products I actually use.</p>
-                </a>
-                <a href="/destinations.html" class="film-card p-6 block">
-                    <span class="section-label">Plan</span>
-                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Honest Guides</h3>
-                    <p style="color: var(--muted);">Useful guides for Vietnam, Japan, Bali, Thailand, Europe, and long-term life abroad.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" style="background: var(--black); border-top: 1px solid var(--dark-3); border-bottom: 1px solid var(--dark-3);">
-        <div class="container mx-auto max-w-6xl">
-            <div class="grid md:grid-cols-[1fr_auto] gap-8 items-center">
-                <div>
-                    <span class="section-label">MEDIA AND PRESS ENQUIRIES</span>
-                    <h2 class="heading-font section-heading" style="color: var(--light);">Official Media Room</h2>
-                    <div class="section-divider"></div>
-                    <p class="text-lg max-w-3xl" style="color: var(--muted);">Download the Carl Tomich press kit, view selected coverage and request approved photographs.</p>
-                </div>
-                <a href="/media" class="btn-primary">Open Media / Press</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" style="background: var(--black);" hidden>
+    <div class="cinema-intro-strip">
+        <p>For the trip you’re planning.<br>And the life you’re curious about.</p>
+        <a href="/destinations.html"><small>01</small><div><b>Get your bearings</b><p>Places, guides &amp; life abroad</p></div><span aria-hidden="true">↗</span></a>
+        <a href="/gear.html"><small>02</small><div><b>Behind the camera</b><p>The kit that comes with me</p></div><span aria-hidden="true">↗</span></a>
+    </div>
+    <section class="section cinema-guide-section" style="background: var(--black);">
         <div class="container mx-auto max-w-6xl">
             <div class="mb-12">
                 <span class="section-label">CARL TRAVELS</span>
@@ -479,8 +421,7 @@
         </div>
     </section>
 
-    <!-- Filmography Section -->
-    <section id="filmography" class="section" style="background: var(--dark);" hidden>
+    <section id="filmography" class="section cinema-films-section" style="background: var(--dark);">
         <div class="container mx-auto max-w-7xl">
             <div class="text-center mb-16">
                 <span class="section-label">FILMOGRAPHY</span>
@@ -575,6 +516,61 @@
             </div>
         </div>
     </section>
+
+    <section id="start-here" class="section" style="background: var(--dark);">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <span class="section-label">START HERE</span>
+                <h2 class="heading-font section-heading" style="color: var(--light);">Choose A Lane</h2>
+                <div class="section-divider mx-auto"></div>
+                <div class="cinema-existing-intro"><h3>CARL TOMICH</h3><p>Filmmaker. Travel content creator. Available for hire.</p><p>Documentary-style video work, honest travel guides, creator gear, and field notes from building a life abroad.</p></div>
+                <p class="max-w-3xl mx-auto" style="color: var(--muted);">
+                    The homepage is the front door. The deeper pages are where the films, tools, guides, and personal writing live.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="/portfolio.html" class="film-card p-6 block">
+                    <span class="section-label">Hire / Watch</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Films & Work</h3>
+                    <p style="color: var(--muted);">Documentaries, commercial work, music videos, weddings, travel campaigns, and video services.</p>
+                </a>
+                <a href="/blog.html" class="film-card p-6 block">
+                    <span class="section-label">Read</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Blog</h3>
+                    <p style="color: var(--muted);">Life abroad, moving overseas, YouTube, mistakes, money, and the less polished side of travel.</p>
+                </a>
+                <a href="/gear.html" class="film-card p-6 block">
+                    <span class="section-label">Use</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Creator Gear</h3>
+                    <p style="color: var(--muted);">Camera gear, editing tools, eSIMs, daily kit, and creator products I actually use.</p>
+                </a>
+                <a href="/destinations.html" class="film-card p-6 block">
+                    <span class="section-label">Plan</span>
+                    <h3 class="heading-font text-2xl mb-3" style="color: var(--light);">Honest Guides</h3>
+                    <p style="color: var(--muted);">Useful guides for Vietnam, Japan, Bali, Thailand, Europe, and long-term life abroad.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--black); border-top: 1px solid var(--dark-3); border-bottom: 1px solid var(--dark-3);">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-[1fr_auto] gap-8 items-center">
+                <div>
+                    <span class="section-label">MEDIA AND PRESS ENQUIRIES</span>
+                    <h2 class="heading-font section-heading" style="color: var(--light);">Official Media Room</h2>
+                    <div class="section-divider"></div>
+                    <p class="text-lg max-w-3xl" style="color: var(--muted);">Download the Carl Tomich press kit, view selected coverage and request approved photographs.</p>
+                </div>
+                <a href="/media" class="btn-primary">Open Media / Press</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Filmography Section -->
+
 
     <!-- Current Project Section -->
     <section id="current-project" class="section" style="background: var(--black);" hidden>
@@ -948,7 +944,7 @@
             });
         });
     </script>
-    <script src="/assets/js/site.js" defer></script>
+    <script src="/assets/js/site.js?v=20261022-2" defer></script>
 </body>
 
 </html>
