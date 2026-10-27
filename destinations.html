@@ -722,6 +722,35 @@
                         </div>
                     </div>
                 </div>
+                <!-- Destination: Theth, Albania -->
+                <div class="destination-card rounded-xl overflow-hidden shadow-lg" data-destination-id="theth-albania">
+                    <div class="destination-card-inner">
+                        <div class="relative overflow-hidden h-64">
+                            <img loading="lazy" src="https://i.ytimg.com/vi/kNXpk3xkAuQ/hqdefault.jpg"
+                                alt="Theth in Autumn video thumbnail"
+                                class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 destination-overlay"></div>
+                            <div class="absolute bottom-0 left-0 p-6 text-white">
+                                <h3 class="text-xl font-bold">Theth, Albania</h3>
+                                <p class="text-sm">Albanian Alps • Autumn Walks</p>
+                            </div>
+                            <span
+                                class="absolute top-4 right-4 bg-yellow-500 text-black text-xs px-3 py-1 rounded-full">New</span>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-gray-500 text-sm"><i
+                                        class="fas fa-map-marker-alt mr-1 text-yellow-500"></i> Europe</span>
+
+                            </div>
+                            <p class="text-gray-600 mb-4">Plan Theth’s village walks, waterfall and Blue Eye hikes, mountain transport and autumn visit.</p>
+                            <a href="theth-albania-travel-guide/"
+                                class="text-yellow-500 font-medium hover:text-yellow-500 inline-flex items-center">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Destination 6a: Ninh Bình -->
                 <div class="destination-card rounded-xl overflow-hidden shadow-lg">
                     <div class="destination-card-inner">
@@ -1315,6 +1344,13 @@
                                     </div>
                                 </div>
                                 <div class="space-y-2">
+                                    <button class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between" data-country-toggle="Albania"><span class="font-semibold">Albania</span><i class="fas fa-chevron-down text-sm"></i></button>
+                                    <div class="space-y-2 hidden" data-country-list="Albania">
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Albania" data-map-destination="theth-albania"><span class="font-semibold text-gray-900">Theth</span></button>
+                                        <button class="map-destination-item w-full text-left px-4 py-3 rounded-xl bg-white" data-country="Albania" data-map-destination="sarande-ksamil-butrint"><span class="font-semibold text-gray-900">Sarandë, Ksamil &amp; Butrint</span></button>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
                                     <button
                                         class="country-toggle w-full px-4 py-3 rounded-xl flex items-center justify-between"
                                         data-country-toggle="Germany">
@@ -1898,6 +1934,13 @@
                             coords: [10.8231, 106.6297],
                             url: 'one-day-in-hcmc-guide.html',
                             video: 'https://www.youtube.com/embed/ULOM2GJDvak'
+                        },
+                        {
+                            id: 'theth-albania',
+                            name: 'Theth, Albania',
+                            coords: [42.393, 19.771],
+                            url: 'theth-albania-travel-guide/',
+                            video: 'https://www.youtube.com/embed/kNXpk3xkAuQ'
                         },
                         {
                             id: 'sarande-ksamil-butrint',
