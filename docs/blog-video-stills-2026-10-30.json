@@ -1,0 +1,222 @@
+[
+  {
+    "page": "scoot-plus-review.html",
+    "image": "assets/images/articles/scoot-plus/seat-and-legroom.webp",
+    "source": "https://www.youtube.com/watch?v=-jWYZg-gJ6U&t=43s",
+    "timestamp_seconds": 43,
+    "alt": "Scoot Plus seat-back pockets, footwell and centre armrest filmed from Carl’s seat",
+    "caption": "The seat and footwell from my Scoot Plus flight. This view gives more context than a seat-pitch number alone.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 29948
+  },
+  {
+    "page": "scoot-plus-review.html",
+    "image": "assets/images/articles/scoot-plus/cabin-view.webp",
+    "source": "https://www.youtube.com/watch?v=-jWYZg-gJ6U&t=239s",
+    "timestamp_seconds": 239,
+    "alt": "View along the Scoot aircraft cabin with windows, seats and overhead lockers",
+    "caption": "The cabin from my flight. Watch the footage alongside the comfort and service discussion before deciding whether the upgrade suits you.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 37956
+  },
+  {
+    "page": "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+    "image": "assets/images/articles/bose-everse-comparison/rear-controls.webp",
+    "source": "https://www.youtube.com/watch?v=7BCbr5dNLk8&t=142s",
+    "timestamp_seconds": 142,
+    "alt": "Rear control panel of one portable PA beside the other speaker during Carl’s comparison",
+    "caption": "The rear controls shown during our speaker comparison. Check the connections you need for your own microphone, instrument and backing-track setup.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 67800
+  },
+  {
+    "page": "bose-s1pro-plus-vs-everse8-the-best-portable-speaker.html",
+    "image": "assets/images/articles/bose-everse-comparison/carrying-speaker.webp",
+    "source": "https://www.youtube.com/watch?v=7BCbr5dNLk8&t=569s",
+    "timestamp_seconds": 569,
+    "alt": "A presenter lifting a portable PA by its handle beside the second speaker",
+    "caption": "The carrying demonstration near the end of the review: useful context when deciding what you want to move between gigs.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 72828
+  },
+  {
+    "page": "aiarty-video-enhancer-3-8-review.html",
+    "image": "assets/images/articles/aiarty-3-8/comparison-preview.webp",
+    "source": "https://www.youtube.com/watch?v=qzeQjtWeApg&t=208s",
+    "timestamp_seconds": 208,
+    "alt": "Aiarty before-and-after close-up preview showing an eye and skin detail with enhancement controls",
+    "caption": "The close-up comparison shown in my review uses a vendor-provided sample. This compressed video still demonstrates the comparison view; it is not an original-resolution quality benchmark.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 57694
+  },
+  {
+    "page": "aiarty-video-enhancer-3-8-review.html",
+    "image": "assets/images/articles/aiarty-3-8/hd-4k-comparison.webp",
+    "source": "https://www.youtube.com/watch?v=qzeQjtWeApg&t=585s",
+    "timestamp_seconds": 585,
+    "alt": "HD and 4K landscape frames shown side by side in Carl’s Aiarty review",
+    "caption": "The HD/4K comparison from the video. Judge the moving footage at the highest available playback quality as well as the still; a 4K label alone does not prove better detail.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 29046
+  },
+  {
+    "page": "aiarty-video-enhancer-review.html",
+    "image": "assets/images/articles/aiarty-video-review/night-footage-preview.webp",
+    "source": "https://www.youtube.com/watch?v=fsYA84tjrTE&t=162s",
+    "timestamp_seconds": 162,
+    "alt": "Aiarty editing interface displaying night footage of an illuminated bridge",
+    "caption": "A night-footage preview from my original Aiarty review. Use the video to inspect noise and motion; a compressed still cannot establish export quality.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 57474
+  },
+  {
+    "page": "aiarty-video-enhancer-review.html",
+    "image": "assets/images/articles/aiarty-video-review/archive-footage-preview.webp",
+    "source": "https://www.youtube.com/watch?v=fsYA84tjrTE&t=216s",
+    "timestamp_seconds": 216,
+    "alt": "Black-and-white airship footage loaded in the Aiarty enhancement interface",
+    "caption": "Archive footage in the enhancement workspace. Different source material needs its own checks instead of one setting for every clip.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 41168
+  },
+  {
+    "page": "beginners-guide-davinci-resolve-2025.html",
+    "image": "assets/images/articles/davinci-beginner/edit-timeline.webp",
+    "source": "https://www.youtube.com/watch?v=wUYUV_F4WQo&t=176s",
+    "timestamp_seconds": 176,
+    "alt": "DaVinci Resolve Edit workspace with media bins, preview and video and audio clips on a timeline",
+    "caption": "The Edit workspace during my tutorial, with source media, the viewer and timeline visible together.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 62246
+  },
+  {
+    "page": "beginners-guide-davinci-resolve-2025.html",
+    "image": "assets/images/articles/davinci-beginner/color-workspace.webp",
+    "source": "https://www.youtube.com/watch?v=wUYUV_F4WQo&t=469s",
+    "timestamp_seconds": 469,
+    "alt": "DaVinci Resolve Color workspace showing a preview, node graph and grading controls",
+    "caption": "The Color workspace in the tutorial. Watch this section to follow how the interface changes from editing to grading.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 61122
+  },
+  {
+    "page": "buskingguide.html",
+    "image": "assets/images/articles/busking-guide/outdoor-performance.webp",
+    "source": "https://www.youtube.com/watch?v=WjtMEQx34NE&t=1511s",
+    "timestamp_seconds": 1511,
+    "alt": "A guitarist singing into a microphone outdoors in Busking for Berlin",
+    "caption": "An outdoor performance from Busking for Berlin. The film gives context to the guide’s discussion of live street performance.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 58344
+  },
+  {
+    "page": "buskingguide.html",
+    "image": "assets/images/articles/busking-guide/street-audience.webp",
+    "source": "https://www.youtube.com/watch?v=WjtMEQx34NE&t=378s",
+    "timestamp_seconds": 378,
+    "alt": "People gathered beside a street performance area in Busking for Berlin",
+    "caption": "The audience and surroundings are part of a busking setup too. This moment from the documentary shows the street setting beyond the instrument.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 65360
+  },
+  {
+    "page": "nusa-lembongan-travel-guide/index.html",
+    "image": "assets/images/articles/nusa-lembongan/arrival-beach-view.webp",
+    "source": "https://www.youtube.com/watch?v=Ao2fuEKXWKk&t=34s",
+    "timestamp_seconds": 34,
+    "alt": "Beachfront buildings and small boats beside turquoise water in Carl’s Nusa Lembongan video",
+    "caption": "The beachfront and boats in the island travel footage. Confirm the actual arrival beach with your operator before choosing accommodation or arranging a pickup.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 68578
+  },
+  {
+    "page": "nusa-lembongan-travel-guide/index.html",
+    "image": "assets/images/articles/nusa-lembongan/shallow-coastline.webp",
+    "source": "https://www.youtube.com/watch?v=Ao2fuEKXWKk&t=95s",
+    "timestamp_seconds": 95,
+    "alt": "Clear shallow water and a rocky shoreline in Carl’s Nusa Lembongan video",
+    "caption": "The coastline as filmed in my island video. This is one moment in the conditions, not a guarantee of swimming or boat conditions on your dates.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 42950
+  },
+  {
+    "page": "phuketravelguide.html",
+    "image": "assets/images/articles/phuket-guide/beach-from-above.webp",
+    "source": "https://www.youtube.com/watch?v=vIVgU02j37A&t=116s",
+    "timestamp_seconds": 116,
+    "alt": "Aerial view of a sandy Phuket beach edged by trees and clear water",
+    "caption": "A beach view from my Naiton-to-Kata video. Use the footage to get a feel for the setting before choosing your beach base.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 80196
+  },
+  {
+    "page": "phuketravelguide.html",
+    "image": "assets/images/articles/phuket-guide/food-menu.webp",
+    "source": "https://www.youtube.com/watch?v=vIVgU02j37A&t=348s",
+    "timestamp_seconds": 348,
+    "alt": "A restaurant menu being viewed during Carl’s Phuket travel video",
+    "caption": "A food stop from the trip video. Treat the menu as a record of that visit, and check current prices when you arrive.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 42756
+  },
+  {
+    "page": "sapa-travel-guide.html",
+    "image": "assets/images/articles/sapa-guide/town-and-mountains.webp",
+    "source": "https://www.youtube.com/watch?v=E4SJfs6AtF4&t=22s",
+    "timestamp_seconds": 22,
+    "alt": "Sapa town and surrounding mountains seen from above in hazy weather",
+    "caption": "Sapa town in the mountain setting shown in my video. Conditions can look quite different from a clear-sky destination photograph.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 87136
+  },
+  {
+    "page": "sapa-travel-guide.html",
+    "image": "assets/images/articles/sapa-guide/fansipan-mountain-view.webp",
+    "source": "https://www.youtube.com/watch?v=E4SJfs6AtF4&t=130s",
+    "timestamp_seconds": 130,
+    "alt": "Mountain ridges and buildings above a layer of clouds in Carl’s Fansipan video",
+    "caption": "The high-mountain view from the Fansipan footage. Watch the visit alongside the weather and clothing notes when planning your day.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 77880
+  },
+  {
+    "page": "sony-a7cii-review.html",
+    "image": "assets/images/articles/sony-a7cii/rig-close-view.webp",
+    "source": "https://www.youtube.com/watch?v=fJvUjP3YQyE&t=83s",
+    "timestamp_seconds": 83,
+    "alt": "Carl pointing to the accessories on his Sony camera rig during the review",
+    "caption": "A closer look at the rig in my review. The assembled setup matters as much as the camera body when deciding what you want to carry.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 60648
+  },
+  {
+    "page": "sony-a7cii-review.html",
+    "image": "assets/images/articles/sony-a7cii/rig-side-view.webp",
+    "source": "https://www.youtube.com/watch?v=fJvUjP3YQyE&t=333s",
+    "timestamp_seconds": 333,
+    "alt": "Carl holding the camera rig beside its external monitor and accessories",
+    "caption": "The setup shown from another angle near the end of the video. Watch the handling demonstration alongside my explanation of the camera choice.",
+    "width": 1280,
+    "height": 720,
+    "bytes": 62390
+  }
+]
