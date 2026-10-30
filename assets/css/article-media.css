@@ -1,0 +1,13 @@
+/* Original video frames, with room for readable captions on narrow screens. */
+.video-still { margin: 1.5rem 0 2rem; padding: 0; max-width: 100%; }
+.video-still > a { display: block; border-radius: .75rem; overflow: hidden; }
+.video-still img { display: block; width: 100%; height: auto; margin: 0; }
+.video-still figcaption { margin-top: .75rem; font-size: .9rem; line-height: 1.65; max-width: 78ch; }
+.video-still figcaption a { color: #f5c518; text-decoration: underline; text-underline-offset: .2em; }
+.video-still a:focus-visible { outline: 3px solid #f5c518; outline-offset: 4px; }
+.video-still figcaption a:hover { color: #ffe474; }
+.article-read-next { box-sizing: border-box; width: min(100% - 3rem, 64rem); margin: 2.5rem auto; padding: 1.5rem; border: 1px solid rgba(245,197,24,.3); border-radius: .75rem; background: #161616; }
+.article-read-next__title { margin: 0 0 .75rem; font-weight: 700; font-size: 1.15rem; }
+.article-read-next ul { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,16rem),1fr)); gap: 1rem; padding: 0; margin: 0; list-style: none; }
+.article-read-next a { display: block; color: #f5c518; padding: .65rem 0; line-height: 1.5; text-decoration: underline; text-underline-offset: .2em; }
+.article-read-next a:focus-visible { outline: 3px solid #f5c518; outline-offset: 4px; }
