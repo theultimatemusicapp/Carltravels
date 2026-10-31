@@ -122,7 +122,8 @@ body[data-cinema-layout] table{max-width:100%}
 body[data-cinema-layout] :is(.prose,.article-content,.article-copy,.article-body) table{display:block;overflow-x:auto}
 body[data-cinema-layout] :is(blockquote,.pullquote){border-left:2px solid var(--cinema-accent);padding:6px 0 6px 22px}
 body[data-cinema-layout] :is(.author-bio,.affiliate-cta,.cta-block){padding:28px;border-radius:0!important;border:1px solid var(--cinema-line);background-color:var(--cinema-panel)!important;box-shadow:none!important}
-body[data-cinema-layout] .author-bio{max-width:900px;margin:45px auto}
+/* Inline margins on older articles must not override horizontal centring. */
+body[data-cinema-layout] .author-bio{box-sizing:border-box;width:min(900px,calc(100% - 2 * var(--cinema-gutter)));max-width:900px;margin:45px auto;margin-left:auto!important;margin-right:auto!important}
 body[data-cinema-layout] :is(.affiliate-cta__headline,.affiliate-card h3){font-family:"CT Bebas Neue",Impact,sans-serif!important;font-size:28px!important}
 body[data-cinema-layout] :is(.affiliate-cta__copy,.affiliate-cta__list,.affiliate-cta__alt){font-size:13px;line-height:1.8}
 body[data-cinema-layout] :is(.affiliate-cta__disclosure,.affiliate-disclosure-line){font-size:11px!important;line-height:1.7}
